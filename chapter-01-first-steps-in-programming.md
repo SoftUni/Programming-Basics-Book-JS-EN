@@ -1,110 +1,93 @@
-# Глава 1. Първи стъпки в програмирането
+# Chapter 1. First Steps in Programming
 
-В тази глава ще разберем **какво е програмирането** в неговата същина. Ще се запознаем с идеята за **програмни езици** и ще разгледаме **средите за разработка на софтуер** (Integrated Development Environment - накратко IDE) и как да работим с тях, в частност с **Visual Studio Code**. Ще напишем и изпълним **първата си програма** на програмния език **JavaScript**, а след това ще се упражним с няколко задачи: ще създадем конзолна програма и уеб приложение. Ще се научим как да проверяваме за коректност решенията на задачите от тази книга в **Judge системата на СофтУни** и накрая ще се запознаем с типичните грешки, които често се допускат при писането на код и как да се предпазим от тях.
-
-## Видео
+In this chapter we are going to find out **what programming** is at its core. We will get familiar with the idea of programming languages and explore the **environments for software development** (Integrated Development Environment – IDEs); we'll see how to work with them, in particular with **Visual Studio Code**. We will write and execute our **first program** written in the programming language **JavaScript** and then we'll exercise on a few tasks: we will create a console-based program and a Web application. We will learn how use **SoftUni's Judge System** to check the correctness of our solutions to the problems in this book. Finally, we'll look at some typical mistakes made during code writing and we'll learn how to avoid them.
+## Video
 
 <div class="video-player">
-  Гледайте видеоурок по тази глава тук: <a target="_blank"
+  Watch a video lesson on what we'll learn in this chapter: <a target="_blank"
   href="https://www.youtube.com/watch?v=0YkrJsKwHdM">
   https://www.youtube.com/watch?v=0YkrJsKwHdM</a>.
 </div>
 
+## What does 'To Program' mean?
+To program means to give instructions to the computer, for example *play a certain sound*, *print something on the screen* or *multiply two numbers*. When there's a series of commands, we have a computer program (script). The computer program's text is called **program code** (**source code** or just **code**).
 
-## Какво означава "да програмираме"?
+## Computer programs
+**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go etc. In order to write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **JavaScript**. In this book we'll cover programming in general, as well as JavaScript's particular syntax and semantics. We'll examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
 
-**Да програмираме** означава да даваме команди на компютъра какво да прави, например "*да изсвири някакъв звук*", "*да отпечата нещо на екрана*" или "*да умножи две числа*". Когато командите са няколко една след друга, те се наричат **компютърна програма**. Текстът на компютърните програми се нарича **програмен код** (или **сорс код** или за по-кратко **код**).
+### Algorithms
+Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a certain recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they're cooked, and finally move the pan away from the heat.  Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a certain task. If we want to print a series of numbers in ascending order, for example, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
+To make creating programs, writing program code (commands), executing it and other operations that have to do with programming more convenient, we need a **development environment** (IDE) like Visual Studio Code.
 
-### Компютърни програми
+### Programming languages, compilers, interpreters and development environments
+**Programming languages** are an artificial languages (syntax for expression), designed to **issue commands** which we expect the computer to read, process and execute. With the help of programming languages we write series of commands (**programs**) which **tell the computer what to do**. Execution of computer programs can be achieved by using either a **compiler** or an **interpreter**.
 
-**Компютърните програми** представляват **поредица от команди**, които се изписват на предварително избран **език за програмиране**, например JavaScript, Python, C#, Java, PHP, Ruby, C, C++, Swift, Go или друг. За да пишем команди, трябва да знаем **синтаксиса и семантиката на езика**, с който ще работим, в нашия случай **JavaScript**. Затова в настоящата книга, ще се запознаем със синтаксиса и семантиката на езика **JavaScript** и с програмирането като цяло, изучавайки стъпка по стъпка писането на код, от по-простите към по-сложните програмни конструкции.
+**The compiler** translates code from a programming language into **machine code** and for each construct (command) in the code, it chooses an appropriate, predefined fragment of machine code while simultaneously checking the program's text for **errors**. Together, all the compiled fragments represent the original program translated in machine code, exactly how the computer's microprocessor is expecting it. After it's been complied, the program can be directly executed by the microprocessor in cooperation with the operation system. Compiled programming languages **compile the program** before executing it and find syntactic errors (incorrect commands) during compile time. Languages like C++, C#, Java, Swift and Go work with compilers.
 
-### Алгоритми
+Some programming languages don't use a compiler, but are **directly interpreted** by specialized software called an interpreter. **The interpreter** is a **program that executes programs**, written in some programming language. It executes the program's commands in sequence, and understands not only single commands and series of commands, but also other language constructs (checks, iterations, functions etc.). PHP, Python and **JavaScript** are languages that work with an interpreter and are executed without the need to be compiled. Due to lack of preliminary compilation, interpreted languages' errors are found during run time, after the program has already started working.
 
-Компютърните програми обикновено изпълняват някакъв алгоритъм. **Алгоритмите** са последователност от стъпки, необходими за да се свърши определена работа и да се постигне някакъв очакван резултат, нещо като "рецепта". Например, ако пържим яйца, ние изпълняваме някаква рецепта (алгоритъм): загряваме мазнина в някакъв съд, чупим яйцата, изчакваме докато се изпържат, отместваме от огъня. Аналогично, в програмирането **компютърните програми изпълняват алгоритми** - поредица от команди, необходими, за да се свърши определена работа. Например, за да се подредят поредица от числа в нарастващ ред, е необходим алгоритъм, примерно да се намери най-малкото число и да се отпечата, от останалите числа да се намери отново най-малкото число и да се отпечата и това се повтаря докато числата свършат.
+Overall, **compiled languages work more slowly than their interpreted counterparts**. The difference in execution speed is sometimes insignificant, but in other cases massive. In interpreted programming languages **we can change code more quickly and re-execute** (in order to remove a mistake, for example), while compiled languages are slower after a change in code has been introduced, due to the need for compilation.
 
-За удобство при създаването на програми, за писане на програмен код (команди), за изпълнение на програмите и за други операции, свързани с програмирането, ни е необходима и **среда за разработка**, например Visual Studio Code.
+**The development environment** (Integrated Development Environment – **IDE**) combines traditional instruments for software development. In the development environment we write code, compile and execute programs. Development environments incorporate a text editor for writing code, a **programming language**, **a compiler or interpreter**, an **execution environment** where our program is executed, a **debugger** which traces our program and looks for errors, **instruments for design and user interface** as well as other instruments and add-ons.
 
-### Езици за програмиране, компилатори, интерпретатори и среди за разработка
+**Development environments** are convenient because they incorporate everything necessary to develop a program, so there's no need to leave the environment. If we don't use a development environment, we'll have to write code in a text editor, compile it with a command from the console, execute it with another command from the console and write additional commands, when needed, which will cost a lot of time. This is why most programmers use IDEs for everyday work.
 
-**Езикът за програмиране** е изкуствен език (синтаксис за изразяване), предназначен за **задаване на команди**, които искаме компютърът да прочете, обработи и изпълни. Чрез езиците за програмиране пишем поредици от команди (**програми**), които **задават какво да прави компютъра**. Изпълнението на компютърните програми може да се реализира с **компилатор** или с **интерпретатор**.
+Programming with **JavaScript** is usually done in the development environment **Visual Studio Code** which is developed and freely distributed by Microsoft. You can download it from: https://www.visualstudio.com/downloads/.
+Alternatives to Visual Studio Code are **WebStorm** (https://www.jetbrains.com/webstorm/), **Atom** (https://atom.io/) and others. In this book we'll be using the development environment **Visual Studio Code**.
 
-**Компилаторът** превежда кода от програмен език на **машинен код**, като за всяка от конструкциите (командите) в кода избира подходящ, предварително подготвен фрагмент от машинен код и междувременно **проверява за грешки в текста на програмата**. Заедно компилираните фрагменти съставят програмата в машинен код, както я очаква микропроцесорът на компютъра. След като е компилирана програмата, тя може да бъде директно изпълнена от микропроцесора в кооперация с операционната система. При компилируемите езици за програмиране **компилирането на програмата** се извършва задължително преди нейното изпълнение и по време на компилация се откриват синтактичните грешки (грешно зададени команди). С компилатор работят езици като C++, C#, Java, Swift и Go.
+### Low-Level, High-Level Languages and Runtime Environments
+A program is, in essence, a **set of instructions** that ask the computer to carry out certain tasks. They are entered by the programmer and **executed unconditionally by the machine**.
 
-Някои езици за програмиране не използват компилатор, а се **интерпретират директно** от специализиран софтуер, наречен "интерпретатор". **Интерпретаторът** е "**програма за изпълняване на програми**", написани на някакъв програмен език. Той изпълнява командите на програмата една след друга, като разбира не само от единични команди и поредици от команди, но и от другите езикови конструкции (проверки, повторения, функции и т.н.). Езици като PHP, Python и **JavaScript** работят с интерпретатор и се изпълняват без да се компилират. Поради липса на предварителна компилация, при интерпретеруемите езици **грешките се откриват по време на изпълнение**, след като програмата започне да работи, а не предварително.
+There are different types of **programming languages**. **Lowest-level** languages can be used to write the very **instructions commanding the processor** - **Assembler** is one such language. Higher-level languages can be utilized to create an operating system, drivers for managing hardware (video card drivers, for example), web browsers, compilers, engines for game graphics (game engines) and other system components and programs. Even higher-level languages like **JavaScript**, **C#** and **Python** are used to create application software, like programs for reading mail or chatting.
 
-**Средата за програмиране** (Integrated Development Environment - **IDE**, интегрирана среда за разработка) е съвкупност от традиционни инструменти за разработване на софтуерни приложения. В средата за разработка пишем код, компилираме и изпълняваме програмите. Средите за разработка интегрират в себе си **текстов редактор** за писане на кода, **език за програмиране**, **компилатор или интерпретатор** и **среда за изпълнение** за изпълнение на програмите, **дебъгер** за проследяване на програмата и търсене на грешки, **инструменти за дизайн на потребителски интерфейс** и други инструменти и добавки.
+**Low-level languages** command hardware directly and require a lot of effort and a vast number of commands, to carry out a certain task. **Higher-level languages** require less code to achieve the same result, but have no direct access to hardware. They are used to develop application software like web and mobile applications.
 
-**Средите за програмиране** са удобни, защото интегрират всичко необходимо за разработката на програмата, без да се напуска средата. Ако не ползваме среда за разработка, ще трябва да пишем кода в текстов редактор, да го компилираме с команда от конзолата, да го изпълняваме с друга команда от конзолата и да пишем още допълнителни команди, когато се налага, и това ще ни губи време. Затова повечето програмисти ползват IDE в ежедневната си работа.
+Most of the software we use on a daily basis like music players, video players, GSP programs etc. is written on high-level **languages for application programming** like Python, JavaScript, C#, Java, C++, PHP etc.
 
-За програмиране на **езика JavaScript** най-често се ползва средата за разработка **Visual Studio Code**, която се разработва и разпространява безплатно от Microsoft и може да се изтегли от: https://www.visualstudio.com/downloads/. Алтернативи на Visual Studio Code са **WebStorm** (https://www.jetbrains.com/webstorm/), **Atom** (https://atom.io/) и други. В настоящата книга ще използваме средата за разработка **Visual Studio Code**.
+**JavaScript is an interpreted language** which means we write commands and they're executed immediately after running the program. As a result of that, we will realize we've made a mistake in our code only after we've started our program and reached the incorrect command. In cases like these, **IDEs** like Visual Studio Code are extremely helpful as they check our code while we're writing it and alarm us of potential issues. After we've written our code and want to test it, we can save it in a file with extension **.js**. 
 
-### Езици от ниско и високо ниво, среди за изпълнение (Runtime Environments)
+Most **programming languages** are specialized in the development of certain types of applications – Desktop for Windows and Mac, mobile apps, server applications, applications which command smart gadgets and many more. **JavaScript** is one of the few languages which allow you to create an application in every field you can think of – from websites and mobile apps to desktop applications.
 
-Програмата в своята същност е **набор от инструкции**, които карат компютъра да свърши определена задача. Те се въвеждат от програмиста и се **изпълняват безусловно от машината**.
+The most popular JavaScript **interpreters** are the web browsers you use every day – Chrome, Firefox, Internet Explorer etc. When loading your favourite web site, it's highly likely it will contain **JavaScript** files which will execute upon opening the site and make your viewing experience of the site much more pleasant and dynamic. It's also very often the case that if the site has dropdown menus, animations, user registration and annoying adverts, they are realized exactly by using the **JavaScript** language. 
 
-Съществуват различни видове **езици за програмиране**. С езиците от **най-ниско ниво** могат да бъдат написани **самите инструкции**, които **управляват процесора**, например с езика "**assembler**". С езици от малко по-високо ниво като **C** и **C++** могат да бъдат създадени операционна система, драйвери за управление на хардуера (например драйвер за видеокарта), уеб браузъри, компилатори, двигатели за графика и игри (game engines) и други системни компоненти и програми. С езици от още по-високо ниво като **JavaScript**, **Python** и **C#** се създават приложни програми, например програма за четене на поща или чат програма.
+You'll often hear that a certain piece of code is run on the **client side**, which means that the **JavaScript** code is executed in your **browser**, which plays the role of client or receiver. But a receiver would have no purpose to exist without a transmitter. In the world of technology, these transmitters are called servers. You can imagine servers as extremely powerful computers, which many people have access to. Every site uses a similar server as its base – i.e. files which enable the site to look the way you see it – **pictures**, **texts**, **JavaScript files**, are located on a certain server. Your **browser** (client) connects to the **server** where the site you're visiting is located, and the server, in turn, **sends** back the necessary files for your favourite website to visualize in front of your eyes. Your browser is like a car radio where you listen to your favourite program, and the server is the building which transmits that program, although the communication follows a slightly different route in this case. 
 
-**Езиците от ниско ниво** управляват директно хардуера и изискват много усилия и огромен брой команди, за да свършат единица работа. **Езиците от по-високо ниво** изискват по-малко код за единица работа, но нямат директен достъп до хардуера. На тях се разработва приложен софтуер, например уеб приложения и мобилни приложения.
+The other popular **JavaScript interpreter** is **NodeJS**. You can imagine it's like an application you install on your computer which enables it to understand JavaScript the same way your browser does. That way you can execute **JavaScript** code directly on your computer, without the need for a browser. As we just mentioned, servers are just more powerful computers. They start understanding **JavaScript** in the same way your computer does – by having **NodeJS** installed. You can install **NodeJS** from their official website [https://nodejs.org](https://nodejs.org) completely free of charge, by simply following the instructions. 
 
-Болшинството софтуер, който използваме ежедневно, като музикален плеър, видеоплеър, GPS програма и т.н., се пише на **езици за приложно програмиране**, които са от високо ниво, като JavaScript, Python, C#, Java, C++, PHP и др.
+## Computer Programs - execution
+As we already mentioned, a program is a **series of commands**, in other words, it describes a series of calculations, checks, iterations and numerous other operations, which aim at producing a result.
+The program is written in text format and the text is called **source code**. It's saved in a file with extension **.js** (**main.js**, for instance), and then it can be executed on your **browser** or on the **console** with the help of **NodeJS**. In a moment we'll have a look at both options.
 
-**JavaScript е интерпретеруем език**, а това означава, че пишем команди, които се изпълняват директно след стартиране на програмата. Това означава, че ако сме допуснали грешка при писането на код, ще разберем едва след стартиране на програмата и достигането до грешната команда. Тук на помощ идват **IDE**-тата, като Visual Studio Code, които проверяват кода ни, още докато пишем и ни алармират за евентуални проблеми. Когато сме написали кода си и искаме да го тестваме, можем да го запаметим във файл с разширение **.js**. 
+### Computer programs – examples
+Let's start with a very basic example of a short **JavaScript program** which we'll run directly in your web browser (it supports JS without the need to install additional software).
 
-Повечето **езици за програмиране** са специализирани в разработването на конкретен вид приложения - Desktop - за Windows или Mac, мобилни приложения, сървърни приложения, приложения за управление на умни джаджи и т.н. **JavaScript** е един от малкото езици, които позволяват да създадете приложение във всяка една възможна област - от сайтове и мобилни приложения до сървърни и desktop приложения. 
-
-Най - популярните **среди за интерпретация** на JavaScript са **уеб браузърите**, които използвате всеки ден - Chrome, Firefox, Internet Explorer и т.н. Когато зареждате любимият си уеб сайт е много вероятно той да съдържа **JavaScript файлове**, които ще се изпълнят при отварянето на сайта и ще направят изживяването при разглеждането на сайта по - приятно и динамично. Твърде вероятно е ако в сайта има падащи менюта, анимации, регистрация на потребител, дразнещи реклами, то те да са реализирани именно чрез използването на езика **JavaScript**. 
-
-Често ще чувате че даден код се "**изпълнява на клиента**" - това ще рече, че **JavaScript** кодът, се изпълнява във вашият **browser**, който играе ролята на клиент, или приемник. За да има приемник, трябва да има и предавател. В технологичният свят тези предаватели се наричат сървъри. Можете да си представяте сървърите като едни много мощни компютри, до които имат достъп много хора. Всички сайтове стоят на подобни сървъри - т.е. файловете които помагат на сайта да изглежда такъв какъвто го виждате - **картинки, текстове, JavaScript файлове**, се намират на конкретен сървър. Вашият **browser** (клиент) се свързва към **сървъра**, на който се намира сайта, който посещавате и сървърът **изпраща** обратно необходимите файлове, за да се визуализира пред вас любимият сайт. Можете да си представите, че вашият browser е **радиото** в колата ви на което слушате любимата програма, а сървърът е сградата от където се излъчва това предаване, макар и комуникацията между двете да протича по различен начин.
-
-Другият популярен **интерпретатор за JavaScript** e **NodeJS**. Можете да си го представите като приложение, което инсталирате на компютъра си и той започва да разбира от **JavaScript** по същият начин, по който и вашият browser разбира. По този начин можете да изпълнявате **JavaScript** код **директно на компютъра си**, без необходимостта от browser. Както казахме сървърите са просто по - мощни компютри. Те започват да разбират от **JavaScript** по същият начин по който и вашият компютър - просто им се инсталира **NodeJS**. Можете да си инсталирате **NodeJS** от официалния сайт [https://nodejs.org](https://nodejs.org) напълно безплатно, като следвате инструкциите.
-
-### Компютърни програми - изпълнение
-
-Както вече споменахме, програмата е **последователност от команди**, иначе казано тя описва поредица от пресмятания, проверки, повторения и всякакви подобни операции, които целят постигане на някакъв резултат.
-
-Програмата се пише в текстов формат, а самият текст на програмата се нарича **сорс код** (source code). Той се запазва във файл с разширение **.js** (например **main.js**) след което може да се изпълни през вашият browser или през **конзолата** с помощта на **NodeJS**. След малко ще разгледаме и двата варианта.
-
-### Компютърни програми – примери
-
-Да започнем с много прост пример за кратка **JavaScript програма**, която ще изпълним директно в уеб браузъра (той поддръжа JS без да инсталираме нищо допълнително).
-
-#### Пример: програма, която нотифицира потребителя
-
-Нашата първа програма ще е единична **JavaScript команда**, която нотифицира потребителя, че е спечелил 1 000 000 долара, както често се случва, когато разглеждате някой сайт с много спам и реклами:
-
+#### Example: a program which notifies the user
+Our first program will consist of a single **JavaScript command**, which notifies the user they've won 1 000 000 dollars, as is often the case, when you're browsing through a website with a lot of spam and adverts:
 ```javascript
 alert("Congratulations!!! You have just won $1 000 000!");
 ```
 
-Можем да изпълним програмата като използваме **JavaScript конзолата в нашия уеб браузър**. Например в **Chrome** натискаме [**F12**] и пишем кода в прозорчето [**Console**]:
+We can run our program by using our browser's **JavaScript console**. In **Chrome**, for example, we can pull that up by pressing **[F12]** and we can then write our code in the **[Console]** window.
 
 ![](/assets/console-js-alert.png)
 
-Резултатът е нещо такова: **модално popup съобщение** в браузъра:
+The result is something like this: a **modal popup message** in your browser: 
 
 ![](/assets/js-alert-modal-popop.png)
 
-#### Пример: програма, която спами нотификации на потребителя
-
-Можем да усложним предходната програма, като зададем за изпълнение повтарящи се многократно в поредица команди за нотифициране на потребителя, че е победител в томбола:
-
+#### Example: a program which spams the user with notifications
+We can increase the previous program's complexity by creating numerous command which repeat in sequence and notify the user they've won the lottery:
 ```javascript
 for (i = 0; i < 10; i += 1) {
     alert("Congratulations!!! You have just won $1 000 000!");
 }
 ```
-
-В горният пример караме компютъра да изкарва нотификации една след друга докато нотификациите не станат 10 на брой. **Резултатът **е един доста раздразнен потребител:
-
+In the example above we make the computer display notifications one after another until they become 10. The result is one very irritated user:
 ![](/assets/js-alert-10-times-loop.png)
+We will learn how iterations (loops) in programming work in chapter "[Loops](chapter-05-loops.md)", but for now, let's assume that they just repeat a command many times.
 
-Как работят повторенията (циклите) в програмирането ще научим в **главата "[Цикли](chapter-05-loops.md)"**, но засега приемете, че просто повтаряме някаква команда много пъти.
-
-#### Пример: програма, която конвертира от лева в евро
-
-Да разгледаме още една проста програма, която запитва потребителя за някаква сума в лева (цяло число), подсигурява се, че въведеното е число, конвертира я в евро (като я разделя на курса на еврото) и отпечатва получения резултат. Това е програма от 3 поредни команди:
-
+#### Example: program which converts Bulgarian levs into euro
+Let's have a look at another simple program which asks the user for an amount of money in levs (whole number), makes sure that what's been entered is a number, converts it in euro (by dividing it by the euro exchange rate) and prints the result. This is a program of 3 consecutive commands. 
 ```javascript
 let myMoney = prompt("How much money do you want to convert:");
 
@@ -112,231 +95,197 @@ let leva = parseInt(myMoney);
 let euro = leva / 1.95583;
 console.log(euro);
 ```
-
-Ако изпълним тази програма в JavaScript конзолата на браузъра, ще получим нещо такова:
+If we run this program in the browser's JavaScript console, we'll receive something like this:
 
 ![](/assets/js-euro-leva-converter-in-the-browser.png)
 
-Разгледахме **три примера за компютърни програми**: единична команда, серия команди в цикъл и поредица от 4 команди. Нека сега преминем към по-интересното: как можем да пишем собствени програми на **JavaScript** и как можем да ги изпълняваме извън браузъра?
+We looked at **three examples of computer programs**: single command, series of commands in a loop and a sequence of four commands. Let's now move on to the more exciting bit: writing our own programs in **JavaScript** and executing them outside the browser.
 
-## Как да напишем конзолна програма?
+## How do we write a console program?
+Let's go through the **steps for creating and executing a computer program** which uses a text console (window for entering and receiving text) to read and write its data. Such programs are known as **console-based**. Before we do that though, we need to **install and set up our development environment**, where we'll write and execute the **JavaScript** programs from this book and the exercises that go along with it.
 
-Нека преминем през **стъпките за създаване и изпълнение на компютърна програма**, която чете и пише своите данни от и на текстова конзола (прозорец за въвеждане и извеждане на текст). Такива програми се наричат "**конзолни**". Преди това, обаче, трябва първо да си **инсталираме и подготвим средата за разработка**, в която ще пишем и изпълняваме **JavaScript** програмите от тази книга и упражненията към нея.
+## Development Environment (IDE)
+As previously mentioned, we need a **development environment (IDE)** in order to program. The IDE is actually a program editor, where we can write, compile and execute our program code, discover our mistakes, correct them and start the program again.
+-	For programming in JavaScript we use the Visual Studio Code environment, suitable Windows, Linux and MacOS operating systems.
+- If we are programming in **Java** we can use **IntelliJ**, **Eclipse** or **NetBeans**.
+- If we are programming in **Python** we can use **PyCharm**.
 
-## Среда за разработка (IDE)
-
-Както вече стана дума, за да програмираме ни е нужна **среда за разработка** - **Integrated Development Environment** (IDE). Това е всъщност редактор за програми, в който пишем програмния код и можем да го компилираме и изпълняваме, да виждаме грешките, да ги поправяме и да стартираме програмата отново.
- - За програмиране на JavaScript използваме средата **Visual Studio Code**, която се поддържа за операционната система Windows, Linux и Mac OS X.
- - Ако програмираме на Java, подходящи са средите **IntelliJ IDEA**, **Eclipse** или **NetBeans**.
- - Ако ще пишем на Python, можем да използваме средата **PyCharm**.
-
-### Инсталация на Visual Studio Code
-Започваме с инсталацията на интегрираната среда **Microsoft Visual Studio Code** (версия 1.19, актуална към януари 2018 г.).
-
-Visual Studio Code се разпространява безплатно от Microsoft и може да бъде изтеглено от: [https://code.visualstudio.com/ (https://code.visualstudio.com/). Инсталацията е типичната за Windows с [**Next**], [**Next**] и [**Finish**]. Не е необходимо да променяме останалите настройки за инсталация.
-
-В следващите редове са описани подробно **стъпките за инсталация на Visual Studio Code** (версия 1.19.1). След като свалим инсталационния файл и го стартираме, се появява следният екран:
+### Installing Visual Studio Code
+In the following paragraphs we go through the steps for installing **Visual Studio Code** (version 1.19.1) in great detail. After we download and start the installation file, the following screen should appear:
 
 ![](assets/chapter-1-images/00.Visual-studio-01.png)
 
-Натискаме бутона [**Next**], след което ще трябва да се съгласим с условията за ползване:
+Press the **[Next]** button and then agree to the terms and conditions:
 
 ![](assets/chapter-1-images/00.Visual-studio-02.png)
 
-Зарежда се прозорец с инсталационния панел на **Visual Studio Code**, като в даден момент ще бъдем запитани за предпочитанията си към допълнителни настройки, които са си лично индивидуални. Общо взето това е всичко.
-
-Започва инсталацията на Visual Studio Code и когато приключи сме почти готови за работи.
-
-След **старта на VS Code** излиза екран като този по-долу:
+Visual Studio Code starts installing and once it's finished, we're almost ready to start writing code.
+After you start VS Code, a window similar to the one below should appear:
 
 ![](assets/chapter-1-images/00.Visual-studio-03.png)
 
-Сега е моментът да си направим средата възможно най-приятна за разработка. **Visual Studio Code** е едно от IDE-тата с най-големи възможности за персонализация. Най-често тази персонализация става под формата на **разширения** (extensions). Списък с всички разширения, можете да намерите на официалният сайт [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/). Имайте предвид, че голяма част от тези разширения са строго специфични при работа с конкретен език за програмиран.
+Now is the time to make our **development environment** as pleasant as possible. **Visual Studio Code** is famous for being the IDE with the most options for personalization. Usually this personalization comes in the form of **add-ons** (extensions). A list of all add-ons can be found on the official website: [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/). Just keep in mind that most of these extensions are specific to a particular programming language. 
 
-Препоръчваме ви като за начало да си инсталирате следните 2 разширения, които драстично ще подобрят работата ви при писане на **JavaScript** код: 
+For a start, we recommend installing a couple of extensions which will drastically improve your JavaScript code writing:
+* **Beautify** - [https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) – this is an extension which helps you order your code and keep it looking clean.
+* **JSHint** - [https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint) – as we mentioned, JavaScript is an interpreted language and core errors would appear only after running the program. This extension scans and alarms for potential isues while the code is written and before running the program.
 
-* **Beautify** - [https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) - това е разширение, което ви помага да поддържате кода си чист и подреден.
-* **JSHint** - [https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint) - както казахме, **JavaScript e интерпретеруем** език и грешките в кода биха се проявили едва след стартирането на изпълнението на програмата. Това разширение търси и съобщава за потенциални нередности по време на писането на кода, преди стартирането на програмата.
-
-Инсталирането става или директно през посочените линкове, или следвайки следните стъпки във **Visual Studio Code**:
-
-1. В най - левият панел, отваряме най-долният таб - Extensions.
-2. В полето за търсене изписваме името на разширението, което желаем да инсталираме.
-3. От получените резултати избираме този, който ни удовлетворява.
-4. Натискаме [**Install**] бутона.
-5. Рестартираме **Visual Studio Code**.
+They can be installed either via the given links, or by going through the following steps in **Visual Studio Code**:
+1.	In the leftmost panel, open the lowest tab – Extensions.
+2.	In the search field enter the name of the extension you'd like to install.
+3.	Choose the most appropriate option from the results.
+4.	Then press the **[Install]** button.
+5.	And restart **Visual Studio Code**.
 
 ![](assets/chapter-1-images/00.Visual-studio-04.png)
 
-Това е всичко. Готови сме за работа с **Visual Studio Code** и **JavaScript**.
+That's it. We're ready to start working with **Visual Studio Code** and **JavaScript**.
 
-### Онлайн среди за разработка
-
-Съществуват и **алтернативни среди за разработка онлайн**, директно във вашия уеб браузър. Тези среди не са много удобни, но ако нямате друга възможност, може да стартирате обучението си с тях и да си свалите **Visual Studio Code** по-късно. Такъв примерен сайт за онлайн JavaScript разработка в е **JSBin** - [https://jsbin.com/?js,console](https://jsbin.com/?js,console).
+ ### Online development environments
+There are also **alternative environments to develop online**, directly in your web browser. They aren't very easy to use but if you have no other option, you can start your education with them and install **Visual Studio Code** later. Such a site for online JavaScript development is **JSBin** - [https://jsbin.com/?js,console](https://jsbin.com/?js,console).
 
 ![](/assets/jsbin-example.png)
 
-Алтернативно за бързо тестване можем да използваме и директно своят браузър с натискане на **[F12]**, но това генерално е опция, ако искате да изпробвате няколко реда код набързо. Ето пример:
+Alternatively, we can do quick tests directly in our browser by pressing **F12** but in general, this is an option that works for very few lines of 
+code. Here's an example:
 
 ![](/assets/js-console-f12.png)
 
-## Пример: създаване на конзолна програма "Hello JavaScript"
-
-Да се върнем на нашата конзолна програма. Вече имаме **Visual Studio Code** и можем да го стартираме. След това създаваме нов **JavaScript файл**: [**File**] &rarr; [**New File**]:
+## Example: creating a console application 'Hello JavaScript'
+Let's go back to our console program. We already have Visual Studio Code and we can start it. Then create a new **JavaScript file**: [**File**] &rarr; [**New File**]:
 
 ![](assets/chapter-1-images/00.Visual-studio-05.png)
 
-След това е важно да запаметим нашият файл от [**File**] &rarr; [**Save**], като задължително го записваме с разширение "**.js**". Също така му задаваме **смислено име**, например **helloJS**:
+It's crucial to save our file from [**File**] &rarr; [**Save**], and don't forget the **.js** extension! We also need to give it a meaningful name like **helloJS**:
 
 ![](assets/chapter-1-images/00.Visual-studio-06.png)
 
-### Писане на програмен код
-
-Писането на **JavaScript** код не изисква никаква допълнителна подготовка от това, което вече направихме - да си създадем файл с разширение **.js**. Затова директно пристъпваме към писането на първият си ред код. Изписваме следната команда:
-
+### Writing Program Code
+Writing code in **JavaScript** requires no additional preparation – creating a file with the **.js** extension is all we need. So let's directly proceed with writing our first line of code. We'll write the following command:
 ```javascript
 console.log("Hello JavaScript!");
 ```
-
-Ето как трябва да изглежда нашата програма във **Visual Studio Code**:
+Here's what our program should look like in **Visual Studio Code**:
 
 ![](assets/chapter-1-images/01.Hello-js-01.png)
 
-Командата **`console.log("Hello JavaScript!")`** означава да изпълним отпечатване (**`log(…)`**) върху конзолата (**`console`**) със съобщение **`Hello JavaScript!`**, което трябва да оградим с кавички, за да поясним, че това е текст. В края на всяка команда на езика **JavaScript** се слага символът **`;`** и той указва, че командата свършва на това място (т.е. не продължава на следващия ред). Макар и последното да не е задължително е прието като добра практика, за да се избегнат трудно откриваеми проблеми.
+The `console.log('Hello JavaScript!')` command means printing (`log(…)`) on the console (`console`) the message `Hello JavaScript!` which we need to surrounded with quotes, in order to signify it is text. At the end of every **JavaScript** command we place a semicolon `;` which indicates the end of the command (meaning it doesn't continue on the next row). Although the latter is not compulsory, it's considered good practice which helps find problems more easily.
 
-**Внимание**: използваните преди малко команди `alert(…)` и `prompt(…)` работят сам в уеб браузъра и не са налични при конзолните приложения във VS Code. Ако се опитате да ги ползвате, ще получите грешка.
+Important: the `alert(…)` and `prompt(…)` commands we used, work only in the web browser and are not available in VS Code console applications. If you try using them, you will receive an error. 
 
-Тази команда е много типична за програмирането: указваме да се намери даден **обект** (в случая конзолата) и върху него да се изпълни някакво **действие** (в случая печатане на нещо, което се задава в скоби). По-техническо обяснено, извикваме метода **`log(…)`** от класа **`console`** и му подаваме като параметър текстовия литерал **`"Hello JavaScript!"`**.
+This command is very typical for programming: we signify we need a certain **object** (the console, in this case) to be found and a **certain action** ( printing something, passed within brackets, in this case) to be performed on it. In more technical terms, we call the method `log(…)` from the class `console` and pass as a parameter to it the text literal `Hello JavaScript!`.
 
-### Стартиране на програмата
-
-За стартиране на програмата натискаме [**F5**] и програмата ще се стартира. Резултатът ще се изпише на конзолата, която за наше удобство ще се отвори директно в долната част на **Visual Studio Code**:
+### Starting the Program
+To start the program we need to hit **[F5]**. The result will be displayed on the console, which, for our convenience, will open directly at the bottom of **Visual Studio Code**:
 
 ![](assets/chapter-1-images/01.Hello-js-02.png)
 
-Забележете, че стартираме с **[F5]**, а не само **[Ctrl+F5]**. Ако ползваме **[Ctrl+F5]**, програмата ще се изпълни за кратко и веднага след това прозорецът ще изчезне и няма да видим резултата.
+Notice we run the program with **[F5]**, not **[Ctrl + F5]**. If we use the latter, we won't be able to see the result because the program will execute very quickly and then disappear.
 
-Всъщност, изходът от програмата е следното текстово съобщение:
-
+Actually, the output from the program is the following text message:
 ```javascript
 Hello JavaScript!
 ```
 
-Съобщенията "**Debugging with inspector protocol . . .**" и  **Debugger listening on...** се изписва допълнително на най-горните редове на конзолата от **Visual Studio Code** след като програмата започне своето изпълнение, като това ни дава допълнителна информация за изпълнението, която за момента можем да игнорираме.
+The "**Debugging with inspector protocol . . .**" and  **Debugger listening on...** messages are displayed as additional information at the very top of Visual Studio Code's console after the program starts executing. This gives us additional information about the execution which, for the time being, we will ignore. 
 
-### Тестване на програмата в Judge системата
+### Testing our program in the Judge system
+Testing the solutions to the problems in this book is completely automated via the **Judge System's website**: [https://judge.softuni.bg](https://judge.softuni.bg). The solutions are judged in real time by the system. Each solution goes through a series of tests which are hidden; every test that passes grants the user certain points.
 
-Тестването на задачите от тази книга е автоматизирано и се осъществява през Интернет, от сайта на **Judge системата на СофтУни**: [https://judge.softuni.bg](https://judge.softuni.bg). Оценяването на задачите се извършва в реално време от системата. Всяка задача минава поредица от тестове, като всеки успешно преминат тест дава предвидените за него точки. Тестовете, които се подават на задачите, са скрити.
+The program we just wrote can be tested here: [https://judge.softuni.bg/Contests/Practice/Index/926#0](https://judge.softuni.bg/Contests/Practice/Index/926#0).
 
-Горната програма може да тестваме тук: [https://judge.softuni.bg/Contests/Practice/Index/926#0](https://judge.softuni.bg/Contests/Practice/Index/926#0). 
-
-Всеки **JavaScript код**, който искаме да тестваме в **Judge системата** трябва да бъде ограден от следните редове допълнителен код:
-
+Each piece of **JavaScript** we'd like to test in the **Judge System**, needs to be surrounded by the following lines of code:
 ````javascript
 function solve() {
     // we place our code here
 }
 ````
 
-Т.е. ако искаме да тестваме програмата, която току що написахме в системата, тя ще изглежда така:
-
+In other words, if we'd like to test the program we just wrote in the system, it will look like this:
 ````javascript
 function solve() {
     console.log("Hello JavaScript");
 }
 ````
-
-Поставяме целия сорс код на програмата в черното поле и избираме **JavaScript code**, както е показано тук:
+We need to place the entire source code of the program in the black field and choose **JavaScript code**, as shown in the screenshot below:
 
 ![](assets/chapter-1-images/01.Hello-js-03.png)
 
-Изпращаме решението за оценяване с бутона [**Изпрати**]. Системата връща резултат след няколко секунди в таблицата с изпратени решения. При необходимост може да натиснем бутона за обновяване на резултатите **[Refresh]** в горната дясна част на таблицата с изпратени за проверка решения:
+Then we can send our solution by clicking the **[Submit]** button. The system returns a result in a few seconds which is displayed in the table of submitted solutions. If necessary, we can hit the **[Refresh]** button at the upper right-hand corner of the table of submitted solutions:
 
 ![](assets/chapter-1-images/01.Hello-js-04.png)
 
-В таблицата с изпратените решения Judge системата ще покаже един от следните **възможни резултати**:
-* **Брой точки** (между 0 и 100), когато предаденият код се компилира успешно (няма синтактични грешки) и може да бъде тестван.
-  - При **вярно решение** всички тестове са маркирани в зелено и получаваме **100 точки**.
-  - При **грешно решение** някои от тестовете са маркирани в червено и получаваме непълен брой точки или 0 точки.
-* При грешна програма ще получим **съобщение за грешка** по време на компилация.
+In that table, the Judge System will display one of the following **possible results**:
+* Number of points (between 0 and 100), when the submitted code is compiled successfully (there are no syntactic errors) and can be tested.
+  -	If our solution is **completely correct**, all tests are marked in green and we receive **100 points**.
+  -	If our solution is **incorrect**, some tests are marked in red and we receive **less than 100** or **0 points**.
+*	If there are syntactic errors in our program, we receive a **compile time error message**.
 
-### Как да се регистрирам в SoftUni Judge?
+### How do I register at SoftUni Judge?
+Just use your id (Username + Password) from the site [softuni.bg](softuni.bg). If you haven't yet registered, go right ahead – it will take no more than a minute since it's just a standard website registration.
 
-Използваме идентификацията си (Username + Password) от сайта [softuni.bg](softuni.bg). Ако нямате СофтУни регистрация, направете си. Отнема само минутка - стандартна регистрация в Интернет сайт.
+## Executing code in a browser using HTML + JS
+So far we've seen how to make and execute a console program. Let's now look at how we can write code, which runs in our browser. All the websites you visit are created in a very similar fashion.
 
-## Изпълняване на код в браузър чрез HTML + JS
-
-До тук видяхме как можем да си направим и да изпълним конзолна програма. Нека сега видим как можем да напишем код, който да се изпълнява в нашия браузър. По подобен начин се правят и всички сайтове, които посещавате. 
-
-Всъщност принципът е много подобен на това, което направихме току що. Разликата е, че когато си създаваме нов файл, не му даваме разширение **.js**, a **.html**. След това единственото, което трябва да направим е да оградим кодът си със **`<sciprt>`** отварящият се и **`</script>`**, затварящ се **html таг**. По подобен начин преди малко оградихме кодът си, за да може да бъде тестван в Judge системата. Ето така би изглеждал нашият код във **Visual Studio Code** сега:
+Actually the principle is very similar to what we just did. The only difference is that when creating a new file, we use the **.html** extension instead of **.js**. All that's left is to enclose our code with a opening `<script>` and closing `</script>` **html** tag. We enclosed our code in much the same way when submitting our code in the Judge System. Here's what our code in **Visual Studio Code** should now look like:
 
 ![](assets/chapter-1-images/01.Hello-js-05.png)
 
-При този подход, сега остава единствено да намерим файла **helloJS.html**, на мястото, където сме го запаметили и да кликнем два пъти върху него. Той ще се зареди в браузъра, но за да видим резултатът от изпълнението му ще трябва да натиснем **F12**, което ще зареди конзолата на браузъра. Ние сме задали команда за печатане на конзолата, затова и трябва да я покажем:
+With this approach, now we just need to find the **helloJS.html** file in the location we've saved it, and double click it. It will load in the browser but in order to see the result, we need to hit **F12**, which will open the browser's console. Our command prints on the console, so it makes sense that we need to bring it up to see the result. 
 
 ![](assets/chapter-1-images/01.Hello-js-06.png)
 
-Сега, след като вече **знаете как да изпълнявате програми**, можете да тествате примерните програми по-горе, които показват нотификации на потребителя. Позабавлявайте се, пробвайте тези програми. Пробвайте да ги промените и да си поиграете с тях. Заменете командата **`console.log("Hello JavaScript");`** с команда **`console.error("Error occured");`** и стартирайте програмата. Забележете, че програмите с нотификации, могат да бъдат изпълнени само през нашия браузър, а когато опитаме да ги изпълним през конзолата, програмата ще ни даде грешка. Това е така, защото конзолата няма функционалност да нотифицира чрез визуални елементи, какъвто е **`alert`**.
+Now that you've **learned how to execute programs**, you can test the sample notification programs you have above. Have fun with them, try out different things. Try changing them and playing with them. Swap the `console.log("Hello JavaScript");`** command for `console.error("Error occured");`** and start your program. Note that notification programs can only be executed in our browser and when we try running them from the console, we receive an error. This is due to the fact that the console doesn't support notification via visual elements, like `alert`.
 
-## Типични грешки в JavaScript програмите
-
-Една от срещаните грешки е бъркането на **главни и малки букви**, а те имат значение при извикване на командите и тяхното правилно функциониране. Ето пример за такава грешка:
+## Typical mistakes in JavaScript programs
+One of the usual mistakes beginners make is mixing up **capital and lowercase letters**. However, they matter when we call commands and can impede proper functioning. Here's an example of such a mistake:
 ```javascript
 function solve() {
     Console.Log("Hello JavaScript");
 }
 ```
+In the example above, `Console` is written incorrectly and the capital letter needs to be changed to lowercase. Is there another similar mistake in the same example?
 
-В горния пример **`Console`** е изписано грешно и трябва да се поправи на **`console`**. Каква друга подобна грешка има допусната в програмата?
-
-Липсваща **кавичка** или **липса на отваряща или затваряща скоба** също може да се окажат проблеми. Проблемът води до **неправилно функциониране на програмата** или въобще до нейното неизпълнение. Този пропуск трудно се забелязва при по-обемен код. Ето пример за грешна програма:
-
+A missing **quotation mark** or **closing bracket** can also cause issues – the program will either **function improperly** or not execute at all. Such mistakes are hard to notice, especially with larger amounts of code. Here's an example:
 ```javascript
 function solve() {
     console.log("Hello JavaScript);
 }
 ```
 
-Тази програма ще даде **грешка след началото на изпълнение** и  даже още преди това кодът ще бъде подчертан от разширенията, които следят за това, за да се насочи вниманието на програмиста към грешката, която е допуснал (пропуснатата затваряща кавичка):
+This program will return an **error after it's started executing** and even prior to that, the code will be underlined by the extensions which monitor syntax, to draw the programmer's attention to the missed closing bracket.
 
 ![](assets/chapter-1-images/01.Hello-js-07.png)
 
+## What did we learn in this chapter?
+First of all, we learned **what programming is – issuing commands written in a programming language** which the machine can understand and carry out. We also found out what a **computer program** is – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **JavaScript programming language** and learned how to create **simple console and web programs using Visual Studio Code**. Then we examined JavaScript's program code structure. We looked at printing on the console with the function `console.log()` and starting the program with **[F5]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
 
-## Какво научихме от тази глава?
+Top work! Let's now tackle the **exercises**. You do remember that learning how to program involves a lot of code writing and problem-solving, right? Let's do just that and put what we've learned into practice.
 
-На първо място научихме **какво е програмирането** - **задаване на команди, изписани на компютърен език**, които машината разбира и може да изпълни. Разбрахме още какво е **компютърната програма** - тя представлява **поредица от команди**, подредени една след друга. Запознахме се с **езика за програмиране JavaScript** на базисно ниво и как **да създаваме прости конзолни програми и web програми** с Visual Studio Code. Видяхме как се печата на конзолата с командата **`console.log(…)`** и как да стартираме програмата си с [**F5**]. Научихме се да тестваме кода си в **SoftUni Judge**.
+## First Steps in Programming – Exercises
+Welcome to the exercises. We are now going to write a few console applications, which will help us make a few more steps into programming. Then we will show you how to program something more complex – programs with graphical and web user interface.
 
-Добра работа! Да се захващаме с **упражненията**. Нали не сте забравили, че програмиране се учи с много писане на код и решаване на задачи? Да решим няколко задачи, за да затвърдим наученото.
-
-
-## Упражнения: първи стъпки в коденето
-
-Добре дошли в упражненията. Сега ще напишем няколко конзолни програми, с които ще направим още няколко първи стъпки в програмирането, след което ще покажем как можем да програмираме нещо по-сложно - програми с графичен и уеб потребителски интерфейс.
-
-### Задача: конзолна програма “Expression”
-
-Да се напише конзолна **JavaScript** програма, която **пресмята** и **отпечатва** стойността на следния числен израз:
+### Problem: console-based program 'Expression'
+Write a console-based **JavaScript** program that **calculates** and **prints** the value of the following numerical expression:
 
 <p align="center"> (3522 + 52353) * 23 - (2336 * 501 + 23432 - 6743) * 3 </p>
 
-Забележка: **не е разрешено да се пресметне стойността предварително** (например с Windows Calculator).
+Note: **you are not allowed to previously calculate the value** (for example with Windows Calculator).
 
-#### Насоки и подсказки
-
-Създаваме си **нов JavaScript файл** с име **expression.js**. След това трябва да **напишем кода**, който да изчисли горния числен израз и да отпечата на конзолата стойността му. Подаваме горния числен израз в скобите на командата **``console.log(…)``**:
+### Hints and Guidelines
+Create a new **JavaScript file** and name it `expression.js`. Then we need to write the **code** which will calculate the numeric expression above and print its value on the console. Pass the expression to the `console.log(...)` command by writing it within its brackets:
 
 ![](assets/chapter-1-images/02.Expression-01.png)
 
-Стартираме програмата с [**F5**] и проверяваме дали резултатът е същия като на картинката:
+Start the program with **[F5]** and check whether the result matches the one from the picture:
 
 ![](assets/chapter-1-images/02.Expression-02.png)
 
-#### Тестване в Judge системата
+### Testing in the Judge System
+Test your solution here:
+[https://judge.softuni.bg/Contests/Practice/Index/926#1](https://judge.softuni.bg/Contests/Practice/Index/926#1).
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/926#1](https://judge.softuni.bg/Contests/Practice/Index/926#1).
-
-**Забележка**: Не забравяйте да оградите кодът си със **`solve()`** функцията:
-
+**Note**: Don't forget to enclose your code in the `solve()` function:
 ````javascript
 function solve() {
     // your code
@@ -345,34 +294,28 @@ function solve() {
 
 ![](assets/chapter-1-images/02.Expression-03.png)
 
-### Задача: числата от 1 до 20
+### Problem : Numbers from 1 to 20
+Write a **JavaScript** console program that **prints the numbers from 1 to 20** on separate lines on the console.
 
-Да се напише **JavaScript** конзолна програма, която **отпечатва числата от 1 до 20** на отделни редове на конзолата.
-
-#### Насоки и подсказки
-
-Създаваме нов **JavaScript файл** с име **nums1To20.js**. В него изписваме 20 команди **``console.log(…)``**, всяка на отделен ред, за да отпечатаме числата от 1 до 20 едно след друго. По-досетливите от вас, сигурно се питат дали няма по-умен начин. Спокойно, има, но за него по-късно.
+### Hints and Guidelines
+Create a new **JavaScript file** and name it `nums1to20.js`. Inside the file write 20 `console.log()` commands,  each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a cleverer way. Don't worry, there is, but we will mention it later on.
 
 ![](assets/chapter-1-images/03.Numbers-1-to-20-01.png)
 
-Сега **стартираме програмата** и поверяваме дали резултатът е какъвто се очаква да бъде:
+Let's now **start the program** and check whether the result is what we're expecting:
 ```
 1
 2
 …
 20
 ```
+### Testing in the Judge System
+Test your solution here:
+[https://judge.softuni.bg/Contests/Practice/Index/926#2](https://judge.softuni.bg/Contests/Practice/Index/926#2).
+Did you receive 100 points? If not, think of what you may be missing. Then try and think of a **cleverer** way to write this program, so as to avoid repeating the same command so many times. Look up information for "**[for loop JavaScript](https://www.google.bg/search?q=for+loop+JavaScript)**" on the Internet.
 
-#### Тестване в Judge системата
-
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/926#2](https://judge.softuni.bg/Contests/Practice/Index/926#2).
-
-Получихте ли 100 точки? Ако не сте помислете какво изпускате. А след това помислете дали може да напишем програмата по **по-умен начин**, така че да не повтаряме 20 пъти една и съща команда. Потърсете в Интернет информация за "**[for loop JavaScript](https://www.google.bg/search?q=for+loop+JavaScript)**".
-
-
-### Задача: триъгълник от 55 звездички
-
-Да се напише **JavaScript** конзолна програма, която **отпечатва триъгълник от 55 звездички**, разположени на 10 реда:
+### Problem: Triangle of 55 stars
+Write a **JavaScript** console program that **prints a triangle of 55 stars** on 10 lines:
 
 ```
 *
@@ -386,138 +329,118 @@ function solve() {
 *********
 **********
 ```
-
-#### Насоки и подсказки
-
-Създаваме **нов JavaScript файл** с име **triangleOf55Stars.js**. В него трябва да напишем код, който печата триъгълника от звездички, например чрез 10 команди, като посочените по-долу:
-
+### Hints and Guidelines
+Create a new **JavaScript file** and name it `triangleOf55Stars.js`. Inside we need to write code that prints our triangle, for example by using 10 print commands, like in the example below:
 ```javascript
 console.log("*");
 console.log("**");
 …
 ```
 
-#### Тестване в Judge системата
+### Testing in the Judge System
+Test your solution here:
+[https://judge.softuni.bg/Contests/Practice/Index/926#3](https://judge.softuni.bg/Contests/Practice/Index/926#3).
+Try and **improve your solution** to avoid repeating the same command so many times. Can this be achieved with a for-loop? Did you manage to invent a better solution (with a for-loop, for example) to the previous problem? The current problem can be solved with a similar, but a little more complex approach (a loop within another loop). It's completely fine if you can't figure it out, you'll remember this problem when we learn about loops in a few chapters.
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/926#3](https://judge.softuni.bg/Contests/Practice/Index/926#3).
+### Problem: Rectangle Area
+Write a **JavaScript program** which **receives two numbers a and b, then calculates and prints** the area of a rectangle with sides **a** and **b**.
 
-Опитайте да **подобрите решението**, така че да няма много повтарящи се команди. Може ли това да стане с **`for`** цикъл? Успяхте ли да намерите умно решение (например с цикъл) на предната задача? При тази задача може да се ползва нещо подобно, но малко по-сложно (два цикъла един в друг). Ако не успеете, няма проблем, ще учим цикли след няколко глави и ще си спомните за тази задача тогава.
-
-
-### Задача: лице на правоъгълник
-
-Да се напише **JavaScript** програма, която **получава две числа a и b**, **пресмята** и **отпечатва** лицето на правоъгълник със страни **a** и **b**. 
-
-#### Примерен вход и изход
-
+### Sample input and output
 | a | b | area |
 | :---: | :---: | :---: |
 | 2 | 7 |  14  |
 | 7 | 8 |  56  |
 | 12 | 5 |  60  |
 
-#### Насоки и подсказки
-
-Правим нов **JavaScript файл**. За момента този тип програми ще тестваме само в **Judge системата**, която има изграден механизъм за подаване на входни данни към програмата. За да **получим двете числа**, трябва да декларирам това свое желание, като променим ограждащият код (функцията **`solve()`**), който свикнахме да пишем:
+### Hints and Guidelines
+Create a new **JavaScript file**. For now, programs of similar type will be tested only in the **Judge System**, which has a built-in mechanism for passing input data to the program. In order to **receive the two numbers**, we need to declare our request by changing the enclosing code (the `solve()` function) we got used to writing:
 
 ![](assets/chapter-1-images/05.Rectangle-area-01.png)
 
-Забелязахте ли промяната? Между **`(`** и **`)`** поставихме допълнителни квадратни скоби **`[]`**, между които пък описахме какви данни очакваме да получим - в случая числата **`a`** и **`b`**, зададени като масив.
+Did you notice the change? We placed additional square brackets within the brackets of the function, inside which we described what data we're expecting to receive – in this case the numbers `a` and `b`, set as an array.
+What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of  `a` and `b` to the familiar `console.log()` command. In programming we multiply using the `*` operator.
 
-Остава да се допише програмата по-горе, за да пресмята лицето на правоъгълника и да го отпечата. Използвайте познатата ни вече команда **`console.log()`** и й подайте в скобите произведението на числата **a** и **b**. В програмирането умножението се извършва с оператора **`*`**.
+### Testing in the Judge System
+Test your solution here:
+[https://judge.softuni.bg/Contests/Practice/Index/926#4](https://judge.softuni.bg/Contests/Practice/Index/926#4).
 
-#### Тестване в Judge системата
+### \* Problem: Square of Stars
+Write a **JavaScript** console program which **receives a whole positive number N** and **prints** a square of N stars on the console, like in the examples below.
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/926#4](https://judge.softuni.bg/Contests/Practice/Index/926#4).
-
-
-### \* Задача: квадрат от звездички
-
-Да се напише **JavaScript** конзолна програма, която **получава цяло положително число N** и **отпечатва** на конзолата **квадрат от N звездички**, като в примерите по-долу.
-
-#### Примерен вход и изход
-
-| Вход  |    Изход   	| Вход  |    Изход   	| Вход  |    Изход   	| 
+### Sample input and output
+| Input  |    Output   	| Input  |    Output   	| Input  |    Output   	| 
 |-----|-----------|-----|-----------|-----|----------|
 |  3  	|<code>\*\*\*</code><br><code>\*&nbsp;\*</code><br><code>\*\*\*</code>|  4  |<code>\*\*\*\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*\*\*\*</code>| 5  	|<code>\*\*\*\*\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*\*\*\*\*</code>|
 
-#### Насоки и подсказки
-
-Правим нова **конзолна JavaScript програма**:
+### Hints and Guidelines
+Create a new **JavaScript console program**:
 
 ![](assets/chapter-1-images/06.Stars-01.png)
 
+Finish the program so that it prints a square made up of stars. You may need to use `for`-loops. Search for additional information on the Internet.
 
-Да се допише програмата по-горе, за да отпечатва квадрат, съставен от звездички. Може да се наложи да се използват **`for`** цикли. Потърсете информация в Интернет.
+**Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, in order to provoke you to **look for information on the Internet**. This is one of the most important skills you have to develop while you're learning programming. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. If you're having difficulties, you can also ask for help in the SoftUni forum: https://softuni.bg/forum.
 
-**Внимание**: тази задача е по-трудна от останалите и нарочно е дадена сега и е обозначена със звездичка, за да ви провокира да потърсите информация в Интернет. Това е едно от най-важните умения, което трябва да развивате докато учите програмирането: **да търсите информация в Интернет**. Това ще правите всеки ден, ако работите като програмисти, така че не се плашете, а се опитайте. Ако имате трудности, можете да потърсите помощ и в СофтУни форума: [https://softuni.bg/forum](https://softuni.bg/forum).
+### Testing in the Judge System
+Test your solution here:
+[https://judge.softuni.bg/Contests/Practice/Index/926#5](https://judge.softuni.bg/Contests/Practice/Index/926#5).
 
-#### Тестване в Judge системата
+## Console, Graphical and Web Applications
+With **console applications**, as you've already noticed, all operations for reading input and printing output are done on the console. The input data is entered on the **console** and then it is read by the application; the console is also used to print the output data after or during the runtime of the program.
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/926#5](https://judge.softuni.bg/Contests/Practice/Index/926#5).
+While a console application **uses the text console**, web applications use a **web-based user interface**. To execute them, two things are needed – a web server and a web browser. The browser plays the main role in the visualization of data and interaction with the user. Web applications are much more pleasant for the user, they look better, and a mouse and touch screen can be used (for tablets and smartphones). Programming stands under all of that, of course. This is why we need to learn how to program and we have already made our first tiny steps toward achieving that.
 
+Graphical (GUI) applications have a **visual user interface**, directly on your computer or mobile device, without a web browser. Graphical applications (also known as desktop applications) **contain one or more graphical windows** where certain **controllers** are located (text fields, buttons, pictures, tables and others), which **allow dialog** with the user to be more intuitive. Similar to them are mobile applications on your smartphone or tablet: we use forms, text fields, buttons and other controls and we manage them with program code. This is why we learn to write code now: **code is everywhere in software development**.
 
-## Конзолни, графични и уеб приложения
+## Exercises: Web Applications
+We will now build a basic **web application** and after that a simple graphical application, in order to have a look at what we will be able to create once we progress with programming and software development. We are not going to examine the techniques and constructions used in much detail. Rather, we are just going to have a peek at the arrangement and functionality of what we've created. After we progress with our knowledge, we will be able to develop bigger and more complex software applications and systems. We hope that the examples given below will **boost your interest**, rather than make you give up.
 
-При **конзолните приложения** (Console Applications), както и сами можете да се досетите, **всички операции** за четене на вход и печатане на изход се **извършват през конзолата**. Там се **въвеждат входните данни**, които се прочитат от приложението, там се **отпечатват и изходните данни** след или по време на изпълнение на програмата.
+## Problem: Web application Numbers Summator'
+Write a **Web application** which **calculates the sum of two numbers**. 
 
-Докато конзолните приложения **ползват текстовата конзола**, уеб приложенията (Web Applications) **използват уеб-базиран потребителски интерфейс**. За да се **постигне тяхното изпълнение** са необходими две неща - **уеб сървър** и **уеб браузър**, като **браузърът** играе главната роля по **визуализация на данните и взаимодействието с потребителя**. Уеб приложенията са много по-приятни за потребителя, изглеждат визуално много по-добре, използват се мишка и докосване с пръст (при таблети и телефони), но зад всичко това стои програмирането. Затова **трябва да се научим да програмираме** и вече направихме първите си съвсем малки стъпки.
+After the numbers are entered in the first text fields, and the button **[Calculate]** is clicked, calculate their sum and display the result in the third text field. For our application we'll use **HTML technology** which in combination with the **JavaScript programming language**, allows for the creation of **web applications and sites**, in the **Visual Studio Code** programming environment.
 
-Графичните (GUI) приложения имат **визуален потребителски интерфейс**, директно върху вашия компютър или мобилно устройство, без да е необходим уеб браузър. Графичните приложения (настолни приложения или, иначе казано, desktop apps) **се състоят от един или повече графични прозореца**, в които се намират определени **контроли** (текстови полета, бутони, картинки, таблици и други), **служещи за диалог** с потребителя по по-интуитивен начин. Подобни са и мобилните приложения във вашия телефон и таблет: ползваме форми, текстови полета, бутони и други контроли и ги управляване чрез програмен код. Нали затова се учим сега да пишем код: **кодът е навсякъде в разработката на софтуер**.
+**HTML** is a descriptive language which is used to declare the content of a website. Without going into too much detail, we'll just mention that **HTML** is based on the use of combinations of **tags** in order to visualize and give **semanticity** to the content. In one of our previous examples we already created an **HTML page** by utilizing the `<script>` tag.
 
-## Упражнения: уеб приложения
-
-Сега предстои да направим едно просто **уеб приложение**, за да можем да надникнем в това, какво ще можем да създаваме като напреднем с програмирането и разработката на софтуер. Няма да разглеждаме детайлите по използваните техники и конструкции из основи, а само ще хвърлим поглед върху подредбата и функционалността на създаденото от нас. След като напреднем със знанията си, ще бъдем способни да правим големи и сложни софтуерни приложения и системи. Надяваме се примерите по-долу **да ви запалят интереса**, а не да ви откажат.
-
-### Задача: web приложение „Суматор за числа“
-
-Да се напише **web приложение**, което **изчислява сумата на две числа**:
-
-При въвеждане на две числа в първите две текстови полета и натискане на бутона [**Calculate**] се изчислява тяхната сума и резултатът се показва в третото текстово поле. За нашето приложение ще използваме **технологията HTML**, която в комбинация с **езикa** за програмиране **JavaScript**, позволява създаване на **web приложения и сайтове**, в среда за разработка **Visual Studio Code**.
-
-**HTML** е описателен език, чрез който се декларира съдържанието и информацията на даден уеб сайт. Без да задълбаваме просто ще споменем, че **HTML** се базира на използването на комбинации от **тагове**, за да визуализира и предаде **семантичност** на дадено съдържание. В един от предходните примери ние вече създадохме **HTML страница**, като тогава използвахме **тагът** **`<script>`**.
-
-Обърнете внимание, че ще създадем **уеб-базирано приложение**. Това е приложение, което е достъпно през уеб браузър, точно както любимата ви уеб поща или новинарски сайт. Уеб приложението ще има сървърна част (back-end), която е написана на езика **JavaScript** и клиентска част (front-end), която е написана на езика **HTML**. Уеб приложението се очаква да изглежда приблизително по следния начин:
+Notice that we'll be creating a **web-based application**. This is an application accessible through a web browser, exactly like your favourite web mail or news site. The web application will have a server side (Back-end), written in **JavaScript** and a client side (front-end), written in **HTML**. The Web application is expected to look similar to the following:
 
 ![](assets/chapter-1-images/07.Sumator-01.png)
 
-За разлика от конзолните приложения, които четат и пишат данните си във вид на текст на конзолата, уеб приложенията имат **уеб базиран потребителски интерфейс**. Уеб приложенията се **зареждат от някакъв Интернет адрес** (URL) чрез стандартен уеб браузър. Потребителите пишат входните данни в страница, визуализирана от уеб браузъра, данните се обработват на уеб сървър и резултатите се показват отново в страницата в уеб браузъра. Както споменахме за нашето уеб приложение ще използваме **HTML и JavaScript**. Други технологии, които ни позволяват създаването на **уеб приложения** са например **технологията ASP.NET MVC**, **технологията PHP** и т.н. Тези технологии улесняват създаването на цялостната архитектура на приложението - както сървърна, така и клиентска част. 
+As opposed to console applications which read and write data in the form of text on the console, Web applications have a **Web-based user interface**. Web applications are **loaded from some Internet address** (URL) through a standard web browser. Users write input data in a page, visualized by the web browser, the data is processed on a web server and the results are shown again on a page in the web browser. As we mentioned we'll be using **HTML and JavaScript** for our web application. Other technologies which support creating **web applications** are the **ASP.NET MVC technology**, **PHP technology** etc. These technologies make creating the general application architecture – the server, as well as the client side, much easier.
 
-Нека пристъпим към реализирането на нашето приложение.
+Let's move on to realizing our web application.
 
-Във VS Code създаваме **нов HTML файл**, който кръщаваме **sumator.html**:
+Create a **new HTML file** in VS Code and name it `sumator.html`.
 
 ![](assets/chapter-1-images/07.Sumator-02.png)
 
-Пишем следния код: 
+Then write the following code:
 
 ![](assets/chapter-1-images/07.Sumator-03.png)
 
+This code **creates one web form containing three text fields and a button**. It's specified that pressing the **[Calculate]** button will call the `calculate` action.
 
-Този код **създава една уеб форма с три текстови полета и един бутон в нея**.  Указано е, че при натискане на бутона [**Calculate**] ще се извика действието **`calculate`**.
-
-Нека разгледаме по - подробно кодът, който току що написахме.
+Let's examine the code we just wrote.
 
 ![](assets/chapter-1-images/07.Sumator-04.png)
 
-На първите 2 реда декларираме, че в момента ще опишем една **HTML страница**, използвайки таговете **`<html>`** и **`<body>`**, който декларира започването на тялото на нашата страница - или нейната основна част, която ще бъде визуализирана. На последните 2 реда имаме съответните **затварящи тагове**, които декларират край на областта. Може да забележете, че се различават от **отварящите тагове** по наклонената черта пред името - например **`</body>`**.
+On the first 2 rows we declare that we're describing an **HTML page**, using the `<html>` and `<body>` tags, the latter declaring the start of our page's body – its main part which will be visualized. Respectively, the last 2 rows represent the corresponding **closing tags**, which declare the end of that particular part of our HTML page. Look more closely and you'll notice they're different from the **opening tags** – they have a forward slash '/' before the tag name - `</body>`, for example.
 
-В тялото на нашата страничка, чрез използването на **HTML тагове** описваме това, което искаме да се визуализира, а именно - 3 полета, в които може да се въвеждат числа. Правим това с тага **`<input type="number">`**. Използвайки този таг ние декларираме, че искаме да имаме визуализация за вход от тип число. Допълнителният **атрибут** - **`id`** служи за да посочим уникалното име на този **таг**. Това име е напълно по наш избор. Атрибутът **`id`** ще ни трябва в последствие, за да можем да получим информация за точно този **HTML елемент**.
+Using HTML tags in our page's body we'll describe what we want visualized on our webpage – three fields where numbers can be entered. This can be achieved with the `<input type ="number">` tag. Using this tag we declare that we want input of type number to be visualized. The additional **attribute** – `id`, serves to let us determine a unique name for this **tag**. What we decide to call it is completely up to us. We'll need the `id` attribute later in order to get hold of information about this particular **HTML element**.
 
-След това на 7-ми ред имаме деклариран още един **`input`** таг, като този път типът му е **`button`**. По този начин указваме, че искаме да имаме елемент, върху който може да се натиска и това да доведе до някакви резултати. 
+Then, on the 7th row we have another `input` tag declared, but this time it's of type `button`. This is how we indicate we want an element which, upon being clicked, produces some result. 
 
-Нека сега разгледаме и **JavaScript кодът**, който написахме: 
+Let's now also look at the **JavaScript code** we wrote:
 
 ![](assets/chapter-1-images/07.Sumator-05.png)
 
-Първо **декларираме функция** **`calculate()`**, която прочита информацията от първите две текстови полета (от нашата HTML страница), след което изчислява сумата и я **присвоява** като стойност на третото поле. Функцията продължава от 9-ти до 17-ти ред. Какво представляват **функциите**, как се **декларират** и **извикват**, ще научим малко по-късно в тази книга.
+First we **declare the `calculate()` function** which reads the information from our first two text fields (from our HTML page), then calculates their sum and **assigns** it as the third field's value. The function spans from the 9th to the 17th row. We'll learn what functions are, how they're declared and called, in this book's following chapters.
 
-Нека разгледаме по-детайлно **тялото на функцията**. На 10-ти ред **декларираме променливата** **`firstNumber`**, като ѝ **присвояваме** стойността на текстовото поле с **`id=firstNumber`**. Функцията **`parseInt(...)`** ни подсигурява, че въведеният текст ще бъде конвертиран до число. След това, по аналогичен начин получаваме стойността на второто текстово поле (с **`id=secondNumber`**). Накрая използвайки същия механизъм, вместо да **вземаме стойността** на третото поле с **`id=result`**, ние му **присвояваме** стойност, като го поставяме от лявата страна на равенството.
+Looking more closely at the **function's body**, we observe that on the 10th row the **variable `firstNumber` is declared** and then the value of the text field with `id=firstNumber` is assigned to it. The `parseInt(…)` function makes sure that the text that's been entered will be converted to a number. Then in a similar fashion we get the value of our second text field (with `id=secondNumber`). Finally, using the same mechanism, instead of obtaining the value of the third field with `id=result`, we **assign** a value to it by placing it on the left side of the equation.
 
-След това, на 19-ти и 20-ти ред достъпваме нашият бутон и му казваме да **слуша** за **`click`** събития върху него и когато се получи такова събитие, да се **изпълни** функцията **`calculate()`**, която **декларирахме** преди малко. С други думи казано, когато кликнем с мишката върху нашият бутон, ще се изпълни функцията **`calculate()`**.
+Then on the 19th and 20th row we access our button and tell it to **listen** for `click` events which, when received, will trigger the function `calculate()` we just **declared**. In other words, when we use our mouse to click the button, the `calculate()` function will execute.
+The application is ready. We can start it by finding its location and opening it. It will load inside the browser by default. 
 
-Приложението е готово. Можем да го стартираме като намерим файлът във файловата система и го отворим. Той ще се зареди в браузърa ни по подразбиране.
+Does this seem frightening? **There's no need to be scared!** We have a lot more to learn, to reach the level of knowledge and skills required to write web-based applications with ease like in the example above, as well as much bigger and more complex applications. If it all makes little sense, just keep going without worrying. In time, you will remember with a smile how incomprehensible and exciting your first collision with web programming was. If you're having issues with the example above, **watch the video** at the beginning of this chapter – the application is created step by step and explained in great detail. You can also ask for assistance in the **SoftUni forum: https://forum.softuni.org**.
 
-Страшно ли изглежда? **Не се плашете!** Имаме да учим още много, за да достигнем ниво на знания и умения, за да пишем свободно уеб-базирани приложения, като в примера по-горе и много по-големи и по-сложни. Ако не успеете да се справите, няма страшно, продължете спокойно напред. След време ще си спомняте с усмивка колко непонятен и вълнуващ е бил първият ви сблъсък с уеб програмирането. Ако имате проблеми с примера по-горе, **гледайте видеото** в началото на тази глава. Там приложението е направено на живо стъпка по стъпка с много обяснения. Или питайте във **форума на СофтУни**: https://softuni.bg/forum.
-
-Целта на горният пример (уеб приложение) не е да се научите, а да докоснете по-надълбоко програмирането, **да разпалите интереса си** към разработката на софтуер и да се вдъхновите да учите здраво. **Имате да учите още много**, но пък е интересно, нали?
+The purpose of the example above (web application) is not to teach you, but to allow you to dive a little deeper into programming, **to fuel your interest** towards software development and to inspire you to study hard. **You have a lot more to learn**, but it is interesting, isn't it?
