@@ -1,6 +1,7 @@
 # Chapter 1. First Steps in Programming
 
 In this chapter we are going to find out **what programming** is at its core. We will get familiar with the idea of programming languages and explore the **environments for software development** (Integrated Development Environment – IDEs); we'll see how to work with them, in particular with **Visual Studio Code**. We will write and execute our **first program** written in the programming language **JavaScript** and then we'll exercise on a few tasks: we will create a console-based program and a Web application. We will learn how use **SoftUni's Judge System** to check the correctness of our solutions to the problems in this book. Finally, we'll look at some typical mistakes made during code writing and we'll learn how to avoid them.
+
 ## Video
 
 <div class="video-player">
@@ -9,17 +10,21 @@ In this chapter we are going to find out **what programming** is at its core. We
   https://www.youtube.com/watch?v=0YkrJsKwHdM</a>.
 </div>
 
-## What does 'To Program' mean?
+## What does "To Program" Mean?
+
 To program means to give instructions to the computer, for example *play a certain sound*, *print something on the screen* or *multiply two numbers*. When there's a series of commands, we have a computer program (script). The computer program's text is called **program code** (**source code** or just **code**).
 
-## Computer programs
+## Computer Programs
+
 **Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go etc. In order to write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **JavaScript**. In this book we'll cover programming in general, as well as JavaScript's particular syntax and semantics. We'll examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
 
 ### Algorithms
+
 Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a certain recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they're cooked, and finally move the pan away from the heat.  Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a certain task. If we want to print a series of numbers in ascending order, for example, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
 To make creating programs, writing program code (commands), executing it and other operations that have to do with programming more convenient, we need a **development environment** (IDE) like Visual Studio Code.
 
-### Programming languages, compilers, interpreters and development environments
+### Programming Languages, Compilers, Interpreters and Development Environments
+
 **Programming languages** are an artificial languages (syntax for expression), designed to **issue commands** which we expect the computer to read, process and execute. With the help of programming languages we write series of commands (**programs**) which **tell the computer what to do**. Execution of computer programs can be achieved by using either a **compiler** or an **interpreter**.
 
 **The compiler** translates code from a programming language into **machine code** and for each construct (command) in the code, it chooses an appropriate, predefined fragment of machine code while simultaneously checking the program's text for **errors**. Together, all the compiled fragments represent the original program translated in machine code, exactly how the computer's microprocessor is expecting it. After it's been complied, the program can be directly executed by the microprocessor in cooperation with the operation system. Compiled programming languages **compile the program** before executing it and find syntactic errors (incorrect commands) during compile time. Languages like C++, C#, Java, Swift and Go work with compilers.
@@ -36,6 +41,7 @@ Programming with **JavaScript** is usually done in the development environment *
 Alternatives to Visual Studio Code are **WebStorm** (https://www.jetbrains.com/webstorm/), **Atom** (https://atom.io/) and others. In this book we'll be using the development environment **Visual Studio Code**.
 
 ### Low-Level, High-Level Languages and Runtime Environments
+
 A program is, in essence, a **set of instructions** that ask the computer to carry out certain tasks. They are entered by the programmer and **executed unconditionally by the machine**.
 
 There are different types of **programming languages**. **Lowest-level** languages can be used to write the very **instructions commanding the processor** - **Assembler** is one such language. Higher-level languages can be utilized to create an operating system, drivers for managing hardware (video card drivers, for example), web browsers, compilers, engines for game graphics (game engines) and other system components and programs. Even higher-level languages like **JavaScript**, **C#** and **Python** are used to create application software, like programs for reading mail or chatting.
@@ -54,14 +60,14 @@ You'll often hear that a certain piece of code is run on the **client side**, wh
 
 The other popular **JavaScript interpreter** is **NodeJS**. You can imagine it's like an application you install on your computer which enables it to understand JavaScript the same way your browser does. That way you can execute **JavaScript** code directly on your computer, without the need for a browser. As we just mentioned, servers are just more powerful computers. They start understanding **JavaScript** in the same way your computer does – by having **NodeJS** installed. You can install **NodeJS** from their official website [https://nodejs.org](https://nodejs.org) completely free of charge, by simply following the instructions. 
 
-## Computer Programs - execution
+## Computer Programs - Execution
 As we already mentioned, a program is a **series of commands**, in other words, it describes a series of calculations, checks, iterations and numerous other operations, which aim at producing a result.
 The program is written in text format and the text is called **source code**. It's saved in a file with extension **.js** (**main.js**, for instance), and then it can be executed on your **browser** or on the **console** with the help of **NodeJS**. In a moment we'll have a look at both options.
 
-### Computer programs – examples
+### Computer programs – Examples
 Let's start with a very basic example of a short **JavaScript program** which we'll run directly in your web browser (it supports JS without the need to install additional software).
 
-#### Example: a program which notifies the user
+#### Example: a Program, Which Notifies the User
 Our first program will consist of a single **JavaScript command**, which notifies the user they've won 1 000 000 dollars, as is often the case, when you're browsing through a website with a lot of spam and adverts:
 ```javascript
 alert("Congratulations!!! You have just won $1 000 000!");
@@ -75,7 +81,7 @@ The result is something like this: a **modal popup message** in your browser:
 
 ![](/assets/js-alert-modal-popop.png)
 
-#### Example: a program which spams the user with notifications
+#### Example: a Program, Which Spams the User with Notifications
 We can increase the previous program's complexity by creating numerous command which repeat in sequence and notify the user they've won the lottery:
 ```javascript
 for (i = 0; i < 10; i += 1) {
@@ -86,7 +92,7 @@ In the example above we make the computer display notifications one after anothe
 ![](/assets/js-alert-10-times-loop.png)
 We will learn how iterations (loops) in programming work in chapter "[Loops](chapter-05-loops.md)", but for now, let's assume that they just repeat a command many times.
 
-#### Example: program which converts Bulgarian levs into euro
+#### Example: Program, Which Converts Bulgarian Levs into Euro
 Let's have a look at another simple program which asks the user for an amount of money in levs (whole number), makes sure that what's been entered is a number, converts it in euro (by dividing it by the euro exchange rate) and prints the result. This is a program of 3 consecutive commands. 
 ```javascript
 let myMoney = prompt("How much money do you want to convert:");
@@ -101,7 +107,7 @@ If we run this program in the browser's JavaScript console, we'll receive someth
 
 We looked at **three examples of computer programs**: single command, series of commands in a loop and a sequence of four commands. Let's now move on to the more exciting bit: writing our own programs in **JavaScript** and executing them outside the browser.
 
-## How do we write a console program?
+## How do we Write a Console Program?
 Let's go through the **steps for creating and executing a computer program** which uses a text console (window for entering and receiving text) to read and write its data. Such programs are known as **console-based**. Before we do that though, we need to **install and set up our development environment**, where we'll write and execute the **JavaScript** programs from this book and the exercises that go along with it.
 
 ## Development Environment (IDE)
@@ -141,7 +147,7 @@ They can be installed either via the given links, or by going through the follow
 
 That's it. We're ready to start working with **Visual Studio Code** and **JavaScript**.
 
- ### Online development environments
+ ### Online Development Environments
 There are also **alternative environments to develop online**, directly in your web browser. They aren't very easy to use but if you have no other option, you can start your education with them and install **Visual Studio Code** later. Such a site for online JavaScript development is **JSBin** - [https://jsbin.com/?js,console](https://jsbin.com/?js,console).
 
 ![](/assets/jsbin-example.png)
@@ -151,7 +157,7 @@ code. Here's an example:
 
 ![](/assets/js-console-f12.png)
 
-## Example: creating a console application 'Hello JavaScript'
+## Example: Creating a Console Application 'Hello JavaScript'
 Let's go back to our console program. We already have Visual Studio Code and we can start it. Then create a new **JavaScript file**: [**File**] &rarr; [**New File**]:
 
 ![](assets/chapter-1-images/00.Visual-studio-05.png)
@@ -189,7 +195,7 @@ Hello JavaScript!
 
 The "**Debugging with inspector protocol . . .**" and  **Debugger listening on...** messages are displayed as additional information at the very top of Visual Studio Code's console after the program starts executing. This gives us additional information about the execution which, for the time being, we will ignore. 
 
-### Testing our program in the Judge system
+### Testing Our Program in the Judge System
 Testing the solutions to the problems in this book is completely automated via the **Judge System's website**: [https://judge.softuni.bg](https://judge.softuni.bg). The solutions are judged in real time by the system. Each solution goes through a series of tests which are hidden; every test that passes grants the user certain points.
 
 The program we just wrote can be tested here: [https://judge.softuni.bg/Contests/Practice/Index/926#0](https://judge.softuni.bg/Contests/Practice/Index/926#0).
@@ -221,10 +227,10 @@ In that table, the Judge System will display one of the following **possible res
   -	If our solution is **incorrect**, some tests are marked in red and we receive **less than 100** or **0 points**.
 *	If there are syntactic errors in our program, we receive a **compile time error message**.
 
-### How do I register at SoftUni Judge?
+### How do I Register at SoftUni Judge?
 Just use your id (Username + Password) from the site [softuni.bg](softuni.bg). If you haven't yet registered, go right ahead – it will take no more than a minute since it's just a standard website registration.
 
-## Executing code in a browser using HTML + JS
+## Executing Code in the Browser using HTML + JS
 So far we've seen how to make and execute a console program. Let's now look at how we can write code, which runs in our browser. All the websites you visit are created in a very similar fashion.
 
 Actually the principle is very similar to what we just did. The only difference is that when creating a new file, we use the **.html** extension instead of **.js**. All that's left is to enclose our code with a opening `<script>` and closing `</script>` **html** tag. We enclosed our code in much the same way when submitting our code in the Judge System. Here's what our code in **Visual Studio Code** should now look like:
@@ -237,7 +243,7 @@ With this approach, now we just need to find the **helloJS.html** file in the lo
 
 Now that you've **learned how to execute programs**, you can test the sample notification programs you have above. Have fun with them, try out different things. Try changing them and playing with them. Swap the `console.log("Hello JavaScript");`** command for `console.error("Error occured");`** and start your program. Note that notification programs can only be executed in our browser and when we try running them from the console, we receive an error. This is due to the fact that the console doesn't support notification via visual elements, like `alert`.
 
-## Typical mistakes in JavaScript programs
+## Typical Mistakes in JavaScript Programs
 One of the usual mistakes beginners make is mixing up **capital and lowercase letters**. However, they matter when we call commands and can impede proper functioning. Here's an example of such a mistake:
 ```javascript
 function solve() {
@@ -257,7 +263,7 @@ This program will return an **error after it's started executing** and even prio
 
 ![](assets/chapter-1-images/01.Hello-js-07.png)
 
-## What did we learn in this chapter?
+## What Did We Learn in This Capter?
 First of all, we learned **what programming is – issuing commands written in a programming language** which the machine can understand and carry out. We also found out what a **computer program** is – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **JavaScript programming language** and learned how to create **simple console and web programs using Visual Studio Code**. Then we examined JavaScript's program code structure. We looked at printing on the console with the function `console.log()` and starting the program with **[F5]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
 
 Top work! Let's now tackle the **exercises**. You do remember that learning how to program involves a lot of code writing and problem-solving, right? Let's do just that and put what we've learned into practice.
@@ -265,7 +271,7 @@ Top work! Let's now tackle the **exercises**. You do remember that learning how 
 ## First Steps in Programming – Exercises
 Welcome to the exercises. We are now going to write a few console applications, which will help us make a few more steps into programming. Then we will show you how to program something more complex – programs with graphical and web user interface.
 
-### Problem: console-based program 'Expression'
+### Problem: Console-based Program 'Expression'
 Write a console-based **JavaScript** program that **calculates** and **prints** the value of the following numerical expression:
 
 <p align="center"> (3522 + 52353) * 23 - (2336 * 501 + 23432 - 6743) * 3 </p>
