@@ -1,10 +1,10 @@
 # Глава 4.1. По-сложни проверки
 
-В **настоящата** глава ще разгледаме **вложените проверки** в езика **JavaScript**, чрез които нашата програма може да изпълнява **условни конструкции**, в които има **вложени други условни конструкции**. Наричаме ги **"вложени"**, защото **поставяме `if` конструкция** в **друга `if` конструкция**. Ще разгледаме и как да използваме **по-сложни логически условия** с подходящи примери.
+In the **current** chapter, we are going to examine **nested conditional statements** in the **JavaScript** language, by which our program can execute **conditions**, that contain other **nested conditional statements**. We call them **"nested"**, because **we put `if` condition** into **another `if` condition**. We are going to examine the **more complex  logical conditions** through proper examples.
 
-## Видео
+## Video
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank"
+  Watch this video lesson to see what you will learn in this chapter: <a target="_blank"
   href="https://youtube.com/watch?v=JRLA_zpQfpQ">
   https://www.youtube.com/watch?v=JRLA_zpQfpQ</a>.
 </div>
