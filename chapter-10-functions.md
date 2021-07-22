@@ -46,33 +46,35 @@ With the next example, we will take a look at  the required elements inside a fu
 
 ![](assets/chapter-10-images/02.Declaring-methods-02.png)
 
-* **Ключовата думичка function**. Започваме с използването на **ключовата думичка** ***function***, чрез която заявяваме, че предстои декларация на функция. Наричаме я ключова, защото тя е запазена в езика JavaScript или с други думи казано - не можем да имаме променлива, която да именуваме по този начин.
-* **Име на функцията**. Името на функцията е **определено от нас**, като не забравяме, че трябва да **описва задачата**, която се изпълнявана от кода в тялото на функцията. В примера името е **`getSquare`**, което ни указва, че задачата на тази функция е да изчисли лицето на квадрат.
-* **Списък с параметри**. Декларира се между скобите **`(`** и **`)`**, които изписваме след името му. Тук изброяваме поредицата от **параметри**, които функцията ще използва. Може да присъства **само един** параметър, **няколко** такива или да е **празен** списък. Ако няма параметри, то ще запишем само скобите **`()`**. В конкретния пример декларираме параметъра **`n`**.
-* **Тяло на функцията**. Декларира се между скобите **`{`** и **`}`**, които изписваме веднага след затварящата **`)`**. В **тялото на функцията** описваме **чрез код** всички операции, които искаме функцията да извърши. В тялото на функцията описваме **алгоритъма**, по който функцията решава даден проблем. Реализираме **логиката** на функцията. В показания пример изчисляваме лицето на квадрат, а именно **`n * n`**. 
+* **Keyword function**. We start by using the keyword ***function***, with which we define that there will be declared a function. We name it **keyword** because it is reserved in the Javascript language. We can't have a variable that is named **function** exactly because it is reserved.
+* **Name of the function**.  The name of the function is **defined by us** and we must never forget that it must **define the task** it is doing. In the example, the name **`getSquare`** tells us that the task of this function is to find the area of the square.
+* **List of parameters**. We declare them between the brackets  **`(`** and **`)`**, which we type after the name of the function. Here we list a series of **parameters**, which the function will use. We can have **only one** parameter, **more than one** parameter or we can leave it empty. If there are no parameters we will only type the brackets **`()`**. In the current example, the parameter is only the **`n`**.
+* **Body of the function**. It is declared between the brackets **`{`** and **`}`** which we type after the closing bracket **`)`**. In the **body of the function**, we define **using code**
+all operations, that we want our function to do. In the body of the function, we describe the **algorithm** by which the function solves the given problem. We achieve the **logic** of the function. In the current example, we calculate the area of the square using **`n * n`**.
 
-При деклариране на функции е важно да спазваме **последователността** на основните елементи - първо **ключовата думичка function**, след това **име на функцията**, **списък от параметри**, ограден с кръгли скоби **`()`** и накрая **тяло на функцията**, оградено с фигурни скоби **`{}`**.
+When declaring functions it is important to follow the **sequence** of the fundamental elements - first **Keyword function** then **Name of function**, **List of parameters** surrounded by round brackets **`()`**, **Body of the function** surrounded by curly brackets **`{}`**.
 
-### Експресивно (function expression)
+### Function expression
 
-Със следващия пример ще разгледаме задължителните елементи в декларацията на една функция **експресивно (function expression)**. То доста наподобява **декларативното**, което вече разгледахме и може да се каже, че е **комбинация** от **деклариране на променлива** и **деклариране на функция декларативно (function declaration)**.
+With the next example, we will look at the required elements in the declaration of an **expression function**. It is similar to **function declaration** which we have already viewed and it can be said that it's a **combination** of **declaring a variable** and **declaring a declaration function**.
 
 ![](assets/chapter-10-images/02.Declaring-methods-03.png)
 
-* **Ключовата думичка `let`**. Започваме с използването на **ключовата думичка** **`let`**, чрез която заявяваме, че предстои декларация на променлива.
-* **Име на променливата**. Името на променливата е **определено от нас**. В примера името е **`getSquare`**, което ни указва, че задачата на тази функция е да изчисли лицето на квадрат.
-* **Декларация на функция**. Използвайки същата структура, която вече научихме при **function declaration** - първо **ключовата думичка function**, след това **име на функцията**, **списък от параметри**, ограден с кръгли скоби **`()`** и накрая **тяло на функцията**, оградено с фигурни скоби **`{}`**. Особеното в случая е, че **името на функцията** не е задължителен елемент, но е препоръчително да свикнете да го добавяте. В примерът програмата ще работи без проблеми, дори и да пропуснем да изпишем името **`getSquareFunc`**. Ако пропуснем името, функцията се нарича **анонимна**.
+* **Keyword `let`**. We will start with using the **keyword `let`**, with which we will declare a declaration of a variable.
+* **Name of the variable**. The name of the variable is **decided by us**. In the example, the name is **`getSquare`** which tells us that the task of this function is to calculate the area of the square.
+* **Declaration of a function**. Using the same structure that we have learned in **function declaration** -  first **Keyword function** then **Name of function**, **List of parameters** surrounded by round brackets **`()`**, **Body of the function** surrounded by curly brackets **`{}`**. The difference, in this case, is that **Name of function** is not necessary, but it is recommended to get used to writing the name. In the example, the program will work without problems even if we don't type **`getSquareFunc`**. If we don't type the name, the function will become **anonymous**.
 
-Когато декларираме дадена променлива в тялото на една функция (чрез ключовата думичка **`let`** или **`const`**), я наричаме **локална** променлива за функцията. Областта, в която съществува и може да бъде използвана тази променлива, започва от реда, на който сме я декларирали и стига до затварящата къдрава скоба `}` на тялото на функцията. Тази област се нарича **област на видимост** на променливата (variable scope). 
+When we declare a variable in the body of a function (using the keyword **`let`** or **`const`**)
+we call it **local** variable for the function. The scope in which it exists and can be used is from the row it is defined to the end of the closing bracket **`}`** of the function. That scope is called **variable scope**.
 
-### Декларативно или експресивно
+### Function declaration or Function expression
 
-Разликата между деклариране на функция чрез **декларация** или **експресия** е сравнително проста. Всички функции, декларирани чрез **function declaration**, се зареждат в паметта на програмата преди да започне нейното изпълнение, докато програмата разбира за функции, декларирани с **function expression** едва когато започне да се изпълнява и стигне до реда, на който е декларирана функцията. 
+The difference between **Function declaration** and **Function expression** is very simple.
+All functions declared by **function declaration** are loaded in the memory of the program before it is started, while when using **function expression** the program will know and run the function only when it has come to it.
 
-На практика това означава, че можете да **извикате функция**, декларирана с **function declaration** дори и в някои от предните редове - преди нейната декларация, докато ако опитате да направите това с **function expression**, програмата ще ви **даде грешка**, че не разпознава тази функция по време на изпълнението.
+In theory, this means that we can **call function** declared with **function declaration** even before it was declared in the previous rows. If we try to use **function expression** the program will **throw an error** that the function is not declared yet.
 
-## Извикване на функции
-
+## Calling a function
 Извикването на функции представлява **стартирането на изпълнението на кода**, който се намира в **тялото на функцията**. Това става като изпишем **името** на функцията, последвано от кръглите скоби **`()`** и знака **`;`** за край на реда. Ето един пример:
 
 ![](assets/chapter-10-images/03.Invoking-methods-01.png)
