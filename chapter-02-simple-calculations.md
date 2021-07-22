@@ -101,7 +101,7 @@ function calculateSquareArea([a]) {
 }
 ```
 
-Горният код ще работи коректно, защото при умножението променливата `a` ще се преобразува към число. Когато входът е само едно единствено число, може да се пропуснат и скобите `[]`, ето така:
+The above code will work correctly, because when multiplied, the variable `a` will be converted to a number. When the input is only a single number, the parentheses `[]` can also be skipped, like this:
 
 ```js
 function calculateSquareArea(a) {
@@ -110,7 +110,7 @@ function calculateSquareArea(a) {
 }
 ```
 
-Кодът може да бъде съкратен дори още, ето така:
+The code can be compact even more, like this:
 
 ```js
 function calculateSquareArea(a) {
@@ -122,9 +122,9 @@ function calculateSquareArea(a) {
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0). Try all four solutions of the problem.
 
-## Четене на дробно число
+## Reading Floating Point Numbers
 
-За да прочетем потребителски вход под формата на **дробно число**, отново е необходимо да **дефинираме аргумент** на нашата функция. Синтаксисът е подобен както при четене на цяло число, само че тук трябва да използваме функцията **`parseFloat(...)`**:
+To read user input as **floating-point number** it's necessary again to **define an argument** to our function. The syntax is similar to reading an integer, but here we have to use the function **`parseFloat(...)`**:
 
 ```javascript
 function sum([arg1, arg2]) {
@@ -134,9 +134,9 @@ function sum([arg1, arg2]) {
 }
 ```
 
-### Пример: прехвърляне от инчове в сантиметри
+### Example: Converting Inches into Centimeters
 
-Да напишем функция, която чете дробно число в инчове и го обръща в сантиметри:
+Let's write a function that reads a floating-point number in inches and converts it to centimeters::
 
 ```javascript
 function convertInchesToCentimeters([arg1]) {
@@ -146,18 +146,18 @@ function convertInchesToCentimeters([arg1]) {
 }
 ```
 
-Нека извикаме функцията и да се уверим, че при подаване на стойност в инчове, получаваме коректен резултат в сантиметри:
+Let's call the function and make sure that when passing a value in inches, we get a correct result in centimeters:
 
 ```javascript
 convertInchesToCentimeters([5]); // Centimeters = 12.7
 ```
 
-#### Тестване в Judge системата
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#1](https://judge.softuni.bg/Contests/Practice/Index/927#1).
+#### Testing in the Judge System
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#1](https://judge.softuni.bg/Contests/Practice/Index/927#1).
 
-## Четене на вход под формата на текст
+## Reading a Text Input
 
-Както при останалите типове данни, за да прочетем **текст**, е необходимо да **дефинираме аргумент** на нашата функция, след което да го присвоим на променлива:
+Same with other data types, to read a **string** it's necessary to **define an argument** to our function and after that to assign it to a variable:
 
 ```javascript
 function print([arg1]) {
@@ -166,9 +166,9 @@ function print([arg1]) {
 }
 ```
 
-### Пример: поздрав по име
+### Example: Greeting by Name
 
-Да напишем функция, която въвежда името на потребителя и го поздравява с текста "**Hello, (име)**".
+Let's write a program that asks the user for their name and salutes them with the text "**Hello, (име)**".
 
 ```javascript  
 function sayHello([arg1]) {
@@ -177,68 +177,66 @@ function sayHello([arg1]) {
 }
 ```
 
-В този случай, изразът **`${name}`** ще бъде заместен със **стойността на променливата `name`**. Ето и резултата, ако извикаме функцията с името "Иван":
+In this case the expression **`${name}`** will be replaced with **the value of the variable `name`**. If we call the function with the name "Ivan", that will be the result:
 
 ```javascript  
-sayHello(['Иван']); // Hello, Иван!
+sayHello(['Ivan']); // Hello, Ivan!
 ```
 
-#### Тестване в Judge системата
+#### Testing in Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#2](https://judge.softuni.bg/Contests/Practice/Index/927#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#2](https://judge.softuni.bg/Contests/Practice/Index/927#2).
 
 
-## Съединяване на текст и числа
+## Concatenating Text and Numbers
 
-При печат на текст, числа и други данни, **можем да ги съединим**, като използваме шаблони **``` `variable = ${variable}` ```**. В програмирането тези шаблони се наричат **placeholders**. Обърнете внимание, че за да бъде разпознат шаблонът, трябва да използваме наклонени апострофи <code><strong>`</strong></code> (**backticks**), вместо обикновени кавички:
+When printing text, numbers and other data **we can concatenate them** by using templates **``` `variable = ${variable}` ```**. In programming these templates are called **placeholders**. Pay attention: We need to use italicized apostrophes <code><strong>`</strong></code> (**backticks**) instead of normal quotes to recognize the template:
 
 ```javascript
 function printInfo([firstName, lastName, age, town]) {
     console.log(`You are ${firstName} ${lastName}, a ${age}-years old person from ${town}.`);
 }
 ```
-
-Отново извикваме функцията с тестови параметри и се уверяваме, че работи:
+We call the function with test parameters again and make sure that it works:
 
 ```javascript
 printInfo(['Ivan', 'Ivanov', 20, 'Sofia']);
 ```
+Except variables, we can make simple calculations in the templates.
 
-Освен променливи, в шаблоните можем да правим и прости изчисления.
-
-Възможно е една и съща променлива да бъде използвана като шаблон повече от веднъж. Ето пример:
+It's possible the same variable to be used as a template more than once.Here's an example:
 
 ```javascript
 let a = 1;
 console.log(`${a} + ${a} = ${a + a}`);
 ```
-Резултатът е:
+The result is:
 ```
 1 + 1 = 2
 ```
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#3](https://judge.softuni.bg/Contests/Practice/Index/927#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#3](https://judge.softuni.bg/Contests/Practice/Index/927#3).
 
 
-## Аритметични операции
+## Aritmetic Operations
 
-Да разгледаме базовите аритметични операции в програмирането.
+Let's examine the basic arithmetic operations in programming.
 
-### Събиране на числа (оператор **`+`**)
+### Summing Numbers (operator **`+`**)
 
-Можем да събираме числа с оператора **`+`**:
+We can sum numbers using the operator **`+`**:
 
 ```javascript
 let a = 5;
 let b = 7;
-let sum = a + b; // резултатът е 12
+let sum = a + b; // the result is 12
 ```
 
-### Изваждане на числа (оператор **`-`**)
+### Subtracting Numbers (operator **`-`**)
 
-Изваждането на числа се извършва с оператора **`-`**:
+Subtracting numbers is done using the **`-`** operator:
 
 ```javascript
 function substractNumbers([arg1, arg2]) {
@@ -249,14 +247,14 @@ function substractNumbers([arg1, arg2]) {
 }
 ```
 
-Нека проверим резултатa от изпълнението на функцията (при числа 10 и 3):
+Let we check the result of the execution of this program (with numbers 10 and 3):
 ```javascript
 substractNumbers([10, 3]); // 7
 ```
 
-### Умножение на числа (оператор **`*`**)
+### Multiplying Numbers (operator **`*`**)
 
-Умножението на числа се извършва с оператора **`*`**:
+For multiplication of numbers we use the **`*`** operator:
 
 ```javascript
 let a = 5;
@@ -264,26 +262,26 @@ let b = 7;
 let product = a * b; // 35
 ```
 
-### Деление на числа (оператор **`/`**)
+### Dividing Numbers (operator **`/`**)
 
-Делението на числа се извършва с оператора **`/`**. 
+Dividing numbers is done using the **`/`** operator. 
 
-**Забележка:** Дробното **деление на 0** не предизвиква грешка, а резултатът е **+/- безкрайност** или специалната стойност **Infinity**.
+**Note:** Float numbers **divided by 0** do not cause an exception and the result is **+/- infinity** or the special value **Infinity**.
 
-Ето няколко примера за използване на оператора за делене:
+Here are a few examples with the division operator:
 
 ```javascript
-console.log(10 / 2.5); // Резултат: 4
-console.log(10 / 4);   // Резултат: 2.5
-console.log(10 / 6);   // Резултат: 1.6666666666666667
+console.log(10 / 2.5); // Result: 4
+console.log(10 / 4);   // Result: 2.5
+console.log(10 / 6);   // Result: 1.6666666666666667
 
-console.log(a / 0);   // Резултат: Infinity
-console.log(-a / 0);  // Резултат: -Infinity
-console.log(0 / 0);   // Резултат: NaN (Not a Number), т.е. резултатът
-                      // от операцията не е валидна числена стойност
+console.log(a / 0);   // Result: Infinity
+console.log(-a / 0);  // Result: -Infinity
+console.log(0 / 0);   // Result: NaN (Not a Number), i.e. the result
+                      // The operation  hasn't a valid numeric value
 ```
 
-## Съединяване на текст и число
+## Concatenating Text and Numbers
 
 Операторът **`+`**, освен за събиране на числа, служи и за съединяване на текст (долепяне на два символни низа един след друг). В програмирането съединяване на текст с текст или с число наричаме "**конкатенация**". Ето как можем да съединяваме текст и число с оператора **`+`**:
 
