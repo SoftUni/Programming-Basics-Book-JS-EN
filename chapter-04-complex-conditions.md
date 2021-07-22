@@ -1,4 +1,4 @@
-# Глава 4.1. По-сложни проверки
+# Chapter 4.1. More Complex Conditions
 
 In the **current** chapter, we are going to examine **nested conditional statements** in the **JavaScript** language, by which our program can execute **conditions**, that contain other **nested conditional statements**. We call them **"nested"**, because **we put `if` condition** into **another `if` condition**. We are going to examine the **more complex  logical conditions** through proper examples.
 
