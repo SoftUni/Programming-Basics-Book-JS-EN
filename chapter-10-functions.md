@@ -1,48 +1,48 @@
-# Глава 10. Функции
+# Chapter 10. Functions
 
-**JavaScript**  е известен като **функционален език** за програмиране. Самото наименование подсказва, че **функциите** са изключително важна част от езика.  
+**JavaScript** is a well-known **functional language** for programming. As the name hints, **functions** are an extremely important part of the language. 
 
-В настоящата глава ще се запознаем с **функциите** и ще научим какво **представляват** те, както и кои са **базовите концепции** при работа с тях. Ще научим защо е **добра практика** да ги използваме, как да ги **декларираме** и **извикваме**. Ще се запознаем с **параметри** и **връщана стойност от функция**, както и как да използваме тази връщана стойност. Накрая на главата, ще разгледаме **утвърдените практики** при използване на функциите.
+In this chapter, we will introduce you to **functions** and you will learn their **definition**, as well as what their **base concepts** are while working with them. You will learn why it's **good practice** to use them, how to **define** and **declare** them. We will also introduce you to the **parameters** and **return value of a function**, as well as how to use that return value. In the end, we will peek at **best practices** when using functions.
 
-## Какво е "функция"?
+## What is "function"?
 
-До момента установихме, че при **писане** на код на програма, която решава дадена задача, ни **улеснява** това, че **разделяме** задачата на **части**. Всяка част отговаря за **дадено действие** и по този начин не само ни е **по-лесно** да решим задачата, но и значително се подобрява както **четимостта** на кода, така и проследяването за грешки.
+Until this moment, we have found out that while **writing** a programming code for an exercise, **separating** the exercise into **parts**, favors  us a lot. Every part is responsible for a **corresponding action** and by doing so it's **easier** to solve the problem, and the **readability** and the debugging of the code are better.
 
-Всяко едно парче код, което изпълнява дадена функционалност и което сме отделили логически се нарича **функция**. Точно това представляват **функциите – парчета код, които са именувани** от нас по определен начин и които могат да бъдат **извикани** толкова пъти, колкото имаме нужда и ще бъдат изпълнени съответния брой пъти.
+Every piece of code, which does corresponding functionality and which we have separated logically is called **function**. **Functions – slices of code, that are named** by us in a specific way can be called numerous times when we need them, and they will be run that many times as we want to.
 
-Една **функция** може да бъде **извиканa** толкова пъти, колкото ние преценим, че ни е нужно за решаване на даден проблем. Това ни **спестява** повторението на един и същи код няколко пъти, както и **намалява** възможността да пропуснем грешка при евентуална корекция на въпросния код.
+One **function** can be **called** that many times, that we think is needed for solving a problem. That **saves** us from repeating the same code and **reduces** the opportunities of making a mistake while editing the repeated code. 
 
-### Прости функции
+### Simple functions
 
-**Простите** функции отговарят за изпълнението на дадено **действие**, което **спомага** за решаване на определен проблем. Такива действия могат да бъдат разпечатване на даден низ на конзолата, извършване на някаква проверка, изпълнение на цикъл и други.
+Simple functions are responsible for running a specific **action**, that will **help** us solve a problem. Those actions can be printing a string on the console, doing a conditional statement, doing a loop, etc.
 
-Нека разгледаме следния **пример за проста функция**:
+Let's see an **example of a simple function**:
 
 ![](assets/chapter-10-images/01.Simple-method-01.png)
 
-Тази **функция** има задачата да отпечата заглавие, което представлява поредица от символа **`-`**. Поради тази причина името ѝ е **`printHeader`**. Кръглите скоби **`( `** и **`)` винаги** следват името, независимо как сме именували функцията. По-късно ще разгледаме как трябва да именуваме функциите, с които работим, а за момента ще отбележим само, че е важно **името на функцията да описва действието**, което тя извършва.
+This **function** has the task to print a header, that is a series of the symbol **`-`**. Because of this, the name of the function is **`printHeader`**. The round brackets  **`( `** and **`)`** are always after the name, no matter how we have named the functions. Later we will take a look at how we have to name the functions we are working with, but for now, we will only say that it's important the **name of the function to define the action** that is doing.
 
-**Тялото** на функцията съдържа **програмния код**, който се намира между къдравите скоби **`{`** и **`}`**. Между тях поставяме кода, който решава проблема, описан от името на функцията.
+The **body** of the function consists of **programming code**, which is located between the curly brackets **`{`** and **`}`**. Between them, we place code, that will solve our problem, described by the name of the function.
 
-### Защо да използваме функции?
+### Why should we use functions?
 
-До тук установихме, че функциите спомагат за **разделянето на обемна задача на по-малки части**, което води до **по-лесно решаване** на въпросното задание. Това прави програмата ни не само по-добре структурирана и **лесно четима**, но и по-разбираема.
+Up to this moment, we have found out that, functions help us with **separating long exercise into smaller parts**, which leads to an **easier solution** of the corresponding problem. This makes our program, not just well structured, **easy readable** but and more understandable.
 
-Чрез функциите **избягваме повторението** на програмен код. **Повтарящият** се код е **лоша** практика, тъй като силно **затруднява поддръжката** на програмата и води до грешки. Ако дадена част от кода ни присъства в програмата няколко пъти и се наложи да променим нещо, то промените трябва да бъдат направени във всяко едно повторение на въпросния код. Вероятността да пропуснем място, на което трябва да нанесем корекция, е много голяма, което би довело до некоректно поведение на програмата. Това е причината, поради която е **добра практика**, ако използваме даден фрагмент код **повече от веднъж** в програмата си, да го **дефинираме като отделена функция**. 
+Using functions we **escape repeating** of programming code. **Repeating** code is **bad practice** because it makes **harder maintenance** of the program which leads to errors. If one part of the code exists in our program more than once and we have to fix it, we will have to change the repeating code in every single place. The probability of us forgetting one of the repeating places is very big, which will lead to incorrect behavior of the program. This is exactly why it's a **good practice** to define a fragment that will be used **more than once** as a **separate function**.
 
-Функциите ни предоставят **възможността** да използваме даден **код няколко пъти**. С решаването на все повече и повече задачи ще установите, че използването на вече декларирани функции спестява много време и усилия. 
+Functions offer us the **opportunity** to use **code several times**. With solving more than more exercises, we will conclude that using already defined functions saves us a lot of time and effort.
 
-## Деклариране на функции
+## Declaring functions
 
-В езика JavaScript можем да **декларираме** функции буквално навсякъде, по същият начин, по който можем да декларираме и променливи навсякъде. Декларирането представлява **регистрирането на функцията** в програмата, за да бъде разпозната в останалата част от нея. 
+In Javascript language we can **define** function everywhere, using the same way we define variables everywhere. Declaring represents the **register of function** inside a program, to be recognized in it.
 
-JavaScript не е **силно типизиран** език (strongly typed). Затова и когато **декларираме функция** тя няма тип (string, number, array и т.н.), какъвто имат методите и функциите в другите езици за програмиране.
+Javascript isn't **strongly typed** language. That's why when we **declare a function** it doesn't have a type(string, number, array, etc.), which other programming language methods have.
 
-Има 2 основни начина, по които могат да се декларирате функции в JavaScript - **декларативно - function declaration** и **експресивно - function expression**.
+There are 2 types of ways, which declare a function in Javascript - **function declaration** and **Function expression**.
 
-### Декларативно (function declaration)
+### Function declaration
 
-Със следващия пример ще разгледаме задължителните елементи в декларацията на една функция **декларативно (function declaration)**.
+With the next example, we will take a look at  the required elements inside a function, using **function declaration**.
 
 ![](assets/chapter-10-images/02.Declaring-methods-02.png)
 
