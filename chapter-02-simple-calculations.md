@@ -1,54 +1,55 @@
-# Глава 2.1. Прости пресмятания с числа
+# Chapter 2.1. Simple Calculations
 
-В настоящата глава ще се запознаем със следните концепции и програмни техники:
-- Как да работим с **типове данни и променливи**, които са ни необходими при обработка на числа и стрингове.
-- Как да **изпечатаме** резултат на екрана.
-- Как да **четем** потребителски вход.
-- Как да извършваме прости **аритметични операции**: събиране, изваждане, умножение, деление, съединяване на стринг.
-- Как да **закръгляме** числа.
+In this chapter we are going to get familiar with the following concepts and programming techniques:
+- How to work with **data types and variables** which we need when processing numbers and strings.
+- How to **print** a result on the screen.
+- How to **read** a custom input.
+- How to do simple **aritmetic operations**: addition, subtraction, multiplication, division, concatenate strings.
+- How to **round** numbers.
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=kP_1cKnciyA">https://www.youtube.com/watch?v=kP_1cKnciyA</a>.
+   Watch video tutorial based on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=kP_1cKnciyA">https://www.youtube.com/watch?v=kP_1cKnciyA</a>.
 </div>
 
 
-## Пресмятания в програмирането
+## Calculations in Programming
 
-За компютрите знаем, че са машини, които обработват данни. Всички **данни** се записват в компютърната памет (RAM памет) в **променливи**. Променливите са именувани области от паметта, които пазят данни от определен тип, например число или текст. Всяка една **променлива** в JavaScript има **име** и **стойност**. Ето как бихме дефинирали една променлива, като едновременно с декларацията ѝ, ѝ присвояваме и стойност:
+We know that the computers are machines which process data. All **data** is stored in the computer memory (RAM) in **variables**. The variables are named memory areas that store data of a certain type , for example number or string. Each **variable** in JavaScript has **name** and **value**. Here is how we would define a variable by assigning it a value at the same time as declaring it:
 
 ![](/assets/chapter-2-1-images/00.Declaring-variables-01.png)
 
-След тяхната обработка, данните се записват отново в променливи (т.е. някъде в паметта, заделена от нашата програма).
+fter processing, the data is stored again in variables (i.e. somewhere in the memory set aside by our program).
 
-## Типове данни и променливи
+## Data Types and Variables
 
-В програмирането всяка една променлива съхранява определена **стойност** от даден **тип**. Типовете данни могат да бъдат например: **число**, **текст** (стринг), **булев** тип, **дата**, **списък** и др.
-Ето няколко примера за типове данни и стойности за тях:
-- **number** - тип число: 1, 42, -5, 3.14, NaN, …
-- **string** - тип текст (стринг): 'Здрасти', "Hi", 'Beer', …
-- **boolean** - булев тип: true, false
-- **Date** - дата: Tue Jul 04 2017, …
+In programming each variable stores a certain **value** of a particular **type**. For example, data types can be: **number**, **string** (text), **boolean** type, **data**, **list**, etc.
+Here are some examples of data types and values for them:
+- **number** - type of number: 1, 42, -5, 3.14, NaN, …
+- **string** - type of text (string): 'Hello', "Hi", 'Beer', …
+- **boolean** - boolean type: true, false
+- **Date** - date: Tue Jul 04 2017, ……
 
-В езикът **JavaScript** има три ключови думички за деклариране на променлива. Това са **`var`**, **`const`** и **`let`**. Основната разлика между **`let`** и **`var`** е в обхвата на съществуването на променливата. Докато **`const`** използваме, когато сме сигурни, че това което присвояваме на променливата няма да се променя. Малко по-напред в книгата ще разберем повече подробности за обхвата на променливите, а за сега ще използваме думичката **`let`**, за да декларираме нова променлива.
+The **JavaScript** language has three keywords for declaring a variable - **`var`**, **`const`** and **`let`**. The main difference between **`let`** and **`var`** is in the scope of the variable. We use **`const`** when we are sure that what we assign to the variable will not change. A little further in the book we will find out more details about the range of variables but for now we will use the word ** `let` ** to declare a new variable.
 
-## Печатане на резултат на екрана
 
-За да изпечатаме текст, число или друг резултат на екрана, е необходимо да извикаме вградения метод **`console.log()`**. С него можем да принтираме както стойността на променлива, така и директно текст или число:
+## Print a Result on the Screen
+
+For printing text, number or other result on the screen, it's necessary to call the built-in method **`console.log()`**.With it we can print both the value of a variable and directly text or number:
 
 ```javascript
-console.log(42); // печатане на число
+console.log(42); // prints number
 
-console.log('Hello!'); // печатане на текст
+console.log('Hello!'); // prints string
 
 let msg = 'Hello, JavaScript!';
-console.log(msg); // печатане на стойност на променлива
+console.log(msg); // prints a value of variable
 ```
 
-## Четене на потребителски вход под формата на цяло число:
+## Reading a User Input as an Integer:
 
-За да прочетем потребителски вход под формата на **цяло число**, е необходимо да **дефинираме аргумент** на нашата функция:
+For reading a user input as a **number** is necessary to **define an argument** of our function:
 
 ```javascript
 function sum([arg1, arg2]) {
@@ -58,11 +59,11 @@ function sum([arg1, arg2]) {
 }
 ```
 
-Нека обърнем внимание, че аргументите **`arg1`** и **`arg2`** биха могли да бъдат в различен тип данни от този, който желаем. Затова е необходимо да се преобразуват в подходящ за целта такъв. Ако това не се направи, за програмата **всяко едно число** ще бъде просто **текст**, с който **не бихме могли да извършваме** аритметични операции.
+Let's note that the arguments **`arg1`** and **`arg2`** can be a different data type than the one we want. That's why it's necessary to convert them into a suitable one. If it's not done for the program **each number** will be just a **string** with which **we can't do operations** aritmetic operations.
 
-### Пример: пресмятане на лице на квадрат със страна **а**
+### Example: Calculating a Square Area with Length of a Side **а**
 
-За пример да вземем следната функция, която чете цяло число, умножава го по него самото (вдига го на квадрат) и отпечатва резултата от умножението. Така можем да пресметнем лицето на квадрат по дадена дължина на страната:
+For example, let us look at the following function which reads an integer from the console, multiplies it by itself (squares it) and prints the result from the multiplication. That's how we can calculate square area by side length:
 
 ```javascript
 function calculateSquareArea([arg1]) {
@@ -72,25 +73,26 @@ function calculateSquareArea([arg1]) {
 }
 ```
 
-Ако извикаме нашата функция с параметър 3 - **`calculateSquareArea([3])`**, резултатът от кода ще e - **`Square area = 9`**.  Ето как изглежда нашият код в действие в JavaScript конзолата на уеб браузъра:
+If we call our function with parameter 3 - **`calculateSquareArea([3])`** the result will be - **`Square area = 9`**.  Here's how out code looks like in action in the web browser's JavaScript console:
 
 ![](/assets/calculate-square-area-js.png)
 
-Ако опитаме да въведем невалидно число, например "**hello**", ще получим съобщение за грешка по време на изпълнение (exception). Това е нормално. По-късно ще разберем как можем да прихващаме такива грешки и да връщаме по-смислени за потребителя съобщения.
+If we try to write a wrong number, for example "hello", we will get an error message during runtime (exception). This is normal. Later on, we will find out how we can catch these kinds of errors and make the user enter a number again.
 
-#### Как работи примерът?
+#### How Does the Example Work?
 
-На първият ред с **`function calculateSquareArea([arg1]) {`** дефинираме нашата функция, като и даваме име и задаваме аргументите, от които тя ще се нуждае. В нашия случай имаме един аргумент, който ще представлява страна на квадрата.
+On the first line with **`function calculateSquareArea([arg1]) {`** we define our function by giving it a name and setting arguments that it needs. In our case we have one argument which is the side of the square.
 
-На следващият ред с **`let a = parseInt(arg1);`** взимаме аргумента на функцията **`arg1`** и го преобразува към цяло число чрез метода **`parseInt(arg1);`**. Резултатът се записва в променлива с име **`a`**.
+On the next line with **`let a = parseInt(arg1);`** we get the argument of the function **`arg1`** and convert it to an integer with the method **`parseInt(arg1);`**. The result is saved in the variable **`a`**.
 
-**Забележка**: Ако **`arg1`** съдържа **дробно число**, то ще бъде **преобразувано към цяло**. Преобразуването на дробно число към цяло става като се **отстранят** всички цифри след десетичната запетаята.  Например: **`parseInt(2.3)`** = 2, **`parseInt(3.8)`** = 3
+**Note**: If **`arg1`** contains **floating point number**, то ще бъде **rounded to integer**. Converting a floating number to integer is performed by  **removing**  all digits after the decimal point. Example: **`parseInt(2.3)`** = 2, **`parseInt(3.8)`** = 3
 
-Следващата команда **`let area = a * a;`** записва в нова променлива, именувана **`area`**, резултата от умножението на **`a`** по **`a`**.
+The next command **`let area = a * a;`** is saved in new variable named **`area`** - the result of the multiplication **`a`** by **`a`**.
 
-Следващата команда **`console.log('Square area = ' + area);`** отпечатва посочения текст, като до него долепя изчисленото лице на квадрата, който сме записали в променливата **`area`**.
+The next command **`console.log('Square area = ' + area);`** prints the specified text by placing the calculated face of the square, which we have saved in the variable **`area`** next to it.
 
-Всъщност горната програма може малко да се опрости, ето така:
+
+In fact, the above program can be simplified a bit, like this:
 
 ```js
 function calculateSquareArea([a]) {
@@ -116,9 +118,9 @@ function calculateSquareArea(a) {
 }
 ```
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0). Пробвайте четирите варианта на решението на задачата.
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0). Try all four solutions of the problem.
 
 ## Четене на дробно число
 
