@@ -1,14 +1,14 @@
-# Глава 2.2. Прости пресмятания с числа – изпитни задачи
+# Chapter 2.2. Simple Calculations – Exam Problems
 
-В предходната глава се запознахме с това как да **подадем число** на функция и как да **отпечатаме резултат** на конзолата. Разгледахме основните аритметични операции и накратко споменахме типовете данни. В настоящата глава ще упражним и затвърдим наученото досега, като разгледаме няколко **по-сложни задачи**, давани на изпити.
+In the previous chapter, we explained how to **pass numbers** to functions and how to **print the output**. We went through the main arithmetical operations and briefly mentioned data types. In this chapter, we are going to practice what we have learned by solving a few **more complex exam problems**, давани на изпити.
 
-## Четене на числа
+## Reading Numbers
 
-Преди да преминем към задачите, да си припомним най-важното от изучавания материал в предходната тема. Ще започнем със създаването на функция, която прочита число.
+Before going to the tasks, we are going to revise the most important aspects of what we have studied in the previous chapter. We will start by creating a function, which function reads a number.
 
-### Четене на цяло число
+### Reading an Integer
 
-Необходима ни е функция, на която се подава един аргумент **`arg1`**. В нея ще създадем променлива, в която да запазим числото (напр. **`num`**), в съчетание с метода **`parseInt(…)`**, който конвертира текст в число:
+We need to create a function, which will get one argument **`arg1`**. We will create a variable in the function, where we will store the number (напр. **`num`**), combined with the method **`parseInt(…)`**, which converts string to an integer:
 
 ```javascript
 function readNumber(arg1) {
@@ -16,17 +16,17 @@ function readNumber(arg1) {
 }
 ```
 
-### Четене на дробно число
+### Reading a Floating-Point Number
 
-По същия начин, както четем цяло число, но този път ще използваме метода **`parseFloat(…)`**:
+The same way we read an integer one, but this time we use the method **`parseFloat(…)`**:
 
 ```javascript
 let num = parseFloat(arg1);
 ```
 
-## Извеждане на текст по шаблон (placeholder)
+## Printing Text Using Placeholders (placeholder)
 
-**Placeholder** представлява израз, който ще бъде заменен с конкретна стойност при отпечатване. За да работи шаблонът, трябва да използваме наклонени апострофи (backticks) **`` `…` ``**. Методът **`console.log(…)`** поддържа печатане на текст по шаблон, като аргументите, които трябва да отпечатаме, се задават в **`${…}`**:
+**Placeholder** is an expression which is replaced with a particular value while printing an output. For this placeholder to work, we will have to use backticks **`` `…` ``**. The method **`console.log(…)`** supports printing a string based on a placeholder, where the first arguments, which have to be printed are written in the **`${…}`**:
 
 ```javascript
 let firstName = "Ivan";
@@ -37,37 +37,37 @@ console.log(`You are ${firstName} ${lastName}, a ${age}-years old person from ${
 // You are Ivan Ivanov, a 19-years old person from Sofia.
 ```
 
-## Аритметични оператори
+## Arithmetic Operators
 
-Да си припомним основните аритметични оператори за пресмятания с числа.
+Let' s revise the main arithmetic operators for simple calculations.
 
-### Оператор +
-
-```javascript
-let result = 3 + 5; // резултатът е 8
-```
-
-### Оператор -
+### Operator +
 
 ```javascript
-let result = 3 - 5; // резултатът е -2
+let result = 3 + 5; // the result is 8
 ```
 
-### Оператор *
+### Operator -
 
 ```javascript
-let result = 3 * 5; // резултатът е 15
+let result = 3 - 5; // the result is -2
 ```
 
-### Оператор /
+### Operator *
 
 ```javascript
-let result2 = 5 / 2; // резултатът е 2.5 (дробно деление)
+let result = 3 * 5; // the result is 15
 ```
 
-## Конкатенация
+### Operator /
 
-При използване на оператора **`+`** между променливи от тип текст (или между текст и число) се извършва т.нар. конкатенация (слепване на низове):
+```javascript
+let result2 = 5 / 2; // the result is 2.5 (floating-point division)
+```
+
+## Concatenation
+
+By using the operator `+` between string variables \(or between a string and a number\), **concatenation** is being performed \(combining strings\):
 
 ```javascript
 let firstName = "Ivan";
@@ -80,14 +80,14 @@ let str = firstName + " " + lastName + " is " + age + " years old";
 
 ## Изпитни задачи
 
-Сега, след като си припомнихме как се четат и печатат числа на конзолата и как се извършват пресмятания с тях, можем да преминем към задачите. Ще решим няколко **задачи от приемен изпит** за кандидатстване в СофтУни.
+Now, after having revised how to make simple calculations and how to read and print numbers from the console, let' s go to the tasks. We will solve a few **problems from a entrance exam:** in SoftUni.
 
 
-## Задача: учебна зала
+## Problem: Training Lab
 
-**Учебна зала** има правоъгълен размер **l** на **w** метра, без колони във вътрешността си. Залата е разделена на две части – лява и дясна, с коридор - приблизително по средата. В лявата и в дясната част има **редици с бюра**. В задната част на залата има голяма **входна врата**. В предната част на залата има **катедра** с подиум за преподавателя. Едно **работно място** заема **70 на 120 cm** (маса с размер 70 на 40 cm + място за стол и преминаване с размер 70 на 80 cm). **Коридорът** е широк поне **100 cm**. Изчислено е, че заради **входната врата** (която е с отвор 160 cm) **се губи точно 1 работно място**, а заради **катедрата** (която е с размер 160 на 120 cm) се губят точно **2 работни места**. Напишете програма, която въвежда размери на учебната зала и изчислява **броя работни места в нея** при описаното разположение (вж. фигурата).
+**A training lab** has a rectangular size **l** x **w** meters, without columns on the inside. The hall is divided into two parts- left and right, with a hallway approximately in the middle. In both parts, there are **rows with desks**. In the back of the hall, there is a big **entrance door**. In the front, there is a **podium** for the lecturer. A single **working place** takes up **70 x 120 cm** (a table with size 70 x 40 cm + space for a chair and passing though with size 70 x 80 cm). **The hallway** width is at least **100 cm**. It is calculated that due to the **entrance door** (which has 160 cm opening) **exactly one working space is lost**, and due to the **podium** (which has size of 160 x 120 cm) exactly **two working spaces** are lost. Write a program that reads the size of the training lab as input parameters and calculates the **number of working places in it** при описаното разположение (look at the figure).
 
-### Входни данни
+### Input Data
 
 Програмата чете **2 числа** (аргумента), по едно на ред: **l** (дължина в метри) и **w** (широчина в метри).
 
