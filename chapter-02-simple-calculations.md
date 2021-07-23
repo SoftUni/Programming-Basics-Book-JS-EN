@@ -302,7 +302,7 @@ let sum = "The sum is: " + a + b;
 console.log(sum);  // The sum is: 1.52.5
 ```
 
-Забелязвате ли нещо странно? Може би очаквахте числата **`a`** и **`b`** да се сумират? Всъщност конкатенацията работи отляво надясно и горният резултат е абсолютно коректен. Ако искаме да сумираме числата, ще трябва да ползваме **скоби**, за да променим реда на изпълнение на операциите:
+Do you notice anything strange? Maybe you expected the numbers ** `a` ** and **` b` ** to sum? Actually, the concatenation works from left to right and the above result is absolutely correct. If we want to sum the numbers, we will have to use **brackets** to change the order of operations:
 
 ```javascript
 let a = 1.5;
@@ -462,114 +462,115 @@ Let we summarize what we learned from this chapter of the book:
 
 Нека затвърдим наученото в тази глава с няколко задачи.
 
-### Празен **JS** файл за решението на задачата ни във Visual Studio Code
+### Empty **JS** File for our Solution of the Problem in Visual Studio Code
 
-Започваме като създадем празен **JS файл** във Visual Studio Code. В настоящото практическо занимание ще създадем нова папка и ще добавяме нов **JS файл** за всяка задача, за да организираме решенията на задачите от упражненията:
+We start by creating an empty **JS файл** in Visual Studio Code. In the current practical exercise we'll create and add a new **JS file** for each task, to organize the solutions of the tasks from the exercises:
 
-Стартираме Visual Studio Code и създаваме **нов файл:** [**File**] -> [**New File**]:
+We start Visual Studio Code and create a **New File:** [**File**] -> [**New File**]:
 
 ![](assets/chapter-2-1-images/00.Visual-studio-01.png)
 
-**Запаметяваме** файла от [**File**] -> [**Save**] или чрез клавишната комбинация [**Ctrl + S**]:
+**Save** the file from [**File**] -> [**Save**] or by keyboard shortcut [**Ctrl + S**]:
 
 ![](assets/chapter-2-1-images/00.Visual-studio-02.png)
 
-Даваме **значещо име** и разширение **.js** на нашия файл, след което натискаме бутона [**Save**]:
+Enter a **significant name** and expansion **.js** to our file, then press the button [**Save**]:
 
 ![](assets/chapter-2-1-images/00.Visual-studio-03.png)
 
-### Задача:	пресмятане на лице на квадрат
+### Problem: Calculating Square Area
 
-Първата задача от тази тема е следната: да се напише функция, която **получава цяло число `a` и пресмята лицето** на квадрат със страна **`a`**. Задачата е тривиално лесна: **приемате число** като аргумент на функцията, **умножавате го само по себе си** и **печатате получения резултат** на конзолата.
+The first exercise from this topic is the following: write a function that **inputs an integer `a` and calculates the area** fo a square with side **`a`**. The problem is trivially easy: **inputs a number** as an argument of the function, **multipy it by itself** and **prints a result** on the console.
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Вече имаме правилно именуван празен файл. Остава да напишем **кода за решаване на задачата**. За целта пишем следния код:
+We have a correctly named empty file. What remains is to write the **code for solving the problem**. For this purpose, we write the following code:
 
 ![](assets/chapter-2-1-images/01.Calculate-square-area-01.png)
 
-Кодът дефинира функция **`calculateSquareArea()`**, която приема един аргумент **`arg1`**. Тъй като се очаква аргументът да е цяло число, преобразуваме аргумента с метода **`parseInt()`** и след това изчисляваме лицето: **`area = a * a`**. Накрая печатаме стойността на променливата **`area`**. 
-За да **тестваме**, e нужно в същия файл да **извикаме функцията** с произволен параметър и след това да стартираме програмата като натиснем [**Ctrl + F5**]:
+The code defines a function **`calculateSquareArea()`**, which gets one argument **`arg1`**. Since the argument is expected to be an integer, convert arguments with the method **`parseInt()`** and then calculate the area: **`area = a * a`**. At the end print the value of the variable **`area`**. 
+For **testing**, it's necessary to **call the function** in the same file with a random parameter and then to start the program by pressing [**Ctrl + F5**]:
 
 ![](assets/chapter-2-1-images/01.Calculate-square-area-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0).
 
-Трябва да получите 100 точки (напълно коректно решение):
+
+You must get 100 points (completely correct solution):
 
 ![](assets/chapter-2-1-images/01.Calculate-square-area-03.png)
 
 ![](assets/chapter-2-1-images/01.Calculate-square-area-04.png)
 
 
-### Задача:	от инчове към сантиметри
+### Problem:	From Inches to Centimeters
 
-Да се напише функция, която **приема число** (не непременно цяло) и преобразува числото от **инчове в сантиметри.** За целта **умножава инчовете по 2.54** (защото 1 инч = 2.54 сантиметра).
+Write a function which **accepts a number** (not necessarily an integer) and converts the number from **inches to centimeters**. For the purpose **it multiplies the inches by 2.54** (because 1 inch = 2.54 centimeters).
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първо създаваме **нов файл** в папката с другите решения - във Visual Studio Code избираме [**File**] -> [**New file**]. Запаметяваме файла под името **convertInchesToCentimeters.js** и натискаме бутона [**Save**]. Следва да напишем **кода на програмата**:
+First we create a **new file** in the folder with the other solutions -  in Visual Studio Code we choose [**File**] -> [**New file**]. We save the file with name **convertInchesToCentimeters.js** and press the button [**Save**]. After that we have to write **the program code**:
 
 ![](assets/chapter-2-1-images/02.Inches-to-centimeters-01.png)
 
-**Извикваме функцията** с параметър **2** и стартираме програмата с [**Ctrl + F5**]:
+**We call the function** with parameter **2** and start the problem with [**Ctrl + F5**]:
 
 ![](assets/chapter-2-1-images/02.Inches-to-centimeters-02.png)
 
-Да тестваме с дробни числа, например с **4.5**:
+Let we test it with floating numbers, for example **4.5**:
 
 ![](assets/chapter-2-1-images/02.Inches-to-centimeters-03.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#1](https://judge.softuni.bg/Contests/Practice/Index/927#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#1](https://judge.softuni.bg/Contests/Practice/Index/927#1).
 
-Решението би трябвало да бъде прието като напълно коректно:
+The solution should be taken as completely correct:
 
 ![](assets/chapter-2-1-images/02.Inches-to-centimeters-04.png)
 
 
-### Задача: поздрав по име
+### Problem: Greeting by Name
 
-Да се напише функция, която **приема като аргумент име на човек** и отпечатва **`Hello, <name>!`**, където **`<name>`** е въведеното преди това име.
+Write a function, which **takes as an argument a human name** and prints **`Hello, <name>!`**, where **`<name>`** is the name entered earlier.
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Отново създаваме **нов файл** в папката с другите решения и го запазваме под името **sayHello.js**. Следва да напишем кода на програмата. Ако се затруднявате, може да ползвате примерния код по-долу:
+Again we create a **new file** in the folder with the other solutions and we save the file with the name **sayHello.js**. After that we have to write the program code . If you find it difficult, you can use the sample code below:
 
 ![](assets/chapter-2-1-images/03.Greeting-by-name-01.png)
 
-**Извикваме функцията** с примерен параметър и **стартираме програмата** с [**Ctrl+F5**], за да тестваме дали работи коректно:
+**We call the function** with an example parameter and **start the program** with [**Ctrl+F5**], to test if it works properly:
 
 ![](assets/chapter-2-1-images/03.Greeting-by-name-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук:  [https://judge.softuni.bg/Contests/Practice/Index/927#2](https://judge.softuni.bg/Contests/Practice/Index/927#2).
+Test your solution here:  [https://judge.softuni.bg/Contests/Practice/Index/927#2](https://judge.softuni.bg/Contests/Practice/Index/927#2).
 
 
-### Задача:	съединяване на текст и числа
+### Problem:	Concatenating Text and Numbers
 
-Напишете функция, която получава като аргумент име, фамилия, възраст и град и печата съобщение от следния вид: **`You are <firstName> <lastName>, a <age>-years old person from <town>`**.
+Write a function that receives as an argument the name, surname, age and city and print a message of the following type: **`You are <firstName> <lastName>, a <age>-years old person from <town>`**.
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-По същия начин създаваме нов файл и го именуваме **printInfo.js**. **Кодът**, който отпечатва описаното в условието на задачата съобщение, е целенасочено размазан и трябва да се допише от читателя:
+Similarly we create a new file and name it **printInfo.js**. which prints the message described in the condition of the task, is purposefully blurred  in order for you to think of a way to finish it yourself:
 
 ![](assets/chapter-2-1-images/04.Concatenate-data-01.png)
 
-Следва да се тества решението локално, като се извика функцията с примерни стойности и се стартира програмата с [**Ctrl+F5**].
+The solution should be tested locally by calling the function with sample values and starting the program with [**Ctrl+F5**].
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#3](https://judge.softuni.bg/Contests/Practice/Index/927#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#3](https://judge.softuni.bg/Contests/Practice/Index/927#3).
 
 
-### Задача:	лице на трапец
+### Problem:	Trapezoid Area
 
-Напишете функция, която получава аргумент три числа **b1, b2 и h и пресмята лицето на трапец** с основи **b1 и b2 и височина h. Формулата за лице на трапец е (b1 + b2) * h / 2**.
+Write a functions, which takes three arguments **b1, b2 and h and calculate the trapezoid area** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
 
 На фигурата по-долу е показан трапец със страни 8 и 13 и височина 7. Той има лице **(8 + 13) * 7 / 2 = 73.5**.
 
