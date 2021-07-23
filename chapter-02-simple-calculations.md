@@ -283,7 +283,7 @@ console.log(0 / 0);   // Result: NaN (Not a Number), i.e. the result
 
 ## Concatenating Text and Numbers
 
-Операторът **`+`**, освен за събиране на числа, служи и за съединяване на текст (долепяне на два символни низа един след друг). В програмирането съединяване на текст с текст или с число наричаме "**конкатенация**". Ето как можем да съединяваме текст и число с оператора **`+`**:
+Besides for summing up numbers, the operator **`+`** is also used for joining pieces of text (concatenation of two strings one after another). In programming, joining two pieces of text is called "**concatenation**". Here is how we can concatenate a text with a number by the **`+`** operator:
 
 ```javascript
 let firstName = "Maria";
@@ -293,7 +293,7 @@ let str = firstName + " " + lastName + " @ " + age;
 console.log(str);  // Maria Ivanova @ 19
 ```
 
-Ето още един пример:
+Here is an another example:
 
 ```javascript
 let a = 1.5;
@@ -311,19 +311,19 @@ let sum = "The sum is: " + (a + b);
 console.log(sum);  // The sum is: 4
 ```
 
-## Числени изрази
+## Numerical Expressions
 
-В програмирането можем да пресмятаме и **числови изрази**, например:
+In programming, we can calculate **numerical expressions**, for example:
 
 ```javascript
 let expr = (3 + 5) * (4 – 2);
 ```
 
-В сила е стандартното правило за приоритетите на аритметичните операции: **умножение и деление се извършват винаги преди събиране и изваждане**. При наличие на **израз в скоби, той се изчислява пръв**, но ние знаем всичко това от училищната математика.
+The  standard rule for priorities of arithmetic operations is applied:: **multiplying and dividing are always done before adding and subtracting**. In case of an **expression in brackets, it is calculated first**  but we already know all of that from the school math.
 
-### Пример: изчисляване на лице на трапец
+### Example: Calculating Trapezoid Area
 
-Да напишем функцията, която приема дължините на двете основи на трапец и неговата височина (по едно дробно число на ред) и пресмята **лицето на трапеца** по стандартната математическа формула:
+Let we  write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating point number per line) and calculates the **trapezoid area** by the standart math formula:
 
 ```javascript
 function printТrapezoidArea([arg1, arg2, arg3]) {
@@ -335,43 +335,43 @@ function printТrapezoidArea([arg1, arg2, arg3]) {
 }
 ```
 
-Тъй като искаме функцията ни да работи, както с цели, така и с дробни числа, използваме **`parseFloat()`**. Ако стартираме функцията и въведем за страните съответно **`3`**, **`4`** и **`5`**, ще получим следния резултат:
+Because we want our function to work with both integers and floating numbers, we use **`parseFloat()`**. If we start the function and enter values for the sides: **`3`**, **`4`** and **`5`**, we will obtain the following result::
 ```javascript
 printТrapezoidArea([3, 4, 5]); // Trapezoid area = 17.5
 ```
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: 
+Test your solution here: 
 
 [https://judge.softuni.bg/Contests/Practice/Index/927#4](https://judge.softuni.bg/Contests/Practice/Index/927#4).
 
 
-## Закръгляне на числа
+## Rounding Numbers
 
-Понякога, когато работим с дробни числа, се налага да приведем числата към еднотипен формат. Това привеждане се нарича **закръгляне**. Езикът **JavaScript** ни предоставя няколко метода за закръгляне на числа:
+Sometimes when we work with floating numbers, it's necessary to bring them to integers. This bringing is named **rounding**. The programming language **JavaScript** provides us with several methods for rounding numbers:
 
-* **`Math.ceil(…)`** - **закръгляне нагоре**, до следващо (по-голямо) цяло число:
+* **`Math.ceil(…)`** - **rounding up** to next (greater) integer:
 ```javascript
 let up = Math.ceil(45.15); // up = 46
 ```
-* **`Math.floor(…)`** - **закръгляне надолу**, до предишно (по-малко) цяло число:
+* **`Math.floor(…)`** - **rounding down** to previous (less) integer:
 ```javascript
 let down = Math.floor(45.67);	// down = 45
 ```
 
-* **`Math.trunc(…)`** - **отрязване** на знаците след десетичната запетая:
+* **`Math.trunc(…)`** - **cutting** the decimal places:
 ```javascript
 let trunc = Math.trunc(45.67); // trunc = 45
 ```
 
-* **`Math.round(…)`** - закръглянето се извършва по **основното правило за закръгляване** - ако десетичната част е по-малка от 5, закръглението е надолу и обратно, ако е по-голяма от 5 - нагоре:
+* **`Math.round(…)`** - rounding is done as a **basic rule for rounding numbers** - if the decimal part is less than 5, rounding is to previous number and if it's greater than 5 - to the next:
 ```javascript
 Math.round(5.439); // 5
 Math.round(5.539); // 6
 ```
 
-* **`.toFixed([брой символи след десетичната запетая])`** - закръгляне до **най-близко** число:
+* **`.toFixed([number of characters after the decimal point])`** - rounding to **the closest** number:
 ```javascript
 (123.456).toFixed(2);	 // 123.46
 (123).toFixed(2);	     // 123.00
@@ -379,45 +379,45 @@ Math.round(5.539); // 6
 (123.512).toFixed(0);	 // 124
 ```
 
-### Пример: периметър и лице на кръг 
+### Example: Circle Area and Perimeter 
 
-Нека напишем функция, която приема **радиуса r** на кръг и **изчислява лицето и периметъра** на кръга / окръжността.
+Let we write a function which gets an input **the radius r** of a circle and **calculates the area and the perimeter** of the circle.
 
-Формули:
-- Лице = π \* r \* r
-- Периметър = 2 \* π \* r
+Formulas:
+- Area = π \* r \* r
+- Perimeter = 2 \* π \* r
 - π ≈ 3.14159265358979323846…
 
 ```javascript
 function calculateCircleAreaAndPerimeter([arg1]) {
     let r = parseInt(arg1);
     console.log("Area = " + Math.PI * r * r); 
-    // Math.PI - вградена в JavaScript константа за стойността на числото π
+    // Math.PI - Built-in JavaScript constant for the value of the number π
     console.log("Perimeter = " + 2 * Math.PI * r);
 }
 ```
-Нека извикаме функцията с **радиус `r = 10`**:
+Let we call the function with **radius `r = 10`**:
 
 ```javascript
 calculateCircleAreaAndPerimeter([10])
 ```
 
-Резултатът е следният:
+The result is:
 
 ![](assets/chapter-2-1-images/00.Calculate-circle-area-and-perimeter.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#5](https://judge.softuni.bg/Contests/Practice/Index/927#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#5](https://judge.softuni.bg/Contests/Practice/Index/927#5).
 
 
-### Пример: лице на правоъгълник в равнината
+### Example: 2D Rectangle Area
 
-Правоъгълник е зададен с **координатите на два от своите два срещуположни ъгъла**. Да се пресметнат **площта и периметъра** му:
+Rectangle is given with the **coordinates of two of its opposite angles**. Calculate its **area and perimeter** :
 
 <img alt="rectangleArea" src="/assets/chapter-2-1-images/00.Rectangle-area-01.png" width="250" height="200" />
 
-В тази задача трябва да съобразим, че ако от по-голямата **`x`** координата извадим по-малката **`x`** координата, ще получим дължината на правоъгълника. Аналогично, ако от по-големия **`y`** извадим по-малкия **`y`**, ще получим височината на правоъгълника. Остава да умножим двете страни. Ето примерна имплементация на описаната логика:
+In this problem, we have to consider that if we subtract the smaller **`x`**  from the bigger **`x`** , we will obtain the length of the rectangle. Identically, if we subtract the smaller **`y`** from the bigger **`y`**, , we will obtain the height of the rectangle. What is left is to multiply both sides. Here is an example of an implementation of the described logic:
 
 ```javascript
 function calculateRectangleArea([arg1, arg2, arg3, arg4]) {
@@ -426,7 +426,7 @@ function calculateRectangleArea([arg1, arg2, arg3, arg4]) {
     let x2 = parseFloat(arg3);
     let y2 = parseFloat(arg4);
     
-    // Изчисляване страните на правоъгълника:
+    // Calculating the sides of the rectangle:
     let width = Math.max(x1, x2) - Math.min(x1, x2);
     let height = Math.max(y1, y2) - Math.min(y1, y2);
 
@@ -435,30 +435,30 @@ function calculateRectangleArea([arg1, arg2, arg3, arg4]) {
 }
 ```
 
-Използваме метода **`Math.max(x1, x2)`**, за да намерим по-голямата измежду стойностите **`x1`** и **`x2`** и аналогично **`Math.min(y1, y2)`** за намиране на по-малката от двете стойности.
+We use the method **`Math.max(x1, x2)`** to find the higher value from **`x1`** and **`x2`** and identically **`Math.min(y1, y2)`** to find the lower of both values.
 
-Нека извикаме функцията с тестови стойности от координатната система:
+Let wе call the function with testing values from the coordinate system:
 
 ```javascript
 calculateRectangleArea([60, 20, 10, 50]); // 1500
                                           // 160
 ```
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#6](https://judge.softuni.bg/Contests/Practice/Index/927#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#6](https://judge.softuni.bg/Contests/Practice/Index/927#6).
 
 
-## Какво научихме от тази глава?
+## What we learned from this chapter?
 
-Да резюмираме какво научихме от тази глава на книгата:
-- **Четене на потребителски вход**: **`function sum([number1, number2])`**.
-- **Преобразуване към число**: **`let num = parseInt(arg1)`**, **`let num = parseFloat(arg1)`**.
-- **Извършване на пресмятания с числа** и използване на съответните **аритметични оператори** [+, -, \*, /, ()]: **`let sum = 5 + 3`**.
-- **Извеждане на текст по шаблон**: **```console.log(`3 + 5 = ${3 + 5}`)```**.
-- Различните типове **закръгляния** на числа: **`Math.ceil()`**, **`Math.trunc()`**, **`Math.floor()`** и **`.toFixed()`**
+Let we summarize what we learned from this chapter of the book:
+- **Reading an user input**: **`function sum([number1, number2])`**.
+- **Converting to number**: **`let num = parseInt(arg1)`**, **`let num = parseFloat(arg1)`**.
+- **Aritmetic operations** and using the relevant **aritmetic operators** [+, -, \*, /, ()]: **`let sum = 5 + 3`**.
+- **Print text by using concatenation**: **```console.log(`3 + 5 = ${3 + 5}`)```**.
+- The different types of **rounding** numbers: **`Math.ceil()`**, **`Math.trunc()`**, **`Math.floor()`** and **`.toFixed()`**
 
-## Упражнения: прости пресмятания
+## Exercises: Simple Calculations
 
 Нека затвърдим наученото в тази глава с няколко задачи.
 
