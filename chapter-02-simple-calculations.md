@@ -381,7 +381,7 @@ Math.round(5.539); // 6
 
 ### Example: Circle Area and Perimeter 
 
-Let we write a function which gets an input **the radius r** of a circle and **calculates the area and the perimeter** of the circle.
+Let we write a function which receives an input **the radius r** of a circle and **calculates the area and the perimeter** of the circle.
 
 Formulas:
 - Area = π \* r \* r
@@ -460,7 +460,7 @@ Let we summarize what we learned from this chapter of the book:
 
 ## Exercises: Simple Calculations
 
-Нека затвърдим наученото в тази глава с няколко задачи.
+Let's strengthen the knowledge gained throughout this chapter with a few more exercises.
 
 ### Empty **JS** File for our Solution of the Problem in Visual Studio Code
 
@@ -480,7 +480,7 @@ Enter a **significant name** and expansion **.js** to our file, then press the b
 
 ### Problem: Calculating Square Area
 
-The first exercise from this topic is the following: write a function that **inputs an integer `a` and calculates the area** fo a square with side **`a`**. The problem is trivially easy: **inputs a number** as an argument of the function, **multipy it by itself** and **prints a result** on the console.
+The first exercise from this topic is the following: write a function that **receives an integer `a` and calculates the area** fo a square with side **`a`**. The problem is trivially easy: **inputs a number** as an argument of the function, **multipy it by itself** and **prints a result** on the console.
 
 #### Hints and Guidelines
 
@@ -488,7 +488,7 @@ We have a correctly named empty file. What remains is to write the **code for so
 
 ![](assets/chapter-2-1-images/01.Calculate-square-area-01.png)
 
-The code defines a function **`calculateSquareArea()`**, which gets one argument **`arg1`**. Since the argument is expected to be an integer, convert arguments with the method **`parseInt()`** and then calculate the area: **`area = a * a`**. At the end print the value of the variable **`area`**. 
+The code defines a function **`calculateSquareArea()`**, which receives one argument **`arg1`**. Since the argument is expected to be an integer, convert arguments with the method **`parseInt()`** and then calculate the area: **`area = a * a`**. At the end print the value of the variable **`area`**. 
 For **testing**, it's necessary to **call the function** in the same file with a random parameter and then to start the program by pressing [**Ctrl + F5**]:
 
 ![](assets/chapter-2-1-images/01.Calculate-square-area-02.png)
@@ -570,7 +570,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#3
 
 ### Problem:	Trapezoid Area
 
-Write a functions, which gets three arguments **b1, b2 and h and calculate the trapezoid area** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
+Write a function which receives three arguments **b1, b2 and h and calculate the trapezoid area** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
 
 The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
 
@@ -591,7 +591,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#4
 
 ### Problem:	Circle Perimeter and Area
 
-Write a function, which gets an argument **number r** and calculates and prints **the area and perimeter of a circle** with **radius r**.
+Write a function, which receives an argument **number r** and calculates and prints **the area and perimeter of a circle** with **radius r**.
 
 #### Sample Input and Output
 
@@ -611,73 +611,72 @@ For the calculations you may use the following formulas:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#5](https://judge.softuni.bg/Contests/Practice/Index/927#5).
 
 
-### Задача: лице на правоъгълник в равнината
+### Problem: Rectangle Area
 
-**Правоъгълник** е зададен с **координатите** на два от своите срещуположни ъгъла (x1, y1) – (x2, y2). Да се пресметнат **площта и периметъра** му. **Входът** се приема като аргумент на функция. Числата **x1, y1, x2 и y2** са дадени по едно на ред. **Изходът** се извежда на конзолата и трябва да съдържа два реда с по една число на всеки от тях – лицето и периметъра.
+A **Rectangle** is defined by the **coordinates** of both of its opposite corners (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is taken as a function argument. The numbers **x1, y1, x2 и y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
 
 ![](/assets/old-images/chapter-2-images/07.Rectangle-area-01.png)
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход                                 | Изход               |
+| Input                                | Output              |
 | ------------------------------------ | ------------------- |
 | 60<br>20<br>10<br>50                 | 1500<br>160         |
 | 30<br>40<br>70<br>-10                | 2000<br>180         |
 | 600.25<br>500.75<br>100.50<br>-200.5 | 350449.6875<br>2402 |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#6](https://judge.softuni.bg/Contests/Practice/Index/927#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#6](https://judge.softuni.bg/Contests/Practice/Index/927#6).
 
 
-### Задача:	лице на триъгълник
+### Problem:   Triangle Area
 
-Напишете функция, която приема като аргумент **страна и височина на триъгълник** и пресмята неговото лице. Използвайте **формулата** за лице на триъгълник: **area = a * h / 2**. Закръглете резултата до **2 цифри след десетичния знак, използвайки `area.toFixed(2)`**.
+Write a function which receives an argument **a side and height of a triangle** and calculates its area. Use **the formula** for triangle area: **area = a * h / 2**. Round the result to  **2 digits after the decimal point using `area.toFixed(2)`**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход                | Изход                 |
+| Input               | Output                |
 | ------------------- | --------------------- |
 | 20 <br>30           | Triangle area = 300   |
 | 15 <br>35           | Triangle area = 262.5 |
 | 7.75 <br>8.45       | Triangle area = 32.74 |
 | 1.23456 <br>4.56789 | Triangle area = 2.82  |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#7](https://judge.softuni.bg/Contests/Practice/Index/927#7).
-
-
-### Задача: конвертор - от градуси °C към градуси °F
-
-Напишете функция, която чете **градуси по скалата на Целзий** (°C) и ги преобразува до **градуси по скалата на Фаренхайт** (°F). Потърсете в Интернет подходяща [формула](http://bfy.tw/3rGh "Търсене в Google"), с която да извършите изчисленията. Закръглете резултата до **2 символа след десетичния знак**. Ето няколко примера:
-
-#### Примерен вход и изход
-
-| Вход | Изход |
-| ---- | ----- |
-| 25   | 77    |
-| 0    | 32    |
-| -5.5 | 22.1  |
-| 32.3 | 90.14 |
-
-#### Тестване в Judge системата
-
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#8](https://judge.softuni.bg/Contests/Practice/Index/927#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#7](https://judge.softuni.bg/Contests/Practice/Index/927#7).
 
 
-### Задача: конвертор - от радиани в градуси
+### Problem: Converter – from °C Degrees to °F Degrees
 
-Напишете функция, която чете **ъгъл в [радиани](https://bg.wikipedia.org/wiki/Радиан)** (**`rad`**) и го преобразува в **[градуси](https://bg.wikipedia.org/wiki/Градус_(ъгъл))** (`deg`). Потърсете в Интернет подходяща формула. Числото **π** в **JavaScript** програмите е достъпно чрез **``Math.PI``**. Закръглете резултата до най-близкото цяло число, използвайки метода **``Math.round(…)``**.
+Write a function that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F).  Look on the Internet for a proper [формула](http://bfy.tw/3rGh "Търсене в Google")to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few examples:
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход   | Изход |
-| ------ | ----- |
-| 3.1416 | 180   |
-| 6.2832 | 360   |
-| 0.7854 | 45    |
-| 0.5236 | 30    |
+| Input | Output |
+| ----- | ------ |
+| 25    | 77     |
+| 0     | 32     |
+| -5.5  | 22.1   |
+| 32.3  | 90.14  |
+
+#### Testing in the Judge System
+
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#8](https://judge.softuni.bg/Contests/Practice/Index/927#8).
+
+
+### Problem: Converter - Radians to Degrees
+
+Write a function that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it in **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (`deg`).  Look for a proper formula on the Internet. The number **π** in **JavaScript** programs is available through  **``Math.PI``**. Round the result to the nearest integer using the **``Math.round(…)``** method.
+
+#### Sample Input and Output
+|  Input | Output |
+| ------ | ------ |
+| 3.1416 | 180    |
+| 6.2832 | 360    |
+| 0.7854 | 45     |
+| 0.5236 | 30     |
 
 #### Тестване в Judge системата
 
