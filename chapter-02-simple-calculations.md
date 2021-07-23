@@ -570,45 +570,45 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#3
 
 ### Problem:	Trapezoid Area
 
-Write a functions, which takes three arguments **b1, b2 and h and calculate the trapezoid area** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
+Write a functions, which gets three arguments **b1, b2 and h and calculate the trapezoid area** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
 
-На фигурата по-долу е показан трапец със страни 8 и 13 и височина 7. Той има лице **(8 + 13) * 7 / 2 = 73.5**.
+The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
 
 ![](assets/chapter-2-1-images/05.Trapezoid-area-01.png)
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Отново трябва да добавим във Visual Studio Code файл с име **calculateTrapezoidArea.js** и да напишем кода, който чете входните данни от аргументите на функция, пресмята лицето на трапеца и го отпечатва. Кодът на картинката е нарочно размазан, за да помисли читателят върху него и да го допише сам:
+We should add a new file in Visual Studio Code again with name **calculateTrapezoidArea.js** and to write a code which reads the inputs from function's arguments , calculates the trapezoid area and prints it. The code in the picture is purposely blurred, in order for you to give it a thought and finish it yourself:
 
 ![](assets/chapter-2-1-images/05.Trapezoid-area-02.png)
 
-**Тествайте** решението локално с извикване на функцията и стартиране с [**Ctrl+F5**].
+**Test** your solution locally by calling the function and starting the program with [**Ctrl+F5**].
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#4](https://judge.softuni.bg/Contests/Practice/Index/927#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#4](https://judge.softuni.bg/Contests/Practice/Index/927#4).
 
 
-### Задача:	периметър и лице на кръг
+### Problem:	Circle Perimeter and Area
 
-Напишете функция, която получава аргумент **число r** и пресмята и отпечатва **лицето и периметъра на кръг**/**окръжност** с **радиус r**.
+Write a function, which gets an argument **number r** and calculates and prints **the area and perimeter of a circle** with **radius r**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход                                                     |
-| ---- | --------------------------------------------------------- |
-| 3    | Area = 28.2743338823081 <br> Perimeter = 18.8495559215388 |
-| 4.5  | Area = 63.6172512351933 <br> Perimeter = 28.2743338823081 |
+| Input | Output                                                    |
+| ----- | --------------------------------------------------------- |
+|  3    | Area = 28.2743338823081 <br> Perimeter = 18.8495559215388 |
+|  4.5  | Area = 63.6172512351933 <br> Perimeter = 28.2743338823081 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За изчисленията можете да използвате следните формули:
+For the calculations you may use the following formulas:
 -	**`Area = Math.PI * r * r`**.
 -	**`Perimeter = 2 * Math.PI * r`**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#5](https://judge.softuni.bg/Contests/Practice/Index/927#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#5](https://judge.softuni.bg/Contests/Practice/Index/927#5).
 
 
 ### Задача: лице на правоъгълник в равнината
