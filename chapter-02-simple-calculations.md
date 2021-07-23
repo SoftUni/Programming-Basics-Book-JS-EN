@@ -650,7 +650,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#7
 
 ### Problem: Converter – from °C Degrees to °F Degrees
 
-Write a function that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F).  Look on the Internet for a proper [формула](http://bfy.tw/3rGh "Търсене в Google")to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few examples:
+Write a function that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F).  Look on the Internet for a proper  [formula](http://bfy.tw/3rGh "Търсене в Google")to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few examples:
 
 #### Sample Input and Output
 
@@ -678,59 +678,59 @@ Write a function that reads **an angle in [radians](https://en.wikipedia.org/wik
 | 0.7854 | 45     |
 | 0.5236 | 30     |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#9](https://judge.softuni.bg/Contests/Practice/Index/927#9).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#9](https://judge.softuni.bg/Contests/Practice/Index/927#9).
 
 
-### Задача: конвертор - USD към BGN
+### Problem: Converter - USD to BGN
 
-Напишете функция за **конвертиране на щатски долари** (USD) **в български лева** (BGN). **Закръглете** резултата до **2 цифри** след десетичния знак. Използвайте фиксиран курс между долар и лев: **1 USD = 1.79549 BGN**.
+Write a function for **conversion of US dollars** (USD) **into Bulgarian levs** (BGN). **Round** the result to **2 digits** after the decimal point. Use a fixed rate between a dolar and lev: **1 USD = 1.79549 BGN**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход      |
+|Input | Output     |
 | ---- | ---------- |
 | 20   | 35.91 BGN  |
 | 100  | 179.55 BGN |
 | 12.5 | 22.44 BGN  |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#10](https://judge.softuni.bg/Contests/Practice/Index/927#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#10](https://judge.softuni.bg/Contests/Practice/Index/927#10).
 
 
-### Задача:	\*  междувалутен конвертор
+### Problem:	\*  Currency Converter
 
-Напишете функция за **конвертиране на парична сума от една валута в друга**. Трябва да се поддържат следните валути: **BGN, USD, EUR, GBP**. Използвайте следните фиксирани валутни курсове:
+Write a function for **conversion of money from one currency into another**.  It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
 
-| Курс  | USD     | EUR     | GBP     |
+| Rate  | USD     | EUR     | GBP     |
 | :---: | :-----: | :-----: | :-----: |
 | 1 BGN | 1.79549 | 1.95583 | 2.53405 |
 
-**Входът** e **сума за конвертиране**, **входна валута** и **изходна валута**. **Изходът** е едно число – преобразуваната сума по посочените по-горе курсове, закръглен до **2 цифри** след десетичната точка. 
+**The input** is **sum for conversion**, **input currency** and **output currency**. **The output**is one number – the converted value of the above currency rates, rounded **2 digits** after the decimal point. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход                 | Изход      |
+| Input                | Output     |
 | -------------------- | ---------- |
 | 20<br>USD<br>BGN     | 35.91 BGN  |
 | 100<br>BGN<br>EUR    | 51.13 EUR  |
 | 12.35<br>EUR<br>GBP  | 9.53 GBP   |
 | 150.35<br>USD<br>EUR | 138.02 EUR |
  
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#11](https://judge.softuni.bg/Contests/Practice/Index/927#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#11](https://judge.softuni.bg/Contests/Practice/Index/927#11).
 
 
-### Задача:	** пресмятане с дати - 1000 дни на Земята
+### Problem:	** Date Calculations – 1000 Days on the Earth
 
-Напишете функция, която чете **рождена дата** във формат **`dd-MM-yyyy`** и пресмята датата, на която се навършват **1000 дни** от тази рождена дата и я отпечатва в същия формат.
+Write a function that reads **a birth date** in format **`dd-MM-yyyy`** and calculates the date on which **1000 days** are turned since this birth date and prints it in the same format.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход       | Изход      |
+| Input      | Output     |
 | ---------- | ---------- |
 | 1995-02-25 | 20-11-1997 |
 | 2003-11-07 | 02-08-2006 |
@@ -738,28 +738,28 @@ Write a function that reads **an angle in [radians](https://en.wikipedia.org/wik
 | 2012-01-01 | 26-09-2014 |
 | 1980-06-14 | 10-03-1983 |
 
-#### Насоки и подсказки 
-* Потърсете информация за типа **``Date``** в JavaScript и по-конкретно разгледайте методите **``setDate(...)``**, **``getDate()``**, **``getMonth()``** и **``getYear()``**. С тяхна помощ може да решите задачата, без да е необходимо да изчислявате дни, месеци и високосни години.
-* **Не печатайте** нищо допълнително на конзолата освен изискваната дата!
+#### Hints and Guidelines
+* Look for information about the data type **``Date``** in JavaScript and in particular look at the methods **``setDate(...)``**, **``getDate()``**, **``getMonth()``** and **``getYear()``**. With their help you can solve the problem without the need to calculate days, months and leap years.
+* **Don't print** anything additional on the console except for the wanted date!
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#12](https://judge.softuni.bg/Contests/Practice/Index/927#12).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#12](https://judge.softuni.bg/Contests/Practice/Index/927#12).
 
 
-## Графични приложения с числови изрази
+## Graphic Applications with Numerical Expressions
 
-За да упражним работата с променливи и пресмятания с оператори и числови изрази, ще направим нещо интересно: ще разработим **уеб приложение** с графичен потребителски интерфейс. В него ще използваме пресмятания с дробни числа.
+To exercise working with variables and calculations with operators and numerical expressions, we will make something interesting: we will develop a **web application**  with graphical user interface. In it, we will use calculations with floating point numbers.
 
-### Уеб приложение: \*\*\* конвертор от BGN към EUR!
-Създайте уеб приложение, което пресмята стойността в **евро** (EUR) на парична сума, зададена в **лева** (BGN). При промяна на стойността в лева, равностойността в евро трябва да се преизчислява автоматично. Използвайте курс лева / евро: **1.95583**.
+### Web Application: \*\*\* Converter - BGN to EUR!
+Create a web application that calculates the value in **Euro** (EUR)of monetary amount given in **Bulgarian levs** (BGN). By changing the amount in BGN, the amount in EUR has to be recalculated automatically. Use the fixed rate levs / euro: **1.95583**.
 
 ![](assets/chapter-2-1-images/13.Bgn-to-eur-01.png)
 
-По подобен начин както във първата глава ("Първи стъпки в програмирането"), за нашето приложение ще използваме езиците **JavaScript**, **HTML** и **CSS**.
+In a similar way as in the first chapter ("First Steps in Programming"), we will use the languages **JavaScript**, **HTML** and **CSS** for our application.
 
-1. Първата стъпка е да си **създадем папка** в която ще съхраняваме всички файлове които са необходими за нашето приложение.
-2. След това в папката трябва да създадем html файл: **index.html**
+1. The first step is to **create a folder** in which we will store all the files that are needed for our application.
+2. Then we need to create an html file in the folder: **index.html**
 
 ```html
 <!DOCTYPE html>
@@ -788,9 +788,10 @@ Write a function that reads **an angle in [radians](https://en.wikipedia.org/wik
 </html>
 ```
 
-Обърнете внимание, че всяка html страница трябва да има **определена структура**. Например винаги основният код който пишем е в тага **`<body>`**, и винаги заглавието на страницата е в тага **`<title>`**.
 
-3. Вече имаме структурата на страницата, остава да добавим и **JavaScript** файл със самата логика. Създаваме нов файл и го именуваме **converter.js**
+Note that each html page must have a **specific structure**. For example, always the main code we write is in the tag **`<body>`** ,  and always the title of the page is in the tag **`<title>`** .
+
+3. Now we already have the structure of the page, it remains to add a **JavaScript** file with the logic itself. We create a new file and name it **converter.js**
 
 ```javascript
 function eurConverter() {
@@ -800,33 +801,33 @@ function eurConverter() {
 }
 ```
 
-4. След като имаме логиката на приложението, трябва да намерим начин да кажем къде да се изпoлзва. За целта трябва да направим 2 промени в съществуващия **index.html** файл:
+4. Once we have the logic of the application, we need to find a way to tell where to use it. To do this we need to make 2 changes to the existing **index.html** file:
 
-Първо добавяме следния ред точно под **`title`** тага, чрез който се осъществява връзката между файловете **index.html** и **converter.js**:
+First we add the following line just below the **`title`** tag, through which the connection between the files is made **index.html** and **converter.js**:
    
 ```html
  <script src="converter.js" type="text/javascript"></script>
 ```
 
-И второ, намираме и заместваме **`input`** полето с тип **`button`** със следния код. По този начин задаваме **при клик** на бутона [**Convert!**] да се извиква функцията **`eurConverter()`**:
+And second, we find and replace the **`input`** field with type **`button`** with the following code. In this way we set **when clicking** on the button [**Convert!**] to call the function **`eurConverter()`**:
 
 ```html
 <input class="primary-btn" type="button" onclick="eurConverter()" value="Convert!" />
 ```
 
-Ако стартираме файла **index.html** от папката, в момента би трябвало да имаме работещо приложение, което да конвертира от BGN към EUR:
+If we start the file **index.html** from the folder, we should have a working application that converts from BGN to EUR:
  
 ![](assets/chapter-2-1-images/13.Bgn-to-eur-02.png)
 
-Нека го направим по-красиво.
+Let we make it more beautiful.
 
-5.	Създаваме нов файл с разширение **\*.css** и име **index**. [CSS](https://www.w3schools.com/html/html_css.asp) служи за стилизиране на елементите в HTML. Отваряме файла **index.html** и добавяме следния ред в тага **`<head>`**:
+5.	We create a new file with extension **\*.css** and name **index**. [CSS](https://www.w3schools.com/html/html_css.asp) is used to stylize the elements in HTML. We open the file  **index.html** and add this line in the tag **`<head>`**:
 
 ```html
 <link rel="stylesheet" href="index.css" type="text/css" />
 ```
 
-Във файла **index.css** слагаме следния код (дефинираме стилове за отделните елементи от HTML формата):
+In the file **index.css** we write the following code (we define styles for the individual elements of the HTML format):
 
 ```css
 body {
@@ -880,28 +881,28 @@ body {
 
 ```
 
-6. Стартираме **index.html** файла:
+6. Start the file **index.html**:
 
 ![](assets/chapter-2-1-images/13.Bgn-to-eur-03.png)
 
 
-### Уеб приложение: \*\*\* Хвани мишката!
+### Web Application: \*\*\* Catch the Mouse!
 
-При преместване на курсора на мишката върху изображението, то се премества на случайна позиция. Така се създава усещане, че „**изображението бяга от курсора** и е трудно да се хване“. При „хващане“ на изображението, се извежда съобщение-поздрав.
+Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that **the image runs form the mouse** and it is hard to catch“. When the image gets “caught”, a congratulations message is shown..
 
-**Подсказка**: напишете обработчик за събитието **`mouseover`** и премествайте изображението на случайна позиция. Използвайте генератор за случайни числа **`Math.random()`**. Позицията на изображението се задава от свойството **`style.position`**. За да "хванете мишката", напишете функция за събитието **`onclick`**.
+**Hint**: Write a Event Handler **`mouseover`**  and move the image to a random position. Use the random numbers generator **`Math.random()`**. Позицията на изображението се задава от свойството **`style.position`**. To "catch the mouse" **`onclick`** to "catch the mouse". 
 
 ![](assets/chapter-2-1-images/14.Catch-the-mouse-00.png)
 
-1. Създаваме нова папка **catch-the-mouse** в която ще съхраняваме файловете за уеб приложението.
-2. В папката създаваме два файла: **index.html** и **app.js**. Структурата на папката трябва да изглежда по следния начин:
+1. We create a new folder **catch-the-mouse** in which we will save the files for the application.
+2. We create two files in the folder: **index.html** and **app.js**. The folder structure must look like this:
 
 
 ![](assets/chapter-2-1-images/14.Catch-the-mouse-01.png)
 
-3.	Можете да си помогнете с кода по-долу:
+3.	You can help yourself with the code below:
 
-Файлът **index.html** трябва да изглежда по следния начин:
+The file **index.html** must look like this:
 
 ```html
 <!DOCTYPE html>
@@ -919,7 +920,7 @@ body {
 
 ```
 
-Файлът **app.js** трябва да изглежда по следния начин:
+The file **app.js** must look like this:
 
 ```javascript
 function chaseMouse() {
@@ -934,12 +935,12 @@ function catchMouse() {
 }
 ```
 
-4. Намираме изображение от интернет и го добавяме, като го именуваме **`mouse.jpg`**.
+4. We find an image from the internet and add it by naming it **`mouse.jpg`**.
 
-Тествайте приложението, като отворите папката на проекта в **explorer**  и стартирате файла **index.html**:
+Test the application by opening the project folder in **explorer** and launching the file **index.html**:
 
 ![](assets/chapter-2-1-images/14.Catch-the-mouse-02.png)
 
-5. Завършете приложението.
+5. Done the application.
 
-Ако имате трудности питайте във **форума на СофтУни**: https://softuni.bg/forum.
+If you have any difficulties, ask in **the Softuni Forum**: https://softuni.bg/forum.
