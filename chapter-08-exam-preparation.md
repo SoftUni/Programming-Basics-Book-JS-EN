@@ -1,45 +1,45 @@
-# Глава 8.1. Подготовка за практически изпит – част I
+# Chapter 8.1. Practical Exam Preparation - Part I
 
-В **настоящата глава** ще разгледаме няколко **задачи** с ниво на **трудност**, каквото може да очаквате от **задачите** на практическия **изпит** по “Основи на програмирането”. Ще **преговорим** и **упражним** всички знания, които сте придобили от настоящата книга и през курса "Programing Basics".
+In **the present chapter** we will examine a few **problems** with a level of difficultly **трудност** that can be expected in **the problems** of the practical **exam** in “Programming Basics”. We will **review** and **practice** all the knowledge that was gained from this book and through the "Programming Basics" course.
 
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank"
+  Watch a video tutorial on this chapter here: <a target="_blank"
   href="https://www.youtube.com/watch?v=bnxf9oiDduo">
   https://www.youtube.com/watch?v=bnxf9oiDduo</a>.
 </div>
 
 
-## Практически изпит по “Основи на програмирането”
+## The "Programming Basics" Practical Exam
 
-Курсът **"Programing Basics"** приключва с **практически изпит**. Включени са **6** задачи, като ще имате **4 часа**, за да ги решите. **Всяка** от задачите на изпита ще **засяга** една от изучаваните **теми** по време на курса. Темите на задачите са както следва:
+The course **"Programing Basics"** finishes with a **practical exam**. There are **6** problems included, and you will have **4 часа** to solve them. **Each** of the exam problems will **cover** one of the studied **topics** during the course. Problem topics are as follows:
 
-- Задача с прости сметки (без проверки)
-- Задача с единична проверка
-- Задача с по-сложни проверки
-- Задача с единичен цикъл
-- Задача с вложени цикли (чертане на фигурка на конзолата)
-- Задача с вложени цикли и по-сложна логика
+- Problem with simple calculations (without conditions)
+- Problem with simple condition
+- Problem with more complex conditions
+- Problem with a simple loop
+- Problem with nested loops (drawing a figure on the console)
+- Problem with nested loops and more complex logic
 
-## Система за онлайн оценяване (Judge)
+## The Online Evaluation System (Judge)
 
-**Всички изпити и домашни** се **тестват** автоматизирано през онлайн **Judge система**: [https://judge.softuni.bg](https://judge.softuni.bg). За **всяка** от задачите има **открити** (нулеви) тестове, които ще ви помогнат да разберете какво се очаква от задачата и да поправите грешките си, както и **състезателни** тестове, които са **скрити** и проверяват дали задачата ви работи правилно. В **Judge** системата се влиза с вашия **softuni.bg акаунт**.
+**All exams and homeworks** are automatically **tested** through the online **Judge system**: [https://judge.softuni.bg](https://judge.softuni.bg). For **each** of the problems there are **visible** (zero point) testso help you understand what is expected of the problem and fix your mistakes, as well as **competition** tests that are **hidden** and check if your solution is working properly. In the **Judge** system you can log in with your **softuni.bg account**.
 
-**Как** работи тестването в **Judge** системата? **Качвате** сорс кода и от менюто под него избирате да се изпълни с **JavaScript**. Програмата бива **тествана** с поредица от тестове, като за всеки **успешен** тест получавате **точки**.
+**How** does the testing in the **Judge** system works? **You upload** he source code and from the menu below you choose to compile as a **JavaScript** program. The program is being **tested** with a series of tests, giving **points** for each **successful** test.
 
 
-## Задачи с прости пресмятания
+## Problems with Simple Calculations
 
-**Първата** задача на практическия изпит по “Основи на програмирането” обхваща **прости пресмятания без проверки и цикли**. Ето няколко примера:
+**The first**  problem of the "Programming Basics" Practical Exam covers **simple calculations without checks and loops**. Here are a few examples:
 
-### Задача: лице на триъгълник в равнината
+### Problem: 2D Triangle Area
 
 <table>
    <tr>
       <td width="60%">
-        <b>Триъгълник в равнината</b> е зададен чрез координатите на трите си върха. Първо е зададен <b>върхът (x1, y1)</b>. След това са зададени останалите два върха: <b>(x2, y2)</b> и <b>(x3, y3)</b>, които <b>лежат на обща хоризонтална права</b> (т.е. имат еднакви Y координати). Напишете програма, която пресмята <b>лицето на триъгълника</b> по координатите на трите му върха.
+        <b>Triangle in the plain</b>  is defined by the coordinates of its three vertices. First <b>the vertex (x1, y1)</b> is set. Then the other two vertices are set: <b>(x2, y2)</b> and <b>(x3, y3)</b> which <b>lie on a common horizontal line</b> i.e. they have the same Y coordinates). Write a program that calculates <b>the triangle area</b> пby the coordinates of its three vertices.
       </td>
       <td>
          <img src="assets/chapter-8-1-images/01.Triangle-area-01.png"/>
@@ -47,18 +47,18 @@
    </tr>
 </table>
 
-#### Входни данни
-Като параметри на функцията подаваме **6 цели числа**: **x1, y1, x2, y2, x3, y3.**
--	Всички числа са в диапазона [**-1000 … 1000**].
--	Гарантирано е, че **y2 = y3**.
+#### Input
+We submit **6 integers** as parameters of the function: **x1, y1, x2, y2, x3, y3.**
+-	All input numbers are in range [**-1000 … 1000**].
+-	It's guaranteed that **y2 = y3**.
 
-#### Изходни данни
-Да се отпечата на конзолата **лицето на триъгълника**.
+#### Output
+Print on the console **the triangle area**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Чертеж|Обяснения|
-|----|----|----|----|
+|Input|Output|Visualization|Comments|
+|-----|------|-------------|--------|
 |5<br>-2<br>6<br>1<br>1<br>1|7.5|![](/assets/chapter-8-1-images/01.Triangle-area-01.png)|Страната на триъгълника **а** = 6 - 1 = **5**<br>Височината на триъгълника **h** = 1 - (-2) = **3**<br>Лицето на триъгълника **S** = a \* h / 2 = 5 \* 3 / 2 = **7.5**|
 
 |Вход|Изход|Чертеж|Обяснения|
