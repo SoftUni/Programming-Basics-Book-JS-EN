@@ -70,25 +70,25 @@ Print on the console **the triangle area**.
 It is important in such types of tasks where some coordinates are given to pay attention to **the order** in which they are submitted, and to properly understand which of the coordinates we will use and how. In this case, the input is in order **x1, y1, x2, y2, x3, y3**. If we do not follow this sequence, the solution becomes wrong. First, we write the code that reads the input data:
 ![](assets/chapter-8-1-images/01.Triangle-area-03.png)
 
-We have to calculate **the side** and **the height** of the triangle. От примерите, както и от условието **`y2 = y3`** забелязваме, че едната **страна** винаги е успоредна на хоризонталната ос. Това означава, че нейната **дължина** е равна на дължината на отсечката между нейните координати **`x2` и `x3`**, която е равна на разликата между по-голямата и по-малката координата. Аналогично можем да изчислим и **височината**. Тя винаги ще е равна на разликата между **`y1` и `y2`**(или **`y3`**, тъй като са равни). Тъй като не знаем дали винаги **`x2`** ще е по-голям от **`x3`**, или **`y1`** ще е под или над страната на триъгълника, ще използваме **абсолютните стойности** на разликата, за да получаваме винаги положителни числа, понеже една отсечка не може да има отрицателна дължина.
+We have to calculate **the side** and **the height** of the triangle. From the examples and the condition **`y2 = y3`** we notice that the one **side** is always parallel to the horizontal axis. It means that its **length** is equal to the length of the segment between its coordinates **`x2` and `x3`**,  which is equal to the difference between the larger and the smaller coordinates. Similarly, we can calculate **the height**.It will always be equal to the difference between **`y1` and `y2`**(or **`y3`**,  as they are equal). Since we do not know if **`x2`** is greater than **`x3`**, or **`y1`** will be below or above the triangle side, we will use **the absolute values** of the difference to always get positive numbers, because one segment cannot have a negative length.
 
 ![](assets/chapter-8-1-images/01.Triangle-area-04.png)
 
-По познатата ни от училище формула за намиране на **лице на триъгълник** ще пресметнем лицето.
+We will calculate the triangle area by using our familiar formula for finding an **area of a triangle** .
 
 
 ![](assets/chapter-8-1-images/01.Triangle-area-05.png)
 
-Единственото, което остава, е да отпечатаме лицето на конзолата.
+The only thing left is to print the area on the console.
 
 ![](assets/chapter-8-1-images/01.Triangle-area-06.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#0](https://judge.softuni.bg/Contests/Practice/Index/939#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#0](https://judge.softuni.bg/Contests/Practice/Index/939#0).
 
 
-### Задача: пренасяне на тухли
+### Problem: Moving Bricks
 
 Строителни работници трябва да пренесат общо **x тухли**. **Работниците** са **w** на брой и работят едновременно. Те превозват тухлите в колички, всяка с **вместимост m** тухли. Напишете програма, която прочита целите числа **x**, **w** и **m** и пресмята **колко най-малко курса** трябва да направят работниците, за да превозят тухлите.
 
