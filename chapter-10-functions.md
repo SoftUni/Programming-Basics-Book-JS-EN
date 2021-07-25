@@ -6,7 +6,7 @@ In this chapter, we will introduce you to **functions** and you will learn their
 
 ## What is "function"?
 
-Until this moment, we have found out that while **writing** a programming code for an exercise, **separating** the exercise into **parts**, favors  us a lot. Every part is responsible for a **corresponding action** and by doing so it's **easier** to solve the problem, and the **readability** and the debugging of the code are better.
+Until this moment, we have found out that while **writing** a programming code for an exercise, **separating** the exercise into **parts**, favors us a lot. Every part is responsible for a **corresponding action** and by doing so it's **easier** to solve the problem, and the **readability** and the debugging of the code are better.
 
 Every piece of code, which does corresponding functionality and which we have separated logically is called **function**. **Functions – slices of code, that are named** by us in a specific way can be called numerous times when we need them, and they will be run that many times as we want to.
 
@@ -20,7 +20,7 @@ Let's see an **example of a simple function**:
 
 ![](assets/chapter-10-images/01.Simple-method-01.png)
 
-This **function** has the task to print a header, that is a series of the symbol **`-`**. Because of this, the name of the function is **`printHeader`**. The round brackets  **`( `** and **`)`** are always after the name, no matter how we have named the functions. Later we will take a look at how we have to name the functions we are working with, but for now, we will only say that it's important the **name of the function to define the action** that is doing.
+This **function** has the task to print a header, that is a series of the symbol **`-`**. Because of this, the name of the function is **`printHeader`**. The round brackets  **`( `** and **`)`** are always after the name, no matter how we have named the functions. Later we will take a look at how we have to name the functions we are working with, but for now, we will only say that it's important for the **name of the function to define the action** that is doing.
 
 The **body** of the function consists of **programming code**, which is located between the curly brackets **`{`** and **`}`**. Between them, we place code, that will solve our problem, described by the name of the function.
 
@@ -34,7 +34,7 @@ Functions offer us the **opportunity** to use **code several times**. With solvi
 
 ## Declaring functions
 
-In Javascript language we can **define** function everywhere, using the same way we define variables everywhere. Declaring represents the **register of function** inside a program, to be recognized in it.
+In Javascript language we can **define** function everywhere, using the same way we define variables everywhere. Declaring represents the **register of a function** inside a program, to be recognized in it.
 
 Javascript isn't **strongly typed** language. That's why when we **declare a function** it doesn't have a type(string, number, array, etc.), which other programming language methods have.
 
@@ -42,7 +42,7 @@ There are 2 types of ways, which declare a function in Javascript - **function d
 
 ### Function declaration
 
-With the next example, we will take a look at  the required elements inside a function, using **function declaration**.
+With the next example, we will take a look at the required elements inside a function, using **function declaration**.
 
 ![](assets/chapter-10-images/02.Declaring-methods-02.png)
 
@@ -62,7 +62,7 @@ With the next example, we will look at the required elements in the declaration 
 
 * **Keyword `let`**. We will start with using the **keyword `let`**, with which we will declare a declaration of a variable.
 * **Name of the variable**. The name of the variable is **decided by us**. In the example, the name is **`getSquare`** which tells us that the task of this function is to calculate the area of the square.
-* **Declaration of a function**. Using the same structure that we have learned in **function declaration** -  first **Keyword function** then **Name of function**, **List of parameters** surrounded by round brackets **`()`**, **Body of the function** surrounded by curly brackets **`{}`**. The difference, in this case, is that **Name of function** is not necessary, but it is recommended to get used to writing the name. In the example, the program will work without problems even if we don't type **`getSquareFunc`**. If we don't type the name, the function will become **anonymous**.
+* **Declaration of a function**. Using the same structure that we have learned in **function declaration** -  first **Keyword function** then **Name of function**, **List of parameters** surrounded by round brackets **`()`**, **Body of the function** surrounded by curly brackets **`{}`**. The difference, in this case, is that **Name of a function** is not necessary, but it is recommended to get used to writing the name. In the example, the program will work without problems even if we don't type **`getSquareFunc`**. If we don't type the name, the function will become **anonymous**.
 
 When we declare a variable in the body of a function (using the keyword **`let`** or **`const`**)
 we call it **local** variable for the function. The scope in which it exists and can be used is from the row it is defined to the end of the closing bracket **`}`** of the function. That scope is called **variable scope**.
@@ -74,201 +74,199 @@ All functions declared by **function declaration** are loaded in the memory of t
 
 In theory, this means that we can **call function** declared with **function declaration** even before it was declared in the previous rows. If we try to use **function expression** the program will **throw an error** that the function is not declared yet.
 
-## Calling a function
-Извикването на функции представлява **стартирането на изпълнението на кода**, който се намира в **тялото на функцията**. Това става като изпишем **името** на функцията, последвано от кръглите скоби **`()`** и знака **`;`** за край на реда. Ето един пример:
+## Invoking a function
+Invoking a function is the **beginning execution of the code** that is located inside the body of the function. We call it by typing the **name** of the function followed by **`()`** and **`;`** to end the row. Here is an example:
 
 ![](assets/chapter-10-images/03.Invoking-methods-01.png)
 
-Дадена функция може да бъде извикана от **няколко места** в нашата програма. Единият начин е да бъде извикана от **главната област на програмата** (global scope).
+This function can be called from **different points** in our program. One of the ways to be called is to be called from the **global scope**.
 
 ![](assets/chapter-10-images/03.Invoking-methods-02.png)
 
-Функция може да бъде извикана и от **тялото на друга функция**, която **не** е главната област на програмата ни.
+A Function can be invoked from the **body of another function** which is **not** the global scope of our program.
 
 ![](assets/chapter-10-images/03.Invoking-methods-03.png)
 
-Съществува вариант функцията да бъде извикана от **собственото си тяло**. Това се нарича **рекурсия** и можете да намерите повече информация за нея в [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) или да потърсите сами в Интернет.
+A Function can be called from **its own body**. This is called **recursion** and you can find more about it on [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) or google it.
 
-### Пример: празна касова бележка
+### Example: empty cash receipt
 
-Да се напише функция, която печата празна касова бележка. Функцията трябва да извиква други три функции: една за принтиране на заглавието, една за основната част на бележката и една за долната част.
+Write a function, that prints empty cash receipt. The function must call another three functions: one to print the title, one for the main part, and the last for the bottom part.
 
-|Част от касовата бележка|Текст|
+|Part of cash receipt|Text|
 |---|---|
-|Горна част|CASH RECEIPT<br>------------------------------|
-|Средна част|Charged to\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>Received by\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|
-|Долна част|------------------------------<br>(c) SoftUni|
+|Upper part|CASH RECEIPT<br>------------------------------|
+|Middle part|Charged to\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>Received by\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|
+|Bottom part|------------------------------<br>(c) SoftUni|
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
-|(няма)|CASH RECEIPT<br>------------------------------<br>Charged to\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>Received by\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>------------------------------<br>(c) SoftUni|
+|None|CASH RECEIPT<br>------------------------------<br>Charged to\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>Received by\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>------------------------------<br>(c) SoftUni|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първата ни стъпка е да създадем функция за **принтиране на заглавната част** от касовата бележка (header). Нека ѝ дадем смислено име, което описва кратко и ясно задачата ѝ, например **`printReceiptHeader`**. В тялото ѝ ще напишем следния код:
+Our first step is to create a function for **creating title**. We should give it a short descriptive name. For example: **`printReceiptHeader`**. In the body we will write the following code:
 
 ![](assets/chapter-10-images/04.Print-receipt-01.png)
+In a like manner, we will create another two functions **to print the middle part** of the receipt (body) **`printReceiptBody`** and **to print the bottom part** of the receipt (footer **`printReceiptFooter`**.
 
-Съвсем аналогично ще създадем още две функции  **за разпечатване на средната част** на бележката (тяло) **`printReceiptBody`** и **за разпечатване на долната част** на бележката (footer) **`printReceiptFooter`**.
-
-След това ще създадем и **още една функция**, която ще извиква трите функции, които написахме до момента една след друга:
+After this we will set **one more function*** which will call the other three functions which we have written so far:
 
 ![](assets/chapter-10-images/04.Print-receipt-02.png)
 
-Накрая ще **извикаме** функцията **`printReceipt`** от global scope-a на нашата програма:
+In the end we will **invoke** **`printReceipt`** from the global scope of our program:
 
 ![](assets/chapter-10-images/04.Print-receipt-03.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Програмата с общо четири функции, които се извикват една от друга, е готова и можем **да я изпълним и тестваме**, след което да я пратим за проверка в Judge системата: [https://judge.softuni.bg/Contests/Practice/Index/943#0](https://judge.softuni.bg/Contests/Practice/Index/943#0).
+The program with a total of four functions that call one another is ready and we can **run and debug it**. After that, we will send it for test in the Judge system: [https://judge.softuni.bg/Contests/Practice/Index/943#0](https://judge.softuni.bg/Contests/Practice/Index/943#0).
 
-## Функции с параметри
+## Functions with parameters
 
-Много често в практиката, за да бъде решен даден проблем, функцията, с чиято помощ постигаме това, се нуждае от **допълнителна информация**, която зависи от задачата ѝ. Именно тази информация представляват **параметрите на функцията** и нейното поведение зависи от тях. 
+When we are dealing with a given task the function we are using needs **additional information** which the result depends on. Exactly this information are the **parameters of the functions** and the behavior of the program depends on it.
 
-### Използване на параметри във функции
+### Using parameters inside a function
 
-Ако функцията ни изисква **входни данни**, то те се подават в скобите **`()`**, като последователността на **фактическите параметри** трябва да съвпада с последователността на подадените при декларирането на функцията. Както отбелязахме по-горе, **параметрите освен нула на брой, могат също така да са един или няколко**. При декларацията им ги разделяме със запетая.
+If the function requires **input data**, it is passed inside the **`()`** brackets. The order of the **function parameters** must match the order of the **function arguments** when declaring and invoking the function. Parameters can be **zero, one, or more**. When declaring the parameters we divide them with comma **`,`**.
 
-**Декларираме** функцията **`printNumbers(...)`** и **списъка** с **параметри**, от които тя се нуждае, за да работи коректно, след което пишем кода, който ще изпълнява:
+**Declaring** function **`printNumbers(...)`** and the **list** of **parameters** which the programs need to work correctly will look like this:
 
 ![](assets/chapter-10-images/05.Method-parameters-01.png)
 
-След това **извикваме** функцията, като ѝ **подаваме конкретни стойности**:
+After this, we **invoke** the function, and we give it the **corresponding function arguments**:
 
 ![](assets/chapter-10-images/05.Method-parameters-02.png)
 
-При **декларирането на параметри** трябва да внимаване всеки един параметър да има **име**. Важно е при извикване на функцията, да подаваме **стойности** за параметрите по **реда**, в който са **декларирани** самите те. В примера, който разгледахме на променливата **`start`** ще бъде присвоена стойността на първият подаден параметър - в нашият случай числото 5. На променливата **`end`** ще бъде присвоена стойността на вторият параметър, който сме подали - в случая числото 10.
+When **when declaring function parameters** we should check if every parameter has **name**. It's also important when we invoke a function we should always pass **values** in the order that they are declared. In the previous example, the variable **`start`** will be passed to the first element (in our case the number 5). The variable **`end`** will have the next number which is 10.
 
-Важно е да се отбележи, че в езикът **JavaScript** декларирането на функция с даден **брой параметри**, не ни задължава да извикваме функцията със **същият брой параметри**. Можем да извикаме функция като и подадем както **повече**, така и **по - малко** параметри, като това няма да доведе до грешка.
+It's important to point out that in the programming language **JavaScript** declaring a function with a given **number of parameters** doesn't force us to invoke the function with the **same number of parameters**. We can invoke the function by giving it **more** or **less** parameters than needed and it won't throw an error.
 
-Нека разгледаме следния пример:
+Let's look at this example:
 
 ![](assets/chapter-10-images/05.Method-parameters-03.png)
 
-В случая извикваме функцията **`printNumbers(...)`** като и подаваме 4, вместо **декларираните** 2 параметъра. Всички излишни параметри ще бъдат **игнорирани**. Т.е. числата 15 и 20, няма да стигнат до функцията, защото нямаме **деклариран параметър**, който да ги приеме.
+In this example, we call the function  **`printNumbers(...)`** and we give 4 instead of the **declared** 2 parameters. All unnecessary parameters will be ignored. These are the numbers 15 and 20. They won't go to the function because the function doesn't have a declared parameter that will get them.
 
-Нека разгледаме още един пример:
+Let's look at another example:
 
 ![](assets/chapter-10-images/05.Method-parameters-04.png)
 
-В случая извикваме функцията **`printNumbers(...)`** като и подаваме 1, вместо **декларираните** 2 параметъра. Всички параметри, за които **не е подадена стойност**, ще получат автоматично стойност **`undefined`**. В нашият случай променливата **`secondNumber`** ще има стойност **`undefined`**.
+In this example, we call the function **`printNumbers(...)`** but this time we give only 1 parameter instead of the **declared** 2 parameters. All parameters that are not **set as values** will automatically get **`undefined`** values. In our case the variable.
 
-### Пример: знак на цяло число
+### Example: Symbol of integer
 
-Да се създаде функция, която печата знака на цяло число n.
+Create a function that checks if a number is a positive or negative number.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |2|The number 2 is positive.|
 |-5|The number -5 is negative.|
 |0|The number 0 is zero.|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първата ни стъпка е **декларирането** на функция и даването ѝ на описателно име, например **`printSign`**. Тази функция ще има само един параметър:
+Our first step is **declaring** a function and giving it describing name - **`printSign`**. This function will only have one parameter:
 
 ![](assets/chapter-10-images/06.Print-sign-01.png)
 
-Следващата ни стъпка е **имплементирането** на логиката, по която програмата ни ще проверява какъв точно е знакът на числото. От примерите виждаме, че има три случая - числото е по-голямо от нула, равно на нула или по-малко от нула, което означава, че ще направим три проверки в тялото на функцията. 
+Our next step is **implementing** logic by which our program will check if the number is positive or negative. From the example, we can see that there are 3 cases:  if the number is bigger and smaller than zero or if it's zero. We will make three conditional statements in the body of the function.
 
-Следващата ни стъпка е да извикаме функцията, която създадохме:
+Our next step is to call the function we have created:
 
 ![](assets/chapter-10-images/06.Print-sign-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#1](https://judge.softuni.bg/Contests/Practice/Index/943#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#1](https://judge.softuni.bg/Contests/Practice/Index/943#1).
 
 
-### Незадължителни параметри
+### Optional parameters
 
-Езикът **JavaScript** поддържа използването на **незадължителни** параметри. Те позволяват **пропускането** на параметри при извикването на функцията. Декларирането им става чрез **осигуряване на стойност по подразбиране** в описанието на съответния параметър.
+**JavaScript** programming language supports **optional** parameters. They allow **skipping** of parameters when calling a function. We declare them by **providing default values** in the description of the parameter.
 
-Следващият пример онагледява употребата на незадължителните параметри:
+Our next example shows the use of optional parameters:
 
 ![](assets/chapter-10-images/07.Optional-parameters-01.png)
 
-Показаната функция **`printNumbers(...)`** може да бъде извикана по няколко начина:
+**`printNumbers(...)`** can be invoked in different ways:
 
 ![](assets/chapter-10-images/07.Optional-parameters-02.png)
 
-При липсата на **подадена стойност** на параметър, той ще **приеме стойността**, с която сме го **декларирали** при декларацията на функцията.
+When we are not **setting value** for the parameter, he will **get the value** that we have given him when declaring the function.
 
-### Пример: принтиране на триъгълник
+### Example: Print of triangle
 
-Да се създаде функция, която принтира триъгълник, както е показано в примерите.
+Create a function that will create a triangle as shown in the example.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|OutPut|Input|OutPut|
 |---|---|---|---|
 |3|1<br>1 2<br>1 2 3<br>1 2<br>1|4|1<br>1 2<br>1 2 3<br>1 2 3 4 <br>1 2 3<br>1 2<br>1|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Избираме смислено име за функцията, което описва целта ѝ, например **`printLine`**, и я имплементираме:
+We choose a name according to the task it will do. For example, **`printLine`** and we implement it:
 
 ![](assets/chapter-10-images/08.Print-triangle-01.png)
 
-От задачите за рисуване на конзолата си спомняме, че е добра практика **да разделяме фигурата на няколко части**. За наше улеснение ще разделим триъгълника на три части - горна, средна линия и долна.
+From drawing on console exercises we remember that it's a good practice to **divide the figure into different parts**. We will divide the triangle into 3 parts - upper, middle, and bottom.
 
-Следващата ни стъпка е с цикъл да разпечатаме **горната половина** от триъгълника:
+Our next step is to print the **upper body** of the triangle with a loop:
 
 ![](assets/chapter-10-images/08.Print-triangle-02.png)
 
-След това разпечатваме **средната линия**:
+After that, we will print the **middle part**:
 
 ![](assets/chapter-10-images/08.Print-triangle-03.png)
 
-Накрая разпечатваме **долната част** от триъгълника, като този път стъпката на цикъла намалява.
+In the end, we will print the **bottom part** from the triangle but this time with a reverse loop.
 
 ![](assets/chapter-10-images/08.Print-triangle-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#2](https://judge.softuni.bg/Contests/Practice/Index/943#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#2](https://judge.softuni.bg/Contests/Practice/Index/943#2).
 
+### Example: draw a filled square.
 
-### Пример: рисуване на запълнен квадрат
+Draw a square with side **`n`**, as shown in the example.
 
-Да се нарисува на конзолата запълнен квадрат със страна n, както е показно в примерите.
+#### Sample Input and Output
 
-#### Примерен вход и изход
-
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |4|<code>--------</code><br><code>-\\/\\/\\/-</code><br><code>-\\/\\/\\/-</code><br><code>--------</code>|5|<code>----------</code><br><code>-\\/\\/\\/\\/-</code><br><code>-\\/\\/\\/\\/-</code><br><code>-\\/\\/\\/\\/-</code><br><code>----------</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Създаваме функция, която ще принтира първия и последен ред, тъй като те са еднакви. Нека не забравяме, че трябва да му дадем **описателно име** и да му зададем като **параметър** дължината на страната. Ще използваме вградения метод **`repeat(...)`**: 
+We create a function that prints the first and last row because they are the same. We shouldn't forget that we have to give him a **corresponding name** and set as a **parameter** the length of the side. We will use the built-in function **`repeat(...)`**:
 
 ![](assets/chapter-10-images/09.Draw-filled-square-01.png)
 
-Следващата ни стъпка е да създадем функция, която ще рисува на конзолата средните редове. Отново задаваме описателно име, например **`printMiddleRow`**:
+Our next step is to create a function that will draw on the console the middle rows. Again we set a descriptive name such as **`printMiddleRow`**.
 
 ![](assets/chapter-10-images/09.Draw-filled-square-02.png)
 
-Накрая извикваме създадените функции за да нарисуваме целия квадрат:
+In the end, we invoke the declared functions to draw the whole square:
 
 ![](assets/chapter-10-images/09.Draw-filled-square-03.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#3](https://judge.softuni.bg/Contests/Practice/Index/943#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#3](https://judge.softuni.bg/Contests/Practice/Index/943#3).
 
 
-## Връщане на резултат от функция
+## Return result from a function
 
-До момента разгледахме функции, които извършват дадено действие, например отпечатване на даден текст, число или фигура на конзолата. Освен този тип функции, съществуват и такива, които могат да **връщат** някакъв **резултат** от своето изпълнение - например резултатът от умножението на две числа. Именно тези функции ще разгледаме в следващите редове.
+Up to this point, we have viewed functions that do a specific task. For example printing a text, number a figure on the console. There is another type of function that can **return** a **result** from their task. For example the result of multiplication of two numbers. We will look at this type of function in this part.
 
-### Оператор return
+### Operator return
 
 За да получим резултат от функцията, на помощ идва операторът **`return`**. Той трябва да бъде **използван в тялото** на функцията и указва на програмата да **спре изпълнението** на функцията и да **върне** на извиквача определена **стойност**. Тази стойност се определя от израза след въпросния оператор **`return`**.
 
