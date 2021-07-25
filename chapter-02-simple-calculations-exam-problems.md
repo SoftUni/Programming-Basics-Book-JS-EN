@@ -402,11 +402,11 @@ This code would print a correct result, **but it is hard to read**. It won't be 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/928#3](https://judge.softuni.bg/Contests/Practice/Index/928#3).
 
 
-## Задача: Daily Earnings
+## Problem: Daily Earnings
 
 Ivan is a programmer in an American company, and he **works** at home **approximately N days per month** by earning **approximately M dollars per day**. At the end of the year, Ivan **gets a bonus**, which **equals 2.5 of his monthly salaries**. In addition, **25% of his annual salary goes for taxes**. Write a program that **calculates what is the amount of Ivan's net average earnings** in BGN per day, as he spends them in Bulgaria. It is accepted that one year has exactly 365 days. The exchange rate of US dollar to BGN will be passed to a function.
 
-### Входни данни
+### Input Data
 
 **3 arguments** are passed to the function: 
 * **Work days per month** - an integer within the range of [**5 … 30**].
