@@ -1,14 +1,14 @@
 # Chapter 2.2. Simple Calculations – Exam Problems
 
-In the previous chapter, we explained how to **pass numbers** to functions and how to **print the output**. We went through the main arithmetical operations and briefly mentioned data types. In this chapter, we are going to practice what we have learned by solving a few **more complex exam problems**, давани на изпити.
+In the previous chapter, we explained how to **pass numbers** to functions and how to **print the output** in the console. We went through the main arithmetical operations and briefly mentioned data types. In this chapter, we are going to practice what we have learned by solving a few **more complex exam problems**.
 
 ## Reading Numbers
 
-Before going to the tasks, we are going to revise the most important aspects of what we have studied in the previous chapter. We will start by creating a function, which function reads a number.
+Before going to the tasks, we are going to revise the most important aspects of what we have studied in the previous chapter. We will start by creating a function, which will read a number.
 
 ### Reading an Integer
 
-We need to create a function, which will get one argument **`arg1`**. We will create a variable in the function, where we will store the number (напр. **`num`**), combined with the method **`parseInt(…)`**, which converts string to an integer:
+We need to create a function, which will get one argument **`arg1`**. We will create a variable in the function, where we will store the number (for example **`num`**), combined with the method **`parseInt(…)`**, which converts string to an integer:
 
 ```javascript
 function readNumber(arg1) {
@@ -39,7 +39,7 @@ console.log(`You are ${firstName} ${lastName}, a ${age}-years old person from ${
 
 ## Arithmetic Operators
 
-Let' s revise the main arithmetic operators for simple calculations.
+Let's revise the main arithmetic operators for simple calculations.
 
 ### Operator +
 
@@ -78,394 +78,396 @@ let str = firstName + " " + lastName + " is " + age + " years old";
 ```
 
 
-## Изпитни задачи
+## Exam Problems
 
-Now, after having revised how to make simple calculations and how to read and print numbers from the console, let' s go to the tasks. We will solve a few **problems from a entrance exam:** in SoftUni.
+Now, after having revised how to make simple calculations and how to read and print numbers from the console, let' s go to the tasks. We will solve a few **problems from a entrance exam** in SoftUni.
 
 
 ## Problem: Training Lab
 
-**A training lab** has a rectangular size **l** x **w** meters, without columns on the inside. The hall is divided into two parts- left and right, with a hallway approximately in the middle. In both parts, there are **rows with desks**. In the back of the hall, there is a big **entrance door**. In the front, there is a **podium** for the lecturer. A single **working place** takes up **70 x 120 cm** (a table with size 70 x 40 cm + space for a chair and passing though with size 70 x 80 cm). **The hallway** width is at least **100 cm**. It is calculated that due to the **entrance door** (which has 160 cm opening) **exactly one working space is lost**, and due to the **podium** (which has size of 160 x 120 cm) exactly **two working spaces** are lost. Write a program that reads the size of the training lab as input parameters and calculates the **number of working places in it** при описаното разположение (look at the figure).
+**A training lab** has a rectangular size **l** x **w** meters, without columns on the inside. The hall is divided into two parts- left and right, with a hallway approximately in the middle. In both parts, there are **rows with desks**. In the back of the hall, there is a big **entrance door**. In the front, there is a **podium** for the lecturer. A single **working place** takes up **70 x 120 cm** (a table with size 70 x 40 cm + space for a chair and passing though with size 70 x 80 cm). **The hallway** width is at least **100 cm**. It is calculated that due to the **entrance door** (which has 160 cm opening) **exactly one working space is lost**, and due to the **podium** (which has size of 160 x 120 cm) exactly **two working spaces** are lost. Write a program that reads the size of the training lab as input parameters and calculates the **number of working places in it** (look at the figure).
 
 ### Input Data
 
-Програмата чете **2 числа** (аргумента), по едно на ред: **l** (дължина в метри) и **w** (широчина в метри).
+The program reads **two numbers** (arguments), one per line: **l** (length in meters) and **w** (width in meters).
 
-Ограничения: **3 ≤ w ≤ l ≤ 100**.
+Constraints: **3 ≤ w ≤ l ≤ 100**.
 
-### Изходни данни
+### Output Data
 
-Да се отпечата на конзолата едно цяло число: **броят места** в учебната зала.
+Print an integer in the console: **the number of working places** in the training lab.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход   | Изход | Чертеж |
+| Input   | Output | Figure |
 |---------|-------|--------|
 |15<br>8.9  |129  | ![](assets/chapter-2-2-images/01.Training-lab-01.png)       | 
 |8.4<br>5.2 |39    | ![](assets/chapter-2-2-images/01.Training-lab-02.png)        |
 
-#### Пояснения към примерите
+#### Clarification of the Examples
 
-В първия пример залата е дълга 1500 cm. В нея могат да бъдат разположени **12 реда** (12 \* 120 cm = 1440 + 60 cm остатък). Залата е широка 890 cm. От тях 100 cm отиват за коридора в средата. В останалите 790 cm могат да се разположат по **11 бюра на ред** (11 \* 70 cm = 770 cm + 20 cm остатък). **Брой места = 12 * 11 - 3** = 132 - 3 = **129** (имаме 12 реда по 11 места = 132 минус 3 места за катедра и входна врата).
+In the first example, the hall length is 1500 cm. **12 rows** can be situated in it (12 * 120 cm = 1440 + 60 cm difference). The hall width is 890 cm. 100 cm of them are for the hallway in the middle. The rest 790 cm can be situated by **11 desks per row** (11 \* 70 cm = 770 cm + 20 cm difference). **Number of places = 12 * 11 - 3** = 132 - 3 = **129** (we have 12 rows with 11 working places = 132 minus 3 places for podium and entrance door).
 
-Във втория пример залата е дълга 840 cm. В нея могат да бъдат разположени **7 реда** (7 \* 120 cm = 840, без остатък). Залата е широка 520 cm. От тях 100 cm отиват за коридора в средата. В останалите 420 cm могат да се разположат по **6 бюра на ред** (6 \* 70 cm = 420 cm, без остатък). **Брой места = 7 * 6 - 3** = 42 - 3 = **39** (имаме 7 реда по 6 места = 42 минус 3 места за катедра и входна врата).
+In the second example, the hall length is 840 cm. **7 rows** can be situated in it (7 \* 120 cm = 840, no difference). The hall width is 520 cm. 100 cm from them are for the hallway in the middle. The rest 420 cm can be situated by **6 desks per row** (6 \* 70 cm = 420 cm, no difference). **Number of places = 7 * 6 - 3** = 42 - 3 = **39** (we have 7 rows with 6 working places = 42 minus 3 places for podium and entrance door).
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Опитайте първо сами да решите задачата. Ако не успеете, разгледайте насоките и подсказките.
+Try to solve the problem on your own first. If you do not succeed, go through the hints.
 
-#### Идея за решение
+#### Idea for Solution
 
-Както при всяка една задача по програмиране, е **важно да си изградим идея за решението ѝ**, преди да започнем да пишем код. Да разгледаме внимателно зададеното ни условие. Изисква се да напишем програма, която да изчислява броя работни места в една зала, като този брой е зависим от дължината и височината ѝ. Забелязваме, че те ще ни бъдат подадени като входни данни **в метри**, а информацията за това колко пространство заемат работните места и коридорът, ни е дадена **в сантиметри**. За да извършим изчисленията, ще трябва да използваме еднакви мерни единици, няма значение дали ще изберем да превърнем височината и дължината в сантиметри, или останалите данни в метри. За представеното тук решение е избрана първата опция.  
+As with any programming task, **it is important to build an idea for its solution**, before having started to write code. Let's carefully go through the problem requirements. We have to write a program that calculates the number of working places in a training lab, where the number depends on the hall length and height. We notice that the provided input data will be **in meters** and the information about how much space the working places and hallway take, will be **in centimeters**. To do the calculations, we will use the same measuring units, no matter whether we choose to convert length and height into centimeters or the other data in meters. The first option is used for the presented solution. 
 
-Следва да изчислим **колко колони и колко редици** с бюра ще се съберат. Колоните можем да пресметнем като **от широчината извадим необходимото място за коридора (100 cm)** и **разделим остатъка на 70 cm** (колкото е дължината на едно работно място). Редиците ще намерим, като разделим **дължината на 120 cm**. И при двете операции може да се получи **реално число** с цяла и дробна част, но **в променлива трябва да запазим само цялата част**. Накрая умножаваме броя на редиците по този на колоните и от него изваждаме 3 (местата, които се губят заради входната врата и катедрата). Така ще получим исканата стойност. 
+Next, we have to calculate **how many columns and how many rows** with desks will fit. We can calculate the columns by **subtracting the width by the necessary space for the hallway (100 cm)** and **divide the difference by 70 cm** (the length of a working place). We find the rows by dividing **the length by 120 cm**. Both operations can result in **a real number** with whole and fractional part, but we have to **store only the whole part in a variable**. In the end, we multiply the number of rows by the number of columns and divide it by 3 (the lost places for entrance door and podium). This is how we calculate the needed value.
 
-#### Избор на типове данни
+#### Choosing Data Types
 
-От примерните входни данни виждаме, че за вход може да ни бъде подадено реално число с цяла и дробна част, но тъй като в **JavaScript** има само един примитивен тип за числа (**`Number`**), това няма да е проблем. Изборът на тип за следващите променливи зависи от метода за решение, който изберем. Както всяка задача по програмиране, тази също има **повече от един начин на решение**.
+From the example, we see that a real number with whole and fractional part can be given as an input, but in **JavaScript** there is only one primitive type of numbers (**`Number`**), therefore, this will not be a problem. Choosing data type for the next variables depends on the method we choose to solve the problem. As with any programming task, this one has **more than one way to be solved**.
 
-#### Решение
+#### Solution
 
-Време е да пристъпим към решението. Мислено можем да го разделим на три подзадачи: 
-* **Прочитане на входните данни**.
-* **Извършване на изчисленията**.
-* **Извеждане на изход** на конзолата.
+It is time to go to the solution. We can divide it into three smaller tasks:
+* **Reading input from the console**.
+* **Doing the calculations**.
+* **Printing the output** on the console.
 
-Първото, което трябва да направим, е да вземем входните данни. Създаваме си функция, на която се подават два аргумента. Запазваме техните стойности в две променливи, като използваме метода **`parseFloat(…)`** за преобразуване на зададената стрингова (текстова) стойност в дробно число: 
+The first thing we have to do is read the input from the console. We create a function, which will get two arguments. Then we need to save their values in two varialbles by using the method **`parseFloat(…)`** in order to convert the string (text) value into a fractional number:
 
 ![](assets/chapter-2-2-images/01.Training-lab-03.png)
 
-Нека пристъпим към изчисленията. Особеното тук е, че след като извършим делението, трябва да запазим в променлива само цялата част от резултата. 
+Let's move to the calculations. The special part here is that after having divided the numbers, we have to store only the whole part of the result in a variable.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Търсете в Google!</b> Винаги, когато имаме идея как да решим даден проблем, но не знаем как да го изпишем на JavaScript, или когато се сблъскаме с такъв, за който предполагаме, че много други хора са имали, най-лесно е да се справим като потърсим информация в Интернет.</td>
+<td><b>Search in Google!</b> Whenever we have an idea how to solve a particular problem, but we do not know how to write it in JavaScript or we are dealing with one that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
 </tr></table>
 
-В случая може да пробваме със следното търсене: "[***JavaScript get whole number part of double***](https://www.google.com/?q=javascript+get+whole+number+part+of+double)". Откриваме, че една от възможностите е да използваме метода **`Math.trunc(…)`**. Кодът по-долу е целенасочено замъглен и трябва да бъде довършен от читателя:
+In this case, we can try with the following search: "[***JavaScript get whole number part of double***](https://www.google.com/?q=javascript+get+whole+number+part+of+double)". One possible way is to use the method **`Math.trunc(…)`**. The code down bellow is blured on purpose and it should be completed by the reader:
 
 ![](assets/chapter-2-2-images/01.Training-lab-04.png)
 
-С **`console.log(…)`** отпечатваме резултата на конзолата:
+With **`console.log(…)`** we print the result in the console:
 
 ![](assets/chapter-2-2-images/01.Training-lab-05.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/928#0](https://judge.softuni.bg/Contests/Practice/Index/928#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/928#0](https://judge.softuni.bg/Contests/Practice/Index/928#0).
 
 
-## Задача: зеленчукова борса
+## Problem: Vegetable Market
 
-Градинар продава реколтата от градината си на зеленчуковата борса. Продава **зеленчуци за N лева на килограм** и **плодове за M лева за килограм**. Напишете програма, която **да пресмята приходите от реколтата в евро** (ако приемем, че **едно евро** е равно на **1.94 лв.**).
+A gardener is selling his harvest on the vegetables market. He is selling **vegetables for N leva per kilogram** and **fruits for M leva per kilogram**. Write a program that **calculates the earnings of the harvest in Euro**. (Assume the EUR **one euro** is equal to **1.94 lv.**).
 
-### Входни данни
+### Input Data
 
-На функцията се подават **4 аргумента**:
-* Цена за килограм зеленчуци – число с плаваща запетая.
-* Цена за килограм плодове – число с плаваща запетая.
-* Общо килограми на зеленчуците – цяло число.
-* Общо килограми на плодовете – цяло число.
+**Four arguments** are passed to the function:
+* Vegetable price per kilogram – a floating-point number.
+* Fruit price per kilogram – a floating-point number.
+* Total kilograms of vegetables – an integer.
+* Total kilograms of fruits – an integer.
 
-**Ограничения: Всички числа ще са в интервала от 0.00 до 1000.00**
+**Constraints: all numbers will be within the range from 0.00 to 1000.00.**
 
-### Изходни данни
+### Output Data
 
-Да се отпечата на конзолата **едно число с плаваща запетая: приходите от всички плодове и зеленчуци в евро**.
+Print on the console **one floating-point number: the earnings of all fruits and vegetables in Euro**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход   | Изход  |
+| Input   | Output  |
 |-----------|----------|
 |0.194<br>19.4<br>10<br>10|101 | 
 
-**Пояснения към първия пример:**
+**Clarification for the first example:**
 
-* Зеленчуците струват: 0.194 лв. \* 10 кг. = **1.94 лв.**
-* Плодовете струват: 19.4 лв. \* 10 кг.  = **194 лв.**
-* Общо: **195.94 лв. = 101 евро**. 
+* Vegetables cost: 0.194 lv. \* 10 kg. = **1.94 lv.**
+* Fruits cost: 19.4 lv. \* 10 kg.  = **194 lv.**
+* Total: **195.94 lv. = 101 euro**. 
 
-| Вход    | Изход      |
+| Input    | Output      |
 |-----------|----------------|
 |1.5<br>2.5<br>10<br>10|20.6185567010309| 
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Първо ще дадем няколко разсъждения, а след това и конкретни насоки за решаване на задачата, както и съществената част от кода.
+First, we will give a few ideas, followed by particular hints for solving the problem and the essential part of the code.
 
-#### Идея за решение
+#### Idea for Solution
 
-Нека първо разгледаме зададеното ни условие. В случая, от нас се иска да пресметнем колко е **общият приход** от реколтата. Той е равен на **сбора от печалбата от плодовете и зеленчуците**, а тях можем да изчислим като умножим **цената на килограм по количеството им**. Входните данни са дадени в лева, а за изхода се изисква да бъде в евро. По условие 1 евро е равно на 1.94 лева, следователно, за да получим исканата **изходна стойност, трябва да разделим сбора на 1.94**.
+Let's first go through the problem requirements. In this case, we have to calculate **the total income** from the harvest. It equals **the sum of the earnings from the fruits and vegetables** which we can calculate by multiplying **the price per kilogram by the quantity**. The input is given in leva and the output should be in euro. It is assumed that 1 euro equals 1.94 lv, therefore, in order to get the wanted **output value, we have to divide the sum by 1.94**.
 
-#### Избор на типове данни
+#### Choosing Data Types
 
-След като сме изяснили идеята си за решаването на задачата, можем да пристъпим към избора на подходящи типове данни. Да разгледаме **входа**: дадени са **две цели числа** за общия брой килограми на зеленчуците и плодовете, съответно променливите, които декларираме, за да пазим техните стойности, могат да бъдат конвертирани към число с **`parseInt(…)`**. За цените на плодовете и зеленчуците е указано, че ще бъдат подадени **две числа с плаваща запетая**, т.е. променливите ще бъдат преобразувани с метода **`parseFloat(…)`**.
+After we have a clear idea of how to solve the task, we can continue with choosing appropriate data types. Let's go through the **input**: we have **two integers** for total kilograms of vegetables and fruits, therefore, the variables we declare to store their values can be converted to number with **`parseInt(…)`**. The prices of the fruits and vegetables are said to be **floating-point numbers** and therefore, the variables will be converted by using the method **`parseFloat(…)`**.
 
 
-#### Решение 
+#### Solution 
 
-Време е да пристъпим към решението. Мислено можем да го разделим на три подзадачи: 
-* **Прочитане на входните данни**.
-* **Извършване на изчисленията**.
-* **Извеждане на изход** на конзолата.
+It is time to get to the solution. We can divide it into three smaller tasks:
+* **Reading input from the console**.
+* **Doing the calculations**.
+* **Printing the output** on the console.
 
-За да прочетем входните данни, декларираме променливи, като внимаваме да ги именуваме по такъв начин, който да ни подсказва какви стойности съдържат променливите. С методите **`parseInt(…)`** и **`parseFloat(…)`** преобразуваме зададената текстова стойност съответно в цяло и дробно число.
+In order to read the input, we declare variables, which we have to name carefully, so that they can give us a hint about the values they store. With the methods **`parseInt(…)`** and **`parseFloat(…)`**, we convert the particular string value into int and double.
 
 ![](assets/chapter-2-2-images/02.Vegetable-market-01.png)
 
-Извършваме необходимите изчисления: 
+We do the necessary calculations:
 
 ![](assets/chapter-2-2-images/02.Vegetable-market-02.png)
 
-В условието на задачата не е зададено специално форматиране на изхода, следователно трябва просто да изчислим исканата стойност и да я отпечатаме на конзолата. Както в математиката, така и в програмирането делението има приоритет пред събирането. За задачата обаче трябва първо да **изчислим сбора** на двете получени стойности и след това да **разделим на 1.94**. За да дадем предимство на събирането, може да използваме скоби. С **`console.log(…)`** отпечатваме изхода на конзолата:  
+The task does not specify special output format, therefore, we just have to calculate the requested value and print it on the console. As in mathematics and so in programming, division has a priority over addition. However, in this task, first we have to **calculate the sum** of the two input values and then **divide by 1.94**. In order to give priority to addition, we can use brackets. With **`console.log(…)`** we print the output on the console:
 
 ![](assets/chapter-2-2-images/02.Vegetable-market-03.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/928#1](https://judge.softuni.bg/Contests/Practice/Index/928#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/928#1](https://judge.softuni.bg/Contests/Practice/Index/928#1).
 
 
-## Задача: ремонт на плочки
+## Problem: Repair Tiles
 
-На площадката пред жилищен блок трябва **да се поставят плочки**. Площадката е с форма **на квадрат със страна N метра**. Плочките са **широки „W“ метра** и **дълги „L“ метра**. На площадката има една пейка с **ширина M метра и дължина O метра**. Под нея не е нужно да се слагат плочки. Всяка плочка се поставя за **0.2 минути**.
+On the ground in front of an apartment building **tiles need to be placed**. The ground has a **square shape with side of N meters**. The tiles are **"W" meters wide** and **"L" meters long**. There is one bench on the ground with **width of "M" meters and length of "O" meters**. There is no need to place tiles under it. Each tile is replaced for **0.2 minutes**.
 
-Напишете програма, която **чете от конзолата размерите** на **площадката, плочките и пейката** и пресмята **колко плочки са необходими** да се покрие площадката и пресмята **времето за поставяне на всички плочки**.
+Write a program that **reads from the console the size** of **the ground, the tiles and the bench**, and calculates **how many tiles are needed** to cover the ground and what is the total **time for placing all of the tiles**.
 
-**Пример: площадка с размер 20 м.** има **площ 400 кв.м.**. **Пейка**, широка **1 м.** и дълга **2 м.**, заема площ **2 кв.м.** Една **плочка** е **широка 5 м.** и **дълга 4 м.** и има **площ = 20 кв.м.** **Площта**, която трябва да се покрие, е **400 – 2 = 398 кв.м.** Необходими са **398 / 20 = 19.90 плочки**. Необходимото **време** е **19.90 * 0.2 = 3.98 минути.**
+**Example: ground with size 20 m** has **area of 400 $$m^2$$**. **A bench** that is **1 m** wide and **2 m** long, has area of **2 $$m^2$$**. One **tile** is **5 m wide** and **4 m long** and has **area of 20 $$m^2$$**. **The space** that needs to be covered is **400 - 2 = 398 $$m^2$$**. **398 / 20 = 19.90 tiles** are necessary. The **time** needed is **19.90 * 0.2 = 3.98 minutes.**
 
-### Входни данни
+### Input Data
 
-На функцията се подават **5 аргумента**:
+**5 arguments** are passed to the function:
 
-* **N – дължината** на **страна** от **площадката** в интервала [**1 … 100**].
-* **W – широчината** на една **плочка** в интервала [**0.1 … 10.00**].
-* **L – дължината** на една **плочка** в интервала [**0.1 … 10.00**].
-* **М – широчината** на **пейката** в интервала [**0 … 10**].
-* **О – дължината** на **пейката** в интервала [**0 … 10**].
+* **N – length** of **a side**of **the ground** within the range of [**1 … 100**].
+* **W – width** per **tile** within the range of [**0.1 … 10.00**].
+* **L – length ** per **tile** within the range of [**0.1 … 10.00**].
+* **М – width** of **the bench** within the range of [**0 … 10**].
+* **О – length** of **the bench** within the range of [**0 … 10**].
 
-### Изходни данни
+### Output Data
 
-Да се отпечатат на конзолата **две числа**: 
-* **броя плочки**, необходим за ремонта 
-* **времето за поставяне**
+Print on the console **two numbers**:
+* **number of tiles** needed for the repair
+* **total time for placing them**
 
-Всяко число да бъде на нов ред и закръглено до втория знак след десетичната запетая.
+Each number should be on a new line and rounded to the second decimal place.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход        | Изход    |
+| Input        | Output    |
 |---------------|------------|
 |20<br>5<br>4<br>1<br>2|19.9<br>3.98| 
 
-**Обяснение към примера:**
+**Explanation of the example:**
 
-* **Обща площ** = 20 \* 20 = 400.
-* **Площ на пейката** = 1 \* 2 = 2.
-* **Площ за покриване** = 400 – 2 = 398.
-* **Площ на плочки** = 5 \* 4 = 20.
-* **Необходими плочки** = 398 \/ 20 = 19.9.
-* **Необходимо време** = 19.9 \* 0.2 = 3.98.
+* **Total area** = 20 \* 20 = 400.
+* **Area of the bench** = 1 \* 2 = 2.
+* **Area for covering** = 400 – 2 = 398.
+* **Area of tiles** = 5 \* 4 = 20.
+* **Needed tiles** = 398 \/ 20 = 19.9.
+* **Needed time** = 19.9 \* 0.2 = 3.98.
 
-| Вход    | Изход            |
+| Input    | Output            |
 |-----------|--------------------|
 |40<br>0.8<br>0.6<br>3<br>5|3302.08<br>660.42<br>| 
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Нека да си направим чертеж, за да поясним условието на задачата. Той може да изглежда по следния начин:
+Let's make a draft to clarify the task requirements. It can look the following way:
 
 ![](assets/chapter-2-2-images/03.Change-tiles-01.png)
 
-#### Идея за решение
+#### Idea for Solution
 
-Изисква се да пресметнем **броя плочки**, който трябва да се постави, както и **времето, за което това ще се извърши**. За да **изчислим броя**, е необходимо да сметнем **площта, която трябва да се покрие**, и да я **разделим на лицето на една плочка**. По условие площадката е квадратна, следователно общата площ ще намерим, като умножим страната ѝ по стойността ѝ **`N * N`**. След това пресмятаме **площта, която заема пейката**, също като умножим двете ѝ страни **`M * O`**. Като извадим площта на пейката от тази на цялата площадка, получаваме площта, която трябва да се ремонтира. 
+It is required to calculate the **number of tiles** that have to be placed, as well as the **time for placing them**. In order to **find that number**, we have to calculate **the area that needs to be covered** and **divide it by the area per tile**. By the requirements of the problem, the ground is square, therefore, we find the total area by multiplying its side by its value  **`N * N`**. After that, we calculate **the area that the bench takes up** by multiplying its two sides as well **`M * O`**. After subtracting the area of the bench from the area of the whole ground, we obtain the area that needs to be repaired.
 
-Лицето на единична плочка изчисляваме като **умножим едната ѝ страна по другата** **`W * L`**. Както вече отбелязахме, сега трябва да **разделим площта за покриване на площта на една плочка**. По този начин ще разберем какъв е необходимият брой плочки. Него умножаваме по **0.2** (времето, за което по условие се поставя една плочка). Така вече ще имаме исканите изходни стойности. 
+We calculate the area of a single tile by **multiplying its two sides with one another** **`W * L`**. As we already stated, now we have to **divide the area for covering by the area of a single tile**. This way, we find the number of necessary tiles. We multiply it by **0.2** (the time needed for changing a tile). Now, we have the wanted output.
 
-#### Избор на типове данни
+#### Choosing Data Types
 
-Дължината на страна от площадката, широчината и дължината на пейката ще бъдат дадени като **цели числа**, следователно, за да запазим техните стойности може да декларираме **променливи, преобразувани с метода `parseInt(…)`**. За широчината и дължината на плочките ще ни бъдат подадени реални числа (с цяла и дробна част), затова за тях ще използваме **`parseFloat(…)`**. 
+The length of the side of the ground, the width and the length of the bench, will be given as **integers**, therefore, in order to store their values, we can declare **variables converted by the method `parseInt(…)`**. We will be given floating-point numbers for the width and the length of the tiles and this is why we will use **`parseFloat(…)`**.
 
-#### Решение
+#### Solution
 
-Както и в предходните задачи, можем мислено да разделим решението на три части:
-* **Прочитане на входните данни**.
-* **Извършване на изчисленията**.
-* **Извеждане на изход** на конзолата.
+As in the previous tasks, we can divide the solution into three smaller tasks:
+* **Reading the input from the console**.
+* **Doing the calculations**.
+* **Printing the output** on the console.
 
-Първото, което трябва да направим, е да разгледаме **входните данни** на задачата. Важно е да внимаваме за последователността, в която са дадени. Създаваме си необходимите променливи, в които да запазим входните данни, а с методите **`parseInt(…)`** и **`parseFloat(…)`** преобразуваме подадената стрингова стойност, съответно в цяло или дробно число:
+The first thing we have to do is go through the **input data** of the task. It is important to pay attention to the sequence they are given in. We create the necessary variable where we will store the input data and with the methods **`parseInt(…)`** and **`parseFloat(…)`** we convert the particular string value into int or double.
 
 ![](assets/chapter-2-2-images/03.Change-tiles-02.png)
 
-След като сме инициализирали променливите и сме запазили съответните стойности в тях, пристъпваме към **изчисленията**. Кодът по-долу е нарочно даден замъглен, за да може читателят да помисли самостоятелно над него:
+After we have initialized the variables and have stored the corresponding values in them, we move to the **calculations**. The code bellow is blured on purpose, so the reader can think by himself over it:
 
 ![](assets/chapter-2-2-images/03.Change-tiles-03.png)
 
-**Изчисляваме стойностите**, които трябва да отпечатаме на конзолата. **Броят** на необходимите **плочки** получаваме, като **разделим площта**, която трябва да се покрие, **на площта на единична плочка**. 
+**We calculate the values** that we have to print on the console. **The number** of necessary **tiles** is obtained by **dividing the area** that needs to be covered **by the area of a tile**.
 
-В условието на задачата е зададено закръгляне на изхода **до втория знак след десетичната запетая**. Затова не можем просто отпечатаме стойностите с **`console.log(…)`**. Ще използваме метода **`Math.round(…)`**, който закръгля подаденото число до най-близкото цяло число. За да не загубим двата знака след запетаята, прилагаме метода върху числото умножено по 100, а после делим получения резултат на 100:
+In the task is specified that the number of the output should be rounded **to the second decimal place**. That is why we cannot just print the value with **`console.log(…)`**. We will use the method **`Math.round(…)`**, which is rounding to the closest integer number. In order to round it to the second decimal place, we will use the method after the number is multiplied by 100 and then we will divide the result by 100:
 
 ![](assets/chapter-2-2-images/03.Change-tiles-04.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/928#2](https://judge.softuni.bg/Contests/Practice/Index/928#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/928#2](https://judge.softuni.bg/Contests/Practice/Index/928#2).
 
 
-## Задача: парички
+## Problem: Money
 
-Преди време **Пешо си е купил биткойни**. Сега ще ходи на екскурзия из Европа **и ще му трябва евро**. Освен биткойни има **и китайски юани**. Пешо иска **да обмени парите си в евро** за екскурзията. Напишете програма, която **да пресмята колко евро може да купи спрямо следните валутни курсове**:
-* **1 биткойн = 1168 лева.**
-* **1 китайски юан = 0.15 долара.**
-* **1 долар = 1.76 лева.**
-* **1 евро = 1.95 лева.**
+Some time ago, **Pesho bought Bitcoins**. Now, he is going on vacation in Europe **and he needs euro**. Apart from the Bitcoins, he has **Chinese yuans** as well. Pesho wants to **exchange his money for euro** for the tour. Write a program that **calculates how much euro he can buy, depending on the following exchange rates**:
 
-Обменното бюро има **комисионна от 0 до 5 процента от крайната сума в евро**.
+* **1 Bitcoin = 1168 BGN.**
+* **1 Chinese yuan = 0.15 dollars.**
+* **1 dollar = 1.76 BGN.**
+* **1 euro = 1.95 BGN.**
 
-### Входни данни
+The exchange office has **commission fee within 0% to 5% from the final sum in euro**.
 
-На функцията се подават **3 аргумента**:
-* **Броят биткойни** - цяло число в интервала [**0 … 20**].
-* **Броят китайски юани** - реално число в интервала [**0.00 … 50 000.00**].
-* **Комисионната** - реално число в интервала [**0.00 … 5.00**].
+### Input Data
 
-### Изходни данни
+**3 arguments** are passed to the function:
+* **Number of Bitcoins** - integer within the range of  [**0 … 20**].
+* **Number of Chinese yuans** - floating-point number within the range of [**0.00 … 50 000.00**].
+* **Commission fee** - floating-point number within the range of [**0.00 … 5.00**].
 
-На конзолата да се отпечата 1 число - **резултатът от обмяната на валутите**. Резултатът да се **форматира до втората цифра след десетичния знак**.
+### Output Data
 
-### Примерен вход и изход
+Print one number on the console – **the result of the exchange of currencies**. The output should be rounded **to the second decimal place**.
 
-| Вход        | Изход    |
+### Sample Input and Output
+
+| Input        | Output    |
 |---------------|------------|
 |1<br>5<br>5|569.67| 
 
-**Обяснение**: 
-* 1 биткойн = 1168 лева
-* 5 юана = 0.75 долара 
-* 0.75 долара = 1.32 лева 
-* **1168 + 1.32 = 1169.32 лева = 599.651282051282 евро**
-* **Комисионна:** 5% от 599.651282051282 = **29.9825641025641** 
-* **Резултат**: 599.651282051282 - 29.9825641025641 = **569.668717948718 евро**
+**Explanation**: 
+* 1 Bitcoin = 1168 BGN
+* 5 Chinese yuan = 0.75 dollars 
+* 0.75 dollars = 1.32 BGN 
+* **1168 + 1.32 = 1169.32 BGN = 599.651282051282 euro**
+* **Commission fee:** 5% of 599.651282051282 = **29.9825641025641** 
+* **Result**: 599.651282051282 - 29.9825641025641 = **569.668717948718 euro**
 
-| Вход        | Изход            | Вход         | Изход            |
+| Input        | Output            | Input         | Output            |
 |------------|------------------|--------------|------------------|
 |20<br>5678<br>2.4|12442.24|7<br>50200.12<br>3|10659.47|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Нека отново помислим първо за начина, по който можем да решим задачата, преди да започнем да пишем код.
+Let's first think of the way we can solve the task, before having started to write code.
 
-#### Идея за решение
+#### Idea for Solution
 
-Виждаме, че ще ни бъдат подадени **броят биткойни** и **броят китайски юани**. За **изходната стойност** е указано да бъде в **евро**. В условието са посочени и валутните курсове, с които трябва да работим. Забелязваме, че към евро можем да преобразуваме само сума в лева, следователно трябва **първо да пресметнем цялата сума**, която Пешо притежава в лева, и след това да **изчислим изходната стойност**. 
+We see that the **number of bitcoins** and **the number of Chinese yuans** will be given in the input. The **output** should be in euro. The exchange rates that we have to work with are specified in the task. We notice that we can only exchange the sum in BGN to EUR, therefore, we **first have to calculate the whole sum** that Pesho has in BGN, and then **calculate the output**.
 
-Тъй като ни е дадена информация за валутния курс на биткойни срещу лева, можем директно да направим това преобразуване. От друга страна, за да получим стойността на **китайските юани в лева**, трябва първо да ги **конвертираме в долари**, а след това **доларите - в лева**. Накрая ще **съберем двете получени стойности** и ще пресметнем на колко евро съответстват. 
+As we have information for the exchange rate of Bitcoins to BGN, we can directly exchange them. On the other hand, in order to get the value of **Chinese yuans in BGN**, first we have to **exchange them in dollars**, and then the **dollars to BGN**. Finally, we will **sum the two values** and calculate how much euro that is.
 
-Остава последната стъпка: да **пресметнем колко ще бъде комисионната** и да извадим получената сума от общата. Като комисионна ще ни бъде подадено **реално число**, което ще представлява определен **процент от общата сума**. Нека още в началото разделим подаденото число на 100, за да изчислим **процентната му стойност**. Нея ще умножим по сумата в евро, а резултатът ще извадим от същата тази сума. Получената сума ще отпечатаме на конзолата. 
+Only the final step is left: **calculating the commission fee** and subtracting the new sum from the total one. We will obtain an **floating-point number** for the commission fee, which will be a particular **percent from the total sum**. Let's divide it by 100, so as to calculate its **percentage value**. Then we will multiply it by the sum in euro and divide the result from the same sum. Print the final sum on the console.
 
-#### Избор на типове данни
+#### Choosing Data Types
 
-**Биткойните** са дадени като **цяло число**, следователно за тяхната стойност може да декларираме променлива преобразувана с метода **`parseInt(…)`**. Като брой **китайски юани и комисионна** ще получим **реално число**, следователно за тях използваме **`parseFloat(…)`**.
+**Bitcoins** are given as an **integer**, therefore, we can declare a variable converted by the method **`parseInt(…)`**. For Chinese yuan and commission fee we obtain a **floating-point number**, therefore, we are going to use **`parseFloat(…)`**.
 
-#### Решение
+#### Solution
 
-След като сме си изградили идея за решението на задачата и сме избрали структурите от данни, с които ще работим, е време да пристъпим към **писането на код**. Както и в предните задачи, можем да разделим решението на три подзадачи: 
-* **Прочитане на входните данни**.
-* **Извършване на изчисленията**.
-* **Извеждане на изход** на конзолата.
+After we have built an idea on how to solve the task and we have chosen the data structures that we are going to use, it is time to get to **writing the code**. As in the previous tasks, we can divide the solution into three smaller tasks:
+* **Reading input from the console**.
+* **Doing the calculations**.
+* **Printing the output** on the console.
 
-**Декларираме променливите**, които ще използваме, като отново внимаваме да изберем **смислени имена**, които подсказват какви данни съдържат те. Инициализираме техните стойности: създаваме си променливи, в който да запазим подадените на функцията стрингови аргументи, като ги конвертираме към цяло или дробно число: 
+**We declare the variables** that we are going to use and again we have to choose **meaningful names**, which are going to give us hints about the values they store. We initialize their values: we create variables, were we will store the string arguments passed to the function and convert them to int or double:
 
 ![](assets/chapter-2-2-images/04.Money-01.png)
 
-Извършваме необходимите изчисления: 
+We do the necessary calculations:
 
 ![](assets/chapter-2-2-images/04.Money-02.png)
 
 ![](assets/chapter-2-2-images/04.Money-03.png)
 
-Накрая **пресмятаме стойността на комисионната** и я **изваждаме от сумата в евро**. Нека обърнем внимание на начина, по който можем да изпишем това: **`euro -= commission * euro`** e съкратен начин за изписване на **`euro = euro - (commission * euro)`**. В случая използваме **комбиниран оператор за присвояване** (**`-=`**), който **изважда стойността от операнда вдясно от този вляво**. Операторът за умножение (**`*`**) има **по-висок приоритет** от комбинирания оператор, затова изразът **`commission * euro`** се изпълнява първи, след което неговата стойност се изважда.
+Finally, we **calculate the commission fee** and **subtract it from the sum in euro**. Let's pay attention to the way we could write this: **`euro -= commission * euro`** is the short way to write **`euro = euro - (commission * euro)`**. In this case, we use a **combined assignment operator** (**`-=`**) that **subtracts the value of the operand to the right from the one to the left**. The operator for multiplication (**`*`**) has a **higher priority** than the combined operator, this is why, the expression **`commission * euro`** is performed first and then its value is divided.
 
-Накрая остава да изведем резултата на конзолата. Забелязваме, че се изисква форматиране на числената стойност **до втория знак след десетичната точка**. За разлика от предходната задача, тук дори и числото да е цяло, **трябва винаги да има два знака след десетичната точка** (например **`5.00`**). За целта можем да използваме метода **`toFixed(…)`**. С него можем да преобразуваме числото в текст, запазвайки определен брой знаци след десетичната запетая:   
+Finally we have to print the result in the console. We should notice that we have to format the output **to the second decimal place**. The difference between this and the previous task is that here, even if the number is integer, **we have to print it to the second decimal place** (for example **`5.00`**). In order to do so, we can use the method **`toFixed(…)`**. By using it, we can covert a number into string, saving the specified numbers after the decimal point.   
 
 ![](assets/chapter-2-2-images/04.Money-04.png)
 
-Нека обърнем внимание на нещо, което важи за всички задачи от този тип: разписано по този начин, решението на задачата е доста подробно. Тъй като условието като цяло не е сложно, бихме могли на теория да напишем един голям израз, в който директно след получаване на входните данни да сметнем изходната стойност. Например такъв израз би изглеждал ето така: 
+Let's pay attention to something that applies to all other problems of this type: written like that, the solution of the task is pretty detailed. As the task itself is not too complex, in theory, we could write one big expression, where right after having taken the input, we calculate the output. For example, such expression would look like this:
 
 ![](assets/chapter-2-2-images/04.Money-05.png)
 
-Този код би дал правилен резултат, **но се чете трудно**. Няма да ни е лесно да разберем какво прави, дали съдържа грешки и ако има такива - как да ги поправим. По-добра практика е **вместо един сложен израз да напишем няколко прости** и да запишем резултатите от тях в променливи със подходящи имена. Така кодът е ясен, по-лесно четим и променяем. 
+This code would print a correct result, **but it is hard to read**. It won't be easy to find out how it works and whether it contains any mistakes, as well as finding such and correcting them. **Instead of one complex expression**, it is **better to write a few simpler ones** and store their values in variables with appropriate names. This way, the code is cleaner and easily maintainable.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/928#3](https://judge.softuni.bg/Contests/Practice/Index/928#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/928#3](https://judge.softuni.bg/Contests/Practice/Index/928#3).
 
 
-## Задача: дневна печалба
+## Задача: Daily Earnings
 
-Иван е програмист в американска компания и **работи** от вкъщи **средно N дни в месеца**, като изкарва **средно по M долара на ден**. В края на годината Иван **получава бонус**, който е **равен на 2.5 месечни заплати**. От спечеленото през годината му се у**държат 25% данъци**. Напишете програма, която да **пресмята колко е чистата средна печалба** на Иван на ден в лева, тъй като той харчи изкараното в България. Приема се, че в годината има точно 365 дни. Курсът на долара спрямо лева ще **се подава на функцията**.
+Ivan is a programmer in an American company, and he **works** at home **approximately N days per month** by earning **approximately M dollars per day**. At the end of the year, Ivan **gets a bonus**, which **equals 2.5 of his monthly salaries**. In addition, **25% of his annual salary goes for taxes**. Write a program that **calculates what is the amount of Ivan's net average earnings** in BGN per day, as he spends them in Bulgaria. It is accepted that one year has exactly 365 days. The exchange rate of US dollar to BGN will be passed to a function.
 
 ### Входни данни
 
-На функцията се подават **3 аргумента**: 
-* **Работни дни в месеца** - цяло число в интервала [**5 … 30**].
-* **Изкарани пари на ден** - реално число в интервала [**10.00 … 2000.00**].
-* **Курсът на долара спрямо  лева** /1 долар = X лева/ - реално число в интервала [**0.99 … 1.99**].
+**3 arguments** are passed to the function: 
+* **Work days per month** - an integer within the range of [**5 … 30**].
+* **Daily earnings** - A floating-point number within the range of [**10.00 … 2000.00**].
+* **Exchange rate of USD to EUR** /1 dollar = X leva/ - A floating-point number within the range of [**0.99 … 1.99**].
 
-### Изходни данни
+### Output Data
 
-На конзолата да се отпечата едно число – **средната печалба на ден в лева**. Резултатът да се **форматира до втората цифра след десетичния знак**.
+Print one number on the console – **the average daily earnings in BGN**. The result will be **rounded up to the second digit after the decimal point**.
 
-### Примерен вход и изход
+### Example input and output
 
-| Вход        | Изход          |
+| Input        | Output          |
 |---------------|------------------|
 |21<br>75.00<br>1.59|74.61| 
 
-**Обяснение**:
-* **1 месечна заплата** = 21 \* 75 = 1575 долара.
-* **Годишен доход** = 1575 \* 12 + 1575 \* 2.5 = 22837.5 долара.
-* **Данък** = 25% от 22837.5 = 5709.375 лева.
-* **Чист годишен доход** = 17128.125 долара = 27233.71875 лева.
-* **Средна печалба на ден** = 27233.71875 / 365 = 74.61 лева.
+**Explanation**:
+* **One monthly salary** = 21 \* 75 = 1575 dollars.
+* **Annual income** = 1575 \* 12 + 1575 \* 2.5 = 22837.5 dollars.
+* **Taxes** = 25% of 22837.5 = 5709.375 dollars.
+* **Net annual income in USD** = 17128.125 dollars = 27233.71875 BGN.
+* **Average earnings per day** = 27233.71875 / 365 = 74.61 BGN.
 
-| Вход        | Изход            | Вход         | Изход    |
+| Input        | Output            | Input         | Output    |
 |-------------|------------------|-------------|------------------|
 |15<br>105<br>1.71|80.24|22<br>199.99<br>1.50|196.63|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Първо да анализираме задачата и да измислим как да я решим. След това ще изберем типовете данни и накрая ще напишем кода на решението.
+Firstly, we have to analyze the task and think of a way to solve it. Then, we will choose data types and, finally, we will write the code.
 
-#### Идея за решение
+#### Idea for Solution
 
-Нека първо пресметнем **колко е месечната заплата** на Иван. Това ще направим като **умножим работните дни в месеца по парите**, които той печели на ден. **Умножаваме получения резултат** първо по 12, за да изчислим колко е заплатата му за 12 месеца, а след това и **по 2.5**, за да пресметнем бонуса. Като съберем двете получени стойности, ще изчислим **общия му годишен доход**. От него **трябва да извадим 25%**. Това може да направим като умножим общия доход по **0.25** и извадим резултата от него. Спрямо дадения ни курс **преобразуваме доларите в лева**, след което **разделяме резултата на дните в годината**, за които приемаме, че са 365.     
+Let's first calculate **how much the monthly salary** of Ivan is. We do that by **multiplying the working days per month by his daily earnings**. We **multiply the result** by 12, in order to calculate his salary for 12 months, and then, we multiply it by 2.5, so that we can to calculate the bonus. After having summed up the two values, we calculate **his annual income**. Then, we will reduce **the annual income by 25% taxes**. Depending on the exchange rate, **we exchange the dollars to BGN** and after that we divide the result by 365 **(days per year)**.  
 
-#### Избор на типове данни
+#### Choosing Data Types
 
-**Работните дни за месец** са дадени като **цяло число**, следователно за тяхната стойност може да декларираме променлива, в която да конвертираме до число с метода **`parseInt(…)`**. За **изкараните пари**, както и за **курса на долара спрямо лева**, ще получим **реално число**, следователно за тях използваме **`parseFloat(…)`**. 
+**The working days per month** are given as an integer, therefore, we can declare a variable by using **`parseInt(…)`** to store their value as a number. For both the **earned money** and the **exchange rate of USD to BGN**, we will obtain a floating-point number, therefore, we will use **`parseFloat(…)`**. 
 
-#### Решение
+#### Solution
 
-Отново, след като имаме идея как да решим задачата и сме помислили за типовете данни, с които ще работим, пристъпваме към **писането на програмата**. Както и в предходните задачи, можем да разделим решението на три подзадачи: 
-* **Прочитане на входните данни**.
-* **Извършване на изчисленията**.
-* **Извеждане на изход** на конзолата.
+Again: after we have an idea on how to solve the problem and we have considered the data types that we are going to use, we can start **writing the program**. As in the previous tasks, we can divide the solution into three smaller tasks:
+* **Reading the input**.
+* **Doing the calculations**.
+* **Printing the output** on the console.
 
-**Декларираме променливите**, които ще използваме, като отново се стараем да изберем **подходящи имена**. Създаваме си променливи, в които запазваме подадените аргументи на функцията, като **преобразуваме** стринга към цяло или дробно число с **`parseInt(…)/parseFloat(…)`**: 
+We **declare the variables** that we are going to use by trying to choose **meaningful names**.
+We create a variablesto store the argiments passed to the function, by converting the string to integer or floating number by usign **`parseInt(…)/parseFloat(…)`**: 
 
 ![](assets/chapter-2-2-images/05.Daily-earnings-01.png)
 
-Извършваме изчисленията: 
+We do the calculations:
 
 ![](assets/chapter-2-2-images/05.Daily-earnings-02.png)
 
-Бихме могли да напишем израза, с който пресмятаме общия годишен доход, и без скоби. Тъй като умножението е операция с по-висок приоритет от събирането, то ще се извърши първо. Въпреки това **писането на скоби се препоръчва, когато използваме повече оператори**, защото така кодът става **по-лесно четим** и възможността да се допусне грешка е по-малка. 
+We could write an expression that calculates the annual income without brackets as well. As multiplication is an operation that has a higher priority over addition, it will be performed first. Despite that, **writing brackets is recommended when using more operators**, as this way the code is **easily readable** and chances of making a mistake are smaller.
 
-Накрая остава да изведем резултата на екрана. Забелязваме, че се **изисква форматиране на числената стойност до втория знак след десетичната точка**. Можем да използваме метода **`.toFixed(…)`** по същия начин като в предходната задача:
+Finally, we have to print the result on the console. We notice that the number has to be rounded up to the second digit after the decimal point. In order to do that, we can use **`.toFixed(…)`**  just like the previous task:
 
 ![](assets/chapter-2-2-images/05.Daily-earnings-03.png)
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/928#4](https://judge.softuni.bg/Contests/Practice/Index/928#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/928#4](https://judge.softuni.bg/Contests/Practice/Index/928#4).
