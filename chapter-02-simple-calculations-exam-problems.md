@@ -239,7 +239,7 @@ Write a program that **reads from the console the size** of **the ground, the ti
 
 * **N – length** of **a side**of **the ground** within the range of [**1 … 100**].
 * **W – width** per **tile** within the range of [**0.1 … 10.00**].
-* **L – length ** per **tile** within the range of [**0.1 … 10.00**].
+* **L – length** per **tile** within the range of [**0.1 … 10.00**].
 * **М – width** of **the bench** within the range of [**0 … 10**].
 * **О – length** of **the bench** within the range of [**0 … 10**].
 
