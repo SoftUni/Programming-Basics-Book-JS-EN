@@ -440,113 +440,113 @@ To solve this problem, we need to think in a bit **more algorithmic way**. A **s
 
 The variable **`n`** is **the count of numbers** we get from the console. In **`countCurrentLongest`** we'll keep **the number of elements** in the increasing sequence we are **currently counting**. For example, in the sequence : 5, 6, 1, 2, 3 **`countCurrentLongest`** will be 2 when we reach **the second element** of the counting (5, **6**, 1, 2, 3) and will become 3 when we reach **the last element** (5, 6, 1, 2, **3**) because the increasing row 1, 2, 3 has 3 elements. We will use **`countLongest`** to keep **the longest** increasing sequence. The other variables are **`num`** - the number we are **currently** in and **`numPrev`** - **the previous number** which we will compare with **`num`** to see if the row is **growing**.
 
-We begin to run the numbers and check if the present number **`а`** s larger than the previous **`numPrev`**. If this is true, then the row **is growing**, and we need to increase its number by **1**. This is stored in the variable that tracks the length of the sequence we are currently in – **`countCurrentLongest`**. If the number **`num`** **isn't bigger** than the previous one, it means that **a new sequence** броенето от **1**. Накрая, след всички проверки, **`numPrev`** става **числото**, което използваме **в момента**, и започваме цикъла от начало със **следващото** въведено **`num`**.
+We begin to run the numbers and check if the present number **`а`** s larger than the previous **`numPrev`**. If this is true, then the row **is growing**, and we need to increase its number by **1**. This is stored in the variable that tracks the length of the sequence we are currently in – **`countCurrentLongest`**. If the number **`num`** **isn't bigger** than the previous one, it means that **a new sequence** starts, and we have to start the count from **1**. Finally, after all the checks are done, **`numPrev`** becomes **the number** that we're **currently** using , and we start the loop from the beggining with **the next** entered **`num`**.
 
-Ето и примерна реализация на описания алгоритъм:
+Here is a sample implementation of the algorithm described:
 
 ![](assets/chapter-8-1-images/08.Increasing-numbers-02.png)
 
-Остава да разберем коя от всички редици е **най-дълга**. Това ще направим с проверка в цикъла дали **редицата**, в която се намираме **в момента**, е станала по-дълга от дължината на **най-дългата намерена до сега**. Целият цикъл ще изглежда така:
+What remains is to see which of all sequences is **the longest**. We will do this by checking in the loop if **the sequence** we are **currently** in has become longer than **the longest one by now**. The whole loop will look like this:
 
 ![](assets/chapter-8-1-images/08.Increasing-numbers-03.png)
 
-Накрая принтираме дължината на **най-дългата** намерена редица.
+Finally, we print the length of **the longest** sequence found.
 
 ![](assets/chapter-8-1-images/08.Increasing-numbers-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#7](https://judge.softuni.bg/Contests/Practice/Index/939#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#7](https://judge.softuni.bg/Contests/Practice/Index/939#7).
 
 
-## Задачи за чертане на фигурки на конзолата
+## Problems for Drawing Figures on the Console
 
-**Петата** задача на практическия изпит по “Основи на програмирането” изисква **използване на един или няколко вложени цикъла за рисуване** на някаква фигурка на конзолата. Може да се изискват логически размишления, извършване на прости пресмятания и проверки. Задачата проверява способността на студентите да мислят логически и да измислят прости алгоритми за решаване на задачи, т.е. да мислят алгоритмично. Ето няколко примера за изпитни задачи:
+**The fifth** problem of the "Programming Basics" Practical Exam requires **using one or several nested loops for drawing** a figure on the console.Logical reasoning, simple calculations and conditional statements may be required. The problem tests the ability of students to think logically and invent simple algorithms for solving problems, i.e. to think algorithmically. Here are some examples of exam tasks:
 
-### Задача: перфектен диамант
+### Problem: A Perfect Diamond
 
-Да се напише функция, която приема като параметър цяло число **n** и чертае **перфектен диамант** с размер **n** като в примерите по-долу.
+Write a function that takes as a parameter **n** and draws **a perfect diamond** with size **n** as in the examples below.
 
-#### Входни данни
+#### Input
 
-Параметър цяло число **n** в интервала [**1 … 1000**].
+One parameter - a integer **n** in the range [**1 … 1000**].
 
-#### Изходни данни
+#### Output
 
-На конзолата трябва да се отпечата диамантът като в примерите.
+The diamond should be printed on the console as in the examples below.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
-|----|----|----|----|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |2|<code>&nbsp;&#42;&nbsp;</code><br><code>&#42;-&#42;</code><br><code>&nbsp;&#42;&nbsp;</code>|3|<code>&nbsp;&nbsp;&#42;&nbsp;&nbsp;</code><br><code>&nbsp;&#42;-&#42;&nbsp;</code><br><code>&#42;-&#42;-&#42;</code><br><code>&nbsp;&#42;-&#42;&nbsp;</code><br><code>&nbsp;&nbsp;&#42;&nbsp;&nbsp;</code><br>|
 
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |4|<code>&nbsp;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&#42;-&#42;&nbsp;&nbsp;</code><br><code>&nbsp;&#42;-&#42;-&#42;&nbsp;</code><br><code>&#42;-&#42;-&#42;-&#42;</code><br><code>&nbsp;&#42;-&#42;-&#42;&nbsp;</code><br><code>&nbsp;&nbsp;&#42;-&#42;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&nbsp;</code><br>|5|<code>&nbsp;&nbsp;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;&#42;-&#42;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&#42;-&#42;-&#42;&nbsp;&nbsp;</code><br><code>&nbsp;&#42;-&#42;-&#42;-&#42;&nbsp;</code><br><code>&#42;-&#42;-&#42;-&#42;-&#42;</code><br><code>&nbsp;&#42;-&#42;-&#42;-&#42;&nbsp;</code><br><code>&nbsp;&nbsp;&#42;-&#42;-&#42;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;&#42;-&#42;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&nbsp;&nbsp;</code><br>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-В задачите с чертане на фигурки най-важното, което трябва да преценим е **последователността**, в която ще рисуваме. Кои елементи се **повтарят** и с какви **стъпки**. Ясно може да забележим, че **горната и долната** част на диаманта са **еднакви**. Най-лесно ще решим задачата, като направим **един цикъл**, който чертае **горната част**, и след това още **един**, който чертае **долната** (обратно на горната).
+In tasks for drawing figures, the most important thing to consider is **the sequence** in which we will draw. Which items are **repeated** and with what **steps**. We can clearly see that **the top and the bottom** parts of the diamond are **the same**. The easiest way to solve the problem is by creating **a loop** that draws **the upper part**, and then **another loop** that draws **the bottom part** (opposite to the top one).
 
-Ще си прочетем числото **`n`** от параметрите на функцията.
+We will read the number **`n`** from the parameterrs of the function.
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-01.png)
 
-Започваме да рисуваме **горната половина** на диаманта. Ясно виждаме, че **всеки ред** започва с няколко **празни места и <code>*</code>**. Ако се вгледаме по-внимателно, ще забележим, че **празните места** са винаги равни на **`n - индекса на реда - 1`** (на първия ред са n-1, на втория - n-2 и т.н.) Ще започнем с това да нарисуваме броя **празни места**, както и **първата звездичка**. Забележете, че започваме да броим от **0, а не от 1**. След това ще остане само да добавим няколко пъти **`-*`**, за да **довършим реда**.
+We start to draw **the upper half** of the diamond. We clearly see that **each line** starts with some **empty spaces and <code>*</code>**.  If we take a closer look, we will notice that **the empty spaces** are always equal to **`n - индекса на реда - 1`** (the first row is n-1, the second – n-2, etc.). We will start by drawing the number of **empty spaces** and **the first star**. Notice that we start to count from **0, no from 1**. After that, we'll only add a few times **`-*`** to **finish the line**.
 
-Ето фрагмент от кода за начертаване на **горната част на диаманта**:
+Here is the fragment from the code for **the upper part of the diamond**:
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-02.png)
 
-Остава да **довършим всеки ред** с нужния брой **`-*`** елементи. На всеки ред трябва да добавим **`i`** такива **елемента** (на първия -> 0, на втория -> 1 и т.н.)
+What remains is to **comlpete each line** with the required number of **`-*`** elements. On each row we have to add **`i`** such **items** (on the first 1-1 -> 0, the second -> 1, etc.)
 
-Ето и пълния код за начертаване на **горната част на диаманта**:
+Here is the complete code for drawing **the upper part of the diamond**:
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-03.png)
 
-За да изрисуваме **долната част** на диаманта, трябва да обърнем **горната** на обратно. Ще броим от **`n - 2`**, тъй като ако започнем от **`n - 1`**, ще изрисуваме средния ред два пъти. Не забравяйте да смените **стъпката** от **`++` на `--`**.
+To draw **the bottom part** of the diamond, we have to reverse **the upper part**. We'll count from **`n - 2`**, because if we start from **`n - 1`**, we will draw the middle row twice. Do not forget to change **the step** from **`++` to `--`**.
 
-Ето го и кода за начертаване на **долната част на диаманта**:
+Here is the code for drawing **the bottom part of the diamond**:
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-04.png)
 
-Остава **да си сглобим цялата програма** като първо четем параметъра на функцията, печатаме горната част на диаманта и след него и долната част на диаманта.
+What remains is **to assemble the whole program**  by first reading the input, printing the top part of the diamond and then the bottom part of the diamond.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#8](https://judge.softuni.bg/Contests/Practice/Index/939#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#8](https://judge.softuni.bg/Contests/Practice/Index/939#8).
 
 
-### Задача: правоъгълник със звездички в центъра
+### Problem: Rectangle with Stars in the Center
 
-Да се напише функция, която приема като параметър цяло число **n** и чертае **правоъгълник** с размер **n с две звездички в центъра**, като в примерите по-долу.
+Write a function that takes as a parameter an integer **n** and draws **a rectangle** with size **n with 2 stars in the center** as in the examples below.
 
-#### Входни данни
+#### Input
 
-Параметърът е цяло число **n** в интервала [**2 … 1000**].
+The parameter is an integer **n** in the range [**2 … 1000**].
 
-#### Изходни данни
+#### Output
 
-На конзолата трябва да се отпечата правоъгълникът като в примерите.
+The rectangle should be printed on the console as in the examples below.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |2|<code>&#37;&#37;&#37;&#37;</code><br><code>&#37;&#42;&#42;&#37;</code><br><code>&#37;&#37;&#37;&#37;</code><br>|3|<code>&#37;&#37;&#37;&#37;&#37;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&#42;&#42;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&#37;&#37;&#37;&#37;&#37;</code><br>|
 
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |4|<code>&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&#42;&#42;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;</code><br>|5|<code>&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&#42;&#42;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;</code><br>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Прочитаме входния параметър на функцията.
+We read the input parameter of the function.
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-01.png)
 
-Първото нещо, което лесно забелязваме, е че **първият и последният ред** съдържат **`2 * n`** символа **`%`**. Ще започнем с това и после ще нарисуваме средата на четириъгълника.
+The first thing we can easily notice is that **the first and the last rows** contains **`2 * n`** symbols **`%`**. We will start with this and then draw the middle part of the rectangle.
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-02.png)
 
@@ -560,9 +560,9 @@ We begin to run the numbers and check if the present number **`а`** s larger th
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#9](https://judge.softuni.bg/Contests/Practice/Index/939#9).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#9](https://judge.softuni.bg/Contests/Practice/Index/939#9).
 
 
 ## Задачи с вложени цикли с по-сложна логика
@@ -614,9 +614,9 @@ We begin to run the numbers and check if the present number **`а`** s larger th
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#10](https://judge.softuni.bg/Contests/Practice/Index/939#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#10](https://judge.softuni.bg/Contests/Practice/Index/939#10).
 
 
 ### Задача: генериране на правоъгълници
@@ -670,6 +670,6 @@ We begin to run the numbers and check if the present number **`а`** s larger th
 
 ![](assets/chapter-8-1-images/12.Generating-rectangles-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#11](https://judge.softuni.bg/Contests/Practice/Index/939#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#11](https://judge.softuni.bg/Contests/Practice/Index/939#11).
