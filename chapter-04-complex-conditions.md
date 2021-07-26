@@ -93,21 +93,21 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#1
 
 Let's take a look at how we can create more complex conditions. We can use the logical "**AND**" (**`&&`**), logical "**OR**" (**`||`**), logical **negation** (**`!`**) or **brackets** (**`()`**).
 
-### Логическо "И"
+### Logical "AND"
 
-Както видяхме, в някои задачи се налага да правим **много проверки наведнъж**. Но какво става, когато за да изпълним някакъв код, трябва да бъдат изпълнени **повече** условия и **не искаме** да правим **отрицание** (**`else`**) за всяко едно от тях? Вариантът с вложените **`if` блокове** е валиден, но кодът би изглеждал много **неподреден** и със сигурност - **труден** за четене и поддръжка.  
+As we saw, in some tasks we have to make**multiple checks at once**.But what happens,when in order to execude some code,  **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each one of them? The option with the nested **`if` blocks** is valid, but the code will look very **unordered** and for sure - **hard** hard to read and maintain.  
 
-Логическо "**И**" (оператор **`&&`**) означава няколко условия да са **изпълнени едновременно**. В сила е следната таблица на истинност:
+Logical "**AND**" (operator **`&&`**) means a few coditions have to be **fulfilled simultaneously**. The following table of truthfulness is applicable:
 
 |a|b|a && b|
 |-----|-----|-----|
 |true<br>true<br>false<br>false|true<br>false<br>true<br>false|true<br>false<br>false<br>false|
 
-### Как работи операторът && ?
+### How the && Operator Works?
 
-Операторът **`&&`** приема **няколко булеви** (условни) израза, които имат стойност **`true`** или **`false`**, и ни връща **един** булев израз като **резултат**. Използването му **вместо** редица вложени **`if`** блокове прави кода **по-четлив**, **по-подреден** и **по-лесен** за поддръжка. Но как **работи**, когато поставим **няколко** условия едно след друго? Както видяхме по-горе, логическото **"И"** връща **`true`**, **само** когато приема като **аргументи изрази** със стойност **`true`**. Съответно, когато имаме **последователност** от аргументи, логическото "**И**" проверява или докато **свършат** аргументите, или докато не **срещне** аргумент със стойност **`false`**. 
+The operator **`&&`** accepts **a couple of Boolean** (conditional) statements, which have a **`true`** or **`false`** value,and returns **one** boolean statement as a **result**. Using it **instead**of couple of a couple of nested **`if`** blocks, makes the code **more readable**, **ordered** и **easy** to maintain. But how does it **work**, when we put a **few** conditions one after another? As we saw above,the logical **"AND"** returns **`true`**, **only** when it accepts as **arguments statements** with value **`true`**. Respectively, when we have a **sequence** of arguments,the logical "**AND**" checks either until one of the arguments is **over**,or until it **meets**an argument with value **`false`**. 
 
-**Пример**:
+**Example**:
 
 ```javascript
 let a = true;
@@ -116,12 +116,12 @@ let c = false;
 let d = true;
 
 let result = a && b && c && d;
-// false (като d не се проверява)
+// false (as d is not being checked)
 ```
 
-Програмата ще се изпълни по **следния** начин: **започва** проверката от **`а`**, **проверява** я и отчита, че има стойност **`true`**, след което **проверява `b`**. След като е **отчела**, че **`a`** и **`b`** връщат стойност **`true`**, **проверява следващия** аргумент. Стига до **`c`** и отчита, че променливата има стойност **`false`**. След като програмата отчете, че аргументът **`c`** има стойност **`false`**, тя изчислява израза **до `c`**, **независимо** каква е стойността на **`d`**. Затова проверката на **`d`** се **прескача** и целият израз бива изчислен като **`false`**.
+The program will run in the **following** way: **It starts** the check from **`а`**, **reads** it and accepts that it has a **`true`** value, after that it  **checks `b`**. After it has **accepted**,that **`a`** and **`b`** returns value **`true`**, **it checks the next** argument. It gets to **`c`** and sees that the variable has a **`false`** value. After the program accepts that the argument **`c`** has a **`false`** value,it calculates the expression **to `c`**, **regardless** of what the value of **`d`** is.That is why the evaluation of **`d`**is being **skipped** and the whole expression is calculated as **`false`**.
 
-### Пример: точка в правоъгълник
+### Example: Point in a Rectangle
 
 Проверка дали **точка {x, y}** се намира **вътре в правоъгълника {x1, y1} – {x2, y2}**. Входните данни се четат от конзолата и се състоят от 6 реда: десетичните числа **x1**, **y1**, **x2**, **y2**, **x** и **y** (като се гарантира, че **x1 < x2** и **y1 < y2**).
 
