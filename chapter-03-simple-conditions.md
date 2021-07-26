@@ -106,36 +106,36 @@ if (Boolean condition) {
 
 ### Example: Excellent Grade or Not
 
-Подобно на горния пример, въвеждаме оценка и проверяваме дали е отлична, но **изписваме резултат и в двата случая**:
+Similarly to the example above, we input a grade and check if it is excellent, but this time we should **output a result in both cases**:
 
 ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
-#### Тестване в Judge системата
+#### Testing in Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#1](https://judge.softuni.bg/Contests/Practice/Index/929#1).
+You can test your solution at the folowing link: [https://judge.softuni.bg/Contests/Practice/Index/929#1](https://judge.softuni.bg/Contests/Practice/Index/929#1).
 
 
-## За къдравите скоби { } след if / else
+## About the Curly Braces { } after an if / else
 
-Когато имаме **само една команда** в тялото на **`if` конструкцията**, можем да **пропуснем къдравите скоби**, обозначаващи тялото на условния оператор. Когато искаме да изпълним **блок от код** (група команди), къдравите скоби са **задължителни**. В случай че ги изпуснем, ще се изпълни **само първият ред** след **`if` клаузата**.
+When we have **only one comand** in the body of the **`if` statement**, we can **skip the curly braces**, indicating the body of the conditional operator. When we need to execute a **block of code** (group of comands), curly braces are **mandatory**. In case the braces are omitted, **only the first line of code** will be executed after the **`if` statement**.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Добра практика е, <strong>винаги да слагаме къдрави скоби</strong>, понеже това прави кода ни по-четим и по-подреден.</td>
+<td>It is a good practice to <strong> always include curly braces</strong>, since this makes the code more readable, neater and cleaner.</td>
 </tr></table>
 
-Ето един пример, в който изпускането на къдравите скоби води до объркване:
+Here is an example, where omitting the curly braces leads to confusion:
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-01.png)
 
-Изпълнението на горния код ще изведе следния резултат на конзолата:
+Executing the code above will produce the folowing console output:
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-02.png)
 
-С къдрави скоби:
+With curly braces:
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-03.png)
 
-На конзолата ще бъде отпечатано следното:
+The following output will be printed on the console:
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-04.png)
 
