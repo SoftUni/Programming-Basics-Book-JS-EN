@@ -80,7 +80,7 @@ Calculate the price by the given **city** (string), **product** (string) and **q
 
 #### Solution
 
-We**convert** all of the letters into **lower register** by using the method **`.toLowerCase()`**, in order to compare products and cities **no matter** what the letters are - small/capital ones.
+We **convert** all of the letters into **lower register** by using the method **`.toLowerCase()`**, in order to compare products and cities **no matter** what the letters are - small/capital ones.
 
 ![](/assets/chapter-4-1-images/02.Small-shop-01.png)
 
