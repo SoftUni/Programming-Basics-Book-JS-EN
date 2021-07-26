@@ -45,7 +45,7 @@ Depending on **age** (decimal number) and **gender** (**m** / **f**) print a per
 
 #### Solution
 
-We should notice that the **output** of the program **depends on few things**. First, we have to check what **gender** entered and then to check the **age**. Respectively, we are going to use **a few** **`if-else`** blocks. These blocks will be **nested**,i.e. from the **result** of the first, we are going to **define** which of the **others** to execute.
+We should notice that the **output** of the program **depends on few things**. First, we have to check what **gender** entered and then to check the **age**. Respectively, we are going to use **a few** **`if-else`** blocks. These blocks will be **nested**, i.e. from the **result** of the first, we are going to **define** which of the **others** to execute.
 
 ![](/assets/chapter-4-1-images/01.Personal-titles-01.jpg)
 
