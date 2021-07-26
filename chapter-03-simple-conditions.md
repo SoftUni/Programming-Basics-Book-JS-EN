@@ -139,37 +139,37 @@ The following output will be printed on the console:
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-04.png)
 
-### Пример: четно или нечетно
+### Problem: Even or Odd
 
-Да се напише функция, която проверява, дали дадено цяло число е **четно** (even) или **нечетно** (odd).
+Write a function that checks wether a given input number is **even** or **odd**.
 
-Задачата можем да решим с помощта на една **`if-else`** конструкция и оператора **`%`**, който връща **остатък при деление** на две числа.
+The problem can be solved with a single **`if-else`** structure and the operator **`%`**, which returns the **devision remainder** of two numbers.
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#2](https://judge.softuni.bg/Contests/Practice/Index/929#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#2](https://judge.softuni.bg/Contests/Practice/Index/929#2).
 
 
-### Пример: по-голямото число
+### Problem: Finding the Greater Number
 
-Да се напише функция, която чете две цели числа и извежда по-голямото от тях.
+Write a program that reads two integers and outputs the greater one.
 
-Първата ни задача е да **прочетем** двете числа. След което, чрез проста **`if-else`** конструкция, в съчетание с **оператора за по-голямо** (**`>`**), да направим проверка. Част от кода е замъглена умишлено, за да могат читателите да изпробват наученото до момента.
+Our fitst task is to **read** the two numbers. After which through the use of a simple **`if-else`** structure, in combination with the **greater than operator** (**`>`**), to perform the comparison. We have deliberately blurred parts of the code, so that the reader can implement the learned so far.
 
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#3](https://judge.softuni.bg/Contests/Practice/Index/929#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#3](https://judge.softuni.bg/Contests/Practice/Index/929#3).
 
-## Живот на променлива
+## Lifetime of a variable
 
-Всяка една променлива си има обхват, в който съществува, наречен **variable scope**. Този обхват уточнява къде една променлива може да бъде използвана. В езикът **JavaScript** съществуват **два начина** за инициализиране на променливи. Чрез използването на ключовата дума **`var`** или **`let`**. Важно е да се отбележи разликата между тях, за да избегнем нежелани резултати при създаването на нашите функции.
+Every variable has a scope in whch it exists, called **variable scope**. This scope specifies where the variable can be used and accessed. In **JavaScript** there are **two ways** to initialize variables. This is done through the key-word **`var`** or **`let`**. It is important to note the difference between them, as to avoid unexpected and unwanted results during the design and execution of our functions.
 
-Променливите, инициализирани чрез ключовата дума **`var`** имат свойствата на **глобални променливи**. Те се характеризират с това, че **могат да бъдат достъпвани навсякъде, независимо от това в коя част на нашия код са били декларирани**.
-При използването на ключовата дума **`let`**, нашата променлива приема характеристиките на **локална променлива**. Това означава, че животът й започва от реда, в който сме я **дефинирали** и завършва до първата затваряща къдрава скоба **`}`** (на функцията, на **`if` конструкцията** и т.н.). Затова е важно да знаем, че всяка променлива, инициализирана с ключовата дума **`let`** вътре в тялото на **`if`** , **няма да бъде достъпна извън него**, освен ако не сме я дефинирали по-нагоре в кода.
+Variables initialized with the key-word **`var`** have the properties of **global variables**. They are characterized with the fact that they **can be accessed anywhere, regardles of the location in our code, where they are declared**.
+Using the kay-word **`let`**, our variable assimes the properties of **a local variable**. This means that its lifetime begins at the row in which it is **defined** and ends untill the first closing curly brace **`}`** (of the function, of the **`if` statement** etc.). Owing to this it is important to know that every variable initialized with the key-word **`let`** within the body of an **`if`**, **will not be accessable outside its code block / scope**, unless we have defined it higher in the code.
 
 В примера по-долу, на последните редове, ще се опитаме да извикаме дефинираните променливи. Ще успеем да отпечатаме **`myMoney`**, защото е декларирана в началото на нашата функция, преди **`if` конструкцията**, което я прави **достъпна навсякъде в функцията**. Също така ще е възможно да принтираме и **`salary`**, защото въпреки, че е декларирана в блока на **`if`** конструкцията, тя има характер на **глобална променлива** (понеже е дефинирана с **`var`**) и може да бъде **използвана навсякъде**. При опитът за отпечатването на **`bonus`** променливата, която е инициализирана в **`if` конструкцията**, ще получим **грешка**, тъй като животът на тази променлива свършва с първата затваряща къдрава скоба **`}`**, която в случая е на **`if`** конструкцията:
 
