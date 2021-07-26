@@ -156,7 +156,7 @@ As parameters of the function we give **3 integers**:
 - The second number – **the other end of the segment**.
 - The point number – **the location of the point**.
 
-Всички входни числа са цели и в диапазона [**-1000 … 1000**].
+All inputs are integers in the range [**-1000 … 1000**].
 
 #### Output
 
@@ -394,52 +394,50 @@ On the console we should print 3 lines containing the 3 sums in a format such as
 
 #### Hints and Guidelines
 
-Ще вземем **броя на числата** (големината на входния масив) и ще декларираме **начални стойности** на трите суми.
+We will take **the count of numbers** (the size of the input array) and will declare **starting values** of the three sums.
 
 ![](assets/chapter-8-1-images/07.Sums-Step-3-01.png)
 
-Тъй като не знаем предварително колко числа ще обработваме, ще си ги взимаме едно по едно в **цикъл**, който ще се повтори **n на брой пъти** и ще ги обработваме в тялото на цикъла.
+Since we do not know in advance how many numbers we will process, we will take them one at a time in **a loop** which will be repeatet **n times** and we will process them in the body of the loop.
 
 ![](assets/chapter-8-1-images/07.Sums-Step-3-02.png)
 
-За да разберем в коя от **трите суми** трябва да добавим числото, ще разделим **поредния му номер на три** и ще използваме **остатъка**. Ще използваме променливата **`i`**, която следи **броя завъртания** на цикъла, за да разберем на кое поред число сме. Когато остатъкът от **`i/3`** е **нула**, това означава, че ще добавяме това число към **първата** сума, когато е **1** към **втората** и когато е **2** към **третата**.
+To find out which of **the three sums** we need to add the number, we will divide its **sequence number into three** and we will use **the remainder**. We'll use the variable **`i`** which tracks **the number of runs** of the loop, in order to find out which sequence number we are at. When the remainder of **`i/3`** is **zero**, it means we will add this number to **the first** sum, when it's **1** to **the second** and when it's **2** to **the third**.
 
 ![](assets/chapter-8-1-images/07.Sums-Step-3-03.png)
 
-Накрая, ще отпечатаме резултата на конзолата в изисквания **формат**.
+Finally, we will print the result on the console in the required **format**.
 
 ![](assets/chapter-8-1-images/07.Sums-Step-3-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#6](https://judge.softuni.bg/Contests/Practice/Index/939#6).
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#6](https://judge.softuni.bg/Contests/Practice/Index/939#6).
 
+### Poblem: Sequence of Increasing Elements
 
-### Задача: поредица от нарастващи елементи
+A series of **n** numbers is given: **a1**, **a2**, **…**, **an**. Calculate **the length of the longest increasing sequence** of consecutive elements in the series of numbers.
 
-Дадена е редица от **n** числа: **a1**, **a2**, **…**, **an**. Да се пресметне **дължината на най-дългата нарастваща поредица** от последователни елементи в редицата от числа.
+#### Input
 
-#### Входни данни
+We give an array with size **n+1** (**0 ≤ n ≤ 1000**) as a parameter of the function. The array will contain **the count** of the numbers **n** and **n integers** in the range [**-1000 … 1000**]: **a1**, **a2**, **…**, **an**.
 
-Като параметър на функцията подаваме масив с големина **n+1** (**0 ≤ n ≤ 1000**). Масивът ще съдържа **броя** на числата **n** и **n цели числа** в интервала [**-1000 … 1000**]: **a1**, **a2**, **…**, **an**.
+#### Output
 
-#### Изходни данни
+Print on the console one number – **the length** of the longest increasing sequence.
 
-На конзолата трябва да се отпечата едно число – **дължината** на най-дългата нарастваща редица.
+#### Sample Input and Output
 
-#### Примерен вход и изход
-
-|Вход|Изход|Вход|Изход|Вход|Изход|Вход|Изход|
-|---|---|---|---|---|---|---|---|
+|Input|Output|Input|Output|Input|Output|Input|Output|
+|-----|------|-----|------|-----|------|-----|------|
 |<b>3</b><br>5<br>2<br>4|2|<b>4</b><br>2<br>8<br>7<br>6|2|<b>4</b><br>1<br>2<br>4<br>4|3|<b>4</b><br>5<br>6<br>7<br>8|4|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За решението на тази задача трябва да помислим малко **по-алгоритмично**. Дадена ни е **редица от числа** и трябва да проверяваме дали всяко **следващо**, ще бъде **по-голямо от предното** и ако е така да броим колко дълга е редицата, в която това условие е изпълнено. След това трябва да намерим **коя редица** от всички такива е **най-дълга**. За целта, нека да си направим няколко променливи, които ще ползваме през хода на задачата. 
-
+To solve this problem, we need to think in a bit **more algorithmic way**. A **sequence of numbers** is given to us, and we need to check whether each **subsequent** one will be **larger than the previous one**, and if so, we count how long is the sequence in which this condition is fulfilled. Then we have to find **which sequence** of these is **the longest one**. To do this, let's create some variables that we will use during solving the problem.
 ![](assets/chapter-8-1-images/08.Increasing-numbers-01.png)
 
-Променливата **`n`** е **броя числа**, които ще получим от конзолата. В **`countCurrentLongest`** ще запазваме **броя на елементите** в нарастващата редица, която **броим в момента**. Напр. при редицата: 5, 6, 1, 2, 3 **`countCurrentLongest`** ще бъде 2, когато сме стигнали **втория елемент** от броенето (5, **6**, 1, 2, 3) и ще стане 3, когато стигнем **последния елемент** (5, 6, 1, 2, **3**), понеже нарастващата редица 1, 2, 3 има 3 елемента. Ще използваме **`countLongest`**, за да запазим **най-дългата** нарастваща редица. Останалите променливи са **`num`** - числото, на което се намираме **в момента**, и **`numPrev`** - **предишното число**, което ще сравним с **`num`**, за да разберем дали редицата **расте**.
+The variable **`n`** е **броя числа**, които ще получим от конзолата. В **`countCurrentLongest`** ще запазваме **броя на елементите** в нарастващата редица, която **броим в момента**. Напр. при редицата: 5, 6, 1, 2, 3 **`countCurrentLongest`** ще бъде 2, когато сме стигнали **втория елемент** от броенето (5, **6**, 1, 2, 3) и ще стане 3, когато стигнем **последния елемент** (5, 6, 1, 2, **3**), понеже нарастващата редица 1, 2, 3 има 3 елемента. Ще използваме **`countLongest`**, за да запазим **най-дългата** нарастваща редица. Останалите променливи са **`num`** - числото, на което се намираме **в момента**, и **`numPrev`** - **предишното число**, което ще сравним с **`num`**, за да разберем дали редицата **расте**.
 
 Започваме да въртим числата и проверяваме дали настоящото число **`а`** е по-голямо от предходното **`numPrev`**. Ако това е изпълнено, значи редицата **е нарастваща** и трябва да увеличим броя ѝ с **1**. Това запазваме в променливата, която следи дължината на редицата, в която се намираме в момента, а именно - **`countCurrentLongest`**. Ако числото **`num`** **не е по-голямо** от предходното, това означава, че започва **нова редица** и трябва да стартираме броенето от **1**. Накрая, след всички проверки, **`numPrev`** става **числото**, което използваме **в момента**, и започваме цикъла от начало със **следващото** въведено **`num`**.
 
