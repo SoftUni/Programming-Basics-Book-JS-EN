@@ -18,64 +18,64 @@ In programming we can compare values through the use of the folowing **operators
 * operator **`<=`** (less than or equals)
 * operator **`>=`** (greater than or equals)
 * operator **`===`** (equals)
-* operator **`!==`** (not equals; different than)
+* operator **`!==`** (not equal; different than)
 
 The result from a comparison is the so called Boolean value, which can be either **`true`** or **`false`** depending on the evaluated result being ether true or false.
 
-Важно е да се отбележи, че в **JavaScript** се използват и още един вид оператори за **сравнение**  **`==`** и **различие** **`!=`**. Прилагането им без задълбочено разбиране води до проблеми и неочаквани резултати, затова няма да ги разглеждаме на този етап от нашата подготовка.
+It is important to note that in **JavaScript** there are further comparison operators - for **comparison**  **`==`** and **differance** **`!=`**. The implementation of these operators without having intimate knowledge of their evaluation may lead to unexpected results and problems, for the moment we will not take look at them in detail.
 
-Повече информация за разликите между двата вида оператори за сравнение и различие можете да получите от тук: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
+Additional information on the differances between the two types of comparison operators can be found on the following lonk: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
 
-### Примери за сравнение на числа
+### Examples of Number Comparisons
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
-### Примери за сравнение на променливи от тип "текст" (стринг)
+### Examples of comparing "text" (string) type variables
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-02.png)
 
-Важно е да се отбележи, че има значение дали буквите в нашият текст са **главни** или **малки**. Ако сравняваните стойности не са **напълно идентични**, резултатът, който ще получим винаги ще бъде **`false`**.
+It is important to note that the case of the letters **upper case** or **lower case** is important for the comparison. If the compared values are not **completely identical**, the output will allways be **`false`**.
 
-### Оператори за сравнение
+### Comparison operators
 
-В езика **JavaScript** можем да използваме следните оператори за сравнение на данни:
+In **JavaScript** we can use the folowing operators to compare data:
 
 <table>
 <tr>
-<th>Оператор</th> <th>Означение</th> <th>Работи за</th>
+<th>Operator</th> <th>Notation</th> <th>Applicable for</th>
 </tr>
 <tr>
-<td>Проверка за равенство</td><td align="center"> === </td><td rowspan="2"> числа, стрингове, дати</td>
+<td>Equals</td><td align="center"> === </td><td rowspan="2"> numbers, strings, dates</td>
 </tr>
 <tr>
-<td>Проверка за различие</td><td align="center"> !== </td>
+<td>Not equal</td><td align="center"> !== </td>
 </tr>
 <tr>
-<td>По-голямо</td><td align="center"> > </td><td rowspan="4">числа, дати, други сравними типове</td>
+<td>Greater than</td><td align="center"> > </td><td rowspan="4">numbers, dates, other comparable data types</td>
 </tr>
 <tr>
-<td>По-голямо или равно</td><td align="center"> >= </td>
+<td>Greater than or equal</td><td align="center"> >= </td>
 </tr>
 <tr>
-<td>По-малко</td><td align="center"> &lt; </td>
+<td>Less than</td><td align="center"> &lt; </td>
 </tr>
 <tr>
-<td>По-малко или равно</td><td align="center"> &lt;= </td>
+<td>Less than or equal</td><td align="center"> &lt;= </td>
 </tr>
 </table>
 
 
-## Прости проверки
+## Simple **`if`** comparisons
 
-В програмирането често **проверяваме дадени условия** и извършваме различни действия, според резултата от проверката. Това става чрез проверката **`if`**, която има следната конструкция:
+In programming we often **check particular conditions** and perform various actions depending on the result of the comparison. This is done through the **`if`** comparison, which has the folowing structure:
 
 ```javascript
-if (булев израз) {
-    // тяло на условната конструкция;  
+if (boolean condition) {
+    // body of the conditional construct;  
 }
 ```
 
-### Пример: отлична оценка
+### Example: Exellent Grade
 
 Въвеждаме оценка като аргумент при извикване на функцията и проверяваме дали тя е отлична (**`≥ 5.50`**).
 
