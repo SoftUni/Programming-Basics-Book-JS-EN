@@ -77,33 +77,34 @@ if (boolean condition) {
 
 ### Example: Exellent Grade
 
-Въвеждаме оценка като аргумент при извикване на функцията и проверяваме дали тя е отлична (**`≥ 5.50`**).
+We take the grade as an input argument to our function and upon evaluation we check if the input value is an exellent grade (**`≥ 5.50`**).
 
 ![](assets/chapter-3-1-images/01.ЕxcellentResult-01.png)
 
-Тествайте кода от примера локално. Опитайте да въведете различни оценки, например **4.75**, **5.49**, **5.50** и **6.00**. При оценки **по-малки от 5.50** програмата няма да изведе нищо, а при оценка **5.50 или по-голяма**, ще изведе "**Excellent!**". Извикваме функцията като записваме нейното име, след което попълваме примерната стойност в скобите:
+Test the example code locally. Try entering different grades, for example **4.75**, **5.49**, **5.50** и **6.00**. For grades **less than 5.50** the program will not give any output, however for grades of **5.50 or greater**, the output will be "**Excellent!**". The function is called by simply writing its name and filling the input value in the parenthesis:
 
 ![](assets/chapter-3-1-images/01.ЕxcellentResult-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте програмата от примера в Judge системата на СофтУни: [https://judge.softuni.bg/Contests/Practice/Index/929#0](https://judge.softuni.bg/Contests/Practice/Index/929#0).
+You can test the solution example here:
+[https://judge.softuni.bg/Contests/Practice/Index/929#0](https://judge.softuni.bg/Contests/Practice/Index/929#0).
 
 
-## Проверки с if-else конструкция
+## If-else conditional constructs
 
-Конструкцията **`if`** може да съдържа и **`else`** клауза, с която да окажем конкретно действие в случай, че булевият израз (който е зададен в началото **`if (булев израз)`**) върне отрицателен резултат (**`false`**). Така построена, **условната конструкция** наричаме **`if-else`** и поведението ѝ е следното: ако резултатът от условието е **позитивен** (**`true`**) - извършваме едни действия, a когато е **негативен** (**`false`**) - други. Форматът на конструкцията в езика **JavaScript** е следният:
+The **`if`** conditional can also have an **`else`** option in order to provide a specific action to be prformed in case the Boolean expression (which is specified at the beginning **`if (Boolean expression)`**) returns a negative / falsy result (**`false`**). Writen in this way the **conditional statement** is called **`if-else`** and its behaviour is as follows: if the result of the condition is **positive / truthy** (**`true`**) - a set of instructions is executed. By contrast, when the result is **negative / falsy** (**`false`**) - a different set is executed. The format of this structure in **JavaScript** is as follows:
 
 ```javascript
-if (булево условие) {
-    // тяло на условната конструкция;
+if (Boolean condition) {
+    // Condition body to be executed if condition is true;
 } else {
-    // тяло на else конструкция;
+    // else structure body to be executed if condition is false;
 }
 
 ```
 
-### Пример: отлична оценка или не
+### Example: Excellent Grade or Not
 
 Подобно на горния пример, въвеждаме оценка и проверяваме дали е отлична, но **изписваме резултат и в двата случая**:
 
