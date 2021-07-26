@@ -1,26 +1,26 @@
 # Chapter 3.1. Simple conditions
 
-In the present chapter we will take a look at the **conditional constructs in the JavaScript programing language**. By implementing these constructs, our program can a different output based on the given specific input. Ще обясним синтаксиса на условните оператори за проверки (**`if`** и **`if-else`**) с подходящи примери и ще видим в какъв диапазон живее една променлива (нейният **обхват**). Накрая ще разгледаме техники за **дебъгване**, чрез които постъпково да проследяваме пътя, който извървява нашата програма по време на своето изпълнение.
+In the present chapter we will take a look at the **conditional constructs in the JavaScript programing language**. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (**`if`** and **`if-else`**) by implementing appropriate examples and also we will take a look a the range in which a variable lives (its **scope**). Finally, we will go over different **debugging** techniquies, in order to follow the programming steps through which our program goes during its run.
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=0GTknpT5mw8">https://www.youtube.com/watch?v=0GTknpT5mw8</a>.
+  Watch the video course for this chapter: <a target="_blank" href="https://www.youtube.com/watch?v=0GTknpT5mw8">https://www.youtube.com/watch?v=0GTknpT5mw8</a>.
 </div>
 
 
-## Оператори за сравнение
+## Cnditional operators
 
-В програмирането можем да сравняваме стойности чрез следните **оператори**:
+In programming we can compare values through the use of the folowing **operators**:
 
-* Оператор **`<`** (по-малко)
-* Оператор **`>`** (по-голямо)
-* Оператор **`<=`** (по-малко или равно)
-* Оператор **`>=`** (по-голямо или равно)
-* Оператор **`===`** (равно)
-* Оператор **`!==`** (различно)
+* operator **`<`** (less than)
+* operator **`>`** (greater than)
+* operator **`<=`** (less than or equals)
+* operator **`>=`** (greater than or equals)
+* operator **`===`** (equals)
+* operator **`!==`** (not equals; different than)
 
-При сравнение резултатът е булева стойност – **`true`** или **`false`**, в зависимост от това дали резултатът от сравнението е истина или лъжа.
+The result from a comparison is the so called Boolean value, which can be either **`true`** or **`false`** depending on the evaluated result being ether true or false.
 
 Важно е да се отбележи, че в **JavaScript** се използват и още един вид оператори за **сравнение**  **`==`** и **различие** **`!=`**. Прилагането им без задълбочено разбиране води до проблеми и неочаквани резултати, затова няма да ги разглеждаме на този етап от нашата подготовка.
 
