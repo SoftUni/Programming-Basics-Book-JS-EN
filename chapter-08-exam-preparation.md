@@ -90,310 +90,309 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#0
 
 ### Problem: Moving Bricks
 
-Строителни работници трябва да пренесат общо **x тухли**. **Работниците** са **w** на брой и работят едновременно. Те превозват тухлите в колички, всяка с **вместимост m** тухли. Напишете програма, която прочита целите числа **x**, **w** и **m** и пресмята **колко най-малко курса** трябва да направят работниците, за да превозят тухлите.
+Construction workers have to transfer a total of **x bricks**. **The workers** are **w** and work simultaneously. They transport the bricks in trolleys, each with a **capacity of m** bricks. Write a program that reads the integers **x**, **w** and **m**, and calculates **what is the minimum number of courses** the workers need to do to transport the bricks.
 
-#### Входни данни
+#### Input
 
-Като параметри на функцията подаваме **3 цели числа**:
-- **Броят тухли x**
-- **Броят работници w**
-- **Вместимостта на количката m**
+As parameters of the function we give **3 integers**:
+- **The number of bricks x**
+- **The number of workers w**
+- **The capacity of the trolley m**
 
-Всички входни числа са цели и в диапазона [**1 … 1000**].
+All iput numbers are integers in the range [**1 … 1000**].
 
-#### Изходни данни
+#### Output
 
-Да се отпечата на конзолата **минималният брой курсове**, необходими за превозване на тухлите.
+Print on the console **the minimum number of courses** needed to transport the bricks.
 
-#### Примерен вход и изход
+#### Sample Input and Output
+|Input|Output|Comments|
+|-----|------|--------|
+|120<br>2<br>30|2|We have **2** workers, each transporting **30** bricks per course. In total, workers are transporting **60**  bricks per course. To transport **120** bricks, exactly **2** courses are needed.|
 
-|Вход|Изход|Обяснения|
-|----|----|----|
-|120<br>2<br>30|2|Имаме **2** работника, всеки вози по **30** тухли на курс. Общо работниците возят по **60** тухли на курс. За да превозят **120** тухли, са необходими точно **2** курса.|
+|Input|Output|Comments|
+|-----|------|--------|
+|355<br>3<br>10|12|We have **3** workers, each transporting **10** bricks per course. In total, workers are transporting **30** bricks per course. To transport **355** bricks, exactly **12** courses are needed: **11** complete courses carry **330** bricks and the last **12th** course carries the last **25** bricks.|
 
-|Вход|Изход|Обяснения|
-|----|----|----|
-|355<br>3<br>10|12|Имаме **3** работника, всеки вози по **10** тухли на курс. Общо работниците возят по **30** тухли на курс. За да превозят **355** тухли, са необходими точно **12** курса: **11** пълни курса превозват **330** тухли и последният **12**-ти курс пренася последните **25** тухли.|
+|Input|Output|Comments|
+|-----|------|--------|
+|5<br>12<br>30|1|We have **5** workers, each transporting **30** bricks per course. In total, workers are transporting **150** bricks per course. To transport **5** bricks, only **1** course is enough (although incomplete, with only 5 bricks).|
 
-|Вход|Изход|Обяснения|
-|----|----|----|
-|5<br>12<br>30|1|Имаме **5** работника, всеки вози по **30** тухли на курс. Общо работниците возят по **150** тухли на курс. За да превозят **5** тухли, е достатъчен само **1** курс (макар и непълен, само с 5 тухли).|
+#### Hints and Guidelines
 
-#### Насоки и подсказки
-
-Входът е стандартен, като единствено трябва да внимаваме за последователността, в която прочитаме данните.
+The input is standard, and we only need to be careful about the sequence in which we read the data. 
 
 ![](assets/chapter-8-1-images/02.Bricks-01.png)
 
-Пресмятаме колко **тухли** носят работниците на един курс.
+We calculate how many **bricks** the workers transport in a single course.
 
 ![](assets/chapter-8-1-images/02.Bricks-02.png)
 
-Като разделим общия брой на **тухлите, пренесени за 1 курс**, ще получим броя **курсове**, необходими за пренасянето им. Ще използваме метода**`Math.ceil(…)`**, за да закръглим получения резултат винаги нагоре. Когато тухлите могат да се пренесат с **точен брой курсове**, делението ще връща точно число и няма да има нищо за закръгляне. Съответно, когато не е така, резултатът от делението ще е **броя на точните курсове**, но с десетична част. Десетичната част ще се закръгли нагоре и така ще се получи нужният **1 курс** за оставащите тухли.
+By dividing the total number of **the bricks transporteed for 1 course**, we will obtain the number of **courses** needed to carry them. We will use the method **`Math.ceil(…)`** to round the result always up. When the bricks can be transferred with **an exact number of courses**, д the division will return a whole number and there will be nothing to round. Accordingly, if not, the result of the division will be **the number of exact courses** but with a decimal fraction.  The decimal part will be rounded up and we will get the required **1 course** for the remaining bricks.
 
 ![](assets/chapter-8-1-images/02.Bricks-03.png)
 
-Накрая принтираме резултата на конзолата.
+At the end, we print the result on the console.
 
 ![](assets/chapter-8-1-images/02.Bricks-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#1](https://judge.softuni.bg/Contests/Practice/Index/939#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#1](https://judge.softuni.bg/Contests/Practice/Index/939#1).
 
 
-## Задачи с единична проверка
+## Problems with Simple Condition
 
-**Втората** задача на практическия изпит по “Основи на програмирането” обхваща **условна конструкция и прости премятания**. Ето няколко примера:
+**The second** problem of the "Programming Basics" Practical Exam covers **conditional statements and simple calculations**. Here are a few examples:
 
-### Задача: точка върху отсечка
+### Problem: Point on a Segment
 
-Върху хоризонтална права е разположена **хоризонтална отсечка**, зададена с **x** координатите на двата си края: **first** и **second**. **Точка** е разположена **върху** същата хоризонтална права и е зададена с **x координатата** си. Напишете програма, която проверява дали точката е **вътре или вън от отсечката** и изчислява **разстоянието до по-близкия край** на отсечката.
+**A horizontal segment** is placed on a horizontal line, set with the **x** coordinates of both ends: **first** and **second**. **A point** is located **on** сthe same horizontal line and is set with its **x coordinate**. Write a program that checks whether the point is **inside or outside of the segment** and calculates **the distance to the nearest end** of the segment.
 
-#### Входни данни
+#### Input
 
-Като параметри на функцията подаваме **3 цели числа**:
-- Числото first – **единия край на отсечката**.
-- Числото second – **другия край на отсечката**.
-- Числото point – **местоположението на точката**.
+As parameters of the function we give **3 integers**:
+- The first number – **the one end of the segment**.
+- The second number – **the other end of the segment**.
+- The point number – **the location of the point**.
 
 Всички входни числа са цели и в диапазона [**-1000 … 1000**].
 
-#### Изходни данни
+#### Output
 
-Резултатът да се отпечата на конзолата:
-- На първия ред да се отпечата "**in**" или "**out**" – дали точката е върху отсечката или извън нея.
-- На втория ред да се отпечата разстоянието от точката до най-близкия край на отсечката.
+Print the result on the console:
+- On the first line, print "**in**" or "**out**" – whether the point is inside or outside the segment.
+- On the second line, print the distance from the point to the nearest end of the segment.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Визуализация|
-|---|---|---|
+|Input|Output|Visualization|
+|-----|------|-------------|
 |10<br>5<br>7|in<br>2|![](/assets/chapter-8-1-images/03.Point-on-segment-01.png)|
 
-|Вход|Изход|Визуализация|
-|---|---|---|
+|Input|Output|Visualization|
+|-----|------|-------------|
 |8<br>10<br>5|out<br>3|![](/assets/chapter-8-1-images/03.Point-on-segment-02.png)|
 
-|Вход|Изход|Визуализация|
-|---|---|---|
+|Input|Output|Visualization|
+|-----|------|-------------|
 |1<br>-2<br>3|out<br>2|![](/assets/chapter-8-1-images/03.Point-on-segment-03.png)|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Четем входа от конзолата.
+We read the input from the console.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-04.png)
 
-Тъй като не знаем коя **точка** е от ляво и коя е от дясно, ще си направим две променливи, които да ни отбелязват това. Тъй като **лявата точка** е винаги тази с по-малката **х координата**, ще ползваме **`Math.min(…)`**, за да я намерим. Съответно, **дясната** е винаги тази с по-голяма **х координата** и ползваме **`Math.max(…)`**. Ще намерим и разстоянието от **точката x** до **двете точки**. Понеже не знаем положението им една спрямо друга, ще използваме **`Math.abs(…)`**, за да получим положителен резултат.
+Since we do not know which **point**  is on the left and which is on the right, we will create two variables to mark this. Since **the left point** is always the one with the smaller **х coordinate**, we will use **`Math.min(…)`** to find it. Accordingly, **the right point** is always the one with a larger **х coordinate** and we will use **`Math.max(…)`**. We will also find the distance from **the point x** to **the two points**. Because we do not know their position relative to each other, we will use **`Math.abs(…)`** to get a positive result.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-05.png)
 
-По-малкото от двете **разстояния** ще намерим ползвайки **`Math.min(…)`**.
+The shorter of the two **distances** we will find by using **`Math.min(…)`**.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-06.png)
 
-Остава да намерим дали **точката** е на линията или извън нея. Точката ще се намира **на линията** винаги, когато тя **съвпада** с някоя от другите две точки или х координатата ѝ се намира **между тях**. В противен случай, точката се намира **извън линията**. След проверката изкарваме едното от двете съобщения, спрямо това коя проверка е удовлетворена.
+What remains is to find whether **the point** is on or out of the line. The point will be **on the lines** always when it **matches** one of the other two points or its x coordinate lies **between them**. Otherwise, the point is **outside the line**.  After checking, we display one of the two messages, depending on which condition is satisfied.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-07.png)
 
-Накрая принтираме **разстоянието**, намерено преди това.
+Finally, we print **the distance** which we fine before.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-08.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#2](https://judge.softuni.bg/Contests/Practice/Index/939#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#2](https://judge.softuni.bg/Contests/Practice/Index/939#3).
 
 
-### Задача: точка във фигура
+### Problem: Point on a Figure
 
-Да се напише програма, която проверява дали дадена точка (с координати **x** и **y**) е **вътре** или **извън** следната фигура:
+Write a program that check if a point (with coordinates **x** and **y**) is **inside** or **outside** of the given figure:
  
 ![](/assets/chapter-8-1-images/04.Point-in-figure-01.png)
 
-#### Входни данни
+#### Input
 
-Като параметри на функцията подаваме **две цели числа**: **x** и **y**.
+As parameters of the function we give **two integers**: **x** и **y**.
 
-Всички входни числа са цели и в диапазона **[-1000 … 1000]**.
+All inputs are integers in the range **[-1000 … 1000]**.
 
-#### Изходни данни
+#### Output
 
-Да се отпечата на конзолата "**in**" или "**out**" – дали точката е **вътре** или **извън** фигурата (на контура е вътре).
+Print on the console "**in**" or "**out**" – whether the point is **inside** or **outside** the figure (the outline is inside).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
-|----|----|----|----|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |8<br>-5|in|6<br>-3|in|
 
-|Вход|Изход|Вход|Изход|
-|----|----|----|----|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |11<br>-5|out|11<br>2|out|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За да разберем дали **точката** е във фигурата, ще разделим **фигурата** на 2 четириъгълника:
+To find out if **the point** is inside of the figure, we will divide **the figure** into 2 rectangles:
 
 ![](assets/chapter-8-1-images/04.Point-in-figure-02.png)
 ![](assets/chapter-8-1-images/04.Point-in-figure-03.png)
 
-Достатъчно условие е **точката** да се намира в един от тях, за да се намира във **фигурата**.
+A sufficient condition is **the point** to be located in one of them, in order to be in **the figure**.
 
-Четем от конзолата входните данни:
+We read the input from the console:
 
 ![](assets/chapter-8-1-images/04.Point-in-figure-04.png)
 
-Ще създадем две променливи, които ще отбелязват дали **точката** се намира в някой от правоъгълниците.
+We will initialize two variables that will mark whether **the point** is in one of the rectangles.
 
 ![](assets/chapter-8-1-images/04.Point-in-figure-05.png)
 
-При отпечатването на съобщението ще проверим дали някоя от променливите е приела стойност **`true`**. Достатъчно е **само една** от тях да е **`true`**, за да се намира точката във фигурата.
+When printing the message, we will check whether any of the variables has accepted a value of **`true`**. It's enough **only one** of them to be **`true`**,  so that the point is in the figure.
 
 ![](assets/chapter-8-1-images/04.Point-in-figure-06.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#3](https://judge.softuni.bg/Contests/Practice/Index/939#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#3](https://judge.softuni.bg/Contests/Practice/Index/939#3).
 
 
-## Задачи с по-сложни проверки
+## Problems with Complex Conditions
 
-**Третата** задача на практическия изпит по “Основи на програмирането” включва **няколко вложени проверки съчетани с прости пресмятания**. Ето няколко примера:
+**The third** problem of the "Programming Basics" Practical Exam includes **several nested checks combined with simple calculations**. Here are a few examples:
 
-### Задача: дата след 5 дни
+### Problem: Date after 5 days
 
-Дадени са две числа **d** (ден) и **m** (месец), които формират **дата**. Да се напише програма, която отпечатва датата, която ще бъде **след 5 дни**. Например 5 дни след **28.03** е датата **2.04**. Приемаме, че месеците: април, юни, септември и ноември имат по 30 дни, февруари има 28 дни, а останалите имат по 31 дни. Месеците да се отпечатат с **водеща нула**, когато са едноцифрени (например 01, 08).
+There are two numbers **d** (day) and **m** (month) that form **a date**. Write a program that prints the date that will be **after 5 days**. For example, 5 days after **28.03** is the date **2.04**. We assume that the months: April, June, September and November have 30 days, February has 28 days, and the rest have 31 days. Months to be printed with **leading zero** when they contain a single digit (e.g. 01, 08).
 
-#### Входни данни
+#### Input
 
-Като параметри на функцията подаваме **две цели числа**:
--	Цяло число **d** в интервала [**1 … 31**] – ден. Номерът на деня не надвишава броя дни в съответния месец (напр. 28 за февруари).
--	Цяло число **m** в интервала [**1 … 12**] – месец. Месец 1 е януари, месец 2 е февруари, …, месец 12 е декември. Месецът може да съдържа водеща нула (напр. април може да бъде изписан като 4 или 04).
+As parameters of the function we give **two integers**:
+-	A integer **d** in the range [**1 … 31**] – day. The number of the day does not exceed the number of days in that month (e.g. 28 for February).
+-	A integer **m** in the range [**1 … 12**] – month. Month 1 is January, month 2 is February, …, month 12 is December. The month may contain a leading zero (e.g. April may be written as 4 or 04).
 
-#### Изходни данни
+#### Output
 
-Отпечатайте на конзолата един единствен ред, съдържащ дата след 5 дни във формат **ден.месец**. Месецът трябва да бъде двуцифрено число с водеща нула, ако е необходимо. Денят трябва да е без водеща нула.
+Print a single line containing the date after 5 days in the format **day.month** on the console. The month must be a 2-digit number with a leading zero, if necessary. The day must be written without leading zero.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |28<br>03|2.04|27<br>12|1.01|
 
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |25<br>1|30.01|26<br>02|3.03|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Приемаме си входа от конзолата.
+We take the input from the console.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-01.png)
 
-За да си направим по-лесно проверките, ще си създадем една променлива, която ще съдържа **броя дни**, които има в месеца, който сме задали.
+To make our checks easier, we'll create a variable that will contain the **number of days** that we have in the month we set.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-02.png)
 
-Увеличаваме **деня** с 5.
+We are increasing **the day** with 5.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-03.png)
 
-Проверяваме дали **денят** не е станал по-голям от броя дни, които има в съответния **месец**. Ако това е така, трябва да извадим дните от месеца от получения ден, за да получим нашият ден на кой ден от следващия месец съответства.
+We check if **the day** has not exceeded the number of days in **the month**. If so, we must deduct the days of the month from the obtained day in order to calculate which day of the next month our day corresponds to.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-04.png)
 
-След като сме минали в **следващия месец**, това трябва да се отбележи, като увеличим първоначално зададения с 1. Трябва да проверим, дали той не е станал по-голям от 12 и ако е така, да коригираме. Тъй като няма как да прескочим повече от **един месец**, когато увеличаваме с 5 дни, долната проверка е достатъчна.
+After we have passed to **the next month**,  this should be noted by increasing the initial one by 1. We need to check if it has not become greater than 12 and if it has, to adjust it. Because we cannot skip more than **one month** when we increase by 5 days, the following check is enough.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-05.png)
 
-Остава само да принтираме резултата на конзолата. Важно е да **форматираме изхода** правилно, за да се появява водещата нула в първите 9 месеца. Това става, като създадем допълнителна променлива за месеца, към която да прибавим 0 при необходимост. Накрая принтираме деня и новата променлива за месеца.
+The only thing that remains is to print the result on the console. It is important to **format the output** correctly to display the leading zero in the first 9 months. This is done by creating a new variable for the month, to which to add 0 if necessary. Finally, we print the day and the new variable for the month.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-06.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#4](https://judge.softuni.bg/Contests/Practice/Index/939#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#4](https://judge.softuni.bg/Contests/Practice/Index/939#4).
 
 
-### Задача: суми от 3 числа
+### Problem: Sums of Three Numbers
 
-Дадени са **3 цели числа**. Да се напише програма, която проверява дали **сумата на две от числата е равна на третото**. Например, ако числата са **3**, **5** и **2**, сумата на две от числата е равна на третото: **2 + 3 = 5**.
+There are **3 integers** given. Write a program that checks if **the sum of two of the numbers is equal to the third one**. For example, if the numbers are **3**, **5** and **2**, the sum of two of the numbers is equal to the third one: **2 + 3 = 5**.
 
-#### Входни данни
+#### Input
 
-Като параметри на функцията подаваме **три цели числа**. Числата са в диапазона [**1 … 1000**].
+As parameters of the function we give **three integers**. The numbers are in the range [**1 … 1000**].
 
-#### Изходни данни
+#### Output
 
--	Да се отпечата на конзолата един ред, съдържащ решението на задачата във формат "**a + b = c**", където **a**, **b** и **c** са измежду входните три числа и  **a ≤ b**.
--	Ако задачата няма решение, да се отпечата “**No**” на конзолата.
+-	Print a text line on the console containing the solution of the problem in the format "**a + b = c**", where **a**, **b** and **c** are among the three input numbers and  **a ≤ b**.
+-	If the problem has no solution, print “**No**” on the console.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |3<br>5<br>2|2 + 3 = 5|2<br>2<br>4|2 + 2 = 4|
 
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |1<br>1<br>5|No|2<br>6<br>3|No|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Приемаме си входа от конзолата.
+We take the input from the console.
 
 ![](assets/chapter-8-1-images/06.Sums-3-numbers-01.png)
 
-Трябва да проверим дали **сумата** на някоя двойка числа е равна на третото. Имаме три възможни случая:
+We have to check if **the sum** of a pair of numbers is equal to the third number. We have three possible cases:
 * a + b = c
 * a + c = b 
 * b + c = a
 
-Ще си напишем **рамка**, която после ще допълним с нужния код. Ако никое от горните три условия не е изпълнено, ще зададем на програмата да принтира "**No**".
+We will write **a template**, which will later be complemented by the required code. If none of the above three conditions is met, we will make our program print "**No**".
 
 ![](assets/chapter-8-1-images/06.Sums-3-numbers-02.png)
 
-Сега остава да разберем реда, в който ще се изписват **двете събираеми** на изхода на програмата. За целта ще направим **вложено условие**, което проверява кое от двете числа е по-голямото. При първия случай, ще стане по този начин:
+We now have to understand the order in which the **two addents** will be written in the output of the program. For this purpose, we will create **a nested condition** that checks which one of the two numbers is the larger one. In the first case, it will look like this:
 
 ![](assets/chapter-8-1-images/06.Sums-3-numbers-03.png)
 
-Аналогично, ще допълним и другите два случая. Пълният код на проверките и изходът на програмата ще изглеждат така:
+Similarly, we will supplement the other two cases. The full code of the program will look like this:
 
 ![](assets/chapter-8-1-images/06.Sums-3-numbers-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#5](https://judge.softuni.bg/Contests/Practice/Index/939#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#5](https://judge.softuni.bg/Contests/Practice/Index/939#5).
 
 
-## Задачи с единичен цикъл
+## Problems with Simple Loops
 
-**Четвъртата** задача на практическия изпит по “Основи на програмирането” включва **единичен цикъл с проста логика** в него. Ето няколко примера:
+**The fourth** problem of the "Programming Basics" Practical Exam includes a **a simple loop with simple logic** in it. Here are a few examples:
 
-### Задача: суми през 3
+### Problem: Sums with Step of 3
 
-Дадени са **n** цели числа **a1, a2, …, an**. Да се пресметнат сумите:
--	**sum1 = a1 + a4 + a7** + … (сумират се числата, започвайки от първото със стъпка 3).
--	**sum2 = a2 + a5 + a8** + … (сумират се числата, започвайки от второто със стъпка 3).
--	**sum3 = a3 + a6 + a9** + … (сумират се числата, започвайки от третото със стъпка 3).
+There are given **n** integers **a1, a2, …, an**. Calculate the sums:
+-	**sum1 = a1 + a4 + a7** + … (the numbers are summed, starting from the first one with step of 3).
+-	**sum2 = a2 + a5 + a8** + … (the numbers are summed, starting from the second one with step of 3).
+-	**sum3 = a3 + a6 + a9** + … (the numbers are summed, starting from the third one with step of 3).
 
-#### Входни данни
+#### Input
 
-Като параметър на функцията подаваме масив с големина **n+1 (0 ≤ n ≤ 1000)**. Масивът ще съдържа **броя** на числата **n** и **n цели числа** в интервала [**-1000 … 1000**]: **a1, a2, …, an**.
+As input of the function we give the array with size **n+1 (0 ≤ n ≤ 1000)**. The array will contain **the number** of the numbers **n** and **n integers** in the range [**-1000 … 1000**]: **a1, a2, …, an**.
 
-#### Изходни данни
+#### Output
 
-На конзолата трябва да се отпечатат 3 реда, съдържащи търсените 3 суми, във формат като в примерите.
+On the console we should print 3 lines containing the 3 sums in a format such as in the example.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
-|---|---|---|---|---|---|
+|Input|Output|Input|Output|Input|Output|
+|-----|------|-----|------|-----|------|
 |2<br>3<br>5<br>|sum1 = 3<br>sum2 = 5<br>sum3 = 0|4<br>7<br>-2<br>6<br>12|sum1 = 19<br>sum2 = -2<br>sum3 = 6|5<br>3<br>5<br>2<br>7<br>8|sum1 = 10<br>sum2 = 13<br>sum3 = 2| 
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
 Ще вземем **броя на числата** (големината на входния масив) и ще декларираме **начални стойности** на трите суми.
 
