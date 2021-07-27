@@ -228,9 +228,9 @@ A given **чnumber is valid**, if it is in the range [**100 … 200**] or it is 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#4](https://judge.softuni.bg/Contests/Practice/Index/931#4).
 
 
-## Операторът скоби `()`
+## The Parentheses `()` Operator
 
-Както останалите оператори в програмирането, така и операторите **`&&`** и **`||`** имат приоритет, като в случая **`&&`** е с по-голям приоритет от **`||`**. Операторът **`()`** служи за **промяна на приоритета на операторите** и се изчислява пръв, също както в математиката. Използването на скоби също така придава по-добра четимост на кода и се счита за добра практика.
+Like the other operators in programming, the operators **`&&`** and **`||`** have a priority, and in this case the operator **`&&`** have a higher precedence than the operator  **`||`**. The operator **`()`** serves to **change the priority of the operator** and is calculated first, just like in math. The use of parentheses also gives the code better readability and is considered as a good practice .
 
 
 ## По-сложни логически условия
