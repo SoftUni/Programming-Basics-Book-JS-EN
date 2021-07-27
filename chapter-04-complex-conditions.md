@@ -149,20 +149,20 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#2
 
 ## Logical "OR"
 
-The logical **"OR"** (operator **`||`**) означава да е **изпълнено поне едно** измежду няколко условия. Подобно на оператора **`&&`**, логическото **"ИЛИ"** приема няколко аргумента от **булев** (условен) тип и връща **`true`** или **`false`**. Лесно можем да се досетим, че **получаваме** като стойност **`true`**, винаги когато поне **един** от аргументите има стойност **`true`**. Типичен пример за логиката на този оператор е следният:
+The logical **"OR"** (operator **`||`**) means that **at least one** among a few conditions is fulfilled. Similar to the operator **`&&`**, the logical **"OR"** accepts a few arguments of **boolean** (conditional) type and returns **`true`** or **`false`**. We can easy guess that we **obtain** as value **`true`**, every time when at least **one** of the arguments has a **`true`** value. Typical example of the logic of this operator is the following:
 
-В училище учителят казва: "Иван или Петър да измият дъската". За да бъде изпълнено това условие (дъската да бъде измита), е възможно само Иван да я измие, само Петър да я измие или и двамата да го направят.
+At school, the teacher says: "Ivan or Peter should clean the board". To fulfill this condition (to clean the board),it is possible either Ivan to clean it, or just for Peter to clean it or both of them to clean it together.
 
 |a|b|a &#124;&#124; b|
 |:-----:|:-----:|:-----:|
 |true<br>true<br>false<br>false|true<br>false<br>true<br>false|true<br>true<br>true<br>false|
 
 
-### Как работи операторът || ?
+### How the || Operator Works ?
 
-Вече научихме какво **представлява** логическото **"ИЛИ"**. Но как всъщност се реализира? Както при логическото **"И"**, програмата **проверява** от ляво на дясно **аргументите**, които са зададени. За да получим **`true`** от израза, е необходимо **само един** аргумент да има стойност **`true`**, съответно проверката **продължава** докато се срещне **аргумент** с **такава** стойност или докато **не свършат** аргументите.
+We hav already learned what the logical **"OR"** **represents**. But how is it actually being achieved? Just like the logical **"AND"**, the program **checks** from left to right **the arguments**, that are given. In order to obtain **`true`** from the expression, it is necessary for **just one** argument to have a **`true`** value, respectively the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
 
-Ето един **пример** за оператора **`||`** в действие:
+Here is one **example** of the operator **`||`** in action:
 
 ```javascript
 let a = false;
@@ -171,61 +171,61 @@ let c = false;
 let d = true;
 
 let result = a || b || c || d;
-// true (като c и d не се проверяват)
+// true (as c and d are not being checked)
 ```
 
-Програмата **проверява `а`**, отчита, че има стойност **`false`** и продължава. Стигайки до **`b`**, отчита, че има стойност **`true`** и целият **израз** получава стойност **`true`**, **без** да се проверява **`c`** и **`d`**, защото техните стойности **не биха променили** резултата на израза.
+The program **checks `а`**, accepts thet it has a value **`false`** and continues. Reaching **`b`**, it understands that it has **`true`** value and the whole **expression** is calculated as **`true`**, **without** having to check **`c`** or **`d`**, because their values **wouldn't change** the result of the expression.
 
-### Пример: плод или зеленчук
+### Example: Fruit or Vegetable
 
-Нека проверим дали даден продукт е **плод** или **зеленчук**. Плодовете "**fruit**" са **banana**, **apple**, **kiwi**, **cherry**, **lemon** и **grapes**. Зеленчуците "**vegetable**" са **tomato**, **cucumber**, **pepper** и **carrot**. Всички останали са "**unknown**".
+Let's check whether a given product is a **fruit** or a **vegetable**. The "**fruits**" are **banana**, **apple**, **kiwi**, **cherry**, **lemon** и **grapes**. The "**vegetables**" are **tomato**, **cucumber**, **pepper** и **carrot**. Everything else is "**unknown**".
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |----|----|
 |banana<br>tomato<br>java|fruit<br>vegetable<br>unknown|
 
-#### Решение
+#### Solution
 
-Трябва да използваме няколко условни проверки с логическо "**ИЛИ**" (**`||`**):
+We have to use a few conditional statements with logical "**OR**" (**`||`**):
 
 ![](assets/chapter-4-1-images/04.Fruit-or-vegetable-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#3](https://judge.softuni.bg/Contests/Practice/Index/931#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#3](https://judge.softuni.bg/Contests/Practice/Index/931#3).
 
 
-## Логическо отрицание
+## Logical Negation
 
-**Логическо отрицание** (оператор **`!`**) означава да **не е изпълнено** дадено условие.
+**Logical negation** (operator **`!`**) means a given condition is **not fulfilled**.
 
 |a|!a|
 |:----:|:----:|
 |true|false|
 
-Операторът **`!`** приема като **аргумент** булева променлива и **обръща** стойността ѝ.
+The operator **`!`** accepts as an **argument** a boolean variable and **returns** its value.
 
-### Пример: невалидно число
+### Example: Invalid Number
 
-Дадено **число е валидно**, ако е в диапазона [**100 … 200**] или е **0**. Да се направи проверка за **невалидно** число.
+A given **чnumber is valid**, if it is in the range [**100 … 200**] or it is **0**. Do a validation for an **invalid** number.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |----|----|
 |75|invalid|
-|150| (няма изход)|
+|150| (no output)|
 |220|invalid|
 
-#### Решение
+#### Solution
 
 ![](assets/chapter-4-1-images/05.Invalid-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#4](https://judge.softuni.bg/Contests/Practice/Index/931#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#4](https://judge.softuni.bg/Contests/Practice/Index/931#4).
 
 
 ## Операторът скоби `()`
