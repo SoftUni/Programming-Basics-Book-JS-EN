@@ -407,9 +407,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#0
  ![](assets/chapter-3-1-images/01.ЕxcellentResult-06.png)
 
 
-### Задача: отлична оценка или не
+### Problem: Excellent Grade or Not
 
-Следващата задача от тази тема е да се напише **JavaScript функция**, която **приема оценка** (десетично число) и отпечатва “**Excellent!**”, ако оценката е **5.50** или по-висока, или “**Not excellent.**” в противен случай.
+The next exercise for this topic is to write a **JavaScript function**, which **takes a grade** (decimal number) and prints "**Excellent!**", if the grade is **5.50** or higher, or “**Not excellent.**” if it is not.
 
 #### Sample Input and Output
 
@@ -422,11 +422,11 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#0
 
 #### Hints and pointers
 
-Първо създаваме **нов JavaScript файл**. Следва да **напишем кода** на програмата. Може да си помогнем със следния примерен код:  
+Firstly we create a **new JavaScript file**. After that we **write the code** of the program. You may use the followind example code as a hint:  
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
-Следва да извикваме функцията, като и подаваме примерни параметри и я тестваме дали работи коректно:
+After that we call the function and pass some sample data, so we can test its functionality:
 
 ![](assets/chapter-3-1-images/02.Excellent-or-not-02.png)
 
@@ -439,9 +439,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#1
  ![](assets/chapter-3-1-images/02.Excellent-or-not-04.png)
 
 
-### Задача: четно или нечетно
+### Problem: Even or Odd
 
-Да се напише програма, която въвежда **цяло число** и печата дали е **четно** или **нечетно**.
+Write a function that checks wether an **integer** input is either **even** or **odd** and prints the result on the console.
 
 #### Sample Input and Output
 
@@ -454,9 +454,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#1
 
 #### Hints and pointers
 
-Отново, първо добавяме **нов JavaScript файл**. Проверката дали дадено число е четно, може да се реализира с оператора **`%`**, който ще ни върне **остатъка при целочислено деление на 2** по следния начин: **`let isEven = (num % 2 == 0)`**.
+Again firstly we must create a **new JavaScript file**. Then the check if a number is either even or odd can be made with the operator **`%`**, which will return the **remainder from an integer divided by 2** as follows: **`let isEven = (num % 2 == 0)`**.
 
-Остава да **стартираме** програмата с [**Ctrl+F5**] и да я тестваме:  
+Now we have to **start** the program with [**Ctrl+F5**] and test it:  
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-02.png)
 
@@ -467,7 +467,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#2
 
 ### Задача: намиране на по-голямото число
 
-Да се напише програма, която въвежда **две цели числа** и отпечатва по-голямото от двете.
+Write a function that takes **two intigers** and prints the bigger one on the console.
 
 #### Sample Input and Output
 
@@ -480,10 +480,10 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#2
 
 #### Hints and pointers
 
-Както обикновено, първо трябва да добавим **нов JavaScript файл**. За кода на програмата ни е необходима единична **`if-else`** конструкция. Може да си помогнете частично с кода от картинката, който е умишлено замъглен, за да помисли читателя как да го допише сам:  
+As usual, first we need to create a **new JavaScript file**. For the main logic we beed a single **`if-else`** construct. The code below is deliberately blurred, however there is enough visible to give you some hint, so you can complete it your self:  
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
-След като сме готови с имплементацията на решението, извикваме функцията като й подаваме примерни параметри, **стартираме** програмата с [**Ctrl+F5**] и я тестваме:
+When we are done with the implementation of the solution, we call the function and pass it example parameters, we **run** the program with [**Ctrl+F5**] and test it:
 
 ![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
@@ -492,9 +492,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#2
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#3](https://judge.softuni.bg/Contests/Practice/Index/929#3).
 
 
-### Задача: изписване на число до 9 с думи
+### Problem: Output a Digit's Word Equivalent
 
-Да се напише функция, която приема **цяло число в диапазона** [**0 … 9**] и го **изписва с думи** на английски език. Ако числото е извън диапазона, изписва “**number too big**”.
+Write a function that takes an **integer in the range** [**0 … 9**] and prints **its word equivalent** in English. If the number is outside the given range, the function should return “**number too big**”.
 
 #### Sample Input and Output
 
@@ -507,16 +507,16 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#3
 
 #### Hints and pointers
 
-Може да използваме поредица **`if-else`** конструкции, с които да разгледаме възможните **11 случая**.
+We can use a sequence of **`if-else`** statements to cover every one of the possible **11 cases**.
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4](https://judge.softuni.bg/Contests/Practice/Index/929#4).
 
 
-### Задача: познай паролата
+### Problem: Guess the Password
 
-Да се напише функция, която **приема парола** (произволен текст) и проверява дали въведеното **съвпада** с фразата “**s3cr3t!P@ssw0rd**”. При съответствие да се изведе “**Welcome**”, а при несъответствие да се изведе “**Wrong password!**”. 
+Write a function that **accepts a password** (one line of randon text) and checks if the input **matches** the phrase “**s3cr3t!P@ssw0rd**”. If it matches, print “**Welcome**”, otherwise print “**Wrong password!**”. 
 
 #### Sample Input and Output
 
@@ -528,16 +528,16 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 
 #### Hints and pointers
 
-Използвайте **`if-else`** конструкцията.
+Use an **`if-else`** statement.
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#8](https://judge.softuni.bg/Contests/Practice/Index/929#8).
 
 
-### Задача: число от 100 до 200
+### Problem: Numbers from 100 to 200
 
-Да се напише функция, която като параметър **приема цяло число** и проверява дали е **под 100**, **между 100 и 200** или **над 200**. Да се отпечатат съответно съобщения, като в примерите по-долу.
+Write a function that **accepts an integer** as a parameter and checks if it is **below 100**, **between 100 and 200** or **over 200**. Print the appropriate messages as per the examples below.
 
 #### Sample Input and Output
 
@@ -554,7 +554,8 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#9
 
 ### Задача: еднакви думи
 
-Да се напише функция, която като параметър **приема две думи** и проверява дали са еднакви. Да не се прави разлика между главни и малки букви. Да се изведе “**yes**” или “**no**”. 
+
+Write a function that **accepts two words** as parameters and checks if they are the same. Comparison should be case insensitive abd the output should be either “**yes**” or “**no**”. 
 
 #### Sample Input and Output
 
@@ -568,16 +569,16 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#9
 
 #### Hints and pointers
 
-Преди сравняване на думите, е препоръчително да ги обърнете в долен регистър, за да не оказва влияние размера на буквите (главни / малки): **`word = word.toLowerCase()`**.
+Before the comparison it is advisable that both words are in lower case, so that case (uppercase / lowercase) does not influence the result: **`word = word.toLowerCase()`**.
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#10](https://judge.softuni.bg/Contests/Practice/Index/929#10).
 
 
-### Задача: информация за скоростта
+### Problem: Speed Assessment
 
-Да се напише функция, която като параметър **приема скорост** (десетично число) и отпечатва **информация за скоростта**. При скорост **до 10** (включително), отпечатайте "**slow**". При скорост **над 10** и **до 50**, отпечатайте "**average**". При скорост **над 50 и до 150**, отпечатайте "**fast**". При скорост **над 150 и до 1000**, отпечатайте "**ultra fast**". При по-висока скорост, отпечатайте "**extremely fast**".
+Write a function, that **takes speed** (decimal number) as a parameter and prints **speed information**. For speeds **up to 10** (inclusive), print "**slow**". For speed **over 10** and **up to 50**, print "**average**". For speed **over 50** and **up to 150**, print "**fast**". For speed **over 150** and **up to 1000**, print "**ultra fast**". For higher speed, print "**extremely fast**".
 
 #### Sample Input and Output
 
