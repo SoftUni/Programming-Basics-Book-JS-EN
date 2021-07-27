@@ -595,17 +595,17 @@ Write a function, that **takes speed** (decimal number) as a parameter and print
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#11](https://judge.softuni.bg/Contests/Practice/Index/929#11).
 
 
-### Задача: лица на фигури
+### Problem: Areas of Figures
 
-Да се напише функция, която **приема размерите на геометрична фигура** и **пресмята лицето й**. Фигурите са четири вида: квадрат (**square**), правоъгълник (**rectangle**), кръг (**circle**) и триъгълник (**triangle**).
+Write a finction that takes **the measures of a geometric shape** and **calculates its surface area**. There are four types of shapes: **square, rectangle. circle** and **triangle**.
 
-Като първи аргумент на функцията се подава вида на фигурата (**`square`**, **`rectangle`**, **`circle`**, **`triangle`**).
-* Ако фигурата е **квадрат**, като следващ аргумент подаваме едно число – дължина на страната му.
-* Ако фигурата е **правоъгълник**, като следващи аргументи подаваме две числа – дължините на страните му.
-* Ако фигурата е **кръг**, като следващ аргумент подаваме едно число – радиусa на кръга.
-* Ако фигурата е **триъгълник**,  като следващи аргументи подаваме две числа – дължината на страната му и дължината на височината към нея.
+The first argument of the function is the type of shape (**`square`**, **`rectangle`**, **`circle`**, **`triangle`**).
+* If the shape is a **square**, the next argument will be one number - the length of its side.
+* If the shape is a **rectangle**, the next arguments will be two numbers - the lengths of its sides.
+* If the shape is a **circle**, the next argument will be one number - the radius of the circle.
+* If the shape is a **triangle**, the next arguments will be two numbers - its base and the corresponding altitude.
 
-Резултатът да се закръгли до **3 цифри след десетичния знак**. 
+The result should be rounded up to the **third decimal point**. 
 
 #### Sample Input and Output
 
@@ -621,9 +621,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#1
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#12](https://judge.softuni.bg/Contests/Practice/Index/929#12).
 
 
-### Задача: време + 15 минути
+### Problem: Time + 15 Minutes
 
-Да се напише функция, която като параметър **приема час и минути** от 24-часово денонощие и изчислява колко ще е **часът след 15 минути**. Резултатът да се отпечата във формат **`hh:mm`**. Часовете винаги са между 0 и 23, а минутите винаги са между 0 и 59. Часовете се изписват с една или две цифри. Минутите се изписват винаги с по две цифри и с **водеща нула**, когато е необходимо.
+Write a function that takes **two parameters - hours and minutes** based on a 24-hour day and calculates what will be the time **after 15 minutes**. The result should be printed in the folowing format **`hh:mm`**. Hours should always be between 0 and 23, while minutes should always be between 0 and 59. Hours should be written with one or two digits as needed, while the minutes should always be written with two digits - add a **leading zero** as needed.
 
 #### Sample Input and Output
 
@@ -637,17 +637,16 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#1
 
 #### Hints and pointers
 
-Добавете 15 минути и направете няколко проверки. Ако минутите надвишат 59, **увеличете часовете** с 1 и **намалете минутите** с 60. По аналогичен начин разгледайте случая, когато часовете надвишат 23. При печатането на минутите, **проверете за водеща нула**.
+Add 15 minutes and check using a set of conditions. If minutes are over 59 **increase the hours** by 1 and **decrease the minutes** by 60. You may handle the case when hours are over 23 in a simmilar manner. Take care when printing the minutes to add a **leading zero** where appropriate.
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#13](https://judge.softuni.bg/Contests/Practice/Index/929#13).
 
 
-### Задача: еднакви 3 числа
+### Problem: Tree equal numbers
 
-Да се напише функция, в която се подават като аргументи **3 числа** и се отпечатва дали те са еднакви (**yes** / **no**).
-
+Write a function that takes **3 numbers** as arguments and prints whether they are the same (**yes** / **no**).
 #### Sample Input and Output
 
 | Input | Output |
@@ -661,9 +660,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#1
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#14](https://judge.softuni.bg/Contests/Practice/Index/929#14).
 
 
-### Задача\*:  изписване на число от 0 до 100 с думи
+### Problem: \*Convert a number to words
 
-Да се напише функция, която превръща число в диапазона [**0 … 100**] в текст. 
+Write a function that converts numbers in the range of [**0 … 100**] in text. 
 
 #### Sample Input and Output
 
@@ -675,31 +674,31 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#1
 
 #### Hints and pointers
 
-Проверете първо за **едноцифрени числа** и ако числото е едноцифрено, отпечатайте съответната дума за него. След това проверете за **двуцифрени числа**. Тях отпечатвайте на две части: лява част (**десетици** = числото / 10) и дясна част (**единици** = числото % 10). Ако числото има 3 цифри, трябва да е 100 и може да се разгледа като специален случай.
+Firstly you should check for a **single digit numbers** and if this is the case, print the coresponding word. Then you can check if the number is a **double digit number**. These can be printed in two parts: left part (**tens** = number / 10) and right part (**units** = number % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#15](https://judge.softuni.bg/Contests/Practice/Index/929#15).
 
 
-## Графично Web приложение
+## Graphical Web Application
 
-След като направихме няколко упражнения върху **условни конструкции (проверки)**, сега нека направим нещо по-интересно: приложение с графичен потребителски интерфейс за конвертиране на валути. Ще използваме знанията от тази глава, за да избираме измежду няколко налични валути и съответно да извършваме пресмятания по различен курс спрямо избраната валута.
+Now since we have completed a few exercises on **conditional statements (checks)**, let's do something a bit more interesting: an application with a Graphical User Interface (GUI) for currency conversion. We will emply the knowledge from this chapter to select from the different available currencies and make calculations as per the appropriate exchange rates for the given curency.
 
-### Задача\**: Конвертор за валути
+### Problem: \*\*Currency convertor
 
-Нека разгледаме как да създадем графично (**GUI**) приложение за **конвертиране на валути**. Приложението ще изглежда приблизително като на картинката по-долу:  
+Now let's see how to create a graphical (**GUI**) application for **currency conversion**. The application will look simillarly to the picture below:  
 
 ![](assets/chapter-3-1-images/14.Converter-01.png)
 
-За визуализация ще използваме **интернет браузър**, който възпроизвежда **HTML** страници. Ще създадем нова такава и ще изградим **структурата**, **облика** и **функционалността** на нашето приложение.
+For visualization we will use an **internet browser**, that interprets **HTML** pages. We will create a new page and will build the **structure**, **apearance** and **functionality** of our application.
 
-Както обикновено **създаваме нов файл**, след това го запаметяваме с име **Currency-Converter**, но този път добавяме разширение **.html**.
+As usual, we **create an new file**, save it with the name **Currency-Converter**, however this time we add the file extension **.html**.
 
 ![](assets/chapter-3-1-images/14.Converter-02.png)
 
 
-Отваряме новосъздаденият файл въвеждаме **структурата на документа**, под формата на **HTML код**:
+We open the newly created file and input the **document structure**, as **HTML code**:
 
 ```html
 <!DOCTYPE html>
@@ -741,7 +740,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#1
 </html>
 ```
 
-Запазваме файла и го отваряме.
+We save the file and open it.Запазваме файла и го отваряме.
 
 ![](assets/chapter-3-1-images/14.Converter-03.png)
      
