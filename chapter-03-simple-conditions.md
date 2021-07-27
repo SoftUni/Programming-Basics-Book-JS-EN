@@ -228,78 +228,78 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 
 ## Exersise: Simple conditions
 
-За да затвърдим знанията си за условните конструкции **`if`** и **`if-else`**, ще решим няколко практически задачи.
+In order to practice the implementation of the conditional constructs **`if`** and **`if-else`**, we will take a look at a fiew practial problems.
 
-### Задача: бонус точки 
+### Problem: Bonus Score 
 
-Дадено е **цяло число** – брой точки. Върху него се начисляват **бонус точки** по правилата, описани по-долу. Да се напише функция, която пресмята **бонус точките** за това число и **общия брой точки** с бонусите.
+We are given an **integer** – a number of points. Additional **bonus points** are awarded as per the rules described below. Write a function that calculates the **bonus points** for the given number and outputs the **total points** including the bonus.
 
-- Ако числото е **до 100** включително, бонус точките са 5.
-- Ако числото е **по-голямо от 100**, бонус точките са **20%** от числото.
-- Ако числото е **по-голямо от 1000**, бонус точките са **10%** от числото.
-- Допълнителни бонус точки (начисляват се отделно от предходните):
-    * За **четно** число -> + 1 т.
-    * За число, което **завършва на 5** -> + 2 т.
+- If the number is **up to 100** inclusive, the bonus points are 5.
+- If the number is **larger than 100**, the bonus points are **20%** of the number.
+- If the number is **larger than 1000**, the bonus points are **10%** of the number.
+- Additional points are awarded as below (added separately from the described above):
+    * For **even** numbers -> + 1 p.
+    * For numbers, **ending with 5** -> + 2 p.
  
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 20 | 6<br>26 |
 | 175 | 37<br>212 |
 | 2703 | 270.3<br>2973.3 |
 | 15875 | 1589.5<br>17464.5 |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Основните и допълнителните бонус точки можем да изчислим с поредица от няколко **`if-else-if-else`** проверки. Като за **основните бонус точки имаме 3 случая** (когато въведеното число е до 100, между 100 и 1000 и по-голямо от 1000), а за **допълнителните бонус точки - още 2 случая** (когато числото е четно и нечетно).
+We can calculate the base and additional bonus score with a series of **`if-else-if-else`** statements. for the **main bonus points we have 3 cases** (the unput is less than or equal to 100, it is between 100 and 1000, and finally it is greater than 1000), for the **additional bonus soce - further 2 cases** (wether the number is even or odd and wether the remainder of division by 5 is 5).
 
 ![](assets/chapter-3-1-images/06.Bonus-score-01.png)
 
-Ето как би изглеждал резултатът при извикване на функцията с 175:
+This is an example output, when the function is called with 175:
 
 ![](assets/chapter-3-1-images/06.Bonus-score-02.png)
 
-Обърнете внимание, че за тази задача Judge е настроен да игнорира всичко, което не е число, така че можем да печатаме не само числата, но и уточняващ текст.
+Please note that for this problem the Judge system is set-up to ignore any non-number outputs, so we may print explanations along with the number output.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#5](https://judge.softuni.bg/Contests/Practice/Index/929#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#5](https://judge.softuni.bg/Contests/Practice/Index/929#5).
 
 
-### Задача: сумиране на секунди
+### Problem: Summing Up Seconds
 
-Трима спортни състезатели финишират за някакъв **брой секунди** (между **1** и **50**). Да се напише програма, която въвежда времената на състезателите и пресмята **сумарното им време** във формат "минути:секунди". Секундите да се изведат с **водеща нула** (2 -> "02", 7 -> "07", 35 -> "35").
+Three athletes finish with some **number of seconds** (between **1** and **50**). Write a function that takes the times of the contestants and calculates their **combined time** in **minutes:seconds** format. Seconds are to be printed with a **leading zero** (2 -> "02", 7 -> "07", 35 -> "35").
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 35<br>45<br>44 | 2:04 |
 | 22<br>7<br>34 | 1:03 |
 | 50<br>50<br>49 | 2:29 |
 | 14<br>12<br>10 | 0:36 |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Първо сумираме трите числа, за да получим общия резултат в секунди. Понеже **1 минута = 60** секунди, ще трябва да изчислим броя минути и броя секунди в диапазона от 0 до 59:
-- Ако резултатът е между 0 и 59, отпечатваме 0 минути + изчислените секунди.
-- Ако резултатът е между 60 и 119, отпечатваме 1 минута + изчислените секунди минус 60.
-- Ако резултатът е между 120 и 179, отпечатваме 2 минути + изчислените секунди минус 120.
-- Ако секундите са по-малко от 10, извеждаме водеща нула преди тях.
+Firstly we sum the three numbers, in order to obtain the seconds total. As we know that **1 minute = 60 seconds**, we should calculate the minutes and seconds in the range 0 to 59:
+- If the result is between 0 and 59, we print 0 minutes + calculated seconds.
+- If the result is between 60 and 119, we print 1 minute + calculated seconds minus 60.
+- If the result is between 120 and 179, we print 2 minutes + calculated seconds minus 120.
+- If the seconds are less than 10, we print the number with a leading zero.
 
 ![](assets/chapter-3-1-images/07.Sum-seconds-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#6](https://judge.softuni.bg/Contests/Practice/Index/929#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#6](https://judge.softuni.bg/Contests/Practice/Index/929#6).
 
 
-### Задача: конвертор за мерни единици
+### Problem: Metric Converter
 
-Да се напише функция, която **преобразува разстояние** между следните **8 мерни единици**: **`m`, `mm`, `cm`, `mi`, `in`, `km`, `ft`, `yd`**. Използвайте съответствията от таблицата по-долу:
+Write a function, that **converts distance** between the folowing **8 units of measure**: **`m`, `mm`, `cm`, `mi`, `in`, `km`, `ft`, `yd`**. Ypu may use the conversion table below:
 
-| Входна единица | Изходна единица |
+| Input measure | Output measure |
 | :-------------: | :--------------: |
 | 1 meter (m) | 1000 millimeters (mm) |
 | 1 meter (m) | 100 centimeters (cm) |
@@ -309,36 +309,36 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 | 1 meter (m) | 3.2808399 feet (ft)  |
 | 1 meter (m) | 1.0936133 yards (yd) |
 
-Входните данни се състоят от три реда:
+The input will be three parameters:
 
-- Първи ред: число за преобразуване.
-- Втори ред: входна мерна единица.
-- Трети ред: изходна мерна единица (за резултата).
+- First: A number.
+- Second: Input unit of measure.
+- Third: Output unit of measure (for the result).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 12 <br>km <br>ft | 39370.0788 |
 | 150 <br>mi <br>in | 9503999.99393599 |
 | 450 <br>yd <br>km | 0.41147999937455 |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Прочитаме си входните данни, като към прочитането на мерните единици можем да добавим метода **`toLowerCase()`**, който ще направи всички букви малки. Както виждаме от таблицата в условието, можем да конвертираме само **между метри и някаква друга мерна единица**. Следователно трябва първо да изчислим числото за преобразуване в метри. Затова трябва да направим набор от проверки, за да определим каква е входната мерна единица, а след това и за изходната мерна единица.
+We take the input data and to the units of measure we can add the method **`toLowerCase()`**, which will convert all letters to lower case. As we can see from the conversion table above, we have data for **converting only between meters and any other measuring unit**. In order to make the conversion, firstly we must calculate the input measurement in meters. To this effect we need to create a set of conditionals to determine the input measuring unit and then the output.
 
 ![](assets/chapter-3-1-images/08.Metric-converter-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#7](https://judge.softuni.bg/Contests/Practice/Index/929#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#7](https://judge.softuni.bg/Contests/Practice/Index/929#7).
 
 
-## Дебъгване - прости операции с дебъгер
+## Debugging - simple operations with a debugger
 
-До момента писахме доста код и често пъти в него имаше грешки, нали? Сега ще покажем един инструмент, с който можем да намираме грешките по-лесно.
+To date we have written quite a lot of code and often times there were mistakes, were there? Now we can show you a tool to make finding mistakes easier.
 
-### Какво е "дебъгване"?
+### What is "debugging"?
 
 **Дебъгване** е процесът на „**закачане**“ към изпълнението на програмата, който ни позволява да проследим поетапно процеса на изпълнение. Можем да следим **ред по ред** какво се случва с нашата програма, какъв път следва, какви стойности имат дефинираните променливи на всяка стъпка от дебъгването и много други неща, които ни позволяват да откриваме грешки (**бъгове**).
 
@@ -371,16 +371,16 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 
 Първата задача от упражненията за тази тема е да се напише **JavaScript функция**, която **приема оценка** (десетично число) и отпечатва "**Excellent!**", ако оценката е **5.50** или по-висока.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 6 | Excellent! |
 | 5 | (няма изход) |
 | 5.5 | Excellent! |
 | 5.49 | (няма изход) |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
 Създаваме **нов анонимен файл** чрез [**File**] -> [**New File**]. След това го запаметяваме ([**File**] -> [**Save**]), като **JavaScript файл**, като го запазим под разширение **.js**  
  
@@ -398,9 +398,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
  
  При стойности **под 5.50** - не получаваме резултат.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#0](https://judge.softuni.bg/Contests/Practice/Index/929#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#0](https://judge.softuni.bg/Contests/Practice/Index/929#0).
 
  ![](assets/chapter-3-1-images/01.ЕxcellentResult-05.png) 
 
@@ -411,16 +411,16 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 
 Следващата задача от тази тема е да се напише **JavaScript функция**, която **приема оценка** (десетично число) и отпечатва “**Excellent!**”, ако оценката е **5.50** или по-висока, или “**Not excellent.**” в противен случай.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 6 | Excellent! |
 | 5 | Not excellent. |
 | 5.5 | Excellent! |
 | 5.49 | Not excellent. |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
 Първо създаваме **нов JavaScript файл**. Следва да **напишем кода** на програмата. Може да си помогнем със следния примерен код:  
 
@@ -432,9 +432,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-03.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#1](https://judge.softuni.bg/Contests/Practice/Index/929#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#1](https://judge.softuni.bg/Contests/Practice/Index/929#1).
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-04.png)
 
@@ -443,16 +443,16 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 
 Да се напише програма, която въвежда **цяло число** и печата дали е **четно** или **нечетно**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 2 | even |
 | 3 | odd |
 | 25 | odd |
 | 1024 | even |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
 Отново, първо добавяме **нов JavaScript файл**. Проверката дали дадено число е четно, може да се реализира с оператора **`%`**, който ще ни върне **остатъка при целочислено деление на 2** по следния начин: **`let isEven = (num % 2 == 0)`**.
 
@@ -460,25 +460,25 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#2](https://judge.softuni.bg/Contests/Practice/Index/929#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#2](https://judge.softuni.bg/Contests/Practice/Index/929#2).
 
 
 ### Задача: намиране на по-голямото число
 
 Да се напише програма, която въвежда **две цели числа** и отпечатва по-голямото от двете.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 |-----|------|
 |5<br>3| 5 |
 |3<br>5| 5 |
 |10<br>10| 10 |
 |-5<br>5| 5 |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
 Както обикновено, първо трябва да добавим **нов JavaScript файл**. За кода на програмата ни е необходима единична **`if-else`** конструкция. Може да си помогнете частично с кода от картинката, който е умишлено замъглен, за да помисли читателя как да го допише сам:  
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
@@ -487,78 +487,78 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 
 ![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#3](https://judge.softuni.bg/Contests/Practice/Index/929#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#3](https://judge.softuni.bg/Contests/Practice/Index/929#3).
 
 
 ### Задача: изписване на число до 9 с думи
 
 Да се напише функция, която приема **цяло число в диапазона** [**0 … 9**] и го **изписва с думи** на английски език. Ако числото е извън диапазона, изписва “**number too big**”.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 5 | five |
 | 1 | one |
 | 9 | nine |
 | 10 | number too big |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
 Може да използваме поредица **`if-else`** конструкции, с които да разгледаме възможните **11 случая**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#4](https://judge.softuni.bg/Contests/Practice/Index/929#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4](https://judge.softuni.bg/Contests/Practice/Index/929#4).
 
 
 ### Задача: познай паролата
 
 Да се напише функция, която **приема парола** (произволен текст) и проверява дали въведеното **съвпада** с фразата “**s3cr3t!P@ssw0rd**”. При съответствие да се изведе “**Welcome**”, а при несъответствие да се изведе “**Wrong password!**”. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | qwerty | Wrong password! |
 | s3cr3t!P@ssw0rd | Welcome |
 | s3cr3t!p@ss | Wrong password! |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
 Използвайте **`if-else`** конструкцията.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#8](https://judge.softuni.bg/Contests/Practice/Index/929#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#8](https://judge.softuni.bg/Contests/Practice/Index/929#8).
 
 
 ### Задача: число от 100 до 200
 
 Да се напише функция, която като параметър **приема цяло число** и проверява дали е **под 100**, **между 100 и 200** или **над 200**. Да се отпечатат съответно съобщения, като в примерите по-долу.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 95 | Less than 100 |
 | 120 | Between 100 and 200 |
 | 210 | Greater than 200 |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#9](https://judge.softuni.bg/Contests/Practice/Index/929#9).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#9](https://judge.softuni.bg/Contests/Practice/Index/929#9).
 
 
 ### Задача: еднакви думи
 
 Да се напише функция, която като параметър **приема две думи** и проверява дали са еднакви. Да не се прави разлика между главни и малки букви. Да се изведе “**yes**” или “**no**”. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | Hello<br>Hello | yes |
 | SoftUni<br>softuni | yes |
@@ -566,22 +566,22 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 | beer<br>vodka | no |
 | HeLlO<br>hELLo | yes |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
 Преди сравняване на думите, е препоръчително да ги обърнете в долен регистър, за да не оказва влияние размера на буквите (главни / малки): **`word = word.toLowerCase()`**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#10](https://judge.softuni.bg/Contests/Practice/Index/929#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#10](https://judge.softuni.bg/Contests/Practice/Index/929#10).
 
 
 ### Задача: информация за скоростта
 
 Да се напише функция, която като параметър **приема скорост** (десетично число) и отпечатва **информация за скоростта**. При скорост **до 10** (включително), отпечатайте "**slow**". При скорост **над 10** и **до 50**, отпечатайте "**average**". При скорост **над 50 и до 150**, отпечатайте "**fast**". При скорост **над 150 и до 1000**, отпечатайте "**ultra fast**". При по-висока скорост, отпечатайте "**extremely fast**".
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 8 | slow |
 | 49.5 | average |
@@ -589,9 +589,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 | 160 | ultra fast |
 | 3500 | extremely fast |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#11](https://judge.softuni.bg/Contests/Practice/Index/929#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#11](https://judge.softuni.bg/Contests/Practice/Index/929#11).
 
 
 ### Задача: лица на фигури
@@ -606,27 +606,27 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 
 Резултатът да се закръгли до **3 цифри след десетичния знак**. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | square<br>5 | 25 |
 | rectangle<br>7<br>2.5 | 17.5 |
 | circle<br>6 | 113.097 |
 | triangle<br>4.5<br>20 | 45 |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#12](https://judge.softuni.bg/Contests/Practice/Index/929#12).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#12](https://judge.softuni.bg/Contests/Practice/Index/929#12).
 
 
 ### Задача: време + 15 минути
 
 Да се напише функция, която като параметър **приема час и минути** от 24-часово денонощие и изчислява колко ще е **часът след 15 минути**. Резултатът да се отпечата във формат **`hh:mm`**. Часовете винаги са между 0 и 23, а минутите винаги са между 0 и 59. Часовете се изписват с една или две цифри. Минутите се изписват винаги с по две цифри и с **водеща нула**, когато е необходимо.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 1<br>46 | 2:01 |
 | 0<br>01 | 0:16 |
@@ -634,51 +634,51 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 | 11<br>08 | 11:23 |
 | 12<br>49 | 13:04 |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
 Добавете 15 минути и направете няколко проверки. Ако минутите надвишат 59, **увеличете часовете** с 1 и **намалете минутите** с 60. По аналогичен начин разгледайте случая, когато часовете надвишат 23. При печатането на минутите, **проверете за водеща нула**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#13](https://judge.softuni.bg/Contests/Practice/Index/929#13).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#13](https://judge.softuni.bg/Contests/Practice/Index/929#13).
 
 
 ### Задача: еднакви 3 числа
 
 Да се напише функция, в която се подават като аргументи **3 числа** и се отпечатва дали те са еднакви (**yes** / **no**).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 5<br>5<br>5 | yes |
 | 5<br>4<br>5 | no |
 | 1<br>2<br>3 | no |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#14](https://judge.softuni.bg/Contests/Practice/Index/929#14).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#14](https://judge.softuni.bg/Contests/Practice/Index/929#14).
 
 
 ### Задача\*:  изписване на число от 0 до 100 с думи
 
 Да се напише функция, която превръща число в диапазона [**0 … 100**] в текст. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 25 | twenty five |
 | 42 | forty two |
 | 6  | six |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
 Проверете първо за **едноцифрени числа** и ако числото е едноцифрено, отпечатайте съответната дума за него. След това проверете за **двуцифрени числа**. Тях отпечатвайте на две части: лява част (**десетици** = числото / 10) и дясна част (**единици** = числото % 10). Ако числото има 3 цифри, трябва да е 100 и може да се разгледа като специален случай.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#15](https://judge.softuni.bg/Contests/Practice/Index/929#15).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#15](https://judge.softuni.bg/Contests/Practice/Index/929#15).
 
 
 ## Графично Web приложение
