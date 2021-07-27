@@ -171,35 +171,35 @@ Every variable has a scope in whch it exists, called **variable scope**. This sc
 Variables initialized with the key-word **`var`** have the properties of **global variables**. They are characterized with the fact that they **can be accessed anywhere, regardles of the location in our code, where they are declared**.
 Using the kay-word **`let`**, our variable assimes the properties of **a local variable**. This means that its lifetime begins at the row in which it is **defined** and ends untill the first closing curly brace **`}`** (of the function, of the **`if` statement** etc.). Owing to this it is important to know that every variable initialized with the key-word **`let`** within the body of an **`if`**, **will not be accessable outside its code block / scope**, unless we have defined it higher in the code.
 
-В примера по-долу, на последните редове, ще се опитаме да извикаме дефинираните променливи. Ще успеем да отпечатаме **`myMoney`**, защото е декларирана в началото на нашата функция, преди **`if` конструкцията**, което я прави **достъпна навсякъде в функцията**. Също така ще е възможно да принтираме и **`salary`**, защото въпреки, че е декларирана в блока на **`if`** конструкцията, тя има характер на **глобална променлива** (понеже е дефинирана с **`var`**) и може да бъде **използвана навсякъде**. При опитът за отпечатването на **`bonus`** променливата, която е инициализирана в **`if` конструкцията**, ще получим **грешка**, тъй като животът на тази променлива свършва с първата затваряща къдрава скоба **`}`**, която в случая е на **`if`** конструкцията:
+In the example below, in the last lines we will try to access the defined variables. We wil print **`myMoney`** on the console, because it is declared in the beginning of our function, before the **`if` structure**, which makes it **available anywhere in the function body**. Even though **`salary`** is declared in the **`if`** structure block, we can print it because it has the properties of a **global variable** (since it is declared with **`var`**) and can be **used anywhere**. When we try to print the **`bonus`** variable, which is innitialized in the **`if` structure**, we will get an **error**, since the lifetime of this variable ends with the first closing curly brace **`}`**, which in this case is the one closing the **`if`** structure:
 
 ![](assets/chapter-3-1-images/00.Variable-scope-01.png)
 
-Използването на ключовата дума **`var`** за създаване на променливи е практика, която **в миналото** е била главният начин за дефиниране, но вече е **непрепоръчително** да бъде прилагана. Затова и за всички примери в тази книга ще използваме ключовата дума **`let`**.
+Using the key-word **`var`** was the only way **in the past** to declare a variable, howadays however this is **not recommended**. Because of this in all exampls in this book we will use the key-word **`let`**.
 
-Важно е да се отбележи, че съществува и **трети начин** за инициализиране на променливи - чрез използването на ключовата дума **`const`**. Тези променливи имат същия обхват, както дефинираните чрез  **`let`**, но имат една съществена разлика - приемат характеристиките на **константна променлива**. Това означава, че след първоначалното им инициализиране, тяхната стойност е **невъзможно да бъде променяна или предефинирана**.
+It is important to note that there is a **third way** to initialize variables - through the use of the key-word **`const`**. These variables have the same scope as if defined through **`let`**, howver have one key diference - they are **constant variables**. This means that after the initial assignment, their value is **impossible to be changed or the variable re-defined**.
 
-## Серии от проверки
+## Conditional chaining
 
-Понякога се налага да извършим серия от проверки, преди да решим какви действия ще изпълнява нашата програма. В такива случаи, можем да приложим конструкцията **`if-else if…-else` в серия**. За целта използваме следния формат: 
+Sometimes we have to do a series of checks, before deciding what actions our program will execute. In such cases we can apply the structure **`if-else if…-else` in series**. For this purpose we employ the folowing structure: 
 
 ```javascript
-if (условие) {
-    // тяло на условната конструкция;
-} else if (условие2) {
-    // тяло на else конструкция;
-} else if (условие3) {
-    // тяло на else конструкция;
+if (first condition) {
+    // condition body;
+} else if (second condition) {
+    // condition body;
+} else if (third condition) {
+    // condition body;
 }
 …
 else {
-    // тяло на else конструкция;
+    // else structure body;
 }
 ```
 
-### Пример: число от 1 до 9 на английски
+### Example: Numbers one through 9 in English
 
-Да се изпише число в интервала от 1 до 9 с текст на английски език (числото се подава като параметър при извикване на функцията). Можем да прочетем числото и след това чрез **серия от проверки** отпечатваме съответстващата му английска дума:
+Print the digits one through nine in english on the console (the numbers are passed as arguments of the function upon call). We can take the digit and through a **series of conditions** print the corresponding English word on the console:
 
 ```javascript
 function number1to9([arg1]) {
@@ -219,14 +219,14 @@ function number1to9([arg1]) {
 }
 ```
 
-Програмната логика от примера по-горе **последователно сравнява** входното число от функцията с цифрите от 1 до 9, като **всяко следващо сравнение се извършва, само в случай че предходното сравнение не е било истина**. В крайна сметка, ако никое от **`if`** условията не е изпълнено, се изпълнява последната **`else` клаузa**.
+The program logic of the above example **sequentially compares** the input number with the digits from 1 to 9 **with each consecutive comparison being performed only in case the previous result is not true**. Eventually if none of the **`if`** conditionals are astisfied, the last **`else` clasue** is executed.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#4](https://judge.softuni.bg/Contests/Practice/Index/929#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4](https://judge.softuni.bg/Contests/Practice/Index/929#4).
 
 
-## Упражнения: прости проверки
+## Exersise: Simple conditions
 
 За да затвърдим знанията си за условните конструкции **`if`** и **`if-else`**, ще решим няколко практически задачи.
 
