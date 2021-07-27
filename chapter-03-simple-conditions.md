@@ -340,63 +340,63 @@ To date we have written quite a lot of code and often times there were mistakes,
 
 ### What is "debugging"?
 
-**Дебъгване** е процесът на „**закачане**“ към изпълнението на програмата, който ни позволява да проследим поетапно процеса на изпълнение. Можем да следим **ред по ред** какво се случва с нашата програма, какъв път следва, какви стойности имат дефинираните променливи на всяка стъпка от дебъгването и много други неща, които ни позволяват да откриваме грешки (**бъгове**).
+**Debugging** is the process of „**attaching**“ to a program's execution, whch allows us to follow closely the execution of our program. We can follow **line by line** the events in our program, what is its evaluation route, what are the intermediate values of the declared variables at each step of the execution, among other useful information and thus allowing us to locate errors - the so-called **bugs**.
 
 ![](assets/chapter-3-1-images/00.Debugging-01.png)
 
-### Дебъгване във Visual Studio Code
+### Debugging in Visual Studio Code
 
-Добавяме точка, до която програмата да спре изпълнението си **(breakpoint)** и след това стартираме програмата в **debug режим** чрез натискане на бутона [**F5**]. Програмата се изпълнява до моментът, в който достигне нашата точка на прекъсване. След това преминаваме към **следващия ред** на изпълнение с [**F10**]. 
+We add a point, at whicj our function will stop its execution - a **breakpoint** after which we start the program in **debug mode** through pressing [**F5**]. The program will follow its course untill it reaches our interrupt (**breakpoint**). After which we the execution can proceed to the **next line of code** with pressing [**F10**]. 
 
-## Упражнения: прости проверки
+## Exercises: Simple Conditions
 
-Нека затвърдим наученото в тази глава с няколко задачи.
+Now let's practice the lessons learned in this chapter with a few practical exercises.
 
-### Празен Visual Studio Code файл
+### Empty Visual Studio Code file
 
-Стартираме Visual Studio Code. Създаваме нов файл [**File**] -> [**New File**]:
+We start Visual Studio Code and create a new file [**File**] -> [**New File**]:
 
 ![](assets/chapter-3-1-images/00.Visual-studio-01.png)
 
-След това ни се появява нов файл, който за момента е анонимен за нашата система. За да може нашият код да бъде правилно разпознаваем е нужно да го запазим като **JavaScript** файл: [**File**] -> [**Save**]:
+After that we will see a new file, which is anonimus for the moment to our system. In order to be recognized correctly, we need to save our code as a **JavaScript** file: [**File**] -> [**Save**]:
 
 ![](assets/chapter-3-1-images/00.VisualStuido-02.png)
 
-След това ни се отваря прозорец, в който трябва да зададем име на нашия файл, **задължително с разширение .js**:
+After this a pop-up window will open, where we need to specify a name for our file and give it the **obligatory .js file extension**:
 
 ![](assets/chapter-3-1-images/00.VisualStuido-03.png)
 
 
-### Задача: проверка за отлична оценка
+### Problem: Excellent Grade
 
-Първата задача от упражненията за тази тема е да се напише **JavaScript функция**, която **приема оценка** (десетично число) и отпечатва "**Excellent!**", ако оценката е **5.50** или по-висока.
+The first exercise for this topic is to write a **JavaScript function**, which **takes a grade** (decimal number) and prints "**Excellent!**", if the grade is **5.50** or higher.
 
 #### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
 | 6 | Excellent! |
-| 5 | (няма изход) |
+| 5 | (no output) |
 | 5.5 | Excellent! |
-| 5.49 | (няма изход) |
+| 5.49 | (no output) |
 
 #### Hints and pointers
 
-Създаваме **нов анонимен файл** чрез [**File**] -> [**New File**]. След това го запаметяваме ([**File**] -> [**Save**]), като **JavaScript файл**, като го запазим под разширение **.js**  
+We create a **new anonimus file** by clicking [**File**] -> [**New File**]. Then we save it ([**File**] -> [**Save**]), as a **JavaScript file**, with the file extension **.js**  
  
-Вече имаме готов JavaScript файл. Остава да решим задачата. За целта пишем следния код:
+Now that we have prepared a JavaScript file, we have to solve the problem. To this effect we write the folowing code:
 
  ![](assets/chapter-3-1-images/01.ЕxcellentResult-01.png)
 
-**Стартираме** програмата с [**Ctrl+F5**], за да я **тестваме** с различни входни стойности:
+**Start** the program with [**Ctrl+F5**], so we can **test** it with different input values:
 
  ![](assets/chapter-3-1-images/01.ЕxcellentResult-03.png)
  
-При стойности **над 5.50** - получаваме резултат **Excellent!**.
+For values **greater than 5.50** - there is an **Excellent!** output.
 
  ![](assets/chapter-3-1-images/01.ЕxcellentResult-04.png)
  
- При стойности **под 5.50** - не получаваме резултат.
+For values **less than 5.50** - there is no output.
 
 #### Testing in the Judge System
 
