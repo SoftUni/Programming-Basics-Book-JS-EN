@@ -740,11 +740,11 @@ We open the newly created file and input the **document structure**, as **HTML c
 </html>
 ```
 
-We save the file and open it.Запазваме файла и го отваряме.
+We save the file and open it in the internet browser.
 
 ![](assets/chapter-3-1-images/14.Converter-03.png)
      
-Вече сме изградили структурата на документа, но той може да бъде визуално подобрен след като добавим допълнителни **стилове**. За целта добавяме следният код в **`<style>`** секцията на нашия **HTML** документ:
+At this point we already have the document skeleton, but it can be visually enhanced through the addition of **styling**. To do this we add the folowing code in the **`<style>`** section for our **HTML** document:
 
 ```css
 body {
@@ -804,9 +804,8 @@ input[type=number], input[type=text], select {
  }
 ```
 
-Вече имаме и по-приятен изглед на нашето приложение.
-Остава да добавим и **функциалността**. Тя се добавя в **``<script>``** секцията в нашия **HTML** документ.
-Ще използваме следния **JavaScript код** за обработка на събитията:
+Now if we save and hit refresh, our application should look much better. All that is left now is to add the **functionality**. This is done through the **``<script>``** section of our **HTML** document.
+We will use the folowing **JavaScript code** to handle different user inputs and events:
 
 ```javascript
 function convert(){
@@ -828,6 +827,6 @@ function convert(){
 }
 ```
 
-Горният код взима **сумата** за конвертиране от полето **`cash-input`** и **избраната валута** за резултата от полето **`currency-options`**. След това с **условна конструкция**, според избраната валута, сумата се дели на **валутния курс** (който е фиксиран твърдо в сорс кода). Накрая се генерира текстово **съобщение с резултата** (закръглен до 2 цифри след десетичния знак) и се записва в зелената кутийка **`result`**. Опитайте!
+The above code takes the **amount** to be converted from the field **`cash-input`** and the **chosen curency** for the result of the field **`currency-options`**. After that with the use of a **conditional statement**, depending on the chosen curency, the amount is divided by the **exchange rate** (which is hard-coded by you in the source code). Finally we generate a **text message with the result** (rounded to the second digit after the decimal point) and we output the message in the green box **`result`**. Have a go!
 
-Ако имате проблеми с примерите по-горе, **гледайте видеото** в началото на тази глава или питайте във **форума на СофтУни**: https://softuni.bg/forum.
+If you have problems with the examples above, **watch the video** in the begining of this chapter or ask for help in the SoftUni official **discussion forum**: https://softuni.bg/forum.
