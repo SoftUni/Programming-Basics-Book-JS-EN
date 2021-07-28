@@ -16,7 +16,7 @@ In this chapter we are going to get familiar with the following concepts and pro
 
 ## Calculations in Programming
 
-We know that the computers are machines which process data. All **data** is stored in the computer memory (RAM) in **variables**. The variables are named memory areas that store data of a certain type , for example number or string. Each **variable** in JavaScript has **name** and **value**. Here is how we would define a variable by assigning it a value at the same time as declaring it:
+We know that computers are machines which process data. All **data** is stored in the computer memory (RAM) in **variables**. Variables are named memory areas that store data of a certain type , for example number or string. Each **variable** in JavaScript has **name** and **value**. Here is how we would define a variable by assigning it a value at the same time as declaring it:
 
 ![](/assets/chapter-2-1-images/00.Declaring-variables-01.png)
 
@@ -31,7 +31,7 @@ Here are some examples of data types and values for them:
 - **boolean** - boolean type: true, false
 - **Date** - date: Tue Jul 04 2017, ……
 
-The **JavaScript** language has three keywords for declaring a variable - **`var`**, **`const`** and **`let`**. The main difference between **`let`** and **`var`** is in the scope of the variable. We use **`const`** when we are sure that what we assign to the variable will not change. A little further in the book we will find out more details about the range of variables but for now we will use the word ** `let` ** to declare a new variable.
+**JavaScript** language has three keywords for declaring a variable - **`var`**, **`const`** and **`let`**. The main difference between **`let`** and **`var`** is in the scope of the variable. We use **`const`** when we are sure that what we assign to the variable will not change. A little further in the book we will find out more details about the range of variables but for now we will use the word ** `let` ** to declare a new variable.
 
 
 ## Print a Result on the Screen
