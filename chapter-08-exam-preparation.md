@@ -1,6 +1,6 @@
 # Chapter 8.1. Practical Exam Preparation - Part I
 
-In **the present chapter** we will examine a few **problems** with a level of difficultly **трудност** that can be expected in **the problems** of the practical **exam** in “Programming Basics”. We will **review** and **practice** all the knowledge that was gained from this book and through the "Programming Basics" course.
+In **the present chapter** we will examine a few **problems** with a level of **difficultly** that can be expected in **the problems** of the practical **exam** in “Programming Basics”. We will **review** and **practice** all the knowledge that was gained from this book and through the "Programming Basics" course.
 
 
 ## Video
@@ -550,13 +550,13 @@ The first thing we can easily notice is that **the first and the last rows** con
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-02.png)
 
-От дадените примери виждаме, че **средата** на фигурата винаги има **нечетен брой** редове. Забелязваме, че когато е зададено **четно число**, броят на редовете е равен на **предишното нечетно** (2 -> 1, 4 -> 3 и т.н.). Създаваме си променлива, която представлява броя редове, които ще има нашият правоъгълник, и я коригираме, ако числото **`n` е четно**. След това ще нарисуваме **правоъгълника без звездичките**. Всеки ред има за **начало и край** символа **`%`** и между тях **`2 * n - 2`** празни места (ширината е **`2 * n`** и вадим 2 за двата процента в края). Не забравяйте да преместите кода за **последния ред след цикъла**.
+From the examples we see that in **the middle** part of the figure always has **odd number** of rows. Note that when an **even number** is set, the number of rows is equal to **the previous odd** number (2 -> 1, 4 -> 3, etc.). We create a variable that represents the number of rows that our rectangle will have, and correct it if the number **`n` is even**. Then we will draw **a rectangle without the asterisks**. Each row has for **the beggining and the end** the symbol **`%`** and between them **`2 * n - 2`** empty spaces (the width is **`2 * n`** and we subtract 2 for the two percent at the end). Do not forget to move the code for **the last line after the loop**.
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-03.png)
 
-Можем да **стартираме и тестваме кода до тук**. Всичко без двете звездички в средата трябва да работи коректно.
+We can **start and test the code so far**. Everything without the two asterisks in the middle should work correctly.
 
-Сега остава **в тялото** на цикъла да добавим и **звездичките**. Ще направим проверка дали сме на **средния ред**. Ако сме на средния, ще рисуваме **реда** заедно **със звездичките**, ако не - ще рисуваме **нормален ред**. Редът със звездичките има **`n - 2`** **празни места** (**`n`** е половината дължина и махаме звездичката и процента), **две звезди** и отново **`n - 2` празни места**. Двата процента в началото и в края на реда си ги оставяме извън проверката.
+Now, **in the body** of the loop let's add the **asterisks**. We'll check if we're on the **middle row**. If we are in the middle, we will draw **the row** together **with the asterisks**, if not – we will draw **a normal row**. The line with the asterisks has **`n-2` empty spaces** (**`n`** is half the length and we remove the asterisk and the percentage), **two stars** and again **`n-2` empty spaces**. We leave out of the check the two percent at the beginning and at the end of the row.
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-04.png)
 
@@ -565,52 +565,52 @@ The first thing we can easily notice is that **the first and the last rows** con
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#9](https://judge.softuni.bg/Contests/Practice/Index/939#9).
 
 
-## Задачи с вложени цикли с по-сложна логика
+## Problems with Nested Loops
 
-**Последната** (шеста) задача от практическия изпит по “Основи на програмирането” изисква използване на **няколко вложени цикъла и по-сложна логика в тях**. Задачата проверява способността на студентите да мислят алгоритмично и да решават нетривиални задачи, изискващи съставянето на цикли. Следват няколко примера за изпитни задачи.
+**The last** (sixth) problem of the "Programming Basics" Practical Exam requires using of **several nested loops and more complex logic inside them**. The problems examine participants' ability to think in an algorithmic way and to solve non-trivial coding problems that require nested loops. Here are some examples of exam problems.
 
 
-### Задача: четворки нарастващи числа
+### Problem: Increasing 4 Numbers
 
-По дадена двойка числа **a** и **b** да се генерират всички четворки **n1, n2, n3, n4,** за които **a ≤ n1 < n2 < n3 < n4 ≤ b**.
+For given pair of numbers **a** and **b** generate all four number **n1, n2, n3, n4,** for which **a ≤ n1 < n2 < n3 < n4 ≤ b**.
 
-#### Входни данни
+#### Input
 
-Като параметри на функцията получаваме две цели числа **a** и **b** в интервала [**0 … 1000**].
+As parameters of the function we get two integers **a** and **b** in the range [**0 … 1000**].
 
-#### Изходни данни
+#### Output
 
-Изходът съдържа всички търсени **четворки числа**, в нарастващ ред, по една на ред.
+The output contains all **numbers in batches of four**, in ascending order, one per line.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |3<br>7|3 4 5 6<br>3 4 5 7<br>3 4 6 7<br>3 5 6 7<br>4 5 6 7|15<br>20|15 16 17 18<br>15 16 17 19<br>15 16 17 20<br>15 16 18 19<br>15 16 18 20<br>15 16 19 20<br>15 17 18 19<br>15 17 18 20<br>15 17 19 20<br>15 18 19 20<br>16 17 18 19<br>16 17 18 20<br>16 17 19 20<br>16 18 19 20<br>17 18 19 20<br>|
 
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |5<br>7|No|10<br>13|10 11 12 13|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Прочитаме входните параметри на функцията. Създаваме и допълнителната променлива **`count`**, която ще следи дали има **съществуваща редица числа**.
+We read the input data from the function. We also create the additional variable **`count`**, which will keep track of **existing number ranges**.
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-01.png)
 
-Най-лесно ще решим задачата, ако логически я разделим **на части**. Ако се изисква да изведем всички редици от едно число между **`a`** и **`b`**, ще го направим с **един цикъл**, който изкарва всички числа от **`а`** до **`b`**. Нека помислим как ще стане това с **редици от две числа**. Отговорът е лесен - ще ползваме **вложени цикли**. 
+We will most easily solve the problem if we logically divide it **in parts**. If we are required to draw all the rows from a number between **`a`** and **`b`**, we will do it using **one loop** that takes all the numbers from **`a`** to **`b`**. Let's think how to do this with **series of two numbers**. The answer is easy – we will use **nested loops**.
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-02.png)
 
-Можем да тестваме недописаната програма, за да проверим дали е вярна до този момент. Тя трябва да отпечата всички двойки числа **`i`**, **`j`**, за които **`i ≤ j`**.
+We can test the incomplete program to see if it's accurate so far. It must print all pairs of numbers **`i`**, **`j`** for which **`i ≤ j`**.
 
-Тъй като всяко **следващо число** от редицата трябва да е **по-голямо** от **предишното**, вторият цикъл ще се върти от **`i + 1`** (следващото по-голямо число). Съответно, ако **не съществува редица** от две нарастващи числа (**`a`** и **`b`** са равни), вторият цикъл  **няма да се изпълни** и няма да се разпечата нищо на конзолата.
+Since each **next number** of the row must be **greater** than **the previous one**, the second loop will run around **`i + 1`** (the next greater number). Accordingly, if **there is no sequence** of two incremental numbers (**`a`** and **`b`** are equal), the second loop **will not be fulfilled**, and nothing will be printed on the console.
 
-**Аналогично**, остава да реализираме по същия начин **вложените цикли** и за **четири числа**. Ще добавим и **увеличаване на брояча**, който инициализирахме в началото, за да знаем дали **съществува** такава **редица**.
+**Similarly**, what remains is to implement **the nested loops** for **four numbers**. We will add an **increase of the counter** that we initialized in order to know if **there is such a sequence**.
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-03.png)
 
-Накрая ще проверим дали **броячът** е равен на **0** и съответно ще принтираме “**No**” на конзолата, ако е така.
+Finally, we will check if **the counter** is equal to **0** and we will print "**No**" on the console accordingly, if so.
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-04.png)
 
@@ -619,54 +619,54 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#9
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/939#10](https://judge.softuni.bg/Contests/Practice/Index/939#10).
 
 
-### Задача: генериране на правоъгълници
+### Problem: Generating Rectangles
 
-По дадено число **n** и **минимална площ m** да се генерират всички правоъгълници с цели координати в интервала [**-n…n**] с площ поне **m**. Генерираните правоъгълници да се отпечатат в следния формат:
+By a given number **n** and **a minimum area m**, generate all possible rectangles with integer coordinates in the range [**-n…n**] with an area of at least **m**. The generated rectangles must be printed in the following format:
 
 **(left, top) (right, bottom) -> area**
 
-Правоъгълниците се задават чрез горния си ляв и долния си десен ъгъл. В сила са следните неравенства:
+Rectangles are defined using the top left and bottom right corner. The following inequalities are in effect:
 -	**-n ≤ left < right ≤ n**
 -	**-n ≤ top < bottom ≤ n**
 
-#### Входни данни
+#### Input
 
-Като параметри на функцията получаваме две числа:
+We get two integers as parameters of the function:
 
--	Цяло число **n** в интервала [**1 … 100**] – задава минималната и максималната координата на връх.
--	Цяло число **m** в интервала [**0 … 50 000**] – задава минималната площ на генерираните правоъгълници.
+- An integer **n** in the range [**1 … 100**] – sets the minimum and maximum coordinates of a peak.
+- An integer **m** in the range [**0 … 50 000**] – sets the minimum area of the generated rectangles
 
-#### Изходни данни
+#### Output
 
--	На конзолата трябва да се отпечатат описаните правоъгълници във формат като в примерите по-долу.
--	Ако за числата **n** и **m** няма нито един правоъгълник, да се изведе **“No”**.
--	Редът на извеждане на правоъгълниците е без значение.
+- The described rectangles should be printed on the console in a format such as in the examples below.
+- If there are no rectangles for the specified **n** and **m**, then print "**No**".
+- The order of rectangles in the output is not important.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |1<br>2|(-1, -1) (0, 1) -> 2<br>(-1, -1) (1, 0) -> 2<br>(-1, -1) (1, 1) -> 4<br>(-1, 0) (1, 1) -> 2<br>(0, -1) (1, 1) -> 2|2<br>17|No|
 
-|Вход|Изход|
-|---|---|
+|Input|Output|
+|-----|------|
 |3<br>36|(-3, -3) (3, 3) -> 36|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Прочитаме входните параметри на функцията. Ще създадем и един **брояч**, в който ще пазим броя на намерените правоъгълници.
+We read the input parameters of the function. We will also create a **counter**, which will store the number of rectangles found.
 
 ![](assets/chapter-8-1-images/12.Generating-rectangles-01.png)
 
-Изключително важно е да успеем да си представим задачата, преди да започнем да я решаваме. В нашия случай се изисква да търсим правоъгълници в координатна система. Нещото, което знаем е, че **лявата точка** винаги ще има координата **`х`, по-малка** от **дясната**. Съответно **горната** винаги ще има **по-малка** координата **`у`** от **долната**. За да намерим всички правоъгълници, ще трябва да направим **цикъл**, подобен на този от предходната задача, но този път **не всеки следващ цикъл** ще започва от **следващото число**, защото някои от **координатите** може да са **равни** (например **`left`** и **`top`**).
+It is very important to be able to imagine the problem before we begin to solve it. In our case it is required to search for rectangles in a coordinate system. The thing we know is that the **left point** will always have the coordinate **`x`, smaller** than **the right** one. Accordingly, **the upper one** will always have a smaller **`y`** coordinate than **the lower one**. To find all the rectangles, we'll have to create **a loop** similar to the previous problem, but this time, **not every next loop** will start from **the next number** because some of **the coordinates** can be equal (for example **`left`** and **`top`**).
 
 ![](assets/chapter-8-1-images/12.Generating-rectangles-02.png)
 
-С променливите **`left`** и **`right`** ще следим координатите по **хоризонталата**, а с **`top`** и **`bottom`** - по **вертикалата**. Важното тук е да знаем кои координати кои са, за да можем да изчислим правилно страните на правоъгълника. Сега трябва да намерим **лицето на правоъгълника** и да направим проверка дали то е **по-голямо** или **равно** на **`m`**. Едната **страна** ще е **разликата между `left` и `right`**, а **другата -  между `top` и `bottom`**. Тъй като координатите евентуално може да са разменени, ще ползваме **абсолютни стойности**. Отново добавяме и **брояча** в цикъла, като броим **само четириъгълниците**, които изписваме. Важно е да забележим, че поредността на изписване е **`left`**, **`top`**, **`right`**, **`bottom`**, тъй като така е зададено в условието.
+The important thing here is knowing the corresponding coordinates so we can correctly calculate the sides of the rectangle. Now we have to find **the area of the rectangle** and check if it is **greater than** or **equal** to **`m`**. One **side** will be **the difference between `left` and `right`** and **the other one – between `top` and `bottom`**. Since the coordinates may be eventually interchanged, we will use **absolute values**. Again, we add **the counter** in the loop, counting **only the rectangles** we write. It is important to note that the writing order is **`left`**, **`top`**, **`right`**, **`bottom`**, as it is set in the problem's description.
 
 ![](assets/chapter-8-1-images/12.Generating-rectangles-03.png)
 
-Накрая принтираме “**No**”, ако не съществуват такива правоъгълници.
+Finally we print “**No**”, if there are no such rectangles.
 
 ![](assets/chapter-8-1-images/12.Generating-rectangles-04.png)
 
