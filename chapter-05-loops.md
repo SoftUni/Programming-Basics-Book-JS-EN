@@ -30,25 +30,25 @@ Upon declaring the loop you can specify a **start value** and an **end value**. 
 
 A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). The goal is to **loop** through the numbers 1, 2, 3, …, n sequentially and after each pass through the loop to **perform a certain action**. In the example above the variable **`i`** holds values from 1 to 10 and the current value is printed in the loop's body. The loop repeats 10 times and each of these repetitions is called an "**iteration**".
 
-### Пример: числа от 1 до 100
+### Problem: The numbers from 1 to 100
 
-Да се напише програма, която **печата числата от 1 до 100**. Програмата не приема вход и отпечатва числата от 1 до 100 едно след друго, по едно на ред.
+Write a program that **prints the numbers from 1 to 100**. The program doesn't receive input and prints the numbers from 1 to 100 sequentially, each one on a separate line.
 
 #### Hints and pointers
 
-Можем да решим задачата с **`for` цикъл** , с който преминаваме, с помощта на променливата **`i`**, през числата от 1 до 100 и ги печатаме в тялото на цикъла:
+We can solve this problem with a **`for` loop** , which will pass through the numbers from 1 to 100 using the variable **`i`** and will print the numbers in the loop's body:
 
 ![](assets/chapter-5-1-images/01.Numbers-1-to-100-01.png)
 
-**Стартираме** програмата с [**Ctrl+F5**] и я **тестваме**:
+**Start** the program with [**Ctrl+F5**] and **test** it:
 
 ![](assets/chapter-5-1-images/01.Numbers-1-to-100-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#0](https://judge.softuni.bg/Contests/Practice/Index/933#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#0](https://judge.softuni.bg/Contests/Practice/Index/933#0).
 
-Трябва да получите **100 точки** (напълно коректно решение).
+You should get **100 points** (completely correct solution).
 
 
 ## Code Snippet за for цикъл във Visual Studio Code
@@ -63,7 +63,7 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 **Опитайте сами**, за да усвоите умението да ползвате шаблона за код за **`for` цикъл** във Visual Studio Code.
 
-### Пример: числа до 1000, завършващи на 7
+### Problem: числа до 1000, завършващи на 7
 
 Да се напише програма, която намира всички числа в интервала [**1 … 1000**], които завършват на 7. 
 
@@ -73,11 +73,11 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 ![](assets/chapter-5-1-images/02.Numbers-ending-in-7-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#1](https://judge.softuni.bg/Contests/Practice/Index/933#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#1](https://judge.softuni.bg/Contests/Practice/Index/933#1).
 
-### Пример: всички латински букви
+### Problem: всички латински букви
 
 Да се напише програма, която отпечатва буквите от латинската азбука: **a, b, c, …, z**.
 
@@ -91,11 +91,11 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 ![](/assets/latin-letters-better.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#2](https://judge.softuni.bg/Contests/Practice/Index/933#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#2](https://judge.softuni.bg/Contests/Practice/Index/933#2).
 
-### Пример: сумиране на числа
+### Problem: сумиране на числа
 
 Да се напише програма, която **въвежда `n` цели числа и ги сумира**.
 
@@ -125,11 +125,11 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 ![](assets/chapter-5-1-images/04.Sum-numbers-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#3](https://judge.softuni.bg/Contests/Practice/Index/933#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#3](https://judge.softuni.bg/Contests/Practice/Index/933#3).
 
-### Пример: най-голямо число
+### Problem: най-голямо число
 
 Да се напише програма, която въвежда **n цели числа** (**n** > 0) и намира **най-голямото** измежду тях. На първия ред на входа се въвежда броят числа **n**. След това се въвеждат самите числа, по едно на ред. Примери:
 
@@ -149,12 +149,12 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 ![](assets/chapter-5-1-images/05.Max-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#4](https://judge.softuni.bg/Contests/Practice/Index/933#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#4](https://judge.softuni.bg/Contests/Practice/Index/933#4).
 
 
-### Пример: най-малко число
+### Problem: най-малко число
 
 Да се напише програма, която въвежда **n цели числа** (**n** > 0) и намира **най-малкото** измежду тях. Първо се въвежда броя числа **n**, след тях още **n** числа по едно на ред. 
 
@@ -172,12 +172,12 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 ![](assets/chapter-5-1-images/06.Min-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#5](https://judge.softuni.bg/Contests/Practice/Index/933#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#5](https://judge.softuni.bg/Contests/Practice/Index/933#5).
 
 
-### Пример: лява и дясна сума
+### Problem: лява и дясна сума
 
 Да се напише програма, която въвежда **2 \* n цели числа** и проверява дали **сумата на първите n числа** (лява сума) е равна на **сумата на вторите n числа** (дясна сума). При равенство се печата **"Yes" + сумата**, иначе се печата **"No" + разликата**. Разликата се изчислява като положително число (по абсолютна стойност). Форматът на изхода трябва да е като в примерите по-долу.
 
@@ -193,12 +193,12 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 ![](assets/chapter-5-1-images/07.Left-and-right-sum-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#6](https://judge.softuni.bg/Contests/Practice/Index/933#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#6](https://judge.softuni.bg/Contests/Practice/Index/933#6).
 
 
-### Пример: четна / нечетна сума
+### Problem: четна / нечетна сума
 
 Да се напише програма, която въвежда **n цели числа** и проверява дали **сумата на числата на четни позиции** е равна на **сумата на числата на нечетни позиции**. При равенство печата **"Yes" + сумата**, иначе печата **"No" + разликата**. Разликата се изчислява по абсолютна стойност. Форматът на изхода трябва да е като в примерите по-долу.
 
@@ -216,12 +216,12 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 ![](assets/chapter-5-1-images/08.Odd-even-sum-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#7](https://judge.softuni.bg/Contests/Practice/Index/933#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#7](https://judge.softuni.bg/Contests/Practice/Index/933#7).
 
 
-### Пример: сумиране на гласните букви
+### Problem: сумиране на гласните букви
 
 Да се напише програма, която въвежда **текст** (стринг), изчислява и отпечатва **сумата от стойностите на гласните букви** според таблицата по-долу:
 
@@ -242,9 +242,9 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 ![](assets/chapter-5-1-images/09.Vowels-sum-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#8](https://judge.softuni.bg/Contests/Practice/Index/933#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#8](https://judge.softuni.bg/Contests/Practice/Index/933#8).
 
 
 ## Какво научихме от тази глава?
@@ -279,9 +279,9 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 Трябва да изчислим **сумата** на всички елементи, да намерим **най-големия** от тях и да проверим търсеното условие.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#9](https://judge.softuni.bg/Contests/Practice/Index/933#9).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#9](https://judge.softuni.bg/Contests/Practice/Index/933#9).
 
 
 ### Задача: четни / нечетни позиции
@@ -303,9 +303,9 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 В тази задача е по-добре да се работи с **дробни числа** (не цели). Сумата, минимумът и максимумът също са дробни числа. Трябва да използваме **неутрална начална стойност** при намиране на минимум / максимум, например **1000000000.0** и **-1000000000.0**. Ако получим накрая неутралната стойност, печатаме **“No”**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#10](https://judge.softuni.bg/Contests/Practice/Index/933#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#10](https://judge.softuni.bg/Contests/Practice/Index/933#10).
 
 ### Задача: еднакви двойки
 
@@ -330,9 +330,9 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 Прочитаме входните числа **по двойки**. За всяка двойка пресмятаме **сумата** ѝ. Докато четем входните двойки, за всяка двойка, без първата, трябва да пресметнем **разликата с предходната**. За целта е необходимо да пазим в отделна променлива сумата на предходната двойка. Накрая намираме **най-голямата разлика** между две двойки. Ако е **0**, печатаме **“Yes”** + стойността, в противен случай - **“No”** + разликата.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#11](https://judge.softuni.bg/Contests/Practice/Index/933#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#11](https://judge.softuni.bg/Contests/Practice/Index/933#11).
 
 ## Упражнения: графични и уеб приложения
 
