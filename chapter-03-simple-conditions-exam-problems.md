@@ -1,357 +1,359 @@
-# Глава 3.2. Прости проверки – изпитни задачи
+# Chapter 3.2. Simple Conditions – Exam Problems
 
-В предходната глава разгледахме условните конструкции в езика **JavaScript**, чрез които можем да изпълняваме различни действия в зависимост от някакво условие. Споменахме още какъв е обхватът на една променлива (нейният **`scope`**), както и как постъпково да проследяваме изпълнението на нашата програма (т.нар. **дебъгване**). В настоящата глава ще упражним работата с логически проверки, като разгледаме някои задачи, давани на изпити. За целта нека първо си припомним конструкцията на логическата проверка:
+In the previous chapter, we went through the simple conditional statements in **JavaScript**, which we can use to execute different actions depending on a given condition. We mentioned what is the scope of a variable (it's **`scope`**) and how to track the execution of our program step by step (the so-called  **debugging**). In this chapter, working with simple conditions by going through some exam tasks. To do this, let's first revise their construction:
 
 ```javascript
-if (булев израз) {
-    // тяло на условната конструкция;
+if (bool expression) {
+    // condition body;
 } else {
-    // тяло на else конструкцията;
+    // else-construction body;
 }
 ```
 
-**`if` проверките** се състоят от:
- * **`if` клауза**
- * **булев израз** - променлива от булев тип (**`Boolean`**) или булев логически израз (израз, който връща резултат **`true/false`**)
- * **тяло на конструкцията** - съдържа произволен блок със сорс код
- * **`else` клауза** и нейният блок със сорс код (**незадължително**)
+**`if` conditions** consist of:
+ * **`if` clause**
+ * **bool expression** - a variable of bool type (**`Boolean`**) or bool logical expression (an expression that results in **`true/false`**)
+ * **condition body** - contains random block of source code
+ * **`else` clause** and its block of source code (**optional**)
 
  
-## Изпитни задачи
+## Exam Problems
 
-След като си припомнихме как се пишат условни конструкции, да решим няколко задачи, за да получим практически опит с **`if-else`** конструкцията.
+After having revised how to write simple conditions, let' s solve a few exam problems in order to practice the **`if-else`** construction:
 
-## Задача: цена за транспорт
+## Problem: Transportation Price
 
-Студент трябва да пропътува **n километра**. Той има избор измежду **три вида транспорт**:
-* **Такси**. Начална такса: **0.70** лв. Дневна тарифа: **0.79** лв./км. Нощна тарифа: **0.90** лв./км.
-* **Автобус**. Дневна / нощна тарифа: **0.09** лв./км. Може да се използва за разстояния минимум **20** км.
-* **Влак**. Дневна / нощна тарифа: **0.06** лв./км. Може да се използва за разстояния минимум **100** км.
+A student has to travel **n kilometers**. He can choose between **three types of transportation**: 
+* **Taxi**. Starting fee: **0.70** BGN. Day rate: **0.79** BGN/km. Night rate: **0.90** BGN/km.
+* **Bus**. Day / Night rate: **0.09** BGN/km. Can be used for distances of minimum **20** km.
+* **Train**. Day / Night rate: **0.06** BGN/km. Can be used for distances of minimum **100** km.
 
-Напишете програма, която въвежда броя **километри n** и **период от деня** (ден или нощ) и изчислява **цената на най-евтиния транспорт**.
+Write a program that reads the number of **kilometers n** and **period of the day** (day or night) and calculates **the price for the cheapest transport**.
 
-### Входни данни
+### Input Data
 
-Програмата чета **два реда** (аргумента):
-* Първият ред (аргумент) съдържа числото **n** – брой километри – цяло число в интервала [**1 … 5000**].
-* Вторият ред (аргумент) съдържа дума "**day**" или "**night**" – пътуване през деня или през нощта.
+**Two lines** (arguments) are read from the console:
+* The first line (arguments) contains a number **n** – number of kilometers – an integer in the range of [**1 … 5000**].
+* The second line contains the word "**day**" or "**night**" – traveling during the day or during the night.
 
-### Изходни данни
+### Output Data
 
-Да се отпечата на конзолата **най-ниската цена** за посочения брой километри.
+Print on the console **the lowest price** for the given number of kilometers.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход        | Изход       | Вход        | Изход       |
+| Input        | Output       | Input        | Output       |
 |----------|----------|----------|----------|
 |5<br>day    |4.65        |7<br>night  |7           |
 
-| Вход        | Изход       | Вход        | Изход       |
+| Input        | Output       | Input        | Output       |
 |----------|----------|----------|----------|
 |25<br>day   |2.25        |180<br>night|10.8        |
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Ще прочетем входните данни и в зависимост от разстоянието, ще изберем най-евтиния транспорт. За целта ще използваме няколко проверки.
+We will read the input data and depending on the distance, we will choose the cheapest transport. To do that, we will write a few conditional statements.
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-В условието на задачата е дадена **информация за входа и изхода**. Съответно, първата част от решението ще съдържа декларирането и инициализирането на двете **променливи**, в които ще пазим **стойностите на входните данни**:
+In the task, we are given **information about the input and output data**. Therefore, the first part of the task is to declare and initialize two **variables** where we will store the **values of the input data**:
 
 ![](assets/chapter-3-2-images/01.Transport-price-01.png)
 
-Преди да започнем проверките е нужно да **декларираме** още една **променлива**, в която ще пазим **цената за транспорт**:
+Before starting with the conditional statements, we need to **declare** one more **variable** that stores the value of **the transport price**:
 
 ![](assets/chapter-3-2-images/01.Transport-price-02.png)
 
-#### Извършване на проверки и съответните изчисления
+#### Checking the conditions and calculating
 
-След като вече сме **декларирали и инициализирали** променливите за входните данни, както и променливата, в която ще пазим цената, трябва да преценим кои **условия** от задачата да бъдат проверени първи. 
+After having **declared and initialized** the input data and the variable that stores the value of the price, we have to decide which **conditions** of the task have to be **checked first**. 
 
-От условието е видно, че тарифите на две от превозните средства **не зависят** от това, дали е **ден** или **нощ**, но тарифата на единия превоз (такси) **зависи**. По тази причина **първата проверка** ще е именно дали е **ден или нощ**, за да стане ясно коя тарифа на таксито ще се **използва**. За целта **декларираме още една променлива**, в която ще пазим стойността на **тарифата на таксито**:
+The task specifies that the rates of two of the vehicles **do not depend** on whether it is **day** or **night**, but the rate of one of the transports (taxi) **depends**. This is why the **first condition** will be whether it is **day or night**, so that it is clear which rate the taxi will be **using**. To do that, we **declare one more variable** that stores **the value of the taxi rate**:
 
 ![](assets/chapter-3-2-images/01.Transport-price-03.png)
 
-За да изчислим **тарифата на таксито**, ще използваме проверка от типа **`if-else`**:
+In order to calculate **the taxi rate**, we will use conditional statement of type **`if-else`**:
 
 ![](assets/chapter-3-2-images/01.Transport-price-04.png)
 
-След като е направено и това, вече може да пристъпим към изчислението на самата **цена за транспорта**. Ограниченията, които присъстват в условието на задачата, са относно **разстоянието**, което студента иска да пропътува. По тази причина, ще използваме **`if-else`** конструкция, с чиято помощ ще открием **цената** за транспорта в зависимост от подадените километри:
+After having done that, now we can start calculating **the transport price** itself. The constraints in the task refer to **the distance** that the student wants to travel. This is why, we will use an **`if-else`** statement that will help us find **the price** of the transport, depending on the given kilometers:
 
 ![](assets/chapter-3-2-images/01.Transport-price-05.png)
 
-Първо правим проверка дали километрите са **под 20**, тъй като от условието е видно, че **под 20** километра студента би могъл да използва само **такси**. Ако условието на проверката е **вярно** (връща **`true`**), на променливата, която пази стойността на цената на транспорта (**`price`**), ще **присвоим** съответната стойност. Тази стойност е равна на **първоначалната такса**, която **събираме** с неговата **тарифа**, **умножена** по **разстоянието**, което студента трябва да измине. 
+First, we check whether the kilometers are **less than 20**, as the task specifies that the student can only use **a taxi** for **less than 20 kilometers**. If the condition is **true** (returns **`true`**), the variable that is created to store the value of the transport (**`price`**), will **store** the corresponding value. This value equals **the starting fee** that we will **sum** with its **rate**, **multiplied** by **the distance** that the student has to travel.
 
-Ако условието на променливата **не е вярно** (връща **`false`**), следващата стъпка е програмата ни да провери дали километрите са **под 100**. Правим това, защото от условието е видно, че в този диапазон може да се използва и **автобус** като транспортно средство. **Цената** за километър на автобуса **е по-ниска** от тази на таксито. Следователно, ако резултата от проверката е **верен**, то в блок тялото на **`else-if`**, на променливата за цената на транспорта (**`price`**) трябва да присвоим **стойност**, равна на резултата от **умножението** на **тарифата** на автобуса по **разстоянието**. 
+If the condition of the variable **is not true** (returns **`false`**), the next step of our program is to check whether the kilometers are **less than 100**. We do that because the task specifies that in this range, **a bus** can be used as well. **The price** per kilometer of a bus **is cheaper** than a taxi one. Therefore, if the result of the condition is **true**, we store **a value**, equal to the result of the **multiplication** of **the rate** of the bus by **the distance** to the variable for the transportation **`price`** in the **`else if`** statement body.
 
-Ако и тази проверка **не даде `true`** като резултат, остава в тялото на **`else`** конструкцията, на променливата за цената на транспорта да присвоим **стойност**, равна на резултата от **умножението** на **разстоянието** по **тарифата** на влака. Това се прави, тъй като влакът е **най-евтиния** вариант за транспорт при даденото разстояние.
+If this condition **does not return `true`** as a result, we have to store **a value**, equal to **the result** of **the multiplication** of **the distance** by the train **rate** to the price variable in the **`else`** body. This is done because the train is **the cheapest** transport for the given distance. 
 
-#### Отпечатване на изходните данни
+#### Printing the Output Data
 
-След като сме направили проверките за разстоянието и сме **изчислили цената на най-евтиния транспорт**, следва да я **отпечатаме**. В условието на задачата **няма** изисквания как да бъде форматиран резултата и по тази причина ще отпечатаме само **променливата**:
+After we have checked the distance conditions and we have **calculated the price of the cheapest transport**, we have to **print it**. The task **does not** specify how to format the result, therefore, we just print **the variable**:
 
 ![](assets/chapter-3-2-images/01.Transport-price-06.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/930#0](https://judge.softuni.bg/Contests/Practice/Index/930#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/930#0](https://judge.softuni.bg/Contests/Practice/Index/930#0).
 
 
-## Задача: тръби в басейн
+## Problem: Pipes in Pool
 
-Басейн с **обем V** има **две тръби**, от които се пълни. **Всяка тръба има определен дебит** (литрите вода, минаващи през една тръба за един час). Работникът пуска тръбите едновременно и излиза за **N часа**. Напишете програма, която изкарва състоянието на басейна, **в момента, когато работникът се върне**. 
+A pool with **volume V** fills up via **two pipes**. **Each pipe has a certain flow rate** (the liters of water, flowing through a pipe for an hour). A worker starts the pipes simultaneously and goes out for **N hours**. Write a program that finds the state of the pool **the moment the worker comes back**. 
 
-### Входни данни
+### Input Data
 
-На функцията се подават **четири числа** (аргумента):
-* Първият ред (аргумент) съдържа числото **V – обем на басейна в литри** – цяло число в интервала [**1 … 10000**].
-* Вторият ред (аргумент) съдържа числото **P1 – дебит на първата тръба за час** – цяло число в интервала [**1 … 5000**].
-* Третият ред (аргумент) съдържа числото **P2 – дебит на втората тръба за час** – цяло число в интервала [**1 … 5000**].
-* Четвъртият ред (аргумент) съдържа числото **H – часовете, в които работникът отсъства** – число с плаваща запетая в интервала [**1.0 … 24.00**].
+**Four numbers are passes to the function** (arguments):
+* The first line (argument) contains a number **V – the volume of the pool in liters** – an integer in the range of [**1 … 10000**].
+* The second line (argument) contains a number **P1 – the flow rate of the first pipe per hour** – an integer in the range of [**1 … 5000**].
+* The third line (argument) contains a number **P2 – the flow rate of the second pipe per hour** – an integer in the range of [**1 … 5000**].
+* The fourth line (argument) contains a number **H – the hours that the worker is absent** – a floating-point number in the range of [**1.0 … 24.00**].
 
-### Изходни данни
+### Output Data
 
-Да се отпечата на конзолата **едно от двете възможни състояния**:
-* До колко се е запълнил басейнът и коя тръба с колко процента е допринесла. Всички проценти да се форматират до цяло число (без закръгляне).
+Print on the console **one of the two possible states**:
+* To what extent the pool has filled up and how many percent each pipe has contributed with. All percent values must be formatted to an integer (without rounding).
+
   * "The pool is **[x]**% full. Pipe 1: **[y]**%. Pipe 2: **[z]**%."
-* Ако басейнът се е препълнил – с колко литра е прелял за даденото време, число с плаваща запетая.
+* If the pool has overflown – with how many liters it has overflown for the given time – a floating-point number. 
   * "For **[x]** hours the pool overflows with **[y]** liters."
 
-**Имайте предвид**, че поради **закръглянето до цяло число** се **губят данни** и e нормално **сборът на процентите да е 99%, а не 100%**.
+**Have in mind** that due to **the rounding to an integer**, there is **data loss** and it is normal **the sum of the percents to be 99%, not 100%**. 
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 | ---- | ----- | ---- | ---- |
 |1000<br>100<br>120<br>3 |The pool is 66% full. Pipe 1: 45%. Pipe2: 54%. |100<br>100<br>100<br>2.5|For 2.5 hours the pool overflows with 400 liters.|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-За да решим задачата, ще прочетем входа, ще извършим няколко проверки и изчисления и ще отпечатаме резултата.
+In order to solve the task, we read the input data, write a few conditional statements, do some calculations and print the result.
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-Първата ни стъпка е да прочетем входните данни:
+Our first step is to read the input data:
 
 ![](assets/chapter-3-2-images/02.Pipes-in-pool-01.png)
 
-Следващата ни стъпка е да **декларираме и инициализираме** променлива, в която ще изчислим с колко **литра** се е **напълнил** басейна за **времето**, в което работникът е **отсъствал**. Изчисленията ще направим като **съберем** стойностите на дебита на **двете тръби** и ги **умножим** по **часовете**, които са ни зададени като вход:
+Our next step is to **declare and initialize** a variable in which we are going to calculate with how many **liters** the pool has **filled up** for the **time** the worker was **absent**. We do the calculations by **summing** the values of the flow rates of the **two pipes** and **multiplying** them by the **hours** that are given as input data:
 
 ![](assets/chapter-3-2-images/02.Pipes-in-pool-02.png)
 
-#### Извършване на проверки и обработка на изходните данни
+#### Checking the Conditions and Processing Output Data
 
-След като вече имаме и **стойността на количеството** вода, което е минало през **тръбите**, следва стъпката, в която трябва да **сравним** това количество с обема на самия басейн. 
+After we have **the value of the quantity** of water that has flown through the **pipes**, the next step is to **compare** that quantity with the volume of the pool itself.
 
-Това ще направим с проста **`if-else`** проверка, в която условието ще е дали **количеството вода е по-малко от обема на басейна**. Ако проверката върне **`true`**, то трябва да разпечатаме един **ред**, който да съдържа в себе си **съотношението** между количеството **вода, минало през тръбите**, и **обема на басейна**, както и **съотношението на количеството вода** от **всяка една тръба** спрямо **обема на басейна**. 
+We do that with a simple **`if-else`** statement, where the condition will be whether **the quantity of water is less than the volume of the pool**. If the statement returns **`true`**, we have to print one **line** that contains **the ratio** between the quantity of **water that has flown through the pipes** and **the volume of the pool**, as well as the **ratio of the quantity of the water** from **each pipe** to the **volume of the pool**. 
 
-Съотношението е нужно да бъде изразено в **проценти**, затова и всички изчисления до момента в този ред ще бъдат **умножени по 100**. Стойностите ще бъдат вмъкнати с **placeholders** и тъй като има условие **резултата в проценти** да се форматира до **две цифри** след **десетичния** знак **без закръгляне**, то за целта ще използваме метода **`Math.trunc(…)`**:
+The ratio has to be in **percentage**, that is why all the calculations so far will be **multiplied by 100**. The values will be printed using **placeholders**, and as there is a condition **the result in percentage** to be formatted to **two digits** after **the decimal** point **without rounding**, we will use the method **`Math.trunc(…)`**:
 
 ![](assets/chapter-3-2-images/02.Pipes-in-pool-03.png)
 
-Ако проверката обаче върне резултат **`false`**, то това означава, че **количеството вода** е **по-голямо** от **обема** на басейна, съответно той е **прелял**. Отново изхода трябва да е на **един ред**, но този път съдържа в себе си само две стойности - тази на **часовете**, в които работникът е отсъствал, и **количеството вода**, което е разлика между*влязлата вода и обема на басейна.
+However, if **the condition** returns **`false`**, that means that **the quantity of water** is **more** than the **volume** of the pool, therefore, it has **overflown**. Again, the output data has to be on **one line**, but this time it should contain only two values – the one of the **hours** when the worker was absent, and the **quantity of water**, which is the **difference** between *the incoming water and the volume of the pool.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/930#1](https://judge.softuni.bg/Contests/Practice/Index/930#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/930#1](https://judge.softuni.bg/Contests/Practice/Index/930#1).
 
 
-## Задача: поспаливата котка Том
+## Problem: Sleepy Tom Cat
 
-Котката Том обича по цял ден да спи, за негово съжаление стопанинът му си играе с него винаги когато има свободно време. За да се наспи добре, **нормата за игра** на Том е **30 000 минути в година**. Времето за игра на Том **зависи от почивните дни на стопанина му**:
-* Когато е на **работа**, стопанинът му си играе с него **по 63 минути на ден**.
-* Когато **почива**, стопанинът му си играе с него **по 127 минути на ден**.
+Tom Cat likes to sleep all day but, unfortunately, his owner is always playing with him whenever he has free time. In order to sleep well, **the norm of games** that Tom has is **30 000 minutes per year**. The time for games he has **depends on the holidays that his owner has**:
+* During **work days**, his owner plays with him **63 minutes per day**. 
+* During **holidays**, his owner plays with him **127 minutes per day**. 
 
-Напишете програма, която въвежда **броя почивни дни** и отпечатва дали **Том може да се наспи добре** и колко е **разликата от нормата** за текущата година, като приемем че **годината има 365 дни**.
-   
-**Пример**: 20 почивни дни -> работните дни са 345 (365 – 20 = 345). Реалното време за игра е 24 275 минути (345 \* 63 + 20 \* 127).  Разликата от нормата е 5 725 минути (30 000 – 24 275 = 5 725) или 95 часа и 25 минути.
+Write a program that reads **the number of holidays** and prints whether **Tom can sleep well** and how much **the difference from the norm** for the current year is. It is assumed that **there are 365 days in one year**. 
 
-### Входни данни
+**Example**: 20 holidays -> the working days are 345 (365 - 20 = 345). The time for games is 24 275 minutes (345 \* 63 + 20 \* 127). The difference from the norm is 5 725 minutes (30 000 – 24 275 = 5 725) or 95 hours and 25 minutes.
 
-Програмата прочита едно цяло число (аргумент) - **броят почивни дни** в интервала [**0 … 365**].
+### Input Data
 
-### Изходни данни
+The input is read from the console and consists of an integer – **the number of holidays** in the range of [**0 … 365**].
 
-На конзолата трябва да се отпечатат **два реда**.
-* Ако времето за игра на Том **е над нормата** за текущата година:
-  * **На първия ред** отпечатайте: **“Tom will run away”**.
-  * **На втория ред** отпечатайте разликата от нормата във формат:  
-   **“{H} hours and {M} minutes more for play”**.
-* Ако времето за игра на Том **е под нормата** за текущата година:
-  * **На първия ред** отпечатайте: **“Tom sleeps well”**.
-  * **На втория ред** отпечатайте разликата от нормата във формат:  
+### Output Data
+
+**Two lines** have to be printed on the console: 
+* If Tom's time for games **is above the norm** for the current year: 
+  * **On the first line** print: **“Tom will run away”**.
+  * **On the second line** print the difference from the norm in the format:  
+    **“{H} hours and {M} minutes more for play”**.
+* If the time for games of Tom **is below the norm** for the current year:
+  * **On the first line** print: **“Tom sleeps well”**.
+  * **On the second line** print the difference from the norm in the format:  
    **“{H} hours and {M} minutes less for play”**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|-----|----|-----|
 |20|Tom sleeps well<br>95 hours and 25 minutes less for play|113|Tom will run away<br>3 hours and 47 minutes for play|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-За да решим задачата, ще прочетем входа, ще извършим няколко проверки и изчисления и ще отпечатаме резултата.
+In order to solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
 
-#### Обработка на входните данни и прилежащи изчисления
+#### Reading the Input Data and calculating
 
-От условието на задачата виждаме, че **входните данни** представляват едно цяло число в интервала [**0 … 365**].
+From the task we see that **the input data** will be **an integer** in the range of [**0 … 365**].
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-01.png)
 
-За да решим задачата, **първо** трябва да изчислим колко **общо минути** стопанинът на Том си играе с него. От условието виждаме, че освен в **почивните дни**, поспаливата котка трябва да си играе и в **работните** за стопанина му. **Числото**, което прочитаме от конзолата, е броя на **почивните дни**. 
+To solve the problem, **first** we have to calculate **the total minutes** the owner of Tom is playing with him. We see that not only does the sleepy cat has to play with his owner during **the holidays**, but also during **the working days**. **The number** that we read from the console refers to **the holidays**. 
 
-Следващата ни стъпка е с помощта на това число да **изчислим** колко са **работните дни** на стопанина, тъй като без тях не можем да стигнем до **общото количество минути за игра**. Щом общият брой на дните в годината е ***365***, а броят на почивните дни е **Х**, то това означава, че броят на работните дни е **365 - X**. **Разликата** ще запазим в нова променлива, която ще използваме само за тази стойност:
+Out next step is to **calculate**, with the help of that number, how many **the working days** of the owner are, as without them we cannot calculate **the total minutes for play**. As the total number of days per year is ***365*** and the number of holidays is **X**, that means that the number of working days is **365 - X***. We store **the difference** in a new variable that only stores this value:
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-02.png)
 
-След като вече имаме количествата дни за игра, то вече можем да **изчислим времето за игра** на Том в минути. Неговата **стойност е равна** на **резултата от умножението на работните дни по 63** минути (в условието е зададено, че в работни дни, времето за игра е 63 минути на ден) **събран с резултата от умножението на почивните дни по 127** минути (в условието е зададено, че в почивните дни, времето за игра е 127 минути на ден).
+Once we have the number of days for playing, we can calculate **the time for games** of Tom in minutes. Its **value is equal** to the **result of the multiplication of the working days by 63** minutes (the task specifies that during working days, the time for play is 63 minutes per day), **summed with the result of the multiplication of the holidays by 127** minutes (the task specifies that during holidays, the time for play is 127 minutes per day).
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-03.png)
 
-В условието на задачата за изхода виждаме, че ще трябва да **разпечатаме разликата** между двете стойности в **часове** и **минути**. За тази цел от **общото** време за игра ще **извадим** нормата от **30 000** минути и получената разлика ще **запишем** в **нова** променлива. След това тази променлива ще **разделим целочислено** на 60, за да получим **часовете**, а след това, за да открием колко са **минутите** ще използваме **модулно деление с оператора `%`**, като отново ще разделим променливата на разликата с 60. 
+In the task condition we see that we have to **print the difference** between the two values in **hours** and **minutes** as output data. That is why we **subtract** the **total** time for play from the norm of **30 000** minutes and **store** the result in a **new** variable. After that, we **divide** that variable by 60 to get the **hours**, and then, to find out how many the **minutes** are, we use **modular division with the operator `%`**, as again we divide the variable of the difference by 60.
 
-Тук трябва да отбележим, че ако полученото количество **време игра** на Том е **по-малко** от **30 000**, при **изваждането** на нормата от него ще получим **число с отрицателен знак**. За да **неутрализираме** знака в двете деления по-късно, ще използваме **метода `Math.аbs(…)`** при намирането на разликата:
+Here we have to note that if the total **time for play** of Tom is **less** than **30,000**, when **subtracting** the norm from it, we will obtain **a negative number**. In order to **neutralize** the number in the division, we use **the method `Math.аbs(…)`** when finding the difference:
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-04.png)
 
-#### Извършване на проверки
+#### Checking the Conditions
 
-Времето за игра вече е изчислено, което ни води до **следващата** стъпка - **сравняване** на **времето за игра** на Том с **нормата**, от която зависи дали котката може да се наспива добре. За целта ще използваме **`if-else`** проверка, като в **`if` клаузата** трябва проверим дали **времето за игра е по-голямо от 30 000** (нормата). 
+The time for games is already calculated, which leads us to the **next** step – **comparing** the **time for play** of Tom with the **norm** on which the good sleep of the cat depends. In order to do so, we will use an **`if-else`** conditional statement. In the **`if` clause** we will check whether **the time for play is more than 30 000** (the norm).
 
-#### Обработка на изходните данни
+#### Processing the Output Data
 
-Какъвто и резултат да ни върне проверката, то трябва да разпечатаме колко е **разликата в часове и минути**. Това ще направим с **placeholder** и променливите, в които изчислихме стойностите на часовете и минутите, като форматирането ще е според условието за изход. 
+Whatever the result of the conditional statement is, we have to print how much **the difference in hours and minutes** is. We will do that with a **placeholder** and the variables that store the values of the hours and the minutes, as the formatting will be according to the task requirements for output.
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-05.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/930#2](https://judge.softuni.bg/Contests/Practice/Index/930#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/930#2](https://judge.softuni.bg/Contests/Practice/Index/930#2).
 
 
-## Задача: реколта
+## Problem: Harvest
 
-От лозе с площ X квадратни метри се заделя **40% от реколтата за производство на вино**. От **1 кв.м. лозе** се **изкарват Y килограма грозде**. За **1 литър вино** са **нужни 2,5 кг. грозде**. Желаното количество вино за продан е **Z литра.**
+In a vineyard with area X square meters, **40% of the harvest goes for wine production**. **Y kilograms of grapes** are extracted from **1 $$m^2$$ vineyard**. **2,5 kg of grapes** are needed for **1 liter of wine**. The wanted quantity of wine for sale is **Z liters**.
 
-Напишете програма, която **пресмята колко вино може да се произведе** и дали това количество е достатъчно. **Ако е достатъчно, остатъкът се разделя по равно между работниците на лозето.**
+Write a program that **calculates how much wine can be produced** and whether that quantity is enough. **If it is enough, the rest is divided between the vineyard workers equally**.
 
-### Входни данни
+### Input Data
 
-Входът, който програмата прочита се състои от **точно 4 реда** (аргумента):
-* 1-ви ред (аргумент): **X кв.м е лозето – цяло число в интервала** [**10 … 5000**].
-* 2-ри ред (аргумент): **Y грозде за един кв.м. – реално число в интервала** [**0.00 … 10.00**].
-* 3-ти ред (аргумент): **Z нужни литри вино – цяло число в интервала** [**10 … 600**].
-* 4-ти ред (аргумент): **брой работници – цяло число в интервала** [**1 … 20**].
+The input data consists **exactly 4 lines** (arguments): 
+* First line (argument): **X $$m^2$$ is the vineyard size – an integer in the range of** [**10 … 5000**].
+* Second line (argument): **Y grapes for one $$m^2$$ – an integer in the range of** [**0.00 … 10.00**].
+* Third line (argument): **Z needed liters of wine – an integer in the range of** [**10 … 600**].
+* Fourth line (argument): **number of workers – an integer in the range of** [**1 … 20**].
 
-### Изходни данни
+### Output Data
 
-На конзолата трябва да се отпечата следното:
-* Ако **произведеното** вино е **по-малко от нужното**:
-  * **“It will be a tough winter! More {недостигащо вино} liters wine needed.**”  
-   \* Резултатът трябва да е **закръглен към по-ниско цяло число**.
-* Ако **произведеното** вино е **повече от нужното**:
-  * **“Good harvest this year! Total wine: {общо вино} liters.”**  
-   \* Резултатът трябва да е **закръглен към по-ниско цяло число**.
-  * **“{Оставащо вино} liters left -> {вино за 1 работник} liters per person.”**  
-   \* И двата резултата трябва да са **закръглени към по-високото цяло число**.
+The following has to be printed on the console:
+* If the **produced** wine is **less than the needed quantity**:
+  * **“It will be a tough winter! More {insufficient wine} liters wine needed.**”  
+   \* **The result** has to be **rounded down to the nearest integer**.
+* If **the produced** wine is **more than the needed quantity**:
+  * **“Good harvest this year! Total wine: {total wine} liters.”**  
+   \* **The result** has to be **rounded down to the nearest integer**.
+  * **“{Wine left} liters left -> {wine for one worker} liters per person.”**  
+   \* **Both of the results** have to be **rounded up to the higher integer**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|-----|----|-----|
 |650<br>2<br>175<br>3|Good harvest this year! Total wine: 208 liters.<br>33 liters left -> 11 liters per person.|1020<br>1.5<br>425<br>4|It will be a tough winter! More 180 liters wine needed.|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-За да решим задачата, ще прочетем входа, ще извършим няколко проверки и изчисления и ще отпечатаме резултата.
+In order to solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
 
-#### Обработка на входните данни и прилежащи изчисления
+#### Processing the Input Data and performing the calculations
 
-Първо трябва да **прочетем входните данни**: 
+First, we have to **read the input data**: 
 
 ![](assets/chapter-3-2-images/04.Harvest-01.png)
 
-За да решим задачата е нужно да **изчислим** колко **литра вино** ще получим на база входните данни. От условието на задачата виждаме, че за да **пресметнем** количеството **вино в литри**, трябва първо да разберем какво е **количеството грозде в килограми**, което ще се получи от тази реколта. За тази цел ще декларираме една променлива, на която ще присвоим **стойност**, равна на **40%** от резултата от **умножението** на площта на лозето и количеството грозде, което се получава от 1 кв. м.
+To solve the problem, based on the input data, we have to **calculate** how many **liters of wine** will be produced. From the task requirements, we see that in order to **calculate** the quantity of **wine in liters**, we firstly have to find **the quantity of grapes in kilograms**, which will be get from the harvest. For that, we will declare a variable that keeps a **value**, equal to **40%** of the result from the **multiplication** of the vineyard area by the quantity of grapes, which is extracted from 1 $$m^2$$.
 
-След като сме извършили тези пресмятания, сме готови да **пресметнем** и **количеството вино в литри**, което ще се получи от тази реколта. За тази цел декларираме още една променлива, в която ще пазим това **количество**. От условието стигаме до извода, че за да го пресметнем, е нужно да **разделим количеството грозде в кг на 2.5**:
+After having done these calculations, we are ready to **calculate the quantity of wine in liters** that will be produced from the harvest as well. For that, we declare one more variable that stores that **quantity**. In order to calculate, we have to **divide the quantity of grapes in kg by 2.5**:
 
 ![](assets/chapter-3-2-images/04.Harvest-02.png)
 
-#### Извършване на проверки и обработка на изходните данни
+#### Checking the Conditions and Processing Output Data
 
-Вече сме направили нужните пресмятания и следващата стъпка е да **проверим** дали получените литри вино са **достатъчни**. За целта ще използваме **проста условна конструкция** от типа **`if-else`**, като в условието ще проверим дали литрите вино от реколтата са **повече от** или **равни** на **нужните литри**. 
+After having done the necessary calculations, the next step is to **check** whether the liters of wine that have been produced, **are enough**. For that we will use **a simple conditional statement** of the **`if-else`** type and we will check whether the liters of wine from the harvest are **more than** or **equal to** the **needed liters**. 
 
-Ако проверката върне резултат **`true`**, от условието на задачата виждаме, че на **първия ред** трябва да разпечатаме **виното, което сме получили от реколтата**. За да спазим условието, тази стойност да бъде **закръглена до по-ниското цяло число**, ще използваме метода **`Math.floor(…)`** при разпечатването ѝ чрез **placeholder**. 
+If the condition returns **`true`**, from the task requirement we see that **on the first line** we have to print **the wine that has been produced from the harvest**. That value has to be **rounded down to the nearest integer**, which we will do by using both the method **`Math.floor(…)`** and a **placeholder** when printing it.
 
-На втория ред има изискване да разпечатаме резултатите, като ги **закръглим към по-високото цяло число**, което ще направим с метода **`Math.ceil(…)`**. Стойностите, които трябва да разпечатаме, са на **оставащото количество вино** и **количеството вино, което се пада на един работник**. Оставащото количество вино е равно на **разликата** между получените литри вино и нужните литри вино. Стойността на това количество ще изчислим в нова променлива, която ще декларираме и инициализираме в **блок тялото** на **`if`**, преди разпечатването на първия ред. Количеството вино, което **се полага на един работник**, ще изчислим като оставащото вино го разделим на броя на работниците. 
+On the second line we have to print the results by **rounding them up to the higher integer**, which we will do by using the method **`Math.ceil(…)`**. The values that we have to print are **the quantity of wine left** and **the quantity that each worker gets**. The wine left is equal to **the difference** between the produced liters of wine and the needed liters of wine. 
+We calculate the value of that quantity in a new variable, which we declare and initialize in the **`if` condition body**, before printing the first line. We calculate the quantity of wine that **each worker gets** by dividing the wine left by the number of workers.
 
 ![](assets/chapter-3-2-images/04.Harvest-03.png)
 
-Ако проверката ни върне резултат **`false`** от условието на задачата виждаме, че трябва да **разпечатаме разликата** от **нужните литри** и **получените от тази реколта литри вино**. Има условие резултата да е **закръглен към по-ниското цяло число**, което ще направим с метода **`Math.floor(…)`**.
+If the condition returns **`false`**, we have to **print the difference** between **the needed liters** and the **liters of wine produced from the harvest**. There is a specification that the result has to be **rounded down to the nearest integer**, which we will do by using the method **`Math.floor(…)`**.
 
 ![](assets/chapter-3-2-images/04.Harvest-04.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/930#3](https://judge.softuni.bg/Contests/Practice/Index/930#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/930#3](https://judge.softuni.bg/Contests/Practice/Index/930#3).
 
 
-## Задача: фирма
+## Problem: Firm
 
-Фирма получава заявка за изработването на проект, за който са необходими определен брой часове. Фирмата разполага с **определен брой дни**. През 10% от дните служителите са на **обучение** и не могат да работят по проекта. Един нормален **работен ден във фирмата е 8 часа**. Проектът е важен за фирмата и всеки служител задължително работи по проекта в **извънработно време по 2 часа на ден**.
+A firm gets a request for creating a project for which a certain number of hours are needed. The firm has **a certain number of days**. During 10% of the days, the workers are **being trained** and cannot work on the project. A normal **working day is 8 hours long**. The project is important for the firm and every worker must work on it with **overtime of 2 hours per day**. 
 
-**Часовете** трябва да са **закръглени към по-ниско цяло число** (например → **6.98 часа** се закръглят на **6 часа**).
+**The hours** must be **rounded down to the nearest integer** (for example, **6.98 hours** are rounded to **6 hours**).
 
-Напишете програма, която изчислява дали **фирмата може да завърши проекта навреме** и **колко часа не достигат или остават**.
+Write a program that calculates whether **the firm can finish the project on time** and **how many hours more are needed or left**.
 
-### Входни данни
+### Input Data
 
-Програмата прочита **точно 3 реда** (аргумента):
-* На **първия** ред (аргумент) са **необходимите часове** – **цяло число в интервала** [**0 … 200 000**].
-* На **втория** ред (аргумент) са **дните, с които фирмата разполага** – **цяло число в интервала** [**0 … 20 000**].
-* На **третия** ред (аргумент) е **броят на всички служители** – **цяло число в интервала** [**0 … 200**].
+The input data contains **exactly three lines** (arguments): 
+* On **the first** line (argument) are **the needed hours** – **an integer in the range of** [**0 … 200 000**].
+* On **the second** line (argument) are **the days that the firm has** – **an integer in the range of** [**0 … 20 000**].
+* On **the third** line (argument) are **the number of all workers** – **an integer in the range of** [**0 … 200**].
 
-### Изходни данни
+### Output Data
 
-Да се **отпечата** на конзолата **един ред**:
-* Ако **времето е достатъчно**:
-  * **"Yes!{оставащите часове} hours left."**
-* Ако  **времето НЕ Е достатъчно**:
-  * **"Not enough time!{недостигащите часове} hours needed."**
+Print **one line** on **the console**: 
+* If **the time is enough**:
+  * **"Yes!{the hours left} hours left."**
+* If  **the time is NOT enough**:
+  * **"Not enough time!{additional hours} hours needed."**
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|-----|----|-----|
 |90<br>7<br>3<br>|Yes!99 hours left.|99<br>3<br>1|Not enough time!72 hours needed.|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-За да решим задачата, ще прочетем входа, ще извършим няколко проверки и изчисления и ще отпечатаме резултата.
+In order to solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
 
-#### Обработка на входните данни
+#### Reading the Input Data
 
-За решението на задачата е нужно **първо** да прочетем **входните данни**. 
+**First** we haveto read the input data in order to solve the problem.
 
 ![](assets/chapter-3-2-images/05.Firm-01.png)
 
-#### Помощни изчисления
+#### Auxiliary Calculations
 
-Следващата стъпка е да изчислим **количеството на работните часове** като умножим работните дни по 8 (всеки ден се работи по 8 часа) с броя на работниците и ги съберем с извънработното време. **Работните дни** са равни на **90% от дните**, с които фирмата разполага. **Извънработното време** е равно на резултата от умножението на броя на служителите с 2 (възможните часове извънработно време), като това също се умножава по броя на дните, с които фирмата разполага. От условието на задачата виждаме, че има условие **часовете** да са **закръглени към по-ниско цяло число**, което ще направим с метода **`Math.floor(…)`**.
+The next step is to calculate **the number of total working hours** by multiplying the working days by 8 (every working day is 8 hours long) with the number of workers and then sum them with the overtime. **The working days** equal **90% of the days** that the firm has. **The overtime** equals to the result of the multiplication of the number of workers by 2 (the possible hours of overtime) and then it is multiplied by the number of days that the firm has. From the task requirements we see that **the hours** should be **rounded down to the nearest integer**, which we will do with the method **`Math.floor(…)`**.
 
 ![](assets/chapter-3-2-images/05.Firm-02.png)
 
-#### Извършване на проверки
+#### Checking the Conditions
 
-След като сме направили изчисленията, които са ни нужни за да разберем стойността на **работните часове**, следва да направим проверка дали тези часове **достигат или остават допълнителни** такива. 
+After having done the calculations that are needed to find the value of **the working hours**, now we have to check whether these hours are **enough**,  **or some hours are left**.
 
-Ако **времето е достатъчно**, разпечатваме резултата, който се изисква в условието на задачата, а именно разликата между **работните часове и необходимите часове** за завършване на проекта. 
+If **the time is enough**, we print the result that is specified in the task requirements, which in this case is the difference between **the working hours and the hours needed** for finishing the project. 
 
-Ако **времето не е достатъчно**, разпечатваме допълнителните часове, които са нужни за завършване на проекта и са равни на разликата между **часовете за проекта** и **работните часове**. 
+If **the time is not enough**, we print the additional hours that are needed for finishing the project. They equal the difference between **the hours for the project** and **the total working hours**.
 
 ![](assets/chapter-3-2-images/05.Firm-03.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/930#4](https://judge.softuni.bg/Contests/Practice/Index/930#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/930#4](https://judge.softuni.bg/Contests/Practice/Index/930#4).
 
