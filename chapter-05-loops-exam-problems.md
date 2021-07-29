@@ -1,6 +1,6 @@
 # Chapter 5.2. Loops – Exam problems
 
-In the previous chapter we learned how to run a block of commands **more than once**. That's why we introduced a **`for` loop** and reviewed some of its main use cases. The purpose of this chapter is to improve our knowledge, by solving some more complex exam problems with loops, used for entrance exams. For some of them we will show examples of  comprehensive solutions, and for others we will provide only guidance.
+In the previous chapter we learned how to run a block of commands **more than once**. That's why we introduced a **`for` loop** and reviewed some of its main use cases. The purpose of this chapter is to improve our knowledge, by solving some more complex exam problems with loops, used for entrance exams. For some of them we will show examples of comprehensive solutions, and for others we will provide only guidance.
 Before we start, let's take another look at the **`for` loop** construction:
 
 ![](assets/chapter-5-2-images/00.For-construction-01.png)
@@ -19,7 +19,7 @@ Let's solve some SoftUni exam problems with loops
 
 ## Problem: Histogram
 
-**N integers** are given within the interval of [**1 … 1000**]. A percentage of them **p1** are with values below 200, another percentage __p2__ are with values from 200 to 399, percentage **p3** are with values from 400 to 599, a percentage **p4** are with values from 600 to 799 and the remaining percentage **p5** representing values above 800. Write a program that calculates and print out the percentages **p1**, **p2**, **p3**, **p4** and **p5**.
+**N integers** are given within the range of [**1 … 1000**]. A percentage of them **p1** are with values below 200, another percentage __p2__ are with values from 200 to 399, percentage **p3** are with values from 400 to 599, a percentage **p4** are with values from 600 to 799 and the remaining percentage **p5** representing values above 800. Write a program that calculate and print the percentages **p1**, **p2**, **p3**, **p4** and **p5**.
 
 **Example**: we are given n = **20** numbers: 53, 7, 56, 180, 450, 920, 12, 7, 150, 250, 680, 2, 600, 200, 800, 799, 199, 46, 128, 65 in the following distribution and visualization:
                           
@@ -33,11 +33,11 @@ Let's solve some SoftUni exam problems with loops
 
 ### Input data
 
-The first line (argument) of the input is an integer **n** (1 ≤ **n** ≤ 1000), representing the count of lines with numbers that will be passed. On the following **n lines (arguments)** will be given **one integer** within range [**1 … 1000**] – based on these numbers the histogram should be calculated.
+The first line (argument) of the input is an integer **n** (1 ≤ **n** ≤ 1000), representing the count of lines with numbers that will be passed. On the following **n lines (arguments)** will be given **one integer** within range of [**1 … 1000**] – based on these numbers the histogram should be calculated.
 
 ### Output data
 
-Print on the console **histogram that consists 5 lines**, each of them containing a number between 0% и 100%, formatted two digits after the decimal point (for example 25.00%, 66.67%, 57.14%).
+Print on the console **histogram that consists 5 lines**, each of them containing a number between 0% и 100%, formatted with precision two digits after the decimal point (for example 25.00%, 66.67%, 57.14%).
 
 ### Sample input and output
 
@@ -94,7 +94,7 @@ Print on the console **histogram that consists 5 lines**, each of them containin
 </tbody>
 </table>
 
-### Guidelines and hints
+### Hints and Guidelines
 
 The program that solves this problem, could be divided into three parts:
 
@@ -108,12 +108,12 @@ Before we proceed to the actual reading of the input data, we have to **declare 
   
 ![](assets/chapter-5-2-images/01.Histogram-01.png)
 
-In the variable **`n`** we will store the count of numbers that we will need to read. Additionally we have to declare the variables **`p1`**, **`p2`** etc., in which we will store the count of numbers for the corresponding group.
+In the variable **`n`** we will store the count of numbers that we will need to read. Additionally we have to declare the variables **`p1`**, **`p2`** etc., in which we will store the count of numbers for each corresponding group.
 Once the variables have been declared we can proceed with input data processing.
 
 #### Processing the input data
   
-To be able to read and distribute each number to its respective group, a **`for` loop** from **0** to **`n`** (count of numbers) will be used. Each loop iteration will read and distribute **one single** number (**`currentNum`**) to its respective group. In order to define, if a number belongs to certain group we have to, **perform a check in the respective range**. Once the check return true - we increase the count of numbers in this group (**`p1`**, **`p2`** etc.) by 1:
+To be able to read and distribute each number to its respective group, a **`for` loop** from **0** to **`n`** (count of numbers) will be used. Each loop iteration will read and distribute **one single** number (**`currentNum`**) to its respective group. In order to define, if a number belongs to certain group we have to, **perform a check in the respective range**. Once the check returns true - we increase the count of numbers in this group (**`p1`**, **`p2`** etc.) by 1:
 
 ![](assets/chapter-5-2-images/01.Histogram-03.png)
 
@@ -125,7 +125,7 @@ This formula in the source code would look as:
 
 ![](assets/chapter-5-2-images/01.Histogram-04.png)
 
-According to the task assignment, the percentages have to be **formatted two digits after the decimal point**. Considering this, **`.toFixed(...)`** method should be added to the formula and for the first variable would look like this:
+According to the task assignment, the percentages have to be **formatted with precision two digits after the decimal point**. Considering this, **`.toFixed(...)`** method should be added to the formula and for the first variable would look like this:
 
 ```javascript
 p1Percentage = (p1 / n * 100).toFixed(2);
@@ -152,222 +152,220 @@ All we have to do at this point is to print the final results:
 
 ![](assets/chapter-5-2-images/01.Histogram-06.png)
 
-### Judge system testing
+### Testing in the Judge system
 
-You can test your code here: [https://judge.softuni.bg/Contests/Practice/Index/934#0](https://judge.softuni.bg/Contests/Practice/Index/934#0).
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/934#0](https://judge.softuni.bg/Contests/Practice/Index/934#0).
 
 
-## Задача: умната Лили
+## Problem: the smart Lily
 
-Лили вече е на **N години**. За всеки свой **рожден ден** тя получава подарък. За **нечетните** рождени дни (1, 3, 5, …, n) получава **играчки**, а за всеки **четен** (2, 4, 6, …, n) получава **пари**. За **втория рожден ден** получава **10.00 лв.**, като **сумата се увеличава с 10.00 лв. за всеки следващ четен рожден ден** (2 -> 10, 4 -> 20, 6 -> 30 и т.н.). През годините Лили тайно е спестявала парите. **Братът** на Лили, в годините, които тя **получава пари**, **взима по 1.00 лев** от тях. Лили **продала играчките**, получени през годините, **всяка за P лева** и добавила сумата към спестените пари. С парите искала да си **купи пералня за X лева**. Напишете програма, която да пресмята **колко пари е събрала** и дали ѝ **стигат да купи пералня**.
+Lily is **N years old** already. For each **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n) she receives **toys**, and for the **even** birthdays (2, 4, 6, …, n) she receives **money**. For her **second birthday** she received **10.00 USD**, and the **amount is increased by 10.00 USD for every subsequent even birthday** (2 -> 10, 4 -> 20, 6 -> 30 etc.). Over the years Lily has secretly saved her money. In the years when Lily received money, her brother each time took 1 USD. Lily **sold the toys**, she got over the years, **each one for P USD** and then added the sum to her savings. With her savings, she wanted to **buy herself a washing machine for X USD**. Write a program, that calculates the **amount of Lily's savings** and is this sum enough **for buying a washing machine**.
 
-### Входни данни
+### Input data
 
-Програмата прочита **3 числа** (аргумента), въведени от потребителя, на отделни редове:
+The program receives **3 numbers** (arguments), entered by the user on separate lines:
 
-   - **Възрастта** на Лили – **цяло число** в интервала [**1 … 77**].
-   - **Цената на пералнята** – число в интервала [**1.00 … 10 000.00**].
-   - **Единична цена на играчка** – **цяло число** в интервала [**0 … 40**].
+   - Lily's **age** – **integer** in the range of [**1 … 77**].
+   - **Washing machine price** – number in the range of [**1.00 … 10 000.00**].
+   - **Single toy price** – **integer** in the range of [**0 … 40**].
 
-### Изходни данни
+### Output data
 
-Да се отпечата на конзолата един ред:
+In a single line print on the console:
 
-  * Ако парите на Лили са достатъчни:
-    * "**Yes! {N}**" – където **N** е остатъка пари след покупката
-  * Ако парите не са достатъчни:
-    * "**No! {M}**" – където **M** е сумата, която не достига
-  * Числата **N** и **M** трябва да са **форматирани до втория знак след десетичната точка**.
+  * If Lily has enough money to make the purchase:
+    * "**Yes! {N}**" – where **N** is the money left after the purchase
+  * If the Lily's savings are not enough for making a purchase:
+    * "**No! {M}**" – where **M** is the insufficiency amount
+  * The numbers **N** and **M** must be **formatted with precesion two digits after the decimal point**.
 
-### Примерен вход и изход
+### Sample input and output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Коментари</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td valign="top">10<br>170.00<br>6</td>
 <td valign="top">Yes! 5.00</td>
-<td valign="top"><p><strong>Първи рожден ден</strong> получава <strong>играчка</strong>; <strong>2ри</strong> -> <strong>10 лв.</strong>; 3ти -> играчка; <strong>4ти</strong>  -> 10 + 10 = <strong>20 лв.</strong>; 5ти -> играчка; <strong>6ти</strong> -> 20 + 10 = <strong>30 лв.</strong>; 7ми -> играчка; <strong>8ми</strong> -> 30 + 10 = <strong>40 лв.</strong>; 9ти -> играчка; <strong>10ти</strong> -> 40 + 10 = <strong>50 лв</strong>.<br>
-<strong>Спестила е</strong> -> 10 + 20 + 30 + 40 + 50 = <strong>150 лв.</strong>. Продала е <strong>5 играчки по 6 лв. = 30 лв.</strong>.<br>
-<strong>Брат ѝ взел 5 пъти по 1 лев = 5 лв</strong>. <strong>Остават</strong> -> 150 + 30 – 5 = <strong>175 лв</strong>.
-<strong>175 &gt;= 170</strong> (цената на пералнята) <strong>успяла</strong> е да я купи и са ѝ <strong>останали</strong> 175-170 = <strong>5 лв</strong>.
+<td valign="top"><p><strong>First birthday</strong> receives <strong>toy</strong>; <strong>2nd</strong> -> <strong>10 USD</strong>; 3rd -> toy; <strong>4th</strong>  -> 10 + 10 = <strong>20 USD</strong>; 5th -> toy; <strong>6th</strong> -> 20 + 10 = <strong>30 USD</strong>; 7th -> toy; <strong>8th</strong> -> 30 + 10 = <strong>40 USD</strong>; 9th -> toy; <strong>10th</strong> -> 40 + 10 = <strong>50 USD</strong>.<br>
+<strong>She has saved</strong> -> 10 + 20 + 30 + 40 + 50 = <strong>150 USD</strong>. She sold<strong>5 toys 6 USD each = 30 USD</strong>.<br>
+<strong>Her brother took 1 USD 5 times</strong>. <strong>Remaining amount of money</strong> -> 150 + 30 – 5 = <strong>175 USD</strong>.
+<strong>175 &gt;= 170</strong> (price of the washing machine) <strong>she was able</strong> to buy the washing machine and she was <strong>left</strong> 175-170 = <strong>5 USD</strong>.
 </p></td>
 </tr>
 <tr>
 <td valign="top">21<br>1570.98<br>3</td>
 <td valign="top">No! 997.98</td>
-<td valign="top"><p><strong>Спестила е 550 лв.</strong>. <strong>Продала</strong> е <strong>11 играчки</strong> по <strong>3 лв.</strong> = <strong>33 лв</strong>. Брат ѝ <strong>взимал 10 години по 1 лев</strong> = <strong>10лв</strong>. <strong>Останали</strong> 550 + 33 – 10 = <strong>573 лв.</strong> <br>
-<strong>573 &lt; 1570.98</strong> – <strong>не е успяла</strong> да купи пералня. <strong>Не ѝ достигат</strong> 1570.98–573 = <strong>997.98 лв.</strong></p></td>
+<td valign="top"><p><strong>She saved 550 USD.</strong>. <strong>She sold</strong> <strong>11 toys</strong> <strong>3 USD each.</strong> = <strong>33 USD</strong>.Her brother <strong>has taken 1  USD each year for period of 10 years</strong> = <strong>10 USD</strong>. <strong>Remaining amount of money</strong> 550 + 33 – 10 = <strong>573 USD</strong> <br>
+<strong>573 &lt; 1570.98</strong> – <strong>She didn't manage</strong> to buy a washing machine. <strong>The insufficient amount of money is</strong> 1570.98–573 = <strong>997.98 USD</strong></p></td>
 </tr>
 </tbody>
 </table>    
 
-### Насоки и подсказки
+### Guidance and hints
 
-Решението на тази задача, подобно на предходната, също можем да разделим мислено на три части – **прочитане** на входните данни, **обработката** им и **извеждане** на резултат.
+Similar to the previous problem, the solution could be divided into three parts – **reading** the input data, **processing** the input data and **printing the output**.
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
-Отново започваме с избора на подходящи имена на променливите. За годините на Лили (**`age`**), цената на пералнята (**`washingMachinePrice`**) и за единичната цена на играчката (**`toyPrice`**). В кода по-горе **декларираме** и **инициализираме** (присвояваме стойност)  също и променливите за броя на играчките (**`toysCount`**), както и парите от рождените дни (**`moneyFromBirthdays`**):
+Again, we should start with choosing appropriate variable names. For Lily's age(**`age`**), for the washing machine price (**`washingMachinePrice`**) and for the single toy price (**`toyPrice`**). In the above code we **declare** and **initialized** (assign value to variable) also variables for the toys count(**`toysCount`**), and money from birthdays (**`moneyFromBirthdays`**):
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-02.png)
 
-С **`for` цикъл** преминаваме през всеки рожден ден на Лили. Когато водещата променлива е **нечетно число**, увеличаваме броя на **играчките**. Проверката за четност осъществяваме чрез **деление с остатък** (**`%`**) **на 2** – когато остатъкът е 0, числото е **четно**, а при остатък 1 - **нечетно**. Обратно, когато водещата променлива е **четно число**, това означава, че Лили е **получила пари** и съответно прибавяме тези пари към общите ѝ спестявания. **Увеличаваме** стойността на променливата **`moneyFromBirthdays`**, т.е. **увеличаваме с 10** сумата, която тя ще получи на следващия си рожден ден. Едновременно с това **изваждаме по 1 лев** - парите, които брат ѝ взема. Използваме съкратено записване, като добавяме два минуса след последния знак на променливата ( **`moneyFromBirthdays--`**):
+We use a **`for` loop** to iterate through every Lily's birthday. If the leading variable is an **odd number**, we increase count of **toys**. We can do the parity check using **division with remainder** (**`%`**) **by 2** – if the remainder is equal to 0, the number is **even** and if the remainder is equal to 1 - **odd**. Inversely, if the leading variable is an **even number**, that would mean, that Lily has **received money** so we have to add this amount of money to her savings. Then we **Increase** the value of the variable **`moneyFromBirthdays`**, i.e. **we increase by 10** the sum, that she will receive for her next birthday. At the same time we **subtract 1 USD** - the money taken from her brother. To use the decrement operator we have to add two minus signs after the last sign of the variable ( **`moneyFromBirthdays--`**):
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-03.png)
 
-Вероятно ще се затрудните с пресмятането на парите за рождените дни, ако оставите бонуса да се натрупва по следния начин:
+Probably you will encounter some difficulties calculating the amount of birthday money,  if you let the bonus money to be added in the following way:
 
 ```javascript 
 moneyFromBirthdays += 10;
 ```
-Финалният резултат е **10 х 5 = 50**, докато на нас ни е нужен **10 + 20 + 30 + 40 + 50 = 150**. Можем да решим проблема с допълнителна променлива (**`bonusMoney`**):
+The final result would be **10 х 5 = 50**, while our goal is to have **10 + 20 + 30 + 40 + 50 = 150**. The problem could be solved by declaring an additional variable(**`bonusMoney`**):
 
 ```javascript
 bonusMoney += 10; 
 moneyFromBirthdays += bonusMoney;
 ```
-
-Или да включим стойността на променливата **`i`**, която **отброява повторенията** и разделим на **2**:
-
+Or we can include the value of the variable **`i`**, that **counts the loops** and then to divide it by **2**:
 ```javascript
 moneyFromBirthdays += 10 * i/2;
 ```
 
-Към спестяванията на Лили прибавяме и парите от продадените играчки:
+Then we have to add the money received from the sold toys to Lily's savings.
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-04.png)
 
-Накрая остава да отпечатаме получените резултати, като се съобразим с форматирането, указано в условието, т.е. сумата трябва да е **закръглена до две цифри след десетичния знак**:
+At this point what is left is to print the results considering the required formating i.e. the sum should be **formatted with precision to the second digit after decimal point**:
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-05.png)
 
-За да спестим създаването на допълнителни променливи, използваме шаблонен литерал - **`${израз}`**. Той представлява текстов литерал с точно определена поредица от знаци, позволяващ вграждането на изрази. Чрез него можем да извършим изчислението и директно да включим резултата в текстовия низ.
+To avoid declaring additional variables we can use a template literal - **`${expression}`**. It's a text literal with a specific sequence of characters allowing embedding of expressions. Using it the calculation can be performed and the result to be directly included in the text string. 
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/934#1](https://judge.softuni.bg/Contests/Practice/Index/934#1).
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/934#1](https://judge.softuni.bg/Contests/Practice/Index/934#1).
 
-## Задача: завръщане в миналото
+## Problem: Return to the past
 
-Иванчо е на **18 години** и получава наследство, което се състои от **X сума пари** и **машина на времето**. Той решава **да се върне до 1800 година**, но не знае **дали парите** ще **са достатъчни**, за да живее без да работи. Напишете **програма, която пресмята** дали Иванчо **ще има достатъчно пари**, за да не се налага да работи **до дадена година включително**. Като приемем, че **за всяка четна** (1800, 1802 и т.н.) година ще **харчи 12 000 долара**. За **всяка нечетна** (1801,1803  и т.н.) ще харчи **12 000 + 50 * [годините, които е навършил през дадената година]**.
+Ivan is **18 years old** and just received an inheritance, consisting of **X amount of money** and a **time machine**. He decides **to return to the year 1800**, but he is not certain **if the money** would be **enough** for him, to live at that time without working. Write a **program, that calculates** if Ivan **would have enough money**, to live without working **until a given year (inclusively)**. Assuming that, for **every even** (1800, 1802 etc.) year he **would spend 12 000 USD**. For **every odd year** (1801,1803 etc.) he would spend **12 000 + 50 * [the age he would have reached in the given year]**.
 
-### Входни данни
+### Input data
 
-Програмата прочита **2 числа (аргумента)**, въведени от потребителя на отделни редове:
+The program receives **2 numbers (arguments)**, entered by the user on separate lines
 
-  * **Наследените пари** – реално число в интервала [**1.00 … 1 000 000.00**].
-  * **Годината, до която трябва да живее (включително)** – цяло число в интервала [**1801 … 1900**].
+  * **Inherited money** – a number in the range of [**1.00 … 1 000 000.00**].
+  * **The year, until he would have to live in the past (inclusively)** – an integer in the range of [**1801 … 1900**].
 
-### Изходни данни
+### Output data
 
-Да се **отпечата** на конзолата **1 ред**. **Сумата** трябва да е **форматирана** до **два знака след десетичния знак**:
-  * Ако **парите са достатъчно**:
-    * „**Yes! He will live a carefree life and will have {N} dollars left.**“ – където **N** са парите, които ще му останат.
-  *	Ако **парите НЕ са достатъчно**:
-    * „**He will need {М} dollars to survive.**“ – където **M** е сумата, която **НЕ достига**.
+**Print** on the console **1 line**. **The sum** must be **formatted** with precision up to **two digits after the decimal point**:
+  * If **the money is enough**:
+    * „**Yes! He will live a carefree life and will have {N} dollars left.**“ – where **N** is the remaining amount of money.
+  *	If **the money is not enough**:
+    * „**He will need {М} dollars to survive.**“ – where **M** is the **insufficient** amount of money.
 
-### Примерен вход и изход
+### Sample input and output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Обяснения</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Explanations</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td valign="top">50000<br>1802</td>
-<td valign="top">Yes! He will live a carefree life and<br> will have 13050.00 dollars left.</td>
-<td valign="top"><p>1800 &rarr; <strong>четна</strong><br> 
- 	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Харчи 12000</strong> долара <br>
-  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Остават 50000 – 12000 = <strong>38000</strong><br>
-1801 &rarr; <strong>нечетна</strong> <br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Харчи</strong> 12000 + <strong>19*50</strong> = 12950 долара<br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Остават</strong> 38000 – 12950 = <strong>25050</strong><br>
-1802 &rarr; <strong>четна</strong> <br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Харчи</strong> 12000 долара<br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Остават</strong> 25050 – 12000 = <strong>13050</strong></p></td>
+<td valign="top">Yes! Ivan would live a carefree life and<br> would have 13050.00 USD left.</td>
+<td valign="top"><p>1800 &rarr; <strong>even</strong><br> 
+ 	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Spend 12000</strong> USD <br>
+  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Remaining 50000 – 12000 = <strong>38000</strong><br>
+1801 &rarr; <strong>odd</strong> <br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Spend</strong> 12000 + <strong>19*50</strong> = 12950 USD<br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Remaining</strong> 38000 – 12950 = <strong>25050</strong><br>
+1802 &rarr; <strong>even</strong> <br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Spend</strong> 12000 USD<br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Remaining</strong> 25050 – 12000 = <strong>13050</strong></p></td>
 </tr>
 <tr>
 <td valign="top">100000.15<br>1808</td>
-<td valign="top">He will need 12399.85 dollars<br> to survive.</td>
-<td valign="top"><p>1800 &rarr; <strong>четна</strong><br> 
-  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Остават 100000.15 – 12000 = <strong>88000.15</strong><br>
-1801 &rarr; <strong>нечетна</strong> <br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Остават</strong> 88000.15 – 12950 = <strong>75050.15</strong><br>
+<td valign="top">He would need 12399.85 USD<br> to survive.</td>
+<td valign="top"><p>1800 &rarr; <strong>even</strong><br> 
+  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Remaining 100000.15 – 12000 = <strong>88000.15</strong><br>
+1801 &rarr; <strong>odd</strong> <br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Remaining</strong> 88000.15 – 12950 = <strong>75050.15</strong><br>
 <strong>…</strong><br>
-1808 &rarr; <strong>четна</strong> &rarr; -399.85 - 12000 = -12399.85<br>
-<strong>12399.85 не достигат</strong>
+1808 &rarr; <strong>even</strong> &rarr; -399.85 - 12000 = -12399.85<br>
+<strong>12399.85 shortage</strong>
 </p></td>
 </tr>
 </tbody>
 </table>    
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Методът за решаване на тази задача не е по-различен от тези на предходните, затова започваме **деклариране и инициализиране** на нужните променливи. В условието е казано, че годините на Иванчо са 18, ето защо при декларацията на променливата **`years`** ѝ задаваме начална стойност **18**. Стойностите на другите променливи прочитаме от подадените параметри на функцията: 
+The method for solving this problem is similar to the previous ones, so we should start with **declaring and initializing** the required variables. According to the problem description Ivan is eighteen years old, so we could declare the variable **`years`** and set an initial value of **18**. The values of the other variables we can read from the function parameters:
 
 ![](assets/chapter-5-2-images/03.Back-to-the-past-01.png)
 
-С помощта на **`for` цикъл** ще обходим всички години. **Започваме от 1800** – годината, в която Иванчо се връща, и стигаме **до годината, до която той трябва да живее**. В цикъла проверяваме дали текущата година е **четна** или **нечетна**. Проверката за четност осъществяваме чрез **деление с остатък** (**`%`**) на 2. Ако годината е **четна**, изваждаме от наследството (**`heritage`**) **12000**, a ако е **нечетна**, изваждаме от наследството (**`heritage`**) **12000 + 50 * (годините на Иванчо)**:
+Using a **`for` loop** we can iterate through all the years. **Starting from 1800** – the year, in which Ivan want to return, and reach **the year until which he have to live in the past**. In the loop we check, if the current year is **even** or **odd**. We perform the check using **division with remainder** (**`%`**) by 2. If the year is **even**, we subtract from the (**`heritage`**) **12000**, and if the year is **odd**, we subtract from the (**`heritage`**) **12000 + 50 * (the age he would have reached in the given year)**:
 
 ![](assets/chapter-5-2-images/03.Back-to-the-past-02.png)
 
-Накрая остава да отпечатаме резултатите, като за целта правим **проверка дали наследството** (**`heritage`**) му е било достатъчно да живее без да работи или не. Ако наследството (**`heritage`**) е **положително число**, отпечатваме: "**`Yes! He will live a carefree life and will have {N} dollars left.`**", а ако е **отрицателно число**: "**`He will need {М} dollars to survive.`**". Не забравяме да форматираме сумата до два знака след десетичната точка.
+Finally we have to print out the result by **checking whether the inheritance** (**`heritage`**) was enough to live without working or not. If the inheritance (**`heritage`**) is a **positive number**, we print out: "**`Yes! He will live a carefree life and will have {N} dollars left.`**", and if it's a **negative number**: "**`He will need {М} dollars to survive.`**". Don't forget to format the result with precision to the second digit after the decimal point.
 
-**Hint**: Обмислете използването на метода **`Math.abs(…)`** при отпечатване на изхода, когато наследството е недостатъчно.
+**Hint**: Consider using the **`Math.abs(…)`** method, when printing the output in case the inheritance is inssuficient.
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/934#2](https://judge.softuni.bg/Contests/Practice/Index/934#2).
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/934#2](https://judge.softuni.bg/Contests/Practice/Index/934#2).
 
 
-## Задача: болница
+## Problem: Hospital
 
-За даден период от време, всеки ден в болницата пристигат пациенти за преглед. Тя разполага **първоначално** със **7 лекари**. Всеки лекар може да преглежда **само по един пациент на ден**, но понякога има недостиг на лекари, затова **останалите пациенти се изпращат в други болници**. **Всеки трети ден** болницата прави изчисления и **ако броят на непрегледаните пациенти е по-голям от броя на прегледаните, се назначава още един лекар**. Като назначаването става преди да започне приемът на пациенти за деня.
+For a certain period of time, every day patients arrive at the hospital for examination. **Initially** the hospital had **7 doctors**. Each doctor could treat **only one patient per day**, but sometimes there is a shortage of doctors, so **the remaining patients are sent to other hospitals**. **Every third day** the hospital makes evaluations and  **if the count of untreated patients is greater than the count of treated ones, another doctor is appointed**. Each new doctor is appointed at the beginning of the day before the patients' admission.
 
-Напишете програма, която изчислява **за дадения период броя на прегледаните и непрегледаните пациенти**.
+Write a program, that calculates **for a given period of time, the count of treated and untreated patients**.
 
-### Входни данни
+### Input data
 
-На първия ред (аргумент) от входа стои цяло число в интервала [**1 … 1000**] - **периода**, за който трябва да направите изчисления . На следващите **редове (аргумента)** стои **по едно цяло число** в интервала [**1 … 10 000**] – **броя пациенти**, които пристигат за преглед за **текущия ден**. 
+On the first line (argument) there is an integer in the range of [**1 … 1000**] - **The period of time**, for which you need to make calculations. On the next **lines (arguments)** there are **integers** in the range of [**1 … 10 000**] – the **number of arriving patients**, for the **current day**.  
 
-### Изходни данни
+### Output data
 
-Да се **отпечатат** на конзолата **2 реда**:
+**Print** on the console **2 lines**:
 
-* На **първия ред**: "**Treated patients: {брой прегледани пациенти}.**"
-* На **втория ред**: "**Untreated patients: {брой непрегледани пациенти}.**"
+* On the **first line**: "**Treated patients: {count of treated patients}.**"
+* On the **second line**: "**Untreated patients: {count of untreated patients}.**"
 
-### Примерен вход и изход
+### Sample input and output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Обяснения</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Explanation</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td valign="top">4<br>7<br>27<br>9<br>1</td>
 <td valign="top">Treated patients: 23.<br>Untreated patients: 21.</td>
-<td valign="top"><p><strong>1 ден</strong>: 7 прегледани и 0 непрегледани пациента за деня<br>
-<strong>2 ден</strong>: 7 прегледани и 20 непрегледани пациента за деня<br>
-<strong>3 ден</strong>: До момента прегледаните пациенти са общо 14,<br> а непрегледаните – 20 –> Назначава се нов лекар <br>–>
-8 прегледани и 1 непрегледан пациент за деня<br>
-<strong>4 ден</strong>: 1 прегледан и 0 непрегледани пациента за деня<br>
-<strong>Общо: 23 прегледани и 21 непрегледани пациенти.</strong></p></td>
+<td valign="top"><p><strong>Day 1</strong>: 7 treated and 0 untreated patients for the day<br>
+<strong>Day 2</strong>: 7 treated and 20 untreated patients for the day<br>
+<strong>Day 3</strong>: 14 patients have been treated so far and<br>20 untreated –> A new doctor is appionted <br>–>
+8 treated and 1 untreated patients for the day<br>
+<strong>Day 4</strong>: 1 treated and 0 untreated patients for the day<br>
+<strong>Total: 23 treated and 21 untreated patients.</strong></p></td>
 </tr>
 </tbody>
 </table>    
@@ -375,8 +373,8 @@ moneyFromBirthdays += 10 * i/2;
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -391,46 +389,47 @@ moneyFromBirthdays += 10 * i/2;
 </tbody>
 </table>    
 
-### Насоки и подсказки
-Отново започваме, като **декларираме и инициализираме** нужните променливи. Периодът, за който трябва да направим изчисленията, прочитаме от параметрите на функцията и запазваме в променливата **`period`**. Ще се нуждаем и от няколко помощни променливи: броя на излекуваните пациенти (**`treatedPatients`**), броя на неизлекуваните пациенти (**`untreatedPatients`**) и броя на докторите (**`countOfDoctors`**), който първоначално е 7: 
+### Hints and Guidelines
+
+We start again by, **declaring and initializing** the required variables. The calculation period we read from the console and save in the **`period`** variable . We will need some additional variables like: the number of treated patients (**`treatedPatients`**), the number of untreated patients (**`untreatedPatients`**) and the number of doctors (**`countOfDoctors`**), which initially is set to 7.
 
 ![](assets/chapter-5-2-images/04.Hospital-01.png)
 
-С помощта на **`for` цикъл** обхождаме всички дни в дадения период (**`period`**). За всеки ден прочитаме от конзолата броя на пациентите (**`currentPatients`**). Увеличаването на докторите по условие може да стане **всеки трети ден**, **НО** само ако броят на непрегледаните пациенти е **по-голям** от броя на прегледаните. За тази цел проверяваме дали денят е трети – чрез аритметичния оператор за деление с остатък (**`%`**): **`day % 3 == 0`**.
+Using **`for` loop** we iterate through all days in the given period of time (**`period`**). For each day, we read from the console the number of the patients(**`currentPatients`**). According problem description the increase of the doctors can occure **every third day**, **but** only if the count of untreated patients is **greater** than the count of treated ones. For this purpose we check, if the day is third one – using the division with remainder operator (**`%`**): **`day % 3 == 0`**.
 
-Например:
- * Ако денят е **трети**, остатъкът от делението на **3** ще бъде **0** (**`3 % 3 = 0`**) и проверката **`day % 3 == 0`** ще върне **`true`**.
- * Ако денят е **втори**, остатъкът от делението на **3** ще бъде **2** (**`2 % 3 = 2`**) и проверката ще върне **`false`**.
- * Ако денят е **четвърти**, остатъкът от делението ще бъде **1** (**`4 % 3 = 1`**) и проверката отново ще върне **`false`**.
+For example:
+ * If it's the **third** day, the remainder of the division by **3** will be **0** (**`3 % 3 = 0`**) and the check **`day % 3 == 0`** ще върне **`true`**.
+ * If it's the **second** day, the remainder of the division by **3** will be **2** (**`2 % 3 = 2`**) and the check will return **`false`**.
+ * If it's the **forth** day, the remainder of the division by **1** (**`4 % 3 = 1`**) and the check will return again **`false`**.
 
-Ако проверката **`day % 3 == 0`** върне **`true`**, ще се провери дали и броят на неизлекуваните пациенти е по-голям от този на излекуваните: **`untreatedPatients > treatedPatients`**. Ако резултатът отново е **`true`**, тогава ще се увеличи броят на лекарите (**`countOfDoctors`**).
-
-След това проверяваме броя на пациентите за деня (**`currentPatients`**) дали е по-голям от броя на докторите (**`countOfDoctors`**). Ако броят на пациентите е **по-голям**:
- - Увеличаваме стойността на променливата **`treatedPatients`** с броя на докторите (**`countOfDoctors`**).
- - Увеличаваме стойността на променливата **`untreatdPatients`** с броя на останалите пациенти, който изчисляваме, като от всички пациенти извадим броя на докторите (**`currentPatients - countOfDoctors`**).
+If **`day % 3 == 0`** returns **`true`**, the program logic will check, if the number of untreated patients is greater than the treated ones: **`untreatedPatients > treatedPatients`**. If the result is again **`true`**, then the count of doctors will be increased (**`countOfDoctors`**).
  
-Ако броят на пациентите **не е по-голям**, увеличаваме само променливата **`treatedPatients`** с броя на пациентите за деня (**`currentPatients`**).
+Then we have to check, if the daily count of patients (**`currentPatients`**) is greater than the count of the doctors (**`countOfDoctors`**). If the count of patients is **greater**:
+ - Increase the value of the variable **`treatedPatients`** by the count of doctors (**`countOfDoctors`**).
+ - Increase the value of the variable **`untreatdPatients`** by the count of remaining patients, which we calculate by subtracting the count of doctors from the count of patients (**`currentPatients - countOfDoctors`**).
+ 
+If the count of patients **is not greater**, we increase only the value of the variable **`treatedPatients`** by the count of patients for the day (**`currentPatients`**).
 
 ![](assets/chapter-5-2-images/04.Hospital-02.png)
 
-Накрая трябва само да отпечатаме броя на излекуваните и броя на неизлекуваните пациенти.
+Finally, the only thing left is to print the number of treated and untreated patients.
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/934#3](https://judge.softuni.bg/Contests/Practice/Index/934#3).
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/934#3](https://judge.softuni.bg/Contests/Practice/Index/934#3).
 
 
-## Задача: деление без остатък
+## Problem: division without remainder
 
-Дадени са **n цели числа** в интервала [**1 … 1000**]. От тях някакъв **процент p1 се делят без остатък на 2**, **процент p2** се **делят без остатък на 3**, **процент p3** се **делят без остатък на 4**. Да се напише програма, която изчислява и отпечатва процентите p1, p2 и p3.
-**Пример:** имаме **n = 10** числа: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. Получаваме следното разпределение и визуализация:
+**N integers** are given in the range of [**1 … 1000**]. **Some percentage p1 of them are divisible without remainder by 2**, **percentage p2** are **divisible without remainder by 3**, **percentage p3** are **divisible without remainder by 4**. Write a program that calculates and prints the percentages p1, p2, and p3.
+**Example:** We are given **n = 10** numbers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65 and the following distribution and visualization:
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Деление без остатък на:</strong></th>
-<th align="left"><strong>Числа</strong></th>
-<th align="left"><strong>Брой</strong></th>
-<th align="left"><strong>Процент</strong></th>
+<th align="left"><strong>Division without remainder by:</strong></th>
+<th align="left"><strong>Numbers</strong></th>
+<th align="left"><strong>Count</strong></th>
+<th align="left"><strong>Percent</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -455,28 +454,28 @@ moneyFromBirthdays += 10 * i/2;
 </tbody>
 </table>   
 
-### Входни данни
+### Input data
 
-На първия ред (аргумент) от входа стои цялото число **n** (1 ≤ **n** ≤ 1000) – брой числа. На следващите **n реда** стои **по едно цяло число** в интервала [**1 … 1000**] – числата които да бъдат проверени на колко се делят.
+On the first line (argument) of the input we have integer **n** (1 ≤ **n** ≤ 1000) – count of numbers. On each next **n lines** we have **one integer** in the range of [**1 … 1000**] – numbers that have to be checked for division without remainder.
 
-### Изходни данни
+### Output data
 
-Да се отпечатат на конзолата **3 реда**, всеки от които съдържа процент между 0% и 100%, с точност две цифри след десетичния знак, например 25.00%, 66.67%, 57.14%.
- * На **първия ред** – процентът на числата, които **се делят на 2**.
- * На **втория ред** – процентът на числата, които **се делят на 3**.
- * На **третия ред** – процентът на числата, които **се делят на 4**.
+Print on the console **3 lines**, each containing a percentage between 0% and 100%, formatted with precision two digits after the decimal point, for example 25.00%, 66.67%, 57.14%.
+ * On the **first line** – the percentage of the numbers, that are **divisible by 2**.
+ * On the **second line** – the percentage of the numbers, that are **divisible by 3**.
+ * On the **third line** – the percentage of the numbers, that are **divisible by 4**.
 
-### Примерен вход и изход
+### Sample input and output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -491,55 +490,55 @@ moneyFromBirthdays += 10 * i/2;
 </tbody>
 </table>   
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-За тази и следващата задача ще трябва сами да напишете програмния код, следвайки дадените напътствия.
+For the current and for the next problem you will have to write the program code by yourself, following the given guidelines.
 
-Програмата, която решава текущия проблем, е аналогична на тази от задача **Хистограма**, която разгледахме по-горе. Затова можем да започнем с декларацията на нужните ни променливи. Примерни имена на променливи може да са: **`n`** – брой на числата (който трябва да прочетем) и **`divisibleBy2`**, **`divisibleBy3`**, **`divisibleBy4`** – помощни променливи, пазещи броя на числата от съответната група.
+The program logic that solves the current problem is similar to the **Histogram** problem, that we reviewed above. Therefore we can start with declaring the required variables. Typical variable names could be: **`n`** – count of numbers (that we need to read from the console) and **`divisibleBy2`**, **`divisibleBy3`**, **`divisibleBy4`** – additional variables, containing count of the numbers in the corresponding group.
 
-За да прочетем и разпределим всяко число в съответната му група, ще трябва да завъртим **`for` цикъл** от **`0`** до **`n`** (броя на числата). Всяка итерация на цикъла трябва да прочита и разпределя **едно единствено число**. Различното тук е, че **едно число може да попадне в няколко групи едновременно**, затова трябва да направим **три отделни `if` проверки за всяко число** – съответно дали се дели на 2, 3 и 4 и да увеличим стойността на променливата, която пази броя на числата в съответната група. 
+To read and allocate each number to its corresponding group we have to iterate  **`for` loop** from **`0`** to **`n`** (count of numbers). Each iteration of the loop should read and allocate **one single number**. The difference here is that, **one number could be a part of several groups simultaneously**, therefore we have to perform **three different `if` checks for each number** - respectively, whether the number is divisible by 2,3, and 4 and then to increase the value of the variable that keeps the count of numbers in the corresponding group.
 
-**Внимание**: **`if-else`** конструкция в този случай няма да ни свърши работа, защото след като намери съвпадение се прекъсва по-нататъшното проверяване на условията.
+**Note**: **`if-else`** construction wouldn't work in this case, because once the condition is true, the code wouldn't perform any further checkings.
 
-Накрая трябва да отпечатате получените резултати, като спазвате посочения формат в условието.
+Finally, you need to print the obtained results, by following the specified format.
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/934#4](https://judge.softuni.bg/Contests/Practice/Index/934#4).
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/934#4](https://judge.softuni.bg/Contests/Practice/Index/934#4).
 
 
-## Задача: логистика
+## Problem: Logistics
 
-Отговаряте за логистиката на различни товари. **В зависимост от теглото** на всеки товар е нужно **различно превозно средство** и струва **различна цена на тон**:
+In this problem, you are responsible for the logistics of various types of cargo **Depending on the weight** of each cargo you need a **different vehicle** and this will cost **different price per ton**:
 
- * До **3 тона** – **микробус** (200 лева на тон).
- * От **над 3 и до 11 тона** – **камион** (175 лева на тон).
- * **Над 11 тона – влак** (120 лева на тон).
+ * Up to **3 tons** – **microbus** (200 USD per ton).
+ * From **over 3 to 11 tons** – **truck** (175 USD per ton).
+ * **Over 11 tons – train** (120 per ton).
 
-Вашата задача е да изчислите **средната цена на тон превозен товар**, както и **колко процента от товара** се превозват с **всяко превозно средство**.
+Your task is to calculate **the average price per ton of cargo**, as well as **the percentage of the cargo** transported **by each vehicle**.
 
-### Входни данни
+### Input data
 
-Програмата чете **поредица от числа** (аргумента):
- * На първия ред (аргумент): **брой на товарите** за превоз – **цяло число** в интервала [**1 … 1000**].
- * На всеки следващ ред (аргумент) се подава **тонажът на поредния товар** – **цяло число** в интервала [**1 … 1000**].
+The program receives **sequence of numbers** (arguments):
+ * On the first line (argument): **the count of cargos** that have to be transported – **integer** in the range of [**1 … 1000**].
+ * On the next lines we pass the **weight of the cargo** – **integer** in the range of [**1 … 1000**].
 
-### Изходни данни
+### Output data
 
-Да се отпечатат на конзолата **4 реда**, както следва:
- * **Ред #1** – **средната цена на тон превозен товар** (закръглена до втория знак след десетичната точка).
- * **Ред #2** – **процентът** товар, превозван с **микробус** (между 0.00% и 100.00%, закръглен до втория знак след десетичната точка).
- * **Ред #3** – **процентът** товар, превозвани с **камион** (между 0.00% и 100.00%).
- * **Ред #4** – **процентът** товар, превозвани с **влак** (между 0.00% и 100.00%).
+Print on the console **4 lines**, as follow:
+ * **Line #1** – **средната цена на тон превозен товар** (formatted with precision two digits after the decimal point).
+ * **Line #2** – **percentage** of the cargo, transported by **microbus** (between 0.00% and 100.00%, formatted with precision two digits after the decimal point).
+ * **Line #3** – **percentage** of the cargo, transported by **truck** (between 0.00% and 100.00%).
+ * **Line #4** – **percentage** of the cargo, transported by **train** (between 0.00% and 100.00%).
  
-### Примерен вход и изход
+### Sample input and output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Обяснения</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Explanation</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -547,14 +546,14 @@ moneyFromBirthdays += 10 * i/2;
 <td valign="top">4<br>1<br>5<br>16<br>3</td>
 <td valign="top">143.80<br>16.00%<br>20.00%<br>64.00%</td>
 <td valign="top">
-С <b>микробус</b> се превозват два от товарите <b>1</b> + <b>3</b>, общо <b>4</b> тона.<br>
-С <b>камион</b> се превозва един от товарите: <b>5</b> тона.<br>
-С <b>влак</b> се превозва един от товарите: <b>16</b> тона.<br>
-<b>Сумата</b> от всички товари е: 1 + 5 + 16 + 3 = <b>25</b> тона.<br>
-Процент товар <b>с микробус</b>: 4/25*100 = <b>16.00%</b><br>
-Процент товар <b>с камион</b>: 5/25*100 = <b>20.00%</b><br>
-Процент товар <b>с влак</b>: 16/25*100 = <b>64.00%</b><br>
-<b>Средна цена</b> на тон превозен товар: (4 * 200 + 5 * 175 + 16 * 120) / 25 = <b>143.80</b>
+The <b>microbus</b> is trasporting two cargos <b>1</b> + <b>3</b>, total of <b>4</b> tons.<br>
+The <b>truck</b> is trasporting one cargo: <b>5</b> tons.<br>
+The <b>train</b> is trasporting one cargo: <b>16</b> tons.<br>
+<b>The sum</b> of all cargos is: 1 + 5 + 16 + 3 = <b>25</b> tons.<br>
+Percentage of the cargo trasported by <b>microbus</b> is: 4/25*100 = <b>16.00%</b><br>
+Percentage of the cargo trasported by <b>truck</b> is: 5/25*100 = <b>20.00%</b><br>
+Percentage of the cargo trasported by <b>train</b> is: 16/25*100 = <b>64.00%</b><br>
+<b>The average price</b> per ton trasported cargo should be: (4 * 200 + 5 * 175 + 16 * 120) / 25 = <b>143.80</b>
 </td>
 </tr>
 </tbody>
@@ -563,10 +562,10 @@ moneyFromBirthdays += 10 * i/2;
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -579,25 +578,25 @@ moneyFromBirthdays += 10 * i/2;
 </tbody>
 </table>
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Първо **ще прочетем теглото на всеки товар** и ще **сумираме** колко тона се превозват съответно с **микробус**, **камион** и **влак** и ще изчислим и **общите тонове** превозени товари. Ще пресметнем **цените за всеки вид транспорт** според превозените тонове и **общата цена**. Накрая ще  пресметнем и отпечатаме **общата средна цена на тон** и **каква част от товара е превозена с всеки вид транспорт процентно**.
+First we will read **the weight of each cargo** and **sum** the amount of cargo transported by **microbus**, **truck** and **train**, then we have to calculate the **total tons** of transported cargo. The next step is to calculate **the prices of each transport type** related to the transported tons and the **total price**. Finally,  we will calculate and print **the total average price per ton** and **what part of the cargo as a percentage is transported by each type of vehicle**.
 
-Декларираме си нужните променливи, например: **`countOfLoads`** – броя на товарите за превоз (прочитаме ги от подадените аргументи), **`sumOfTons`** – сумата от тонажа на всички товари, **`microbusTons`**, **`truckTons`**, **`trainTons`** – променливи, пазещи сумата от тонажа на товарите, превозвани съответно с микробус, камион и влак.
+We declare the necessary variables such as: **`countOfLoads`** – count of the cargos for transportation (we read them from the console), **`sumOfTons`** – the weight amount of all cargos , **`microbusTons`**, **`truckTons`**, **`trainTons`** – variables containing the amount of weight of transported cargo, respectively by the microbus, the truck, and the train. 
 
-Ще ни трябва **`for` цикъл** от **`0`** до **`countOfLoads - 1`**, за да обходим всички товари. За всеки товар **прочитаме теглото му** (в тонове) и го запазваме в променлива, например **`tons`**. Прибавяме към сумата от тонажа на всички товари (**`sumOfTons`**) теглото на текущия товар (**`tons`**). След като сме прочели теглото на текущия товар, **трябва да определим кое превозно средство ще се ползва за него** (микробус, камион или влак). За целта ще ни трябват **`if-else`** проверки:
+We still need a**`for` loop** from **`0`** to **`countOfLoads - 1`**, to iterate through all cargo types. For each cargo **we read weight** (in tons) and save the value in a variable, such as **`tons`**. Next, we add the weight of the current cargo (**`tons`**) to the sum of all cargo weights (**`sumOfTons`**). Once we have read the weight of the current cargo, **we need to determine which vehicle type will be used** (microbus, truck or train). For this purpose we should use **`if-else`** check:
 
- * Ако стойността на променливата **`tons`** е **по-малка от 3**, увеличаваме стойността на променливата **`microbusTons`** със стойността на **`tons`**:
+ * If the value of the variable **`tons`** is **less than 3**,  increase the value of **`microbusTons`** by the value of **`tons`**:
  
    ```javascript
    microbusTons += tons;
    ```
    
- * При условие, че стойността на **`tons`** е **до 11** - увеличаваме **`truckTons`** с **`tons`**.
- * Ако **`tons`** e **повече от 11**, увеличаваме **`trainTons`** с **`tons`**.
+ * In case the value of **`tons`** is **less than 11** - increase the value of **`truckTons`** by the value of **`tons`**.
+ * If the value of **`tons`** is **more than 11**, increase the value of **`trainTons`** by the value of **`tons`**.
 
-Преди да отпечатаме изхода трябва да **изчислим процента на тоновете, превозвани с всяко превозно средство** и **средната цена на тон**. За средната цена на тон ще си декларираме още една помощна променлива **`totalPrice`**, в която ще **сумираме общата цена на всички превозвани товари** (с микробус, камион и влак). Средната цена ще получим, разделяйки **`totalPrice`** на **`sumOfTons`**. Остава **сами да изчислите** процента на тоновете, превозвани с всяко превозно средство, и да отпечатате резултатите, спазвайки формата в условието.
+Before printing the output, we have to **calculate the percentage of tons, transported by each vehicle** and the **average price per ton**. For the average price per ton we will declare one more variable **`totalPrice`**, that will **sum the total price of all transported cargo** (by microbus, truck and train). We can calculate the average price by, dividing **`totalPrice`** by **`sumOfTons`**. Finally, you have to **calculate by yourself** the percentages of tons, transported by each vehicle, and print the results, keeping the format specified in the description.
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/934#5](https://judge.softuni.bg/Contests/Practice/Index/934#5).
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/934#5](https://judge.softuni.bg/Contests/Practice/Index/934#5).
