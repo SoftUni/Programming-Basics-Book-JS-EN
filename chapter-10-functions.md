@@ -267,178 +267,179 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#3
 Up to this point, we have viewed functions that do a specific task. For example printing a text, number a figure on the console. There is another type of function that can **return** a **result** from their task. For example the result of multiplication of two numbers. We will look at this type of function in this part.
 
 ### Operator return
+To get a result from a function we use the operator **`return`**. He must be **used inside the body** of the function. The **`return`** will tell the program to **stop the execution** of the function and **return** the corresponding value. This value is defined after the **`return`** word. 
 
-За да получим резултат от функцията, на помощ идва операторът **`return`**. Той трябва да бъде **използван в тялото** на функцията и указва на програмата да **спре изпълнението** на функцията и да **върне** на извиквача определена **стойност**. Тази стойност се определя от израза след въпросния оператор **`return`**.
-
-В примера по-долу имаме **функция**, която получава име и фамилия като **параметри**, съединява ги и **връща** като резултат пълното име.
+In the example underneath we have a **function** that gets the first and last name as **parameters**. Then it combines them and returns the full name.
 
 ![](assets/chapter-10-images/11.Return-operator-01.png)
 
-**Има случаи**, в които **`return`** може да бъде извикван от няколко места във функцията, но само ако има **определени** входни условия.
+**There are cases** in which **`return`** can be called from different places inside the function, but if only the **conditions** are met. 
 
-В примера по-долу имаме функция, която сравнява две числа и **връща** резултат съответно **`-1`**, **`0`** или **`1`** според това дали първият аргумент е по-малък, равен или по-голям от втория аргумент, подаден на функцията. Функцията използва ключовата дума **`return`** на три различни места, за да върне три различни стойности според логиката на сравненията на числата:
+In the example below, we have a function that compares 2 numbers and **returns** the result which can be  **`-1`**, **`0`**, or **`1`** if the first argument is smaller, equal, or bigger than the second argument. The function uses the operator **`return`** on 3 different places. It returns different values depending on the logic of the code. 
 
 ![](assets/chapter-10-images/11.Return-operator-02.png)
 
-#### Кодът след return е недостъпен
+#### Code after a return is unreachable
 
-В случай, че **return** операторът не се намира в условна конструкция като **`if`**, след него, в текущия блок, **не** трябва да има други редове код, тъй като тогава Visual Studio Code ще покаже предупреждение, съобщавайки ни, че е засякъл код, който **не може да бъде достъпен**:
+When the **return** operator is located inside a conditional statement such as **`if`**, after the statement in the same block, we must **not** have rows with code because Visual Studio Code will display a warning telling us that it had found an **unreachable** code.
 
 ![](assets/chapter-10-images/11.Return-operator-03.png)
 
-Операторът **`return`** може да бъде използван и без да бъде специфицирана **конкретна стойност**, която да бъде върната. В този случай, просто ще бъде **прекратено** изпълнението на кода във функцията и ще бъде върната стойност по подразбиране **`undefined`**.
+The operator **`return`** can be also used without a **specific value**. In this case, the function will be **terminated** and the return value will be **`undefined`**.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" />
-</td><td>В програмирането не може да има два пъти оператор <code><b>return</b></code> един след друг, защото изпълнението на първия няма да позволи да се изпълни вторият. Понякога програмистите се шегуват с фразата “<b><i>пиши</i> <code>return; return;</code> <i>и да си ходим</i></b>”, за да обяснят, че логиката на програмата е объркана.</td></tr>
+</td><td>In programming, we can't have 2 times the operator <code><b>return</b></code> one after another because the first return won't allow us to use the second. Sometimes programmers joke
+with the phrase <b><i>type</i> <code>return; return;</code> <i>and let's go home</i></b>”, to explain that the logic of the program is wrongly typed.</td></tr>
 </table>
 
-### Употреба на върнатата от функцията стойност
+### Using the return value of a function
 
-След като дадена функция е изпълнена и върне стойност, то тази стойност може да се използва по **няколко** начина.
+After a function is executed and has returned a value, we can use the value in several ways.
 
-Първият е да **присвоим резултата като стойност на променлива**:
+The first is to **assign the result to a variable**:
 
 ![](assets/chapter-10-images/12.Return-value-01.png)
 
-Вторият е резултатът да бъде използван **в израз**:
+The second is to be used inside **an expression**:
 
 ![](assets/chapter-10-images/12.Return-value-02.png)
 
-Третият е да **подадем** резултата от работата на функцията към **друга функция**:
+The third is to **pass** the result from one function to **another function**:
 
 ![](assets/chapter-10-images/12.Return-value-03.png)
 
-### Пример: пресмятане на лицето на триъгълник
+### Example: Find the area of a triangle
 
-Да се напише функция, която изчислява лицето на триъгълник по дадени основа и височина и връща стойността му.
+Write a function that finds the area of a triangle by given side and altitude and then returns the area.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |3<br>4|6|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-**Създаваме** функция, с коректно име.
+We **Create** a function with a descriptive name.
 
 ![](assets/chapter-10-images/13.Calculate-triangle-area-01.png)
 
-Следващата ни стъпка е да **извикаме новата** функция и да **запишем върнатата стойност в подходяща променлива**.
+Our next step is to **call the new** function and **record the returned value inside another variable**.
 
 ![](assets/chapter-10-images/13.Calculate-triangle-area-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#4](https://judge.softuni.bg/Contests/Practice/Index/943#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#4](https://judge.softuni.bg/Contests/Practice/Index/943#4).
 
 
-### Пример: степен на число
+### Example: Power of a number
 
-Да се напише функция, която изчислява и връща резултата от повдигането на число на дадена степен.
+Write a function that calculates and returns the result the power of a number. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |2<br>8|256|3<br>4|81|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първата ни стъпка отново ще е да създадем функция, която ще приема два параметъра (числото и степента) и ще връща като резултат числото повдигнато на съответната степен.
+Our first step is again to create a function that will get 2 parameters (base and exponent(power)). Then the function will return the result.  
 
 ![](assets/chapter-10-images/14.Number-power-01.png)
 
-След като сме направили нужните изчисления, ни остава да извикаме декларираната функция.
+After we have done our calculations, all we are left to do is calling the function.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#5](https://judge.softuni.bg/Contests/Practice/Index/943#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#5](https://judge.softuni.bg/Contests/Practice/Index/943#5).
 
 
-### Функции, връщащи няколко стойности
+### Functions, returning multiple values 
 
-В практиката се срещат случаи, в които се нуждаем дадена функция да върне повече от един елемент като резултат. В езикът **JavaScript** има 2 начина по които може да бъде постигнато това - чрез **деструкция** и чрез **връщане на обект**.
+In practice, there are some cases in which we need a function that returns more than one element as a result. In the **Javascript** language, there are 2 ways of doing that. They are with **destruction** and by **returning an object**.
 
-#### Деструкция
+#### Destruction
 
-Когато желаем функция да върне **повече от една стойност**, използваме ключовата думичка **`return`**, след което изброяваме всички стойности, които желаем да върнем, като ги ограждаме в квадратни скоби - **`[`**, **`]`**:
+When we want a function to return **more than one value**, we use the keyword **`return`** and after that, we list all the values we want to return between the square brackets **`[`**, **`]`**:
 
 ![](assets/chapter-10-images/15.Return-multiple-values-01.png)
 
-След това за да получим върнатите стойности, отново на помощ идват квадратните скоби. Изброяваме параметри, които да получат тези стойности, като присвояването ще стане по реда, по който стойностите са върнати:
+After that to get the returned values using the square brackets we list a new set of variables that will get the returned values. We must follow the order we have returned them in the function.
 
 ![](assets/chapter-10-images/15.Return-multiple-values-02.png)
 
-В горният пример променливата **`name`** ще получи стойността "**John Doe**", която е първата върната стойност от функцията **`getNames`**, а **`fullName`** ще получи "**John Silver Doe**", която е втората върната стойност.
+In the upper example, the variable **`name`**  will get the value "**John Doe**", which is the first of the returned function of **`getNames`**, and *`fullName`** will get "**John Silver Doe**" which is second.
 
-#### Обекти
+#### Objects
 
-Този подход е много подобен на предния, като разликата е, че не просто **изброяваме** стойностите, които искаме да върнем, но и им даваме **имена**. **Обектите** са изключително важна и основна част от езика **JavaScript**. За сега е достатъчно да знаете, че се декларират с фигурните скоби **`{`** **`}`**, като между тях изброяваме **името** на стойността (нарича се **ключ**), последвано от знака две точки - **`:`** и самата стойност. Разделяме отделните двойки **ключ-стойност** със символа **`,`**.
+This way is very similar to the previous one. The only difference is that we don't just **list** all the values which we want to return, but we give them **names**. **Objects** are extremely important and a big part of **Javascript** language. For not it's enough for us to know that they are declared with curly brackets **`{`** **`}`** and we type the **name** of the value (it's called a key). After the **name**, we type **`:`**  followed by the value. We divide different **key-value** pairs with **`,`**. 
 
 ![](assets/chapter-10-images/15.Return-multiple-values-03.png)
 
-В този пример връщаме обект, който държи 2 стойности - **`name`** и **`fullName`**. 
+In this example, we return an object which holds 2 values - **`name`** and **`fullName`**. 
 
 ![](assets/chapter-10-images/15.Return-multiple-values-04.png)
 
-Тук променливата **`personNames`** ще получи всички върнати стойности. Като **`name`** и **`fullName`** са част от тези стойности и могат да бъдат достъпени със символа **`.`**:
+Here the variable  **`personNames`** will get all the returns values. By calling **`.name`** and **`.fullName`** we get the returned values:   
 
 ![](assets/chapter-10-images/15.Return-multiple-values-05.png)
 
-## Варианти на функции
+## Variant of function
 
-В много езици за програмиране една и съща функция може да е декларирана в **няколко варианта** с еднакво име и различни параметри. Това е известно с термина "**method overloading**". За добро или лошо **JavaScript** не поддържа тази възможност.
+In many programming languages, one function can be declared as **different variants** with the same name but different parameters. This is known as **method  overloading**. For good or bad **Javascript**, language doesn't support this.
 
-Когато декларирате **две или повече функции с еднакви имена**, програмата ще използва **последно декларираната** такава. Декларирайки втора функция със същото име, вие реално премахвате старата функция и записвате на нейно място новата.
+When we declare **two or more functions with the same names**, our program will use the **last declared**. Declaring the second function with the same name removes the old function and overrides the new one in that place. 
 
-## Вложени функции
+## Nested Functions
 
-Нека разгледаме следния пример:
-
-![](assets/chapter-10-images/19.Local-functions-01.png)
-
-### Какво е локална функция?
-
-Виждаме, че в този код, в нашата функция **`solve()`** има **другa** декларирана функция **`sum()`**. Такава **вложенa** функция се нарича **локална** функция. Локалните функции могат да се декларират във всяка една друга функция.
-
-### Защо да използваме локални функции?
-
-С времето и практиката ще открием, че когато пишем код, често се нуждаем от функции, които бихме използвали само един път, или пък нужната ни функция става твърде дълга. По-нагоре споменахме, че когато една функция съдържа в себе си прекалено много редове код, то той става труден за поддръжка и четене. В тези случаи на помощ идват локалните функции - те предоставят възможност в дадена функция да се декларира друга функция, която ще бъде използвана например само един път. Това спомага кода ни да е по-добре подреден и по-лесно четим, което от своя страна спомага за по-бърза корекция на евентуална грешка в кода и намалява възможността за грешки при промени в програмната логика.
-
-### Деклариране на локални функции
-
-Нека отново разгледаме примера от по-горе.
+Let's take a look at this example:
 
 ![](assets/chapter-10-images/19.Local-functions-01.png)
 
-В този пример, функцията **`sum()`** е локална функция, тъй като е вложена във функцията **`solve()`**, т.е. **`sum()`** е локална за **`solve()`**. Това означава, че функцията **`sum()`** може да бъде използван **само** във функцията **`solve()`**, тъй като е **декларирана в нея**.
+### What is a local function?
 
-Локалните функции имат достъп до променливи, които са декларирани на същото или по - горно ниво от тях. Следващият пример демонстрира как се случва това:
+We see that in the previous example, **`solve()`** function has **another** declared function **`sum()`**. This **nested** function is called a **local** function. Local functions can be declared in every other function.
+
+### Why should we use local functions?
+
+With time and practice we will find out that when we type code, we often need functions, which
+we might need only once or another function is becoming too long. We have already said that when one function has too many rows of code it is very hard to read, support, and understand. In those cases, we can declare another function which we will use even only once. This helps the code to be cleaner and reduces the chance of making a mistake in the programming code.
+
+### Declaring local functions
+
+Let's look again at the previous example
+
+![](assets/chapter-10-images/19.Local-functions-01.png)
+
+In this example **`sum()`** is local function because it's nested inside **`solve()`** function. This means that **`sum()`** can be  called **only** inside **`solve()`** function because it's **only declared inside it**.
+
+Local functions have access to variables, which are declared in the same or upper level from them. Our next example shows how this happens.
 
 ![](assets/chapter-10-images/19.Local-functions-02.png)
 
-Тази особеност на вложените функции ги прави много удобни помощници при решаването на дадена задача. Те спестяват време и код, които иначе бихме вложили, за да предаваме на вложените функции параметри и променливи, които се използват във функциите, в които са вложени.
+This feature of nested functions makes them convenient helpers when solving a task. They save time and code by not having to pass values to parameters and variables.
 
+## Naming functions. Best practices for working with functions.
 
-## Именуване на функции. Добри практики при работа с функции
+In this part, we will look at some of the **best practices** for writing functions that are connected to the arrangement of the code and its structure. 
 
-В тази част ще се запознаем с някои **утвърдени практики** при работа с функции, свързани с именуването, подредбата на кода и неговата структура.
+### Naming functions
 
-### Именуване на функции
+When we name a function it's recommended to use **logical names**. This is good because every function must **correspond** to a specific part of our problem. We must take into consideration the **task** which  the function will do. This is why it's a good practice **for the name to describes the purpose of the function**.
 
-Когато именуваме дадена функция е препоръчително да използваме **смислени имена**. Тъй като всяка функция **отговаря** за някаква част от нашия проблем, то при именуването ѝ трябва да вземем предвид **действието, което тя извършва**, т.е. добра практика е **името да описва целта**.
+It is required for the name of the function to start with a **small letter** and to be a verb or a combination of a verb and a noun. Formatting the names must be done following **Lower Camel Case** convention - **every word except the first to start with an upper letter**. Round brackets 
+**`( `** and **`)`** are always after the name of the function.
 
-Задължително е името да започва с **малка буква** и трябва да е съставено от глагол или от двойка: глагол + съществително име. Форматирането на името става, спазвайки **Lower Camel Case** конвенцията, т.е. **всяка дума, с изключение на първата, започва с главна буква**. Кръглите скоби **`( `** и **`)`** винаги следват името на функцията.
+Every function must do an independent task and the name must describe its role.
 
-Всяка функция трябва да изпълнява самостоятелна задача, а името на функцията трябва да описва каква е нейната роля.
-
-Няколко примера за **коректно** именуване на функции:
+Here are some examples of **correctly** named functions:
 * **`findStudent`**
 *	**`loadReport`**
 *	**`sine`**
 
-Няколко примера за **лошо** именуване на функции:
+Some examples of **badly** named functions:
 *	**`method1`**
 *	**`doSomething`**
 *	**`handleStuff`**
@@ -447,13 +448,14 @@ Up to this point, we have viewed functions that do a specific task. For example 
 *	**`FindStudent`**
 *	**`LoadReport`**
 
-Ако не можем да измислим подходящо име, то най-вероятно функцията решава повече от една задача или няма ясно дефинирана цел и тогава трябва да помислим как да я разделим на няколко отделни функции.
+If we can't come up with a good name it's probably because our function does more than one job or it doesn't have a clear task. We must think of a way to divide the function into different functions.
 
-### Именуване на параметрите на функциите
+### Naming parameters of functions
 
-При именуването на **параметрите** на функцията важат почти същите правила, както и при самите функции. Разликите тук са, че за имената на параметрите е добре да използваме съществително име или двойка от прилагателно и съществително име. Трябва да отбележим, че е добра практика името на параметъра да **указва** каква е **мерната единица**, която се използва при работа с него.
+When naming **parameters** of functions, the same rules of naming functions apply to them.
+The only differents are that name of the parameters should be nouns or a set of a noun and an adjective. It's a **good practice** that the name of the parameter should **indicate** what type of unit is used when working with it.
 
-Няколко примера за **коректно** именуване на параметри на функции:
+Here are some examples of **correctly** named parameters of functions:
 *   **`firstName`**
 *	**`report`**
 *	**`speedKmH`**
@@ -461,7 +463,7 @@ Up to this point, we have viewed functions that do a specific task. For example 
 *	**`fontSizeInPixels`**
 *	**`font`**
 
-Няколко примера за **некоректно** именуване на параметри:
+Some examples of **incorrectly** named parameters: 
 *	**`p`**
 *	**`p1`**
 *	**`p2`**
@@ -471,77 +473,77 @@ Up to this point, we have viewed functions that do a specific task. For example 
 
 ### Добри практики при работа с функции
 
-Нека отново припомним, че една функция трябва да изпълнява **само една** точно определена **задача**. Ако това не може да бъде постигнато, тогава трябва да помислим как да **разделим** функцията на няколко отделни такива. Както казахме, името на функцията трябва точно и ясно да описва нейната цел. Друга добра практика в програмирането е да **избягваме** функции, по-дълги от екрана ни (приблизително). Ако все пак кода стане много обемен, то е препоръчително функцията да се **раздели** на няколко по-кратки, както в примера по-долу.
+We must keep in mind that a function must do **only one** specific **task**. If this can't be achieved, then we must come up with a way to **divide** the functionality into different parts.
+As we have already said the name must be clear and descriptive. Another **good practice** is to **avoid** functions that are longer than our screen. If this happens it's recommended to **split** the function into smaller ones as shown in the example below.
 
 ![](assets/chapter-10-images/20.Good-practice-01.png)
 
-### Структура и форматиране на кода
+### Structure and formatting of the code
 
-При писането на функции трябва да внимаваме да спазваме коректна **индентация** (отместване по-навътре на блокове от кода).
+When writing functions we must keep in mind to follow a correct **indication** (move more inward blocks of the code).
 
-Пример за **правилно** форматиран JavaScript код:
+Here are some examples of **correctly** formatted Javascript code:
 
 ![](assets/chapter-10-images/20.Good-practice-02.png)
 
-Пример за **некоректно** форматиран JavaScript код:
+Some examples of **incorrectly** formatted Javascript code:
 
 ![](assets/chapter-10-images/20.Good-practice-03.png)
 
-Когато заглавният ред на функцията е **твърде дълъг**, се препоръчва той да се раздели на няколко реда, като всеки ред след първия се отмества с две табулации надясно (за по-добра четимост):
+When the headline row of the function is **too long**, it's recommended to be split into several rows, and every row after the first should be moved 2 tabulations to right (for clear readability).
 
 ![](assets/chapter-10-images/20.Good-practice-04.png)
 
-Друга добра практика при писане на код е да **оставяме празен ред** между функциите, след циклите и условните конструкции. Също така, опитвайте да **избягвате** да пишете **дълги редове и сложни изрази**. С времето ще установите, че това подобрява четимостта на кода и спестява време. 
+Another good practice is to **leave an empty row** between functions, after loops, and conditional statements. You should always try to **avoid** writing **long rows and complicated expressions**.
+Over time you will find out that improves the readability and saves time.
 
-Препоръчваме винаги да се **използват къдрави скоби за тялото на проверки и цикли**. Скобите не само подобряват четимостта, но и намалят възможността да бъде допусната грешка и програмата ни да се държи некоректно.
+We recommend you to always **use curly brackets for the body of conditional statements and loops**. The brackets don't just improve the readability but also reduce the possibility of making a mistake.
 
-## Какво научихме от тази глава?
+## What have we learned from this chapter?
 
-В тази глава се запознахме с базовите концепции при работа с функции:
-* Научихме, че **целта** на функциите е да **разделят** големи програми с много редове код на по-малки и кратки задачи.
-* Запознахме се със **структурата** на функциите, как да ги **декларираме** и **извикваме** по тяхното име.
-* Разгледахме примери за функции с **параметри** и как да ги използваме в нашата програма.
-* Научихме какво представляват **сигнатурата** и **връщаната стойност** на функцията, както и каква е ролята на оператора **`return`**.
-* Запознахме се с **добрите практики** при работа с функции, как да именуваме функциите и техните параметри, как да форматираме кода и други.
-
-
-## Упражнения
-
-За да затвърдим работата с функции, ще решим няколко задачи. В тях се изисква да напишете функция с определена функционалност и след това да я извикате като ѝ подадете данни, точно както е показано в примерния вход и изход.
+In this chapter we have learned base concepts about working with functions:
+* Learned that **the goal** of a function is to **split** programs with many rows to code with smaller and shorter parts.
+* Comprehended the idea of the **structure** of functions and how to **declare** and **invoke** them by their name.
+* Looked into different examples of functions with **parameters** and how to use them in our program.
+* Learned what is **signature** and **return value** of the function as well as what is the role of the **`return`** operator.
+* Studied **good practices** for working with functions, how to name them and their parameters and how to format our code and others.
 
 
-### Задача: "Hello, Име!"
+## Exercises
 
-Да се напише функция, която получава като параметър име и принтира на конзолата "*Hello, \<name\>!*".
+To improve what we have learned we will solve a few exercises. In them, it is required to write functions with specific functionality and then call it with values as shown in the example.
 
-#### Примерен вход и изход
+### Problem: "Hello, Name!"
 
-|Вход|Изход|
+Write a function that takes a name as a parameter and prints on the console "*Hello, \{name\}!*".
+
+#### Sample Input and Output
+
+|Input|Output|
 |---|---|
 |Peter|Hello, Peter!|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Дефинирайте функция **`printName(name)`** и я имплементирайте. Да се напише функция **`solve(...)`**, която получава като входни данни име на човек и извиква **`printName`** функцията като подава прочетеното име.
+Define a function **`printName(name)`**  and implement it. Write a function **`solve(...)`** which receives as input name of a person and calls **`printName`** function.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#7](https://judge.softuni.bg/Contests/Practice/Index/943#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#7](https://judge.softuni.bg/Contests/Practice/Index/943#7).
 
+### Problem: Min Method
 
-### Задача: по-малко число
+Define a function **`GetMin(int a, int b)`** and implement it, after which invoke it from the function **`solve(...)`**  as shown below. To find the minimum of three numbers, first, find the minimum of the first two and then the minimum of the result and the third number:
 
-Да се създаде функция **`getMin(a, b)`**, която връща по-малкото от две числа. Да се напише функция **`solve(...)`**, която получава като входни данни три числа и печата най-малкото от тях. Да се използва функцията **`getMin(…)`**, която е вече създадена.
+#### Sample Input and Output
 
-#### Примерен вход и изход
-
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |1<br>2<br>3|1|-100<br>-101<br>-102|-102|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Дефинирайте функция **`getMin(int a, int b)`** и я имплементирайте, след което я извикайте от функцията **`solve(...)`**, както е показано по-долу. За да намерите минимума на три числа, намерете първо минимума на първите две от тях и след това минимума на резултата и третото число:
+Define function  **`getMin(int a, int b)`** and implement it, after that call it from  **`solve(...)`** as shown in the example below. To find the minimum of the tree numbers find first the minimum of the first and second value. Then find the minimum of the result of the two and the third number:
 
 ```javascript
 function solve([num1, num2, num3]) {
@@ -549,70 +551,70 @@ function solve([num1, num2, num3]) {
 }
 ```
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#8](https://judge.softuni.bg/Contests/Practice/Index/943#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#8](https://judge.softuni.bg/Contests/Practice/Index/943#8).
 
 
-### Задача: повтаряне на низ
+### Problem: String Repeater
 
-Да се напише функция **`repeatString(str, count)`**, която получава като параметри стрингова променлива **`str`** и цяло число **`n`** и връща низа, повторен **`n`** пъти. След това резултатът да се отпечата на конзолата.
+Write a function **`repeatString(str, count)`** which gets as parameters string variable **`str`** and number **`n`** then returns the string repeated  **`n`** times. After that print the result on the console.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |str<br>2|strstr|roki<br>6|rokirokirokirokirokiroki|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Допишете функцията по-долу като добавите входния низ към резултата в цикъла:
+Write function and add the input string to the result in the for loop:
 
 ![](assets/chapter-10-images/21.Repeated-string-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#9](https://judge.softuni.bg/Contests/Practice/Index/943#9).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#9](https://judge.softuni.bg/Contests/Practice/Index/943#9).
 
 
-### Задача: n-та цифра
+### Problem: Nth Digit
 
-Да се напише функция **`findNthDigit(number, index)`**, която получава число и индекс N като параметри и печата N-тата цифра на числото (като се брои от дясно на ляво, започвайки от 1). След това, резултатът да се отпечата на конзолата.
+Write function **`findNthDigit(number, index)`** which gets number and index then print the Nth digit of the number (starting to count from left to right from 1). After that print the result to the console.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |83746<br>2|4|93847837<br>6|8|2435<br>4|2|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За да изпълним алгоритъма, ще използваме **`while`** цикъл, докато дадено число не стане 0. На всяка итерация на **`while`** цикъла ще проверяваме дали настоящият индекс на цифрата не отговаря на индекса, който търсим. Ако отговаря, ще върнем като резултат цифрата на индекса (**`number % 10`**). Ако не отговаря, ще премахнем последната цифра на числото (**`number = number / 10`**). Трябва да следим коя цифра проверяваме по индекс (от дясно на ляво, започвайки от 1). Когато намерим цифрата, ще върнем индекса. 
+To perform the algorithm we will use a **`while`** loop. While the number isn't 0 we will check if the index matches our input value. If it matches we will return the number of the index (**`number % 10`**). If it doesn't match anything we will remove the last digit of the number **`number = number / 10`**). We must follow which digit we check in the conditional statement (starting from left to right from 1). When we find the digit we will return the index.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#10](https://judge.softuni.bg/Contests/Practice/Index/943#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#10](https://judge.softuni.bg/Contests/Practice/Index/943#10).
 
 
-### Задача: число към бройна система
+### Problem: Integer to Base
 
-Да се напише функция **`integerToBase(number, toBase)`**, която получава като параметри цяло число и основа на бройна система и връща входното число, конвертирано към посочената бройна система. След това, резултатът да се отпечата на конзолата. Входното число винаги ще е в бройна система 10, а параметърът за основа ще е между 2 и 10.
+Write a function **`integerToBase(number, toBase)`**, which takes as parameters an integer and a base of a numeral system and returns the integer converted to the given numeral system. After this, the result should be printed on the console. The input number will always be in the decimal numeral system, and the base parameter will be between 2 and 10.
 
-#### Примерен вход и изход
+## Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|----|---|---|---|---|
 |3<br>2|11|4<br>4|10|9<br>7|12|
 
-#### Насоки и подсказки
+## Hints and Guidelines
 
-За да решим задачата, ще декларираме стрингова променлива, в която ще пазим резултата. След това трябва да изпълним следните изчисления, нужни за конвертиране на числото.
-* Изчисляваме **остатъка** от числото, разделено на основата.
-* **Вмъкваме остатъка** от числото в началото на низа, представящ резултата.
-* **Разделяме** числото на основата.
-* **Повтаряме** алгоритъма, докато входното число не стане 0.
+To solve the problem, we will declare a string, in which we will keep the result. After this, we need to do the following calculations to convert the number.
+* Calculate **the remainder** of the number, divided by the base.
+* **Insert the remainder** at the beginning of the string.
+* **Divide** the number to the base.
+* **Repeat** the algorithm, until the input integer equals 0.
 
-Допишете липсващата логика във функцията по-долу:
+Write the missing logic in the function below:
 
 ```javascript
 function integerToBase(number, toBase) {
@@ -624,114 +626,115 @@ function integerToBase(number, toBase) {
 }
 ```
 
-#### Тестване в Judge системата 
+#### Testing in the Judge System 
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#11](https://judge.softuni.bg/Contests/Practice/Index/943#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#11](https://judge.softuni.bg/Contests/Practice/Index/943#11).
 
 
-### Задача: известия
+# Problem: Notifications
 
-Да се напише функция **`solve(...)`**, която приема като първи параметър цяло число **`n`** - брой на съобщения и допълнителен брой параметри, които са самите части на **съобщенията**. За всяко съобщение може да се получи различен брой параметри. Първият параметър за всяко съобщение е **`messageType`**, който може да бъде **`success`**, **`warning`** или **`error`**:
-   - Когато **`messageType`** е **`success`**, следващите 2 получени параметъра са **`operation`** и **`message`**
-   - Когато **`messageType`** е **`warning`** следващият параметър е **`message`**.
-   - Когато **`messageType`** е **`error`** следващите 3 получени параметъра са **`operation`** + **`message`** + **`errorCode`** (всяко е отделен параметър).
+Write a function **`solve(...)`**, which takes an integer **`n`** and **`n` input messages** and prints **`n` output messages**, based on the input. For each message read a few lines. Each message starts with **`messageType`**: “**`success`**”, “**`warning`**” or “**`error`**”:
+- When **`messageType`** is “**`success`**” read **`operation`** + **`message`** (each from a new line).
+- When **`messageType`** is a “**`warning`**” read-only **`message`** (from a new line).
+- When **`messageType`** is “**`error`**” read **`operation`** + **`message`** + **`errorCode`** (each from a new line).
 
-На конзолата да се отпечата **всяко прочетено съобщение**, форматирано в зависимост от неговия **`messageType`**. Като след заглавния ред за всяко съобщение да се отпечатат толкова на брой символа **`=`**, **колкото е дълъг** съответният **заглавен ред** и да се сложи по един **празен ред** след всяко съобщение (за по-детайлно разбиране погледнете примерите). 
+Print on the console **each read message** formatted depending on its **`messageType`**. After the headline of the message print as much **`=`**, **as the length** of the said **headline** and print **an empty line** after each message (to understand in detail look at the examples). 
 
-Задачата да се реши с дефиниране на четири функции: **`showSuccessMessage(...)`**, **`showWarningMessage(...)`**, **`showErrorMessage(...)`** и **`processMessage(...)`**, като само последната функция да се извиква от главната **`solve(...)`** функция:
+The problem should be solved by defining four functions: **`showSuccessMessage()`**, **`showWarningMessage()`**, **`showErrorMessage()`** and **`processMessage()`**, so that only the last function is invoked by the **`Main()`** function:
 
 ![](assets/chapter-10-images/23.Notifications-01.png)
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
-|4<br>error<br>credit card purchase<br>Invalid customer address<br>500<br>warning<br>Email not confirmed<br>success<br>user registration<br>User registered successfully<br>warning<br>Customer has not email assigned|<code>Error: Failed to execute credit card purchase.</code><br><code>==============================================</code><br><code>Reason: Invalid customer address.</code><br><code>Error code: 500.</code><br><br><code>Warning: Email not confirmed.</code><br><code>=============================</code><br><br><code>Successfully executed user registration.</code><br><code>========================================</code><br><code>User registered successfully.</code><br><br><code>Warning: Customer has not email assigned.</code><br><code>=========================================</code>|
+|4<br>error<br>credit card purchase<br>Invalid customer address<br>500<br>warning<br>Email not confirmed<br>success<br>user registration<br>User registered successfully<br>warning<br>Customer has not email assigned|<code>Error: Failed to execute credit card purchase.</code><br><code>==============================================</code><br><code>Reason: Invalid customer address.</code><br><code>Error code: 500.</code><br><br><code>Warning: Email not confirmed.</code><br><code>=============================</code><br><br><code>Successfully executed user registration.</code><br><code>========================================</code><br><code>User registered successfully.</code><br><br><code>Warning: Customer has no email assigned.</code><br><code>=========================================</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Дефинирайте и имплементирайте четирите функции. След това извикайте **`processMessage(...)`** от главната **`solve(...)`** функция.
+Define and implement the four shown functions. After that call **`processMessage(...)`** from the main **`solve(...)`** function.
 
 ![](assets/chapter-10-images/23.Notifications-02.png)
 
-В **`processMessage(...)`** извадете първо броят на съобщенията и след това ги обработете едно по едно спрямо техният тип и извикайте съответната функция за печатане.
+In **`processMessage()`** read the type of message from the console and according to the read, type read the rest of the data (one, two, or three more lines). After that invoke the function for printing the given type of message.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#12](https://judge.softuni.bg/Contests/Practice/Index/943#12).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#12](https://judge.softuni.bg/Contests/Practice/Index/943#12).
 
 
-### Задача: числа към думи
+### Problem: Numbers to Words
 
-Да се напише функция **`letterize(number)`**, която получава цяло число и го разпечатва с думи на английски език според условията по-долу:
-* Да се отпечатат с думи стотиците, десетиците и единиците (и евентуални минус) според правилата на английския език.
-* Ако числото е по-голямо от **999**, трябва да се принтира "**too large**".
-* Ако числото е по-малко от **-999**, трябва да се принтира "**too small**".
-* Ако числото е **отрицателно**, трябва да се принтира "**minus**" преди него.
-* Ако числото не е съставено от три цифри, не трябва да се принтира.
+Write a function **`letterize(number)`**, which reads an integer and prints it in words in English according to the conditions below:
+* Print in words the hundreds, the tens, and the ones (and the eventual minus) according to the rules of the English language.
+* If the number is larger than **999**, you must print "**too large**".
+* If the number is smaller than **-999**, you must print "**too small**".
+* If the number is **negative**, you must print "**minus**" before it.
+* If the number is not built up of three digits, you shouldn't print it.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3<br>999<br>-420<br>1020|nine-hundred and ninety nine<br>minus four-hundred and twenty<br>too large|2<br>15<br>350|fifteen<br>three-hundred and fifty|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |4<br>311<br>418<br>509<br>-9945|three-hundred and eleven<br>four-hundred and eighteen<br>five-hundred and nine<br>too small|3<br>500<br>123<br>9|five-hundred<br>one-hundred and twenty three<br>nine|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Можем първо да отпечатаме **стотиците** като текст - (числото / 100) % 10, след тях **десетиците** - (числото / 10) % 10 и накрая **единиците** - (числото % 10).
+We can first print **the hundreds** as a text – \(the number / 100\) % 10, after that **the tens** – \(the number / 10\) % 10 and at the end **the ones** – \(the number % 10\).
 
-Първият специален случай е когато числото е точно **закръглено на 100** (напр. 100, 200, 300 и т.н.). В този случай отпечатваме "one-hundred", "two-hundred", "three-hundred" и т.н.
+The first special case is when the number is exactly **rounded to 100** \(e.g. 100, 200, 300 etc...\). In this case we print "one-hundred", "two-hundred", "three-hundred" etc.
 
-Вторият специален случай е когато числото, формирано от последните две цифри на входното число, е **по-малко от 10** (напр. 101, 305, 609 и т.н.). В този случай отпечатваме "one-hundred and one", "three-hundred and five", "six-hundred and nine" и т.н.
+The second special case is when the number formed by the last two digits of the input number is **less than 10** \(e.g. 101, 305, 609, etc...\). In this case, we print "one-hundred and one", "three-hundred and five", "six-hundred and nine" etc.
 
-Третият специален случай е когато числото, формирано от последните две цифри на входното число, е **по-голямо от 10 и по-малко от 20** (напр. 111, 814, 919 и т.н.). В този случай отпечатваме "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen" и т.н.
+The third special case is when the number formed by the last two digits of the input number is **larger than 10 and smaller than 20** \(e.g. 111, 814, 919, etc.\). In this case, we print "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen" etc.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#13](https://judge.softuni.bg/Contests/Practice/Index/943#13).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#13](https://judge.softuni.bg/Contests/Practice/Index/943#13).
 
 
-### Задача: криптиране на низ
+### Problem: String Encryption
 
-Да се напише функция **`еncrypt(char letter)`**, която криптира дадена буква по следния начин:
-* Вземат се първата и последна цифра от ASCII кода на буквата и се залепят една за друга в низ, който ще представя резултата. 
-* Към началото на стойността на низа, който представя резултата, се залепя символа, който отговаря на следното условие:
-  * ASCII кода на буквата + последната цифра от ASCII кода на буквата.
-* След това към края на стойността на низа, който представя резултата, се залепя символа, който отговаря на следното условие:
-  * ASCII кода на буквата - първата цифра от ASCII кода на буквата.
-* Функцията трябва да върне като резултат криптирания низ.
+Write a function **`encrypt(char letter)`**, which encrypts a given letter in the following way:
+* It takes the first and the last digit from the ASCII code of the letter and concatenates them into a string, which will represent the result. 
+* At the beginning of the string, which represents the result, we will insert the symbol which matches the following condition:
+  * ASCII code of the letter + the last digit of the ASCII code of the letter.
+* After that at the end of the string, which represents the result, you concatenate the character which matches the following condition:
+  * ASCII code of the letter - the first digit of the ASCII code of the letter.
+* The function should return the encrypted string.
 
-Пример:
+Example:
 * j &rarr; **p16i**
-  * ASCII кодът на **j** e **106** &rarr; Първа цифра - **1**, последна цифра - **6**.
-  * Залепяме първата и последната цифра &rarr; **16**.
-  * Към **началото** на стойността на низа, който представя резултата, залепяме символа, който се получава от сбора на ASCII кода + последната цифра &rarr; 106 + 6 &rarr; 112 &rarr; **p**.
-  * Към **края** на стойността на низа, който представя резултата, залепяме символа, който се получава от разликата на ASCII кода - първата цифра &rarr; 106 - 1 &rarr; 105 &rarr; **i**.
+  * ASCII code of **j** is **106** &rarr; First digit – **1**, last digit – **6**.
+  * We concatenate the first and the last digit &rarr; **16**.
+  * At **the beginning** of the string, which represents the result, concatenate the symbol, which you get from the sum of the ASCII code + the last digit &rarr; 106 + 6 &rarr; 112 &rarr; **p**.
+  * At **the end** of the string, which represents the result, concatenate the symbol, which you get from subtracting the ASCII code – the first digit &rarr; 106 - 1 &rarr; 105 &rarr; **i**.
   
-Използвайки метода, описан по-горе, да се дефинира функция **`solve(...)`**, която получава **поредица от символи**, **криптира ги** и отпечатва резултата на един ред. Приемаме, че входните данни винаги ще бъдат валидни. **`solve(...)`** функцията трябва да получава входните данни, подадени от потребителя – цяло число **`n`**, последвано от по един символ за всеки следващ **`n`** елемент. Да се криптират символите и да се добавят към криптирания низ. Накрая като резултат трябва да се отпечата **криптиран низ от символи** като в следващия пример.
+Using the function shown above, write a function **`solve(...)`** which takes  **a sequence of characters**, **encrypts them**, and prints the result on one line. The input data will always be valid. The Main function must read the data given by the user – an integer **`n`**, followed by a character for each of the following **`n`** lines. Encrypt the symbols and add them to the encrypted string. In the end, as a result, you must print **an encrypted string** as in the following example.
 
-**Пример**:
+**Example**:
 * S, o, f, t, U, n, i &rarr; V83Kp11nh12ez16sZ85Mn10mn15h
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |7<br>S<br>o<br>f<br>t<br>U<br>n<br>i|V83Kp11nh12ez16sZ85Mn10mn15h|
 
-|Вход|Изход| 
+|Input|Output| 
 |---|---|
 |7<br>B<br>i<br>r<br>a<br>H<br>a<br>x| H66<n15hv14qh97XJ72Ah97xx10w |
 
-#### Насоки и подсказки
-На променливата **`result`**, в която ще се пази стойността на резултата, ще присвоим първоначална стойност **`""`**. Трябва да се завърти цикъл **`n`** пъти, като на всяка итерация към променливата, в която пазим стойността на резултата, ще прибавяме криптирания символ. 
+#### Hints and Guidelines
 
-За да намерим първата и последната цифри от ASCII кода, ще използваме алгоритъма, който използвахме за решаване на задача "N-та цифра", а за да създадем низа, ще процедираме както в задачата "Число към бройна система".
+Our variable **`result`** in which we will save the value of the result we will give the initial value **`""`**. We must recur a loop **`n`** times so that in each iteration we will add the encrypted symbol to the result string. 
+
+To find the first and the last digit of the ASCII code, we will use the same algorithm that we used to solve "Integer to Base".
  
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#14](https://judge.softuni.bg/Contests/Practice/Index/943#14).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#14](https://judge.softuni.bg/Contests/Practice/Index/943#14).
