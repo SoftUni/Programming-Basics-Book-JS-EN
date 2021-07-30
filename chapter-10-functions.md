@@ -26,7 +26,7 @@ The **body** of the function consists of **programming code**, which is located 
 
 ### Why should we use functions?
 
-Up to this moment, we have found out that, functions help us with **separating long exercise into smaller parts**, which leads to an **easier solution** of the corresponding problem. This makes our program, not just well structured, **easy readable** but and more understandable.
+Up to this moment, we have found out that, functions help us with **separating long exercises into smaller parts**, which leads to an **easier solution** of the corresponding problem. This makes our program, not just well structured, **easy readable** but and more understandable.
 
 Using functions we **escape repeating** of programming code. **Repeating** code is **bad practice** because it makes **harder maintenance** of the program which leads to errors. If one part of the code exists in our program more than once and we have to fix it, we will have to change the repeating code in every single place. The probability of us forgetting one of the repeating places is very big, which will lead to incorrect behavior of the program. This is exactly why it's a **good practice** to define a fragment that will be used **more than once** as a **separate function**.
 
@@ -64,8 +64,7 @@ With the next example, we will look at the required elements in the declaration 
 * **Name of the variable**. The name of the variable is **decided by us**. In the example, the name is **`getSquare`** which tells us that the task of this function is to calculate the area of the square.
 * **Declaration of a function**. Using the same structure that we have learned in **function declaration** -  first **Keyword function** then **Name of function**, **List of parameters** surrounded by round brackets **`()`**, **Body of the function** surrounded by curly brackets **`{}`**. The difference, in this case, is that **Name of a function** is not necessary, but it is recommended to get used to writing the name. In the example, the program will work without problems even if we don't type **`getSquareFunc`**. If we don't type the name, the function will become **anonymous**.
 
-When we declare a variable in the body of a function (using the keyword **`let`** or **`const`**)
-we call it **local** variable for the function. The scope in which it exists and can be used is from the row it is defined to the end of the closing bracket **`}`** of the function. That scope is called **variable scope**.
+When we declare a variable in the body of a function (using the keyword **`let`** or **`const`**). We call it  a **local** variable for the function. The scope in which it exists and can be used is from the row it is defined to the end of the closing bracket **`}`** of the function. That scope is called **variable scope**.
 
 ### Function declaration or Function expression
 
@@ -107,7 +106,7 @@ Write a function, that prints empty cash receipt. The function must call another
 
 #### Hints and Guidelines
 
-Our first step is to create a function for **creating title**. We should give it a short descriptive name. For example: **`printReceiptHeader`**. In the body we will write the following code:
+Our first step is to create a function for **creating a title**. We should give it a short descriptive name. For example: **`printReceiptHeader`**. In the body we will write the following code:
 
 ![](assets/chapter-10-images/04.Print-receipt-01.png)
 In a like manner, we will create another two functions **to print the middle part** of the receipt (body) **`printReceiptBody`** and **to print the bottom part** of the receipt (footer **`printReceiptFooter`**.
@@ -116,7 +115,7 @@ After this we will set **one more function*** which will call the other three fu
 
 ![](assets/chapter-10-images/04.Print-receipt-02.png)
 
-In the end we will **invoke** **`printReceipt`** from the global scope of our program:
+In the end, we will **invoke** **`printReceipt`** from the global scope of our program:
 
 ![](assets/chapter-10-images/04.Print-receipt-03.png)
 
@@ -130,7 +129,7 @@ When we are dealing with a given task the function we are using needs **addition
 
 ### Using parameters inside a function
 
-If the function requires **input data**, it is passed inside the **`()`** brackets. The order of the **function parameters** must match the order of the **function arguments** when declaring and invoking the function. Parameters can be **zero, one, or more**. When declaring the parameters we divide them with comma **`,`**.
+If the function requires **input data**, it is passed inside the **`()`** brackets. The order of the **function parameters** must match the order of the **function arguments** when declaring and invoking the function. Parameters can be **zero, one, or more**. When declaring the parameters we divide them with a comma **`,`**.
 
 **Declaring** function **`printNumbers(...)`** and the **list** of **parameters** which the programs need to work correctly will look like this:
 
@@ -140,9 +139,9 @@ After this, we **invoke** the function, and we give it the **corresponding funct
 
 ![](assets/chapter-10-images/05.Method-parameters-02.png)
 
-When **when declaring function parameters** we should check if every parameter has **name**. It's also important when we invoke a function we should always pass **values** in the order that they are declared. In the previous example, the variable **`start`** will be passed to the first element (in our case the number 5). The variable **`end`** will have the next number which is 10.
+When **declaring function parameters** we should check if every parameter has a **name**. It's also important when we invoke a function we should always pass **values** in the order that they are declared. In the previous example, the variable **`start`** will be passed to the first element (in our case the number 5). The variable **`end`** will have the next number which is 10.
 
-It's important to point out that in the programming language **JavaScript** declaring a function with a given **number of parameters** doesn't force us to invoke the function with the **same number of parameters**. We can invoke the function by giving it **more** or **less** parameters than needed and it won't throw an error.
+It's important to point out that in the programming language **JavaScript** declaring a function with a given **number of parameters** doesn't force us to invoke the function with the **same number of parameters**. We can invoke the function by giving it **more** or **fewer** parameters than needed and it won't throw an error.
 
 Let's look at this example:
 
@@ -374,7 +373,7 @@ In the upper example, the variable **`name`**  will get the value "**John Doe**"
 
 #### Objects
 
-This way is very similar to the previous one. The only difference is that we don't just **list** all the values which we want to return, but we give them **names**. **Objects** are extremely important and a big part of **Javascript** language. For not it's enough for us to know that they are declared with curly brackets **`{`** **`}`** and we type the **name** of the value (it's called a key). After the **name**, we type **`:`**  followed by the value. We divide different **key-value** pairs with **`,`**. 
+This way is very similar to the previous one. The only difference is that we don't just **list** all the values which we want to return, but we give them **names**. **Objects** are extremely important and a big part of the **Javascript** language. For not it's enough for us to know that they are declared with curly brackets **`{`** **`}`** and we type the **name** of the value (it's called a key). After the **name**, we type **`:`**  followed by the value. We divide different **key-value** pairs with **`,`**. 
 
 ![](assets/chapter-10-images/15.Return-multiple-values-03.png)
 
@@ -471,7 +470,7 @@ Some examples of **incorrectly** named parameters:
 *   **`LastName`**
 *   **`last_name`**
 
-### Добри практики при работа с функции
+### Good practices for working with functions
 
 We must keep in mind that a function must do **only one** specific **task**. If this can't be achieved, then we must come up with a way to **divide** the functionality into different parts.
 As we have already said the name must be clear and descriptive. Another **good practice** is to **avoid** functions that are longer than our screen. If this happens it's recommended to **split** the function into smaller ones as shown in the example below.
