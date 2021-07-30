@@ -51,25 +51,25 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#0
 You should get **100 points** (completely correct solution).
 
 
-## Code Snippet за for цикъл във Visual Studio Code
+## Code Snippet for a for loop in Visual Studio Code
 
-Докато програмираме, постоянно се налага да пишем цикли, десетки пъти всеки ден. Затова в повечето среди за разработка (IDE) има **шаблони за код** (**code snippets**) за писане на цикли. Един такъв шаблон е **шаблонът за `for` цикъл във Visual Studio Code**. Напишете **`for`** в редактора за JavaScript код във Visual Studio Code и **натиснете един път** [**Tab**]:
+While programming, we often need to use loops, dozens of times a day. That's why in most development environments (IDE) there are **code snippets** for writing loops. An example of such a snippet is the **snippet for a `for` loop in Visual Studio Code**. Write **`for`** in the JavaScript code editor in Visual Studio Code and **hit** [**Tab**]:
 
 ![](assets/chapter-5-1-images/00.For-loop-code-snippet-01.png)
 
- **VS Code** ще разгъне за вас шаблон и ще напише цялостен **`for` цикъл**:
+ **VS Code** will open a snippet and write a complete **`for` loop**:
 
 ![](assets/chapter-5-1-images/00.For-loop-code-snippet-02.png)
 
-**Опитайте сами**, за да усвоите умението да ползвате шаблона за код за **`for` цикъл** във Visual Studio Code.
+**Try it yourself**, so you can master the skill of using the code snippet for **`for` loops** in Visual Studio Code.
 
-### Problem: числа до 1000, завършващи на 7
+### Problem: Numbers up to 1000, ending in 7
 
-Да се напише програма, която намира всички числа в интервала [**1 … 1000**], които завършват на 7. 
+Write a program that finds all numbers ending in 7 in the range [**1 … 1000**]. 
 
 #### Hints and pointers
 
-Задачата можем да решим като комбинираме **`for` цикъл** за преминаваме през числата от 1 до 1000 и **проверка** за всяко число дали завършва на 7. Има и други решения, разбира се, но нека решим задачата чрез **завъртане на цикъл + проверка**:
+We can solve this problem by combining a **`for` loop** that loops through the numbers from 1 to 1000 and a **conditional statement** that checks if the number ends in 7. Of course, there are other options, too, but let's solve the problem using a **for loop + conditional statement**:
 
 ![](assets/chapter-5-1-images/02.Numbers-ending-in-7-01.png)
 
@@ -77,17 +77,17 @@ You should get **100 points** (completely correct solution).
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#1](https://judge.softuni.bg/Contests/Practice/Index/933#1).
 
-### Problem: всички латински букви
+### Problem: All Latin Letters
 
-Да се напише програма, която отпечатва буквите от латинската азбука: **a, b, c, …, z**.
+Write a program that prints the letters from the alphabet: **a, b, c, …, z**.
 
 #### Hints and pointers
 
-Може да решим задачата като завъртим **`for` цикъл**, който преминава последователно през кодовете на всички букви от латинската азбука, като съобразим, че кодът (поредният номер в [Unicode номерацията на буквите и символите](https://unicode-table.com/en/)\) на ‘`a`’ е 97, кодът на ‘`b`’ е 98 и т.н., а кодът на ‘`z`’ е 122. Преминаването от номер на буква към самата буква става с функцията `String.fromCharCode(x)`. Ето примерна реализация:
+We can solve this problem using a **`for` loop**, that loops throug all letters' code numbers. Keep in mind that the code of the letter (the serial number in the [Unicode list of letters and characters](https://unicode-table.com/en/)\) ‘`a`’ is 97, the code of the letter ‘`b`’ is 98 and so on, and the code of the letter ‘`z`’ is 122. The transition from the number of the character to the letter itself is done with the help of the function `String.fromCharCode(x)`. Here's the example:
 
 ![](assets/chapter-5-1-images/03.Latin-letters-01.png)
 
-Ако искаме да направим кода с една идея по-четим, можем да го напишем така:
+If we want to make the code easier to read, we can write the following:
 
 ![](/assets/latin-letters-better.png)
 
@@ -95,17 +95,17 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#1
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#2](https://judge.softuni.bg/Contests/Practice/Index/933#2).
 
-### Problem: сумиране на числа
+### Problem: Sum Numbers
 
-Да се напише програма, която **въвежда `n` цели числа и ги сумира**.
+Write a program that **sums `n` given integer numbers**.
 
-* От първия ред на входа се въвежда броят числа **`n`**.
-* От следващите **`n`** реда се въвежда по едно число.
-* Числата се сумират и накрая се отпечатва резултатът.
+* The first line of the input holds the number of integers **`n`**.
+* Each of the following **`n`** lines holds a number to sum.
+* Sum up the numbers and finally print the sum.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | --- |
 | 2<br>10<br>20 | 30 |
 | 3<br>-10<br>-20<br>-30 | -60 |
@@ -116,12 +116,12 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#2
 #### Hints and pointers
 
 Можем да решим задачата за сумиране на числа по следния начин:
- - Четем входното число **`n`**.
- - Започваме първоначално със сума **`sum = 0`**.
- - Въртим цикъл от 1 до **`args.length`**. На всяка стъпка от цикъла четем число **`args[i]`** и го добавяме към сумата **`sum`**.
- - Накрая отпечатваме получената сума **`sum`**.
+ - Read the input number **`n`**.
+ - We start with a sum that initially equals zero **`sum = 0`**.
+ - We run a loop from 1 to **`args.length`**. On each step of the loop we read the number **`args[i]`** and add it to the sum **`sum`**.
+ - Finally, we print the calculated sum **`sum`**.
  
-Ето и сорс кода на решението:
+Here's the source code for the solution:
 
 ![](assets/chapter-5-1-images/04.Sum-numbers-01.png)
 
