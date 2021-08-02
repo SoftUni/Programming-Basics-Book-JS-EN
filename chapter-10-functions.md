@@ -67,12 +67,12 @@ When we declare a variable in the body of a function (using the keyword **`let`*
 
 ### Function declaration or Function expression
 
-The difference between **Function declaration** and **Function expression** is very simple. All functions declared by **function declaration** are loaded in the memory of a program before it is started. However when we are using **function expression** the program will know and run the function only when it has come to it.
+The difference between **Function declaration** and **Function expression** is very simple. All functions declared by **function declaration** are loaded in the memory of a program before it is started. However, when we are using **function expression** the program will know and run the function only when it has come to it.
 
 In theory, this means that we can **call a function** that is declared with **function declaration** even before it was declared in the previous rows. If we try to use **function expression** the program will **throw an error** that the function is not declared yet.
 
 ## Invoking a function
-Invoking a function is the **start of execution of the code** that is located inside the body of a function. We call it by typing the **name** of the function followed by **`()`** and **`;`** to end the row. Here is an example:
+Invoking a function is a **start of the execution of a code** that is located inside the body of a function. We call it by typing the **name** of the function followed by **`()`** and **`;`** to end the row. Here is an example:
 
 ![](assets/chapter-10-images/03.Invoking-methods-01.png)
 
@@ -261,7 +261,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#3
 
 ## Return result from a function
 
-Up to this point, we have viewed functions that do a specific task. For example printing a text, number or a figure on the console. There is another type of function that can **return** a **result** from their task. We can return the result of multiplication of two numbers. We will look at this type of function in this part.
+Up to this point, we have viewed functions that do a specific task. For example printing a text, number or a figure on the console. There is another type of function that can **return** a **result** from their task. We can return a result of the multiplication of two numbers. We will look at this type of function in this part.
 
 ### Operator return
 To get a result from a function we use the operator **`return`**. He must be **used inside the body** of a function. The **`return`** will tell the program to **stop the execution** of the function and **return** a corresponding value. This value is defined after the **`return`** word. 
@@ -371,7 +371,7 @@ In the upper example, the variable **`name`**  will get the value "**John Doe**"
 
 #### Objects
 
-This way is very similar to the previous one. The only difference is that we don't just **list** all the values which we want to return. We give them **names**. **Objects** are extremely important and a big part of the **Javascript** language. For now it's enough for us to know that they are declared with curly brackets **`{`** **`}`** and we type the **name** of the value (it's called a key). After the **name**, we type **`:`**  followed by a value. We divide different **key-value** pairs with **`,`**. 
+This way is very similar to the previous one. The only difference is that we don't just **list** all the values which we want to return. We give them **names**. **Objects** are extremely important and a big part of the **Javascript** language. For now, it's enough for us to know that they are declared with curly brackets **`{`** **`}`** and we type the **name** of the value (it's called a key). After the **name**, we type **`:`**  followed by a value. We divide different **key-value** pairs with **`,`**. 
 
 ![](assets/chapter-10-images/15.Return-multiple-values-03.png)
 
@@ -586,7 +586,7 @@ Write function **`findNthDigit(number, index)`** which gets number and index the
 
 #### Hints and Guidelines
 
-To perform the algorithm we will use a **`while`** loop. While the number isn't 0 we will check if the index matches our input value. If it matches we will return the number of the index (**`number % 10`**). If it doesn't match anything we will remove the last digit of the number **`number = number / 10`**). We must follow which digit we check in the conditional statement (starting from left to right from 1). When we find the digit we will return the index.
+To perform the algorithm we will use a **`while`** loop. While the number isn't 0 we will check if the index matches our input value. If it matches we will return the number of the index (**`number % 10`**). If it doesn't match anything we will remove the last digit of the number (**`number = number / 10`**). We must follow which digit we check in the conditional statement (starting from left to right from 1). When we find the digit we will return the index.
 
 #### Testing in the Judge System
 
@@ -677,7 +677,7 @@ Write a function **`letterize(number)`**, which reads an integer and prints it i
 
 |Input|Output|Input|Output|
 |---|---|---|---|
-|4<br>311<br>418<br>509<br>-9945|three-hundred and eleven<br>four-hundred and eighteen<br>five-hundred and nine<br>too small|3<br>500<br>123<br>9|five-hundred<br>one-hundred and twenty three<br>nine|
+|4<br>311<br>418<br>509<br>-9945|three-hundred and eleven<br>four-hundred and eighteen<br>five-hundred and nine<br>too small|3<br>500<br>123<br>9|five-hundred<br>one-hundred and twenty-three<br>nine|
 
 #### Hints and Guidelines
 
