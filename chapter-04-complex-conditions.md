@@ -307,39 +307,39 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#6
 
 ### Example: Trade Fees
 
-Фирма дава следните **комисионни** на търговците си според **града**, в който работят и **обема на продажбите s**:
+A company is giving the following **commissions** to its traders according to the **city**, in which they are working and the  **volume of sales s**:
 
-|Град|0 <= s <= 500|500 < s <= 1000|1000 < s <= 10000|s > 10000|
+|City|0 <= s <= 500|500 < s <= 1000|1000 < s <= 10000|s > 10000|
 |:----:|:----:|:----:|:----:|:----:|
 |Sofia<br>Varna<br>Plovdiv|5%<br>4.5%<br>5.5%|7%<br>7.5%<br>8%|8%<br>10%<br>12%|12%<br>13%<br>14.5%|
 
-Напишете програма, която чете име на **град** (стринг) и обем на **продажбите** (десетично число) и изчислява размера на  комисионната. Резултатът да се изведе закръглен с **2 десетични цифри след десетичния знак**. При **невалиден град или обем на продажбите** (отрицателно число) да се отпечата "**error**".
+Write a program that reads the name of a **city** (string) and the volume of **sales** (decimal number) and calculates the rate of the commision fee.The result has to be shown rounded **up to 2 digits after the decimal point**. When there is an **invalid city or volume of sales** (a negative number), print "**error**".
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |-----|-----|-----|-----|-----|-----|
 |Sofia<br>1500|120.00|Plovdiv<br>499.99|27.50|Kaspichan<br>-50|error|
 
-#### Решение
+#### Solution
 
-При прочитането на входа можем да обърнем града в малки букви (с метода **`.toLowerCase()`**). Първоначално задаваме комисионната да е **`-1`**. Тя ще бъде променена, ако градът и ценовият диапазон бъдат намерени в таблицата с комисионните. За да изчислим комисионната според града и обема на продажбите се нуждаем от няколко вложени **`if` проверки**, както е в примерния код по-долу:
+When reading the input, we could convert the city into small letters (with the method **`.toLowerCase()`**). Initially we set the commission fee to **`-1`**. It will be changed, if the city and the price range are found in the table of commissions. To calculate the commission according to the city and volume of sales, we need a few nested **`if` statements**, as in the sample code below:
 
 ![](assets/chapter-4-1-images/08.Trade-comissions-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#7](https://judge.softuni.bg/Contests/Practice/Index/931#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#7](https://judge.softuni.bg/Contests/Practice/Index/931#7).
 
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Добра практика</b> е да използваме <b>блокове</b>, които <b>заграждаме</b> с къдрави скоби <b><code>{ }</code></b> след <b><code>if</code></b> и <b><code>else</code></b>. Също така, препоръчително e при писане да <b>отместваме</b> кода <b>след <code>if</code> и <code>else</code></b> с една табулация <b>навътре</b>, за да направим кода по-лесно четим.</td>
+<td><b>IT is a good practice</b> to use <b>blocks</b>, that are <b>enclosed</b> with curly braces <b><code>{ }</code></b> after <b><code>if</code></b> and <b><code>else</code></b>. Also, it is recomended during writing to <b>move aside</b> the code <b>after <code>if</code> and <code>else</code></b> with a single tabulation <b>inward</b>, in order to make the code more easily readable.</td>
 </tr></table>
 
 
-## Условна конструкция switch-case
+## Switch-Case Conditional Statements
 
-Конструкцията **`switch-case`** работи като поредица **`if-else`** блокове. Когато работата на програмата ни зависи от стойността на **една променлива**, вместо да правим последователни проверки с **`if-else`** блокове, можем да **използваме** условната конструкция **`switch-case`**. Тя се използва за **избор измежду списък с възможности**. Конструкцията сравнява дадена стойност с определени константи и в зависимост от резултата предприема действие.
+The **`switch-case`**  construction works as a sequence of **`if-else`** blocks. Когато работата на програмата ни зависи от стойността на **една променлива**, вместо да правим последователни проверки с **`if-else`** блокове, можем да **използваме** условната конструкция **`switch-case`**. Тя се използва за **избор измежду списък с възможности**. Конструкцията сравнява дадена стойност с определени константи и в зависимост от резултата предприема действие.
 
 **Променливата**, която искаме да **сравняваме**, поставяме в **скобите след оператора `switch`** и се нарича "**селектор**". Тук **типът трябва да е сравним** (числа, стрингове). **Последователно** започва **сравняването** с всяка една **стойност**, която **се намира** след **`case` етикетите**. При съвпадение започва изпълнението на кода от съответното място и продължава, докато стигне оператора **`break`**. При **липса** на **съвпадение**, се изпълнява **`default`** конструкцията, **ако** такава **съществува**.
 
