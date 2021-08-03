@@ -508,39 +508,39 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#1
 
 ### Problem: Volleyball
 
-Влади е студент, живее в София и си ходи от време на време до родния град. Той е много запален по волейбола, но е зает през работните дни и играе **волейбол** само през **уикендите** и в **празничните дни**. Влади играе **в София** всяка **събота**, когато **не е на работа** и **не си пътува до родния град**, както и в **2/3 от празничните дни**. Той пътува до **родния си град h пъти** в годината, където играе волейбол със старите си приятели в **неделя**. Влади **не е на работа 3/4 от уикендите**, в които е в София. Отделно, през **високосните години** Влади играе с **15% повече** волейбол от нормалното. Приемаме, че годината има точно **48 уикенда**, подходящи за волейбол. 
-Напишете програма, която изчислява **колко пъти Влади е играл волейбол** през годината. **Закръглете резултата** надолу до най-близкото цяло число (напр. 2.15 -> 2; 9.95 -> 9).
+Vlady is student,lives in Sofia and goes to his hometown from time to time. He is very keen on volleyball, but he is very busy during weekdays and plays **volleyball** only during **weekends** and on **holidays**. Vlady plays **in Sofia** every **Saturday**, when **he is not working**, and **he is not traveling to his hometown**, and also during **2/3 of the holidays**. He travels to his **hometown h times** a year, where he plays volleyball with his old friends on **Sunday**. Vlady **is not working 3/4 of the weekends**, during which he is in Sofia. Furthermore, during **leap years** Vlady plays **15% more** volleyball than usual. We accept that, the year has exactly **48 weekends**, suitable for volleyball. 
+Write a program, that calculates **how many times Vlady has played volleyball** through the year. **Round the result** down to the nearest integer (e.g. 2.15 -> 2; 9.95 -> 9).
 
-Входните данни се четат от конзолата:
+The input data is read from the console:
 
-* Първият ред съдържа думата “**leap**” (високосна година) или “**normal**” (нормална година с 365 дни).
-* Вторият ред съдържа цялото число **p** – брой празници в годината (които не са събота или неделя).
-* Третият ред съдържа цялото число **h** – брой уикенди, в които Влади си пътува до родния град.
+* The first line contains the word “**leap**” (leap year) or “**normal**” (normal year with 365 days).
+* The second line contains the integer **p** – the count of holidays in the year (which are not Saturday or Sunday).
+* The third line contains the integer **h** – the count of weekends, in which Vlady travels to his hometown.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |leap<br>5<br>2|45|normal<br>3<br>2|38|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |normal<br>11<br>6|44|leap<br>0<br>1|41|
 
-#### Насоки и подсказки
+#### Hins and Guidelines
 
-Стандартно прочитаме входните данни от конзолата като за избягване на грешки при въвеждане, обръщаме текста в малки букви с метода **`.toLowerCase()`**. Последователно пресмятаме **уикендите прекарани в София**, **времето за игра в София** и **общото време за игра**. Накрая проверяваме дали годината е **високосна**, правим допълнителни изчисления при необходимост и извеждаме резултата на конзолата, **закръглен надолу** до най-близкото **цяло число** (потърсете **JavaScript** клас с такава функционалност в интернет).
+As usual, we read theinput data from the console and, to avoid making mistakes, we convert the text into small letters with the method **`.toLowerCase()`**. Consequently, we calculate **the weekend spent in Sofia**, **The time for playing in Sofia** and **and the total playtime**. At last, we check whether the year is **leap**, we make additional calculation when necessary and we print the result on the console, **rounded down** to the nearest **integer** (look for a **JavaScript** class with such functionality).
 
-Примерен код (части от кода са замъглени с цел да се стимулира самостоятелно мислене и решение):
+A sample code (parts of the code are blurred on purpose to stimulate independent thinking and solving skills):
 
 ![](assets/chapter-4-1-images/12.Volleyball-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#11](https://judge.softuni.bg/Contests/Practice/Index/931#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#11](https://judge.softuni.bg/Contests/Practice/Index/931#11).
 
 
-### Задача: * точка във фигурата
+### Problem: * Point in the Figure
 
 Фигура се състои от **6 блокчета с размер h \* h**, разположени като на фигурата. Долният ляв ъгъл на сградата е на позиция {0, 0}. Горният десен ъгъл на фигурата е на позиция {**2\*h**, **4\*h**}. На фигурата координатите са дадени при **h = 2**:
 
