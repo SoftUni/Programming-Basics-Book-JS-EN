@@ -1,64 +1,64 @@
-# Глава 6.1. Вложени цикли
+# Chapter 6.1. Nested Loops
 
-В настоящата глава ще разгледаме **вложените цикли** и как да използваме **`for`** цикли за **чертане** на различни **фигурки на конзолата**, които се състоят от символи и знаци, разположени в редове и колони на конзолата. Ще използваме **единични** и **вложени цикли** (цикли един в друг), **изчисления** и **проверки**, за да отпечатваме на конзолата прости и не чак толкова прости фигурки по зададени размери.
+In the current chapter we will be looking at **nested loops** and how to use `for` loops to **draw** various **figures on the console**, that contain symbols and signs, ordered in rows and columns on the console. We will use **single** and **nested loops** (loops that stay in other loops), **calculations** and **checks**, in order to print on the console simple and not so simple figures by specified sizes.
 
 
-## Видео
+## Video: Chapter Overview
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=1v1yIZV7p4k&feature=youtu.be">https://www.youtube.com/watch?v=1v1yIZV7p4k&feature=youtu.be</a>.
+  Watch video-lesson of this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=1v1yIZV7p4k&feature=youtu.be">https://www.youtube.com/watch?v=1v1yIZV7p4k&feature=youtu.be</a>.
 </div>
 
 
-### Пример: правоъгълник от 10 x 10 звездички
+### Example: Rectangle Made of 10 x 10 Stars
 
-Да се начертае в конзолата правоъгълник от **10 x 10** звездички.
+Print on the console a rectangle made out of **10 x 10** stars.
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
-|(няма)|<code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code>|
+|(None)|<code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
 ![](/assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
-Как работи примерът? Инициализира се **цикъл с променлива `i = 1`**, която се увеличава на всяка итерация на цикъла, докато е **по-малка или равна на 10** (**`i <= 10`**). Така кодът в тялото на цикъла се изпълнява **10 пъти**. В тялото на цикъла се печата на нов ред в конзолата **`"*".repeat(10)`**, което създава низ от 10 звездички.
+How does the example work? We initialize **a loop with a variable `i = 1`**, which increases with each iteration of the loop, while it is **less or equal to 10**. This way the code in the body of the loop is executed **10 times**.In the body of the loop we print a new line on the console **`"*".repeat(10)`**, which creates a string of 10 stars.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#0](https://judge.softuni.bg/Contests/Practice/Index/935#0).
+Test your solution here:: [https://judge.softuni.bg/Contests/Practice/Index/935#0](https://judge.softuni.bg/Contests/Practice/Index/935#0).
 
 
-### Пример: правоъгълник от N x N звездички
+###Example: Rectangle Made of N x N Stars
 
-Да се напише програма, която въвежда цяло положително число **n** и печата на конзолата **правоъгълник от N x N звездички**.
+Write a program that gets a positive integer **n** and prints on the console **a rectangle made out of N x N stars**.
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2|<code>\*\*</code><br><code>\*\*</code>|3|<code>\*\*\*</code><br><code>\*\*\*</code><br><code>\*\*\*</code>|4|<code>\*\*\*\*</code><br><code>\*\*\*\*</code><br><code>\*\*\*\*</code><br><code>\*\*\*\*</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
 ![](/assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.png)
 
-#### Забележка
+#### Note
 
-В някои уеб браузъри еднаквите резултати в конзолата се сливат в един. Препоръчително е да използвате **NodeJS** за примерите. Ако все пак стигнете до този случай, можете да добавите знак за нов ред **`\n`** на края на метода за отпечатване: **`console.log("*".repeat(10) + "\n");`**
+On some web browsers the same results on the console merge with one another. It's advised to use **NodeJS** for the examples. If you still get to this case you can use the symbol **`\n`** in the end of the printing function **`console.log("*".repeat(10) + "\n");`**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#1](https://judge.softuni.bg/Contests/Practice/Index/935#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#1](https://judge.softuni.bg/Contests/Practice/Index/935#1).
 
 
-## Вложени цикли
+## Nested loops
 
-Вложените цикли представляват конструкция, при която **в тялото на един цикъл** (външен) **се изпълнява друг цикъл** (вътрешен). За всяко завъртане на външния цикъл, вътрешният се извърта **отново**. Това се случва по следния начин:
+A **nested loop** is a construction where **in the body of one loop** (outer one) **stays another loop** (inner one). In each iteration of the outer loop, **the whole** inner loop is executed. This happens in the following way:
 
- - При стартиране на изпълнение на вложени цикли първо **стартира външният цикъл**: извършва се **инициализация** на неговата управляваща променлива и след проверка за край на цикъла, се изпълнява кодът в тялото му.
- - След това се **изпълнява вътрешният цикъл**. Извършва се инициализация на началната стойност на управляващата му променлива, прави се проверка за край на цикъла и се изпълнява кодът в тялото му.
- - При достигане на зададената стойност за **край на вътрешния цикъл**, програмата се връща една стъпка нагоре и се продължава започналото изпълнение предходния (външния) цикъл. Променя се с една стъпка управляващата променлива за външния цикъл, проверява се дали условието за край е удовлетворено и **започва ново изпълнение на вложения (вътрешния) цикъл**.
- - Това се повтаря докато променливата на външния цикъл достигне условието за **край на цикъла**.
+ - When nested loops start executing, **the outer loop starts** first: the controlling variable is **initialized** and after a check for ending the loop the code in its body is executed.
+ - After that, **the inner loop is executed**. The controlling variables start position is initialized, a check for ending the loop is made and the code in its body is executed.
+ - When reaching the specified value for **ending the loop**, the program goes back one step up and continues executing the previous \(outer\) loop. The controlling variable of the outer loop changes with one step, a check is made to see if the condition for ending the loop is met and **a new execution of the nested \(inner\) loop is started**.
+ - This is repeated until the variable of the outer loop meets the condition to **end the loop**.
 
-Ето и един **пример**, с който нагледно да илюстрираме вложените цикли. Целта е да се отпечата отново правоъгълник от **`n * n`** звездички, като за всеки ред се извърта цикъл от **1** до **`n`**, а за всяка колона се извърта вложен цикъл от **1** до **`n`**:
+Here is an **example** that illustrates nested loops. The aim is again to print a rectangle made of `n` \*_ _`n` stars, in which for each row a loop iterates from **1** to `n`, and for each column a nested loop is executed from **1** to \*`n`:
 
 ```javascript
 function drawSquare(n) {
@@ -74,77 +74,78 @@ function drawSquare(n) {
 }
 ```
 
-Да разгледаме примера по-горе. След инициализацията на **първия (външен) цикъл**, започва да се изпълнява неговото **тяло**, което съдържа **втория (вложен) цикъл**. Той сам по себе запазва низ от **`n`** на брой звездички, в променлива, и след това ги печата на един ред. След като **вътрешният** цикъл **приключи** изпълнението си при първата итерация на външния, то след това **външният ще продължи**. **След това** ще се извърши **обновяване** на променливата на **първия** цикъл и отново ще бъде изпълнен целият **втори** цикъл. Вътрешният цикъл ще се изпълни толкова пъти, колкото се изпълнява тялото на външния цикъл, в случая **`n`** пъти.
+Let's look at the example above. After initializing **the first \(outer\) loop**, its **body**, which contains **the second \(nested\) loop** starts executing. By itself it prints on one row `n` number of stars. After **the inner** loop **finishes** executing at the first iteration of the outer one, **the first loop will continue**, i.e. it will print an empty row on the console. **After that**, the variable of **the first** loop will be **renewed** and the whole **second** loop will be executed again. The inner loop will execute as many times as the body of the outer loop executes, in this case `n` times.
 
-### Пример: квадрат от звездички
+### Example: Square Made of Stars
 
-Да се начертае на конзолата квадрат от **N x N** звездички:
+Print on the console a square made of **N x N** stars (use a space between the stars, staying on the same line):
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2|<code>\* \*</code><br><code>\* \*</code>|3|<code>\* \* \*</code><br><code>\* \* \*</code><br><code>\* \* \*</code>|4|<code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Задачата е аналогична на предходната. Разликата тук е, че в тази трябва да обмислим как да печатаме интервал след звездичките по такъв начин, че да няма излишни интервали в началото или края:
+The problem is similar to the last one. The difference here is that we need to figure out how to add a whitespace after the stars so that there aren't any excess white spaces in the beginning or the end.
 
 ![](/assets/chapter-6-1-images/03.Square-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#2](https://judge.softuni.bg/Contests/Practice/Index/935#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#2](https://judge.softuni.bg/Contests/Practice/Index/935#2).
 
 
-### Пример: триъгълник от долари
+### Example: Triangle Made of Dollars
 
-Да се напише програма, която въвежда число **n** и печата **триъгълник от долари**.
+Write a program that takes an integer **n** and prints **a triangle made of dollars** of size **n**.
 
-|Вход|Изход|Вход|Изход|Вход|Изход
+|Input|Output|Input|Output|Input|Output
 |---|---|---|---|---|---|
 |3|<code>$</code><br><code>$ $</code><br><code>$ $ $</code>|4|<code>$</code><br><code>$ $</code><br><code>$ $ $</code><br><code>$ $ $ $</code>|5|<code>$</code><br><code>$ $</code><br><code>$ $ $</code><br><code>$ $ $ $</code><br><code>$ $ $ $ $</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Задачата е **сходна** с тези за рисуване на **правоъгълник** и **квадрат**. Отново ще използваме **вложени цикли**, но тук има **уловка**. Разликата е в това, че **броя на колонките**, които трябва да разпечатаме, зависят от **реда**, на който се намираме, а не от входното число **`n`**. От примерните входни и изходни данни забелязваме, че **броят на доларите зависи** от това на кой **ред** се намираме към момента на печатането, т.е. 1 долар означава първи ред, 3 долара означават трети ред и т.н. Нека разгледаме долния пример по-подробно. Виждаме, че **променливата** на **вложения** цикъл е обвързана с променливата на **външния**. По този начин нашата програма печата желания триъгълник:
+The problem is **similar** to those for drawing **a rectangle** and **square**. Once again, we will use **nested loops**, but there is **a  catch** here. The difference is that **the number of columns** that we need to print depends on **the row**, on which we are and not on the input number **`n`**. From the example input and output data we see that **the count of dollars depends** on which **row** we are on at the moment of the printing, i.e. 1 dollar means first row, 3 dollars mean third row and so on. Let's see the following example in detail. We see that **the variable** of **the nested** loop is connected with the variable of **the outer** one. This way our program prints the desired triangle.
 
 ![](/assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#3](https://judge.softuni.bg/Contests/Practice/Index/935#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#3](https://judge.softuni.bg/Contests/Practice/Index/935#3).
 
 
-### Пример: квадратна рамка
+### Example: Square Frame
 
-Да се напише програма, която въвежда цяло положително число **n** и чертае на конзолата **квадратна рамка** с размер **n \* n**.
+Write a program that takes a positive integer **n** and draws on the console **a square frame** with a size of **n \* n**.
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>+ - +</code><br><code>&#124; - &#124;</code><br><code>+ - +</code>|4|<code>+ - - +</code><br><code>&#124; - - &#124;</code><br><code>&#124; - - &#124;</code><br><code>+ - - +</code>|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |5|<code>+ - - - +</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>+ - - - +</code>|6|<code>+ - - - - +</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>+ - - - - +</code>|
 
 #### Насоки и подсказки
 
-Можем да решим задачата по следния начин:
-* Отпечатваме **горната част**: първо знак **`+`**, после **n-2** пъти **`-`** и накрая знак **`+`**.
-* Отпечатваме **средната част**: печатаме **n-2** реда като първо печатаме знак **`|`**, после **n-2** пъти **`-`** и накрая отново знак **`|`**. Това можем да го постигнем с вложени цикли.
-* Отпечатваме **долната част**: първо **`+`**, после **n-2** пъти **`-`** и накрая **`+`**.
+We can solve the problem in the following way:
+* We read from the console the number **`n`**.
+* We print **the upper part**: first a **`+`** sign, then **n-2** times **`-`** and in the end a  **`+`** sign.
+* We print **the middle part**: we print **n-2** rows, as we first print a **`|`** sign, then **n-2** times **`-`** and in the end again a **`|`** sign. We can do this with nested loops.
+* We print **the lower part**: first a **`+`** sign, then **n-2** times **`-`** and in the end a  **`+`** sign.
 
-Ето и примерна имплементация на описаната идея, с вложени цикли:
+Here is an example implementation of the above idea with nested loops:
 
 ![](/assets/chapter-6-1-images/05.Square-frame-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#4](https://judge.softuni.bg/Contests/Practice/Index/935#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#4](https://judge.softuni.bg/Contests/Practice/Index/935#4).
 
 
-### Пример: ромбче от звездички
+### Problem: Rhombus Made of Stars
 
-Да се напише програма, която въвежда цяло положително число **n** и печата **ромбче от звездички** с размер **n**.
+Write a program that takes a positive integer **n** and prints **a rhombus made of stars** with size **n**.
 
 |Вход|Изход|Вход|Изход|
 |---|---|---|---|
