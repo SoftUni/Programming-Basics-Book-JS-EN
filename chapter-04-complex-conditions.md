@@ -233,31 +233,31 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#4
 Like the other operators in programming, the operators **`&&`** and **`||`** have a priority, and in this case the operator **`&&`** have a higher precedence than the operator  **`||`**. The operator **`()`** serves to **change the priority of the operator** and is calculated first, just like in math. The use of parentheses also gives the code better readability and is considered as a good practice .
 
 
-## По-сложни логически условия
+## More complex logical conditions
 
-Понякога условията може да са доста сложни, така че да изискват дълъг булев израз или поредица от проверки. Да разгледаме няколко такива примера.
+Sometimes the conditions may be very complex, so they can require a long boolean expression or a sequence of conditions. Let's take a look at a few examples.
 
-### Пример: точка върху страна на правоъгълник
+### Example: Point on a Rectangle Border
 
-Да се напише програма, която проверява дали **точка {x, y}** се намира **върху някоя от страните на правоъгълник {x1, y1} - {x2, y2}**. Входните данни се четат от конзолата и се състоят от 6 реда: десетичните числа **x1**, **y1**, **x2**, **y2**, **x** и **y** (като се гарантира, че **x1 < x2** и **y1 < y2**). Да се отпечата "**Border**" (точката лежи на някоя от страните) или "**Inside / Outside**" (в противен случай).
+Write a program that checks whether a **point {x, y}** is placed **onto any of the sides of a rectangle {x1, y1} - {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x** и **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**). Print "**Border**" (if the point lies on any of the sides) or "**Inside / Outside**" (in the opposite case).
 
 ![](assets/chapter-4-1-images/06.Point-on-rectangle-border-01.png)
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |2<br>-3<br>12<br>3<br>12<br>-1|Border|2<br>-3<br>12<br>3<br>8<br>-1|Inside / Outside|
 
-#### Решение
+#### Solution
 
-Точка лежи върху някоя от страните на правоъгълник, ако:
-* **x** съвпада с **x1** или **x2** и същевременно **y** е между **y1** и **y2** или
-* **y** съвпада с **y1** или **y2** и същевременно **x** е между **x1** и **x2**.
+The point lies on any of the sides of the rectangle, if:
+* **x** coincides with **x1** or **x2** and at the same time **y** is between **y1** and **y2** or
+* **y** coincides with **y1** or **y2** and at the same time **x** is between **x1** and **x2**.
 
 ![](assets/chapter-4-1-images/06.Point-on-rectangle-border-02.png)
 
-Предходната проверка може да се опрости по този начин:
+The previous evaluation might be simplified in the following may:
 
 ![](assets/chapter-4-1-images/06.Point-on-rectangle-border-03.png)
 
