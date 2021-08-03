@@ -42,7 +42,7 @@ Write a program that gets a positive integer **n** and prints on the console **a
 
 #### Note
 
-On some web browsers the same results on the console merge with one another. It's advised to use **NodeJS** for the examples. If you still get to this case you can use the symbol **`\n`** in the end of the printing function **`console.log("*".repeat(10) + "\n");`**.
+On some web browsers the same results on the console merge with one another. It's advised to use **NodeJS** for the examples. If you still get to this case you can use the symbol **`\n`** in the end of the printing method **`console.log("*".repeat(10) + "\n");`**.
 
 #### Testing in the Judge System
 
@@ -147,260 +147,261 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#4
 
 Write a program that takes a positive integer **n** and prints **a rhombus made of stars** with size **n**.
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |1|<code>\*</code>|2|<code>&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;</code><br>|
 
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>&nbsp;&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;\*&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;&nbsp;</code>|4|<code>&nbsp;&nbsp;&nbsp;\*&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;\*&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*&nbsp;\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;\*&nbsp;\*&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;\*&nbsp;&nbsp;&nbsp;</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За решението на тази задача е нужно да **разделим** мислено **ромба** на **две части** - **горна**, която включва **и** средния ред, и **долна**. За **разпечатването** на всяка една част ще използваме **два** отделни цикъла, като оставяме на читателя сам да намери зависимостта между **`n`** и променливите на циклите. За първия цикъл може да използваме следните насоки:
+To solve this problem, we need to mentally **divide** **the rhombus** into **two parts** – **upper** one, which **also** includes the middle row, and **lower** one. For **the printing** of each part we will use **two** separate loops, as we leave the reader to decide the dependency between **`n`** and the variables of the loops. For the first loop we can use the following guidelines:
 
-* Отпечатваме **`n - row`** интервала.
-* Отпечатваме **`*`**.
-* Отпечатваме **`row - 1`** пъти **`*`**.
+* We print **`n-row`** white spaces.
+* We print **`*`**.
+* We print **`row-1`** times **`*`**.
 
-**Втората** (долна) част ще разпечатаме по **аналогичен** начин, което отново оставяме на читателя да се опита да направи сам:
+**The second** (lower) part will be printed **similarly**, which again we leave to the reader to do.
 
 ![](/assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#5](https://judge.softuni.bg/Contests/Practice/Index/935#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#5](https://judge.softuni.bg/Contests/Practice/Index/935#5).
 
 
-### Пример: коледна елха
+### Problem: Christmas Tree
 
-Да се напише програма, която въвежда число **n** (1 ≤ n ≤ 100) и печата коледна елха с височина **n+1**.
+Write a program that takes a number **n** (1 ≤ n ≤ 100) and prints a Christmas tree with height of **n+1**.
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |1|<code>&nbsp;&nbsp;&#124;&nbsp;&nbsp;</code><br><code>\*&nbsp;&#124;&nbsp;\*</code>|2|<code>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;</code><br><code>\*\*&nbsp;&#124;&nbsp;\*\*</code>|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>&nbsp;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*\*&nbsp;&#124;&nbsp;\*\*&nbsp;</code><br><code>\*\*\*&nbsp;&#124;&nbsp;\*\*\*</code>|4|<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*\*&nbsp;&#124;&nbsp;\*\*&nbsp;&nbsp;</code><br><code>&nbsp;\*\*\*&nbsp;&#124;&nbsp;\*\*\*&nbsp;</code><br><code>\*\*\*\*&nbsp;&#124;&nbsp;\*\*\*\*</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-От примерите виждаме, че **елхата** може да бъде **разделена** на **три** логически части. **Първата** част са **звездичките и празните места** преди и след тях, **средната** част е **`(интервал)|(интервал) `**, а **последната** част са отново **звездички**, като този път **празни** места има само **преди** тях. Разпечатването може да бъде постигнато само с **един цикъл** и метода **`.repeat(n)`**, който ще използваме един път за звездичките и един път за интервалите: 
+From the examples we see that **the Christmas tree** can be **divided** into **three** logical parts. **The first** part is **the stars and the white spaces before and after them**, **the middle** part is **` | `**, and **the last** part is again **stars**, but this time there are **white spaces** only **before** them. The printing can be done with only **one loop** and the **`.repeat(n)`** method, which we will use once for the stars and once for the white spaces:
 
 ![](/assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#6](https://judge.softuni.bg/Contests/Practice/Index/935#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#6](https://judge.softuni.bg/Contests/Practice/Index/935#6).
 
 
-## Чертане на по-сложни фигури
+## Exercises: Drawing more complex figures
 
-Да разгледаме как можем да чертаем на конзолата фигури с по-сложна логика на конструиране, за които трябва повече да помислим преди да почнем да пишем.
+Let's look at how to **draw figures** using **nested loops** with more complex logic, for which we need to think more before coding.
 
-### Пример: слънчеви очила
-Да се напише програма, която въвежда цяло число **n** (3 ≤ n ≤ 100) и печата слънчеви очила с размер **5\*n x n** като в примерите:
+### Problem: Sunglasses
+Write a program that takes an integer **n** (3 ≤ n ≤ 100) and prints sunglasses with size of **5\*n x n** as found in the examples:
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*</code><br><code>\*////\*&#124;&#124;&#124;\*////\*</code><br><code>\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*</code>|4|<code>\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*</code><br><code>\*//////\*&#124;&#124;&#124;&#124;\*//////\*</code><br><code>\*//////\*&nbsp;&nbsp;&nbsp;&nbsp;\*//////\*</code><br><code>\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*</code><br>|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |5|<code>\*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*\*\*</code><br><code>\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*</code><br><code>\*////////\*&#124;&#124;&#124;&#124;&#124;\*////////\*</code><br><code>\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*</code><br><code>\*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*\*\*</code><br>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-От примерите виждаме, че очилата могат да се разделят на три части – **горна**, **средна** и **долна**. По-долу е част от кода, с който задачата може да се реши. При рисуването на горния и долния ред трябва да се изпечатат **`2 * n`** звездички, **`n`** интервала и **`2 * n`** звездички:
+From the examples we can see that the sunglasses can be divided into **three parts** – upper, middle and lower one. A part of the code with which the problem can be solved is given below. When drawing the upper and lower rows we need to print **`2 * n`** stars, **`n`** white spaces and **`2 * n`** stars:
 
 ![](/assets/chapter-6-1-images/08.Sunglasses-01.png)
 
-При печатането на **средната** част трябва да **проверим** дали редът е **`(n - 1) / 2 - 1`**, тъй като от примерите е видно, че на **този ред** трябва да печатаме **вертикални чертички** вместо интервали. Проблемът с **`(n - 1) / 2 - 1`**, е че може да бъде число с десетичен остатък. Пример за **`n = 6`**: **(6 - 1) / 2 - 1** => **5 / 2 - 1** => **2.5 - 1** => **1.5**. Поради тази причина, трябва да приложим математически метод за премахване на десетичната част - **`Math.floor(...)`**. Методът **`Math.floor(...)`** връща най-голямото цяло число, което е по-малко или равно на подаденото число:
+When drawing **the middle** part, we need to **check** if the row is **`(n-1) / 2 - 1`**, because in the examples we can see that in **this row** we need to print **pipes** instead of white spaces. The problem with **`(n - 1) / 2 - 1`** is that it can be a number with decimal remainder. Because of this we must use mathematical method for removing a decimal remainder - **`Math.floor(...)`**. **`Math.floor(...)`** returns the bigger number, which is smaller or equal to the last number:
 
 ![](/assets/chapter-6-1-images/08.Sunglasses-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#7](https://judge.softuni.bg/Contests/Practice/Index/935#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#7](https://judge.softuni.bg/Contests/Practice/Index/935#7).
 
 
-### Пример: къщичка
+### Problem: House
 
-Да се напише програма, която въвежда число **n** (2 ≤ **n** ≤ 100) и печата **къщичка** с размери **n x n**, точно като в примерите:
+Write a program that takes a number **n** (2 ≤ **n** ≤ 100) and prints **a house** with size **n x n**, just as in the examples:
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2|<code>**</code><br><code>&#124;&#124;</code><br>|3|<code>-\*-</code><br><code>\*\*\*</code><br><code>&#124;\*&#124;</code>|4|<code>-\*\*-</code><br><code>\*\*\*\*</code><br><code>&#124;\*\*&#124;</code><br><code>&#124;\*\*&#124;</code>
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |5|<code>--\*--</code><br><code>-\*\*\*-</code><br><code>\*\*\*\*\*</code><br><code>&#124;\*\*\*&#124;</code><br><code>&#124;\*\*\*&#124;</code>|8|<code>---\*\*---</code><br><code>--\*\*\*\*--</code><br><code>-\*\*\*\*\*\*-</code><br><code>\*\*\*\*\*\*\*\*</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br>|
 
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Разбираме от условието на задачата, че къщата е с размер **`n` x `n`**. Това, което виждаме от примерните вход и изход, е че:
+We understand from the problem explanation that the house is with size of **`n` x `n`**. What we see from the example input and output is that:
 
-* Къщичката е разделена на 2 части: **покрив и основа**. 
+* The house is divided into two parts: **roof and base**. 
 
 ![](assets/old-images/chapter-6-images/09.House-01.png)
 
-* Когато **`n`** е четно число, върхът на къщичката е "тъп".
-* Когато **`n`** е нечетно число, **покривът** е с един ред по-голям от **основата**.
+* When **`n`** is an even number, the point of the house is "dull".
+* When **`n`** is odd, **the roof** is one row larger than the **base**.
 
-##### Покрив
-* Съставен е от **звезди** и **тирета**.
-* В най-високата си част има една или две звезди, спрямо това дали **n** e четно или нечетно, както и тирета.
-* В най-ниската си част има много звезди и малко или никакви долни черти.
-* С всеки един ред по-надолу, **звездите** се увеличават с 2, а **тиретата** намаляват с 2.
+##### The Roof
+* It comprises of **stars** and **dashes**.
+* In the top part there are one or two stars, depending on if **n** is even or odd (also related to the dashes).
+* In the lowest part there are many stars and no dashes.
+* With each lower row, **the stars** increase by 2 and **the dashes** decrease by 2.
 
-##### Основа
-* Дълга е **`n`** на брой реда.
-* Съставена е от **звезди** и **тирета**.
-* Редовете представляват 2 **тирета** - по едно в началото и в края на реда, както и **звезди** между тиретата с дължина на низа **`n - 2`**.  
+##### The Base
+* The height is **`n`** rows.
+* It is made out of **stars** and **pipes**.
+* Each row comprises of 2 **pipes** – one in the beginning and one in the end of the row, and also **stars** between the pipes with string length of **`n - 2`**.  
 
-Подаваме **`n`**, като параметър на нашата функция:
+We gave **`n`** as a parameter to our function:
 
 ![](/assets/chapter-6-1-images/09.House-02.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Много е важно да проверяваме дали са валидни входните данни!</b> В тези задачи не е проблем директно да обръщаме подаденият параметър в <b><code>Number</code></b>, защото изрично е казано, че ще получаваме валидни целочислени числа. Ако обаче правите по-сериозни приложения е добра практика да проверявате данните. Какво ще стане, ако вместо буквата "А", потребителя въведе число?</td>
+<td><b>>It is very important to check if the input data is correct!</b> In these tasks it is not a problem to directly convert the data from the console into <b><code>Number</code></b>type, because it is said that we will be given valid integers. If you are making more complex programs it is a good practice to check the data. What will happen if instead of the character "А" the user inputs a number?</td>
 </tr></table>
 
-За да начертаем **покрива**, записваме колко ще е началният брой **звезди** в променлива **`stars`**:
-* Ако **`n`** е **четно** число, ще са 2 броя.
-* Ако е **нечетно**, ще е 1 брой.
+In order to draw **the roof**, we write down how many **stars** we start with in a variable called **`stars`**:
+* If **`n`** is **an even** number, there will be 2 stars.
+* If it is **odd**, there will be 1.
 
 ![](/assets/chapter-6-1-images/09.House-03.png)
 
-Изчисляваме дължината на **покрива**. Тя е равна на половината от **`n`**. Резултата записваме в променливата **`roofLength`**:
+Calculate the length of **the roof**. It equals half of **`n`**. Write the result in the variable **`roofLength`**.
 
 ![](/assets/chapter-6-1-images/09.House-04.png)
 
-Важно е да се отбележи че, когато **`n`** е нечетно число, дължината на покрива е по-голяма с един ред от тази на **основата**. В езика **JavaScript**, когато два целочислени типа се делят и има остатък, то резултата ще е десетично число. Пример:
+It is important to note that when **`n`** is an odd number, the length of the roof is one row more than that of the **base**. In**JavaScript** language, when you divide two numbers with a remainder, the result will be decimal number
+ Example:
 
 ```javascript
     let result = 3 / 2; // резултат 1.5
 ```
 
-Ако искаме да закръглим нагоре, трябва да използваме метода **`Math.ceil(…)`**: **`let result = Math.ceil(3 / 2);`**. Резултатът от **`3 / 2`** е **`1.5`**. **`Math.ceil(…)`** ще закръгли резултата от делението нагоре. В нашият случай **`1.5`** ще се закръгли на **`2`**. **`parseInt()`** се използва, за да трансформираме входния параметър в тип **`Number`**.
+If we want to round up to the next largest integer. number, we need to use the method **`Math.ceil(…)`**: **`let result = Math.ceil(3 / 2);`**. The result from **`3 / 2`** is **`1.5`**. **`Math.ceil(…)`** will round the number to the next largest integer.In our case **`1.5`**will be rounded to **`2`**. **`parseInt()`** is used to transform the input parameter to type **`Number`**.
 
-След като сме изчислили дължината на покрива, завъртаме цикъл от 0 до **`roofLength`**. На всяка итерация ще:
-* Изчисляваме броя **тирета**, които трябва да изрисуваме. Броят ще е равен на **`(n - stars) / 2`**. Записваме го в променлива **`padding`**:
+After we have calculated the length of the roof, we make a loop from 0 to **`roofLength`**. On each iteration we will:
+* Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - stars) / 2`**. We store it in a variable **`padding`**.
 
 ![](/assets/chapter-6-1-images/09.House-05.png)
 
-* Отпечатваме на конзолата: "**тирета**" (**`padding / 2`** на брой пъти) + "**звезди**" (**`stars`** пъти) + "**тирета**" (**`padding / 2`** пъти):
+* We print on the console: "**тирета**" (**`padding / 2`** times) + "**звезди**" (**`stars`** times) + "**тирета**" (**`padding / 2`** times):
 
 ![](/assets/chapter-6-1-images/09.House-06.png)
 
-* Преди да свърши итерацията на цикъла добавяме 2 към **`stars`** (броя на **звездите**):
+* Before the iteration is over, we add 2 to **`stars`** (the number of **the stars**).
 
 ![](/assets/chapter-6-1-images/09.House-07.png)
 
-След като сме приключили с **покрива**, е време за **основата**. Тя е по-лесна за печатане:
-* Започваме с цикъл от 0 до n (изключено).
-* Отпечатваме на конзолата: **`|`** + **`*`** (**`n - 2`** на брой пъти) + **`|`**.
+After we have finished with the **roof**, it is time for **the base**. It is easier to print:
+* We start with a loop from 0 to n (not inclusive).
+* We print on the console: `|` + `*` (**`n - 2`** times) + `|`.
 
 ![](/assets/chapter-6-1-images/09.House-08.png)
 
-Ако всичко сме написали както трябва, задачата ни е решена.
+If you have written everything as it is here, the problem should be solved.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#8](https://judge.softuni.bg/Contests/Practice/Index/935#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#8](https://judge.softuni.bg/Contests/Practice/Index/935#8).
 
 
-### Пример: диамант
+### Example: Diamond
 
-Да се напише програма, която въвежда цяло число **n** (1 ≤ **n** ≤ 100) и печата диамант с размер **n**, като в следните примери:
+Write a program that takes an integer **n** (1 ≤ **n** ≤ 100) and prints a diamond with size **n**, as in the following examples:
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |1|<code>\*</code><br>|2|<code>\*\*</code>|3|<code>-\*-</code><br><code>\*-\*</code><br><code>-\*-</code>|
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |4|<code>-\*\*-</code><br><code>\*--\*</code><br><code>-\*\*-</code>|5|<code>--\*--</code><br><code>-\*-\*-</code><br><code>\*---\*</code><br><code>-\*-\*-</code><br><code>--\*--</code><br>|6|<code>--\*\*--</code><br><code>-\*--\*-</code><br><code>\*----\*</code><br><code>-\*--\*-</code><br><code>--\*\*--</code><br>|
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |7|<code>---\*---</code><br><code>--\*-\*--</code><br><code>-\*---\*-</code><br><code>\*-----\*</code><br><code>-\*---\*-</code><br><code>--\*-\*--</code><br><code>---\*---</code><br>|8|<code>---\*\*---</code><br><code>--\*--\*--</code><br><code>-\*----\*-</code><br><code>\*------\*</code><br><code>-\*----\*-</code><br><code>--\*--\*--</code><br><code>---\*\*---</code><br>|9|<code>----\*----</code><br><code>---\*-\*---</code><br><code>--\*---\*--</code><br><code>-\*-----\*-</code><br><code>\*-------\*</code><br><code>-\*-----\*-</code><br><code>--\*---\*--</code><br><code>---\*-\*---</code><br><code>----\*----</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Това, което знаем от условието на задачата, е че диамантът е с размер **`n` x `n`**.
+What we know from the problem explanation is that the diamond is with size **`n` x `n`**.
 
-От примерните вход и изход можем да си направим изводи, че всички редове съдържат точно по **`n`** символа и всички редове, с изключение на горните върхове, имат по **2 звезди**. Можем мислено да разделим диаманта на 2 части:
-* **Горна** част. Тя започва от горният връх до средата.
-* **Долна** част. Тя започва от реда след средата до най-долния връх (включително).
+From the example input and output we can conclude that all rows contain exactly **`n`** symbols, and all the rows, with the exception of the top and bottom ones, have **2 stars**. We can mentally divide the diamond into 2 parts:
+* **Upper** part. It starts from the upper tip down to the middle.
+* **Lower** part. It starts from the row below the middle one and goes down to the lower tip (inclusive).
 
-##### Горна част
-* Ако **n** е **нечетно**, то тя започва с **1 звезда**.
-* Ако **n** е **четно**, то тя започва с **2 звезди**.
-* С всеки ред надолу, звездите се отдалечават една от друга.
-* Пространството между, преди и след **звездите** е запълнено с **тирета**.
+##### Upper Part
+* If **n** is an **odd** number, it starts with **1 star**.
+* If **n** is an **even** number, it starts with **2 stars**.
+* With each row down, the stars get further away from each other.
+* The space between, before and after **the stars** is filled up with **dashes**.
 
-##### Долна част
-* С всеки ред надолу, звездите се събират една с друга. Това означава, че пространството (**тиретата**) между тях намалява, а пространството (**тиретата**) отляво и отдясно се увеличава.
-* В най-долната си част е с 1 или 2 **звезди**, спрямо това дали **n** е четно или не.
+##### Lower Part
+* With each row down, the stars get closer to each other. This means that the space (**the dashes**) between them is getting smaller and the space (**the dashes**) on the left and on the right is getting larger.
+* The bottom-most part has 1 or 2 **stars**, depending on whether **n** is an even or odd number.
 
-##### Горна и долна част на диаманта
-* На всеки ред звездите са заобиколени от външни **тирета**, с изключение на средния ред.
-* На всеки ред има пространство между двете **звезди**, с изключение на първия и последния ред (понякога **звездата е 1**).
+##### Upper and Lower Parts of the Diamond
+* On each row, except the middle one, the stars are surrounded by inner and outer **dashes**.
+* On each row there is space between the two **stars**, except on the first and the last row (sometimes **the star is 1**).
 
-Подаваме стойността на **n** като входящ параметър (число) на функция:
+As an entering paramter **n** of our function we give it a Number value:
 
 ![](/assets/chapter-6-1-images/10.Diamond-01.png)
 
-Започваме да чертаем горната част на диаманта. Първото нещо, което трябва да направим, е да изчислим началната стойност на външната бройка **тирета `leftRight`** (тиретата от външната част на **звездите**). Тя е равна на **`(n - 1) / 2`**, закръглено надолу.  За закръглянето ще използваме метода **`Math.floor(...)`**, за да премахнем остатъка от деленето. Такъв може да има при входящо нечетно **`n`**:
+We start drawing the upper part of the diamond. The first thing we need to do is to calculate the number of the outer **dashes `leftRight`** (the dashes on the outer side of **the stars**). It is equal to **`(n - 1) / 2`**, rounded down. To round the number we will use the method **`Math.floor(...)`** to remove the residue. We can have this case if our input is odd.
 
 ![](/assets/chapter-6-1-images/10.Diamond-02.png)
 
-След като сме изчислили броя на външните тирета **`leftRight`**, започваме да чертаем **горната част** на диаманта. Може да започнем, като завъртим **цикъл** от **`0`** до **`n / 2 + 1`** (закръглено надолу). Като при всяка итерация на цикъла трябва да се изпълнят следните стъпки:
+After we have calculated **`leftRight`**, we start drawing **the upper part** of the diamond. We can start by running a **loop** from **`0`** to **`n / 2 + 1`** (rounded down). At each iteration of the loop the following steps must be taken:
 
-* Рисуваме по конзолата левите **тирета** (с дължина **`leftRight`**) и веднага след тях първата **звезда**:
+* * We draw on the console the left **dashes** (with length **`leftRight`**) and right after them the first **star**:
 
 ![](/assets/chapter-6-1-images/10.Diamond-03.png)
 
-* Ще изчислим разстоянието между двете **звезди**. Може да го изчислим като извадим от **n** дължината на външните **тирета**, както и числото 2 (бройката на **звездите**, т.е. очертанията на диаманта). Резултата от тази разлика записваме в променлива **`mid`**: 
+* We will calculate the distance between the two **stars**. We can do this by subtracting from **n** the number of the outer **dashes**, and the number 2 (the number of **the stars**, i.e. the diamonds outline). We need to store the result of the subtraction in a variable **`mid`**.  
 
 ![](/assets/chapter-6-1-images/10.Diamond-04.png)
 
-* Ако стойността на **`mid`** е по-малка от 0, то тогава знаем, че на реда трябва да има 1 звезда. Ако е по-голяма или равна на 0, то тогава трябва да начертаем **тирета** с дължина **`mid`** и една **звезда** след тях.
+* If **`mid`** is lower than 0, we know that on the row there should be only 1 star. If it is higher or equal to 0 then we have to print **dashes** with length **`mid`** and one **star** after them.
 
-* Рисуваме на конзолата десните външни **тирета** с дължина **`leftRight`**: 
+* We draw on the console the right outer **dashes** with length **`leftRight`**:
 
 ![](/assets/chapter-6-1-images/10.Diamond-05.png)
 
-* В края на цикъла намаляваме **`leftRight`** с 1 (**звездите** се отдалечават).
+*  In the end of the loop we decrease **`leftRight`** by 1 (**the stars** are moving away from each other).
 
-Готови сме с горната част.
+We are ready with the upper part.
 
-Рисуването на долната част е доста подобна на рисуването на горната част. Разликите са, че вместо да намаляваме **`leftRight`** с 1 към края на цикъла, ще увеличаваме **`leftRight`** с 1 в началото на цикъла. Също така, **цикълът ще е от 0 до `(n - 1) / 2`**.   
+Printing the lower part is very similar to that of the upper part. The difference is that instead of decreasing **`leftRight`** with 1 in the end of the loop, we will increase **`leftRight`** with 1 at the beginning of the loop. Also, **the loop will be from 0 to `(n - 1) / 2`**.   
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Повторението на код се смята за лоша практика</b>, защото кодът става доста труден за поддръжка. Нека си представим, че имаме парче код (напр. логиката за чертането на ред от диаманта) на още няколко места и решаваме да направим промяна. За целта би било необходимо да минем през всичките места и да направим промените. Нека си представим, че трябва да използвате код не 1, 2 или 3 пъти, а десетки пъти. Начин за справяне с този проблем е като се използват <b>функции</b>. Можете да потърсите допълнителна информация за тях в Интернет, или да прегледате <a href="chapter-10-methods.md">глава 10. Функции</a>.</td>
+<td><b>Repeating a code is considered bad practice</b>, because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond) at a few more places and we decide to change it. For this we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2 or 3 times but tens of times. A way to overcome this problem is to use <b>functions</b>. You can look for additional information for functions in the Internet or to look at  <a href="chapter-10-methods.md">Chapter “10” (Functions)</a>.</td>
 </tr></table>
 
-Ако сме написали всичко коректно, задачата ни е решена.
+If we have written all correctly, then the problem is solved.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#9](https://judge.softuni.bg/Contests/Practice/Index/935#9).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#9](https://judge.softuni.bg/Contests/Practice/Index/935#9).
 
 
-## Какво научихме от тази глава?
+## What did you learn from this chapter?
 
-Запознахме се с конструктора с методът **`repeat(...)`** на обектите от тип **`String`**:
+We learned how to use the **`repeat(...)`** method which constructs and returns a new object from type **`String`**:
 
 ```javascript
 let foo = "*".repeat(10);
 ```
 
-Научихме се да чертаем фигури с вложени **`for`** цикли:
+We learned how to draw figures using nested **`for`** loops:
 
 ```javascript
 for (let i = 1; i <= n; i++) {
@@ -414,57 +415,57 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## Упражнения: чертане на фигурки в уеб среда
+## Lab: Drawing Ratings in Web
 
-Сега, след като свикнахме с **вложените цикли** и как да ги използваме, за да чертаем фигурки на конзолата, можем да се захванем с нещо още по-интересно: да видим как циклите могат да се използват за **чертане в уеб среда**. Ще направим уеб приложение, което визуализира **числов рейтинг** (число от 0 до 100) със звездички. Такава визуализация се среща често в сайтове за електронна търговия, ревюта на продукти, оценки на събития, рейтинг на приложения и други.
+Now that we got used to **nested loops** and the way to use them to draw figures on the console, we can get into something even more interesting: we can see how loops can be used to **draw in a Web environment**. We will make a web application that visualizes a number rating \(a number from 0 to 100\) with stars. This kind of visualization is common in e-commerce sites, reviews of products, event rating, rating of apps, and others.
 
-Не се притеснявайте, ако не разберете целия код, как е точно е направен и как точно работи проектът. Нормално е, сега се учим да пишем код, не сме стигнали до технологиите за уеб разработка. Ако имате трудности да си напишете проекта, следвайки описаните стъпки, **гледайте видеото** от началото на тази глава или питайте в СофтУни форума: [https://softuni.bg/forum](https://softuni.bg/forum).
+Don't worry if you don't understand all of the code, how exactly it is written and how the project works. It is normal, now we are learning to write code and we are a long way from the web development technologies. If you are struggling to write your project by following the steps, **watch the video** from the beginning of the chapter or ask for help in the SoftUni official **discussion forum**: [https://softuni.bg/forum](https://softuni.bg/forum).
 
-### Задача: рейтинги – визуализация в уеб среда
+### Problem: Ratings – Visualization in a Web Environment
 
-Да се разработи **JavaScript** приложение за визуализация на рейтинг (число от 0 до 100). Чертаят се от 1 до 10 звездички (с половинки). Звездичките да се генерират с **`for`** цикъл.
+Your task is to create a  **JavaScript** web application for visualizing a rating (a number from 0 do 100). From 1 to 10 starts should be drawn with halves. The starts should be generated with a `for` loop.
 
 ![](assets/old-images/chapter-6-images/11.Ratings-01.png)
 
-Отваряме празна папка във файловата система с име "**ratings**". В нея създаваме два файла и една папка:
+We open an empty folder in our file system with name "**ratings**". In there we create 2 files and one folder:
 
 - **index.html**
 - **script.js**
-- **images** (папка)
+- **images** (folder)
 
-Сега добавяме **картинките със звездичките** (те са част от файловете със заданието за този проект и могат да бъдат свалени от [тук](https://github.com/mchaov/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-6-1-assets)). Копираме ги от Windows Explorer и ги поставяме в папката **images** с copy/paste.
+Now we add **images with stars** (they are part from the resources of this lab which can be downloaded from [here](https://github.com/mchaov/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-6-1-assets)). We copy them from windows explorer and paste them in the folder **images** using copy/paste.
 
-Отваряме **index.html** и въвеждаме следният код:
+We open **index.html** and adding the following code:
 
 ![](/assets/chapter-6-1-images/11.Ratings-01.png)
 
-Този код създава едно поле **`input-rating`**, в което потребителят може да въвежда число в интервала [**0 … 100**] и бутон [**Draw**], който осъществява пресмятането на звездичките с въведената стойност. Действието, което ще обработи данните, се казва **`drawRating`**. След формата се отпечатва съдържанието на **`<div id="ratingHolder"></div>`**. Кодът, който ще се съдържа в него, ще бъде динамично генериран HTML с поредица от звездички.
+This code creates one input field **`input-rating`**, in which the user can add number from [**0 … 100**] and button [**Draw**] which when clicked calculates the value of the stars with their input value. The action which will approve the input data, is called **`drawRating`**. After that the form will print the content of **`<div id="ratingHolder"></div>`**. The code which is inside id will be dynamically generated HTML with a series of stars.
 
-Добавяме функция **`drawRating()`** във файла **script.js**, която има следният код:
+We add the function **`drawRating()`** inside the file **script.js**, which has the following code:
 
 ```javascript
 /**
- * drawRating, рисува HTML, който е нужен за визуализацията на звездичките
+ * drawRating, draws HTML, which is needed for the visualization of the stars
  * @param {Number} rating
  * @return {String} html
  */
 function drawRating(rating) {
-    // низ от HTML
+    // string from HTML
     let html = "";
 
-    // краен брой звезди
+    // total number of stars
     let allStars = 10;
 
-    // всички пълни звезди
+    // all field stars
     let fullStars = Math.floor(rating / allStars);
 
-    // всички празни звезди
+    // all empty stars
     let emptyStars = Math.floor((100 - rating) / allStars);
 
-    // всички наполовина запълнени звезди
+    // all half-filled stars
     let halfStars = allStars - fullStars - emptyStars;
 
-    // построяване на HTML
+    // build of HTML
     for (let i = 0; i < fullStars; i++) {
         html += '<img src="images/full-star.png">';
     }
@@ -475,82 +476,77 @@ function drawRating(rating) {
         html += '<img src="images/empty-star.png">';
     }
 
-    // връщане на готовият HTML
+    // return of created HTML
     return html;
 }
 ```
-
-Горният код взима въведеното число **`rating`**, прави малко пресмятания и изчислява броя **пълни звездички**, броя **половинки звездички** и броя **празни звездички**, след което генерира HTML код, който нарежда няколко картинки със звездички една след друга, за да сглоби от тях картинката с рейтинга. Подготвеният HTML код се връща като резултат от функцията и е готов за по-нататъшно използване. Към момента резултатът от тази функция не може да се използва, защото няма как да го свържем с бутона. Въвеждаме функция, която се казва **`drawHandler()`** и съдържа следният код:
+The code above takes the number **`rating`**, makes some calculations to find the number of **empty stars** and the number of **half-full stars**, after which it generates an HTML code, which orders a few pictures of stars one after the other so that it can make the rating picture from them. The ready HTML code is returned as a result from the function and it is ready for further using. Up to this moment the result from this point can't be used because we can't connect it to the button. We create a function named 
+**`drawHandler()`** with the following code:
 
 ```javascript
 /**
- * drawHandler, функция която се изпълнява, когато потребителя клика върху
- * бутона "Draw".
+* drawHandler, function which runs, when the user clicks on the button Draw
  * @return {Void}
  */
 function drawHandler() {
-    // намиране на инпут елемента, който държи числото на рейтинга
-    // и вземане на неговата стойност
+    // Finds the input element, which stores the raiting and get its value
     let ratingInput = document.getElementById("input-rating");
 
-    // по подразбиране всички стойности от форми идват като "string"
-    // за това се налага да ги обърнем в число чрез "parseInt()"
+    // By default all values from the form come as "string"
+    // This is why we need to convert them using "parseInt()"
     let rating = parseInt(ratingInput.value);
 
-    // намиране на елемента, който държи звездичките
+    // We find the element which holds the stars
     let ratingHolder = document.getElementById("ratingHolder");
 
-    // генериране на HTML на база въведеният от потребителя рейтинг
+    // Generated HTML from our input rating
     let html = drawRating(rating);
 
-    // рисуване на страницата
+    // draw of a page
     ratingHolder.innerHTML = html;
 }
 ```
+Our function **`drawHandler()`** makes several things:
+- **Finds HTML element**, which holds the rating (**`input-rating`**) and **gets** its value.
+- **Converts value** from string to number.
+- **Finds HTML element** that will hold the stars (**`ratingHolder`**).
+- **Generates HTML of the stars**, using **`drawRating(...)`** function.
+- **Places the generated HTML** using **`innerHTML`** method inside the element **`ratingHolder`**.
 
-Фунцкията **`drawHandler()`** прави няколко неща:
-- **Намира HTML елемента**, който държи рейтинга (**`input-rating`**) и **взема** неговата стойност.
-- **Обръща стойността** от низ към число.
-- **Намира HTML елемента**, който ще държи звездичките (**`ratingHolder`**).
-- **Генерира HTML-а на звездичките**, чрез **`drawRating(...)`** функцията.
-- **Поставя ново генерираният HTML** чрез **`innerHTML`** метод в елемента **`ratingHolder`**.
-
-Имаме нужда от още една функция, която да обедини горните две и да ги свърже с HTML елементите. Тази функция се казва **`appInit()`**, и както името подсказва, нейната роля е да стартира нашето приложение. Въвеждаме следният код във функцията **`appInit()`**:
+We need one more function that will combine the above 2 functions and connect them to the HTML elements. This function is called **`appInit()`**. The name hints that its role will be to initialize our application. We add the following code in our function **`appInit()`**:
 
 ```javascript
 /**
- * appInit, отговаря за първоначалното изпълнение на нашата програма
+ * appInit is responsible for our initial run of the application
  * @return {Void}
  */
 function appInit() {
-    // намиране на бутон елемента в HTML
+    // finds the button element inside our HTML
     let button = document.getElementById("input-draw");
 
-    // Закачане към събитието "click" за изпълнение на рисуването
+    // Adds "click" event to perform the drawing
     button.addEventListener("click", drawHandler);
 
-    // първоначално изрисуване на рейтинга
+    // Initial draw of the rating
     drawHandler();
 }
 ```
+After we have all needed functions it's time to start our application. Keep in mind that **script.js** is added at the end of our file (after the closing tag of **`</body>`**). This is a **good practice** and gives us faster loading of the **DOM** tree. This allows us to run the following Javascript code, which uses HTML elements. Because of these conditions we can be sure that all conditions are already loaded inside the memory of our browser.
 
-След като имаме всички функции въведени е време да стартираме нашето приложение. Обърнете внимание, че **script.js** е включен в края на нашият файл, точно преди затварящият **`</body>`** таг на страницата. Това е добра практика и осигуря по-бързо зареждане на **`DOM`** дървото. Това също ни позволява да изпълняваме JavaScript код, който използва HTML елементи. При тези условия можем да бъдем сигурни, че всички те са вече заредени в паметта на браузъра.
-
-Въпреки това, вместо да извикаме директно **`appInit()`** на края на файла, ще добавим още една добра практика:
+However, instead of calling directly **`appInit()`** in the end of the file we will use one more **good practice**:
 
 ```javascript
 /**
- * Стартиране на приложението асинхронно, чрез "event listener".
- * Слушане за "DOMContentLoaded".
+ * Stars the application asynchronous using "event listener".
+ * Listens for "DOMContentLoaded".
  */
 document.addEventListener("DOMContentLoaded", appInit);
 ```
+The event **`DOMContentLoaded`** confirms that the browser has finished will all actions connected to the creation of the **`DOM`** tree. Adding to it using **`addEventListener(...)`** provides it with correct run of our Javascript program.
 
-Събитието **`DOMContentLoaded`** осигурява, че браузърът е приключил всички действия по създаването на **`DOM`** дървото. Закачайки се на него с **`addEventListener(...)`** осигурява правилното изпълнение на нашата JavaScript програма.
+When the browser is ready, it will run our starting function **`appInit()`**. Result from the function is:
 
-Когато браузърът е готов ще изпълни нашата стартираща функция **`appInit()`**. Резултатът от функцията е:
+- Hooks our function **`drawHandler()`** to the **`click`** event of the **Draw** button.
+- Initial call of **`drawHandler()`** is to fill the stars from our current HTML.
 
-- Закачане на функцията **`drawHandler()`** към събитието **`click`** върху нашият **Draw** бутон.
-- Първоначално извикване на **`drawHandler()`**, за да попълним звездичките на база на текущият HTML.
-
-Ако имате проблеми с примерния проект по-горе, **гледайте видеото** в началото на тази глава. Там приложението е направено на живо стъпка по стъпка с много обяснения. Или питайте във **форума на СофтУни**: https://softuni.bg/forum.
+If you have problem with the project above **watch the video** in the beginning of this chapter. Inside the video the application is made live step by step with a lot of explanations. You can also ask in the **Softuni Forum**: https://softuni.bg/forum.
