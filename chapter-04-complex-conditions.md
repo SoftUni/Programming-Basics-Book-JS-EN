@@ -591,7 +591,7 @@ Sample code (parts of the code are blurred with the purpose of stimulating logic
 Test yur solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#12](https://judge.softuni.bg/Contests/Practice/Index/931#12).
 
 
-## Упражнениe: графично приложение с по-сложни проверки
+## Exercise: graphic application with more complex conditions 
 
 In this chapter we learned how we can make **statements with non-trivial conditions**. Now let's apply this knowledge to create something interesting: a desktop application, that visualizes a point in a rectangle. This is a wonderful visualization of one of the tasks from the exercises.
 
@@ -708,14 +708,14 @@ In this way the connection bettween the files **`index.html`** and **`app.js`** 
 </body>
 ```
 
-За въвеждане координатите на правоъгълника и на точката, използваме **`input`** полета от тип **`Number`**, с тагове **`<label>`**. За да чертаем геометрични фигури в приложението, използваме html тага **`<canvas>`**:
+To enter the coordinates of the rectangle and the point, we use **`input`** fields of type **`Number`**, with tags **`<label>`**. Tо draw geometric figures in the application, we use the html tag **`<canvas>`**:
 
 <p><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-07.png" /></p>
 
-Той приема следните параметри:
-  - **Ширина** (width) в пиксели (px)
-  - **Височина** (height) в пиксели (px)
-  - **Очертание** (border)
+It accepts the following parameters:
+  - **Width** (width) in pixels (px)
+  - **Height** (height) in pixels (px)
+  - **Border** (border)
   
 За да се отразяват промените в приложението, файловете трябва да се запазват с **`[Ctrl+S]`**.
 
