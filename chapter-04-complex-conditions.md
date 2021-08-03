@@ -333,58 +333,58 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#7
 
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>IT is a good practice</b> to use <b>blocks</b>, that are <b>enclosed</b> with curly braces <b><code>{ }</code></b> after <b><code>if</code></b> and <b><code>else</code></b>. Also, it is recomended during writing to <b>move aside</b> the code <b>after <code>if</code> and <code>else</code></b> with a single tabulation <b>inward</b>, in order to make the code more easily readable.</td>
+<td><b>It is a good practice</b> to use <b>blocks</b>, that are <b>enclosed</b> with curly braces <b><code>{ }</code></b> after <b><code>if</code></b> and <b><code>else</code></b>. Also, it is recomended during writing to <b>move aside</b> the code <b>after <code>if</code> and <code>else</code></b> with a single tabulation <b>inward</b>, in order to make the code more easily readable.</td>
 </tr></table>
 
 
 ## Switch-Case Conditional Statements
 
-The **`switch-case`**  construction works as a sequence of **`if-else`** blocks. Когато работата на програмата ни зависи от стойността на **една променлива**, вместо да правим последователни проверки с **`if-else`** блокове, можем да **използваме** условната конструкция **`switch-case`**. Тя се използва за **избор измежду списък с възможности**. Конструкцията сравнява дадена стойност с определени константи и в зависимост от резултата предприема действие.
+The **`switch-case`**  construction works as a sequence of **`if-else`** blocks. Whenever the work of our program depends on value of **one variable**, instead of making consecutive with **`if-else`** blocks, we can **use** the conditional **`switch-case`** statement. It is being used for **choosing between a list of possibilities**. The statement compares a given value with defined constants and depending on the result, it takes an action.
 
-**Променливата**, която искаме да **сравняваме**, поставяме в **скобите след оператора `switch`** и се нарича "**селектор**". Тук **типът трябва да е сравним** (числа, стрингове). **Последователно** започва **сравняването** с всяка една **стойност**, която **се намира** след **`case` етикетите**. При съвпадение започва изпълнението на кода от съответното място и продължава, докато стигне оператора **`break`**. При **липса** на **съвпадение**, се изпълнява **`default`** конструкцията, **ако** такава **съществува**.
+We put **the variable**, that we want to **compare**, inside the **brackets after the operator `switch`** and it is called a "**selector**". Here **the type must be comparable** (numbers, strings). **Consecutively**, the program starts **comparing** each **value**, that **is found** after the **`case` labels**. Upon a match, the executions of the code from the respective place continues, until it reaches the **`break`** operator. When **no matches** are **found**, the **`default`** construction is being executed, **if** such **exist**.
 
 ```javascript
-switch (селектор) {
-    case стойност1:
-        конструкция;
+switch (selector) {
+    case value1:
+        construction;
         break;
-    case стойност2:
-        конструкция;
+    case value2:
+        construction;
         break;
-    case стойност3:
-        конструкция;
+    case value3:
+        construction;
         break;
     …
     default:
-        конструкция;
+        construction;
         break;
 }
 ```
 
-### Пример: ден от седмицата
+### Example: Day of the Week
 
-Нека напишем програма, която принтира **деня от седмицата** (на английски) според **въведеното число** (1 … 7) или "**Error**", ако е подаден невалиден ден.
+Lets write a program that print **day of the week** (in English) depending on the **given number** (1 … 7) or "**Error**", if an invalid day is given.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |-----|-----|
 |1<br>7<br>-1|Monday<br>Sunday<br>Error|
 
-#### Решение
+#### Solution
 
 ![](assets/chapter-4-1-images/09.Day-of-week-01.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Добра практика е на <b>първо</b> място да поставяме онези <b><code>case</code> случаи</b>, които обработват <b>най-често случилите се ситуации</b>, а <b><code>case</code> конструкциите</b>, обработващи <b>по-рядко възникващи ситуации</b>, да оставим в <b>края, преди <code>default</code> конструкцията</b>. Друга добра практика е да <b>подреждаме <code>case</code> етикетите</b> в <b>нарастващ ред</b>, без значение дали са целочислени или символни.</td>
+<td>It is a good practice to put at the <b>first</b>place those <b><code>case</code> statements</b>, that process <b>the most common situations</b>, and leave the <b><code>case</code> constuctions</b>, processing <b>the more rare situations</b>, ат <b>the end, before the<code>default</code> constructions</b>. Another good practice is to  <b>arrange the <code>case</code> labels</b> in <b>ascending order</b>, regardless of whether they are integral or symbolic.</td>
 </tr></table>
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#8](https://judge.softuni.bg/Contests/Practice/Index/931#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#8](https://judge.softuni.bg/Contests/Practice/Index/931#8).
 
 
-### Множество етикети в switch-case
+### Multiple Labels in Switch-Cases
 
 В **JavaScript** имаме възможността да **използваме множество `case`** етикети, когато те трябва да изпълняват **един и същи** код. При този начин на записване, когато програмата ни намери **съвпадение**, ще изпълни **следващия** срещнат код, тъй като **след** съответния **`case`** етикет **липсва код** за изпълнение и **`break`** оператор:
 
