@@ -1,11 +1,11 @@
 # Chapter 6.1. Nested Loops
 
-In the current chapter we will be looking at **nested loops** and how to use `for` loops to **draw** various **figures on the console**, that contain symbols and signs, ordered in rows and columns on the console. We will use **single** and **nested loops** (loops that stay in other loops), **calculations** and **checks**, in order to print on the console simple and not so simple figures by specified sizes.
+In the current chapter, we will be looking at **nested loops** and how to use `for` loops to **draw** various **figures on the console**, that contain symbols and signs, ordered in rows and columns on the console. We will use **single** and **nested loops** (loops that stay in other loops), **calculations** and **checks**, in order to print on the console simple and not so simple figures by specified sizes.
 
 
 ## Video: Chapter Overview
 <div class="video-player">
-  Watch video-lesson of this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=1v1yIZV7p4k&feature=youtu.be">https://www.youtube.com/watch?v=1v1yIZV7p4k&feature=youtu.be</a>.
+  Watch the video lesson of this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=1v1yIZV7p4k&feature=youtu.be">https://www.youtube.com/watch?v=1v1yIZV7p4k&feature=youtu.be</a>.
 </div>
 
 
@@ -21,7 +21,7 @@ Print on the console a rectangle made out of **10 x 10** stars.
 
 ![](/assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
-How does the example work? We initialize **a loop with a variable `i = 1`**, which increases with each iteration of the loop, while it is **less or equal to 10**. This way the code in the body of the loop is executed **10 times**.In the body of the loop we print a new line on the console **`"*".repeat(10)`**, which creates a string of 10 stars.
+How does the example work? We initialize **a loop with a variable `i = 1`**, which increases with each iteration of the loop, while it is **less or equal to 10**. This way the code in the body of the loop is executed **10 times**. In the body of the loop, we print a new line on the console **`"*".repeat(10)`**, which creates a string of 10 stars.
 
 #### Testing in the Judge System
 
@@ -42,7 +42,7 @@ Write a program that gets a positive integer **n** and prints on the console **a
 
 #### Note
 
-On some web browsers the same results on the console merge with one another. It's advised to use **NodeJS** for the examples. If you still get to this case you can use the symbol **`\n`** in the end of the printing method **`console.log("*".repeat(10) + "\n");`**.
+On some web browsers, the repeating results on the console merge in one. It's advised to use **NodeJS** for our current examples. If you still get to this case you can use the symbol **`\n`** at the end of the printing method **`console.log("*".repeat(10) + "\n");`**.
 
 #### Testing in the Judge System
 
@@ -51,11 +51,11 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#1
 
 ## Nested loops
 
-A **nested loop** is a construction where **in the body of one loop** (outer one) **stays another loop** (inner one). In each iteration of the outer loop, **the whole** inner loop is executed. This happens in the following way:
+A **nested loop** is a construction where **the body of one loop** (the outer one) **stays inside another loop** (the inner one). In each iteration of the outer loop, **the whole** inner loop is executed. This happens in the following way:
 
  - When nested loops start executing, **the outer loop starts** first: the controlling variable is **initialized** and after a check for ending the loop the code in its body is executed.
- - After that, **the inner loop is executed**. The controlling variables start position is initialized, a check for ending the loop is made and the code in its body is executed.
- - When reaching the specified value for **ending the loop**, the program goes back one step up and continues executing the previous \(outer\) loop. The controlling variable of the outer loop changes with one step, a check is made to see if the condition for ending the loop is met and **a new execution of the nested \(inner\) loop is started**.
+ - After that, **the inner loop is executed**. The controlling variables' start position is initialized, a check for ending the loop is made and the code in its body is executed.
+ - When reaching the specified value for **ending the loop**, the program goes back one step up and continues executing the previous outer loop. The controlling variable of the outer loop changes with one step, a check is made to see if the condition for ending the loop is met and **a new execution of the nested \(inner\) loop is started**.
  - This is repeated until the variable of the outer loop meets the condition to **end the loop**.
 
 Here is an **example** that illustrates nested loops. The aim is again to print a rectangle made of `n` \*_ _`n` stars, in which for each row a loop iterates from **1** to `n`, and for each column a nested loop is executed from **1** to \*`n`:
@@ -74,7 +74,7 @@ function drawSquare(n) {
 }
 ```
 
-Let's look at the example above. After initializing **the first \(outer\) loop**, its **body**, which contains **the second \(nested\) loop** starts executing. By itself it prints on one row `n` number of stars. After **the inner** loop **finishes** executing at the first iteration of the outer one, **the first loop will continue**, i.e. it will print an empty row on the console. **After that**, the variable of **the first** loop will be **renewed** and the whole **second** loop will be executed again. The inner loop will execute as many times as the body of the outer loop executes, in this case `n` times.
+Let's look at the example above. After initializing **the first \(outer\) loop**, its **body**, which contains **the second \(nested\) loop** starts executing. By itself, it prints on one row `n` number of stars. After **the inner** loop **finishes** executing at the first iteration of the outer one, **the first loop will continue**, i.e. it will print an empty row on the console. **After that**, the variable of **the first** loop will be **renewed** and the whole **second** loop will be executed again. The inner loop will execute as many times as the body of the outer loop executes, in this case, `n` times.
 
 ### Example: Square Made of Stars
 
@@ -86,7 +86,7 @@ Print on the console a square made of **N x N** stars (use a space between the s
 
 #### Hints and Guidelines
 
-The problem is similar to the last one. The difference here is that we need to figure out how to add a whitespace after the stars so that there aren't any excess white spaces in the beginning or the end.
+The problem is similar to the last one. The difference here is that we need to figure out how to add a whitespace after the stars so that there aren't any excess white spaces at the beginning and the end.
 
 ![](/assets/chapter-6-1-images/03.Square-01.png)
 
@@ -105,7 +105,7 @@ Write a program that takes an integer **n** and prints **a triangle made of doll
 
 #### Hints and Guidelines
 
-The problem is **similar** to those for drawing **a rectangle** and **square**. Once again, we will use **nested loops**, but there is **a  catch** here. The difference is that **the number of columns** that we need to print depends on **the row**, on which we are and not on the input number **`n`**. From the example input and output data we see that **the count of dollars depends** on which **row** we are on at the moment of the printing, i.e. 1 dollar means first row, 3 dollars mean third row and so on. Let's see the following example in detail. We see that **the variable** of **the nested** loop is connected with the variable of **the outer** one. This way our program prints the desired triangle.
+The problem is **similar** to those for drawing **a rectangle** and **square**. Once again, we will use **nested loops**, but there is **a  catch** here. The difference is that **the number of columns** that we need to print depends on **the row**, on which we are and not on the input number **`n`**. From the example input and output data, we see that **the count of dollars depends** on which **row** we are on at the moment of the printing, i.e. 1 dollar means the first row, 3 dollars mean the third row, and so on. Let's see the following example in detail. We see that **the variable** of **the nested** loop is connected with the variable of **the outer** one. This way our program prints the desired triangle.
 
 ![](/assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
@@ -158,7 +158,7 @@ Write a program that takes a positive integer **n** and prints **a rhombus made 
 
 #### Hints and Guidelines
 
-To solve this problem, we need to mentally **divide** **the rhombus** into **two parts** – **upper** one, which **also** includes the middle row, and **lower** one. For **the printing** of each part we will use **two** separate loops, as we leave the reader to decide the dependency between **`n`** and the variables of the loops. For the first loop we can use the following guidelines:
+To solve this problem, we need to mentally **divide** **the rhombus** into **two parts** – the **upper** one, which **also** includes the middle row, and the **lower** one. For **the printing** of each part, we will use **two** separate loops, as we leave the reader to decide the dependency between **`n`** and the variables of the loops. For the first loop we can use the following guidelines:
 
 * We print **`n-row`** white spaces.
 * We print **`*`**.
@@ -187,7 +187,7 @@ Write a program that takes a number **n** (1 ≤ n ≤ 100) and prints a Christm
 
 #### Hints and Guidelines
 
-From the examples we see that **the Christmas tree** can be **divided** into **three** logical parts. **The first** part is **the stars and the white spaces before and after them**, **the middle** part is **` | `**, and **the last** part is again **stars**, but this time there are **white spaces** only **before** them. The printing can be done with only **one loop** and the **`.repeat(n)`** method, which we will use once for the stars and once for the white spaces:
+From the examples, we see that **the Christmas tree** can be **divided** into **three** logical parts. **The first** part is **the stars and the white spaces before and after them**, **the middle** part is **` | `**, and **the last** part is again **stars**, but this time there are **white spaces** only **before** them. The printing can be done with only **one loop** and the **`.repeat(n)`** method, which we will use once for the stars and once for the white spaces:
 
 ![](/assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
@@ -201,7 +201,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#6
 Let's look at how to **draw figures** using **nested loops** with more complex logic, for which we need to think more before coding.
 
 ### Problem: Sunglasses
-Write a program that takes an integer **n** (3 ≤ n ≤ 100) and prints sunglasses with size of **5\*n x n** as found in the examples:
+Write a program that takes an integer **n** (3 ≤ n ≤ 100) and prints sunglasses with a size of **5\*n x n** as found in the examples:
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -213,11 +213,11 @@ Write a program that takes an integer **n** (3 ≤ n ≤ 100) and prints sunglas
 
 #### Hints and Guidelines
 
-From the examples we can see that the sunglasses can be divided into **three parts** – upper, middle and lower one. A part of the code with which the problem can be solved is given below. When drawing the upper and lower rows we need to print **`2 * n`** stars, **`n`** white spaces and **`2 * n`** stars:
+From the examples, we can see that the sunglasses can be divided into **three parts** – upper, middle, and lower. A part of the code with which the problem can be solved is given below. When drawing the upper and lower rows we need to print **`2 * n`** stars, **`n`** white spaces, and **`2 * n`** stars:
 
 ![](/assets/chapter-6-1-images/08.Sunglasses-01.png)
 
-When drawing **the middle** part, we need to **check** if the row is **`(n-1) / 2 - 1`**, because in the examples we can see that in **this row** we need to print **pipes** instead of white spaces. The problem with **`(n - 1) / 2 - 1`** is that it can be a number with decimal remainder. Because of this we must use mathematical method for removing a decimal remainder - **`Math.floor(...)`**. **`Math.floor(...)`** returns the bigger number, which is smaller or equal to the last number:
+When drawing **the middle** part, we need to **check** if the row is **`(n-1) / 2 - 1`**, because in the examples we can see that in **this row** we need to print **pipes** instead of white spaces. The problem with **`(n - 1) / 2 - 1`** is that it can be a number with the decimal remainder. Because of this, we must use a mathematical method for removing a decimal remainder - **`Math.floor(...)`**. **`Math.floor(...)`** returns the bigger number, which is smaller or equal to the last number:
 
 ![](/assets/chapter-6-1-images/08.Sunglasses-02.png)
 
@@ -241,7 +241,7 @@ Write a program that takes a number **n** (2 ≤ **n** ≤ 100) and prints **a h
 
 #### Hints and Guidelines
 
-We understand from the problem explanation that the house is with size of **`n` x `n`**. What we see from the example input and output is that:
+We understand from the problem explanation that the house is with a size of **`n` x `n`**. What we see from the example input and output is that:
 
 * The house is divided into two parts: **roof and base**. 
 
@@ -251,25 +251,25 @@ We understand from the problem explanation that the house is with size of **`n` 
 * When **`n`** is odd, **the roof** is one row larger than the **base**.
 
 ##### The Roof
-* It comprises of **stars** and **dashes**.
-* In the top part there are one or two stars, depending on if **n** is even or odd (also related to the dashes).
-* In the lowest part there are many stars and no dashes.
-* With each lower row, **the stars** increase by 2 and **the dashes** decrease by 2.
+* It comprises **stars** and **dashes**.
+* In the top part, there are one or two stars, depending on if **n** is even or odd (also related to the dashes).
+* In the lowest part, there are many stars and no dashes.
+* With each lower row, **the stars** increase by 2, and **the dashes** decrease by 2.
 
 ##### The Base
 * The height is **`n`** rows.
 * It is made out of **stars** and **pipes**.
-* Each row comprises of 2 **pipes** – one in the beginning and one in the end of the row, and also **stars** between the pipes with string length of **`n - 2`**.  
+* Each row comprises 2 **pipes** – one in the beginning and one at the end of the row, and also **stars** between the pipes with a string length of **`n - 2`**.  
 
 We gave **`n`** as a parameter to our function:
 
 ![](/assets/chapter-6-1-images/09.House-02.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>>It is very important to check if the input data is correct!</b> In these tasks it is not a problem to directly convert the data from the console into <b><code>Number</code></b>type, because it is said that we will be given valid integers. If you are making more complex programs it is a good practice to check the data. What will happen if instead of the character "А" the user inputs a number?</td>
+<td><b>>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into <b><code>Number</code></b>type, because it is said that we will be given valid integers. If you are making more complex programs it is a good practice to check the data. What will happen if instead of the character "А" the user inputs a number?</td>
 </tr></table>
 
-In order to draw **the roof**, we write down how many **stars** we start with in a variable called **`stars`**:
+To draw **the roof**, we write down how many **stars** we start with a variable called **`stars`**:
 * If **`n`** is **an even** number, there will be 2 stars.
 * If it is **odd**, there will be 1.
 
@@ -279,17 +279,17 @@ Calculate the length of **the roof**. It equals half of **`n`**. Write the resul
 
 ![](/assets/chapter-6-1-images/09.House-04.png)
 
-It is important to note that when **`n`** is an odd number, the length of the roof is one row more than that of the **base**. In**JavaScript** language, when you divide two numbers with a remainder, the result will be decimal number
+It is important to note that when **`n`** is an odd number, the length of the roof is one row more than that of the **base**. In **JavaScript** language, when you divide two numbers with a remainder, the result will be a decimal number
  Example:
 
 ```javascript
     let result = 3 / 2; // резултат 1.5
 ```
 
-If we want to round up to the next largest integer. number, we need to use the method **`Math.ceil(…)`**: **`let result = Math.ceil(3 / 2);`**. The result from **`3 / 2`** is **`1.5`**. **`Math.ceil(…)`** will round the number to the next largest integer.In our case **`1.5`**will be rounded to **`2`**. **`parseInt()`** is used to transform the input parameter to type **`Number`**.
+If we want to round up to the next largest integer. number, we need to use the method **`Math.ceil(…)`**: **`let result = Math.ceil(3 / 2);`**. The result from **`3 / 2`** is **`1.5`**. **`Math.ceil(…)`** will round the number to the next largest integer. In our case **`1.5`**  will be rounded to **`2`**. **`parseInt()`** is used to transform the input parameter to type **`Number`**.
 
 After we have calculated the length of the roof, we make a loop from 0 to **`roofLength`**. On each iteration we will:
-* Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - stars) / 2`**. We store it in a variable **`padding`**.
+* Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - stars) / 2`**. We store it in variable **`padding`**.
 
 ![](/assets/chapter-6-1-images/09.House-05.png)
 
@@ -334,7 +334,7 @@ Write a program that takes an integer **n** (1 ≤ **n** ≤ 100) and prints a d
 
 What we know from the problem explanation is that the diamond is with size **`n` x `n`**.
 
-From the example input and output we can conclude that all rows contain exactly **`n`** symbols, and all the rows, with the exception of the top and bottom ones, have **2 stars**. We can mentally divide the diamond into 2 parts:
+From the example input and output we can conclude that all rows contain exactly **`n`** symbols, and all the rows, except for the top and bottom ones, have **2 stars**. We can mentally divide the diamond into 2 parts:
 * **Upper** part. It starts from the upper tip down to the middle.
 * **Lower** part. It starts from the row below the middle one and goes down to the lower tip (inclusive).
 
@@ -342,17 +342,17 @@ From the example input and output we can conclude that all rows contain exactly 
 * If **n** is an **odd** number, it starts with **1 star**.
 * If **n** is an **even** number, it starts with **2 stars**.
 * With each row down, the stars get further away from each other.
-* The space between, before and after **the stars** is filled up with **dashes**.
+* The space between, before, and after **the stars** is filled up with **dashes**.
 
 ##### Lower Part
-* With each row down, the stars get closer to each other. This means that the space (**the dashes**) between them is getting smaller and the space (**the dashes**) on the left and on the right is getting larger.
+* With each row down, the stars get closer to each other. This means that space (**the dashes**) between them is getting smaller and space (**the dashes**) on the left and the right is getting larger.
 * The bottom-most part has 1 or 2 **stars**, depending on whether **n** is an even or odd number.
 
 ##### Upper and Lower Parts of the Diamond
 * On each row, except the middle one, the stars are surrounded by inner and outer **dashes**.
-* On each row there is space between the two **stars**, except on the first and the last row (sometimes **the star is 1**).
+* On each row, there is space between the two **stars**, except on the first and the last row (sometimes **the star is 1**).
 
-As an entering paramter **n** of our function we give it a Number value:
+As an entering parameter **n** of our function we give it a Number value:
 
 ![](/assets/chapter-6-1-images/10.Diamond-01.png)
 
@@ -366,24 +366,24 @@ After we have calculated **`leftRight`**, we start drawing **the upper part** of
 
 ![](/assets/chapter-6-1-images/10.Diamond-03.png)
 
-* We will calculate the distance between the two **stars**. We can do this by subtracting from **n** the number of the outer **dashes**, and the number 2 (the number of **the stars**, i.e. the diamonds outline). We need to store the result of the subtraction in a variable **`mid`**.  
+* We will calculate the distance between the two **stars**. We can do this by subtracting from **n** the number of the outer **dashes**, and the number 2 (the number of **the stars**, i.e. the diamond's outline). We need to store the result of the subtraction in a variable **`mid`**.  
 
 ![](/assets/chapter-6-1-images/10.Diamond-04.png)
 
-* If **`mid`** is lower than 0, we know that on the row there should be only 1 star. If it is higher or equal to 0 then we have to print **dashes** with length **`mid`** and one **star** after them.
+* If the **`mid`** is lower than 0, we know that on the row there should be only 1 star. If it is higher or equal to 0 then we have to print **dashes** with length **`mid`** and one **star** after them.
 
 * We draw on the console the right outer **dashes** with length **`leftRight`**:
 
 ![](/assets/chapter-6-1-images/10.Diamond-05.png)
 
-*  In the end of the loop we decrease **`leftRight`** by 1 (**the stars** are moving away from each other).
+*  At the end of the loop, we decrease **`leftRight`** by 1 (**the stars** are moving away from each other).
 
 We are ready with the upper part.
 
-Printing the lower part is very similar to that of the upper part. The difference is that instead of decreasing **`leftRight`** with 1 in the end of the loop, we will increase **`leftRight`** with 1 at the beginning of the loop. Also, **the loop will be from 0 to `(n - 1) / 2`**.   
+Printing the lower part is very similar to that of the upper part. The difference is that instead of decreasing **`leftRight`** with 1 at the end of the loop, we will increase **`leftRight`** with 1 at the beginning of the loop. Also, **the loop will be from 0 to `(n - 1) / 2`**.   
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Repeating a code is considered bad practice</b>, because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond) at a few more places and we decide to change it. For this we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2 or 3 times but tens of times. A way to overcome this problem is to use <b>functions</b>. You can look for additional information for functions in the Internet or to look at  <a href="chapter-10-methods.md">Chapter “10” (Functions)</a>.</td>
+<td><b>Repeating a code is considered bad practice</b> because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond) at a few more places and we decide to change it. For this, we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2, or 3 times but tens of times. A way to overcome this problem is to use <b>functions</b>. You can look for additional information for functions on the Internet or look at  <a href="chapter-10-methods.md">Chapter “10” (Functions)</a>.</td>
 </tr></table>
 
 If we have written all correctly, then the problem is solved.
@@ -423,23 +423,23 @@ Don't worry if you don't understand all of the code, how exactly it is written a
 
 ### Problem: Ratings – Visualization in a Web Environment
 
-Your task is to create a  **JavaScript** web application for visualizing a rating (a number from 0 do 100). From 1 to 10 starts should be drawn with halves. The starts should be generated with a `for` loop.
+Your task is to create a  **JavaScript** web application for visualizing a rating (a number from 0 to 100). From 1 to 10 stars should be drawn with halves. The starts should be generated with a `for` loop.
 
 ![](assets/old-images/chapter-6-images/11.Ratings-01.png)
 
-We open an empty folder in our file system with name "**ratings**". In there we create 2 files and one folder:
+We create an empty folder in our file system with the name "**ratings**". In there we create 2 files and one folder:
 
 - **index.html**
 - **script.js**
 - **images** (folder)
 
-Now we add **images with stars** (they are part from the resources of this lab which can be downloaded from [here](https://github.com/mchaov/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-6-1-assets)). We copy them from windows explorer and paste them in the folder **images** using copy/paste.
+Now we add **images with stars** (they are part of the resources of this lab which can be downloaded from [here](https://github.com/mchaov/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-6-1-assets)). We copy them from windows explorer and paste them into the folder **images** using copy/paste.
 
-We open **index.html** and adding the following code:
+We open **index.html** and add the following code:
 
 ![](/assets/chapter-6-1-images/11.Ratings-01.png)
 
-This code creates one input field **`input-rating`**, in which the user can add number from [**0 … 100**] and button [**Draw**] which when clicked calculates the value of the stars with their input value. The action which will approve the input data, is called **`drawRating`**. After that the form will print the content of **`<div id="ratingHolder"></div>`**. The code which is inside id will be dynamically generated HTML with a series of stars.
+This code creates one input field **`input-rating`**, in which the user can add a number from [**0 … 100**] and a button [**Draw**] which when clicked calculates the value of the stars with their input value. The action which will approve the input data is called **`drawRating`**. After that the form will print the content of **`<div id="ratingHolder"></div>`**. The code which is inside it will be dynamically generated HTML with a series of stars.
 
 We add the function **`drawRating()`** inside the file **script.js**, which has the following code:
 
@@ -480,12 +480,12 @@ function drawRating(rating) {
     return html;
 }
 ```
-The code above takes the number **`rating`**, makes some calculations to find the number of **empty stars** and the number of **half-full stars**, after which it generates an HTML code, which orders a few pictures of stars one after the other so that it can make the rating picture from them. The ready HTML code is returned as a result from the function and it is ready for further using. Up to this moment the result from this point can't be used because we can't connect it to the button. We create a function named 
+The code above takes the number **`rating`**, makes some calculations to find the number of **empty stars** and the number of **half-full stars**, after which it generates an HTML code, which orders a few pictures of stars one after the other so that it can make the rating picture from them. The ready HTML code is returned as a result of the function and it is ready for further use. Up to this moment, the result from this point can't be used because we can't connect it to the button. We create a function named 
 **`drawHandler()`** with the following code:
 
 ```javascript
 /**
-* drawHandler, function which runs, when the user clicks on the button Draw
+* drawHandler, a function that runs, when the user clicks on the button Draw
  * @return {Void}
  */
 function drawHandler() {
@@ -507,9 +507,9 @@ function drawHandler() {
 }
 ```
 Our function **`drawHandler()`** makes several things:
-- **Finds HTML element**, which holds the rating (**`input-rating`**) and **gets** its value.
-- **Converts value** from string to number.
-- **Finds HTML element** that will hold the stars (**`ratingHolder`**).
+- **Finds the HTML element**, which holds the rating (**`input-rating`**) and **gets** its value.
+- **Converts value** from string to a number.
+- **Finds the HTML element** that will hold the stars (**`ratingHolder`**).
 - **Generates HTML of the stars**, using **`drawRating(...)`** function.
 - **Places the generated HTML** using **`innerHTML`** method inside the element **`ratingHolder`**.
 
@@ -531,9 +531,9 @@ function appInit() {
     drawHandler();
 }
 ```
-After we have all needed functions it's time to start our application. Keep in mind that **script.js** is added at the end of our file (after the closing tag of **`</body>`**). This is a **good practice** and gives us faster loading of the **DOM** tree. This allows us to run the following Javascript code, which uses HTML elements. Because of these conditions we can be sure that all conditions are already loaded inside the memory of our browser.
+After we have all the needed functions it's time to start our application. Keep in mind that **script.js** is added at the end of our file (after the closing tag of **`</body>`**). This is a **good practice** and gives us faster loading of the **DOM** tree. This allows us to run the following Javascript code, which uses HTML elements. Because of these conditions, we can be sure that all conditions are already loaded inside the memory of our browser.
 
-However, instead of calling directly **`appInit()`** in the end of the file we will use one more **good practice**:
+However, instead of calling directly **`appInit()`** at the end of the file, we will use one more **good practice**:
 
 ```javascript
 /**
@@ -542,11 +542,11 @@ However, instead of calling directly **`appInit()`** in the end of the file we w
  */
 document.addEventListener("DOMContentLoaded", appInit);
 ```
-The event **`DOMContentLoaded`** confirms that the browser has finished will all actions connected to the creation of the **`DOM`** tree. Adding to it using **`addEventListener(...)`** provides it with correct run of our Javascript program.
+The event **`DOMContentLoaded`** confirms that the browser has finished will all actions connected to the creation of the **`DOM`** tree. Adding to it using **`addEventListener(...)`** provides it with a correct run of our Javascript program.
 
-When the browser is ready, it will run our starting function **`appInit()`**. Result from the function is:
+When the browser is ready, it will run our starting function **`appInit()`**. The result from our function is:
 
 - Hooks our function **`drawHandler()`** to the **`click`** event of the **Draw** button.
 - Initial call of **`drawHandler()`** is to fill the stars from our current HTML.
 
-If you have problem with the project above **watch the video** in the beginning of this chapter. Inside the video the application is made live step by step with a lot of explanations. You can also ask in the **Softuni Forum**: https://softuni.bg/forum.
+If you have a problem with the project above **watch the video** at the beginning of this chapter. Inside the video, the application is made live step by step with a lot of explanations. You can also ask in the **Softuni Forum**: https://softuni.bg/forum.
