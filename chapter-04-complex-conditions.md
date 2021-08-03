@@ -433,7 +433,7 @@ Thes your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#9
 
 ## What have we learned from this chapter?
 
-Let's look back on what new constuctions and programming techniques we get familiar with in this chapter:
+Let's look back on what new constuctions and programming techniques we have learned in this chapter:
 
 ### Nested Conditions
 
@@ -473,40 +473,40 @@ switch (selector) {
 ```
 
 
-## Упражнения: по-сложни проверки
+## Exercises: More Complex Conditions
 
-Нека сега да упражним работата с по-сложни проверки. Да решим няколко практически задачи.
+Now let's exercise our new skills with complex conditions. Let's solve a few practical tasks.
 
-### Задача: кино
+### Problem: Cinema
 
-В една кинозала столовете са наредени в **правоъгълна** форма в **r** реда и **c** колони. Има три вида прожекции с билети на **различни** цени:
+In a cinema hall the chairs are ordered in a **rectangle** shape in **r** rows and **c** columns.There are three types of screening with tickets of **different** prices:
 
-* **Premiere** – премиерна прожекция, на цена **12.00** лева.
-* **Normal** – стандартна прожекция, на цена **7.50** лева.
-* **Discount** – прожекция за деца, ученици и студенти на намалена цена от **5.00** лева.
+* **Premiere** – a premiere screening, with price **12.00** leva.
+* **Normal** – a standart screeneing, with price **7.50** leva.
+* **Discount** – a screening for children and students at a promocional price **5.00** leva.
 
-Напишете програма, която въвежда **тип прожекция** (стринг), брой **редове** и брой **колони** в залата (цели числа) и изчислява **общите приходи** от билети при **пълна зала**. Резултатът да се отпечата във формат като в примерите по-долу - с 2 цифри след десетичния знак.
+Write a program that enters a **type of screening** (string), number of **rows** and number of **columns** in the hall (integer numbers) and calculates **the total income** from tickets from a **full hall**. The result has to be printed in the same formt as in the axample below - rounded up to 2 digits after the decimal point.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|-----|----|-----|
 |Premiere<br>10<br>12|1440.00 leva|Normal<br>21<br>13|2047.50 leva|
 
-#### Насоки и подсказки 
+#### Hints and Guidelines 
 
-При прочитането на входа можем да обърнем типа на прожекцията в малки букви (с метода **`.toLowerCase()`**). Създаваме и инициализираме променлива, която ще ни съхранява изчислените приходи. В друга променлива пресмятаме пълния капацитет на залата. Използваме условната конструкция **`switch-case`** , за да изчислим прихода в зависимост от вида на прожекцията и отпечатваме резултата на конзолата в зададения формат (потърсете нужната **JavaScript** функционалност в интернет). 
+While reading the input, we could convert the screening type into small letters (with the method **`.toLowerCase()`**). We create and initialize a variable, that will store the calculated income. In another variable we calculate the full capacity of the hall. We use a **`switch-case`**  conditional statement, to calculate the income according to the type of projection and print the result on the console in the given format (look for the needed **JavaScript** functionality on the internet). 
 
-Примерен код (части от кода са замъглени с цел да се стимулира самостоятелно мислене и решение):
+Sample code (parts of the code are blurred with the purpose to stimulate your thinking and solving skills):
 
 ![](assets/chapter-4-1-images/11.Cinema-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#10](https://judge.softuni.bg/Contests/Practice/Index/931#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#10](https://judge.softuni.bg/Contests/Practice/Index/931#10).
 
 
-### Задача: волейбол
+### Problem: Volleyball
 
 Влади е студент, живее в София и си ходи от време на време до родния град. Той е много запален по волейбола, но е зает през работните дни и играе **волейбол** само през **уикендите** и в **празничните дни**. Влади играе **в София** всяка **събота**, когато **не е на работа** и **не си пътува до родния град**, както и в **2/3 от празничните дни**. Той пътува до **родния си град h пъти** в годината, където играе волейбол със старите си приятели в **неделя**. Влади **не е на работа 3/4 от уикендите**, в които е в София. Отделно, през **високосните години** Влади играе с **15% повече** волейбол от нормалното. Приемаме, че годината има точно **48 уикенда**, подходящи за волейбол. 
 Напишете програма, която изчислява **колко пъти Влади е играл волейбол** през годината. **Закръглете резултата** надолу до най-близкото цяло число (напр. 2.15 -> 2; 9.95 -> 9).
