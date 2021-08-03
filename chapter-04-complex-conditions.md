@@ -261,51 +261,51 @@ The previous evaluation might be simplified in the following may:
 
 ![](assets/chapter-4-1-images/06.Point-on-rectangle-border-03.png)
 
-Вторият начин с допълнителните булеви променливи е по-дълъг, но е много по-разбираем от първия, нали? Препоръчително е, когато пишем булеви условия, да ги правим **лесни за четене и разбиране**, а не кратки. Ако се налага, ползваме допълнителни променливи със смислени имена. Имената на булевите променливи трябва да подсказват каква стойност се съхранява в тях.
+The second way with the additional boolean variables is longer, but is much more understandable then the first one, isn't it? We recommend when you write boolean conditions to make them **easy to read and understand**, instead of making the short. Use additional variables with meaningful names, if needed. The names of the boolean variables have to hint what the value that is kept inside them represents.
 
-Остава да допишете кода, за да отпечатва “**Inside / Outside**”, ако точката не е върху някоя от страните на правоъгълника.
+What remains is to finish writing the code to print “**Inside / Outside**”, if the point is not onto any of the sides of the rectangle.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-След като допишете решението, може да го тествате тук: [https://judge.softuni.bg/Contests/Practice/Index/931#5](https://judge.softuni.bg/Contests/Practice/Index/931#5).
+After you finish whiting the solution, oyu can test it here: [https://judge.softuni.bg/Contests/Practice/Index/931#5](https://judge.softuni.bg/Contests/Practice/Index/931#5).
 
 
-### Пример: магазин за плодове
+### Example: Fruit Shop
 
-Магазин за плодове в **работни дни** продава на следните **цени**:
+A fruit shop during **week days** sells in the following **prices**:
 
-|Плод|Цена|
+|Fruit|Price|
 |:-----:|:-----:|
 |banana<br>apple<br>orange<br>grapefruit<br>kiwi<br>pineapple<br>grapes|2.50<br>1.20<br>0.85<br>1.45<br>2.70<br>5.50<br>3.85|
 
-В почивни дни цените са **по-високи**:
+During the **weekend days** the prices are higher:
 
-|Плод|Цена|
+|Fruit|Price|
 |:-----:|:-----:|
 |banana<br>apple<br>orange<br>grapefruit<br>kiwi<br>pineapple<br>grapes|2.70<br>1.25<br>0.90<br>1.60<br>3.00<br>5.60<br>4.20|
 
-Напишете програма, която чете от конзолата **плод** (banana / apple / …), **ден от седмицата** (Monday / Tuesday / …) и **количество (десетично число)** и **пресмята цената** според цените от таблиците по-горе. Резултатът да се отпечата **закръглен с 2 цифри след десетичния знак**. При **невалиден ден** от седмицата или **невалидно име** на плод да се отпечата **“error”**.
+Write a program that reads from the console **fruit** (banana / apple / …), **a day of the week** (Monday / Tuesday / …) and **quantity (decimal number)** and **calculates the price** according to the prices from the tables above. The result has to be printed **rounded up to 2 digits after the decimal point**. Print **“error”** if it is an **invalid day** of the week or an **invalid name** of a fruit.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |orange<br>Sunday<br>3|2.70|kiwi<br>Monday<br>2.5|6.75|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |grapes<br>Saturday<br>0.5|2.10|tomato<br>Monday<br>0.5|error|
 
-#### Решение
+#### Solution
 
 ![](assets/chapter-4-1-images/07.Fruit-shop-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#6](https://judge.softuni.bg/Contests/Practice/Index/931#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#6](https://judge.softuni.bg/Contests/Practice/Index/931#6).
 
 
-### Пример: търговски комисионни
+### Example: Trade Fees
 
 Фирма дава следните **комисионни** на търговците си според **града**, в който работят и **обема на продажбите s**:
 
