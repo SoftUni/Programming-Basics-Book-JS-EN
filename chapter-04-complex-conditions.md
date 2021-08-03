@@ -542,83 +542,83 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#1
 
 ### Problem: * Point in the Figure
 
-Фигура се състои от **6 блокчета с размер h \* h**, разположени като на фигурата. Долният ляв ъгъл на сградата е на позиция {0, 0}. Горният десен ъгъл на фигурата е на позиция {**2\*h**, **4\*h**}. На фигурата координатите са дадени при **h = 2**:
+The fugure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the buiding is on position {0, 0}. The upper right angle of the figure is on position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
 
 <p><img src="assets/chapter-4-1-images/13.Point-in-the-figure-01.png" /></p>
 
-Да се напише програма, която въвежда цяло число **h** и координатите на дадена **точка {x, y}** (цели числа) и отпечатва дали точката е вътре във фигурата (**inside**), вън от фигурата (**outside**) или на някоя от стените на фигурата (**border**).
+Write a program, that enters an integer **h** and the coordinates of given **point {x, y}** (integers) and prints whether the points is inside the figure (**inside**), outside the figure (**outside**) or on any of the borders of the figure (**border**).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |2<br>3<br>10|outside|2<br>3<br>1|inside|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |2<br>2<br>2|border|2<br>6<br>0|border|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|-----|-----|-----|
 |2<br>0<br>6|outside|15<br>13<br>55|outside|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |15<br>29<br>37|inside|15<br>37<br>18|outside|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |15<br>-4<br>7|outside|15<br>30<br>0|border|
 
-#### Насоки и подсказки
+#### Hins and Guidelines
 
-Примерна логика за решаване на задачата (не е единствената правилна):
+Apossible logic for solving the task (not the only correct one):
 
-* Може да разделим фигурата на **два правоъгълника** с обща стена:
+* We might split the figure into **two rectangles** with a shared side:
 
 <p><img src="assets/chapter-4-1-images/13.Point-in-the-figure-03.png" /></p>
 
-* Една точка е **външна (outside)** за фигурата, когато е едновременно **извън** двата правоъгълника.
-* Една точка е **вътрешна (inside)** за фигурата, ако е вътре в някой от правоъгълниците (изключвайки стените им) или лежи върху общата им стена.
-* В **противен случай** точката лежи на стената на правоъгълника (**border**).
+* A point is **outer (outside)** for the figure, when it is **outside** both of the rectangles.
+* A point is **inner (inside)** for the figure, if it is inside one of the rectangles (excluding their borders) or lies on their shared side.
+* In **other case** the point lies on the border of the rectangle (**border**).
 
-Примерен код (части от кода са замъглени с цел да се стимулира самостоятелно мислене и решение):
+Sample code (parts of the code are blurred with the purpose of stimulating logical thinking and solving skills):
 
 ![](assets/chapter-4-1-images/13.Point-in-the-figure-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#12](https://judge.softuni.bg/Contests/Practice/Index/931#12).
+Test yur solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#12](https://judge.softuni.bg/Contests/Practice/Index/931#12).
 
 
 ## Упражнениe: графично приложение с по-сложни проверки
 
-В тази глава научихме как можем да правим **проверки с нетривиални условия**. Нека сега приложим тези знания, за да създадем нещо интересно: настолно приложение, което визуализира точка и правоъгълник. Това е прекрасна визуализация за една от задачите от упражненията.
+In this chapter we learned how we can make **statements with non-trivial conditions**. Now let's apply this knowledge to create something interesting: a desktop application, that visualizes a point in a rectangle. This is a wonderful visualization of one of the tasks from the exercises.
 
-### Задача: * точка и правоъгълник – графично (GUI) приложение
+### Lab: * Point in a rectangle – (GUI) application
 
-Задачата, която си поставяме е да се разработи графично (**GUI**) приложение за **визуализация на точка и правоъгълник**. Приложението трябва да изглежда приблизително по следния начин:
+The task we have is to develop a graphical (**GUI**) application for **visualizing a point in a rectangle**. The application must look like identically the following:
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-01.png)
 
-От контролите вляво се задават координатите на **два от ъглите на правоъгълник** (десетични числа) и координатите на **точка**. Приложението **визуализира графично** правоъгълника и точката и изписва дали точката е **вътре** в правоъгълника (**Inside**), **вън** от него (**Outside**) или на някоя от стените му (**Border**). Приложението **премества и мащабира** координатите на правоъгълника и точката, за да бъдат максимално големи, но да се събират в полето за визуализация в дясната страна на приложението.
+Using the controls on the left we set the coordinates of  **two of the angles of the rectangle** (decimal numbers) and the coordinates of the **point**. The application **visualizes graphically** the rectangle and the point and prints whether the point is**inside** the rectangle (**Inside**),  **outside** of it (**Outside**) or on one of the sides (**Border**). The application **moves and resizes**the coordinates of the rectangle and the point to be maximum large, but to fit the field for visualization in the right side of the application.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Внимание</b>: това приложение е значително <b>по-сложно</b> от предходните графични приложения, които разработвахме до сега, защото изисква ползване на функции за чертане (Canvas ), работа с HTML, JavaScript и GUI framework (Electron).</td>
+<td><b>Attention</b>: this application is significantly <b>more complex</b> than the previous graphical applications, which we have develop intil now, because it requires using functions for drawing (Canvas ), work with HTML, JavaScript and GUI framework (Electron).</td>
 </tr></table>
 
-Следват инструкции за изграждане на приложението стъпка по стъпка:
+Follow the instructions for building the application step by step:
 
-1. Първо ще си създадем отделна папка за проекта на нашето приложение с подходящо име, например "**Point-in-Rectangle**".
+1. We will first create a saparte folder for the project of our application with an suitable name, for example "**Point-in-Rectangle**".
 
-2. Инсталираме **Electron** – работна рамка (**framework**) за създаване на графични (**GUI**) приложения с JavaScript. Изпълняваме следната команда на конзолата (Command Prompt / Bash):
+2.  **Electron** – working frame (**framework**) for creating graphical (**GUI**) applications with JavaScript. We execude the following command on the console (Command Prompt / Bash):
 ```
 npm install -g electron
 ```
 
-3. В папката на проекта създаваме **JavaScript файл** с име **main.js** като във VS Code натиснем [**Ctrl + N**]. След това записваме новия файл с [**Ctrl + Shift + S**] и въвеждайки желаното име на файла.
+3.In the project folder we create **JavaScript file** named **main.js** using the keyboard shortcut  [**Ctrl + N**] in VS Code. After that we save the new file by using [**Ctrl + Shift + S**] and entering the desired file name.
 
-4. Кодът, описан в **main.js**, управлява събитията и създава нови прозорци в приложението. Трябва да изглежда по следния начин: 
+4. The code, described in **main.js**, manages the events and creates new windows in the application. It should look like the following code below: 
 
 ```javascript
 const path = require('path');
