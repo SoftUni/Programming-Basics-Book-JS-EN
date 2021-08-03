@@ -126,7 +126,7 @@ Write a program that takes a positive integer **n** and draws on the console **a
 |---|---|---|---|
 |5|<code>+ - - - +</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>+ - - - +</code>|6|<code>+ - - - - +</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>+ - - - - +</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
 We can solve the problem in the following way:
 * We read from the console the number **`n`**.
@@ -266,7 +266,7 @@ We gave **`n`** as a parameter to our function:
 ![](/assets/chapter-6-1-images/09.House-02.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into <b><code>Number</code></b>type, because it is said that we will be given valid integers. If you are making more complex programs it is a good practice to check the data. What will happen if instead of the character "А" the user inputs a number?</td>
+<td><b>>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into <b><code>Number</code></b>type, because it is said that we will be given valid integers. If you are making more complex programs it is a good practice to check the data. What will happen if instead of the character "A" the user inputs a number?</td>
 </tr></table>
 
 To draw **the roof**, we write down how many **stars** we start with a variable called **`stars`**:
@@ -283,7 +283,7 @@ It is important to note that when **`n`** is an odd number, the length of the ro
  Example:
 
 ```javascript
-    let result = 3 / 2; // резултат 1.5
+    let result = 3 / 2; // result 1.5
 ```
 
 If we want to round up to the next largest integer. number, we need to use the method **`Math.ceil(…)`**: **`let result = Math.ceil(3 / 2);`**. The result from **`3 / 2`** is **`1.5`**. **`Math.ceil(…)`** will round the number to the next largest integer. In our case **`1.5`**  will be rounded to **`2`**. **`parseInt()`** is used to transform the input parameter to type **`Number`**.
@@ -293,7 +293,7 @@ After we have calculated the length of the roof, we make a loop from 0 to **`roo
 
 ![](/assets/chapter-6-1-images/09.House-05.png)
 
-* We print on the console: "**тирета**" (**`padding / 2`** times) + "**звезди**" (**`stars`** times) + "**тирета**" (**`padding / 2`** times):
+* We print on the console: "**dash**" (**`padding / 2`** times) + "**stars**" (**`stars`** times) + "**dash**" (**`padding / 2`** times):
 
 ![](/assets/chapter-6-1-images/09.House-06.png)
 
