@@ -386,88 +386,88 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#8
 
 ### Multiple Labels in Switch-Cases
 
-В **JavaScript** имаме възможността да **използваме множество `case`** етикети, когато те трябва да изпълняват **един и същи** код. При този начин на записване, когато програмата ни намери **съвпадение**, ще изпълни **следващия** срещнат код, тъй като **след** съответния **`case`** етикет **липсва код** за изпълнение и **`break`** оператор:
+In **JavaScript** we have the possibility to **use multiple `case`** labels, when they have to execute **the same** code. In this way, when our program finds a **match**, it will execute **the next** code, because **after** the respective **`case`** label **there is no code** for execution and a **`break`** operator:
 
 ```javascript
-switch (селектор) {
-    case стойност1:
-    case стойност2:
-    case стойност3:
-        конструкция;
+switch (selector) {
+    case value1:
+    case value2:
+    case value3:
+        construction;
         break;
-    case стойност4:
-    case стойност5:
-        конструкция;
+    case value4:
+    case value5:
+        construction;
         break;
     …
     default:
-        конструкция;
+        construction;
         break;
 }
 ```
 
-### Пример: вид животно
+### Example: Animal Type
 
-Напишете програма, която принтира вида на животно според името му: 
+Write a program that prints the type of the animal depending on its name: 
 
 * dog -> **mammal**
 * crocodile, tortoise, snake -> **reptile**
 * others -> **unknown**
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |-----|-----|-----|-----|-----|-----|
 |tortoise|reptile|dog|mammal|elephant|unknown|
 
-#### Решение
+#### Solution
 
-Можем да решим задачата чрез **`switch-case`** проверки с множество етикети по следния начин:
+Whe can solve the task with **`switch-case`** conditions with multiple lables in the following way:
 
 ![](assets/chapter-4-1-images/10.Animal-type-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#9](https://judge.softuni.bg/Contests/Practice/Index/931#9).
+Thes your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#9](https://judge.softuni.bg/Contests/Practice/Index/931#9).
 
 
-## Какво научихме от тази глава?
+## What have we learned from this chapter?
 
-Да си припомним новите конструкции и програмни техники, с които се запознахме в тази глава:
+Let's look back on what new constuctions and programming techniques we get familiar with in this chapter:
 
-### Вложени проверки
+### Nested Conditions
 
 ```javascript
 if (condition1) {
     if (condition2) {
-        // тяло; 
+        // body; 
     } else {
-        // тяло;
+        // body;
     }
 }
 ```
 
-### По-сложни проверки с &&, ||, ! и ()
+### More Complex Conditions with &&, ||, ! и ()
 
 ```javascript
 if ((x === left || x === right) && y >= top && y <= bottom)
     console.log(…); 
 ```
 
-#### Switch-case проверки
+#### Switch-case statements
 
 ```javascript
-switch (селектор) {
-    case стойност1:
-        конструкция;
+switch (selector) {
+    case value1:
+        construction;
         break;
-    case стойност2:
-    case стойност3:
-        конструкция;
+    case value2:
+    case value3:
+        construction;
         break;
     …
     default:
-        конструкция;
+        construction;
         break;
 }
 ```
