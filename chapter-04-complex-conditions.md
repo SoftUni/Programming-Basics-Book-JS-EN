@@ -649,11 +649,11 @@ app.on('activate', () => {
 });
 ```
 
-5. В папката на проекта създаваме и нов **HTML** файл с име **`index.html`**. Тагът **`<title>`** е задължителен за всеки **html** документ и дефинира заглавието му. Влизаме в него и написваме **`"Point in Rectangle"`**:
+5. In the project folder we create **HTML** file with name **`index.html`**. The **`<title>`** tag is mandatory for every **html** document and defines its title. We open it and write **`"Point in Rectangle"`**:
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-05.png)
 
-Добавяме следния код под тага **`<title>`** в **index.html** файла:
+We add the following code under the **`<title>`** in the **index.html** file:
 
 ```javascript
 <script src="app.js" type="text/javascript"></script>
@@ -661,7 +661,7 @@ app.on('activate', () => {
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-06.png)
 
-По този начин се осъществява връзката между файловете **`index.html`** и **`app.js`** (който ще създадем малко по-късно). Тагът **`<body>`** дефинира **тялото на html документа**. Написваме в него следния код:
+In this way the connection bettween the files **`index.html`** and **`app.js`** (which we will create later) is realized. The **`<body>`**  tag defines **the body of the html document**. We write in it the following code:
 
 ```html
 <body>
