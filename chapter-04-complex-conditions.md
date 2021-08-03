@@ -95,7 +95,7 @@ Let's take a look at how we can create more complex conditions. We can use the l
 
 ### Logical "AND"
 
-As we saw, in some tasks we have to make**multiple checks at once**.But what happens,when in order to execude some code,  **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each one of them? The option with the nested **`if` blocks** is valid, but the code will look very **unordered** and for sure - **hard** hard to read and maintain.  
+As we saw, in some tasks we have to make **multiple checks at once**.But what happens,when in order to execude some code,  **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each one of them? The option with the nested **`if` blocks** is valid, but the code will look very **unordered** and for sure - **hard** hard to read and maintain.  
 
 Logical "**AND**" (operator **`&&`**) means a few coditions have to be **fulfilled simultaneously**. The following table of truthfulness is applicable:
 
@@ -103,7 +103,7 @@ Logical "**AND**" (operator **`&&`**) means a few coditions have to be **fulfill
 |-----|-----|-----|
 |true<br>true<br>false<br>false|true<br>false<br>true<br>false|true<br>false<br>false<br>false|
 
-### How the && Operator Works?
+### How does the && Operator Work?
 
 The operator **`&&`** accepts **a couple of Boolean** (conditional) statements, which have a **`true`** or **`false`** value,and returns **one** boolean statement as a **result**. Using it **instead**of couple of a couple of nested **`if`** blocks, makes the code **more readable**, **ordered** и **easy** to maintain. But how does it **work**, when we put a **few** conditions one after another? As we saw above,the logical **"AND"** returns **`true`**, **only** when it accepts as **arguments statements** with value **`true`**. Respectively, when we have a **sequence** of arguments,the logical "**AND**" checks either until one of the arguments is **over**,or until it **meets**an argument with value **`false`**. 
 
@@ -158,7 +158,7 @@ At school, the teacher says: "Ivan or Peter should clean the board". To fulfill 
 |true<br>true<br>false<br>false|true<br>false<br>true<br>false|true<br>true<br>true<br>false|
 
 
-### How the || Operator Works ?
+### How does the || Operator Work?
 
 We hav already learned what the logical **"OR"** **represents**. But how is it actually being achieved? Just like the logical **"AND"**, the program **checks** from left to right **the arguments**, that are given. In order to obtain **`true`** from the expression, it is necessary for **just one** argument to have a **`true`** value, respectively the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
 
