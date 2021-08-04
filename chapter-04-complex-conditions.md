@@ -591,7 +591,7 @@ Sample code (parts of the code are blurred with the purpose of stimulating logic
 Test yur solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#12](https://judge.softuni.bg/Contests/Practice/Index/931#12).
 
 
-## Exercise: graphic application with more complex conditions 
+## Exercise: Graphic Application with More Complex Conditions 
 
 In this chapter we learned how we can make **statements with non-trivial conditions**. Now let's apply this knowledge to create something interesting: a desktop application, that visualizes a point in a rectangle. This is a wonderful visualization of one of the tasks from the exercises.
 
