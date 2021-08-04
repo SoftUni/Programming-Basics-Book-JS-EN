@@ -717,20 +717,20 @@ It accepts the following parameters:
   - **Height** (height) in pixels (px)
   - **Border** (border)
   
-За да се отразяват промените в приложението, файловете трябва да се запазват с **`[Ctrl+S]`**.
+To have your changes stored in the application, the files must be saved with **`[Ctrl+S]`**.
 
-За да стартираме приложението, изпълняваме в конзолата (в папката на текущия проект) следната команда: 
+To start the application, run the following command in the console (in the folder of the current project): 
 ```
 electron .
 ```
 
-Приложението трябва да изглежда по следния начин:
+The application should look like the following:
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-04.png)
 
-6. Остава да се имплементира най-сложната част: **визуализация на правоъгълника и точката** в полето на елемента **`<canvas>`** чрез функцията **`draw()`** във файла **`app.js`**, който създаваме в директорията на приложението, по начина, описан в Точка 2.
+6. The most complicated part remains to be implemented: **visualization of the rectangle and the point** at the field of the element **`<canvas>`** by using the function **`draw()`** in the file **`app.js`**, whitch we create in the directory of the application, in the way described at Point 2.
   
-Създаваме  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D">**`CanvasRenderingContext2D`**</a> обект като напишем следния код:
+We create  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D">**`CanvasRenderingContext2D`**</a> an object by writing the following code:
   
 ```javascript
 // Create canvas element
@@ -738,7 +738,7 @@ let canvas = document.getElementById('a');
 let context = canvas.getContext('2d');
 ```
 
-Елементът **`<canvas>`** е поле, в което обектът, генериран чрез метода <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext">**`.getContext('2d')`**</a>, чертае графики, текст, изображения и други елементи. В случая променливата **`context`** представлява този обект. Записваме в отделни променливи координатите на двата ъгъла на правоъгълника:
+The **`<canvas>`** element is a field,in which the object generated with the method <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext">**`.getContext('2d')`**</a>, is drawing graphics, text, images and other elements. In this case, the **`context`** variable represents this object. We store in separate variables the coordinates of the two angles of the rectangle:
   
 ```javascript
 // Get input for rectangle coordinates
@@ -748,7 +748,7 @@ let rectX2 = Number(document.getElementById("rect-x2").value) * 10;
 let rectY2 = Number(document.getElementById("rect-y2").value) * 10;
 ```
 
-Стойностите на координатите са достъпни чрез **`id`** на **`<input>`** полетата. За по-добра визуализация на екрана, мащабираме стойностите като **ги увеличaваме 10 пъти**. Следващата стъпка е да се пресметнат страните на правоъгълника, тъй като обектът **`context`** рисува правоъгълник по четири параметъра: **`x`** - координата, **`y`** - координата, **`ширина`** в пиксели и **`височина`** в пиксели:
+The coordinate values are accesible through the **`id`** of the **`<input>`** fields. For better visualization of the screen, we scale the values by **increasing them 10 times**. The next step is to calculate the sides of the rectangle, because the object **`context`** draws a rectangle on four parameters: **`x`** - coordidate, **`y`**  coordinate, **`width`** in pixels and **`height`** in pixels:
 
 ```javascript
 // Calculate rectangle parameters
@@ -756,7 +756,7 @@ let rectWidth = Math.abs(rectX1 - rectX2);
 let rectHeight = Math.abs(rectY1 - rectY2);
 ```
 
-Можем да използваме кода по-долу, който рисува червен правоъгълник, според зададените във формата координати, използвайки метода <a target="_blank" href="https://www.w3schools.com/tags/canvas_strokerect.asp">**`.strokeRect(...)`**</a>:
+We can use the code below, which draws a red rectangle, according to the coordinates given in the form, using the method <a target="_blank" href="https://www.w3schools.com/tags/canvas_strokerect.asp">**`.strokeRect(...)`**</a>:
 
 ```javascript
 // Set rectangle style
@@ -767,7 +767,7 @@ context.lineWidth = 3;
 context.strokeRect(rectX1, rectY1, rectWidth, rectHeight);
 ```
 
-Аналогично на правоъгълника, взимаме координатите на точката и ги мащабираме. След това задаваме стил на точката - оранжев цвят. За по-добра визуализация на екрана, преобразуваме точката в кръг с метода <a target="_blank" href="https://www.w3schools.com/tags/canvas_arc.asp">**`.arc(...)`**</a>. Този метод приема пет параметъра: **`x`** - координата, **`y`** - координата, **`радиус`**, **`начало на дъгата`** в радиани, **`край на дъгата`** в радиани:
+Similar to the rectangle, we take the coordinates of the point and scale them. After that we set the style of the point - orange color. For better visualization of the screen, we converт the point into a circle with the method <a target="_blank" href="https://www.w3schools.com/tags/canvas_arc.asp">**`.arc(...)`**</a>. This method accepts five parameters: **`x`** - coordinate, **`y`** - coordinate, **`radius`**, **`start of the arc`** in radians, **`end of the arc`** radians:
 
 ```javascript
 // Get input for point coordinates
@@ -782,7 +782,7 @@ context.closePath();
 context.fill();
 ```
 
-За да отрaзим резултатите в **`if`** проверките, запазваме в отделни променливи следните елементи от html кода:
+To reflect the results in the **`if`** checks, we store the following elements of the html code in separate variables:
 
 ```javascript
 // Assign variables to (<div id="result">) and (<span id="status">) html elements
@@ -790,7 +790,7 @@ let result = document.getElementById("status");
 let output = document.getElementById("result");
 ```
 
-Последната стъпка е проверка на позицията на точката спрямо правоъгълника:
+The last step is to check the position of the point relative to the rectangle:
 
 ```javascript
 // Check point position
@@ -806,9 +806,9 @@ if () {
 }
 ```
 
-Нека помислим как **да допишем** недовършените (нарочно) условия в **`if`** конструкциите. Кодът по-горе нарочно не се компилира, защото целта му е читателят да помисли как и защо работи и да допълним липсващите части. Горният код взима координатите на правоъгълника и точката и проверява дали точката е вътре, вън или на страна на правоъгълника. При визуализацията на резултата се сменя и цвета на фона на текстовия блок, който го съдържа.
+Let's now think about how **to add** the unfinished (on purpose) conditions in the **`if`** constructions. The code above is intentionally not compiled, because its purpose is to make the reader to think how and why it works and to complete the missing parts. The code above takes the coordinates of the rectangle and the point, checks whether the point is inside, outside or on the side of the rectangle.When the result is visualized, the background color of the text block that contains it also changes.
 
-Това е пълната версия на функцията **`draw()`**:
+This is the full version of the function **`draw()`**:
 
 ```javascript
 function draw() {
@@ -866,23 +866,23 @@ function draw() {
 }
 ```
 
-Стартираме приложението чрез файла **index.html** и го тестваме (с въвеждане на различни входни данни). Пробваме да въвеждаме различни правоъгълници и да позиционираме точката на различни позиции, да преоразмеряваме приложението и виждаме дали се държи коректно. Ако приложението не работи коректно, проверяваме за грешки. Най-вероятната причина за грешка е, ако сме написали кода на неправилно място.
+We start the application through the file **index.html** and test it (by entering the different input data). We try to enter different rectangles and to locate the point at different positions, resize the application and we see if it behaves correctly. If the application does not work correctly, we check for errors. The most likely cause for error, is if we wrote the code in the wrong place.
 
-Накрая стартираме приложението в собствен GUI прозорец: 
+At last, we start the application in our own GUI window: 
 ```
 electron .
 ```
 
-**Случай 1: Точката се намира в правоъгълника**:
+**Case 1: The point is in the rectangle**:
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-01.png)
 
-**Случай 2: Точката лежи на една от страните на правоъгълника**:
+**Case 2: The point lies on one of the sides of the rectangle**:
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-02.png)
 
-**Случай 3: Точката се намира извън правоъгълника**:
+**Case 3: The point is ouside the rectangle**:
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-03.png)
 
-Ако имате трудности с последната задача, питайте във **форума на СофтУни**: https://softuni.bg/forum.
+If you have problems with the last task, feel free to as in the SoftUni official forum **форума на СофтУни**: https://softuni.bg/forum.
