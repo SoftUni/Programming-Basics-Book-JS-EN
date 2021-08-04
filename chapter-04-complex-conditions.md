@@ -885,4 +885,4 @@ electron .
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-03.png)
 
-If you have problems with the last task, feel free to as in the SoftUni official forum **форума на СофтУни**: https://softuni.bg/forum.
+If you have problems with the last task, feel free to ask in **the SoftUni Forum**: https://softuni.bg/forum.
