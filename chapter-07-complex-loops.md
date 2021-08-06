@@ -276,60 +276,60 @@ And here is an **infinite `for`** loop:
 ![](assets/chapter-7-1-images/00.Infinite-for-loop-01.PNG)
 
 
-### Оператор break
+### The Break Operator
 
-Вече знаем, че безкрайният цикъл изпълнява определен код до безкрайност, но какво става, ако желаем в определен момент при дадено условие, да излезем принудително от цикъла? На помощ идва операторът **`break`**, в превод - **спри, прекъсни**.
+We already know that the infinite loop executes a certain code infinitely, but what if we want at some point under a given condition to interrupt and exit the loop? The **break** operator comes in handy in this situation.
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Операторът <b><code>break</code></b> спира изпълнението на цикъла към момента, в който е извикан, и продължава от първия ред след края на цикъла. Това означава, че текущата итерация на цикъла няма да бъде завършена до край и съответно останалата част от кода в тялото на цикъла няма да се изпълни.</td>
+<td>The operator <b><code>break</code></b> stops a loop's execution at the point it is called and execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingy and the rest of the code in the body of the loop will not be executed.</td>
 </tr></table>
 
-### Пример: прости числа
+### Example: Prime Number Checking
 
-В следващата задача се изисква да направим **проверка за просто число**. Преди да продължим към нея, нека си припомним какво са простите числа.
+The next problem we are going to solve is to **check whether a given number is prime**, but before that we should remember what are prime numbers.
 
-**Определение**: едно цяло число е **просто**, ако се дели без остатък единствено на себе си и на 1. По дефиниция простите числа са положителни и по-големи от 1. Най-малкото просто число е **2**.
+**Definition**: An integer is considered **prime**, if it is divisible only by itself and by 1. By definition, the prime numbers are positive and greater than 1. The smallest prime number is **2**.
 
-Можем да приемем, че едно цяло число **n** е просто, ако **n > 1** и **n** не се дели на число между **2** и **n-1**.
+We can assume that an integer **n** is a prime number if **n > 1** and **n** is not divisible by a number between **2** and **n-1**.
 
-Първите няколко прости числа са: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, …
+The first few prime numbers are: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, …
 
-За разлика от тях, **непростите (композитни) числа** са такива числа, чиято композиция е съставена от произведение на прости числа.
+By contrast, **composite numbers** are integers, which can be obtained by multiplying several prime numbers.
 
-Ето няколко примерни непрости числа: 
+Here are some examples of composite numbers:
 * **10** = 2 * 5
 * **42** = 2 * 3 * 7
 * **143** = 13 * 11
 
-**Алгоритъм за проверка** дали дадено цяло число е **просто**: проверяваме дали **n > 1** и дали **n** се дели на **2**, **3**, …, **n-1** без остатък.
-* Ако се раздели на някое от числата, значи е **композитно**.
-* Ако не се раздели на никое от числата, значи е **просто**.
+**An algorithm to check** whether a given number is **prime**: we check if **n > 1** and if **n** is divisible by **2**, **3**, …, **n-1** without remainder.
+* If it is divisible by any of the numbers, it is **composite**.
+* If it is not divisible by any of the numbers, then it is **prime**.
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Можем да оптимизираме алгоритъма, като вместо проверката да е до <code><strong>n-1</strong></code>, да се проверяват делителите до <code><strong>√n</strong></code>. Помислете защо.</td>
+<td>We can optimize the algorithm by instead of checking until <code><strong>n-1</strong></code>, to check divisors only until <code><strong>√n</strong></code>. Think of the reasons why this is so.</td>
 </tr></table>
 
-### Пример: проверка за просто число. Оператор break
+### Example: check for a prime number. Break operator
 
-Да се провери дали едно число **n** е просто. Това ще направим като проверим дали **n** се дели на числата между 2 и √n.
+You are tasked to write a function that takes a single input **n** integer and checks if it is prime. This can be implemented by checking if **n** is divisible by any numbers in the range between 2 and √n.
 
-Ето го алгоритъма за проверка за просто число, разписан постъпково:
+The steps of the **"prime checking algorithm"** are given below in bigger detail:
 
-* Декларираме променливата **`n`**, на която присвояваме цялото число, което е подадено на функцията.
-* Създаваме булева променлива **`prime`** с начална стойност **`true`**. Приемаме, че едно число е просто до доказване на противното.
-* Създаваме **`for`** цикъл, чиято начална стойност за променливата на цикъла задаваме 2, за условие **текущата ѝ стойност `<= √n`**. Стъпката на цикъла е 1.
-* В **тялото на цикъла** проверяваме дали **`n`**, разделено на **текущата стойност** има остатък. Ако от делението **няма остатък**, то променяме **`prime`** на **`false`** и излизаме принудително от цикъла чрез оператор **`break`**.
-* В зависимост от стойността на **`prime`** отпечатваме дали числото е просто (**`true`**) или съответно съставно (**`false`**).
+* We declare the varible **`n`**, to which we assign the integer passed to our function.
+* We create an **`prime`** boolean with and initial value **`true`**. We assume that a number is prime until proven otherwise.
+* We create a **`for`** loop, with initial value set to 2, for condition the **current calue `<= √n`**. The stride is set to 1.
+* In the **body of the loop** we check if **`n`**, divided by the **current value** has a remainder. If there is **no reminder** from the division, then we change **`prime`** to **`false`** and exit the loop through the **`break`** operator.
+* Depending on the value of **`prime`** we pring whether the input number is prime (**`true`**) or composite (**`false`**).
 
-Ето и примерна имплементация на описания алгоритъм:
+Here is a sample implementation of the prime checking algorithm, described above:
 
 ![](assets/chapter-7-1-images/10.Check-if-prime-01.PNG)
 
-Оставаме да добавите **проверка дали входното число е по-голямо от 1**, защото по дефиниция числа като 0, 1, -1 и -2 не са прости.
+What remains is to add a **condition that checks if the input number is greater than 1**, because by definition numbers such as 0, 1, -1 and -2 are not prime.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#9](https://judge.softuni.bg/Contests/Practice/Index/937#9).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#9](https://judge.softuni.bg/Contests/Practice/Index/937#9).
 
 ### Пример: оператор break в безкраен цикъл
 
