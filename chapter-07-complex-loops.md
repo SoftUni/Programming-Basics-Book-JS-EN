@@ -1,48 +1,47 @@
-# Глава 7.1. По-сложни цикли
+# Chapter 7.1. Complex loops
 
-След като научихме какво представляват и за какво служат **`for` циклите**, сега предстои да се запознаем с **други видове цикли**, както и с някои **по-сложни конструкции за цикъл**. Те ще разширят познанията ни и ще ни помагат в решаването на по-трудни и по-предизвикателни задачи. По-конкретно, ще разгледаме как се ползват следните програмни конструкции:
+Since we have learned what **`for`** loops are and their function in code, now is the time to take a look at **other loop types**, as well as some **more complex loop constructs**. These will expand our knowledge and help us solve more challenging problems. In particular, we will discuss how to use the folowing programming constructs:
 
-  * цикли **със стъпка**
-  * **`while`** цикли
-  * **`do-while`** цикли
-  * **безкрайни** цикли
+  * loops **with step aka stride**
+  * **`while`** loops
+  * **`do-while`** loops
+  * **infinite** loops
 
-В настоящата тема ще разберем и какво представлява операторът **`break`**, както и **как** чрез него да **прекъснем** един цикъл.
+In the current chapter we will also take a look at the **`break`** operator and **how** to emply it to **interrupt** a loop.
 
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank"
+  Watch the video course for this chapter: <a target="_blank"
   href="https://www.youtube.com/watch?v=KuaOHr3RpNs">
   https://www.youtube.com/watch?v=KuaOHr3RpNs</a>.
 </div>
 
 
-## Цикли със стъпка
+## Loops with stride
 
-В главата **"Повторения (цикли)"** научихме как работи **`for`** цикълът и вече знаем кога и с каква цел да го използваме. В тази тема ще обърнем **внимание** на една определена и много важна **част от конструкцията** му, а именно **стъпката**.  
+In the **"Loops (Repetitions)"** chapter we learned how the **`for`** loop works and we already know when and to what purpose to use it. In the present chapter we will **take a look** at a perticular and a very important **part of this structure** - its **step** or as it is also known **stride**.  
 
-### Какво представлява стъпката?
+### Loop with a Step – Explanation
 
-**Стъпката** е тази **част** от конструкцията на **`for`** цикъла, която указва с **колко** да се **увеличи** или **намали** стойността на **водещата** му променлива. Тя се декларира последна в скелета на **`for`** цикъла.
+The **stride** is the **part** of the **`for`** loop, that specifys the **amount** used to **increment** or **decrement** the **main** variable. The **step** is declared in the skeleton of the **`for`** loop.
 
-Най-често е с **размер `1`** и в такъв случай, вместо да пишем **`i += 1`** или **`i -= 1`**, можем да използваме операторите 
-**`i++`** или **`i--`**. Ако искаме стъпката ни да е **различна от 1**, при увеличение използваме оператора **`i +=` + `размера на стъпката`**, а при намаляване **`i -=` + `размера на стъпката`**. При стъпка 3, цикълът би изглеждал по следния начин: 
+Most often we have a **size of `1`** and in this case, instead of writing **`i += 1`** or **`i -= 1`**, we can use the shorthand operators **`i++`** or **`i--`**. In case we need the stride to be **different than 1**, when increasing we use the shorthand **`i +=` + `required stride`**, and when we decrease **`i -=` + `required stride`**. With a step of 3 the loop would appear as below: 
 
 ![](assets/chapter-7-1-images/00.Step-explanation-01.PNG)
 
-Следва поредица от примерни задачи, решението на които ще ни помогне да разберем по-добре употребата на **стъпката** във **`for`** цикъл.
+Here is a series of sample problems, the solution of which will help us better understand the use of the **step** in a **`for`** loop.
 
-### Пример: числата от 1 до N през 3
+### Example: Numbers from 1 to N with a step of 3
 
-Да се напише програма, която отпечатва числата **от 1 до n** със **стъпка 3**. Например, **ако n = 100**, то резултатът ще е: **1, 4, 7, 10, …, 94, 97, 100**.
+Write a program that prints the numbers **from 1 to n** with a **stride of 3**. For example, **if n = 100**, then the output would be: **1, 4, 7, 10, …, 94, 97, 100**.
 
-Можем да решим задачата чрез следната поредица от действия (алгоритъм):
+We can solve the problem using the following sequence of actions (algorithm):
 
-  * Създаваме функция, която ще приема числото **`n`**.
-  * Изпълняваме **`for` цикъл** от **1** до **`n`** с размер на стъпката **3**.
-  * В **тялото на цикъла** отпечатваме стойността на текущата стъпка.
+  * We create a function that will take the number **`n`**.
+  * We run a **`for` loop from 1** to **`n`** with a stride of **3**.
+  * in the **body of the loop**, we print the value of the current step.
   
 ![](assets/chapter-7-1-images/01.Numbers-1-to-n-01.PNG)
 
