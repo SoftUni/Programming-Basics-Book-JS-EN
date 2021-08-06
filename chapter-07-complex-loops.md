@@ -187,91 +187,91 @@ print а;
 
 ### Example: Greatest Common Divisor (GCD)
 
-Да се подадат **цели** числа **a** и **b** и да се намери **НОД(a, b)**.
+Enter the **integers** **a** and **b** and find **GCD(a, b)**.
 
-Ще решим задачата чрез **алгоритъма на Евклид**:
+We will solve the problem by implementing **Euclid's algorithm**:
 
-* Декларираме променливи **`a`** и **`b`**, на които присвояваме **целочислени** стойности, подадени на функцията.
-* За условие на цикъла слагаме израз, който е **`true`**, ако числото **`b`** **е различно** от **0**.
-* В **тялото на цикъла** следваме указанията от псевдо кода:
-   * Декларираме временна променлива, на която присвояваме **текущата** стойност на **`b`**.
-   * Присвояваме нова стойност на **`b`**, която е остатъка от делението на **`a`** и **`b`**.
-   * На променливата **`a`** присвояваме **предишната** стойност на променливата **`b`**.
-* След като цикълът приключи и сме установили НОД, го отпечатваме на екрана.
+* We declare variables **`a`** and **`b`**, to which we assign the **integer** values, passed to our function.
+* For loop condition we use an expression that is **`true`**, if the number **`b`** **is different** than **0**.
+* In the **body of the loop** we follow the instructions from the pseudo-code:
+   * We create a temporary variable to which we assign the **current** value of **`b`**.
+   * We assign a new value to **`b`**, which is the remainder of the division of **`a`** and **`b`**.
+   * On the variable **`a`** we assign the **previous** value of the variable **`b`**.
+* Once the loop is complete and we have found the GCD, we print it on the screen.
 
 ![](assets/chapter-7-1-images/07.GCD-01.PNG)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#6](https://judge.softuni.bg/Contests/Practice/Index/937#6).
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#6](https://judge.softuni.bg/Contests/Practice/Index/937#6).
 
-## Do-while цикъл
+## Do-while loop
 
-Следващият цикъл, с който ще се запознаем, е **`do-while`**, в превод - **прави-докато**. По структура, той наподобява **`while`**, но има съществена разлика между тях. Тя се състои в това, че **`do-while`** ще изпълни тялото си **поне веднъж**. Защо се случва това? В конструкцията на **`do-while`** цикъла, **условието** винаги се проверява **след** тялото му, което от своя страна гарантира, че при **първото завъртане** на цикъла, кодът ще се **изпълни**, а **проверката за край на цикъл** ще се прилага върху всяка **следваща** итерация на **`do-while`**. 
+The next type of loops we will study is the **`do-while`** loop. By structure it resembles the **`while`**, but with a significant difference. The **`do-while`** will execute its body **at least once**. Why is this? In the **`do-while`** loop structure, the **condition** is always checked **after** the body, which ensures that the **first loop iteration** will **execute** the code and the check for **the end of the loop** will be applied to each **subsequent** iteration of the **`do-while`**. 
 
 ![](assets/chapter-7-1-images/00.Do-while-01.PNG)
 
-Следва обичайната поредица от примерни задачи, чиито решения ще ни помогнат да разберем по-добре **`do-while`** цикъла.
+Now we should proceed with the usual set of practical problems, that wull help us better understand the **`do-while`** loop.
 
 
-### Пример: изчисляване на факториел
+### Example: Calculating Factorial
 
-За естествено число **n** да се изчисли **n! = 1 \* 2 \* 3 \* … \* n**. Например, ако **n = 5**, то резултатът ще бъде: **5!** = 1 \* 2 \* 3 \* 4 \* 5 = **120**.
+For natural **n** number, calculate **n! = 1 \* 2 \* 3 \* … \* n**. For example, if **n = 5**, то резултатът ще бъде: **5!** = 1 \* 2 \* 3 \* 4 \* 5 = **120**.
 
-Ето как по-конкретно можем да пресметнем факториел:
+Here is how we can calculate factorial in more detail:
 
-* Декларираме променливата **`n`**, на която присвояваме целочислена стойност подадена на функцията.
-* Създаваме още една променлива - **`fact`**, чиято начална стойност е 1. Нея ще използваме за изчислението и съхранението на факториела.
-* За условие на цикъла ще използваме **`n > 1`**, тъй като всеки път, когато извършим изчисленията в тялото на цикъла, ще намаляваме стойността на **`n`** с 1.
-* В тялото на цикъла:
-   * Присвояваме нова стойност на **`fact`**, която е резултат от умножението на текущата стойност на **`fact`** с текущата стойност на **`n`**.
-   * Намаляваме стойността на **`n`** с **-1**.
-* Извън тялото на цикъла отпечатваме крайната стойност на факториела.
+* We declare the variable **`n`**, to which we assign the integer value, passed to our function.
+* We declare another variable - **`fact`**, with initial value of 1. We will use it in calculation and to store the factorial value.
+* For loop condition we will use **`n > 1`**, because each time we perform the calculations in the body of the loop, we will decrease the value of **`n`** by 1.
+* In the body of the loop:
+   * We assign a new value to **`fact`**, which value is the product of multiplying the current **`fact`** with the current **`n`**.
+   * We decrement **`n`** with **1**.
+* Outside the body of the loop, we print the final factorial value.
 
 ![](assets/chapter-7-1-images/08.Factorial-01.PNG)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#7](https://judge.softuni.bg/Contests/Practice/Index/937#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#7](https://judge.softuni.bg/Contests/Practice/Index/937#7).
 
-### Пример: сумиране на цифрите на число
+### Example: Summing the Digits of a Number
 
-Да се сумират цифрите на цяло **положително** число **n**. Например, ако **n = 5634**, то резултатът ще бъде: 5 + 6 + 3 + 4 = **18**.
+Sum up the digits of the integer **positive** number **n**. For example if **n = 5634**, then the output would be: 5 + 6 + 3 + 4 = **18**.
 
-Можем да използваме следната идея, за да решим задачата:
+We can use the following idea to solve the problem:
 
-* Декларираме променливата **`n`**, на която присвояваме стойност, равна на въведеното от потребителя число.
-* Създаваме втора променлива - **`sum`**, чиято начална стойност е 0. Нея ще използваме за изчислението и съхранението на резултата.
-* За условие на цикъла ще използваме **`n > 0`**, тъй като след всяко изчисление на резултата в тялото на цикъла, ще премахваме последната цифра от **`n`**.
-* В тялото на цикъла:
-   * Присвояваме нова стойност на **`sum`**, която е резултат от събирането на текущата стойност на **`sum`** с последната цифра на **`n`**.
-   * Присвояваме нова стойност на **`n`**, която е резултат от премахването на последната цифра от **`n`**.
-* Извън тялото на цикъла отпечатваме крайната стойност на сумата.
+* We declare the variable  **`n`**, to which we assign a value equal to the number passed to our function.
+* We create a second variable - **`sum`**, with initial value of 0. We will use it for the calculation and storage of the result.
+* As a loop condition, we will use **`n > 0`**, since after each iteration of the loop, we will be removing the last digit from **`n`**.
+* In the body of the loop:
+   * We assign a new balue to **`sum`**, which is the resul of the sum of the current value of **`sum`** with the last digit of **`n`**.
+   * We assign a new balue to **`n`**, which is the resul of of removing the last digit of **`n`**.
+* Outside the body of the loop, we print the final value of the sum.
 
 ![](assets/chapter-7-1-images/09.Sum-digits-01.PNG)
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px;" /></td>
-<td><code><strong>n % 10</strong></code>: <b>връща</b> последната цифра на числото <code><strong>n</strong></code>.<br>
-<code><strong>Math.floor(n / 10)</strong></code>: <b>изтрива</b> последната цифра на <code><strong>n</strong></code>.</td>
+<td><code><strong>n % 10</strong></code>: <b>returns</b> the last digit of the nimber <code><strong>n</strong></code>.<br>
+<code><strong>Math.floor(n / 10)</strong></code>: <b>deletes</b> the last digit of <code><strong>n</strong></code>.</td>
 </tr></table>
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#8](https://judge.softuni.bg/Contests/Practice/Index/937#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#8](https://judge.softuni.bg/Contests/Practice/Index/937#8).
 
-## Безкрайни цикли и операторът break
+## Infinite loops and the operator break
 
-До момента се запознахме с различни видове цикли, като научихме какви конструкции имат те и как се прилагат. Следва да разберем какво е **безкраен цикъл**, кога възниква и как можем да **прекъснем** изпълнението му чрез оператора **`break`**.
+So far, we were introduced to various types of loops, learning what structures they have and how they are applied. Now, we need to understand what an **infinite loop** is, when it occurs, and how we can break it using the **`break`** operator.
 
-### Безкраен цикъл. Що е то?
+### Infinite Loop – Explanation
 
-Безкраен цикъл наричаме този цикъл, който **повтаря безкрайно** изпълнението на тялото си. При **`while`** и **`do-while`** циклите проверката за край е условен израз, който **винаги** връща **`true`**. Безкраен **`for`** възниква, когато **липсва условие за край**. 
+An infinite loop is one that **runs infinitely** the execution of its body. With **`while`** and **`do-while`** loops the end check is a conditional expression that **always** returns **`true`**. Infinite **`for`** occurs when there is **no condition to end the loop**. 
 
-Ето как изглежда **безкраен `while`** цикъл:
+Here is an example of an **infinite `while`** loop:
 
 ![](assets/chapter-7-1-images/00.Infinite-while-loop-01.PNG)
 
-А така изглежда **безкраен `for`** цикъл:
+And here is an **infinite `for`** loop:
 
 ![](assets/chapter-7-1-images/00.Infinite-for-loop-01.PNG)
 
