@@ -31,7 +31,7 @@ Most often we have a **size of `1`** and in this case, instead of writing **`i +
 
 ![](assets/chapter-7-1-images/00.Step-explanation-01.PNG)
 
-Here is a series of sample problems, the solution of which will help us better understand the use of the **step** in a **`for`** loop.
+Here is a series of sample problems, the solution of which will help us better understand the use of a **step** in a **`for`** loop.
 
 ### Example: Numbers from 1 to N with a step of 3
 
@@ -45,58 +45,58 @@ We can solve the problem using the following sequence of actions (algorithm):
   
 ![](assets/chapter-7-1-images/01.Numbers-1-to-n-01.PNG)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#0](https://judge.softuni.bg/Contests/Practice/Index/937#0).
+You can test your solution at the following link: [https://judge.softuni.bg/Contests/Practice/Index/937#0](https://judge.softuni.bg/Contests/Practice/Index/937#0).
 
-### Пример: числата от N до 1 в обратен ред
+### Example: Numbers from N to 1 in reverse
 
-Да се напише програма, която отпечатва числата **от n до 1 в обратен ред** (стъпка -1). Например, **ако n = 100**, то резултатът ще е: **100, 99, 98, …, 3, 2, 1**.
+Write a program that prints the numbers **from n to 1 in reverse** (step -1). For example, **if n = 100**, then the output will be: **100, 99, 98, …, 3, 2, 1**.
 
-Можем да решим задачата по следния начин:
+We can solve the problem in the folowing manner:
 
-  * Създаваме функция, която ще приема числото **`n`**.
-  * В него изпълняваме **`for` цикъл**, като присвояваме **`let i = n`** .
-  * Обръщаме условието на цикъла: **`i >= 1`**.
-  * Дефинираме размера на стъпката: **-1**.
-  * В **тялото на цикъла** отпечатваме стойността на текущата стъпка.
+  * We create a function that will take the number **`n`**.
+  * We run a **`for` loop**, by assigning **`let i = n`** .
+  * We reverse the contidion of the loop: **`i >= 1`**.
+  * We define the stride size: **-1**.
+  * in the **body of the loop**, we print the value of the current step.
 
 ![](assets/chapter-7-1-images/02.Numbers-n-to-1-01.PNG)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#1](https://judge.softuni.bg/Contests/Practice/Index/937#1).
+You can test your solution at the following link: [https://judge.softuni.bg/Contests/Practice/Index/937#1](https://judge.softuni.bg/Contests/Practice/Index/937#1).
 
-### Пример: числата от 1 до 2^n с for цикъл
+### Example: Numbers from 1 to 2^n with a for loop
 
-В следващия пример ще разгледаме ползването на обичайната стъпка с размер 1.
+In the folowing example we will use the standard size 1 stride.
 
-Да се напише програма, която отпечатва числата **от 1 до 2^n** (две на степен n). Например, **ако n = 10**, то резултатът ще е **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
+Write a program that prints the numbers **from 1 to 2^n** (two to the power of n). For example, **if n = 10**, then the output would be **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
 
 ![](assets/chapter-7-1-images/03.Numbers-1-tо-2^n-01.PNG)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#2](https://judge.softuni.bg/Contests/Practice/Index/937#2).
+You can test your solution at the following link: [https://judge.softuni.bg/Contests/Practice/Index/937#2](https://judge.softuni.bg/Contests/Practice/Index/937#2).
 
-### Пример: четни степени на 2
+### Example: Even Powers of 2
 
-Да се отпечатат **четните** степени на **2** до **2^n**: **2^0, 2^2, 2^4, 2^8, …, 2^n**. Например, ако **n = 10**, то резултатът ще е **1, 4, 16, 64, 256, 1024**.
+Print the **even** powers of **2** until **2^n**: **2^0, 2^2, 2^4, 2^8, …, 2^n**. For example, if **n = 10**, then the output would be **1, 4, 16, 64, 256, 1024**.
 
-Ето как можем да решим задачата:
+Here is how we can solve the problem:
 
-  * Създаваме функция, която ще приема числото **`n`**.
-  * Декларираме променлива **`num`** за текущото число, на която присвояваме начална **стойност 1**.
-  * За **стъпка** на цикъла задаваме стойност **2**.
-  * В **тялото на цикъла**: oтпечатваме стойността на текущото число и **увеличаваме текущото число `num` 4 пъти** (според условието на задачата).
+  * We create a function that will take the number **`n`**.
+  * We declare a variable **`num`** that will hold the current number and we assign it the initial **value of 1**.
+  * For the **step** of the loop we set a value of **2**.
+  * In the **body of the loop**: we print the value if the current number and **increase the current number `num` 4 times** (as per the problem description).
 
 ![](assets/chapter-7-1-images/04.Even^2-01.PNG)
 
-#### Тестване в Judge системата
+#### ТTesting in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#3](https://judge.softuni.bg/Contests/Practice/Index/937#3).
+You can test your solution at the following link: [https://judge.softuni.bg/Contests/Practice/Index/937#3](https://judge.softuni.bg/Contests/Practice/Index/937#3).
 
-## While цикъл
+## While loop
 
 Следващият вид цикли, с които ще се запознаем, се наричат **`while` цикли**. Специфичното при тях е, че повтарят блок от команди, **докато дадено условие е истина**. Като структура се различават от тази на **`for`** циклите, но имат по-опростен синтаксис.
 
