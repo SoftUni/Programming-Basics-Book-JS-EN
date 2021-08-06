@@ -92,72 +92,72 @@ Here is how we can solve the problem:
 
 ![](assets/chapter-7-1-images/04.Even^2-01.PNG)
 
-#### ТTesting in the Judge System
+#### Testing in the Judge System
 
 You can test your solution at the following link: [https://judge.softuni.bg/Contests/Practice/Index/937#3](https://judge.softuni.bg/Contests/Practice/Index/937#3).
 
 ## While loop
 
-Следващият вид цикли, с които ще се запознаем, се наричат **`while` цикли**. Специфичното при тях е, че повтарят блок от команди, **докато дадено условие е истина**. Като структура се различават от тази на **`for`** циклите, но имат по-опростен синтаксис.
+The next type of loops that we will familiarize wiht are called **`while` loops**. The special thing about them is that they repeat a comand block **while a condition is met**. Their structure is a bit different that that of the **`for`** loops, however they boast a simpler sintax.
 
 
-### Какво представлява while цикълът?
+### While Loop – Explanation
 
-В програмирането **`while` цикълът** се използва, когато искаме да **повтаряме** извършването на определена логика, докато **е в сила дадено условие**. Под "**условие**", разбираме всеки **израз**, който връща **`true`** или **`false`**. Когато **условието** стане **грешно**, **`while`** цикълът **прекъсва** изпълнението си и програмата **продължава** с изпълняването на кода след цикъла. Конструкцията за **`while` цикъл** изглежда по този начин:
+In programming the **`while` loop** is used when we want to **repeat** the execution of a specific logic block, until **a specific condition is met**. Any expression that returns either **`true`** or **`false`** (a Boolean) can be used as a "**condition**". When the **condition** becomes **invalid**, the **`while`** loop **is interrupted** and the program **proceeds** to execute the code after the loop. The **`while` loop** structure looks like this:
 
 ![](assets/chapter-7-1-images/00.While-loop-01.PNG)
 
-Следва поредица от примерни задачи, решението на които ще ни помогне да разберем по-добре употребата на **`while`** цикъла.
+Here is a series of sample problems, the solutions of which will help us better understand the use of the **`while`**  loop.
 
 
-### Пример: редица числа 2k+1
+### Example: Sequence of Numbers 2k+1
 
-Да се напише програма, която отпечатва всички **числа ≤ n** от редицата: **1, 3, 7, 15, 31, …**, като приемем, че всяко следващо число = **предишно число \* 2 + 1**.
+Write a program that prints **all numbers ≤ n** in the series: **1, 3, 7, 15, 31, …**, assuming that each number is generated according to the folowing formula nextNumber = **previousNumber \* 2 + 1**.
 
-Ето как можем да решим задачата:
+Here is how we can solve the problem:
 
-* Създаваме функция, която ще приема числото **`n`**.
-* Декларираме променлива **`num`** за текущото число, на която присвояваме начална **стойност 1**.
-* За условие на цикъла слагаме **текущото число <= n**.
-* В **тялото на цикъла**: отпечатваме стойността на променливата и я увеличаваме, използвайки формулата от условието на задачата.
+* We create a function that will take the number **`n`**.
+* We declare a variable **`num`** that will hold the current number and we assign it the initial **value of 1**.
+* Fpr loop condition we use **the current number <= n**.
+* in the **body of the loop**: we print the value of the vurrent number and increase the current number by using the formula above.
 
-Ето и примерна реализация на описаната идея:
+Here is a sample implementation of this idea:
 
 ![](assets/chapter-7-1-images/05.Numbers-2k+1-01.PNG)
  
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#4](https://judge.softuni.bg/Contests/Practice/Index/937#1).
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#4](https://judge.softuni.bg/Contests/Practice/Index/937#1).
 
-### Пример: число в диапазона [1 … 100]
+### Example: Number in Range [1 … 100]
 
-Да се въведе цяло число в диапазона [**1 … 100**]. Ако то е невалидно, да се въведе отново. В случая, за невалидно число ще считаме всяко такова, което **не е** в зададения диапазон.
+Enter an integer in the range [**1 … 100**]. If the entered number is **invalid**, enter **another**. In this case an invalid number would be any number that is **outside** the given range.
 
-За да решим задачата, можем да използваме следния алгоритъм:
+To solve the problem, we can use the following algorithm:
 
-* Декларираме променлива **`i`**, на която присвояваме начална стойност **0**. Чрез нея ще запазваме позицията на всяко число, което е подадено на функцията.
-* Декларираме променлива **`num`**, на която присвояваме целочислената стойност на пърия аргумент, подаден на функцията.
-* За условие на цикъла слагаме израз, който е **`true`**, ако числото **не е** в диапазона, посочен в условието.
-* В **тялото на цикъла**: увеличаваме **`i`**, за да може, при следващото завъртане на цикъла, да вземем следващото число, което е подадено на функцията. Отпечатваме съобщение със съдържание "**Invalid number!**" на конзолата, след което присвояваме нова стойност за **`num`** (следващия аргумент, подаден на функцията).
-* След като вече сме валидирали числото, извън тялото на цикъла отпечатваме стойността му.
+* We declare a variable **`i`**, to which we assign the initial value **0**. Through wich we save the position of each argument passed to our function.
+* We declare a variable **`num`**, to which we assign the integer part of the first argument, passed to the function.
+* For a loop condition, we put an expression that is **`true`**, if the number **is not** in the range specified in the problem description.
+* On the **body of the loop**: we increment **`i`**, so that at the next loop cycle we can take the next number passed to our function. We print the message "**Invalid number!**" on the console, afterwards we assign a new value to **`num`** (the next argument, passed to our function).
+* Once we have validated the entered number, we print its value outside the body of the loop.
 
-Ето и примерна реализация на алгоритъма чрез **`while` цикъл**:
+Here is a sample implementation of the algorithm using a **`while` loop**:
 
 ![](assets/chapter-7-1-images/06.Numbers-in-range-1..100-01.PNG)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#5](https://judge.softuni.bg/Contests/Practice/Index/937#5).
-
-
-## Най-голям общ делител (НОД)
-
-Преди да продължим към следващата задача, е необходимо да се запознаем с определението за **най-голям общ делител** (**НОД**).
-
-**Определение за НОД**: най-голям общ делител на две **естествени** числа **a** и **b** е най-голямото число, което се дели **едновременно** и на **a**, и на **b** без остатък. Например:
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#5](https://judge.softuni.bg/Contests/Practice/Index/937#5).
 
 
-|a|b|НОД| 
+## Greatest Common Divisor (GCD)
+
+Before proceeding to the next problem, we should become familiar with the definition of the greatest common divisor (GCD).
+
+**Definition if GCD**: the greatest common divisor of two **natural** numbers **a** and **b** is the largest number that **divides both** **a** and **b** without reminder. For exampe:
+
+
+|a|b|GCD| 
 |:---:|:---:|:---:| 
 |24|16|8|
 |67|18|1|
@@ -166,16 +166,16 @@ You can test your solution at the following link: [https://judge.softuni.bg/Cont
 |10|10|10|
 |100|88|4|
 
-## Алгоритъм на Евклид
+## The Euclidean Algorithm
 
-В следващата задача ще използваме един от първите публикувани алгоритми за намиране на НОД - **алгоритъм на Евклид**:
+In the next problem we will use one of the first published algorithms for finding the GCD – **Euclid's algorithm**:
 
-**Докато** не достигнем остатък 0:
+**Until** we have a ramainder of 0:
 
-* Делим по-голямото число на по-малкото.
-* Вземаме остатъка от делението.
+* We divide the greater number by the smaller one.
+* We take the remainder of the division.
 
-**Псевдо-код** за алгоритъма на Евклид:
+Euclid's algorithm **pseudo-code**:
 
 ```javascript
 while b ≠ 0
@@ -185,7 +185,7 @@ while b ≠ 0
 print а;
 ```
 
-### Пример: най-голям общ делител (НОД)
+### Example: Greatest Common Divisor (GCD)
 
 Да се подадат **цели** числа **a** и **b** и да се намери **НОД(a, b)**.
 
