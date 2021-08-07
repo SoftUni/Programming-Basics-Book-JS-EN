@@ -1,123 +1,124 @@
-# Глава 9.2. Задачи за шампиони – част II
+# Chapter 9.2. Problems for Champions – Part II
 
-В тази глава ще разгледаме още три задачи, които причисляваме към категорията "**за шампиони**", т.е. по-трудни от стандартните задачи в тази книга.
+In this chapter we will review three additional problems that belong to the category "**For Champions**", i.e. they are more complex than the rest of the problems in this book.
 
 
 ## По-сложни задачи върху изучавания материал
 
-Преди да преминем към конкретните задачи, трябва да поясним, че те могат да се решат по-лесно с **допълнителни знания за програмирането и езика JavaScript** (функции, масиви, колекции, рекурсия и т.н.), но всяко едно решение, което ще дадем сега, ще използва единствено материал, покрит в тази книга. Целта е да се научите да съставяте **по-сложни алгоритми** на базата на сегашните си знания.
+Before we move on to particular tasks, we must clarify that these can be solved in an easier way with **additional knowledge in programming with Javascript** \(functions, arrays, collections, recursion, etc.\), but each solution that will be provided now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge collected up to the present moment.
 
 
-## Задача: дни за страстно пазаруване
+## Problem: Passion Shopping Days
 
-Лина има истинска страст за пазаруване. Когато тя има малко пари, веднага отива в първия голям търговски център (мол) и се опитва да изхарчи възможно най-много за дрехи, чанти и обувки. Но любимото ѝ нещо са зимните намаления. Нашата задача е да анализираме странното ѝ поведение и да **изчислим покупките**, които Лина прави, когато влезе в мола, както и **парите, които ѝ остават**, когато приключи с пазаруването си.
+Lina has a real shopping passion. When she has some money, she immediately goes to the closest shopping center (mall) and tries to spend as much as she can on clothes, bags and shoes. But her favorite thing are winter sales. Our task is to analyze her strange behavior and  **calculate the purchases** that Lina does when she enters the mall, as well as the **money she has left** when the shopping is over. All prices and money are in BGN (Bulgarian levs, **lv**).
 
-**Първият аргумент** на функцията ще бъде **сумата**, която Лина има **преди** да започне да пазарува. **Вторият аргумент** ще бъде списък от команди(стрингове), които Лина ще изпълни. При получаване на командата "**`mall.Enter`**", Лина влиза в мола и започва да пазарува, докато не получи командата "**`mall.Exit`**". След като Лина започне да пазарува, **всеки следващ елемент** от масива, ще представлява **действия, които Лина изпълнява**. Всеки **символ** в стринга представлява **покупка или друго действие**. Стринговите команди могат да съдържат само символи от **ASCII таблицата**. ASCII кода на всеки знак има **връзка с това колко Лина трябва да плати** за всяка стока. Интерпретирайте символите по следния начин:
+Our **first argument** of the function will be the **amount** that line has **before** she starts shopping. Our **second argument** will be a list of commands(strings), which Line will do. After that upon reading "**`mall.Enter`**"  command, Lina eneters the mall and starts shoppoing until the "**`mall.Exit`**" command is given. When Lina starts shopping **every next element** from the array will be **an action that Lina does**. Each **symbol** in the string is a **purchase or another action**. String commands contain only symbols of the **ASCII table**. The ASCII code of each sign is **related to what Lina must pay** for each of the goods. You need to interpret the symbols in the following way:
 
-- Ако символът е **главна буква**, Лина получава **50% намаление**, което означава, че трябва да намалите парите, които тя има, с 50% от цифровата репрезентация на символа от ASCII таблицата.
-- Ако символът е **малка буква**, Лина получава **70% намаление**, което означава, че трябва да намалите парите, които тя има, с 30% от цифровата репрезентация на символа от ASCII таблицата.
-- Ако символът е **"`%`"**, Лина прави **покупка**, която намалява парите ѝ на половина.
-- Ако символът е **"`*`"**, Лина **изтегля пари от дебитната си карта** и добавя към наличните си средства 10 лева.
-- Ако символът е **различен от упоменатите горе**, Лина просто прави покупка без намаления и в такъв случай просто извадете стойността на символа от ASCII таблицата от наличните ѝ средства.
+- If the symbol is a **capital letter**, Lina gets a **50% discount**, which means that you must decrease the money she has by 50% of the numeric representation of the symbol from the ASCII table.
+- If the symbol is a **small letter**, Lina gets a **70% discount**, which means that you must decrease the money she has by 30% of the numeric representation of the symbol from  the ASCII table.
+- If the symbol is **"`%`"**, Lina makes a **purchase** that decreases her money in half.
+- If the symbol is **"`*`"**, Lina **withdraws money from her debit card** and adds 10 lv. to her available funds.
+- If the symbol is **different from all of the aforementioned**, Lina just makes a purchase without discount, and in this case you should simply subtract the value of the symbol from the ASCII table from her available funds.
 
-Ако някоя от стойностите на покупките е **по-голяма** от текущите налични средства, Лина **НЕ** прави покупката. Парите на Лина **не могат да бъдат по-малко от 0**.
+If a certain value of her purchases is **higher** than her current available funds, Lina **DOES NOT** make the purchase. Lina's funds **cannot be less than 0**.
 
-Пазаруването завършва, когато се получи командата "**`mall.Exit`**". Когато това стане, трябва да **принтирате броя на извършени покупки и парите**, които са останали на Лина.
+The shopping ends when the "**`mall.Exit`**" command is given. When this happens, you need to **print the number of purchases made and the money** that Lina has left.
 
-### Входни данни
+### Input Data
 
-Входните данни се подават в два аргумента. **Първият** ще бъде **сумата, която Лина има преди да започне да пазарува**. Вторият аргумент ще бъде масив от команди, който се обработва последователно. Когато получите командата **"mall.Enter"**, всеки следващ елемент ще бъде стринг, съдържащи **информация относно покупките / действията**, които Лина иска да направи. В масива ще има команди, които трябва да се изпълнят, докато не се получи командата "**`mall.Exit`**".
+The input data is two arguments. Our **first argument** will indicate the **amount that Lina has before starting to purchase**. Our **second argument** will be an array of string that will be processed in the row they are given. After you receive the command **"mall.Enter"** every next element will be string containing **information about products / actions** that Lina wants to do. In the array we want to perform all the command until we receive the "**`mall.Exit`**" command.
 
-Винаги ще се подава само една команда "**`mall.Enter`**" и само една команда "**`mall.Exit`**".
+Always only one "**`mall.Enter`**" command will be given, as well as only one "**`mall.Exit`**" command.
 
-### Изходни данни
+### Output Data
 
-Изходните данни трябва да се **принтират на конзолата**.
-Когато пазаруването приключи, на конзолата трябва да се принтира определен изход в зависимост от това какви покупки са били направени.
-- Ако **не са били направени някакви покупки** – "**No purchases. Money left: {останали пари} lv.**"
-- Ако е направена **поне една покупка** - "**{брой покупки} purchases. Money left: {останали пари} lv.**"
+The output data must be **printed on the console**.
+When shopping is over, you must print on the console a particular output depending on what purchases have been made.
+- If **no purchases have been made** – "**No purchases. Money left: {remaining funds} lv.**"
+- If **at least one purchase** is made – "**{number of purchases} purchases. Money left: {remaining funds} lv.**"
 
-**Парите** трябва да се принтират с **точност от 2 символа след десетичния знак**.
+**The funds** must be printed with **accuracy of up to 2 symbols after the decimal point**.
 
-### Ограничения
+### Constraints
 
-- Парите са число с **плаваща запетая** в интервала: [**0 - 7.9 x 10<sup>28</sup>**].
-- Броят стрингове между "**`mall.Enter`**" и "**`mall.Exit`**" ще в интервала: [**1-20**].
-- Броят символи във всеки стринг, който представлява команда, ще е в интервала: [**1-20**].
-- Позволено време за изпълнение: **0.1 секунди**.
-- Позволена памет: **16 MB**.
+- Money is a **float** number within the range: [**0 - 7.9 x 10<sup>28</sup>**].
+- The number of strings between "**`mall.Enter`**" and "**`mall.Exit`**" will be within the range: [**1-20**].
+- The number of symbols in each string that represents a command will be within the range: [**1-20**].
+- Allowed execution time: **0.1 seconds**.
+- Allowed memory: **16 MB**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход | Изход | Коментар |
+| Input | Output | Comment |
 |------|-------|----------|
-| 110<br>mall.Enter<br>d<br>mall.Exit | 1 purchases. Money left: 80.00 lv. | ‘d’ има ASCII код 100. ‘d’ e малка буква и за това Лина получава 70% отстъпка и така тя харчи 30% * 100 = 30 лв. След покупката й остават 110 - 30 = 80 лв. |
+| 110<br>mall.Enter<br>d<br>mall.Exit | 1 purchases. Money left: 80.00 lv. | ‘d’ has an ASCII code of 100. ‘d’ is a small letter, this is why Lina gets a 70% discount. She spends 30% of 100, which is 30 lv. After this purchase, she has: 110 - 30 = 80 lv. |
 
-| Вход | Изход |Вход | Изход |
+| Input | Output |Input | Output |
 |------|-------|------|-------|
 | 110<br>['mall.Enter'<br>'%'<br>'mall.Exit']|1 purchases. Money left: 55.00 lv.| 100<br>['mall.Enter',<br>'Ab',<br>'\*\*',<br>'mall.Exit']|2 purchases. Money left: 58.10 lv.|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Ще разделим решението на задачата на три основни части:
-* **Обработка** на входа.
-* **Алгоритъм** на решаване. 
-* **Форматиране** на изхода.
+We will separate the solution of the problem into three main parts:
+- Processing of the **input**.
+- **Algorithm** for solving the problem. 
+- Formatting the **output**.
 
-Нека разгледаме всяка една част в детайли.
+Let's examine each of the parts in details.
 
-#### Обработване на входа
+#### Processing the Input Data
 
-Входът за нашата задача се състои от няколко компонента:
-- В **първия аргумент имаме всички пари**, с които Лина ще разполага за пазаруването.
-- Във **втория - масив** ще имаме поредица от **команди**.
+The input of our task consists of a few components:
+- On the **first argument we have all the money** that Lina has for shopping.
+- On the **second argument we have an array** that is a series of commands.
 
-Имайки директно парите, с които Лина разполага можем да пристъпим към обработка на командите, които сме получили. При тях, обаче, има детайл, с който трябва да внимаваме. Условието гласи следното:
+When we have the money which Lina owns we can step into processing the commands, that we get.
+But there is a detail that we need to take into consideration. The requirements state the following:
 
-> Вторият аргумент ще бъде масив от команди, който се обработва последователно. Когато получите командата **"mall.Enter"**, всеки следващ елемент ще бъде стринг, съдържащи **информация относно покупките / действията**, които Лина иска да направи.
+>Our second argument will be an array of commands. They are ran one after another. When we recieve the command **"mall.Enter"**, our next element will be a string containing **information regarding the purchases / actions that Lina wants to perform. 
 
-Тук е моментът, в който трябва да се съобразим, че в **масива трябва да започнем да обработваме команди**, но **едва след като получим** командата **"mall.Enter"**. Как можем да направим това? Използването на **`while`** или **`do-while`** цикъл e добър избор. Ето примерно решение как можем **да пропуснем** всички команди преди получаване на командата **"mall.Enter"**:
+This is where we need to take into consideration the fact that inside **our array we should start proccessing commands**, but **only after we receive** the command **"mall.Enter"**. How can we do that? Using a **`while`** or a **`do-while`** loop is a good option. Here is an exemplary solution of how **to skip** all commands before processing the command **"mall.Enter"**:
 
 ![](assets/chapter-9-2-images/passion-days.01.png)
 
-*Може да замените този __`while`__ с __`for`__ цикъл използвайки само условието и стъпката на __`for`__*.
+*We can replace this __`while`__ with __`for`__ loop using only the condition and step of __`for`__*.
 
-Тук е мястото да отбележим, че извикването на **`i++`** след края на цикъла се използва за **преминаване към първата команда** за обработване, защото в края на цикъла **`command[i]`** сочи точно към **"mall.Enter"**, което не трябва да се обработва като действие в мола.
+Here is the place to say that by calling  **`i++`** after the end of the loop is used to **pass from the first command** for processing because in the end of the loop **`command[i]`** points exactly to **"mall.Enter"**, which mustn't be processed as an action inside the mall.  
 
-#### Алгоритъм за решаване на задачата
+#### Algorithm for Solving the Problem
 
-Алгоритъмът за решаването на самата задача е праволинеен - продължаваме да **обработваме команди, докато не бъде подадена командата "mall.Exit"**. През това време **разглеждаме** всеки един знак (**`char`**) от всяка една команда спрямо правилата, указани в условието, и едновременно с това **модифицираме парите**, които Лина има, и **съхраняваме броя на покупките**.
+The algorithm for solving the problem is a direct one – we continue **reading commands** from the console, **until the command "mall.Exit" is passed**. In the meantime, we **process** each symbol (**`char`**) of each one of the commands according to the rules specified in the task requirements, and in parallel, we **modify the amount** that Lina has, and **store the number of purchases**.
 
-Нека разгледаме първите два проблема пред нашия алгоритъм. Първият проблем засяга начина, по който можем да четем командите, докато не срещнем **"mall.Exit"**. Решението, както видяхме по-горе, е да се използва **`while цикъл`**. Вторият проблем е задачата да **достъпим всеки един знак** от подадената команда. Имайки предвид, че входните данни с командите са от тип **`string`**, то най-лесният начин да достъпим всеки знак в тях е чрез **`for` цикъл**.
+Let's examine the first two problems for our algorithm. The first problem concerns the way we read the commands until we reach the **"mall.Exit"** command. The solution that we previously saw uses a **`while-loop`**. The second problem for the task is to **access each symbol** of the command passed. Keeping in mind that the input data with the commands is **`string`** type, the easiest way to access each symbol inside the strings is via a **`foreach` loop**. 
 
-Ето как би изглеждало използване на два такива цикъла:
+This is how the code may look like:
 
 ![](assets/chapter-9-2-images/passion-days.02.png)
 
-Следващата част от алгоритъма ни е да **обработим символите от командите**, спрямо следните правила от условието:
+The next part of the algorithm is to **process the symbols from the commands**, according to the following rules in the requirements:
 
-> - Ако символът е **главна буква**, Лина получава 50% намаление, което означава, че трябва да намалите парите, които тя има, с 50% от цифровата репрезентация ASCII символа.
-> - Ако символът е **малка буква**, Лина получава 70% намаление, което означава, че трябва да намалите парите, които тя има, с 30% от цифровата репрезентация ASCII символа.
-> - Ако символът е **"%"**, Лина прави покупка, която намалява парите ѝ на половина.
-> - Ако символът е **"\*"**, Лина изтегля пари от дебитната си карта и добавя към наличните си средства 10 лева.
-> - Ако символът е **различен от упоменатите горе**, Лина просто прави покупка без намаления и в такъв случай просто извадете стойността на ASCII символа от наличните ѝ средства.
+> - If the symbol is a **capital letter**, Lina gets a 50% discount, which means that you must decrease the money she has by 50% of the numeric representation of the symbol from the ASCII table.
+> - If the symbol is a **small letter**, Lina gets a 70% discount, which means that you must decrease the money she has by 30% of the numeric representation of the symbol from the ASCII table.
+> - If the symbol is **"%"**,  Lina makes a purchase that decreases her money in half.
+> - If the symbol is **"\*"**, Lina withdraws money from her debit card and adds 10 lv. to her available funds.
+> - If the symbol is **different from all of the aforementioned**, Lina just makes a purchase without discount, and in this case you should simply subtract the value of the symbol from the ASCII table from her available funds.
 
-Нека разгледаме проблемите от първото условие, които стоят пред нас. Единият е как можем да разберем дали даден **символ представлява главна буква**. Можем да използваме един от двата начина:
-* Имайки предвид, факта, че буквите в азбуката имат ред, можем да използваме следната проверка **`action >= 'A' && action <= 'Z'`**, за да проверим дали нашият символ се намира в интервала от големи букви.
+Let's examine the problems that we will be facing in the first condition. The first one is how to distinguish if a particular **symbol is a capital letter**. We can use one of the following ways:
+* Keeping in mind the fact that the letters in the alphabet have a particular order, we can use the following condition **`action >= 'A' && action <= 'Z'`**, in order to check if our symbol is within the capital letters range.
 
-* Можем да използваме метода **`str.toUpperCase()`** и да сравним дали символът е същия, като този, който ще получим от **`str.toUpperCase()`**.
+* We can use the method **`str.toUpperCase()`** and compare if the symbol is the same as the one we will receive from **`str.toUpperCase()`**.
 
-Другият проблем е как можем **да пропуснем даден символ**, ако той представлява операция, която изисква повече пари, отколкото Лина има? Това е възможно да бъде направено с използване на **`continue`** конструкцията.
+The other problem is how **to skip a particular symbol**, if it is not an operation that requires more money that Lina has. This is doable using the **`continue`** construction.
 
-Примерната проверка за първата част от условието изглежда по следния начин:
+An exemplary condition for the first part of the requirements looks like this:
 
 ![](assets/chapter-9-2-images/passion-days.03.png)
 
-**Забележка**: **`purchases`** е променлива от тип **`int`** , в която държим броя на всички покупки.
+**Note**: the variable “**`purchases`**” is of **`int`** type, in which we store the number of all purchases.
 
-Смятаме, че читателят не би трябвало да изпита проблем при имплементацията на всички други проверки, защото са много сходни с първата.
+We believe the reader should not have difficulties implementing all the other conditions because they are very similar to the first one.
 
-#### Форматиране на изхода
+#### Formatting the Output
 
 В края на задачата трябва да **принтираме** определен **изход**, в зависимост от следното условие:
 
