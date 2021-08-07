@@ -3,7 +3,7 @@
 In this chapter we will review three additional problems that belong to the category "**For Champions**", i.e. they are more complex than the rest of the problems in this book.
 
 
-## По-сложни задачи върху изучавания материал
+## More Complex Problems on the Studied Material
 
 Before we move on to particular tasks, we must clarify that these can be solved in an easier way with **additional knowledge in programming with Javascript** \(functions, arrays, collections, recursion, etc.\), but each solution that will be provided now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge collected up to the present moment.
 
@@ -233,114 +233,116 @@ The only output that the program must print on the console is the **result of so
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/942#1](https://judge.softuni.bg/Contests/Practice/Index/942#1).
 
-## Задача: бикове и крави
+## Problem: Bulls and Cows
 
-Всички знаем играта „Бикове и крави“ ([http://en.wikipedia.org/wiki/Bulls_and_cows](http://en.wikipedia.org/wiki/Bulls_and_cows)). При дадено 4-цифрено **тайно число** и 4-цифрено **предполагаемо число**, използваме следните правила:
-* Ако имаме цифра от предполагаемото число, която съвпада с цифра от тайното число и е на **същата позиция**, имаме ***бик***.
-* Ако имаме цифра от предполагаемото число, която съвпада с цифра от тайното число, но е **на различна позиция**, имаме ***крава***.
+We all know the game called "Bulls and Cows"  ([http://en.wikipedia.org/wiki/Bulls_and_cows](http://en.wikipedia.org/wiki/Bulls_and_cows)). Upon having a particular 4-digit **secret number** and a 4-digit **suggested number**, the following rules are applied:
+* If a digit in the suggested number matches a digit in the secret number and is located at the **same position**, we have a ***bull***.
+* If a digit in the suggested number matches a digit in the secret number, but is located at a **different position**, we have a ***cow***.
 
-| Тайно число         | 1 | 4 | 8 | 1 |Коментар|
+| Secret number         | 1 | 4 | 8 | 1 |Comment|
 |:-------------------:|:---:|:---:|:---:|:---:|:--------------------------:|
-| Предполагаемо число | 8 | 8 | 1 | 1 | Бикове = 1<br>Крави = 2  |
+| Suggested number | 8 | 8 | 1 | 1 | Bulls = 1<br>Cows = 2  |
 
-| Тайно число         | 2 | 2 | 4 | 1 |Коментар|
+| Secret number        | 2 | 2 | 4 | 1 |Comment|
 |:-------------------:|:---:|:---:|:---:|:---:|:-------------------------:|
-| Предполагаемо число | 9 | 9 | 2 | 4 | Бикове = 0<br>Крави = 2 |
+| Suggested number | 9 | 9 | 2 | 4 | Bulls = 0<br>Cows = 2 |
 
-При дадено тайно число и брой на бикове и крави, нашата задача е **да намерим всички възможни предполагаеми числа** в нарастващ ред.
+Upon having a particular secret number and the bulls and cows pertaining to it, our task is **to find all possible suggested numbers** in ascending order.
 
-Ако **не съществуват предполагаеми числа**, които да отговарят на зададените критерии на конзолата, трябва да се отпечата "**No**".
+If there are **no suggested numbers** that match the criteria provided from the console, we must print "**No**".
 
-### Входни данни
+### Input Data
 
-Входните данни се състоят от 3 аргумента:
-* Първият съдържа **секретното число**.
-* Вторият съдържа **броя бикове**.
-* Третият съдържа **броя крави**.
+Our input data consists of 3 arguments: 
+ * The first contains **the secret number**.
+ * The second contains **the number of bulls**.
+ * The third contains **the number of cows**.
 
-Входните данни ще бъдат винаги валидни. Няма нужда да бъдат проверявани.
 
-### Изходни данни
+The input data will always be valid. There is no need to verify them.
 
-Изходните данни трябва да се принтират на конзолата.
-Изходът трябва да се състои от **един единствен ред** – **всички предполагаеми числа**, разделени с единично празно място.
-Ако **не съществуват предполагаеми числа**, които да отговарят на зададените критерии на конзолата, трябва **да се изпише “No”**.
+### Output Data
 
-### Ограничения
+The output data must be printed on the console.
+The output must consist of **a single line**, holding **all suggested numbers**, space separated.
+If there are **no suggested numbers** that match the criteria provided from the console, we must **print “No”**.
 
-- Тайното число винаги ще се състои от **4 цифри в интервала** [**1..9**]. [TODO: Цифрите е хубаво/трябва да са уникални. Ако имам тайно число 2132 и предположение 8762 имам 1 бик и 1 крава за 1 число. ]
-- Броят на **кравите и биковете** винаги ще е в интервала [**0..9**]. [TODO: Има ли смисъл да имаме крави и бикове от 0..9? Кога ще имам 5 бика и 7 крави? Входът трябва да е валиден.]
-- Позволено време за изпълнение: **0.15 секунди**.
-- Позволена памет: **16 MB**.
+### Constraints
 
-### Примерен вход и изход
+- The secret number will always consist of **4 digits in the range** [**1..9**]. [TODO: Digits is good to be unique. If we have a secret number 2132 and suggestion 8762 i have 1 bull and 1 cow for 1 digit.]
+- The number of **cows and bulls** will always be in the range [**0..9**]. [TODO: Is there a point to have cows and bulls from 0..9? When will we have 5 bulls and 7 cows? The input must be valid.]
+- Allowed execution time: **0.15 seconds**.
+- Allowed memory: **16 MB**.
 
-| Вход           | Изход        |
+### Sample Input and Output
+
+| Input           | Output        |
 |--------------|------------|
 | 2228<br>2<br>1 | 1222 2122 2212 2232 2242 2252 2262 2272 2281 2283 2284 2285 2286 2287 2289 2292 2322 2422 2522 2622 2722 2821 2823 2824 2825 2826 2827 2829 2922 3222 4222 5222 6222 7222 8221 8223 8224 8225 8226 8227 8229 9222 |
 
-| Вход           | Изход        |
+| Input           | Output        |
 |--------------|------------|
 | 1234<br>3<br>0 | 1134 1214 1224 1231 1232 1233 1235 1236 1237 1238 1239 1244 1254 1264 1274 1284 1294 1334 1434 1534 1634 1734 1834 1934 2234 3234 4234 5234 6234 7234 8234 9234 |
 
-| Вход           | Изход        |
+| Input           | Output      |
 |--------------|------------|
 | 1234<br>3<br>1 | No           |
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Тъй като входът пристига директно, като аргументи на функцията ни остават следните стъпки от решението:
- - Ще генерираме всички възможни **четирицифрени комбинации** (кандидати за проверка).
- - За всяка генерирана комбинация ще изчислим **колко бика** и **колко крави** има в нея спрямо секретното число. При съвпадение с търсените бикове и крави, ще **отпечатаме комбинацията**.
+Because our input comes directly as an argument of our function we can do the followings steps to complete our task:
+- We will generate all possible **four-digit combinations** (candidates for verification).
+- For each generated combination we will calculate **how many bulls** and **how many cows** it has according to the secret number. Upon matching the needed bulls and cows, we will **print the combination**.
 
-#### Алгоритъм за решаване на задачата
+#### Algorithm for Solving the Problem
 
-Преди да започнем писането на алгоритъма за решаване на нашия проблем, трябва да **декларираме флаг**, който да указва дали е намерено решение:
+Before starting to write the algorithm for solving our problem, we must **declare a flag** that indicates whether a solution is found:
 
 
 ![](assets/chapter-9-2-images/bulls-and-cows.01.png)
 
-Ако след приключването на нашия алгоритъм, този флаг все още е **`false`**, тогава ще принтираме **`No`** на конзолата, както е указано в условието.
+If after finishing our algorithm this flag is still **`false`**, then we will print **`No`** on the console, as specified in the requirements.
 
 ![](assets/chapter-9-2-images/bulls-and-cows.02.png)
 
-Нека започнем да размишляваме над нашия проблем. Това, което трябва да направим, е да **анализираме всички числа от `1111` до `9999`** без тези, които съдържат в себе си нули (напр. **`9011`**, **`3401`** и т.н. са невалидни). Какъв е най-лесният начин за **генериране** на всички тези **числа**? **С вложени цикли**. Тъй като имаме **4-цифрено число**, ще имаме **4 вложени цикъла**, като всеки един от тях ще генерира **отделна цифра от нашето число** за тестване. 
+Let's start analyzing our problem. What we need to do is **analyze all numbers from `1111` to `9999`**, excluding those that contain zeroes (for example **`9011`**, **`3401`**, etc. are invalid). What is the easiest way to **generate** all these **numbers**? We will **use nested loops**. As we have a **4-digit number**, we will have **4 nested loops**, as each of them will generate **an individual digit in our number** for testing.
 
-*Алтернативен подход е да обиколите с един цикъл числата от 1111 до 9999 и да прескачате всички числа с '0' в себе си, но това би променило малко решението, което ще изпълним по-долу.*
+*Alternative solution is to go through all the numbers from 1111 to 999 with a loop and ignore every number with '0' inside it. But this will change the code, which we will do below.*
 
 ![](assets/chapter-9-2-images/bulls-and-cows.03.png)
 
-Благодарение на тези цикли, **имаме достъп до всяка една цифра** на всички числа, които трябва да проверим. Следващата ни стъпка е да **разделим секретното число на цифри**. Това може да се постигне много лесно чрез **комбинация от целочислено и модулно деление**.
+Thanks to these loops, **we have access to every digit** of all numbers that we need to check. Our next step is to **separate the secret number into digits**. This can be achieved very easily using **a combination of integer division and modular division**.
 
 ![](assets/chapter-9-2-images/bulls-and-cows.04.png)
 
-Как? При деление получаваме дробно число. Или трябва да премахнем дробната част преди да разделим модулно на 10 чрез `Math.floor(…)` или чрез кастване към цяло число чрез `parseInt(…)`. В примера по-горе премахваме дробната част.
+How? When we divide we get a decimal number. We can use `Math.floor(…)` then divide it with reminder operator(%) by 10, or we can cast the number with  `parseInt(…)`.
+In the example above we remove the fractional part.
 
-Остават ни последните две стъпки преди да започнем да анализираме колко крави и бикове има в дадено число. Съответно, първата е **декларацията на `counter` променливи** във вложените ни цикли, за да **броим кравите и биковете** за текущото число. Втората стъпка е да направим **копия на цифрите на текущото число**, което ще анализираме, за да предотвратим проблеми с работата на вложите цикли, ако правим промени по тях.
+Only two last steps remain until we start analyzing how many cows and bulls there are in a particular number. Accordingly, the first one is the **declaration of `counter` variables** in the nested loops, in order to **count the cows and bulls** for the current number. The second step is to make **copies of the digits of the current number** that we will analyze, in order to prevent problems upon working with nested loops, in case we make changes to them.
 
 ![](assets/chapter-9-2-images/bulls-and-cows.05.png)
 
-Вече сме готови да започнем анализирането на генерираните числа. Каква логика можем да използваме? Най-елементарният начин да проверим колко крави и бикове има в едно число е чрез **поредица от `if-else` проверки**. Да, не е най-оптималния начин, но с цел да не използваме знания извън пределите на тази книга, ще изберем този подход.
+We are ready to start analyzing the generated numbers. What logic can we use? The easiest way to check how many cows and bulls there are inside a number is via a **sequence of `if-else` conditions**. Yes, this is not the most optimal way, but in order to stick to what is covered in the current book, we will use this approach.
 
-От какви проверки имаме нужда?
+What conditions do we need?
 
-Проверката за бикове е елементарна - проверяваме дали **първата цифра** от генерираното число е еднаква със **същата цифра** от секретното число. Премахваме проверените цифри с цел да избегнем повторения на бикове и крави.
+The condition for the bulls is very simple – we check whether the **first digit** of the generated number matches the **same digit** in the secret number. We remove the digits that are already checked in order to avoid repetitions of bulls and cows.
 
 ![](assets/chapter-9-2-images/bulls-and-cows.06.png)
 
-Повтаряме действието за втората, третата и четвърта цифра. 
+We repeat the action for the second, third and fourth digit. 
 
-Проверката за крави можем да направи по следния начин - първо проверяваме дали **първата цифра** от генерираното число **съвпада с втората**, **третата** или **четвъртата цифра** на секретното число. Можем да обединим всички проверки в едно условие, знаейки, че и в трите случая имаме крава, но няма да знаем коя цифра да премахнем, затова ги изписваме едно по едно:
+Our conditional statement for cows can be done by this method - we check if the **first digit** from the generated number **matches with the second**, **the third** or ***the fourth** digit of the secret number. We can combine all conditional statements inside one condition, know that in the three cases we have a cow, but we won't know which digit to remove. That's why we type it one by one:
 
 ![](assets/chapter-9-2-images/bulls-and-cows.07.png)
 
-След това последователно проверяваме дали **втората цифра** от генерираното число **съвпада с първата**, **третата** или **четвъртата цифра** на секретното число, дали **третата цифра** от генерираното число съвпада с **първата**, **втората** или **четвъртата цифра** на секретното число и накрая проверяваме дали **четвъртата цифра** от генерираното число съвпада с **първата**, **втората** или **третата цифра** на секретното число.
+After that, we sequentially check whether the **second digit** of the generated number **matches the first one**, the **third one** or the **fourth digit** of the secret number; whether the **third digit** of the generated number matches the **first one**, the **second one** or the **fourth digit** of the secret number; and finally, we check whether the **fourth digit** of the generated number matches the **first one**, the **second one** or the **third digit** of the secret number.
 
-#### Отпечатване на изхода
+#### Printing the Output
 
-След като приключим всички проверки, ни остава единствено да **проверим дали биковете и кравите в текущото генерирано число съвпадат с желаните бикове и крави, прочетени от конзолата**. Ако това е така, принтираме текущото число на конзолата.
+After completing all conditions, we just need to **check whether the bulls and cows in the currently generated number match the desired bulls and cows read from the console**. If this is true, we print the current number on the console.
 
 ![](assets/chapter-9-2-images/bulls-and-cows.08.png)
 
-### Тестване в Judge системата
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/942#2](https://judge.softuni.bg/Contests/Practice/Index/942#2).
+### Testing in the Judge System
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/942#2](https://judge.softuni.bg/Contests/Practice/Index/942#2).
