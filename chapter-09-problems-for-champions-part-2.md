@@ -120,116 +120,118 @@ We believe the reader should not have difficulties implementing all the other co
 
 #### Formatting the Output
 
-В края на задачата трябва да **принтираме** определен **изход**, в зависимост от следното условие:
+In the end of our task we must **print** a particular **output**, depending on the following condition:
 
-> - Ако не са били направени никакви покупки – "**No purchases. Money left: {останали пари} lv.**"
-> - Ако е направена поне една покупка - "**{брой покупки} purchases. Money left: {останали пари} lv.**"
+> - If no purchases have been made – "**No purchases. Money left: {remaining funds} lv.**"
+> - If at least one purchase is made – "**{number of purchases} purchases. Money left: {remaining funds} lv.**"
 
-Операциите по принтиране са тривиални. На база променливата за брой покупки можем да определим кой вариант на изхода ни трябва. Единственото нещо, с което трябва да се съобразим е, че **парите трябва да се принтират с точност от 2 символа след десетичния знак**.
+The printing operations are trivial, as the only thing we need to take into consideration is that **the amount has to be printed with accuracy of up to 2 symbols after the decimal point**.
 
-Как можем да направим това? Ще оставим отговора на този въпрос на читателя.
+How can we do that? We will leave the answer to this question to the reader.
 
-### Тестване в Judge системата
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/942#0](https://judge.softuni.bg/Contests/Practice/Index/942#0).
+### Testing in the Judge System
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/942#0](https://judge.softuni.bg/Contests/Practice/Index/942#0).
 
-## Задача: числен израз
+## Problem: Numerical Expression
 
-Бони е изключително могъща вещица. Тъй като силата на природата не е достатъчна, за да се бори успешно с вампири и върколаци, тя започнала да усвоява силата на Изразите. Изразът е много труден за усвояване, тъй като заклинанието разчита на способността за **бързо решаване на математически изрази**.
+Bonny is an exceptionally powerful witch. As her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is very hard to master, because the spell relies on the ability to **quickly solve mathematical expressions**.
 
-За използване на "Израз заклинание", вещицата трябва да знае резултата от математическия израз предварително. **Израз заклинанието** се състои от няколко прости математически израза. Всеки математически израз може да съдържа оператори за **събиране**, **изваждане**, **умножение** и/или **деление**.
+In order to use an "Expression spell", the witch must know the result of a mathematical expression in advance. An **Expression spell** consists of a few simple mathematical expressions. Each mathematical expression can contain operators for **summing up**, **subtraction**, **multiplying** and/or **division**.
 
-Изразът се решава без да се вземат под внимание математическите правила при пресмятане на числови изрази. Това означава, че приоритет има последователността на операторите, а не това какъв вид изчисление правят. Израза **може да съдържа скоби**, като **всичко в скобите се пресмята първо**. Всеки израз може да съдържа множество скоби, но не може да съдържа вложени скоби:
-- Израз съдържащ **(…(…)…) е невалиден**.
-- Израз съдържащ **(…)…(…) е валиден**.
+The expression is solved without considering the mathematical rules for calculating numerical expressions. This means that the priority is applied according to the sequence of the operators, and not the type of calculation that they do. The expression **can contain brackets**, as **everything inside the brackets is calculated first**. Every expression can contain multiple brackets, but no nested brackets:
+- An expression containing **(…(…)…) is an invalid one**.
+- An expression containing **(…)…(…) is a valid one**.
 
-### Пример
+### Example
 
-Изразът
+The expression
 
 ![](assets/chapter-9-2-images/x-expression.01.png)
 
-бива решен по следния начин:
+is solved in the following way:
 
 ![](assets/chapter-9-2-images/x-expression.02.png)
 
-Бони е много красива, но не чак толкова съобразителна, затова тя има нужда от нашата помощ, за да усвои силата на Изразите.
+Bonny is very pretty, but not as wise, so she will need our help to master the power of Expressions.
 
-### Входни данни
+## Input Data
 
-Входните данни се състоят от един аргумент. Той съдържа **математическият израз за пресмятане**. Аргументът **винаги завършва със символа "="**. Символът **"="** означава **край на математическия израз**.
+The input data consists of a single text line, passed from the console. It contains a **mathematical expression for calculation**. The line **always ends with the "=" symbol**. The **"="** symbol means **end of the mathematical expression**.
 
-Входните данни винаги са валидни и във формата, който е описан. Няма нужда да бъдат валидирани.
+The input data is always valid and always in the described format. No need to validate it.
 
-### Изходни данни
+### Output Data
 
-Изходните данни трябва да се принтират на конзолата. Изходът се състои от един ред – резултата от **пресметнатия математически израз**.
+The output data must be printed on the console. The output consists of one line: the **result** of the calculated mathematical expression.
 
-Резултатът трябва да бъде **закръглен до втората цифра след десетичния знак**.
+The result must be rounded up to the **second digit after the decimal point**.
 
-### Ограничения
+### Constraints
 
-- Изразите ще състоят от **максимум 2500 символа**.
-- Числата от всеки математически израз ще са в интервала [**1 … 9**].
-- Операторите в математическите изрази винаги ще бъдат измежду **`+`** (събиране), **`-`** (изваждане), **`/`** (деление) или **`*`** (умножение).
-- Резултатът от математическия израз ще е в интервала [**-100000.00 … 100000.00**].
-- Позволено време за изпълнение: **0.1 секунди**.
-- Позволена памет: **16 MB**.
+- The expressions will consist of **maximum 2500 symbols**.
+- The numbers of each mathematical expression will be within the range [**1 … 9**].
+- The operators in the mathematical expressions will always be among **`+`** (summing up), **`-`** (subtraction), **`/`** (division) or **`*`** (multiplying).
+- The result of the mathematical expression will be within the range [**-100000.00 … 100000.00**].
+- Allowed execution time: **0.1 seconds**.
+- Allowed memory: **16 MB**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход                           | Изход  |Вход                                 | Изход  |
+| Input                           | Output  |Input                                 | Output  |
 |--------------------------------|--------|-------------------------------------|--------|
 | '4+6/5+(4\*9-8)/7\*2='         | 8.57   |'3+(6/5)+(2\*3/7)\*7/2\*(9/4+4\*1)=' | 110.63 |
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Обикновено, първо ще прочетем и обработим входа, след това решаваме задачата и накрая отпечатаме резултата, форматиран, според условието. В случая входът се състои от 1 аргумент, който няма нужда да бъде обработван допълнително. Затова директно преминаваме към решаването на задачата.
+As usual, we will first read and process the input, after that we will solve the problem, and finally, we will print the result, formatted as required. In this example our input will be 1 argument which doesn't need to be processed any further. We can directly go to solving our problem.
 
-#### Алгоритъм за решаване на задачата
+#### Algorithm for Solving the Problem
 
-За целите на нашата задача ще имаме нужда от няколко променливи:
-* Една променлива, в която ще пазим **текущия резултат**.
-* Една променлива, в която ще пазим до **кой индекс сме стигнали** в обхождането на нашия израз.
-* Една променлива, в която ще пази **текущия символ**, който обработваме.
-* И последна променлива, в която ще пазим **текущия оператор** от нашия израз.
+For the tasks of our problem we need to use some variables:
+* One variable which will store our **current result**.
+* One variable which will store the **index we are currently on** for our loop.
+* One variable which will store our **current index** which we process.
+* And our final variable, which store the **current operator** from our string.
 
 ![](assets/chapter-9-2-images/x-expression.03.png)
 
-След като вече имаме началните си променливи, трябва да помислим върху това **каква ще е основната структура** на нашата програма. От условието разбираме, че **всеки израз завършва с `=`**, т.е. ще трябва да обработваме символи, докато не срещнем **`=`**. Следва точното изписване на **`while` цикъл**.
+Now that we already have our starting variables, we must decide **what will be the main structure** of our program. By the requirements we understand that **each expression ends with `=`**, i.e. we must read and process symbols until we reach a **`=`**. This is followed by an accurately written **`while` loop**.
 
 ![](assets/chapter-9-2-images/x-expression.04.png)
 
-Следващата стъпка е обработването на нашата **`symbol`** променлива. За нея имаме 3 възможни случая:
-* Ако символът е **начало на подизраз, заграден в скоби**, т.е. срещнатият символ е **`(`**.
-* Ако символът е **цифра между 0 и 9**. Но как можем да проверим това? Как можем да проверим дали символът ни е цифра? Тук идва на помощ **ASCII кодът** на символа, чрез който можем да използваме следната формула: **`[ASCII кода на нашия символ] - [ASCII кода на символа 0] = [цифрата, която репрезентира символа]`**. Ако **резултатът от тази проверка е между 0 и 9**, то тогава нашият символ наистина е **число**.
-(*Алтернативно можем да използваме директно символите `'0'` и `'9'` или техните **ASCII кодове***.)
-* Ако символът е **оператор**, т.е. е **`+`**, **`-`**, **`*`** или **`/`**.
+Our next step is to proccess our **`symbol`**  variable.
+
+The next step is the processing of our **`symbol`** variable. We have 3 possible cases for it:
+* If the symbol is a **start of a sub-expression placed in brackets** i.e. the found symbol is a **`(`**.
+* If the symbol is a **digit between 0 and 9**. But how can we check this? How can we check if our symbol is a digit? We can use for assistance the **ASCII code** of the symbol, via which we can use the following formula: **`[ASCII code of our symbol] – [ASCII code of the symbol 0] = [the digit that represents the symbol]`**. If **the result of this condition is between 0 and 9**, then our symbol is really a **number**. (* We can also use directly `'0'` and `'9'` symbols or their **ASCII codes***.)
+* If the symbol is an **operator**, i.e. it is **`+`**, **`-`**, **`*`** or **`/`**.
 
 ![](assets/chapter-9-2-images/x-expression.05.png)
 
-Нека разгледаме действията, които трябва да извършим при съответните случаи, които дефинирахме:
-* Ако нашият символ е **оператор**, то тогава единственото, което трябва да направим, е да **зададем нова стойност на променливата `expressionOperator`**.
-*  Ако нашият символ е **цифра**, тогава трябва да **променим текущия резултат от израза в зависимост от текущия оператор**, т.е. ако **`expressionOperator`** е **`-`**, тогава трябва да **намалим резултата с цифровата репрезентация на текущия символ**. Можем да вземем цифровата репрезентация на текущия символ, чрез формулата, която използвахме при проверката на този случай (**`[ASCII кода на нашия символ] - [ASCII кода на символа `0`] = [цифрата, която репрезентира символа]`**)
+
+Let's examine the actions that we need to undertake in the relevant cases that we defined:
+* If our symbol is an **operator**, then the only thing we need to do is to **set a new value for the `expressionOperator` variable**.
+* If our symbol is a **digit**, then we need to **change the current result of the expression depending on the current operator**, i.e. if  **`expressionOperator`** is a **`-`**, then we must **decrease the result by the numerical representation of the current symbol**. We can get the numerical representation of the current symbol via the formula that we used upon checking the condition for this case (the **`[ASCII code of our symbol] – [the ASCII code of the symbol `0`] = [the digit that represents the symbol]`**)
 
 ![](assets/chapter-9-2-images/x-expression.06.png)
 
-* Ако нашият символ е **`(`**, това индикира **началото на подизраз** (израз в скоби). По дефиниция **подизразът трябва да се калкулира преди да се модифицира резултата от целия израз** (действията в скобите се извършват първи). Това означава, че ще имаме локален резултат за подизраза ни и локален оператор.
+* If our symbol is a **`(`**, this indicates the **beginning of a sub-expression** (an expression in brackets). By definition, **the sub-expression must be calculated before modifying the result of the whole expression** (the actions in brackets are performed first). This means that we will have a local result for the sub-expression and a local operator.
 
 ![](assets/chapter-9-2-images/x-expression.07.png)
 
-След това, за **пресмятане стойността на подизраза** използваме същите методи, които използвахме за пресмятане на главния израз - използваме **`while` цикъл**, за **да обработваме символи** (докато не срещнем символа **`)`**). В зависимост от това дали прочетения символ е цифра или оператор, модифицираме резултата на подизраза. Имплементацията на тези операции е аналогична на имплементацията за пресмятане на изрази, описана по-горе, затова смятаме, че читателят не би трябвало да има проблем с нея.
+After that, in order to **calculate the sub-expression value**, we will use the same methods that we used for calculating the main expression – we use a **`while` loop** to **read symbols** (until we reach an **`)`** symbol). Depending on whether the read symbol is a number or an operator, we modify the result of the sub-expression. The implementation of these operations is identical to the above described implementation for calculating expressions. This is why we believe the reader will be able to easily handle it.
 
-След като приключим калкулацията на резултата от подизраза ни, **модифицираме резултата на целия израз** в зависимост от стойността на **`expressionOperator`**.
+After finishing the result calculation for our sub-expression, we **modify the result of the whole expression** depending on the value of the **`expressionOperator`**.
 
 ![](assets/chapter-9-2-images/x-expression.08.png)
 
-#### Форматиране на изхода
+#### Formatting the Output
 
-Единствения изход, който програмата трябва да принтира на конзолата, е **резултатът от решаването на израза, с точност два символа след десетичния знак**. Как можем да форматираме изхода по този начин? Отговора на този въпрос оставяме на читателя.
+The only output that the program must print on the console is the **result of solving the expression with accuracy of up to two symbols after the decimal point**. How can we format the output this way? We will leave the answer to this question to the reader.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/942#1](https://judge.softuni.bg/Contests/Practice/Index/942#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/942#1](https://judge.softuni.bg/Contests/Practice/Index/942#1).
 
 ## Задача: бикове и крави
 
