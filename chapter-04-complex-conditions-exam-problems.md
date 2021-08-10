@@ -1,195 +1,195 @@
-# Глава 4.2. По-сложни проверки – изпитни задачи
+# Chapter 4.2. More Complex Conditions – Exam Problems
 
-В предходната глава се запознахме с **вложените условни конструкции** в езика **JavaScript**. Чрез тях програмната логика в дадена програма може да бъде представена посредством **`if` конструкции**, които се съдържат една в друга. Разгледахме и условната конструкция **`switch-case`**, която позволява избор измежду списък от възможности. Следва да упражним и затвърдим наученото досега, като разгледаме няколко по-сложни задачи, давани на изпити. Преди да преминем към задачите, ще си припомним условните конструкции:
+The previous chapter introduced you to **nested conditions** in **JavaScript**. Via nested conditions, the program logic in a particular application can be represented using **`if` conditional statements** that are nested one into another. We also explained the **`switch-case`** conditional statement that allows selecting from a list of options. Now we are going to solve some practical exercises and make sure we have in-depth understanding of the material, by discussing a number of more complex problems that had been given to students on exams. Before moving to the problems, let's first recall what nested conditions are:
 
-## Вложени проверки
+## Nested Conditions
 
 ```javascript
 if (condition1) {
     if (condition2)
-        // тяло; 
+        // body; 
     else
-        // тяло;
+        // body;
 }
 ```
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Запомнете, че не е добра практика да пишете <strong>дълбоко вложени условни конструкции</strong> (с ниво на влагане повече от три). Избягвайте влагане на повече от три условни конструкции една в друга. Това усложнява кода и затруднява неговото четене и разбиране.</td>
+<td>Remember that it is not a good practice to write <strong>deeply nested conditional statements</strong> (with more than three levels of nesting). Avoid nesting of more than three conditional statements inside one another. This complicates the code and makes its reading and understanding difficult.</td>
 </tr></table>
 
-## Switch-case проверки
+## Switch-Case Conditions
 
-Когато работата на програмата ни зависи от стойността на една променлива, вместо да правим последователни проверки с множество **`if-else`** блокове, можем да използваме условната конструкция **`switch-case`**.
+When the program operation depends on the value of a variable, instead of doing consecutive checks with multiple **`if-else`** blocks, we can use the **`switch-case`** conditional statement.
 
 ```javascript
-switch (селектор) {
-    case стойност1:
-        конструкция;
+switch (selector) {
+    case value1:
+        statement;
         break;
     case стойност2:
-        конструкция;
+        statement;
         break;
     default:
-        конструкция;
+        statement;
         break;
 }
 ```
 
-Конструкцията се състои от:
-* Селектор - израз, който се изчислява до някаква конкретна стойност.
-* Множество **`case`** етикети с команди след тях, завършващи с **`break`**.
+The structure consists of:
+* Selector - an expression that calculates a particular value.
+* Multiple **`case`** labels followed by commands, ending in a **`break`**.
 
-## Изпитни задачи
+## Exam Problems
 
-Сега, след като си припомнихме как се използват условни конструкции и как се влагат една в друга условни конструкции, за реализиране на по-сложни проверки и програмна логика, нека решим няколко изпитни задачи.
+Now, after we refreshed our knowledge on how to use and nested conditional statements in order to implement more complex conditions and program logic, let's solve some exam problems.
 
-## Задача: навреме за изпит
+## Problem: On Time for the Exam
 
-Студент трябва да отиде **на изпит в определен час** (например в 9:30 часа). Той идва в изпитната зала в даден **час на пристигане** (например 9:40). Счита се, че студентът е дошъл **навреме**, ако е пристигнал **в часа на изпита или до половин час преди това**. Ако е пристигнал **по-рано повече от 30 минути**, той е **подранил**. Ако е дошъл **след часа на изпита**, той е **закъснял**. 
+A student has to attend **an exam at a particular time** (for example at 9:30 am). They arrive in the exam room at a particular **time of arrival** (for example 9:40 am). It is considered that the student has arrived **on time**, if they have arrived **at the time when the exam starts or up to half an hour earlier**. If the student has arrived **more than 30 minutes earlier**, the student has come **too early**. If they have arrived **after the time when the exam starts**, they are **late**.
 
-Напишете програма, която въвежда време на изпит и време на пристигане и отпечатва дали студентът е дошъл **навреме**, дали е **подранил** или е **закъснял**, както и **с колко часа или минути** е подранил или закъснял.
+Write a program that inputs the exam starting time and the time of student's arrival, and prints if the student has arrived **on time**, if they have arrived **early** or if they are **late**, as well as **how many hours or minutes** the student is early or late.
 
-### Входни данни
+### Input Data
 
-Програмата чете **четири цели числа** (аргумента):
+Read the following **four integers** (arguments):
 
-- Първият ред (аргумент) съдържа **час на изпита** – цяло число от 0 до 23.
-- Вторият ред (аргумент) съдържа **минута на изпита** – цяло число от 0 до 59.
-- Третият ред (аргумент) съдържа **час на пристигане** – цяло число от 0 до 23.
-- Четвъртият ред (аргумент) съдържа **минута на пристигане** – цяло число от 0 до 59.
+- The first line (argument) contains **exam starting time (hours)** – an integer from 0 to 23.
+- The second line (argument) contains **exam starting time (minutes)** – an integer from 0 to 59.
+- The third line (argument) contains **hour of arrival** – an integer from 0 to 23.
+- The fourth line (argument) contains **minutes of arrival** – an integer from 0 to 59.
 
-### Изходни данни
+### Output Data
 
-На първия ред отпечатайте:
+Print the following on the first line on the console:
 
-- "**Late**", ако студентът пристига **по-късно** от часа на изпита.
-- "**On time**", ако студентът пристига **точно** в часа на изпита или до 30 минути по-рано.
-- "**Early**", ако студентът пристига повече от 30 минути **преди** часа на изпита.
+- "**Late**", if the student arrives **later** compared to the exam starting time.
+- "**On time**", if the student arrives **exactly** at the exam starting time or up to 30 minutes earlier.
+- "**Early**", if the student arrives more than 30 minutes **before** the exam starting time.
 
-Ако студентът пристига с поне минута разлика от часа на изпита, отпечатайте на следващия ред:
+If the student arrives with more than one minute difference compared to the exam starting time, print on the next line:
 
-- "**mm minutes before the start**" за идване по-рано с по-малко от час.
-- "**hh:mm hours before the start**" за подраняване с 1 час или повече. Минутите винаги печатайте с 2 цифри, например "1:05".
-- "**mm minutes after the start**" за закъснение под час.
-- "**hh:mm hours after the start**" за закъснение от 1 час или повече. Минутите винаги печатайте с 2 цифри, например "1:03".
+- "**mm minutes before the start**" for arriving less than an hour earlier.
+- "**hh:mm hours before the start**" for arriving 1 hour or earlier. Always print minutes using 2 digits, for example "1:05".
+- "**mm minutes after the start**" for arriving more than an hour late.
+- "**hh:mm hours after the start**" for arriving late with 1 hour or more. Always print minutes using 2 digits, for example "1:03".
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход | Изход | Вход | Изход |
+| Input | Output | Input | Output |
 |---|---|---|---|
 |9<br>30<br>9<br>50|Late<br>20 minutes after the start|16<br>00<br>15<br>00|Early<br>1:00 hours before the start|
 |9<br>00<br>8<br>30|On time<br>30 minutes before the start|9<br>00<br>10<br>30|Late<br>1:30 hours after the start|
 |14<br>00<br>13<br>55|On time<br>5 minutes before the start|11<br>30<br>8<br>12|Early<br>3:18 hours before the start|
 
 
-| Вход | Изход | 
+| Input  | Output | 
 |---|---|
 |10<br>00<br>10<br>00|On time|
 |11<br>30<br>10<br>55|Early<br>35 minutes before the start|
 |11<br>30<br>12<br>29|Late<br>59 minutes after the start|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Препоръчително е <strong>да прочетете няколко пъти заданието</strong> на дадена задача, като си водите записки и си скицирате примерите, докато разсъждавате над тях, преди да започнете писането на код.</td></tr></table>
+<td>It is recommended <strong>to read the assignment a few times,</strong> take notes and sketch the examples while thinking, before you start with the code.</td></tr></table>
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-Съгласно заданието очакваме да ни бъдат подадени **четири** параметъра с различни **цели числа**. Разглеждайки дадените параметри можем да се спрем на типът **`Number`**, тъй като той удовлетворява очакваните ни стойности. **Четем** входните параметри и **парсваме** текстовите стойности към избрания от нас тип данни за **цяло число**.
+According to the assignment, we expect **four** lines containing different **integers** to be passed. Examining the provided parameters, we can use the **`Number`** type, as it is suitable for the expected values. We simultaneously **read** the input data and **parse** the string value to the selected data type for **integer**.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-01.PNG)
 
-Разглеждайки очаквания изход можем да създадем променливи, които да съдържат различните видове изходни данни, с цел да избегнем използването на т.нар. **"magic strings"** в кода.
+Examining the expected output, we can create variables that contain the different output data types, in order to avoid using the so called **"magic strings"** in the code.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-02.PNG)
 
-#### Изчисления
+#### Calculations
 
-След като прочетохме входа, можем да започнем да разписваме логиката за изчисление на резултата. Нека първо да изчислим **началния час** на изпита **в минути**, за по-лесно и точно сравнение:
+After reading the input data, we can now start writing the logic for calculating the result. Let's first calculate the **start time** of the exam **in minutes** for easier and more accurate comparison:
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-03.PNG)
 
-Нека изчислим по същата логика и **времето на пристигане** на студента:
+Let's also calculate the **student arrival time** using the same logic:
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-04.PNG)
 
-Остава ни да пресметнем разликата в двете времена, за да можем да определим **кога** и в **какво време спрямо изпита** е пристигнал студентът:
+What remains is to calculate the difference between the two times, in order to determine **when** and **what time compared to the exam time** the student arrived at:
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-05.PNG)
 
-Следващата ни стъпка е да направим необходимите **проверки и изчисления**, като накрая ще изведем резултата от тях. Нека разделим изхода на **две** части. 
+Our next step is to do the required **checks and calculations**, and finally we will print the output. Let's separate the code into **two** parts. 
 
-- Първо да покажем кога е пристигнал студентът - дали е **подранил**, **закъснял** или е пристигнал **навреме**. За целта ще се спрем на **`if-else`** конструкция. 
-- След това ще покажем **времевата разлика**, ако студентът пристигне в **различно време** от началния **час на изпита**.
+- First, let's show when the student arrived – were they **early**, **late** or **on time**. In order to do that, we will use an **`if-else`** statement. 
+- After that, we will show the **time difference**, if the student arrives in a **different time** compared to the **exam starting time**.
 
-С цел да спестим една допълнителна проверка (**`else`**), можем по подразбиране да приемем, че студентът е закъснял. 
+In order to spare one additional check (**`else`**), we can, by default, assume that the student was late. 
 
-След което, съгласно условието, проверяваме дали разликата във времената е **повече от 30 минути**. Ако това е така, приемаме, че е **подранил**. Ако не влезем в първото условие, то следва да проверим само дали **разликата е по-малка или равна на нула (**`<= 0`**)**, с което проверяваме условието, студентът да е дошъл в рамките на от **0 до 30 минути** преди изпита. 
+After that, according to the condition, we will check whether the difference in times is **more than 30 minutes**. If this is true, we assume that the student is **early**. If we do not match the first condition, we need to check if **the difference is less than or equal to zero (**`<= 0`**)**, by which we are checking the condition whether the student arrived within the range of **0 to 30 minutes** before the exam. 
 
-При всички останали случаи приемаме, че студентът е **закъснял**, което сме направили **по подразбиране**, и не е нужна допълнителна проверка:
+In all other cases we assume that the student **was late**, which we set as **default**, and no additional check is needed:
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-06.png)
 
-За финал ни остава да разберем и покажем с **каква разлика от времето на изпита е пристигнал**, както и дали тази разлика показва време на пристигане **преди или след изпита**.
+Finally, we need to understand and print **what is the time difference between exam start time and student arrival time**, as well as whether this time difference indicates time of arrival **before or after the exam start**.
 
-Правим проверка дали разликата ни е **над** един час, за да изпишем съответно часове и минути в желания по задание **формат**, или е **под** един час, за да покажем **само минути** като формат и описание. 
+We check whether the time difference is **more than** one hour, in order to print hours and minutes in the required **format**, or **less than** one hour, in order to print **only minutes** as a format and description. 
 
-Остава да направим още една проверка - дали времето на пристигане на студента е **преди** или **след** началото на изпита.
+We also need to do one more check – whether the time of student's arrival is **before** or **after** the exam start time.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-07.png)
 
-#### Отпечатване на резултата
+#### Printing the Result
 
-Накрая остава да изведем резултата на конзолата. По задание, ако студентът е дошъл точно на време (**без нито една минута разлика**), не трябва да изваждаме втори резултат. Затова правим следната **проверка**:
+Finally, what remains is to print the result on the console. According to the requirements, if the student arrived right on time (**not even a minute difference**), we do not need to print a second result. This is why we apply the following **condition**:
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-08.png)
 
-Реално за целите на задачата извеждането на резултата **на конзолата** може да бъде направен и в по-ранен етап - още при самите изчисления. Това като цяло не е много добра практика. **Защо?** Нека разгледаме идеята, че кодът ни не е 10 реда, а 100 или 1000! Някой ден ще се наложи извеждането на резултата да не бъде в конзолата, а да бъде записан във **файл** или показан на **уеб приложение**. Тогава на колко места в кода ще трябва да бъдат нанесени корекции поради тази смяна? И дали няма да пропуснем някое място?
+Actually, for the purposes of the task, printing the result **on the console** can be done on a much earlier stage – during the calculations. This, however, is not a very good practice. **Why?** Let's examine the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a **file** or displayed as a **web application**. Then, how many places in the code you will make changes at, due to such a correction? Are you sure you won't miss some places?
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Винаги си мислете за кода с логическите изчисления, като за отделна част от, различна от обработката на входните и изходните данни. Той трябва да може да работи без значение как му се подават данните и къде ще трябва да бъде показан резултатът.</td></tr></table>
+<td>Always consider the code that contains logical calculations as a separate part, different from the part that processes the input and output data. It has to be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук:  [https://judge.softuni.bg/Contests/Practice/Index/932#0](https://judge.softuni.bg/Contests/Practice/Index/932#0).
+Test your solution here:  [https://judge.softuni.bg/Contests/Practice/Index/932#0](https://judge.softuni.bg/Contests/Practice/Index/932#0).
 
 
-## Задача: пътешествие
+## Problem: Trip
 
-Странно, но повечето хора си плануват от рано почивката. Млад програмист разполага с **определен бюджет** и свободно време в даден **сезон**.
+It is strange, but most people start planning their vacations well in advance. A young programmer from Bulgaria has **certain budget** and spare time in a particular **season**.
 
-Напишете програма, която да приема **на входа бюджета и сезона**, а **на изхода** да изкарва **къде ще почива** програмистът и **колко ще похарчи**.
+Write a program that accepts **as input the budget and season**, and **as output** displays programmer's **vacation place** and **the amount of money they will spend**.
 
-**Бюджетът определя дестинацията, а сезонът определя колко от бюджета ще бъде изхарчен**. Ако е лято, ще почива на къмпинг, а зимата - в хотел. Ако е в Европа, независимо от сезона, ще почива в хотел. Всеки къмпинг или хотел, според дестинацията, има собствена цена, която отговаря на даден **процент от бюджета**:
+**The budget determines the destination, and the season determines what amount of the budget will be spent**. If the season is summer, the programmer will go camping, if it is winter – he will stay in a hotel. If it is in Europe, regardless of the season, the programmer will stay in a hotel. Each camp or hotel, according to the destination, has its own price, which corresponds to a particular **percentage of the budget**:
 
-- При **100 лв. или по-малко** – някъде в **България**.
-  - **Лято** – **30%** от бюджета.
-  - **Зима** – **70%** от бюджета.
-- При **1000 лв. или по малко** – някъде на **Балканите**.
-  - **Лято** – **40%** от бюджета.
-  - **Зима** – **80%** от бюджета.
-- При **повече от 1000 лв**. – някъде из **Европа**.
-  - При пътуване из Европа, независимо от сезона, ще похарчи **90% от бюджета**.
+- If **100 BGN or less** – somewhere in **Bulgaria**.
+  - **Summer** – **30%** of the budget.
+  - **Winter** – **70%** of the budget.
+- If **1000 BGN or less** – somewhere on the **Balkans**.
+  - **Summer** – **40%** of the budget.
+  - **Winter** – **80%** of the budget.
+- If **more than 1000 BGN** – somewhere in **Europe**.
+  - Upon traveling in Europe, regardless of the season, the programmer will spend **90% of the budget**.
 
-### Входни данни
+### Input Data
 
-Входът, който програмата чете се състои от **два реда** (аргумента):
+The input data will be read from the console and will consist of **two lines** (arguments):
 
-- На **първия** ред (аргумент) получаваме **бюджета** - **реално число** в интервал [**10.00 … 5000.00**].
-- На **втория** ред (аргумент) – **един** от двата възможни сезона: "**summer**" или "**winter**".
+- The **first** line (argument) holds **the budget** – **real number** in the range [**10.00 … 5000.00**].
+- The **second** line (argument) holds **one** of two possible seasons: "**summer**" or "**winter**".
 
-### Изходни данни
+### Output Data
 
-На конзолата трябва да се отпечатат **два реда**.
+**Two lines** must be printed on the console.
 
-- На **първи** ред – "**Somewhere in {дестинация}**" измежду "**Bulgaria**", "**Balkans**" и "**Europe**".
-- На **втори** ред – "{**Вид почивка**} – {**Похарчена сума**}".
-  - **Почивката** може да е между "**Camp**" и "**Hotel**".
-  - **Сумата** трябва да е **закръглена с точност до втория символ** след десетичния знак.
+- On the **first** line – "**Somewhere in {destination}**" among "**Bulgaria**", "**Balkans**" and "**Europe**".
+- On the **second** line – "{**Vacation type**} – {**Amount spent**}".
+  - The **Vacation** can be in a "**Camp**" or "**Hotel**".
+  - The **Amount** must be **rounded up to the second digit after the decimal point**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 |---|---|
 |50<br>summer|Somewhere in Bulgaria<br>Camp - 15.00|
 |75<br>winter|Somewhere in Bulgaria<br>Hotel - 52.50|
@@ -197,336 +197,336 @@ switch (селектор) {
 |678.53<br>winter|Somewhere in Balkans<br>Hotel - 542.82|
 |1500<br>summer|Somewhere in Europe<br>Hotel - 1350.00|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Типично, както и при другите задачи, можем да разделим решението на няколко части:
-* Четене на входните данни
-* Изчисления
-* Отпечатване на резултата
+Typically, as for the other tasks, we can separate the solution into the following parts:
+* Reading the input data
+* Doing calculations
+* Printing the result
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-Прочитайки внимателно условието разбираме, че очакваме **два** параметъра с входни данни. Първият параметър е **реално число**, за което е добре да изберем подходящ тип на променливата. За по-голяма точност в изчисленията ще се спрем на **`Number`** като тип за бюджета, а за сезона - **`String`**. 
+While reading carefully the requirements, we understand that we expect **two** parameters of input data. The first parameter is a **real number**, for which we need to pick an appropriate variable type. For higher level of calculation accuracy, we can pick **`Number`** as a variable for the budget and – **`String`** for the season.
 
 ![](assets/chapter-4-2-images/02.Trip-01.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Винаги преценявайте какъв <strong>тип стойност</strong> се подава при входните данни, както и към какъв тип трябва да бъдат конвертирани тези данни, за да работят правилно създадените от вас програмни конструкции!</td>
+<td>Always take into consideration what <b>value type</b> is passed in the input data, as well as what type these need to be converted to, in order for the program conditions to work properly!</td>
 </tr></table>
 
-#### Изчисления
+#### Calculations
 
-Нека си създадем и инициализираме нужните за логиката и изчисленията променливи:
+Let's create and initialize the variables needed for applying the logic and calculations:
 
 ![](assets/chapter-4-2-images/02.Trip-02.png)
 
-Подобно на примера в предната задача, можем да инициализираме променливите с някои от изходните резултати - с цел спестяване на допълнително инициализиране.
+Similarly to the example in the previous task, we can initialize variables with some of the output results, in order to spare additional initialization.
 
-Разглеждайки отново условието на задачата забелязваме, че основното разпределение за това къде ще почиваме се определя от **стойността на подадения бюджет**, т.е. основната ни логика се разделя на два случая: 
-* Ако бюджетът е **по-малък** от дадена стойност.
-* Ако е **по-малък** от друга стойност, или е **повече** от дадена гранична стойност. 
+When examining once again the problem requirements, we notice that the main distribution of where the vacation will take place is determined by the **value of the budget**, i.e. our main logic is divided into two cases: 
+* If the budget is **less than** a particular value.
+* If it is **less than** another value or is **more than** the specified border value.
 
-Спрямо това как си подредим логическата схема (в какъв ред ще обхождаме граничните стойности), ще имаме повече или по-малко проверки в условията. **Помислете защо!**
+Based on the way we arrange the logical scheme (the order in which we will check the border values), we will have more or less conditions in the solution. **Think why!**
 
-След това е необходимо да направим проверка за стойността на **подадения сезон**. Спрямо нея ще определим какъв процент от бюджета ще бъде похарчен, както и къде ще почива програмистът - в **хотел** или на **къмпинг**.
+After that, we need to apply a condition to check the value of the **season**. Based on it, we will determine what percentage of the budget will be spent, as well as where the programmer will stay – in a **hotel** or a **camp**.
 
-Пример за един от възможните подходи за решение е:
+This is a sample code that may be used to implement the above idea:
 
 ![](assets/chapter-4-2-images/02.Trip-03.png)
 
-Винаги можем да инициализираме дадена стойност на параметъра и след това да направим само една проверка. **Това ни спестява една логическа стъпка**.
+We can optimize the conditions checking by assigning a **default value** and then checking one variant less. **This saves one logical step**.
 
-Например следният блок:
+For example, this block:
 
 ![](assets/chapter-4-2-images/02.Trip-04.png)
 
-може да бъде съкратен до този си вид:
+can be shortened like this:
 
 ![](assets/chapter-4-2-images/02.Trip-05.png)
 
-#### Отпечатване на резултата
+#### Printing the Result
 
-Остава ни да покажем изчисления резултат на конзолата:
+What remains is to display the calculated result on the console:
 
 ![](assets/chapter-4-2-images/02.Trip-06.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/932#1](https://judge.softuni.bg/Contests/Practice/Index/932#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/932#1](https://judge.softuni.bg/Contests/Practice/Index/932#1).
 
-## Задача: операции между числа
+## Problem: Operations with Numbers
 
-Напишете програма, която чете **две цели числа (n1 и n2)** и **оператор**, с който да се извърши дадена математическа операция с тях. Възможните операции са: **събиране** (**`+`**), **изваждане** (**`-`**), **умножение** (**`*`**), **деление** (**`/`**) и **модулно деление** (**`%`**). При събиране, изваждане и умножение на конзолата трябва да се отпечата резултата и дали той е **четен** или **нечетен**. При обикновено деление – **единствено резултата**, а при модулно деление – **остатъка**. Трябва да се има предвид, че **делителят може да е равен на нула** (**`= 0`**), а на нула не се дели. В този случай трябва да се отпечата **специално съобщение**.
+Write a program that reads **two integers (n1 and n2)** and an **operator** that performs a particular mathematical operation with them. Possible operations are: **summing up** (**`+`**), **subtraction** (**`-`**), **multiplying** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon summing up, subtracting and multiplying, the console must print the result and display whether it is **even** or **odd** number. Upon regular division – **just the result**, and upon modular division – **the remainder**. You need to take into consideration the fact that **the divisor can be equal to zero** (**`= 0`**) and dividing by zero is not possible. In this case, a **special notification** must be printed.
 
-### Входни данни
+### Input Data
 
-На функцията се подават **3 аргумента**:
+**3 arguments** are passed to the function:
 
-- **N1** – **цяло число** в интервала [**0 … 40 000**].
-- **N2** – **цяло число** в интервала [**0 … 40 000**].
-- **Оператор** – **един символ** измежду: "**+**", "**-**", "**\***", "**/**", "**%**".
+- **N1** – **integer** within the range [**0 … 40 000**].
+- **N2** – **integer** within the range [**0 … 40 000**].
+- **Operator** – **one character** among: "**+**", "**-**", "**\***", "**/**", "**%**".
 
-### Изходни данни
+### Output Data
 
-Да се отпечата на конзолата **един ред**:
+Print the output as a **single line** on the console:
 
-- Ако операцията е **събиране**, **изваждане** или **умножение**:
-  - **"{N1} {оператор} {N2} = {резултат} – {even/odd}"**.
-- Ако операцията е **деление**:
-  - **"{N1} / {N2} = {резултат}"** – резултатът е **форматиран** до **втория символ след десетичния знак**.
-- Ако операцията е **модулно деление**:
-  - **"{N1} % {N2} = {остатък}"**.
-- В случай на **деление на 0 (нула)**:
+- If the operation is **summing up**, **subtraction** or **multiplying**:
+  - **"{N1} {operator} {N2} = {output} – {even/odd}"**.
+- If the operation is **division**:
+  - **"{N1} / {N2} = {output}"** – the result is **formatted** up **to the second digit after the decimal point**.
+- If the operation is **modular division**:
+  - **"{N1} % {N2} = {remainder}"**.
+- In case of **dividing by 0 (zero)**:
   - **"Cannot divide {N1} by zero"**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход | Изход | Вход | Изход |
+| Input | Output | Input | Output |
 |---|---|---|---|
 |123<br>12<br>/|123 / 12 = 10.25|112<br>0<br>/|Cannot divide 112 by zero|
 |10<br>3<br>%|10 % 3 = 1|10<br>0<br>%|Cannot divide 10 by zero|
 
-| Вход | Изход |
+| Input | Output |
 |---|---|
 |10<br>12<br>+|10 + 12 = 22 - even|
 |10<br>1<br>-|10 - 1 = 9 - odd|
 |7<br>3<br>\*|7 * 3 = 21 - odd|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Задачата не е сложна, но има доста редове код за писане.
+The problem is not complex, but there are a lot of code lines to write.
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-След прочитане на условието разбираме, че очакваме **три** параметъра с входни данни. На първите **два** параметъра ни се подават **цели числа** (в указания от заданието диапазон), а на третия - **аритметичен символ**. 
+Upon reading the requirements, we understand that we expect **three** parameters of input data. The first **two** parameters are **integers** (within the specified range), and the third one – **an arithmetical symbol**. 
 
 ![](assets/chapter-4-2-images/03.Operations-01.png)
 
-#### Изчисления
+#### Calculations
 
-Нека си създадем и инициализираме нужните за логиката и изчисленията променливи. В едната ще пазим **резултата от изчисленията**, а другата ще използваме за **крайния изход** на програмата.
+Let's create and initialize the variables needed for the logic and calculations. In one variable we will store **the calculations output**, and the other one we will use for the **final output** of the program.
 
 ![](assets/chapter-4-2-images/03.Operations-02.PNG)
 
-Прочитайки внимателно условието разбираме, че има случаи, в които не трябва да правим **никакви** изчисления, а просто да изведем резултат.
+When carefully reading the requirements, we understand that there are cases where we don't need to do **any** calculations, and simply display a result.
 
-Следователно първо може да проверим дали второто число е **`0`** (нула), както и дали операцията е **деление** или **модулно деление**, след което да инициализираме резултата.
+Therefore, we can first check if the second number is **`0`** (zero), as well as whether the operation is **division** or **modular division**, and then initialize the output.
 
 ![](assets/chapter-4-2-images/03.Operations-03.PNG)
 
-Нека сложим резултата като стойност при инициализацията на **`output`** параметъра. По този начин може да направим само **една проверка** - дали е необходимо да **преизчислим** и **заменим** този резултат. 
+Let's place the output as a value upon initializing the **`output`** parameter. This way we can apply **only one condition** – whether it is needed to **recalculate** or **replace** this output. 
 
-Спрямо това кой подход изберем, следващата ни проверка ще бъде или обикновен **`else`** или единичен **`if`**. В тялото на тази проверка, с допълнителни проверки за начина на изчисление на резултата спрямо подадения оператор, можем да разделим логиката спрямо **структурата** на очаквания **резултат**. 
+Based on the approach that we choose, our next condition will be either a simple **`else`** or a single **`if`**. In the body of this condition, using additional conditions regarding the manner of calculating the output based on the passed operator, we can separate the logic based on the **structure** of the expected **output**. 
 
-От условието можем да видим, че за **събиране** (**`+`**), **изваждане** (**`-`**) или **умножение** (**`*`**) очакваният резултат има еднаква структура: **"{n1} {оператор} {n2} = {резултат} – {even/odd}"**, докато за **деление** (**`/`**) и за **модулно деление** (**`%`**) резултатът има различна структура.
+From the requirements we can see that for **summing up** (**`+`**), **subtraction** (**`-`**) or **multiplying** (**`*`**) the expected output has the same structure: **"{n1} {operator} {n2} = {output} – {even/odd}"**, whereas for **division** (**`/`**) and **modular division** (**`%`**) the output has a different structure.
 
 ![](assets/chapter-4-2-images/03.Operations-04.png)
 
-Завършваме с проверките за събиране, изваждане и умножение:
+We finish the solution by applying conditions for summing up, subtraction and multiplying:
 
 ![](assets/chapter-4-2-images/03.Operations-05.PNG)
 
-При кратки и ясни проверки, както в горния пример за четно и нечетно число, е възможно да се използва **тернарен оператор**. Нека разгледаме възможната проверка **с** и **без** тернарен оператор.
+For short and clear conditions, such as the above example for even and odd number, you can use a **ternary operator**. Let's examine the possibility to apply a condition **with** or **without** a ternary operator.
 
-**Без използване на тернарен оператор** кодът е по-дълъг, но се чете лесно:
+**Without using a ternary operator** the code is longer, but easier to read:
 
 ![](assets/chapter-4-2-images/03.Operations-06.png)
 
-**С използване на тернарен оператор** кодът е много по-кратък, но може да изисква допълнителни усилия, за да бъде прочетен и разбран като логика:
+**Upon using a ternary operator** the code is much shorter, it but may require additional efforts to read and understand the logic:
 
 ![](assets/chapter-4-2-images/03.Operations-07.png)
 
-#### Отпечатване на резултата
+#### Printing the Output
 
-Накрая ни остава да покажем изчисления резултат на конзолата:
+Finally, what remains is to print the calculated result on the console:
 
 ![](assets/chapter-4-2-images/03.Operations-08.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/932#2](https://judge.softuni.bg/Contests/Practice/Index/932#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/932#2](https://judge.softuni.bg/Contests/Practice/Index/932#2).
 
 
-## Задача: билети за мач
+## Problem: Game Tickets
 
-**Група запалянковци** решили да си закупят **билети за Евро 2016**. Цената на билета се определя спрямо **две** категории:
+**A group of football fans** decided to buy **tickets for Euro Cup 2016**. The tickets are sold in **two** price categories:
 
-- **VIP** – **499.99** лева.
-- **Normal** – **249.99** лева.
+- **VIP** – **499.99** BGN (Bulgarian leva).
+- **Normal** – **Normal** – **249.99** BGN (Bulgarian leva).
 
-Запалянковците **имат определен бюджет**, a **броят на хората** в групата определя какъв процент от бюджета трябва **да се задели за транспорт**:
+The football fans **have a shared budget**, and the **number of people** in the group determines what percentage of the budget will be **spent on transportation**:
 
-- **От 1 до 4** – 75% от бюджета.
-- **От 5 до 9** – 60% от бюджета.
-- **От 10 до 24** – 50% от бюджета.
-- **От 25 до 49** – 40% от бюджета.
-- **50 или повече** – 25% от бюджета.
+- **1 to 4** – 75% of the budget
+- **5 to 9** – 60% of the budget
+- **10 to 24** – 50% of the budget
+- **25 to 49** – 40% of the budget
+- **50 or more** – 25% of the budget
 
-Напишете програма, която да **пресмята дали с останалите пари от бюджета** могат да си **купят билети за избраната категория**, както и колко пари ще им **останат или ще са им нужни**.
+**Write a program** that **calculates whether the money left in the budget** will be enough for the football fans to **buy tickets in the selected category**, as well as **how much money** they will **have left or be insufficient**.
 
-### Входни данни
+### Input Data
 
-Програмата прочита **точно 3 реда** (аргумента):
+The input data contains **exactly 3 lines** (arguments):
 
-- На **първия** ред (аргумент) е **бюджетът** – реално число в интервала [**1 000.00 … 1 000 000.00**].
-- На **втория** ред (аргумент) е **категорията** – "**VIP**" или "**Normal**".
-- На **третия** ред (аргумент) е **броят на хората в групата** – цяло число в интервала [**1 … 200**].
+- The **first** line (argument) contains the **budget** – real number within the range [**1 000.00 … 1 000 000.00**].
+- The **second** line (argument) contains the **category** – "**VIP**" or "**Normal**".
+- The **third** line (argument) contains the **number of people in the group** – an integer within the range [**1 … 200**].
 
-### Изходни данни
+### Output Data
 
-Да се **отпечата** на конзолата **един ред**:
+**Print the following** on the console as **one line**:
 
-- Ако **бюджетът е достатъчен**:
-  - "**Yes! You have {N} leva left.**" – където **N са останалите пари** на групата.
-- Ако **бюджетът НЕ Е достатъчен**:
-  - "**Not enough money! You need {М} leva.**" – където **М е сумата, която не достига**.
+- If the **budget is sufficient**:
+  - "**Yes! You have {N} leva left.**" – where **N is the amount of remaining money** for the group.
+- If the **budget is NOT sufficient**:
+  - "**Not enough money! You need {М} leva.**" – where **М is the amount that is insufficient**.
 
-**Сумите** трябва да са **форматирани с точност до два символа след десетичния знак**.
+**The amounts** must be **formatted up to the second digit after the decimal point**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход | Изход | Обяснения |
+| Input | Output | Explanations  |
 |---|---|---|
-|1000<br>Normal<br>1|Yes! You have 0.01 leva left.|**1 човек : 75%** от бюджета отиват за **транспорт**.<br>**Остават:** 1000 – 750 = **250**.<br>Категория **Normal**: билетът **струва 249.99 * 1 = 249.99**<br>249.99 < 250: **остават му** 250 – 249.99 = **0.01**|
+|1000<br>Normal<br>1|Yes! You have 0.01 leva left.|**1 person : 75%** of the budget are spent on **transportation**.<br>**Remaining amount:** 1000 – 750 = **250**.<br>Category **Normal**: the ticket **price is 249.99 \* 1 = 249.99**<br>249.99 < 250: **the person will have** 250 – 249.99 = **0.01** money left|
 
-| Вход | Изход | Обяснения |
+| Input | Output | Explanations |
 |---|---|---|
-|30000<br>VIP<br>49|Not enough money! You need 6499.51 leva.|**49 човека: 40%** от бюджета отиват за **транспорт**.<br>Остават: 30000 – 12000 = 18000.<br>Категория **VIP**: билетът **струва** 499.99 * 49.<br>**24499.510000000002** < 18000.<br>**Не стигат** 24499.51 - 18000 = **6499.51**|
+|30000<br>VIP<br>49|Not enough money! You need 6499.51 leva.|**49 people: 40%** of the budget are spent on **transportation**.<br>Remaining amount: 30000 - 12000 = 18000.<br>Category **VIP**: the ticket **costs** 499.99 \* 49.<br>**24499.510000000002** < 18000.<br>**The amount is not enough** 24499.51 - 18000 = **6499.51**|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Ще прочетем входните данни и ще извършим изчисленията, описани в условието на задачата, за да проверим дали ще стигнат парите.
+We will read the input data and perform the calculations described in the task requirements, in order to check if the money will be sufficient.
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-Нека прочетем внимателно условието и да разгледаме какво се очаква да получим като **входни данни**, какво се очаква да **върнем като резултат**, както и кои са **основните стъпки** при разбиването **на логическата схема**.
+Let's read carefully the requirements and examine what we expect to take as **input data**, what is expected to **return as a result**, as well as what are the **main steps** for solving the problem.
 
-Като за начало, нека обработим и запазим входните данни в **подходящи** за това **променливи**:
+For a start, let's process and save the input data in **appropriate variables**:
 
 ![](assets/chapter-4-2-images/04.Match-tickets-01.png)
 
-#### Изчисления
+#### Calculations
 
-Нека създадем и инициализираме нужните за изчисленията променливи:
+Let's create and initialize the variables needed for doing the calculations:
 
 ![](assets/chapter-4-2-images/04.Match-tickets-02.png)
 
-Нека отново прегледаме условието. Трябва да направим **две** различни блок изчисления. 
+Let's review the requirements once again. We need to perform **two** different block calculations.
 
-От първите изчисления трябва да разберем каква част от бюджета ще трябва да заделим за **транспорт**. За логиката на тези изчисления забелязваме, че има значение единствено **броят на хората в групата**. Следователно ще направим логическата разбивка спрямо броя на запалянковците.
+By the first set of calculations we must understand what part of the budget has to be spent on **transportation**. You will notice that the logic for doing these calculations only depends on the **number of people in the group**. Therefore, we will do a logical breakdown according to the number of football fans.
 
-Ще използваме условна конструкция - поредица от **`if-else`** блокове.
+We will use conditional statement – a sequence of **`if-else`** blocks.
 
 ![](assets/chapter-4-2-images/04.Match-tickets-03.png)
 
-От вторите изчисления трябва да намерим каква сума ще ни е необходима за **закупуване на билети** за групата. Според условието, това зависи единствено от типа на билетите, които трябва да закупим. 
+By the second set of calculations we need to find out what amount will be needed for **purchasing tickets** for the group. According to the requirements, this only depends on the type of tickets that we need to buy. 
 
-Нека използваме **`switch-case`** условна конструкция.
+Let's use a **`switch-case`** conditional statement.
 
 ![](assets/chapter-4-2-images/04.Match-tickets-04.png)
 
-След като сме изчислили какви са **транспортните разходи** и **разходите за билети**, ни остава да изчислим крайния резултат и да разберем **ще успее** ли групата от запалянковци да отиде на Евро 2016 или **няма да успее** при така подадените параметри. 
+Once we have calculated the **transportation costs** and **ticket costs**, what remains is to calculate the end result and understand if the group of football fans will **attend** Euro Cup 2016 or **not**, by the provided the available parameters. 
 
-За извеждането на резултата, за да си спестим една **`else` проверка** в конструкцията, приемаме, че групата по подразбиране ще може да отиде на Евро 2016.
+For the output, in order to spare one **`else` condition** in the construction, we will assume that the group can, by default, attend Euro Cup 2016.
 
 ![](assets/chapter-4-2-images/04.Match-tickets-05.png)
 
-#### Отпечатване на резултата
+#### Printing the Result
 
-Накрая ни остава да покажем изчисления резултат на конзолата.
+Finally, we need to display the calculated result on the console.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/932#3](https://judge.softuni.bg/Contests/Practice/Index/932#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/932#3](https://judge.softuni.bg/Contests/Practice/Index/932#3).
 
 
-## Задача: хотелска стая
+## Problem: Hotel Room
 
-Хотел предлага **два вида стаи**: **студио и апартамент**.
+A hotel offers **two types of rooms**: **studio and apartment**.
 
-Напишете програма, която изчислява **цената за целия престой за студио и апартамент**. **Цените** зависят от **месеца** на престоя:
+Write a program that calculates **the price of the whole stay for a studio and apartment**. **Prices** depend on the **month** of the stay:
 
-| **Май и октомври** | **Юни и септември** | **Юли и август** |
+| **May and October** | **June and September** | **July and August** |
 |---|---|---|
-|Студио – **50** лв./нощувка|Студио – **75.20** лв./нощувка|Студио – **76** лв./нощувка|
-|Апартамент – **65** лв./нощувка|Апартамент – **68.70** лв./нощувка|Апартамент – **77** лв./нощувка|
+|Studio – **50** BGN/per night|Studio – **75.20** BGN/per night|Studio – **76** BGN/per night|
+|Apartment – **65** BGN/per night|Apartment – **68.70** BGN/per night|Apartment – **77** BGN/per night|
 
-Предлагат се и следните **отстъпки**:
+The following **discounts** are also offered:
 
-- За **студио**, при **повече** от **7** нощувки през **май и октомври**: **5% намаление**.
-- За **студио**, при **повече** от **14** нощувки през **май и октомври**: **30% намаление**.
-- За **студио**, при **повече** от **14** нощувки през **юни и септември**: **20% намаление**.
-- За **апартамент**, при **повече** от **14** нощувки, **без значение от месеца: 10% намаление**.
+- For a **studio**, in case of **more than 7** stays in **May and October**: **5% discount**.
+- For a **studio**, in case of **more than 14** stays in **May and October**: **30% discount**.
+- For a **studio**, in case of **more than 14** stays in **June and September**: **20% discount**.
+- For an **apartment**, in case of **more than 14** stays, **no limitation regarding the month: 10% discount**.
 
-### Входни данни
+### Input Data
 
-Програмата прочита **точно два реда** (аргумента):
+The input data contains **exactly two lines** (arguments):
 
-- На първия ред (аргумент) е **месецът** – **May**, **June**, **July**, **August**, **September** или **October**.
-- На втория ред (аргумент) е **броят на нощувките** – цяло число в интервала [**0 … 200**].
+- The **first** (argument) line contains the **month** – **May**, **June**, **July**, **August**, **September** or **October**.
+- The **second** line (argument) is the **number of stays** – integer within the range [**0 … 200**].
 
-### Изходни данни
+### Output Data
 
-Да се **отпечатат** на конзолата **два реда**:
+**Print** the following **two lines** on the console:
 
-- На **първия ред**: "**Apartment: { цена за целият престой } lv**".
-- На **втория ред**: "**Studio: { цена за целият престой } lv**".
+- On the **first line**: "**Apartment: { price for the whole stay } lv.**"
+- On the **second line**: "**Studio: { price for the whole stay } lv.**"
 
-**Цената за целия престой да е форматирана с точност до два символа след десетичния знак**.
+**The price for the whole stay must be formatted up to two symbols after the decimal point**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход | Изход |Обяснения |
+| Input | Output |Comments |
 |---|---|---|
-|May<br>15|Apartment: 877.50 lv.<br>Studio: 525.00 lv.| През **май**, при повече от **14 нощувки**, намаляваме цената на **студиото с 30%** (50 – 15 = 35), а на **апартамента – с 10%** (65 – 6.5 =58.5).<br>Целият престой в **апартамент – 877.50** лв.<br>Целият престой **в студио – 525.00** лв.|
+|May<br>15|Apartment: 877.50 lv.<br>Studio: 525.00 lv.| In **May**, in case of more than **14 stays**, the discount for a **studio is 30%** (50 - 15 = 35), and for the **apartment is 10%** (65 - 6.5 = 58.5).<br>The whole stay in the **apartment: 877.50** lv.<br>The whole stay **in the studio: 525.00** lv.|
 
-| Вход | Изход |
+| Input | Output |
 |---|---|
 |June<br>14|Apartment: 961.80 lv.<br>Studio: 1052.80 lv|
 |August<br>20|Apartment: 1386.00 lv.<br>Studio: 1520.00 lv.|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Ще прочетем входните данни и ще извършим изчисленията според описания ценоразпис и правилата за отстъпките и накрая ще отпечатаме резултата.
+We will read the input data and do the calculations according to the provided price list and the discount rules, and finally print the result.
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-Съгласно условието на задачата очакваме да получим два параметъра, съдържащи входните данни - първият параметър е **месецът, през който се планува престой**, а вторият - **броят нощувки**.
+According to the task requirements we expect two parameters, that contains the input data - the first parameter is **the month in which the stay is planned**, and the second - **the number of stays**.
 
-Нека обработим и запазим входните данни в подходящи за това променливи:
+Let's process and store the input data in the appropriate parameters:
 
 ![](assets/chapter-4-2-images/05.Hotel-room-01.png)
 
-#### Изчисления
+#### Calculations
 
-След това да създадем и инициализираме нужните за изчисленията променливи:
+Now let's create and initialize the variables needed for the calculations:
 
 ![](assets/chapter-4-2-images/05.Hotel-room-02.png)
 
-Разглеждайки отново условието забелязваме, че основната ни логика зависи от това какъв **месец** ни се подава, както и от броя на **нощувките**.
+When doing an additional analysis of the requirements, we understand that our main logic depends on what **month** is passed and what is the number of **stays**.
 
-Като цяло има различни подходи и начини да се направят въпросните проверки, но нека се спрем на основна условна конструкция **`switch-case`**, като в различните **`case` блокове** ще използваме съответно условни конструкции **`if`** и **`if-else`**.
+In general, there are different approaches and ways to apply the above conditions, but let's examine a basic **`switch-case`** conditional statement, as in the individual **`case` blocks** we will use **`if`** and **`if-else`** conditional statements.
 
-Нека започнем с първата група месеци: **Май** и **Октомври**. За тези два месеца **цената на престой е еднаква** и за двата типа настаняване - в **студио** и в **апартамент**. Съответно остава само да направим вътрешна проверка спрямо **броят нощувки**, за да преизчислим **съответната цена** (ако се налага):
+Let's start with the first group of months: **May** and **October**. For these two months **the price for stay is the same** for both types of accommodation – a **studio** or an **apartment**. Therefore, the only thing that remains is to apply an internal condition regarding the **number of stays** and recalculate **the relevant price** (if needed):
 
 ![](assets/chapter-4-2-images/05.Hotel-room-03.png)
 
-За следващите месеци **логиката** и **изчисленията** ще са донякъде **идентични**:
+To some extent, the **logic** and **calculations** will be **identical** for the following months:
 
 ![](assets/chapter-4-2-images/05.Hotel-room-04.png)
 
 ![](assets/chapter-4-2-images/05.Hotel-room-05.png)
 
-След като изчислихме какви са съответните цени и крайната сума за престоя - нека да си изведем във форматиран вид резултата, като преди това го запишем в изходните ни **параметри** - **`studioInfo`** и **`apartmentInfo`**:
+After calculating the relevant prices and the total amount for the stay, now let's prepare the formatted result. Before that, we should store it in our output **parameters** – **`studioInfo`** and **`apartmentInfo`**:
 
 ![](assets/chapter-4-2-images/05.Hotel-room-06.png)
 
-За изчисленията на изходните параметри използваме **метода** **`.toFixed(Number)`**. Този метод **закръгля десетично** число до **зададен брой цифри** след десетичния знак. За целта, използваме метода, за да закръглим двете ни променливи (**`studioRent`**, **`apartamentPrice`**). В нашия случай ще закръглим десетичното число до **две цифри** след десетичната точка.
+In order to calculate the output parameters, we will use the **`.toFixed(Number)`** **method**. This method **rounds the decimal** number up to a **specified number of characters** after the decimal point. In our case, we will round the decimal number up to **2 digits** after the decimal point.
 
-#### Отпечатване на резултата
+#### Printing the Result
 
-Накрая остава да покажем изчислените резултати на конзолата.
+Finally, what remains is to print the calculated results on the console.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/932#4](https://judge.softuni.bg/Contests/Practice/Index/932#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/932#4](https://judge.softuni.bg/Contests/Practice/Index/932#4).
