@@ -257,13 +257,13 @@ We can perform various mathematical operations:
 
 ![](assets/chapter-5-1-images/00.For-loop-03.png)
 
-## Exercises: loops (repetitions)
+## Exercises: Loops (Repetitions)
 
-След като се запознахме с циклите, е време **да затвърдим знанията си на практика**, а както знаете, това става с много писане на код. Да решим няколко задачи за упражнение:
+Now that we got acquainted with the loops, it's time **to consolidate our knowledge in practice**, and as you know, this is done with a lot of code writing. Let's solve several problems for exercise:
 
 ### Problem: An element, equal to the sum of the rest
 
-Write a program that reads **n integer numbers** and checks whether there is a number among them that equals the sum of all the rest. If there is such an element, print **"Yes" + the element's value**, otherwise - **"No" + the difference between the largest element and the sum of the rest** (by absolute value). 
+Write a program that reads **n integer numbers** and checks whether there is a number that equals the sum of all the rest among them. If there is such an element, print **"Yes" + the element's value**, otherwise - **"No" + the difference between the largest element and the sum of the rest** (by absolute value). 
 
 #### Sample Input and Output
 
@@ -286,11 +286,11 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#9
 
 ### Problem: Even / Odd Positions
 
-Напишете програма, която чете **n числа** и пресмята **сумата**, **минимума** и **максимума** на числата на **четни** и **нечетни** позиции (броим от 1). Когато няма минимален / максимален елемент, отпечатайте **"No"**. 
+Write a program that reads **n numbers** and calculates **the sum**, **the min** and **the max** value of the numbers on **even** and **odd** positions (counting from 1). If no min / max element exists, print **"No"**. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Вход | Изход |
+| Input | Output | Input | Output |
 | --- | --- | --- | --- |
 | 6<br>2<br>3<br>5<br>4<br>2<br>1 | OddSum=9,<br>OddMin=2,<br>OddMax=5,<br>EvenSum=8,<br>EvenMin=1,<br>EvenMax=4 | 2<br>1.5<br>-2.5 | OddSum=1.5,<br>OddMin=1.5,<br>OddMax=1.5,<br>EvenSum=-2.5,<br>EvenMin=-2.5,<br>EvenMax=-2.5 |
 | 1<br>1 | OddSum=1,<br>OddMin=1,<br>OddMax=1,<br>EvenSum=0,<br>EvenMin=No,<br>EvenMax=No | 0 | OddSum=0,<br>OddMin=No,<br>OddMax=No,<br>EvenSum=0,<br>EvenMin=No,<br>EvenMax=No |
@@ -299,25 +299,25 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#9
 
 #### Hints and Guidelines
 
-Задачата обединява няколко предходни задачи: намиране на **минимум**, **максимум** и **сума**, както и обработка на елементите от **четни и нечетни позиции**. Припомнете си ги.
+The problem combines some of the previous problems: finding **the min**, **the max** value and **the sum**, as well as processing the elements on **even and odd positions**. Check them out.
 
-В тази задача е по-добре да се работи с **дробни числа** (не цели). Сумата, минимумът и максимумът също са дробни числа. Трябва да използваме **неутрална начална стойност** при намиране на минимум / максимум, например **1000000000.0** и **-1000000000.0**. Ако получим накрая неутралната стойност, печатаме **“No”**.
+In this problem it's better to work with **fractions** (not integers). The sum, the minimum and the maximum value are also fractions. We must use **a neutral start value** upon finding the minimum / maximum, for example **1000000000.0** and **-1000000000.0**. If the final result is the neutral value, print **“No”**.
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#10](https://judge.softuni.bg/Contests/Practice/Index/933#10).
 
-### Задача: еднакви двойки
+### Problem: Equal Pairs
 
-Дадени са **2 \* n числа**. Първото и второто формират **двойка**, третото и четвъртото също и т.н. Всяка двойка има **стойност** – сумата от съставящите я числа. Напишете програма, която проверява **дали всички двойки имат еднаква стойност**.
+There are **2 \* n numbers**. The first and the second number form **a pair**, so do the third and the forth number, and so on. Each pair has **a value** – the sum of its numbers. Write a program that checks **whether all pairs have the same value**.
 
-В случай, че е еднаква отпечатайте **"Yes, value=…" + стойността**, в противен случай отпечатайте **максималната разлика** между две последователни двойки в следния формат - **"No, maxdiff=…" + максималната разлика**. 
+In case the value is the same, print **"Yes, value=…" + the value**, otherwise, print **the maximum difference** between two consecutive pairs in the following format - **"No, maxdiff=…" + the maximum difference**. 
 
-Входът се състои от число **n**, следвано от **2*n цели числа**, всички по едно на ред.
+The input holds the number **n**, followed by **2*n integers**, all of them on a separate line.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Коментар |
+| Input | Output | Comment |
 | --- | --- | :---: | 
 | 3<br>1<br>2<br>0<br>3<br>4<br>-1| Yes, value=3 | стойности = {3, 3, 3}<br>еднакви стойности | 
 | 2<br>1<br>2<br>2<br>2 | No, maxdiff=1 | стойности = {3, 4}<br>разлики = {1}<br>макс. разлика = 1 |
@@ -328,81 +328,81 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#1
 
 #### Hints and Guidelines
 
-Прочитаме входните числа **по двойки**. За всяка двойка пресмятаме **сумата** ѝ. Докато четем входните двойки, за всяка двойка, без първата, трябва да пресметнем **разликата с предходната**. За целта е необходимо да пазим в отделна променлива сумата на предходната двойка. Накрая намираме **най-голямата разлика** между две двойки. Ако е **0**, печатаме **“Yes”** + стойността, в противен случай - **“No”** + разликата.
+Read the numbers from the input **in pairs**. For each pair calculate its **sum**. As we read the number pairs from the input, for each pair, except for the first one, we must calculate **the difference with the previous one**. In order to do that, we need to store the sum of the previous pair in a separate variable. Finally, find **the biggest difference** between two pairs. If it is **0**, print **“Yes”** + the value, otherwise - **“No”** + the difference.
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#11](https://judge.softuni.bg/Contests/Practice/Index/933#11).
 
-## Упражнения: графични и уеб приложения
+## Lab: Graphic and Web applications
 
-В настоящата глава се запознахме с **циклите** като конструкция в програмирането, която ни позволява да повтаряме многократно дадено действие или група от действия. Сега нека си поиграем с тях. За целта ще начертаем няколко фигурки, които се състоят от голям брой повтарящи се графични елементи, но този път не на конзолата, а в графична среда, използвайки "**графика с костенурка**". Ще е интересно. И никак не е сложно. Опитайте!
+In this chapter we learned about **loops** as a programming construction that allows us to repeat a particular action or a group of actions multiple times. Now let's play with them. In order to do that, we will draw several figures, which consist of a large number of repetitive graphic elements, and this time we will not do it on the console, but in a graphical environment, using "**turtle graphics**". It will be interesting. And it's not complicated at all. Try it!
 
-### Задача: чертане с костенурка – графично приложение (GUI)
+### Problem: Drawing with a turtle – a graphical application (GUI)
 
-Целта на следващото упражнение е да си поиграем с една **библиотека за рисуване**, известна като **“графика с костенурка” (turtle graphics)**. Ще изградим графично приложение, в което ще **рисуваме различни фигури**, придвижвайки нашата **“костенурка”** по екрана чрез операции от типа “отиди напред 100 позиции”, “завърти се надясно на 30 градуса”, “отиди напред още 50 позиции”. Приложението ще изглежда приблизително така:
+The purpose of the next exercise is to play with a **drawing library**, also known as **turtle graphics**. We will build a graphical application in which we will **draw different shapes**, moving our **“turtle”** on the screen through commands like “move 100 positions forward”, “turn 30 degrees to the right”, “move 50 positions more forward”. The application will look something like this:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-13.png)
 
-Нека първо се запознаем с **концепцията за рисуване “Turtle Graphics”**. Може да разгледаме следните източници:
+First, let's check out **the drawing concept “Turtle Graphics”**. Take a look at the following sources:
 
-* Дефиниция на понятието “turtle graphics”: [http://c2.com/cgi/wiki?TurtleGraphics](http://c2.com/cgi/wiki?TurtleGraphics)
-* Статия за “turtle graphics” в Wikipedia: [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
-* Интерактивен онлайн инструмент за чертане на фигури с костенурка:<br>[http://davidbau.github.io/jquery-turtle/demo.html](http://davidbau.github.io/jquery-turtle/demo.html)
+* Definition of “turtle graphics”: [http://c2.com/cgi/wiki?TurtleGraphics](http://c2.com/cgi/wiki?TurtleGraphics)
+* Article on “turtle graphics” in Wikipedia: [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
+* Interactive online tool for drawing with a turtle:<br>[http://davidbau.github.io/jquery-turtle/demo.html](http://davidbau.github.io/jquery-turtle/demo.html)
 
-Ще реализираме приложението като използваме следните технологии:
-  - Език **HTML** – за описание на потребителския интерфейс (поле за рисуване и бутони).
-  - **JavaScript** код – за да имплементираме действията на бутоните.
-  - JS библиотека **[jQuery](https://jquery.com/)** – за улеснение на достъпа до елементите в потребителския интерфейс.
-  - JS библиотека **[jQuerу-Turtle](https://github.com/PencilCode/jquery-turtle)** – за имплементация на чертане по екрана с механиката на “turtle graphics”.
+We will build the application, using the following technologies:
+  - **HTML** language – to describe the user interface (drawing field and buttons).
+  - **JavaScript** code – to implement the actions of the buttons.
+  - JS library **[jQuery](https://jquery.com/)** – to facilitate access to in the user's interface.
+  - JS library **[jQuerу-Turtle](https://github.com/PencilCode/jquery-turtle)** – in order to implement screen drawing with the mechanics of “turtle graphics”.
   
-Разполагаме с две възможности, за да създадем заредим всички библиотеки и ресурси за нашето уеб приложение **Turtle Graphics**:
+There are two options to load all libraries and resources for our web application **Turtle Graphics**:
 
-+ **Зареждане на ресурсите чрез CDN** (Content Delivery Network).
++ **Loading resources via CDN** (Content Delivery Network).
 
-Този вариант е подходящ, когато имаме постоянна интернет връзка. Нужно е да направим стандартен HTML файл (примерно **index.html**) и запишем в него следния код:
+This option is suitable when we have a permanent internet connection. We need to make a standard HTML file (for example **index.html**) and write the following code in it:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-02.png)
 
-Всички необходими ресурси ще се зареждат автоматично при стартирането на файла и можем директно да започнем с въвеждането на нашия **JavaScript** код.
+All the necessary resources will be loaded automatically when the file is started and we can directly write our **JavaScript** code.
 
-Ако по някаква причина нямате постоянен достъп до Интернет, може да използвате втората опция:
+If for some reason you don't have permenent access to the Internet, you can use the second option:
 
-+ **Локално зареждане на ресурсите.**
++ **Loading resources locally**
 
-При нея трябва сами да свалите всички необходими файлове и да промените няколко реда в html файла. Започнете, като създадете папка с име **Turtle-Demo** и в нея направете основния **html файл** и подпапка за нужните ресурси:
+You have to download all the necessary files and change a few lines in the html file. Start by creating a folder called **Turtle-Demo** and create the main **html file** and a subfolder for the necessary resources in it:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-03.png)
 
-В папка **"lib"** трябва да сложим няколко файла, които можем да свалим от онлайн хранилището на книгата: [https://github.com/SoftUni/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-5-1-assets](https://github.com/SoftUni/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-5-1-assets)
+In the folder **"lib"** we need to put a few files that we can download from the book's online storage: [https://github.com/SoftUni/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-5-1-assets](https://github.com/SoftUni/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-5-1-assets)
 
-За ваше улеснение сме сложили файловете и в удобен за сваляне архив **Turtle-Graphics-Demo-Files.zip**:
+For your convenience, we have put the files in an archive, easy to download **Turtle-Graphics-Demo-Files.zip**:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-04.png)
 
-Нека разгледаме всеки един от тях:
+Let's take a look at each one of them:
 
 > **jquery.js (версия 2.0.3)**
 
-Една от най-известните JavaScript библиотеки, която предлага **бързина и функционалност** при работа с HTML потребителски интерфейс. Тя променя начина по който пишем код и планираме неговата структура. Запознайте се с инструмента на адрес: [https://jquery.com](https://jquery.com/)
+One of the most popular JavaScript libraries, which offers **speed and functionality** when working with HTML user interface. It changes the way we write code and plan its structure. Check out the tool at: [https://jquery.com](https://jquery.com/)
 
 > **jquery-turtle.js (версия 2.0.8)**
 
-Плъгин (приставка), написан от **Дейвид Бау** за jQuery - **jQuery-turtle** , който дава набор от функции за **рисуване на графики** от тип "костенурка". Подробна информация и правила за употреба, може да намерите тук: [https://github.com/davidbau/jquery-turtle](https://github.com/davidbau/jquery-turtle)
+A plugin, written by **David Bau** for jQuery - **jQuery-turtle** which provides a set of features for **graphic drawing** of the "turtle" type. Find detailed information and rules of use here: [https://github.com/davidbau/jquery-turtle](https://github.com/davidbau/jquery-turtle)
 
 > **style.css**
 
-Набор от **правила за дизайн**, обособени в отделен файл.
+A set of **design rules** in a separate file.
 
 > **turtle-icon.png**
 
-**Растерна графика**, която използваме с цел по-добра презентация на приложението.
+**Raster graphic**, which we use for better presentation of the application.
 
-След като сме сложили файловете в папката, трябва да сменим мрежовия адрес на ресурсите в нашия **HTML** файл - **index.html**:
+Once we have put all files in one folder, we need to change the network address of the resources in our **HTML** file - **index.html**:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-05.png)
 
-След тази промяна, при всяко стартиране на файла, браузъра ни ще зарежда файловете локално от папката **"lib"**.
+After this change, each time you start the file, the browser will load the files locally from the **"lib"** folder.
 
 Сега можем да преминем към забавната част - **писането на JavaScript код** за уеб приложението. Той ще бъде разположен между последната двойка **`script`** тагове в горния HTML файл (`index.html`): 
 
