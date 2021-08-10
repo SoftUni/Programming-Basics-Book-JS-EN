@@ -34,7 +34,7 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 Write a program that **prints the numbers from 1 to 100**. The program doesn't receive input and prints the numbers from 1 to 100 sequentially, each one on a separate line.
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 We can solve this problem with a **`for` loop** , which will pass through the numbers from 1 to 100 using the variable **`i`** and will print the numbers in the loop's body:
 
@@ -67,7 +67,7 @@ While programming, we often need to use loops, dozens of times a day. That's why
 
 Write a program that finds all numbers ending in 7 in the range [**1 … 1000**]. 
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 We can solve this problem by combining a **`for` loop** that loops through the numbers from 1 to 1000 and a **conditional statement** that checks if the number ends in 7. Of course, there are other options, too, but let's solve the problem using a **for loop + conditional statement**:
 
@@ -81,7 +81,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#1
 
 Write a program that prints the letters from the alphabet: **a, b, c, …, z**.
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 We can solve this problem using a **`for` loop**, that loops through all letters' code numbers. Keep in mind that the code of the letter (the serial number in the [Unicode list of letters and characters](https://unicode-table.com/en/)\) ‘`a`’ is 97, the code of the letter ‘`b`’ is 98 and so on, and the code of the letter ‘`z`’ is 122. The transition from the number of the character to the letter itself is done with the help of the function `String.fromCharCode(x)`. Here's the example:
 
@@ -113,9 +113,9 @@ Write a program that **sums `n` given integer numbers**.
 | 1<br>999 | 999 | 
 | 0 | 0 |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
-Можем да решим задачата за сумиране на числа по следния начин:
+We can solve the problem with summing up numbers in the following way:
  - Read the input number **`n`**.
  - We start with a sum that initially equals zero **`sum = 0`**.
  - We run a loop from 1 to **`args.length`**. On each step of the loop we read the number **`args[i]`** and add it to the sum **`sum`**.
@@ -129,13 +129,13 @@ Here's the source code for the solution:
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#3](https://judge.softuni.bg/Contests/Practice/Index/933#3).
 
-### Problem: най-голямо число
+### Problem: Max Number
 
-Да се напише програма, която въвежда **n цели числа** (**n** > 0) и намира **най-голямото** измежду тях. На първия ред на входа се въвежда броят числа **n**. След това се въвеждат самите числа, по едно на ред. Примери:
+Write a program that reads **n integer numbers** (**n** > 0) and finds **the biggest** among them. The first line of the input specifies the number of integers **n**. The next **n** lines hold the numbers, one per line. Examples:
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | --- |
 | 2<br>100<br>99 | 100 | 
 | 3<br>-10<br>20<br>-30 | 20 |
@@ -143,9 +143,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#3
 | 1<br>999 | 999 |
 | 2<br>-1<br>-2 | -1 |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
-Първо въвеждаме едно число **`n`** (броят числа, които предстои да бъдат въведени). Задаваме на текущия максимум **`max`** първоначална неутрална стойност, например **-10000000000000** (или **`Number.NEGATIVE_INFINITY`**). С помощта на **`for` цикъл**, чрез който итерираме **n пъти** (**`n = args[0]`**), прочитаме по едно цяло число **`num`**. Ако прочетеното число **`num`** е по-голямо от текущия максимум **`max`**, присвояваме стойността на **`num`** в променливата **`max`**. Накрая, в **`max`** трябва да се е запазило най-голямото число. Отпечатваме го на конзолата.
+First, we read one number **`n`** (the number of integers that will be entered). We assign an initial neutral value to the current maximum **`max`**, for example **-10000000000000** (or **`Number.NEGATIVE_INFINITY`**). Using a **`for` цикъл** that iterates **n times** (**`n = args[0]`**), we read one integer number **`num`** on each iteration. If the current number **`num`** is higher than the current maximum **`max`**, we assign the value of the **`num`** to the variable **`max`**. Finally, we have the highest number's value stored in **`max`**. We print the number on the console.
 
 ![](assets/chapter-5-1-images/05.Max-number-01.png)
 
@@ -154,21 +154,21 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#3
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#4](https://judge.softuni.bg/Contests/Practice/Index/933#4).
 
 
-### Problem: най-малко число
+### Problem: Min Number
 
-Да се напише програма, която въвежда **n цели числа** (**n** > 0) и намира **най-малкото** измежду тях. Първо се въвежда броя числа **n**, след тях още **n** числа по едно на ред. 
+Write a program that reads **n integer numbers** (**n** > 0) and finds **the smallest** among them. First, read the number of integers **n**, then **n** numbers, one per line. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | 
+| Input | Output | 
 | --- | --- |
 | 2<br>100<br>99 | 99 |
 | 3<br>-10<br>20<br>-30 | -30 |
 | 4<br>45<br>-20<br>7<br>99<br> | -20 |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
-Задачата е абсолютно аналогична с предходната, само че започваме с друга неутрална начална стойност.
+The problem is completely identical with the previous one, except this time we will use another neutral value for a start.
 
 ![](assets/chapter-5-1-images/06.Min-number-01.png)
 
@@ -177,19 +177,19 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#4
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#5](https://judge.softuni.bg/Contests/Practice/Index/933#5).
 
 
-### Problem: лява и дясна сума
+### Problem: Left and Right Sum
 
-Да се напише програма, която въвежда **2 \* n цели числа** и проверява дали **сумата на първите n числа** (лява сума) е равна на **сумата на вторите n числа** (дясна сума). При равенство се печата **"Yes" + сумата**, иначе се печата **"No" + разликата**. Разликата се изчислява като положително число (по абсолютна стойност). Форматът на изхода трябва да е като в примерите по-долу.
+Write a program that reads **2 \* n integer numbers** and checks whether **the sum of the first n integers** (left sum) equals **the sum of the second group of n integers** (right sum). In case the sums are equal, print **"Yes" + the sum**, otherwise print **"No" + the difference**. The difference is calculated as a possitive number (by absolute value). The format of the output must be identical to the one in the examples below.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Вход | Изход |
+| Input | Output | Input | Output |
 | --- | --- | --- | --- | 
 | 2<br>10<br>90<br>60<br>40 | Yes, sum = 100 | 2<br>90<br>9<br>50<br>50 | No, diff = 1 |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
-Първо въвеждаме числото **n**, след това първите **n** числа (**лявата** половина) и ги сумираме. Продължаваме с въвеждането на още **n** числа (**дясната** половина) и намираме и тяхната сума. Изчисляваме **разликата** между намерените суми по абсолютна стойност: **`Math.abs(leftSum - rightSum)`**. Ако разликата е **0**, отпечатваме **"Yes" + сумата**, в противен случай - отпечатваме **"No" + разликата**.
+First, we read the number **n**, after that we enter the first **n** numbers (**the left** half) and calculate their sum. We will then proceed reading more **n** numbers (**the right** half) and sum them up. We calculate **the difference** between the sums by absolute value: **`Math.abs(leftSum - rightSum)`**. If the difference is **0**, print **"Yes" + the sum**, otherwise print **"No" + the difference**.
 
 ![](assets/chapter-5-1-images/07.Left-and-right-sum-01.png)
 
@@ -198,21 +198,21 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#5
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#6](https://judge.softuni.bg/Contests/Practice/Index/933#6).
 
 
-### Problem: четна / нечетна сума
+### Problem: Even / Odd sum
 
-Да се напише програма, която въвежда **n цели числа** и проверява дали **сумата на числата на четни позиции** е равна на **сумата на числата на нечетни позиции**. При равенство печата **"Yes" + сумата**, иначе печата **"No" + разликата**. Разликата се изчислява по абсолютна стойност. Форматът на изхода трябва да е като в примерите по-долу.
+Write a program that reads **n integer numbers** and checks whether **the sum of the numbers on even positions** equals **the sum of the numbers on odd positions**. In case the sums are equal, print **"Yes" + the sum**, otherwise print **"No" + the difference**. The difference is calculated by absolute value. The format of the output must be identical to the one in the examples below.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | --- |
 | 4<br>10<br>50<br>60<br>20 | Yes<br>Sum = 70 |
 | 4<br>3<br>5<br>1<br>-2 | No<br>Diff = 1 |
 | 3<br>5<br>8<br>1 | No<br>Diff = 2 |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
-Въвеждаме числата едно по едно и изчисляваме двете **суми** (на числата на **четни** позиции и на числата на **нечетни** позиции). Както в предходната задача, изчисляваме абсолютната стойност на разликата и отпечатваме резултата (**"Yes" + сумата** при разлика 0 или **"No" + разликата** в противен случай).
+The program reads the numbers one by one and calculates the two **sums** (the sum of numbers on **even** positions and the sum of numbers on **odd** positions). We calculate the absolute value of the difference, like in the previous problem, and print the result (**"Yes" + the sum** in case the difference is 0 or **"No" + the difference** in any other case).
 
 ![](assets/chapter-5-1-images/08.Odd-even-sum-01.png)
 
@@ -221,24 +221,24 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#6
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#7](https://judge.softuni.bg/Contests/Practice/Index/933#7).
 
 
-### Problem: сумиране на гласните букви
+### Problem: Sum of Vowels
 
-Да се напише програма, която въвежда **текст** (стринг), изчислява и отпечатва **сумата от стойностите на гласните букви** според таблицата по-долу:
+Write a program that reads a **text** (string), calculates and prints **the sum of the vowels' value** according to the table below:
 
 | a | e | i | o | u | 
 | :---: | :---: | :---: | :---: | :---: |
 | 1 | 2 | 3 | 4 | 5 |
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Вход | Изход | 
+| Input | Output | Input | Output | 
 | --- | --- | --- | --- |
 | hello | 6<br>(e+o = 2+4 = 6) | bamboo | 9<br>(a+o+o = 1+4+4 = 9) |
 | hi | 3<br>(i = 3) | beer | 4<br>(e+e = 2+2 = 4) |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
-Прочитаме входния текст **`arg1`**, зануляваме сумата и завъртаме цикъл от **0** до **`input.length`** (дължината на текста). Проверяваме всяка буква **`input[i]`** дали е гласна и съответно добавяме към сумата стойността ѝ.
+We read the text input **`arg1`**, then create a sum that equals zero and run a loop from **0** to **`input.length`** (the text's length). Check whether each letter **`input[i]`** is a vowel and add its value to the sum.
 
 ![](assets/chapter-5-1-images/09.Vowels-sum-01.png)
 
@@ -247,27 +247,27 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#7
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#8](https://judge.softuni.bg/Contests/Practice/Index/933#8).
 
 
-## Какво научихме от тази глава?
+## What did we learn in this chapter?
 
-Можем да повтаряме блок код с **`for` цикъл**:
+We can repeat a block of code using a **`for` loop**:
 
 ![](assets/chapter-5-1-images/00.For-loop-01.png)
 
-Можем да извършваме различни математически операции:
+We can perform various mathematical operations:
 
 ![](assets/chapter-5-1-images/00.For-loop-03.png)
 
-## Упражнения: повторения (цикли)
+## Exercises: loops (repetitions)
 
-След като се запознахме с циклите, идва време **да затвърдим знанията си на практика**, а както знаете, това става с много писане на код. Да решим няколко задачи за упражнение:
+След като се запознахме с циклите, е време **да затвърдим знанията си на практика**, а както знаете, това става с много писане на код. Да решим няколко задачи за упражнение:
 
-### Задача: елемент, равен на сумата на останалите
+### Problem: An element, equal to the sum of the rest
 
-Да се напише програма, която въвежда **n цели числа** и проверява дали сред тях съществува число, което е равно на сумата на всички останали. Ако има такъв елемент, се отпечатва **"Yes" + неговата стойност**, в противен случай - **"No" + разликата между най-големия елемент и сумата на останалите** (по абсолютна стойност). 
+Write a program that reads **n integer numbers** and checks whether there is a number among them that equals the sum of all the rest. If there is such an element, print **"Yes" + the element's value**, otherwise - **"No" + the difference between the largest element and the sum of the rest** (by absolute value). 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Коментар |
+| Input | Output | Comment |
 | --- | --- | :---: |
 | 7<br>3<br>4<br>1<br>1<br>2<br>12<br>1 | Yes<br>Sum = 12 | 3 + 4 + 1 + 2 + 1 + 1 = 12 |
 | 4<br>6<br>1<br>2<br>3 | Yes<br>Sum = 6 | 1 + 2 + 3 = 6 |
@@ -275,16 +275,16 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#8
 | 3<br>5<br>5<br>1 | No<br>Diff = 1 | &#124;5 - (5 + 1)&#124; = 1 |
 | 3<br>1<br>1<br>1 | No<br>Diff = 1 | - |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
-Трябва да изчислим **сумата** на всички елементи, да намерим **най-големия** от тях и да проверим търсеното условие.
+Calculate **the sum** of all elements, find **the biggest** among them and check the condition.
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#9](https://judge.softuni.bg/Contests/Practice/Index/933#9).
 
 
-### Задача: четни / нечетни позиции
+### Problem: Even / Odd Positions
 
 Напишете програма, която чете **n числа** и пресмята **сумата**, **минимума** и **максимума** на числата на **четни** и **нечетни** позиции (броим от 1). Когато няма минимален / максимален елемент, отпечатайте **"No"**. 
 
@@ -297,7 +297,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#9
 | 5<br>3<br>-2<br>8<br>11<br>-3 | OddSum=8,<br>OddMin=-3,<br>OddMax=8,<br>EvenSum=9,<br>EvenMin=-2,<br>EvenMax=11 | 4<br>1.5<br>1.75<br>1.5<br>1.75 | OddSum=3,<br>OddMin=1.5,<br>OddMax=1.5,<br>EvenSum=3.5,<br>EvenMin=1.75,<br>EvenMax=1.75 |
 | 1<br>-5 | OddSum=-5,<br>OddMin=-5,<br>OddMax=-5,<br>EvenSum=0,<br>EvenMin=No,<br>EvenMax=No | 3<br>-1<br>-2<br>-3 | OddSum=-4,<br>OddMin=-3,<br>OddMax=-1,<br>EvenSum=-2,<br>EvenMin=-2,<br>EvenMax=-2 |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 Задачата обединява няколко предходни задачи: намиране на **минимум**, **максимум** и **сума**, както и обработка на елементите от **четни и нечетни позиции**. Припомнете си ги.
 
@@ -326,7 +326,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#1
 | 2<br>-1<br>0<br>0<br>-1 | Yes, value=-1 | стойности = {-1, -1}<br>еднакви стойности | 
 | 2<br>-1<br>2<br>0<br>-1 | No, maxdiff=2 | стойности = {1, -1}<br>разлики = {2}<br>макс. разлика = 2 |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 Прочитаме входните числа **по двойки**. За всяка двойка пресмятаме **сумата** ѝ. Докато четем входните двойки, за всяка двойка, без първата, трябва да пресметнем **разликата с предходната**. За целта е необходимо да пазим в отделна променлива сумата на предходната двойка. Накрая намираме **най-голямата разлика** между две двойки. Ако е **0**, печатаме **“Yes”** + стойността, в противен случай - **“No”** + разликата.
 
