@@ -21,10 +21,10 @@ As we already explained, the first and basic skill of a programmer is **to learn
 
 This book **gives you solid grounds**, thanks to which it will be easy for you to continue developing as a programmer. If you wonder how to continue your development, you have the following possibilities:
 - to study for a **software engineer at SoftUni** and make programming your profession;
-- to continue developing as a programmer **in your own way**, for example through self-training or via online lessons;
+- to continue developing as a programmer **on your own**, for example through self-training or via online lessons;
 - to **stay at a coder level**, without going more seriously into programming.
 
-### Study Software Engineering in SoftUni
+### Study software engineering in SoftUni
 
 The first, and respectively recommended option to master on a high level the profession of a "software engineer", is to start your training via the **end-to-end SoftUni program for software engineers**: [https://softuni.bg/curriculum](https://softuni.bg/curriculum). The SoftUni curriculum is carefully developed by **Dr. Svetlin Nakov and his team**, to provide you consequently and with gradually increasing complexity all the skills that a software engineer must have, **to start a career as a software developer** in an IT company.
 
@@ -59,20 +59,20 @@ We recommend to everyone who gets **an excellent score at the SoftUni entrance e
 - For people who **work** this means quitting their job (and getting a loan or decreasing their expenses, to spend with a lower income for 1-2 years until they start working in the new profession).
 - For people who **study** in a traditional university, this means to move significantly their focus towards programming and the practical courses in SoftUni, by decreasing the time spent in the traditional university.
 - For **unemployed** people, this is an excellent chance to assign their entire time, power, and energy to acquire a new, perspective, well paid and highly sought profession, that will give them good life quality and long-term prosperity.
-- For **students** in secondary schools and high-schools, this means **giving a priority** to what is more important in their development: studying practical programming in SoftUni, that will give them a profession and a job, or giving their full attention to the traditional education system, or combining smartly both undertakings. Unfortunately, often priorities are determined by parents, and we don't have a solution for these cases.
+- For **students** in secondary schools and high schools, this means **giving a priority** to what is more important in their development: studying practical programming in SoftUni, which will give them a profession and a job, or giving their full attention to the traditional education system, or combining smartly both undertakings. Unfortunately, often priorities are determined by parents, and we don't have a solution for these cases.
  
 We recommend to all who **cannot get an excellent score at the SoftUni entrance exam** to spend more time on better learning, understanding, and most of all, practicing the material studied in the present book. If you cannot easily solve the problems in this book, you will not be able to cope with programming and software development in the future. 
 
-**Do not skip the programming basics!** Do not under any circumstances make bold decisions and quit your job or the traditional university, making great plans for your future profession of a software engineer, if you don't have an excellent grade at the SoftUni entrance exam! It measures if programming is suitable for you, to what extend you like it and if you are motivated to study it seriously, and work this for years every day with joy and pleasure.
+**Do not skip the programming basics!** Do not under any circumstances make bold decisions and quit your job or the traditional university, making great plans for your future profession as a software engineer, if you don't have an excellent grade at the SoftUni entrance exam! It measures if programming is suitable for you, to what extent you like it and if you are motivated to study it seriously and work on this for years every day with joy and pleasure.
 
 
-### Study Software Engineering on Your Own Way
+### Study Software Engineering on Your Own
 
-Another possibility to develop after this book is to **continue studying programming outside of SoftUni**. You can enroll or subscribe to **video trainings** that go into more details in programming with C# or other languages and development platforms. You can **read books** on programming and software technologies, follow **online tutorials** and other online resources – there are plenty of free materials on the Internet. However, keep in mind that the most important thing towards the profession of a programmer is **to do practical projects**!
+Another possibility to develop after this book is to **continue studying programming outside of SoftUni**. You can enroll or subscribe to **video training** that goes into more details in programming with C# or other languages and development platforms. You can **read books** on programming and software technologies, follow **online tutorials** and other online resources – there are plenty of free materials on the Internet. However, keep in mind that the most important thing about the profession of a programmer is **to do practical projects**!
 
-**You cannot become a programmer without a lot of code writing and intense practicing**. Allocate **sufficient time** to it. You cannot become a programmer for a month or two. On the Internet you will find a wide variety of **free resources**, such as books, manuals, video lessons, online and on-site courses on programming and software development. However, you need to invest **at least a year or two** to acquire a foundation level, needed for starting a job.
+**You cannot become a programmer without a lot of code writing and intense practice**. Allocate **sufficient time** to it. You cannot become a programmer for a month or two. On the Internet, you will find a wide variety of **free resources**, such as books, manuals, video lessons, online and on-site courses on programming and software development. However, you need to invest **at least a year or two** to acquire a foundation level, needed for starting a job.
 
-After you gain some experience, find a way to start **an internship in a company** (which will be almost impossible unless you'd spent at least a year of intense code writing before that) or come up with **your own practical project**, on which you need to spend a few months, even a year, in order to learn based on the trial-and-error principle.
+After you gain some experience, find a way to start **an internship in a company** (which will be almost impossible unless you'd spent at least a year of intense code writing before that) or come up with **your practical project**, on which you need to spend a few months, even a year, to learn based on the trial-and-error principle.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Keep in mind that there are many ways to become a programmer, but they all have something in common: <b>intense code writing and years of practice</b>!</td>
@@ -81,24 +81,24 @@ After you gain some experience, find a way to start **an internship in a company
 
 ## Online Communities for Beginners in Programming
 
-Regardless of the path you have chosen, if you are seriously involved in programming, we recommend subscribing to specialized **online forums, discussion groups and communities**, from which you can get assistance by your colleagues and track the novelties in the software industry.
+Regardless of the path you have chosen, if you are seriously involved in programming, we recommend subscribing to specialized **online forums, discussion groups, and communities**, from which you can get assistance from your colleagues and track the novelties in the software industry.
 
-If you will study programming seriously, **surround yourselves with people who are involved in programming** seriously. Join **communities of software developers**, attend software conferences, go to events for programmers, find friends with whom you can talk about programming and discuss problems and bugs, find environment that can help you. In most large towns there are free events for programmers, a few times a week. In smaller localities you have the Internet and an access to the entire online community.
+If you will study programming seriously, **surround yourselves with people who are involved in programming** seriously. Join **communities of software developers**, attend software conferences, go to events for programmers, find friends with whom you can talk about programming and discuss problems and bugs, find an environment that can help you. In most large towns there are free events for programmers, a few times a week. In smaller localities, you have the Internet and access to the entire online community.
 
 Here are some recommended **resources** that will be useful for your development as a programmer:
-* https://softuni.bg – official **website of SoftUni**. In it you will find free (and not only) courses, seminars, video tutorials and trainings in programming, software technologies and digital competences.
-* https://softuni.bg/forum - official **Forum of Softuni**. The Forum is very positive and filled with ready to help colleagues. If you ask logical question connnected with programming and studying in SoftUni technologies, it's mostly certain that you will get an answer almost immediately. Ask, you don't lose anything.
-* https://www.facebook.com/SoftwareUniversity/ - official **Facebook page of SoftUni**. By it you will learn regarding new courses, seminars and events related to programming and software development.
+* https://softuni.bg – official **website of SoftUni**. In it, you will find free (and not only) courses, seminars, video tutorials, and training in programming, software technologies, and digital competencies.
+* https://softuni.bg/forum - official **Forum of Softuni**. The Forum is very positive and filled with ready to help colleagues. If you ask logical questions connected with programming and studying in SoftUni technologies, it's mostly certain that you will get an answer almost immediately. Ask, you don't lose anything.
+* https://www.facebook.com/SoftwareUniversity/ - official **Facebook page of SoftUni**. By it, you will learn about new courses, seminars, and events related to programming and software development.
 * http://www.introprogramming.info - official website of the **books "Programming Basics"** with **C#** and **Java** by Dr. Svetlin Nakov and his team. The books examine in-depth programming basics, basic data structures and algorithms, object-oriented programming, and other basic skills, and are an excellent continuation for reading after the current book. However, **besides reading, you need to do intense code writing**, do not forget that!
 * http://stackoverflow.com - ***Stack Overflow** is one of the **widest** discussion forums for programmers worldwide, where you will find assistance for any possible question in the world of programming. If you are fluent in English, look up at StackOverflow and ask your questions there.
-* https://fb.com/groups/bg.developers - "**Programing Bulgaria @ Facebook**" group is one of the biggest communities for programmers related to software development on bulgarian language on Facebook. 
+* https://fb.com/groups/bg.developers - "**Programing Bulgaria @ Facebook**" group is one of the biggest Bulgarian communities for programmers related to software development on Facebook. 
 * https://www.meetup.com/find/tech/ - search **tech meetups** around your town and enter the community that you like. More of the tech meetups are free and the newcomers are welcome.
-* If you are interested about IT events, tech conference, studying, and inters, look inside the 
-**sites for IT events** such as https://techevents.bg, https://dev.bg and http://iteventz.bg.
+* If you are interested in IT events, tech conferences, studying, and inters, look inside the 
+**sites for IT events** such as https://techevents.bg, https://dev.bg, and http://iteventz.bg.
 
 
 ## Good Luck to All of You!
 
-On behalf of the entire authors' team, we **wish you endless success in the profession and in your life**! We will be really happy if we have helped you get **passionate about programming** and we have inspired you to go bravely towards becoming a "software engineer", which will bring you a good job that you will work with pleasure, give you a quality life and prosperity, as well as amazing perspectives for development and possibilities for making impressive projects with inspiration and passion.
+On behalf of the entire authors' team, we **wish you endless success in the profession and your life**! We will be really happy if we have helped you get **passionate about programming** and we have inspired you to go bravely towards becoming a "software engineer", which will bring you a good job that you will work with pleasure, give you a quality life, and prosperity, as well as amazing perspectives for development and possibilities for making impressive projects with inspiration and passion.
 
 <p align="right"><i>Sofia, May 30, 2019</i></p>
