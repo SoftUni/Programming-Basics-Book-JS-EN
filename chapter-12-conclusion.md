@@ -9,7 +9,7 @@ Remember the **[four main groups of skills](chapter-00-preface.md#become-a-devel
 - Skill #4 – **programming languages and software technologies** (25% of programmer's skills) – acquired in a long period of time, by a lot of practice, consistent reading, and writing projects. Such knowledge and skills quickly get outdated and need to be updated frequently. Good programmers are involved in studying new technologies every day.
 
 
-##This book is only the first step!
+## This book is only the first step!
 
 **The present** book on programming basics is just the **first step** in building the skills of a programmer. If you were able to solve **all problems**, this means you have **obtained valuable knowledge** in the programming principles with **Javascript** language on a **basic level**. You are about to start **in-depth** studying of programming, and develop **your algorithmic thinking**, and then add **technological knowledge** regarding the Javascript language, Node.js ecosystem (Node.js, npm, Express.js, etc.), front-end technologies (HTML, CSS, Angular, React, AJAX, HTML5) and many other concepts, technologies and instruments for software development.
 
@@ -17,7 +17,7 @@ If you were **not able** to solve all problems or a large part of them, go back 
 
 As we already explained, the first and basic skill of a programmer is **to learn to write code** with ease and pleasure. This is namely the mission of this book: to teach you how to code. We recommend you, besides reading the book, to enroll in the **[practical course "Programming Basics" at SoftUni](https://softuni.bg/apply)**, as an online format of training.
 
-## What to do after reading this book?
+### What to do after reading this book?
 
 This book **gives you solid grounds**, thanks to which it will be easy for you to continue developing as a programmer. If you wonder how to continue your development, you have the following possibilities:
 - to study for a **software engineer at SoftUni** and make programming your profession;
@@ -28,31 +28,31 @@ This book **gives you solid grounds**, thanks to which it will be easy for you t
 
 The first, and respectively recommended option to master on a high level the profession of a "software engineer", is to start your training via the **end-to-end SoftUni program for software engineers**: [https://softuni.bg/curriculum](https://softuni.bg/curriculum). The SoftUni curriculum is carefully developed by **Dr. Svetlin Nakov and his team**, to provide you consequently and with gradually increasing complexity all the skills that a software engineer must have, **to start a career as a software developer** in an IT company.
 
-#### Training duration in SoftUni
+### Training duration in SoftUni
 
 The training in SoftUni has a duration of **2-3 years** (depending on the profession and the selected specializations) and during that period it is normal to reach a good starting level (junior developer), but this is **only if you study seriously** and write code intensely every day. Upon having good grades, a typical student **starts a job around the middle of the training (after around 1.5 years)**. Thanks to the well-developed partners' network, **the career center of SoftUni offers work** in a software or IT company to all SoftUni students who have very good or excellent grades. **Starting a job** in the major in case of having good grades at SoftUni, combined with a willingness to work and reasonable expectations towards the employers, is almost guaranteed.
 
-#### It takes at least a year of intense code writing to become a programmer
+### It takes at least a year of intense code writing to become a programmer
 
 Keep in mind that **to become a programmer takes a lot of effort**, writing tens of thousands of lines of code, and solving hundreds, even thousands of practical problems, and this takes years! If someone offers you "**an easier program**" and promises you to become a programmer and start working within 3-4 months, then either they are **lying** to you, or they will give you such a low level, that **companies won't even take you as a trainee**, even if you pay to the company that is wasting its time with you. There are exceptions, of course, for example, if you are not starting from scratch, or if you have extremely well-developed engineering thinking, or if you apply for a very low position (for example technical support), but in general, **you cannot become a programmer if you haven't spent at least 1 year of intense learning and code writing**!
 
-#### Entrance Exam in SoftUni
+### Entrance exam in SoftUni
 
 **To enroll at SoftUni** you need to attend an **entrance exam** in "Programming Basics" on the material from this book. If you easily solve the problems in this book, then you are ready for the exam. Also, pay attention to the chapters on **preparation for the practical exam in programming**. They will give you a good idea of the level of difficulty of the exam and the types of tasks that you need to learn to solve.
 
 If the tasks from the book and the preparation examples are hard for you, then you **need more preparation**. Enroll for the [free course in "Programming Basics"](https://softuni.bg/apply) or go through the book carefully one more time, without skipping solving **the problems in any of the studied topics**! You must learn how **to solve them with ease**, without helping yourselves with the guidelines and the sample solutions.
 
-#### SoftUni Curriculum for Software Engineers
+### SoftUni curriculum for Software Engineers
 
 What follows after the entrance exam is a **serious curriculum** in the SoftUni program for training software engineers. It is formed as a sequence of **modules in several courses** in programming and software technologies, fully directed towards gaining fundamental knowledge in software development and acquiring **practical skills for working** as a programmer with the most contemporary software technologies. Students are given a choice between **several professions** and specializations focused on C#, Java, JavaScript, Python, and other languages and technologies. Each profession is trained in several modules with 4 months duration, and each module consists of 2 or 3 courses. The classes are divided into **theoretical preparation** (30%) and **practical exercises, projects** (70%), and each course ends with a practical exam or practical academic project.
 
-#### How Many Hours per Day Does the Training Take?
+### How many hours per day does the training take?
 
 The training for software engineers at SoftUni is a **very serious occupation** and you need to spend **at least 4-5 hours every day**, preferably your entire attention and time. Combining **working and training** is not always successful, but if you work something easy and you have a lot of spare time, it is a good option. SoftUni is an appropriate option for **school students**, **university students**, and **people who work**, but it is best if you assign your entire time to your training and mastering the profession. It will not work if you spend 2 or 4 hours a week on it!
 
 The forms of training at SoftUni are **on-site** (the better choice) and **online** (if you don't have another option). In both forms of training, to learn the program in the curriculum (that is required by software companies for starting a job), you need **a lot of learning**. You just need to **find the time for it**! Reason #1 for having a hard time on the road to the profession in SoftUni is not spending enough time for the training: as a minimum, you need to spend at least 20-30 hours a week.
 
-#### SoftUni for People Who Work and Study
+### SoftUni for people who work and study
 
 We recommend to everyone who gets **an excellent score at the SoftUni entrance exam** and is passionate about making programming their profession, to leave the rest of their commitments aside and **spend their entire time** on learning the profession of a "software engineer" and start making a living through it.
 
@@ -66,7 +66,7 @@ We recommend to all who **cannot get an excellent score at the SoftUni entrance 
 **Do not skip the programming basics!** Do not under any circumstances make bold decisions and quit your job or the traditional university, making great plans for your future profession as a software engineer, if you don't have an excellent grade at the SoftUni entrance exam! It measures if programming is suitable for you, to what extent you like it and if you are motivated to study it seriously and work on this for years every day with joy and pleasure.
 
 
-### Study Software Engineering on Your Own
+### Study Software Engineering on your own
 
 Another possibility to develop after this book is to **continue studying programming outside of SoftUni**. You can enroll or subscribe to **video training** that goes into more details in programming with C# or other languages and development platforms. You can **read books** on programming and software technologies, follow **online tutorials** and other online resources – there are plenty of free materials on the Internet. However, keep in mind that the most important thing about the profession of a programmer is **to do practical projects**!
 
@@ -79,7 +79,7 @@ After you gain some experience, find a way to start **an internship in a company
 </tr></table>
 
 
-## Online Communities for Beginners in Programming
+### Online communities for beginners in Programming
 
 Regardless of the path you have chosen, if you are seriously involved in programming, we recommend subscribing to specialized **online forums, discussion groups, and communities**, from which you can get assistance from your colleagues and track the novelties in the software industry.
 
@@ -97,7 +97,7 @@ Here are some recommended **resources** that will be useful for your development
 **sites for IT events** such as https://techevents.bg, https://dev.bg, and http://iteventz.bg.
 
 
-## Good Luck to All of You!
+### Good Luck to All of You!
 
 On behalf of the entire authors' team, we **wish you endless success in the profession and your life**! We will be really happy if we have helped you get **passionate about programming** and we have inspired you to go bravely towards becoming a "software engineer", which will bring you a good job that you will work with pleasure, give you a quality life, and prosperity, as well as amazing perspectives for development and possibilities for making impressive projects with inspiration and passion.
 
