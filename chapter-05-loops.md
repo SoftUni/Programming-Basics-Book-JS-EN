@@ -6,7 +6,7 @@ In this chapter we will introduce the **repeat blocks of commands**, also known 
 ## Video
 
 <div class="video-player">
-  Watch the video course for this chapter here: <a target="_blank"
+  Watch the video lesson for this chapter here: <a target="_blank"
   href="https://www.youtube.com/watch?v=qTh58nRP-nE">
   https://www.youtube.com/watch?v=qTh58nRP-nE</a>.
 </div>
@@ -526,9 +526,9 @@ $('#hide').click(function() {
 </script>
 ```
 
-Остава да решим проблема с автоматичното изтриване на полето за рисуване при натискане на нов бутон. Не желаем фигурите да се чертаят една върху друга или всеки път да използваме бутона **Reset**.
+The only thing left to solve is the problem of automatically deleting the drawing field when a new button is clicked. We don't want the shapes to be drawn one over the other or to use the **Reset** button every time.
 
-+ **Функция `resetCanvas()`**
++ **Function `resetCanvas()`**
 
 ```js
 function resetCanvas() {
@@ -537,9 +537,9 @@ function resetCanvas() {
     $('#turtle').css('turtleScale', '2').css('turtleSpeed', '4');
 }
 ```
-Прилагаме предварително зададените функции в приставката на Дейвид Бау, за да **изтрием всички графични елементи** (**`cg()`**) и **преместим** костенурката в **стартовата и позиция** (**`home()`**). След това задаваме отново първоначалните настройки на елемента **`turtle`**. Цялата функция **`resetCanvas()`** се прибавя в началото на всяка нова функция, която ще прикачим към останалите бутони.
+Apply the preset functions in David Bau's plugin in order to **erase all graph elements** (**`cg()`**) and **move** the turtle to its **starting position** (**`home()`**). Then we set the initial settings of the **`turtle`** element once again. The whole function **`resetCanvas()`** is added at the beginning of each new function that will be attached to the other buttons.
 
-**Пример:**
+**Example:**
 ```js
 $('#drawSpiral').click(function() {
     resetCanvas();
@@ -550,68 +550,68 @@ $('#drawSpiral').click(function() {
     }
 });
 ```
-По ваша преценка, можете да променяте скоростта на анимацията и цвета на контура, като добавяте новата настройка директно в функцията **`click(...)`** и приложената в него функция за всеки бутон:
+If you want, you can change the animation speed and the contour color by adding the new setting directly to the **`click(...)`** function and the function attached to it for each button:
 
 ```js
 $('#turtle').css('turtleSpeed', '6').pen('red', '5');
 ```
 
-### Задача: * чертане на шестоъгълник с костенурката
+### Problem: * Draw a Hexagon with the Turtle
 
-Добавете функция за бутон [**Hexagon**], който чертае правилен шестоъгълник:
+Add a [**Hexagon**] button that draws a regular hexagon:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-13.png)
 
-**Подсказка:**
+**Hint:**
 
-В цикъл повторете 6 пъти следното:
-* Ротация на 60 градуса.
-* Движение напред с 90.
+Repeat 6 times the following in a loop:
+* 60 degrees rotation.
+* Move forward 90 steps.
 
-### Задача: * чертане на звезда с костенурката
+### Problem: * Draw a Star with the Turtle
 
-Добавете функция за бутон [**Star**], който чертае звезда с 5 върха (**петолъчка**), като на фигурата по-долу:
+Add a [**Star**] button that draws a star with 5 beams (**pentagram**), as shown on the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-14.png)
 
-**Подсказка:**
+**Hint:**
 
-Сменете цвета: **`$("#turtle").pen("green", "5")`** 
+Change the color: **`$("#turtle").pen("green", "5")`** 
 
-В цикъл повторете 5 пъти следното:
-* Движение напред със 180.
-* Ротация на 144 градуса.
+Repeat 5 times the following in a loop:
+* Move forward 180 steps.
+* 144 degrees rotation.
 
-### Задача * чертане на спирала с костенурката
+### Problem: * Draw a Spiral with the Turtle
 
-Добавете функция за бутон [**Spiral**], който чертае спирала с 30 върха като на фигурата по-долу:
+Add a [**Spiral**] button that draws a spiral with 30 beams, as shown on the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-15.png)
 
-**Подсказка:**
+**Hint:**
 
-Чертайте в цикъл, като движите напред и завъртате. С всяка стъпка увеличавайте постепенно дължината на движението с 5 напред и завъртайте на 60 градуса.
+Draw in a loop by moving forward and rotating. In each step, increase gradually the length of the forward step with 5 steps and rotate 60 degrees.
 
-### Задача: * чертане на слънце с костенурката
+### Problem: * Draw a Sun with the Turtle
 
-Добавете функция за бутон [**Sun**], който чертае слънце с 36 върха като на фигурата по-долу:
+Add a [**Sun**] button that draws a sun with 36 beams, as shown on the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-16.png)
 
-**Подсказка:**
+**Hint:**
  
-В цикъл повторете 36 пъти следното:
-* Движение напред с 200.
-* Ротация на 170 градуса.
+Repeat the following 36 times in a loop:
+* Move forward 200 steps.
+* 170 degrees rotation.
 
-### Задача: * чертане на спирален триъгълник с костенурката
+### Problem: * Draw a Spiral Triangles with the Turtle
 
-Добавете функция за бутон [**Triangle**], който чертае три триъгълника с по 22 върха като на фигурата по-долу:
+Add a [**Triangle**] button that draws three trinagles with 22 beams each, as shown on the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-17.png)
 
-**Подсказка:**
+**Hint:**
 
-Чертайте в цикъл като движите напред и завъртате. С всяка стъпка увеличавайте с 10 дължината на движението напред и завъртайте на 120 градуса. Повторете в още един цикъл 3 пъти за трите триъгълника.
+Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step with 10 and rotate 120 degrees. Repeat 3 times in another loop for the three triangles.
 
-Ако имате проблеми с примерния проект по-горе, питайте във **форума на СофтУни**: https://softuni.bg/forum.
+If you have difficulties with the exercises above, ask for help in **the SoftUni's discussion forum**: https://softuni.bg/forum.
