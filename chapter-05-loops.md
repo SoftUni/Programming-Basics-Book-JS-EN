@@ -396,7 +396,7 @@ A set of **design rules** in a separate file.
 
 > **turtle-icon.png**
 
-**Raster graphic**, which we use for better presentation of the application.
+**Raster graphic**, which we use for a better presentation of the application.
 
 Once we have put all files in one folder, we need to change the network address of the resources in our **HTML** file - **index.html**:
 
@@ -404,37 +404,37 @@ Once we have put all files in one folder, we need to change the network address 
 
 After this change, each time you start the file, the browser will load the files locally from the **"lib"** folder.
 
-Сега можем да преминем към забавната част - **писането на JavaScript код** за уеб приложението. Той ще бъде разположен между последната двойка **`script`** тагове в горния HTML файл (`index.html`): 
+Now we can proceed to the fun part - **writing the JavaScript code** for the web application. It will be located in the last pair of **`script`** tags in the HTML file (`index.html`): 
 
 ```html
 <script> </script>
 ```
-Кодът с функциите на приложението ще бъде сравнително кратък (около 70-80 реда) и затова не е нужно да го отделяме в нов самостоятелен файл. Важно е само да го разположим правилно в нашия HTML файл.
+The code with the functions of the application will be relatively short (about 70-80 lines) and so we don't need to set it apart into a new separate file. The important thing is to place it correctly in our HTML file.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Препоръчително е всички JavaScript файлове да се поставят в края на HTML документа, преди завършващия <strong>"body"</strong> таг. С това гарантираме по-бързото зареждане на страницата, защото не забавяме рендирането (обработването) на елементите и.</td>
+<td>It is recommended that all JavaScript files be placed at the end of the HTML document before the final <strong>"body"</strong> tag. This guarantees the faster loading of the page, because we do not delay the rendering (processing) of its elements.</td>
 </tr></table>
 
-Винаги **първо поставяме файла с библиотеката** [**jquery.js**], след това този с кода на приставката [**jquery-turtle.js**]. Едва тогава записваме нашия код, защото той се базира на първите два файла. Ако се опитаме да ги разместим ще получим грешки и приложението ни няма да функционира нормално.
+Always **insert the library file first** [**jquery.js**], then the one with the plugin code [**jquery-turtle.js**]. Only then we write our code because it's based on the first two files. If we try to change their places, we will get errors and our application will not work properly.
 
-Библиотеката **"jQuery"** ни позволява да манипулираме **HTML** елементи, като използваме валидни селектори за дизайн (**CSS**). Нужно е да приложим конкретен синтаксис:
+The library **"jQuery"** allows us to manipulate **HTML** elements, using valid design selectors (**CSS**). We have to apply a specific syntax:
 ```js
-$('#ID') или $('.Class')  
+$('#ID') or $('.Class')  
 ```
-Можем да използваме името на **HTML** елемента, **ID** или неговия **клас**. Селекторите винаги са низове от текст, затова се ограждат в единични или двойни кавички. Ако селектора е **ID** (самостоятелно име за всеки елемент), в началото се поставя **знака диез** (**#**). Но ако сме решили да селектираме **чрез клас** (едно име за множество елементи), тогава записваме **точка**.
+We can use the **HTML** element's name, **ID** or its **class**. The selectors are always strings of text, so they are enclosed in single or double quotes. If the selector is the **ID** (a separate name for each element), in the beginning we put a **sharp sign** (**#**). But if we have decided to select **by class** (one name for multiple elements), then we write a **dot**.
 
-Придържайки се към документацията на **jQuery-turtle**, трябва да инициализираме нашия обект и да зададем основни характеристики на "костенурката". Със следния код ще определим **размера** на графиката (**`turtleScale`**) и **скоростта** на движение (**`turtleSpeed`**):
+Adhering to the **jQuery-turtle** documentation, we have to initialize our obejct and set the basic characteristics of the "turtle". With the following code we will determine **the size** of the graph (**`turtleScale`**) and **the speed** of movement (**`turtleSpeed`**):
 
 ```js
 eval($.turtle());
 $('#turtle').css('turtleScale', '2').css('turtleSpeed', '4');
 ```
 
-След като сме готови с основата на нашето приложение, остава да напишем функциите за всеки бутон. За тази цел използваме предварително зададените от нас селектори (**ID**) на обектите в **html файла**. Ще споделим кода за първите три бутона, за да се запознаете с основните принципи:
+Once we are done with the basis of our application, we have to write the functions for each button. In order to do that, we use the selectors we have preset (**ID**) of the objects in the **html file**. We will share the code for the first three buttons to get you acquainted with the basic principles:
 
-+ **Бутон "Draw"**
++ **"Draw" Button**
 
-Закачаме функция към елемента с **ID** (селектор) **"justDraw"**, която да се активира в момента на кликване върху бутона:
+We attach a function to the element with an **ID** (selector) **"justDraw"**, which will be activated the moment you click on the button:
 
 ```js
 $('#justDraw').click(function() {
@@ -447,21 +447,21 @@ $('#justDraw').click(function() {
     }
 });
 ```
-Първо **изтриваме графиките** с функцията **`cg()`** (clear graphics) и **построяваме** елементарен **цикъл**, който да се повтори 4 пъти. Целенасочено използваме ключовата дума **`let`** за дефиниране на променливата **`index`**. По този начин гарантираме автономността на променливата за конкретния цикъл и може без проблем да използваме същото наименование отново. 
+First, **erase the graphs** with the function **`cg()`** (clear graphics) and **write** an elementary **loop** that repeats 4 times. We use the keyword **`let`** on purpose, to define the variable **`index`**. This way we guarantee the variable's autonomy for the specific loop and we can easily use the same name again.
 
-При всяка итерация (повторение) прилагаме конкретни методи за движение с определена стойност (завъртане наляво и движение напред):
+On each iteration (repetition) we apply specific methods of movement with a certain value (turn to the left and move forward):
 
 ```js
-.lt(30) // завъртане наляво (left) с аргумент 30
-.fd(150) // движение напред (forward) с аргумент 150
+.lt(30) // rotate to the left with an argument 30
+.fd(150) // move forward with an argument 150
 ```
 
-Чрез техниката на приковаването (chaining) спестяваме допълнително писане на код:
+Using the chaining technique saves additional code writing:
 
 ```js
 $('#turtle').pen('blue', '5').lt(30).fd(150).lt(120) ...
         
-// което е по-кратка версия на класическия метод:
+// which is a shorter version of the classic method:
 
 $('#turtle').pen('blue', '5');
 $('#turtle').lt(30);
@@ -471,20 +471,20 @@ $('#turtle').fd(150);
 ...       
 ```
 
-+ **Бутон "Reset"**
++ **"Reset" Button**
 
-Закачаме функция към елемента с **ID** (селектор) **"reset"**, която да се активира в момента на кликване:
+Attach a function to the element with an **ID** (selector) **"reset"**, which will be activated at the moment of clicking:
 
 ```js
 $('#reset').click(function() {
     window.location.reload();
 });
 ```
-Чрез **`window.location.reload()`** aктивираме **презареждане на прозореца**, с което нулираме текущото му състояние. Важно е да отбележим, че **`location`** е **характеристика** на обекта **`window`**, а **`reload()`** e **метод** на **`location`**.
+With **`window.location.reload()`** we activate **reloading the window**, which resets its current state. It is important to note that the **`location`** is **a feature** of the object **`window`**, and **`reload()`** is **a method** of **`location`**.
 
-+ **Бутон "Hide Turtle"**
++ **"Hide Turtle" Button**
 
-Закачаме функция към елемента с **ID** (селектор) **"hide"**, която да се активира при кликване върху бутона:
+Attach a function to the element with an **ID** (selector) **"hide"**, which will be activated on clicking the button:
 
 ```js
 $('#hide').click(function() {
@@ -494,9 +494,9 @@ $('#hide').click(function() {
       });
 });
 ```
-Използваме готова функция от библиотеката **jQuery - `toggle()`**. Чрез нея **скриваме и показваме** елементи. Отделно ще прикачим друга функция, която да **променя текста на бутона** при кликване. Трябва да използваме ключовата дума **`this`**. Тя има съществена роля в синтаксиса на езика JavaScript и **мислено** може да я заменим със **self/itself**. В конкретния случай е равна на елемента **`hide`**, т.е. **`this = #hide`**. Обръщаме се към самия елемент и задаваме функция за смяна на текста, която също се активира при всяко направено кликване върху бутона.
+We use a preset function from the library **jQuery - `toggle()`**. With its help we can **hide and show** elements. Apart from that, we attach another function which **changes the button's text** when clicked. We have to use the keyword **`this`**. It plays an important role in the JavaScript language syntax and **in our thoughts** we can replace it with **self/itself**. In this case it is equal to the element **`hide`**, ie. **`this = #hide`**. We turn to the element itself and set a text changing function which is also activated each time the button is clicked.
 
-Нека да обобщим кода, който написахме до момента:
+Let's sum up the code we have written so far:
 
 ```html
 <script>
