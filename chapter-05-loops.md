@@ -32,11 +32,11 @@ A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). T
 
 ### Problem: The numbers from 1 to 100
 
-Write a program that **prints the numbers from 1 to 100**. The program doesn't receive input and prints the numbers from 1 to 100 sequentially, each one on a separate line.
+Write a program that **prints the numbers from 1 to 100**. The program does not accept input and prints the numbers from 1 to 100 sequentially, each on a separate line.
 
 #### Hints and Guidelines
 
-We can solve this problem with a **`for` loop** , which will pass through the numbers from 1 to 100 using the variable **`i`** and will print the numbers in the loop's body:
+We can solve this problem with a **`for` loop** which will pass through the numbers from 1 to 100 using the variable **`i`** and will print the numbers in the loop's body:
 
 ![](assets/chapter-5-1-images/01.Numbers-1-to-100-01.png)
 
@@ -63,7 +63,7 @@ While programming, we often need to use loops, dozens of times a day. That's why
 
 **Try it yourself**, so you can master the skill of using the code snippet for **`for` loops** in Visual Studio Code.
 
-### Problem: Numbers up to 1000, ending in 7
+### Problem: Numbers up to 1000 ending in 7
 
 Write a program that finds all numbers ending in 7 in the range [**1 … 1000**]. 
 
@@ -198,7 +198,7 @@ First, we read the number **n**, after that we enter the first **n** numbers (**
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#6](https://judge.softuni.bg/Contests/Practice/Index/933#6).
 
 
-### Problem: Even / Odd sum
+### Problem: Even / Odd Sum
 
 Write a program that reads **n integer numbers** and checks whether **the sum of the numbers on even positions** equals **the sum of the numbers on odd positions**. In case the sums are equal, print **"Yes" + the sum**, otherwise print **"No" + the difference**. The difference is calculated by absolute value. The format of the output must be identical to the one in the examples below.
 
@@ -261,7 +261,7 @@ We can perform various mathematical operations:
 
 Now that we got acquainted with the loops, it's time **to consolidate our knowledge in practice**, and as you know, this is done with a lot of code writing. Let's solve several problems for exercise:
 
-### Problem: An element, equal to the sum of the rest
+### Problem: An Element Equal to the Sum of the Rest
 
 Write a program that reads **n integer numbers** and checks whether there is a number that equals the sum of all the rest among them. If there is such an element, print **"Yes" + the element's value**, otherwise - **"No" + the difference between the largest element and the sum of the rest** (by absolute value). 
 
@@ -384,7 +384,7 @@ Let's take a look at each one of them:
 
 > **jquery.js (версия 2.0.3)**
 
-One of the most popular JavaScript libraries, which offers **speed and functionality** when working with HTML user interface. It changes the way we write code and plan its structure. Check out the tool at: [https://jquery.com](https://jquery.com/)
+One of the most popular JavaScript libraries which offers **speed and functionality** when working with HTML user interface. It changes the way we write code and plan its structure. Check out the tool at: [https://jquery.com](https://jquery.com/)
 
 > **jquery-turtle.js (версия 2.0.8)**
 
@@ -409,7 +409,7 @@ Now we can proceed to the fun part - **writing the JavaScript code** for the web
 ```html
 <script> </script>
 ```
-The code with the functions of the application will be relatively short (about 70-80 lines) and so we don't need to set it apart into a new separate file. The important thing is to place it correctly in our HTML file.
+The code with the functions of the application will be relatively short (about 70-80 lines) and so we don't need to put it into a new separate file. The important thing is to place it correctly in our HTML file.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>It is recommended that all JavaScript files be placed at the end of the HTML document before the final <strong>"body"</strong> tag. This guarantees the faster loading of the page, because we do not delay the rendering (processing) of its elements.</td>
@@ -430,7 +430,7 @@ eval($.turtle());
 $('#turtle').css('turtleScale', '2').css('turtleSpeed', '4');
 ```
 
-Once we are done with the basis of our application, we have to write the functions for each button. In order to do that, we use the selectors we have preset (**ID**) of the objects in the **html file**. We will share the code for the first three buttons to get you acquainted with the basic principles:
+Once we are done with the basis of our application, we have to write the functions for each button. In order to do that, we use the selectors (**ID**) of the objects that we have preset in the **html file**. We will share the code for the first three buttons to get you acquainted with the basic principles:
 
 + **"Draw" Button**
 
@@ -570,7 +570,7 @@ Repeat 6 times the following in a loop:
 
 ### Problem: * Draw a Star with the Turtle
 
-Add a [**Star**] button that draws a star with 5 beams (**pentagram**), as shown on the figure below:
+Add a [**Star**] button that draws a star with 5 beams (**pentagram**), as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-14.png)
 
@@ -584,17 +584,17 @@ Repeat 5 times the following in a loop:
 
 ### Problem: * Draw a Spiral with the Turtle
 
-Add a [**Spiral**] button that draws a spiral with 30 beams, as shown on the figure below:
+Add a [**Spiral**] button that draws a spiral with 30 beams, as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-15.png)
 
 **Hint:**
 
-Draw in a loop by moving forward and rotating. In each step, increase gradually the length of the forward step with 5 steps and rotate 60 degrees.
+Draw in a loop by moving forward and rotating. In each step, increase gradually the length of the forward step with 5 and rotate 60 degrees.
 
 ### Problem: * Draw a Sun with the Turtle
 
-Add a [**Sun**] button that draws a sun with 36 beams, as shown on the figure below:
+Add a [**Sun**] button that draws a sun with 36 beams, as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-16.png)
 
@@ -606,7 +606,7 @@ Repeat the following 36 times in a loop:
 
 ### Problem: * Draw a Spiral Triangles with the Turtle
 
-Add a [**Triangle**] button that draws three trinagles with 22 beams each, as shown on the figure below:
+Add a [**Triangle**] button that draws three trinagles with 22 beams each, as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-17.png)
 
