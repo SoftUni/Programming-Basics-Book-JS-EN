@@ -262,125 +262,125 @@ The results must be **formatted up to the second symbol** after the decimal poin
 
 ### Hints and Guidelines
 
-By the requirements we see that **first** we will receive number** of students, and then, **their grades**. For that reason,**първо** ще приемем **броя** на студентите. За да обработим самите оценки, ще използваме **`for`** цикъл. Всяка итерация на цикъла ще прочита и обработва по една оценка:
+By the requirements we see that **first** we will receive **the number** of students, and then, **their grades**. For that reason, **first** we will obtain **the number** of the students. To process the grades themselves, we will use a **`for`** loop. Every iteration of the loop will read and process one grade:
 
 ![](assets/chapter-8-2-images/04.Grades-01.png)
 
-Преди да се изпълни кода от **`for`** цикъла заделяме променливи, в които ще пазим **броя на студентите** за всяка група: слаби резултати (до 2.99), резултати от 3 до 3.99, от 4 до 4.99 и оценки над 5. Ще ни е необходима и още една променлива, в която да пазим **сумата на всички оценки**, с помощта на която ще изчислим средната оценка на всички студенти:
+Before executing the code of the **`for`** loop, we will create variables where we will store **the number of students** for each group: poor results (up to 2.99), results from 3 to 3.99, from 4 to 4.99 and grades above 5. We will also need one more variable, where we will store **the sum of all grades**, via which we will calculate the average grade of all students:
 
 ![](assets/chapter-8-2-images/04.Grades-02.png)
 
-Завъртаме **цикъла** и в него **декларираме още една** променлива, в която ще запазваме **текущата** въведена оценка. Променливата ще е от тип **`Number`** и на всяка итерация ще проверяваме **каква е стойността ѝ**. Според тази стойност, **увеличаваме** броя на студентите в съответната група с **1**, като не забравяме да увеличим и **общата** сума на оценките, която също следим:
+We run the **loop** and inside it we **declare one more** variable, in which we will store the **currently** entered grade. The variable will be **`Number`** type and upon each iteration we will check **what is its value**. According to this value, **we increase** the number of students in the relevant group by **1**, as we should not forget to also increase the **total** amount of the grades, which we also track:
 
 ![](assets/chapter-8-2-images/04.Grades-03.png)
 
-Какъв **процент** заема дадена **група студенти** от общия брой, можем да пресметнем като **умножим броя на студентите** от съответната група по **100** и след това разделим на **общия брой студенти**. 
+We can calculate what **percentage** is taken by a particular **group of students** from the total number by **multiplying the number of students** in the relevant group by **100** and then dividing this by the **total number of students**. 
 
-**Крайният** резултат оформяме по добре познатия ни начин **до втория символ** след десетичния знак.
-
-### Тестване в Judge системата
-
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/940#3](https://judge.softuni.bg/Contests/Practice/Index/940#3).
+**The end result** is formed in the well know way **up to the second symbol** after the decimal point.
 
 
-## Задача: коледна шапка
+### Testing in the Judge System
 
-Да се напише програма, която прочита от конзолата **цяло число `n`** и чертае **коледна шапка** с ширина **4 \* `n` + 1 колони** и височина **2 \* `n` + 5 реда** като в примерите по-долу.
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/940#3](https://judge.softuni.bg/Contests/Practice/Index/940#3).
 
-### Входни данни
 
-На функцията се подава само **един аргумент - цяло число n** в интервала [**3 … 100**]. 
+## Problem: Christmas Hat
 
-### Изходни данни
+Write a program that reads from the console an **integer `n`** and draws a **Christmas hat** with width of **4 \* `n` + 1 columns** and height of **2 \* `n` + 5 rows**, as in the examples below.
 
-Да се отпечата на конзолата **коледна шапка**, точно както в примерите.
+### Input
 
-### Примерен вход и изход
+As parameter of the function is passed **one argument - an integer n** within the range [**3 … 100**]. 
 
-|Вход|Изход|
+### Output
+
+Print on the console a **Christmas hat**, exactly like in the examples.
+
+### Sample Input and Output
+
+|Input|Output|
 |:-----:|:-----:|
 |4|<code>......./&#124;\\.......</code><br><code>.......\\&#124;/.......</code><br><code>.......\*\*\*.......</code><br><code>......\*-\*-\*......</code><br><code>.....\*--\*--\*.....</code><br><code>....\*---\*---\*....</code><br><code>...\*----\*----\*...</code><br><code>..\*-----\*-----\*..</code><br><code>.\*------\*------\*.</code><br><code>\*-------\*-------\*</code></br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</code><br><code>\*.\*.\*.\*.\*.\*.\*.\*.\*</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</code>|
 
-|Вход|Изход|
+|Input|Output|
 |:-----:|:-----:|
 |7|<code>............./&#124;\\.............</code><br><code>.............\\&#124;/.............</code><br><code>.............\*\*\*.............</code><br><code>............\*-\*-\*............</code><br><code>...........\*--\*--\*...........</code><br><code>..........\*---\*---\*..........</code><br><code>.........\*----\*----\*.........</code><br><code>........\*-----\*-----\*........</code><br><code>.......\*------\*------\*.......</code><br><code>......\*-------\*-------\*......</code><br><code>.....\*--------\*--------\*.....</code><br><code>....\*---------\*---------\*....</code><br><code>...\*----------\*----------\*...</code><br><code>..\*-----------\*-----------\*..</code><br><code>.\*------------\*------------\*.</code><br><code>\*-------------\*-------------\*</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</code><br><code>\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</code><br>|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-При задачите за **чертане** на конзолата, най-често потребителят въвежда **едно цяло число**, което е свързано с **общата големина на фигурката**, която трябва да начертаем. Тъй като в условието е упоменато как се изчисляват общата дължина и широчина на фигурката, можем да ги използваме за **отправни точки**. От примерите ясно се вижда, че без значение какви са входните данни, винаги имаме **първи два реда**, които са с почти идентично съдържание.
+In tasks requiring **drawing** on the console, most often the user inputs **an integer** that is related to the **total size of the figure** that we need to draw. As the task requirements mention how the total length and width of the figure are calculated, we can use them as **starting points**. In the examples it is clear that regardless of the input data, we always have **first two rows** that are almost identical.
 
 <code>......./\|\\.......</code><br><code>.......\\\|/.......</code>
 
-Забелязваме също така, че **последните три реда** винаги присъстват, **два** от които са напълно **еднакви**.
+We also notice that the **last three rows** are always present, as **two** of them are completely **the same**.
 
 <code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</code><br><code>\*.\*.\*.\*.\*.\*.\*.\*.\*</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</code>
 
-От тези наши наблюдения можем да изведем **формулата** за **височина на променливата част** на коледната шапка. Използваме зададената по условие формула за общата височина, като изваждаме големината на непроменливата част. Получаваме **`(2 * n + 5) – 5`** или **`2 * n`**.
+By these observations we can come up with the **formula** for the **height of the variable part** of the Christmas hat. We use the formula specified in the task to calculate the total height, by subtracting the size of the unchangeable part. We obtain **`(2 * n + 5) – 5`** or **`2 * n`**.
 
-За **начертаването** на **динамичната** част от фигурката ще използваме **цикъл**. Размерът на цикъла ще бъде от **0** до **широчината**, която имаме по условие, а именно **`4 * n + 1`**. Тъй като тази формула ще използваме на **няколко места** в кода, е добра практика да я изнесем в **отделна променлива**. Преди изпълнението на цикъла би следвало да **заделим променливи** за **броя** на отделните символи, които участват в динамичната част: **точки** и **тирета**. Чрез изучаване на примерите можем да изведем формули и за **стартовите стойности** на тези променливи. Първоначално **тиретата** са **0**, но броя на **точките** ясно се вижда, че можем да получим като от **общата широчина** извадим **3** (броя символи, които изграждат върха на коледната шапка) и след това **разделим на 2**, тъй като броя точки от двете страни на шапката е еднакъв.
+To **draw** the **dynamic** or the variable part of the figure, we will use a **loop**. The size of the loop will be from **0** to the **width** that we have by requirements, namely **`4 * n + 1`**. Since we will use this formula in **a few places** in the code, it is a good practice to declare it in a **separate variable**. Before running the loop, we should **declare variables** for the **number** of individual symbols that participate in the dynamic part: **dots** and **dashes**. By analyzing examples, we can also prepare formulas for the **starting values** of these variables. Initially, the **dashes** are **0**, but it is clear that we can calculate the number of **dots** by subtracting **3** from the **total width** (the number of symbols that are building the top of the Christmas hat) and then **dividing by 2**, as the number of dots on both sides of the hat is the same.
 
 <code>.......\*\*\*.......</code><br><code>......\*-\*-\*......</code><br><code>.....\*--\*--\*.....</code><br><code>....\*---\*---\*....</code><br><code>...\*----\*----\*...</code><br><code>..\*-----\*-----\*..</code><br><code>.\*------\*------\*.</code><br><code>\*-------\*-------\*</code>
 
-Остава да изпълним тялото на цикъла, като **след всеки** начертан ред **намаляваме** броя на точките с **1**, а **тиретата увеличим** с **1**. Нека не забравяме да начертаем и по една **звездичка** между тях. Последователността на чертане в тялото на цикъла е следната:
+What remains is to execute the body of the loop, as **after each** drawing we **decrease** the number of dots by **1** and **increase the number of dashes** by **1**. Let's not forget to draw one **star** between each of them.The sequence of drawing in the body of the loop is the following:
 
-* Символен низ от точки
-* Звезда
-* Символен низ от тирета
-* Звезда
-* Символен низ от тирета
-* Звезда
-* Символен низ от точки
+* Symbol string of dots
+* Star
+* Symbol string of dashes
+* Star
+* Symbol string of dashes
+* Star
+* Symbol string of dots
 
-В случай че сме работили правилно получаваме фигурки, идентични на тези от примерите.
+In case we have worked properly, we will obtain figures identical to those in the examples.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/940#4](https://judge.softuni.bg/Contests/Practice/Index/940#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/940#4](https://judge.softuni.bg/Contests/Practice/Index/940#4).
 
 
-## Задача: комбинации от букви
+## Problem: Letters Combinations
 
-Напишете програма, която да принтира на конзолата **всички комбинации от 3 букви** в зададен интервал, като се пропускат комбинациите, **съдържащи зададена от конзолата буква**. Накрая трябва да се принтира броят отпечатани комбинации.
+Write a program that prints on the console **all combinations of 3 letters** within a specified range, by skipping the combinations **containing a certain letter**. Finally, print the number of printed combinations.
 
-### Входни данни
+### Input
 
-Входът на програмата съдържа **точно 3 реда** (аргумента):
-* Малка буква от английската азбука за начало на интервала – от **'a'** до **'z'**.
-* Малка буква от английската азбука за край на интервала – от **първата буква** до **'z'**.
-* Малка буква от английската азбука – от **'a'** до **'z'** – като комбинациите, съдържащи тази буква се пропускат.
+The input of the program contains **exactly 3 lines** (arguments):
+ * A small letter from the English alphabet – between **'a'** and **'z'**.
+ * A small letter from the English alphabet – between the **first letter** and **'z'**.
+ * A small letter from the English alphabet – from **'a'** to **'z'** – as the combinations containing this letter are skipped.
 
-### Изходни данни
+### Output
 
-Да се отпечатат на един ред **всички комбинации**, отговарящи на условието, следвани от **броя им**, разделени с интервал.
+Print on one line **all combinations** corresponding to the requirements, followed by **their number**, separated by a space.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Обяснения|
+|Input|Output|Comments|
 |---|---|---|
-|a<br>c<br>b|aaa aac aca acc caa cac cca ccc 8|Всички възможни комбинации с буквите '**а**', '**b**' и '**c**' са:<br>aaa aab aac aba abb abc aca acb acc baa bab bac bba bbb bbc bca bcb bcc caa cab cac cba cbb cbc cca ccb ccc<br>Комбинациите, **съдържащи 'b', не са валидни**.<br>Остават **8** валидни комбинации.|
+|a<br>c<br>b|aaa aac aca acc caa cac cca ccc 8|All possible combinations with letters '**а**', '**b**' and '**c**' are:<br>aaa aab aac aba abb abc aca acb acc baa bab bac bba bbb bbc bca bcb bcc caa cab cac cba cbb cbc cca ccb ccc<br>The combinations **containing 'b' are not valid**.<br>**8** valid combinations remain.|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |f<br>k<br>h|fff ffg ffi ffj ffk fgf fgg fgi fgj fgk fif fig fii fij fik fjf fjg fji fjj fjk fkf fkg fki fkj fkk gff gfg gfi gfj gfk ggf ggg ggi ggj ggk gif gig gii gij gik gjf gjg gji gjj gjk gkf gkg gki gkj gkk iff ifg ifi ifj ifk igf igg igi igj igk iif iig iii iij iik ijf ijg iji ijj ijk ikf ikg iki ikj ikk jff jfg jfi jfj jfk jgf jgg jgi jgj jgk jif jig jii jij jik jjf jjg jji jjj jjk jkf jkg jki jkj jkk kff kfg kfi kfj kfk kgf kgg kgi kgj kgk kif kig kii kij kik kjf kjg kji kjj kjk kkf kkg kki kkj kkk 125|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |a<br>c<br>z|aaa aab aac aba abb abc aca acb acc baa bab bac bba bbb bbc bca bcb bcc caa cab cac cba cbb cbc cca ccb ccc 27|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-За последната задача имаме по условие входни данни от **3 аргумента**, които са представени от по един символ от **ASCII таблицата** ([http://www.asciitable.com/](http://www.asciitable.com/)). Бихме могли да използваме вече дефинирания метод в езика JavaScript, **`.charCodeAt()`**, чрез който ще получим ASCII кода на подадения символ:
+By requirements, we have input data of **3 arguments**, each of which is represented by one character of the **ASCII table** ([http://www.asciitable.com/](http://www.asciitable.com/)). We could use the already defined method in JavaScript, **`.charCodeAt()`** trough which we will receive the ASCII code of the symbol:
 
 ![](assets/chapter-8-2-images/06.Letters-01.png)
 
-Нека помислим как бихме могли да стигнем до **крайния резултат**. В случай че условието на задачата e да се принтират всички от началния до крайния символ (с пропускане на определена буква), как бихме постъпили? 
+Let's think of how we can achieve the **end result**. In case the task requirement is to print all characters, from the starting to the end one (by skipping a particular letter), what should we do?
 
-Най-лесният и удачен начин е да използваме **цикъл**, с който да преминем през **всички символи** и открием тези, които са **различни** от **буквата**, която трябва да пропуснем. В езика JavaScript можем да обходим всички символи от 'a' до 'z' по следния начин:
+The easiest and most efficient way is to use a **loop**, by passing through **all characters** and printing those that are **different** from the **letter** that we need to skip. In JavaScript we can go around all the symbols from 'a' to 'z' in this way:
 
 ![](assets/chapter-8-2-images/06.Letters-02.png)
 
-Методът **`String.fromCharCode(...)`** ще конвертира подадения ASCII код в символ. Резултатът от изпълнението на горния код е всички букви от **а** до **z** включително, принтирани на един ред и разделени с интервал. Това прилича ли на крайния резултат от нашата задача? Трябва да измислим **начин**, по който да се принтират по **3 символа**, както е по условие, вместо по **1**. Изпълнението на програмата много прилича на игрална машина. Там най-често печелим, ако успеем да наредим няколко еднакви символа. Да речем, че на машината имаме места за три символа. Когато **спрем** на даден **символ** на първото място, на останалите две места **продължават** да се изреждат символи от всички възможни. В нашия случай **всички възможни** са буквите от началната до крайната такава, зададена от потребителя, а решението на нашата програма е идентично на начина, по който работи игралната машина.
-
+Методът **`String.fromCharCode(...)`** ще конвертира подадения ASCII code in symbol.The result of running the code is all letters from **a** to **z** included, printed on a single line and separated by spaces. Does this look like the end result of our task? We must find a **way** to print **3 characters**, as required, instead of **1**. Running such a program very much looks like a slot machine. We often win in slots, if we arrange a few identical characters on a row. Let's say that the machine has space for three characters. When we **stop** on a particular **character** on the first place, the other two places will **continue** rolling characters among all possible ones. In our case, **all possible characters** are the letters from the starting to the end one, entered by the user, and the solution of our program is identical to the way a slot machine works.
 Използваме **цикъл**, който минава през **всички символи** от началната до крайната буква включително. На **всяка итерация** на **първия** цикъл пускаме **втори** със същите параметри (но **само ако** буквата на първия цикъл е валидна, т.е. не съвпада с тази, която трябва да изключим по условие). На всяка итерация на **втория** цикъл пускаме още **един** със **същите параметри** и същата **проверка**. По този начин ще имаме три вложени цикъла, като в тялото на **последния** ще добавяме символите към крайния резултат:
 
 ![](assets/old-images/chapter-8-2-images/06.Letters-03.png)
