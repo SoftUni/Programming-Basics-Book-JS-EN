@@ -1,267 +1,268 @@
-# Глава 8.2. Подготовка за практически изпит – част II
+# Chapter 8.2. Exam Preparation - Part II
 
-В настоящата глава ще разгледаме един **практически изпит по основи на програмирането**, проведен в СофтУни на 18 декември 2016 г. Задачите дават добра представа какво можем да очакваме на приемния изпит по програмиране в СофтУни. Изпитът покрива изучавания учебен материал от настоящата книга и от курса "Programming Basics" в СофтУни.
+In the current chapter we wil review a **practical exam in Programming Basics**, conducted at SoftUni on December 18, 2016. The problems will give you a good overview of what you can expect at an admission exam in Programming at SoftUni. The exam covers the material studied in the current book and the Programming Basics course at SoftUni.
 
-## Изпитни задачи
+## Exam Problems
 
-Традиционно приемният изпит в СофтУни се състои от **6 практически задачи по програмиране**:
- - Задача с прости сметки (без проверки).
- - Задача с единична проверка.
- - Задача с по-сложни проверки.
- - Задача с единичен цикъл.
- - Задача с вложени цикли (чертане на фигурка на конзолата).
- - Задача с вложени цикли и по-сложна логика.
+Traditionally, the admission exam at SoftUni consists of **6 practical programming problems**:
+ - Simple problems (no conditions).
+ - A problem with a single condition.
+ - A problem with more complex conditions.
+ - A problem with a single loop.
+ - A problem with nested loops (drawing a figure on the console).
+ - A problem with nested loops and more complex logic.
  
-Да разгледаме една **реална изпитна тема**, задачите в нея и решенията им.
+Let's examine a **real exam topic**, the problems it contains and their solutions.
 
 
-## Задача: разстояние
+## Problem: Distance
 
-Напишете програма, която да пресмята **колко километра изминава кола**, за която знаем **първоначалната скорост** \(км/ч\), **времето** в минути, след което **увеличава скоростта с 10%**, **второ време**, след което **намалява скоростта с 5%**, и **времето до края** на пътуването. За да намерите разстоянието трябва да **превърнете минутите в часове** \(например 70 минути = 1.1666 часа\).
+Write a program that calculates **what is the distance passed by a car (in kilometers)**, if we know **the initial speed** \(km/h\), **the initial time frame** in minutes, then the **speed is increased by 10%**, **the second time frame**, then the **speed is decreased by 5%**, and the **time until the end** of the trip. In order to calculate the distance, you need to **convert the minutes into hours** \(for example 70 minutes = 1.1666 hours\).
 
-### Входни данни
+### Input
 
-На функцията се подават **4 аргумента**:
-* **Първоначалната скорост в км/ч** – цяло число в интервала [**1 … 300**].
-* **Първото време в минути** – цяло число в интервала [**1 … 1000**].
-* **Второто време в минути** – цяло число в интервала [**1 … 1000**].
-* **Третото време в минути** – цяло число в интервала [**1 … 1000**].
+ **4 arguments** are given as parameters of the function:
+* **The start speed in km/h** – an integer within the range [**1 … 300**].
+* **The first time in minutes** – an integer within the range [**1 … 1000**].
+* **The second time in minutes** – an integer within the range [**1 … 1000**].
+* **The third time in minutes** – an integer within the range [**1 … 1000**].
 
-### Изходни данни
+### Output
 
-Да се отпечата на конзолата едно число: **изминатите километри**, форматирани до **втория символ след десетичния знак**.
+Print a number on the console: **the kilometers passed**, formatted up to the **second digit after the decimal point**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Обяснения|
-|-----|-----|-----|
-|90<br>60<br>70<br>80|330.90|**Разстояние с първоначална скорост**: 90 км/ч \* 1 час (60 мин) = **90 км**<br>**След увеличението**: 90 + 10% = 99.00 км/ч \* 1.166 часа (70 мин) = **115.50 км**<br>**След намаляването**: 99 - 5% = 94.05 км/ч \* 1.33 часа (80 мин) = **125.40 км**<br>**Общо изминати**: **330.9 км**|
+|Input|Output|Comments|
+|-----|------|--------|
+|90<br>60<br>70<br>80|330.90|**Distance with initial speed**: 90 km/h \* 1 hour (60 min) = **90 km**<br>**After speed increase**: 90 + 10% = 99.00 km/h \* 1.166 hours (70 min) = **115.50 km**<br>**After speed decrease**: 99 - 5% = 94.05 km/h \* 1.33 hours (80 min) = **125.40 km**<br>**Total number of km passed**: **330.9 km**|
 
-|Вход|Изход|Обяснения|
-|-----|-----|-----|
-|140<br>112<br>75<br>190|917.12|**Разстояние с първоначална скорост**: 140 км/ч \* 1.86 часa (112 мин) = **261.33 км**<br>**След увеличението**: 140 + 10% = 154.00 км/ч \* 1.25 часа (75 мин) = **192.5 км**<br>**След намаляването**: 154.00 - 5% = 146.29 км/ч \* 3.16 часа (190 мин) = **463.28 км**<br>**Общо изминати**: **917.1166 км**|
+|Input|Output|Comments|
+|-----|------|--------|
+|140<br>112<br>75<br>190|917.12|**Distance with initial speed**: 140 km/h \* 1.86 hours (112 min) = **261.33 km**<br>**After speed increase**: 140 + 10% = 154.00 km/h \* 1.25 hours (75 min) = **192.5 km**<br>**After speed decrease**: 154.00 - 5% = 146.29 km/h \* 3.16 hours (190 min) = **463.28 km**<br>**Total number of km passed**: **917.1166 km**|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Вероятно е подобно условие да изглежда на пръв поглед **объркващо** и непълно, което **придава** допълнителна **сложност** на една лесна задача. Нека **разделим** заданието на няколко **подзадачи** и да се опитаме да **решим** всяка една от тях, което ще ни отведе и до крайния резултат:
+It is possible that such a description may look **misleading** and incomplete at first glance, which **adds** to the **complexity** of a relatively easy task. Let's **separate** the problem into a few **sub-problems** and try to **solve** each of them one by one, which will lead us to the final result:
 
-* **Приемане** на входните данни.
-* **Изпълнение** на основната програмна логика.
-* **Пресмятане** и оформяне на крайния резултат.
+* **Receiving** the input data.
+* **Execution** of the main programming logic.
+* **Calculation** and shaping up the end result.
 
-Съществената част от програмната логика се изразява в това да пресметнем какво ще бъде **изминатото разстояние след всички промени** в скоростта. Тъй като по време на **изпълнението** на програмата, част от данните, с които разполагаме, се променят, то бихме могли да **разделим решението** на няколко логически обособени стъпки:
+**The main** part of the programming logic is to calculate what will be the **distance passed after all changes** in speed. As during **execution** of the program, part of the data that we have is modified, we could **separate** the program code into a few logically separated parts:
 
-* **Пресмятане** на изминатото **разстояние** с първоначална скорост.
-* Промяна на **скоростта** и пресмятане на изминатото **разстояние**.
-* Последна промяна на **скоростта** и **пресмятане**.
-* **Сумиране**.
+* **Calculation** of the **distance** passed with initial speed.
+* Change of **speed** and calculation of the **distance** passed.
+* Last change of **speed** and **calculation**.
+* **Summing up**.
 
-По условие за **входни данни** ще ни бъдат подадени **четири** аргумента на функцията, които трябва да **преобразуваме в числа**, за да можем да извършим необходимите пресмятания. Преобразуването ще направим с помощта на **`Number(...)`** конструктора:
+On condition for **input** will be submitted **four** arguments of the function which we have to **convert to numbers** to make needed calculations. We will convert them using the  **`Number(...)`** constructor:
 
 ![](assets/chapter-8-2-images/01.Distance-01.png) 
 
-По този начин успяхме да се справим успешно с **първата подзадача** - приемане на входните данни.
+On this way we solved successfully the **first sub-problem** - receiving the input data.
 
-Първоначално **запазваме** една **променлива**, която ще използваме многократно. Този подход на централизация ни дава **гъвкавост** и **възможност** да **променяме** цялостния резултат на програмата с минимални усилия. В случай, че се наложи да променим стойността, трябва да го направим само на **едно място в кода**, което ни спестява време и усилия: 
+We initially **store** one **variable** that will be used multiple times. This centralization approach gives us **flexibility** and **possibility** to **modify** the end result of the program with minimum efforts. In case we need to change the value, we must do it in **only once place in the code**, which saves us time and effort:
 
 ![](assets/chapter-8-2-images/01.Distance-02.png)
 
 <table>
 <tr>
 <td width=10%><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><strong>Избягването на повтарящ се код</strong> (централизация на програмната логика) в задачите, които разглеждаме в настоящата книга, изглежда на пръв поглед излишна, но този подход е от съществено значение при изграждането на мащабни приложения в реална работна среда и упражняването му в начален стадий на изучаване само ще подпомогне усвояването на един качествен стил на програмиране.
+<td><strong>Avoiding repetitibe code</strong> (centralization of the program logic) in the tasks that we examine in the present book may look unnecessary at first glance, but this approach is very important upon building large applications in a real work environment, and its exercising in an initial stage of training will help you build a quality programming style.
 </td>
 </tr>
 </table>
 
-**Изминалото време** в часове пресмятаме като **разделим** подаденото ни **време на 60** (минутите в един час). **Изминатото разстояние** намираме като **умножим началната скорост с изминалото време** (в часове). След това променяме скоростта, като я увеличаваме с **10%** (по условие). Пресмятането на **процентите**, както и следващите изминати **разстояния**, извършваме по следния начин:
+We calculate the **travel time** (in hours) by **dividing the time by 60** (minutes in an hour). The **travel distance** is calculated by **multiplying the starting speed by the time passed** (in hours). After that we change the speed by increasing it by **10%**(on condition), as per the task description. Calculating the **percentage**, as well as the following **distances** passed, is done in the following way:
 
-* **Интервалът от време** (в часове) намираме като **разделим** зададения интервал в минути на минутите, които се съдържат в един час (60).
-* **Изминатото** разстояние намираме като **умножим** интервала (в часове) по скоростта, която получаваме след увеличението.
-* Следващата стъпка е да **намалим скоростта** с **5%**, както е зададено по условие.
-* Намираме **оставащото разстояние** по описания начин в първите две точки.
+* **The time frame** (in hours) is calculated by **dividing** the provided time frame in minutes by the minutes that are contained in an hour (60).
+* **The distance passed** is calculated by **multiplying** the time frame (in hours) by the speed that is obtained after the increase.
+* The next step is to **decrease the speed** by **5%**, as per the problem description.
+* We calculate the **remaining distance** in the manner described in the first two points.
 
 ![](assets/chapter-8-2-images/01.Distance-03.png)
 
-До този момент успяхме да **изпълним две** от **най-важните подзадачи**, а именно **приемането на данните** и **тяхната обработка**. Остава ни само да **пресметнем крайния резултат**. Тъй като по условие се изисква той да бъде **форматиран** до **2** символа след десетичния знак, можем да направим това по следния **начин**:
+Up until now we were able to **solve two** of the **most important sub-problems**, namely the **receiving data input** and **their processing**. What remains is to **calculate the end result**. As by the description we are required to **format it** up to **2** symbols after the decimal point, we can do this in the following **manner**:
+
 
 ![](assets/chapter-8-2-images/01.Distance-04.png)
 
-В случай че сте работили правилно и изпълните програмата с входните данни от условието на задачата, ще се уверите, че тя работи коректно.
+If you worked accurately and wrote the program using the input data given in the task description, you will be convinced that it works properly.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/940#0](https://judge.softuni.bg/Contests/Practice/Index/940#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/940#0](https://judge.softuni.bg/Contests/Practice/Index/940#0).
 
 
-## Задача: смяна на плочки
+## Problem: Changing Tiles
 
-Хараламби има **събрани пари**, с които иска да **смени плочките** на пода в банята. Като **подът е правоъгълник**, а **плочките са триъгълни**. Напишете програма, която да **пресмята дали събраните пари ще му стигнат**. **Подават се широчината и дължината на пода**, както и **едната страна на триъгълника с височината към нея**. Трябва да **пресметнете колко плочки са нужни,** за да се покрие пода. Броят на плочките **трябва да се закръгли към по-високо цяло число** и **да се прибавят още 5 броя** за фира. В допълнение ни се подават още – **цената на плочка** и **сумата за работата** на майстор.
+Haralambi has some **savings** that he wants to use to **change the tiles** on the bathroom floor. The **floor is rectangular**, and the **tiles are triangular**. Write a program that **calculates if his savings will be sufficient**. **The width and length of the floor are submitted**, as well as **one of the sides of the triangle with its height towards it**. We must **calculate how many tiles are needed,** in order to cover the floor. The **number** of tiles **must be rounded up to the higher integer** and **5 more tiles must be added** as spare tiles. Also **we have submitted** – **the price per tile** and **the amount paid for the work** of a workman.
 
-### Входни данни
+### Input
 
-Като параметри на функцията подаваме 7 числа:
+We submit 7 numbers as parameters of the function:
 
-* **Събраните пари**.
-* **Широчината** на пода.
-* **Дължината** на пода.
-* **Страната** на триъгълника.
-* **Височината** на триъгълника.
-* **Цената** на една плочка.
-* **Сумата** за майстора.
+* **The savings**.
+* **The width** of the floor.
+* **The length** of the floor.
+* **The side** of the triangle.
+* **The height** of the triangle.
+* **The price** of a tile.
+* **The sum** for the workman.
 
-**Всички** числа са реални числа в интервала [**0.00 … 5000.00**].
+**All** numbers are real numbers within the range [**0.00 … 5000.00**].
 
-### Изходни данни
+### Output
 
-На конзолата трябва да се отпечата на **един ред**:
+The following must be printed on the console as a **single line**:
 
-* Ако парите **са достатъчно**:
-   * "{Оставащите пари} lv left."
-* Ако парите **НЕ са достатъчно**:
-   * "You'll need {Недостигащите пари} lv more."
+* If the money **is sufficient**:
+   * “{Remaining funds} lv left.”
+* If the money **IS NOT sufficient**:
+   * “You'll need {Insufficient funds} lv more.”
 
-Резултатът трябва да е **форматиран до втория символ** след десетичния знак.
+The result must be **formatted up to the second symbol** after the decimal point.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Обяснения|
-|-----|-----|-----|
-|500<br>3<br>2.5<br>0.5<br>0.7<br>7.80<br>100|25.60 lv left.|**Площ на пода** &rarr; 3 \* 2.5 = **7.5**<br>**Площта на плочка** &rarr; 0.5 \* 0.7 / 2 = **0.175**<br>**Необходими плочки** &rarr; 7.5 / 0.175 = 42.857… = **43 + 5 фира** = **48**<br>**Обща сума** &rarr; 48 \* 7.8 + 100 (майстор) = **474.4**<br>**474.4 < 500** &rarr; **остават 25.60 лева**|
+|Input|Output|Comments|
+|-----|------|--------|
+|500<br>3<br>2.5<br>0.5<br>0.7<br>7.80<br>100|25.60 lv left.|**Floor area** &rarr; 3 \* 2.5 = **7.5**<br>**Tile area** &rarr; 0.5 \* 0.7 / 2 = **0.175**<br>**Needed tiles** &rarr; 7.5 / 0.175 = 42.857… = **43 + 5 spare tiles** = **48**<br>**Total amount** &rarr; 48 \* 7.8 + 100 (workman) = **474.4**<br>**474.4 < 500** &rarr; **25.60 lv left**|
 
-|Вход|Изход|Обяснения|
-|-----|-----|-----|
-|1000<br>5.55<br>8.95<br>0.90<br>0.85<br>13.99<br>321|You'll need 1209.65 lv more.|**Площ на пода** &rarr; 5.55 \* 8.95 = **49.67249**<br>**Площта на плочка** &rarr; 0.9 \* 0.85 / 2 = **0.3825**<br>**Необходими плочки** &rarr; 49.67249 / 0.3825 = 129.86… = **130 + 5 фира** = **135**<br>**Обща сума** &rarr; 135 * 13.99 + 321 (майстор) = **2209.65**<br>**2209.65 > 1000** &rarr; **не достигат 1209.65 лева**|
+|Input|Output|Comments|
+|-----|------|--------|
+|1000<br>5.55<br>8.95<br>0.90<br>0.85<br>13.99<br>321|You'll need 1209.65 lv more.|**Floor area** &rarr; 5.55 \* 8.95 = **49.67249**<br>**Tile area** &rarr; 0.9 \* 0.85 / 2 = **0.3825**<br>**Needed tiles** &rarr; 49.67249 / 0.3825 = 129.86… = **130 + 5 spare tiles** = **135**<br>**Total amount** &rarr; 135 \* 13.99 + 321 (workman) = **2209.65**<br>**2209.65 > 1000** &rarr; **1209.65 lv are insufficient**|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Следващата задача изисква от нашата функция да приема повече входни данни и извърши по-голям брой изчисления, въпреки че решението е **идентично**. Приемането на данните от потребителя извършваме по добре **познатия ни вече начин**.
+The following task requires our problem to accept more input data and to perform a larger number of calculations, despite the fact that the solution is **identical**. Accepting the input data is done in the **familiar way**.
 
-След като вече разполагаме с всичко необходимо, за да изпълним програмната логика, можем да пристъпим към следващата част. Как бихме могли да **изчислим** какъв е **необходимият** брой плочки, които ще бъдат достатъчни за покриването на целия под? Условието, че плочките имат **триъгълна** форма, би могло да доведе до объркване, но на практика задачата се свежда до съвсем **прости изчисления**. Бихме могли да пресметнем каква е **общата площ на пода** по формулата за намиране на площ на правоъгълник, както и каква е **площта на една плочка** по съответната формула за триъгълник.
+Now that we already have everything for executing the programming logic, we can move to the following part. How can we **calculate** what is the **needed** number of tiles that will be sufficient to cover the entire floor? The requirement is that tiles have **triangular** shape, which can cause confusion, but practically, the task needs just **simple calculations**. We can calculate the **common part of the floor** by the formula for finding rectangle area, as well as the **area of a single tile** using the relevant formula for triangle area.
 
-За да пресметнем какъв **брой плочки** са необходими, **разделяме площта на пода на площта на една плочка** (като не забравяме да прибавим 5 допълнителни броя плочки, както е по условие).
+In order to calculate the **number of tiles** that are needed, **we divide the floor area by the area of a single tile** (we should not forget to add the 5 additional tiles, that were mentioned in the requirements).
 
 <table>
 <tr>
 <td width="10%"><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Обърнете внимание, че в условието е упоменато да закръглим броя на плочките, получен от делението, до по-високо цяло число, след което да прибавим 5. Потърсете повече информация за системната функционалност за това: <code><strong>Math.ceil(…)</strong></code>.
+<td>Pay attention that the requirements state that we should round up the number of tiles, obtained upon the division, up to the higher number, and then we should add 5. Find more information about the system functionality that does that: <code><strong>Math.ceil(…)</strong></code>.
 </td>
 </tr>
 </table>
-
-До крайния резултат можем да стигнем, като **пресметнем общата сума**, която е необходима, за да бъде покрит целия под, като **съберем цената на плочките с цената за майстора**, която имаме от входните данни. Можем да се досетим, че **общият разход** за плочките можем да получим, като **умножим броя плочки по цената за една плочка**. Дали сумата, с която разполагаме, ще бъде достатъчна, разбираме като сравним събраните до момента пари (от входните данни) и общите разходи:
+We can find the end result by **calculating the total amount** that is needed to cover the entire floor, by **summing up the tile price and the price that will be paid to the workman**, that we have from the input data. We can figure out that **the total costs** for tiles can be calculated by **multiplying the number of tiles by the price per tile**. We fill find out whether the amount that we have will be sufficient by comparing the savings (based on the input data) and the total costs:
 
 ![](assets/chapter-8-2-images/02.Change-Tiles-01.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/940#1](https://judge.softuni.bg/Contests/Practice/Index/940#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/940#1](https://judge.softuni.bg/Contests/Practice/Index/940#1).
 
 
-## Задача: магазин за цветя
+## Problem: Flowers Shop
 
-Магазин за цветя предлага 3 вида цветя: **хризантеми**, **рози** и **лалета**. Цените зависят от сезона.
+A flowers shop offers 3 types of flowers: **chrysanthemums**, **roses** and **tulips**. The prices depend on the season.
 
-|Сезон|Хризантеми|Рози|Лалета|
+|Season|Chrysanthemums|Roses|Tulips|
 |:---:|:---:|:---:|:---:|
-|пролет / лято<br>есен / зима|2.00 лв./бр.<br>3.75 лв./бр.|4.10 лв./бр.<br>4.50 лв./бр.|2.50 лв./бр.<br>4.15 лв./бр.|
+|spring / summer<br>autumn / winter|2.00 lv./pc.<br>3.75 lv./pc.|4.10 lv./pc.<br>4.50 lv./pc.|2.50 lv./pc.<br>4.15 lv./pc.|
 
-В празнични дни цените на всички цветя се **увеличават с 15%.** Предлагат се следните **отстъпки**:
-* За закупени повече от 7 лалета през пролетта – **5% от цената** на целия букет.
-* За закупени 10 или повече рози през зимата – **10% от цената** на целия букет.
-* За закупени повече от 20 цветя общо през всички сезони – **20% от цената** на целия букет.
+On holidays, prices of all flowers are **increased by 15%.** The following **discounts** are offered:
+* For purchasing more than 7 tulips in spring – **5% of the price** of the whole bouquet.
+* For purchasing 10 or more roses in winter – **10% of the price** of the whole bouquet.
+* For purchasing more than 20 flowers in total in any season – **20% of the price** of the whole bouquet.
 
-**Отстъпките се правят по така написания ред и могат да се наслагват! Всички отстъпки важат след оскъпяването за празничен ден!**
+**Discounts are made in the above described order and can be combined! All discounts are valid after increasing of the price on a holiday!**
 
-Цената за аранжиране на букета винаги е **2 лв.** Напишете програма, която изчислява **цената за един букет**.
+The price for arranging a bouquet is always **2 lv.**. Write a program that calculates the **price of a bouquet**.
 
-### Входни данни
+### Input
 
-Функцията приема **5 аргумента**:
-* **Броят** на закупените **хризантеми** – цяло число в интервала [**0 … 200**].
-* **Броят** на закупените **рози** – цяло число в интервала [**0 … 200**].
-* **Броят** на закупените **лалета** – цяло число в интервала [**0 … 200**].
-* **Сезонът** – [**Spring, Summer, Autumn, Winter**].
-* **Дали денят е празник** – [**Y - да / N - не**].
+The function receives **5 arguments**:
+* **The number** of the puchared **chrysanthemums** – цяло число в интервала [**0 … 200**].
+* **The number** of the puchared **roses** – цяло число в интервала [**0 … 200**].
+* **The number** of the puchared **tullips** – цяло число в интервала [**0 … 200**].
+* **The season** – [**Spring, Summer, Autumn, Winter**].
+* **If the day is a holiday** – [**Y - да / N - не**].
 
-### Изходни данни
+### Output
 
-Да се отпечата на конзолата 1 число – **цената на цветята**, форматирана до втория символ след десетичния знак.
+Print on the console 1 number – **the price of flowers**, formatted up to the second digit after the decimal point.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Обяснения|
-|---|---|---|
-|2<br>4<br>8<br>Spring<br>Y<br>|46.14|**Цена**: 2\*2.00 + 4\*4.10 + 8\*2.50 = 40.40 лв.<br>**Празничен ден**: 40.40 + 15% = 46.46 лв.<br>**5% намаление** за повече от 7 лалета през пролетта: 44.14<br>Общо цветята са 20 или по-малко: **няма намаление**<br>44.14 + 2 **за аранжиране** = 46.14 лв.|
+|Input|Output|Comments|
+|-----|------|--------|
+|2<br>4<br>8<br>Spring<br>Y<br>|46.14|**Price**: 2\*2.00 + 4\*4.10 + 8\*2.50 = 40.40 лв.<br>**Holiday**: 40.40 + 15% = 46.46 лв.<br>**5% discount** for more than 7 tulips in spring: 44.14<br>The flowers are in total 20 or less: **no discount**<br>44.14 + 2 **for arranging** = 46.14 лв.|
 
-|Вход|Изход|Обяснения|
-|---|---|---|
-|3<br>10<br>9<br>Winter<br>N<br>|69.39|**Цена**: 3\*3.75 + 10\*4.50 + 9\*4.15 = 93.60 лв.<br>**Не е празничен ден**: няма увеличение<br>**10% намаление** за 10 или повече рози през зимата: 84.24<br>Общо цветята са повече от 20: **20% намаление** = 67.392<br>67.392 + 2 **за аранжиране** = 69.392 лв.|
+|Input|Output|Comments|
+|-----|------|--------|
+|3<br>10<br>9<br>Winter<br>N<br>|69.39|**Price**: 3\*3.75 + 10\*4.50 + 9\*4.15 = 93.60 лв.<br>**No holiday**: no increase in price<br>**10% discount** for 10 or more roses in winter: 84.24<br>The flowers are in total over 20: **20% discount** = 67.392<br>67.392 + 2 **for arranging** = 69.392 лв.|
 
-|Вход|Изход|
-|---|---|
+|Input|Output|
+|-----|------|
 |10<br>10<br>10<br>Autumn<br>N|101.20|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-След като прочитаме внимателно условието разбираме, че отново се налага да извършваме **прости пресмятания**, но с разликата, че този път ще са необходими и **повече** логически **проверки**. Следва да обърнем повече **внимание** на това, в какъв момент се **извършват промените** по крайната цена, за да можем правилно да изградим логиката на нашата програма. Отново, удебеленият текст ни дава достатъчно **насоки** как да подходим. Като за начало, отделяме вече **дефинираните** стойности в **променливи**, както направихме и в предишните задачи:
+After carefully reading the requirements, we understand that once again we need to do **simple calculations**, however this time we will need **additional** logical **conditions**. We need to pay more **attention** to the moment of **making changes** in the final price, in order to be able to properly build the logic of our program. Again, the bold text gives us sufficient **guidelines** on how to proceed. For a start, we will separate the already **defined** values in **variables**, like we did in the previous tasks:
 
 ![](assets/chapter-8-2-images/03.Flowers-01.png)
 
-Правим същото и за останалите вече дефинирани стойности:
+We will also do the same for the rest of the defined values:
 
 ![](assets/chapter-8-2-images/03.Flowers-02.png)
 
-Следващата ни подзадача е да **обработим** правилно **входните** данни на функцията. Подхождаме по добре познатия ни вече начин за **преобразуването** им в числен тип данни:
+Our next sub-task is to **read** properly **the input** data from the console. We will do that in the familiar way for **converting** them in numbers:
 
 ![](assets/chapter-8-2-images/03.Flowers-03.png)
 
-Нека помислим кой е най-подходящият начин да **структурираме** нашата програмна логика. От условието става ясно, че пътят на програмата се разделя основно на две части: **пролет / лято** и **есен / зима**. Разделението ще направим с условна конструкция **`if-else`**, като преди това заделяме променливи за **цените** на отделните цветя, както и за **крайния резултат**:
+Let's think of the most appropriate way to **structure** our programming logic. By the requirements it becomes clear that the path of the program is divided mainly into two parts: **spring / summer** and **autumn / winter**. We can do the separation by conditional statement, by storing variables in advance for the **prices** of the individual flowers, as well as for the **end result**:
 
 ![](assets/chapter-8-2-images/03.Flowers-04.png)
 
-Остава ни да извършим **няколко проверки** относно **намаленията** на различните видове цветя, в зависимост от сезона, и да модифицираме крайния резултат. 
+What remains is to perform **a few checks** regarding **the discounts** of the different types of flowers, depending on the season, and to modify the end result.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/940#2](https://judge.softuni.bg/Contests/Practice/Index/940#2).
-
-
-## Задача: оценки
-
-Напишете програма, която да **пресмята статистика на оценки** от изпит. В началото програмата получава **броя на студентите**, явили се на изпита и за **всеки студент неговата оценка**. На края програмата трябва да **изпечата процента на студенти** с оценка между 2.00 и 2.99, между 3.00 и 3.99, между 4.00 и 4.99, 5.00 или повече, както и **средният успех** на изпита.
-
-### Входни данни
-
-Програмата прочита **поредица от числа** (аргумента):
-* На първия ред (аргумент) – **броят на студентите явили се на изпит** – цяло число в интервала [**1 … 1000**].
-* За **всеки един студент** на отделен ред (аргумент) – **оценката от изпита** – реално число в интервала [**2.00 … 6.00**].
-
-### Изходни данни
-
-Да се отпечатат на конзолата **5 реда**, които съдържат следната информация:
-* "Top students: {процент студенти с успех 5.00 или повече}%".
-* "Between 4.00 and 4.99: {между 4.00 и 4.99 включително}%".
-* "Between 3.00 and 3.99: {между 3.00 и 3.99 включително}%".
-* "Fail: {по-малко от 3.00}%".
-* "Average: {среден успех}".
-
-Резултатите трябва да са **форматирани до втория символ** след десетичния знак.
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/940#2](https://judge.softuni.bg/Contests/Practice/Index/940#2).
 
 
-### Примерен вход и изход
+## Problem: Grades
 
-|Вход|Изход|Обяснения|
-|---|---|---|
-|10<br>3.00<br>2.99<br>5.68<br>3.01<br>4<br>4<br>6.00<br>4.50<br>2.44<br>5<br>|Top students: 30.00%<br>Between 4.00 and 4.99: 30.00%<br>Between 3.00 and 3.99: 20.00%<br>Fail: 20.00%<br>Average: 4.06|5 и повече - **трима** = 30% от 10<br>Между 4.00 и 4.99 - **трима** = 30% от 10<br>Между 3.00 и 3.99 - **двама** = 20% от 10<br>Под 3 - **двама** = 20% от 10<br>Средният успех е: 3 + 2.99 + 5.68 + 3.01 + 4 + 4 + 6 + 4.50 + 2.44 + 5 = 40.62 / 10 = 4.062|
+Write a program that **calculates statistics for grades** in an exam. At the beginning, the program receives the **number of students** who attended the exam and for **each student – their grade**. At the end, the program must **print the percentage of students** that have grades between 2.00 and 2.99, between 3.00 and 3.99, between 4.00 and 4.99, 5.00 or more, as well as the **average grade** of the exam.
 
-|Вход|Изход|
-|---|---|
+
+### Input
+
+The function receives **a sequence of numbers** (arguments):
+ * On the first line (argument) – **the number of students who attended the exam** – an integer within the range [**1 … 1000**].
+ * For **each individual student** on a separate line (argument) – **the grade on the exam** – a real number within the range [**2.00 … 6.00**].
+
+### Output
+
+Print on the console **5 lines** that hold the following information:
+ * "Top students: {percentage of students with grade of 5.00 or more}%".
+ * "Between 4.00 and 4.99: {between 4.00 and 4.99 included}%".
+ * "Between 3.00 and 3.99: {between 3.00 and 3.99 included}%".
+ * "Fail: {less than 3.00}%".
+ * "Average: {average grade}".
+
+The results must be **formatted up to the second symbol** after the decimal point.
+
+
+### Sample Input and Output
+
+|Input|Output|Comments|
+|-----|------|--------|
+|10<br>3.00<br>2.99<br>5.68<br>3.01<br>4<br>4<br>6.00<br>4.50<br>2.44<br>5<br>|Top students: 30.00%<br>Between 4.00 and 4.99: 30.00%<br>Between 3.00 and 3.99: 20.00%<br>Fail: 20.00%<br>Average: 4.06|5 or more - **3 students** = 30% of 10<br>Between 4.00 and 4.99 - **3 students** = 30% of 10<br>Between 3.00 and 3.99 - **2 students** = 20% of 10<br>Under 3 - **2 students** = 20% of 10<br>The average grade is: 3 + 2.99 + 5.68 + 3.01 + 4 + 4 + 6 + 4.50 + 2.44 + 5 = 40.62 / 10 = 4.062|
+
+|Input|Output|
+|-----|------|
 |6<br>2<br>3<br>4<br>5<br>6<br>2.2|Top students: 33.33%<br>Between 4.00 and 4.99: 16.67%<br>Between 3.00 and 3.99: 16.67%<br>Fail: 33.33%<br>Average: 3.70|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-От условието виждаме, че **първо** ще ни бъде подаден **броя** на студентите, а едва **след това оценките** им. По тази причина **първо** ще приемем **броя** на студентите. За да обработим самите оценки, ще използваме **`for`** цикъл. Всяка итерация на цикъла ще прочита и обработва по една оценка:
+By the requirements we see that **first** we will receive number** of students, and then, **their grades**. For that reason,**първо** ще приемем **броя** на студентите. За да обработим самите оценки, ще използваме **`for`** цикъл. Всяка итерация на цикъла ще прочита и обработва по една оценка:
 
 ![](assets/chapter-8-2-images/04.Grades-01.png)
 
