@@ -331,22 +331,22 @@ What remains is to add a **condition that checks if the input number is greater 
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#9](https://judge.softuni.bg/Contests/Practice/Index/937#9).
 
-### Пример: оператор break в безкраен цикъл
+### Example: the break operator in an infinite loop
 
-Да се напише програма, която проверява дали едно число **n** е четно, ако е - да се отпечатва на екрана. За четно считаме число, което се дели на 2 без остатък. При невалидно число да се връща към повторно въвеждане и да се изписва съобщение, което известява, че въведеното число не е четно.
+Write a function, which checks wether a given number **n** is even and if so - print it on the console. An even number is one that can be divided by 2 without a remainder. If the number is invalid, we will print that the curent number is not even and the user will need to input a new number.
 
-Ето една идея как можем да решим задачата:
+Here is an idea for the solution:
 
-* Декларираме променлива **`i`**, на която присвояваме начална стойност **0**. Чрез нея ще запазваме позицията на всяко число, което е подадено на функцията.
-* Декларираме променлива **`num`**, на която присвояваме начална стойност **0**.
-* Създаваме безкраен **`while`** цикъл, като за условие ще зададем **`true`**.
-* В **тялото на цикъла**:
-   * Вземаме целочислена стойност, която е подадена на функцията и я присвояваме на **`num`**.
-   * Ако **числото е четно**, излизаме от цикъла чрез **`break`**. 
-   * В **противен случай** извеждаме съобщение, което гласи, че **числото не е четно**. Увеличаваме **`i`**, за да може, при следващото завъртане на цикъла, да вземем следващото число, което е подадено на функцията. Итерациите продължават, докато не се въведе четно число.
-* Отпечатваме четното число на екрана.
+* We declare the variable **`i`**, which shall hold the initial value **0**. Through it we will store the position of every number passed to our function.
+* We declare a variable **`num`**, with initial value **0**.
+* We create an infinite **`while`** loop with condition set to **`true`**.
+* In **the body of the loop**:
+   * We take the integer value, passed to our function and assign it to **`num`**.
+   * If **the number is even**, we exit the loop by **`break`**. 
+   * **Otherwise** we print a message stating that **the number is not even**. We increment **`i`**, so that we can take the next number from the input on the next iteration. The iterations continue untoll an even number is entered.
+* We priint the even number on the console.
 
-Ето и примерна имплементация на идеята:
+Here is an example implementation of the idea:
 
 ![](assets/chapter-7-1-images/00.Break-in-infinite-loop-01.PNG)
 
