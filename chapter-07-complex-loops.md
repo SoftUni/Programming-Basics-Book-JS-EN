@@ -373,18 +373,18 @@ If we leave our function that way, our result will be as follows:
 Why is this so? As we can see, the resul is **missing "1 1"**. When the function reaches the point when **`i = 1`** and **`j = 1`**, it enters the **`if`** check and executes the **`break`** operation. This way, it **exits the inner loop**, but then continues the execution of the **outer loop**. **`i`** increases, the function enters the inner loop and prints the result.
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Когато във <b>вложен цикъл</b> използваме оператора <b><code>break</code></b>, той прекъсва изпълнението <b>само</b> на вътрешния цикъл.</td>
+<td>When we use the <b><code>break</code> operator</b> in a <b>nested loop</b>, it interrupts <b>only</b> the execution of the inner loop.</td>
 </tr></table>
 
-Какво е **правилното решение**? Един начин за решаването на този проблем е чрез деклариране на **`bool` променлива**, която следи за това, дали трябва да продължава въртенето на цикъла. При нужда от изход (излизане от всички вложени цикли), променливата сменя стойността си на  **`true`** и се излиза от вътрешния цикъл с **`break`**, а при последваща проверка се напуска и външния цикъл. Ето и примерна имплементация на тази идея:
+What is the **correct solution**? One way to solve the problem is by declaring a **`bool` variable**, to keep track if the loop iteration has to continue. If we have to exit (leave all nested loops), we set the variable to **`true`** and exit the inner loop with **`break`** and in the next check we exit the outer loop. Here is an example implementation of this idea:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-desired-result-02.PNG)
 
-По този начин, когато **`i + j = 2`**, програмата ще направи променливата **`hasToEnd = true`** и ще излезе от вътрешния цикъл. При следващото завъртане на външния цикъл, чрез **`if`** проверката, програмата няма да може да стигне до вътрешния цикъл и ще прекъсне изпълнението си. 
+In this manner, when **`i + j = 2`**, the program will set the variable **`hasToEnd = true`** and will exit the inner loop. Upon the next iteration of the outer loop, via the **`if`** check, the function will not reach the inner loop and will interrupt its execution. 
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#11](https://judge.softuni.bg/Contests/Practice/Index/937#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#11](https://judge.softuni.bg/Contests/Practice/Index/937#11).
 
 ## Задачи с цикли
 
