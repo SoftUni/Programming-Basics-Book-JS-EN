@@ -421,13 +421,13 @@ An idea to solve the problem:
 * We declare a **variable `n`**, which will hold the integer value passed to our function.
 * We create the variables **`f0`** and **`f1`**, to which we assign the value **1**, since this is the start of Fibonacci's sequence.
 * We create a **`for`** loop with condition **current value `i < n - 1`**.
-* В **тялото на цикъла:**
-   * Създаваме **временна** променлива **`fNext`**, на която присвояваме следващото число в поредицата на Фибоначи.
-   * На **`f0`** присвояваме текущата стойност на **`f1`**.
-   * На **`f1`** присвояваме стойността на временната променлива **`fNext`**.
-* Извън цикъла отпечатваме числото n-тото число на Фибоначи.
+* In the **body of the loop:**
+   * We create a **temporarry** variable **`fNext`**, to which we assign the next number in the Fibonacci sequence.
+   * To **`f0`** we assign the current value of **`f1`**.
+   * To **`f1`** we assign the value of the temporary variable **`fNext`**.
+* Out of the loop we print the n-th number of Fibonacci.
 
-Примерна имплементация:
+Example implementation:
 
 ![](assets/chapter-7-1-images/12.Fibonacci-01.PNG)
 
@@ -435,52 +435,52 @@ An idea to solve the problem:
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#12](https://judge.softuni.bg/Contests/Practice/Index/937#12).
 
-### Задача: пирамида от числа
+### Problem: Numbers Pyramid
 
-Да се отпечатат **числата 1 … n в пирамида** като в примерите по долу. На първия ред печатаме едно число, на втория ред печатаме две числа, на третия ред печатаме три числа и т.н. докато числата свършат. На последния ред печатаме толкова числа, колкото останат докато стигнем до **n**.
+Print the **numbers 1 … n in a pyramid** as per the below example. On the first row we print one number, at the second we print two, at the third we print three and so on, until the numbers are over. On the last line we print as many numbers as we get until we get to **n**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход |Изход                 |Вход |Изход          |Вход      |Изход                         |
+|Input |Output                 |Input |Output          |Input      |Output                         |
 |-----|----------------------|-----|---------------|----------|------------------------------|
 |7    |1<br>2 3<br>4 5 6<br>7|5    |1<br>2 3<br>4 5|10        |1<br>2 3<br>4 5 6<br>7 8 9 10 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Можем да решим задачата с **два вложени цикъла** (по редове и колони) с печатане в тях и излизане при достигане на последното число. Ето идеята, разписана по-подробно:
+We can solve the problem with **two nested loops** (by rows and columns) with printing in them and leaving when the last number is reached. Here is the idea, written in more detail:
 
-* Декларираме променлива **`n`**, на която присвояваме целочислена стойност, подадена на функцията.
-* Декларираме променлива **`num`** с начална стойност 1. Тя ще пази броя на отпечатаните числа. При всяка итерация ще я **увеличаваме** с **1** и ще я добавяме към текущия ред.
-* Декларираме променлива **`result`**, която ще е текущият ред и към която ще добавяме стойността на текущата клетка.
-* Създаваме **външен** **`for`** цикъл, който ще отговаря за **редовете** в таблицата. Наименуваме променливата на цикъла **`row`** и ѝ задаваме начална стойност 1. За условие слагаме **`row < n`**. Размерът на стъпката е 1.
-* В тялото на цикъла създаваме **вътрешен** **`for`** цикъл, който ще отговаря за **колоните** в таблицата. Наименуваме променливата на цикъла **`col`** и ѝ задаваме начална стойност 1. За условие слагаме **`col < row`** (**`row`** = брой цифри на ред). Размерът на стъпката е 1.
-* В тялото на вложения цикъл:
-   * Проверяваме дали **`col > 1`**, ако да – добавяме разстояние към променливата **`result`**. Ако не направим тази проверка, а директно добавяме разстоянието, ще имаме ненужно такова в началото на всеки ред.
-   * **Запазваме** числото **`num`** в текущата клетка на таблицата и го **увеличаваме с 1**.
-   * Правим проверка за **`num > n`**. Ако **`num`** е по-голямо от **`n`**, **прекъсваме** въртенето на **вътрешния цикъл**.
-* Отпечатваме стойността на променливата **`result`**, след което й задаваме нова празна стойност. По този начин ще преминем на следващия ред.
-* Отново проверяваме дали **`num > n`**. Ако е по-голямо, **прекъсваме** изпълнението на **програмата ни** чрез `break`. 
+* We declare a variable **`n`**, to which we assign the integer value passed to our function.
+* We declare a variable **`num`** with initial value **1**. It will hold the count of printed numbers. At each iteration we will **increment** it by **1** and will add it to the current row.
+* We declare a variable **`result`**, which will hold the current row and to which we will add the value of the current cell.
+* We create an **outer** **`for`** loop, which will be responsible for the **rows** in the table. The loop variable will be named **`row`** and we assign it an initial value **1**. For condition we set **`row < n`**. The step will also be **1**.
+* In the body of the loop we create an **inner** **`for`** loop, which will be responsible for the **columns** in the table. We name the variable **`col`** and assign it an initial value **1**. For condition we set **`col < row`** (**`row`** = number of digits per line). The step will also be **1**.
+* In the body of the nested loop:
+   * We check whether **`col > 1`**, if true we add a space to the variable **`result`**. If we do not make this check and instead add the space every time, each resulting line will start with a space.
+   * We **store** the number **`num`** in the current cell of the table and **increment it by 1**.
+   * We check if **`num > n`**. If **`num`** is greater than **`n`**, we **interrupt** the **inner loop**.
+* We print the value if the variable **`result`** and after that we set it to an empty value. This way we can proceed to the next line.
+* Again, we check if **`num > n`**. If it is greater, we **interrupt** the execution of **our function** with `break`. 
 
-Ето и примерна имплементация:
+Here is an example implementation:
 
 ![](assets/chapter-7-1-images/13.Pyramid-01.PNG)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#13](https://judge.softuni.bg/Contests/Practice/Index/937#13).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#13](https://judge.softuni.bg/Contests/Practice/Index/937#13).
 
 
-### Задача: таблица с числа
+### Problem: Numbers Table
 
-Да се отпечатат числата 1 … n в таблица като в примерите по-долу.
+Print the numbers 1 … n in a table as per the examples below:
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход |Изход|Вход|Изход|
+|Input |Output|Input|Output|
 |--------|-----|-------|-----|
 |3|1 2 3<br>2 3 2<br>3 2 1|4|1 2 3 4<br>2 3 4 3<br>3 4 3 2<br>4 3 2 1|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
 Можем да решим задачата с **два вложени цикъла** и малко изчисления в тях:
 
@@ -496,9 +496,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#1
 
 ![](assets/chapter-7-1-images/14.Table-with-numbers-01.PNG)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#14](https://judge.softuni.bg/Contests/Practice/Index/937#14).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#14](https://judge.softuni.bg/Contests/Practice/Index/937#14).
 
 ## What We Learned in This Chapter?
 
