@@ -386,15 +386,15 @@ In this manner, when **`i + j = 2`**, the program will set the variable **`hasTo
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#11](https://judge.softuni.bg/Contests/Practice/Index/937#11).
 
-## Задачи с цикли
+## Exercises with loops
 
-В тази глава се запознахме с няколко нови вида цикли, с които могат да се правят повторения с по-сложна програмна логика. Да решим няколко задачи, използвайки новите знания.
+In this chapter we got familiar with a few new types of loops that can perform repetitions with more complex trogramming logic. Let's solve a few practical problems using these new constructs.
 
-### Задача: числа на Фибоначи
+### Problem: Fibonacci Numbers
 
-Числата на Фибоначи в математиката образуват редица, която изглежда по следния начин: **1, 1, 2, 3, 5, 8, 13, 21, 34, …**.
+Fibonacci's numbers in mathematics form a sequence that looks like this: **1, 1, 2, 3, 5, 8, 13, 21, 34, …**.
 
-**Формулата** за образуване на редицата е:
+**The formula** to derive the next member of Fibonacci's sequence is:
 
 ```javascript
 F0 = 1
@@ -402,9 +402,9 @@ F1 = 1
 Fn = Fn-1 + Fn-2
 ```
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход (n)|Изход|Коментар|
+|Input (n)|Output|Comment|
 |----|-----|---------|
 |10|89|F(11) = F(9) + F(8)|
 |5|8|F(5) = F(4) + F(3)|
@@ -412,15 +412,15 @@ Fn = Fn-1 + Fn-2
 |0|1| |
 |1|1| |
 
-Да се въведе **цяло** число **n** и да се пресметне **n-тото число на Фибоначи**.
+Enter an **integer** number **n** and calculate the **n-th Fibonacci number**.
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Идея за решаване на задачата:
+An idea to solve the problem:
 
-* Декларираме **променлива `n`**, на която присвояваме целочислена стойност, подадена на функцията.
-* Създаваме променливите **`f0`** и **`f1`**, на които присвояваме стойност **1**, тъй като така започва редицата.
-* Създаваме **`for`** цикъл с условие **текущата стойност `i < n - 1`**.
+* We declare a **variable `n`**, which will hold the integer value passed to our function.
+* We create the variables **`f0`** and **`f1`**, to which we assign the value **1**, since this is the start of Fibonacci's sequence.
+* We create a **`for`** loop with condition **current value `i < n - 1`**.
 * В **тялото на цикъла:**
    * Създаваме **временна** променлива **`fNext`**, на която присвояваме следващото число в поредицата на Фибоначи.
    * На **`f0`** присвояваме текущата стойност на **`f1`**.
@@ -431,9 +431,9 @@ Fn = Fn-1 + Fn-2
 
 ![](assets/chapter-7-1-images/12.Fibonacci-01.PNG)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#12](https://judge.softuni.bg/Contests/Practice/Index/937#12).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#12](https://judge.softuni.bg/Contests/Practice/Index/937#12).
 
 ### Задача: пирамида от числа
 
@@ -500,9 +500,9 @@ Fn = Fn-1 + Fn-2
 
 Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#14](https://judge.softuni.bg/Contests/Practice/Index/937#14).
 
-## Какво научихме от тази глава?
+## What We Learned in This Chapter?
 
-Можем да използваме **`for`** цикли със **стъпка**:
+We can use **`for`** loops with a **stride**:
 
 ```javascript
 for (let i = 1; i <= n; i+=3) {
@@ -510,7 +510,7 @@ for (let i = 1; i <= n; i+=3) {
 }
 ```
 
-Циклите **`while`** / **`do-while`** се повтарят докато е в сила дадено **условие**:
+The **`while`** / **`do-while`** loops are repeated while a **condition is true**:
 
 ```javascript
 let num = 1;
@@ -519,7 +519,7 @@ while (num <= n) {
 }
 ```
 
-Ако се наложи да **прекъснем** изпълнението на цикъл, го правим с оператора **`break`**:
+If we have to **interrupt** the loop execution, we use the **`break`** operator:
 
 ```javascript
 let n = 0;
