@@ -350,27 +350,27 @@ Here is an example implementation of the idea:
 
 ![](assets/chapter-7-1-images/00.Break-in-infinite-loop-01.PNG)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#10](https://judge.softuni.bg/Contests/Practice/Index/937#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#10](https://judge.softuni.bg/Contests/Practice/Index/937#10).
 
-## Вложени цикли и операторът break
+## Nested Loops and the Break operator
 
-След като вече научихме какво са **вложените цикли** и как работи операторът **`break`**, е време да разберем как работят двете заедно. За по-добро разбиране, нека стъпка по стъпка да напишем **програма**, която трябва да направи всички възможни комбинации от **двойки числа**. Първото число от комбинацията е нарастващо от 1 до 3, а второто е намаляващо от 3 до 1. Задачата трябва да продължи изпълнението си, докато **`i + j`** **не** е равно на 2 (т.е. **`i = 1`** и **`j = 1`**).
+Now since we know what the **nested loops** are and how the **`break`** operator works, it is time to figure out how they work together. To get a better idea, we should write a **function** step by step, that should make all possible combinations of **number pairs**. The first number in the pair is increasing from 1 to 3, while the second one is decreasing from 3 to 1. Our solution must continue running until **`i + j`** **is not** equal to 2 (i.e. **`i = 1`** and **`j = 1`**).
 
-Желаният резултат е:
+The desired result is:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-desired-result-01.PNG)
 
-Ето едно **грешно решение**, което изглежда правилно на пръв поглед:
+Here is a **wrong implementation**, that liiks right at first glance:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-undesired-result-02.PNG)
 
-Ако оставим програмата ни по този начин, резултатът ни ще е следният:
+If we leave our function that way, our result will be as follows:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-undesired-result-01.PNG)
 
-Защо се получава така? Както виждаме, в резултата **липсва "1 1"**. Когато програмата стига до там, че **`i = 1`** и **`j = 1`**, тя влиза в **`if`** проверката и изпълнява **`break`** операцията. По този начин се **излиза от вътрешния цикъл**, но след това продължава изпълнението на външния. **`i`** нараства, програмата влиза във вътрешния цикъл и принтира резултата.
+Why is this so? As we can see, the resul is **missing "1 1"**. When the function reaches the point when **`i = 1`** and **`j = 1`**, it enters the **`if`** check and executes the **`break`** operation. This way, it **exits the inner loop**, but then continues the execution of the **outer loop**. **`i`** increases, the function enters the inner loop and prints the result.
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Когато във <b>вложен цикъл</b> използваме оператора <b><code>break</code></b>, той прекъсва изпълнението <b>само</b> на вътрешния цикъл.</td>
