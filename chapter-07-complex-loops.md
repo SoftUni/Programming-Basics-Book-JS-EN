@@ -1,13 +1,13 @@
 # Chapter 7.1. Complex loops
 
-Since we have learned what **`for`** loops are and their function in code, now is the time to take a look at **other loop types**, as well as some **more complex loop constructs**. These will expand our knowledge and help us solve more challenging problems. In particular, we will discuss how to use the folowing programming constructs:
+Since we have learned what **`for`** loops are and their function in code, now is the time to take a look at **other loop types**, as well as some **more complex loop constructs**. These will expand our knowledge and help us solve more challenging problems. In particular, we will discuss how to use the following programming constructs:
 
   * loops **with step aka stride**
   * **`while`** loops
   * **`do-while`** loops
   * **infinite** loops
 
-In the current chapter we will also take a look at the **`break`** operator and **how** to emply it to **interrupt** a loop.
+In the current chapter we will also take a look at the **`break`** operator and **how** to empty it to **interrupt** a loop.
 
 
 ## Video
@@ -21,11 +21,11 @@ In the current chapter we will also take a look at the **`break`** operator and 
 
 ## Loops with stride
 
-In the **"Loops (Repetitions)"** chapter we learned how the **`for`** loop works and we already know when and to what purpose to use it. In the present chapter we will **take a look** at a perticular and a very important **part of this structure** - its **step** or as it is also known **stride**.  
+In the **"Loops (Repetitions)"** chapter we learned how the **`for`** loop works and we already know when and to what purpose to use it. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step** or as it is also known **stride**.  
 
 ### Loop with a Step – Explanation
 
-The **stride** is the **part** of the **`for`** loop, that specifys the **amount** used to **increment** or **decrement** the **main** variable. The **step** is declared in the skeleton of the **`for`** loop.
+The **stride** is the **part** of the **`for`** loop, that specifies the **amount** used to **increment** or **decrement** the **main** variable. The **step** is declared in the skeleton of the **`for`** loop.
 
 Most often we have a **size of `1`** and in this case, instead of writing **`i += 1`** or **`i -= 1`**, we can use the shorthand operators **`i++`** or **`i--`**. In case we need the stride to be **different than 1**, when increasing we use the shorthand **`i +=` + `required stride`**, and when we decrease **`i -=` + `required stride`**. With a step of 3 the loop would appear as below: 
 
@@ -53,11 +53,11 @@ You can test your solution at the following link: [https://judge.softuni.bg/Cont
 
 Write a program that prints the numbers **from n to 1 in reverse** (step -1). For example, **if n = 100**, then the output will be: **100, 99, 98, …, 3, 2, 1**.
 
-We can solve the problem in the folowing manner:
+We can solve the problem in the following manner:
 
   * We create a function that will take the number **`n`**.
   * We run a **`for` loop**, by assigning **`let i = n`** .
-  * We reverse the contidion of the loop: **`i >= 1`**.
+  * We reverse the condition of the loop: **`i >= 1`**.
   * We define the stride size: **-1**.
   * in the **body of the loop**, we print the value of the current step.
 
@@ -69,7 +69,7 @@ You can test your solution at the following link: [https://judge.softuni.bg/Cont
 
 ### Example: Numbers from 1 to 2^n with a for loop
 
-In the folowing example we will use the standard size 1 stride.
+In the following example we will use the standard size 1 stride.
 
 Write a program that prints the numbers **from 1 to 2^n** (two to the power of n). For example, **if n = 10**, then the output would be **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
 
@@ -98,7 +98,7 @@ You can test your solution at the following link: [https://judge.softuni.bg/Cont
 
 ## While loop
 
-The next type of loops that we will familiarize wiht are called **`while` loops**. The special thing about them is that they repeat a comand block **while a condition is met**. Their structure is a bit different that that of the **`for`** loops, however they boast a simpler sintax.
+The next type of loops that we will familiarize, which are called **`while` loops**. The special thing about them is that they repeat a command block **while a condition is met**. Their structure is a bit different that that of the **`for`** loops, however they boast a simpler syntax.
 
 
 ### While Loop – Explanation
@@ -112,14 +112,14 @@ Here is a series of sample problems, the solutions of which will help us better 
 
 ### Example: Sequence of Numbers 2k+1
 
-Write a program that prints **all numbers ≤ n** in the series: **1, 3, 7, 15, 31, …**, assuming that each number is generated according to the folowing formula nextNumber = **previousNumber \* 2 + 1**.
+Write a program that prints **all numbers ≤ n** in the series: **1, 3, 7, 15, 31, …**, assuming that each number is generated according to the following formula nextNumber = **previousNumber \* 2 + 1**.
 
 Here is how we can solve the problem:
 
 * We create a function that will take the number **`n`**.
 * We declare a variable **`num`** that will hold the current number and we assign it the initial **value of 1**.
-* Fpr loop condition we use **the current number <= n**.
-* in the **body of the loop**: we print the value of the vurrent number and increase the current number by using the formula above.
+* For loop condition we use **the current number <= n**.
+* in the **body of the loop**: we print the value of the current number and increase the current number by using the formula above.
 
 Here is a sample implementation of this idea:
 
@@ -135,7 +135,7 @@ Enter an integer in the range [**1 … 100**]. If the entered number is **invali
 
 To solve the problem, we can use the following algorithm:
 
-* We declare a variable **`i`**, to which we assign the initial value **0**. Through wich we save the position of each argument passed to our function.
+* We declare a variable **`i`**, to which we assign the initial value **0**. Through which we save the position of each argument passed to our function.
 * We declare a variable **`num`**, to which we assign the integer part of the first argument, passed to the function.
 * For a loop condition, we put an expression that is **`true`**, if the number **is not** in the range specified in the problem description.
 * On the **body of the loop**: we increment **`i`**, so that at the next loop cycle we can take the next number passed to our function. We print the message "**Invalid number!**" on the console, afterwards we assign a new value to **`num`** (the next argument, passed to our function).
@@ -154,7 +154,7 @@ You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Ind
 
 Before proceeding to the next problem, we should become familiar with the definition of the greatest common divisor (GCD).
 
-**Definition if GCD**: the greatest common divisor of two **natural** numbers **a** and **b** is the largest number that **divides both** **a** and **b** without reminder. For exampe:
+**Definition if GCD**: the greatest common divisor of two **natural** numbers **a** and **b** is the largest number that **divides both** **a** and **b** without reminder. For example:
 
 
 |a|b|GCD| 
@@ -170,7 +170,7 @@ Before proceeding to the next problem, we should become familiar with the defini
 
 In the next problem we will use one of the first published algorithms for finding the GCD – **Euclid's algorithm**:
 
-**Until** we have a ramainder of 0:
+**Until** we have a remainder of 0:
 
 * We divide the greater number by the smaller one.
 * We take the remainder of the division.
@@ -211,12 +211,12 @@ The next type of loops we will study is the **`do-while`** loop. By structure it
 
 ![](assets/chapter-7-1-images/00.Do-while-01.PNG)
 
-Now we should proceed with the usual set of practical problems, that wull help us better understand the **`do-while`** loop.
+Now we should proceed with the usual set of practical problems, that will help us better understand the **`do-while`** loop.
 
 
 ### Example: Calculating Factorial
 
-For natural **n** number, calculate **n! = 1 \* 2 \* 3 \* … \* n**. For example, if **n = 5**, то резултатът ще бъде: **5!** = 1 \* 2 \* 3 \* 4 \* 5 = **120**.
+For natural **n** number, calculate **n! = 1 \* 2 \* 3 \* … \* n**. For example, if **n = 5**, then the result would be: **5!** = 1 \* 2 \* 3 \* 4 \* 5 = **120**.
 
 Here is how we can calculate factorial in more detail:
 
@@ -244,14 +244,14 @@ We can use the following idea to solve the problem:
 * We create a second variable - **`sum`**, with initial value of 0. We will use it for the calculation and storage of the result.
 * As a loop condition, we will use **`n > 0`**, since after each iteration of the loop, we will be removing the last digit from **`n`**.
 * In the body of the loop:
-   * We assign a new balue to **`sum`**, which is the resul of the sum of the current value of **`sum`** with the last digit of **`n`**.
-   * We assign a new balue to **`n`**, which is the resul of of removing the last digit of **`n`**.
+   * We assign a new value to **`sum`**, which is the result of the sum of the current value of **`sum`** with the last digit of **`n`**.
+   * We assign a new value to **`n`**, which is the result of removing the last digit of **`n`**.
 * Outside the body of the loop, we print the final value of the sum.
 
 ![](assets/chapter-7-1-images/09.Sum-digits-01.PNG)
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px;" /></td>
-<td><code><strong>n % 10</strong></code>: <b>returns</b> the last digit of the nimber <code><strong>n</strong></code>.<br>
+<td><code><strong>n % 10</strong></code>: <b>returns</b> the last digit of the number <code><strong>n</strong></code>.<br>
 <code><strong>Math.floor(n / 10)</strong></code>: <b>deletes</b> the last digit of <code><strong>n</strong></code>.</td>
 </tr></table>
 
@@ -281,7 +281,7 @@ And here is an **infinite `for`** loop:
 We already know that the infinite loop executes a certain code infinitely, but what if we want at some point under a given condition to interrupt and exit the loop? The **break** operator comes in handy in this situation.
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
-<td>The operator <b><code>break</code></b> stops a loop's execution at the point it is called and execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingy and the rest of the code in the body of the loop will not be executed.</td>
+<td>The operator <b><code>break</code></b> stops a loop's execution at the point it is called and execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingly and the rest of the code in the body of the loop will not be executed.</td>
 </tr></table>
 
 ### Example: Prime Number Checking
@@ -315,11 +315,11 @@ You are tasked to write a function that takes a single input **n** integer and c
 
 The steps of the **"prime checking algorithm"** are given below in bigger detail:
 
-* We declare the varible **`n`**, to which we assign the integer passed to our function.
+* We declare the variable **`n`**, to which we assign the integer passed to our function.
 * We create an **`prime`** boolean with and initial value **`true`**. We assume that a number is prime until proven otherwise.
-* We create a **`for`** loop, with initial value set to 2, for condition the **current calue `<= √n`**. The stride is set to 1.
+* We create a **`for`** loop, with initial value set to 2, for condition the **current value `<= √n`**. The stride is set to 1.
 * In the **body of the loop** we check if **`n`**, divided by the **current value** has a remainder. If there is **no reminder** from the division, then we change **`prime`** to **`false`** and exit the loop through the **`break`** operator.
-* Depending on the value of **`prime`** we pring whether the input number is prime (**`true`**) or composite (**`false`**).
+* Depending on the value of **`prime`** we print whether the input number is prime (**`true`**) or composite (**`false`**).
 
 Here is a sample implementation of the prime checking algorithm, described above:
 
@@ -333,7 +333,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#9
 
 ### Example: the break operator in an infinite loop
 
-Write a function, which checks wether a given number **n** is even and if so - print it on the console. An even number is one that can be divided by 2 without a remainder. If the number is invalid, we will print that the curent number is not even and the user will need to input a new number.
+Write a function, which checks whether a given number **n** is even and if so - print it on the console. An even number is one that can be divided by 2 without a remainder. If the number is invalid, we will print that the current number is not even and the user will need to input a new number.
 
 Here is an idea for the solution:
 
@@ -343,8 +343,8 @@ Here is an idea for the solution:
 * In **the body of the loop**:
    * We take the integer value, passed to our function and assign it to **`num`**.
    * If **the number is even**, we exit the loop by **`break`**. 
-   * **Otherwise** we print a message stating that **the number is not even**. We increment **`i`**, so that we can take the next number from the input on the next iteration. The iterations continue untoll an even number is entered.
-* We priint the even number on the console.
+   * **Otherwise** we print a message stating that **the number is not even**. We increment **`i`**, so that we can take the next number from the input on the next iteration. The iterations continue until an even number is entered.
+* We print the even number on the console.
 
 Here is an example implementation of the idea:
 
@@ -362,7 +362,7 @@ The desired result is:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-desired-result-01.PNG)
 
-Here is a **wrong implementation**, that liiks right at first glance:
+Here is a **wrong implementation**, that looks right at first glance:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-undesired-result-02.PNG)
 
@@ -370,7 +370,7 @@ If we leave our function that way, our result will be as follows:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-undesired-result-01.PNG)
 
-Why is this so? As we can see, the resul is **missing "1 1"**. When the function reaches the point when **`i = 1`** and **`j = 1`**, it enters the **`if`** check and executes the **`break`** operation. This way, it **exits the inner loop**, but then continues the execution of the **outer loop**. **`i`** increases, the function enters the inner loop and prints the result.
+Why is this so? As we can see, the result is **missing "1 1"**. When the function reaches the point when **`i = 1`** and **`j = 1`**, it enters the **`if`** check and executes the **`break`** operation. This way, it **exits the inner loop**, but then continues the execution of the **outer loop**. **`i`** increases, the function enters the inner loop and prints the result.
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td>When we use the <b><code>break</code> operator</b> in a <b>nested loop</b>, it interrupts <b>only</b> the execution of the inner loop.</td>
@@ -388,7 +388,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/937#1
 
 ## Exercises with loops
 
-In this chapter we got familiar with a few new types of loops that can perform repetitions with more complex trogramming logic. Let's solve a few practical problems using these new constructs.
+In this chapter we got familiar with a few new types of loops that can perform repetitions with more complex programming logic. Let's solve a few practical problems using these new constructs.
 
 ### Problem: Fibonacci Numbers
 
@@ -422,7 +422,7 @@ An idea to solve the problem:
 * We create the variables **`f0`** and **`f1`**, to which we assign the value **1**, since this is the start of Fibonacci's sequence.
 * We create a **`for`** loop with condition **current value `i < n - 1`**.
 * In the **body of the loop:**
-   * We create a **temporarry** variable **`fNext`**, to which we assign the next number in the Fibonacci sequence.
+   * We create a **temporary** variable **`fNext`**, to which we assign the next number in the Fibonacci sequence.
    * To **`f0`** we assign the current value of **`f1`**.
    * To **`f1`** we assign the value of the temporary variable **`fNext`**.
 * Out of the loop we print the n-th number of Fibonacci.
