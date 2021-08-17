@@ -482,17 +482,17 @@ Print the numbers 1 … n in a table as per the examples below:
 
 #### Hints and Guidelines
 
-Можем да решим задачата с **два вложени цикъла** и малко изчисления в тях:
+We can solve the problem by using **two nested loops** and some simple calculations in them:
 
-* Взимаме размера на таблицата от целочислената променлива **`n`**, която е подадена на функцията.
-* Декларираме променлива **`result`**, която ще е текущият ред и към която ще добавяме стойността на текущата клетка.
-* Създаваме **`for`** цикъл, който ще отговаря за редовете в таблицата. Наименуваме променливата на цикъла **`row`** и ѝ задаваме начална **стойност 0**. За условие слагаме **`row < n`**. Размерът на стъпката е 1.
-* В **тялото на цикъла** създаваме вложен **`for`** цикъл, който ще отговаря за колоните в таблицата. Наименуваме променливата на цикъла **`col`** и ѝ задаваме начална **стойност 0**. За условие слагаме **`col < n`**. Размерът на стъпката е 1.
-* В **тялото на вложения цикъл**:
-   * Създаваме променлива **`num`**, на която присвояваме резултата от **текущият ред + текущата колона + 1** (+1, тъй като започваме броенето от 0).
-   * Правим проверка за **`num > n`**. Ако **`num`** е **по-голямо** от **`n`**, присвояваме нова стойност на **`num`** равна на **два пъти **`n`** - текущата стойност за **`num`**. Това правим с цел да не превишаваме **`n`** в никоя от клетките на таблицата.
-    * Добавяме числото от текущата клетка в променливата **`result`**.
-* Отпечатваме стойността на **result**, след което й задаваме нова празна стойност. По този начин ще преминем на следващия ред.
+* We take the size of the table from the integer value of the variable **`n`**, that is passed to our function.
+* We declare the variable **`result`**, which will hold the current row and to which we will add the value of the current cell.
+* We create a **`for`** loop, that will be responsible for the rows of the table. We name the loop variable **`row`** and assign it an initial **value 0**. For condition we set **`row < n`**. The size of the step is **1**.
+* In **the body of the loop** we create a nested **`for`** loop, that will be responsible for the columns in the table. We name the loop variable **`col`** and assign it an initial **value 0**. For condition we set **`col < n`**. The size of the stride is set to **1**.
+* In **the body of the nested loop**:
+   * We create a variable **`num`**, to which we assign the result of **the current row + the current column + 1** (+1 is needed since we count from 0).
+   * We check whether **`num > n`**. If **`num`** is **greater** than **`n`**, we assign **`num`** a new value equal to **two times **`n`** - the current value of **`num`**. We do this in order not to exceed **`n`** in any of the cells of the table.
+    * We add the number of the current cell to the variable **`result`**.
+* We print the value of **result**, after which we set it to a new empty value. This way we can proceed to the next line.
 
 ![](assets/chapter-7-1-images/14.Table-with-numbers-01.PNG)
 
