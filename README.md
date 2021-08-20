@@ -1,41 +1,41 @@
-# Book "Programming Basics" (с JavaScript)
+# Book "Programming Basics" (with JavaScript)
 
 > This is work in progress. This open-source free book, originally written in Bulgarian, will be translated into English, but this will take a few months (or years). Please be patient. We will officially announce when the translation is completed.
 
-Книгата "**Основи на програмирането с JavaScript**" запознава читателите с писането на **програмен код** на начално ниво (работа с данни, проверки, цикли и функции) с езика **JavaScript**.
+The book "**Programming Basics with JavaScript**" introduces the readers to writing **programming code** at beginner level (variables and data, conditional statements, loops and methods) using the **JavaScript** 
 
 <a href="#"><img src="/assets/JavaScript-Programming-Basics-Book-Cover.png" alt="Book Programming Basics with JavaScript - Cover" class="readme-book-cover-image" /></a>
 
-* [Предговор](chapter-00-preface.md)
-* [1. Първи стъпки в програмирането](chapter-01-first-steps-in-programming.md)
-* [2.1. Прости пресмятания](chapter-02-simple-calculations.md)
-* [2.2. Прости пресмятания – изпитни задачи](chapter-02-simple-calculations-exam-problems.md#simple-calculations)
-* [3.1. Прости проверки](chapter-03-simple-conditions.md)
-* [3.2. Прости проверки – изпитни задачи](chapter-03-simple-conditions-exam-problems.md)
-* [4.1. По-сложни проверки](chapter-04-complex-conditions.md)
-* [4.2. По-сложни проверки – изпитни задачи](chapter-04-complex-conditions-exam-problems.md)
-* [5.1. Повторения \(цикли\)](chapter-05-loops.md)
-* [5.2. Цикли – изпитни задачи](chapter-05-loops-exam-problems.md)
-* [6.1. Вложени цикли](chapter-06-nested-loops.md)
-* [6.2. Вложени цикли – изпитни задачи](chapter-06-nested-loops-exam-problems.md)
-* [7.1. По-сложни цикли](chapter-07-complex-loops.md)
-* [7.2. По-сложни цикли – изпитни задачи](chapter-07-complex-loops-exam-problems.md)
-* [8.1. Подготовка за практически изпит – част I](chapter-08-exam-preparation.md)
-* [8.2. Подготовка за практически изпит – част II](chapter-08-exam-preparation-part-2.md)
-* [9.1. Задачи за шампиони – част I](chapter-09-problems-for-champions.md)
-* [9.2. Задачи за шампиони – част II](chapter-09-problems-for-champions-part-2.md)
-* [10. Функции](chapter-10-functions.md)
-* [11. Хитрости и хакове](chapter-11-tricks-and-hacks.md)
-* [Заключение](chapter-12-conclusion.md)
+* [Preface](chapter-00-preface.md)
+* [1. First Steps in Programming](chapter-01-first-steps-in-programming.md)
+* [2.1. Simple Calculations](chapter-02-simple-calculations.md)
+* [2.2. Simple Calculations – Exam Problems](chapter-02-simple-calculations-exam-problems.md#simple-calculations)
+* [3.1. Simple Conditions](chapter-03-simple-conditions.md)
+* [3.2. Simple Conditions – Exam Problems](chapter-03-simple-conditions-exam-problems.md)
+* [4.1. More Complex Conditions](chapter-04-complex-conditions.md)
+* [4.2. More Complex Conditions – Exam Problems](chapter-04-complex-conditions-exam-problems.md)
+* [5.1. Repetitions (Loops)](chapter-05-loops.md)
+* [5.2. Loops – Exam Problems](chapter-05-loops-exam-problems.md)
+* [6.1. Nested Loops](chapter-06-nested-loops.md)
+* [6.2. Nested Loops – Exam Problems](chapter-06-nested-loops-exam-problems.md)
+* [7.1. More Complex Loops](chapter-07-complex-loops.md)
+* [7.2. More Complex Loops – Exam Problems](chapter-07-complex-loops-exam-problems.md)
+* [8.1. Practical Exam Preparations – Part I](chapter-08-exam-preparation.md)
+* [8.2. Practical Exam Preparations – Part II](chapter-08-exam-preparation-part-2.md)
+* [9.1. Problems for Champions – Part I](chapter-09-problems-for-champions.md)
+* [9.2. Problems for Champions – Part II](chapter-09-problems-for-champions-part-2.md)
+* [10. Functions](chapter-10-functions.md)
+* [11. Tricks and Hacks](chapter-11-tricks-and-hacks.md)
+* [Conclusion](chapter-12-conclusion.md)
 
-## Изтеглете книгата
+## Download the Book
 
-Изтеглете книгата "**Основи на програмирането с JavaScript**" в **PDF** формат:
+Download the book "**Programming Basics with JavScript**" in **PDF** format:
 * <a href="#">TODO</a>
 
-## Варианти на книгата
+## Book Editions
 
-Настоящата книга е достъпна в няколко варианта с различни езици за програмиране:
+This book is available in several versions in different programming languages:
 * [Основи на програмирането със C#](https://csharp-book.softuni.bg)
 * [Programming Basics with C# (English)](https://csharp-book.softuni.org)
 * [Основи на програмирането с Java](https://java-book.softuni.bg)
@@ -43,21 +43,21 @@
 * [Основи на програмирането с Python](https://python-book.softuni.bg)
 * [Основи на програмирането със C++](https://cpp-book.softuni.bg)
 
-## Информация за книгата
+## Book Details
 
-Кратка информация за изданието:
-* Заглавие: **Основи на програмирането с JavaScript**
-* Автори: **Светлин Наков и колектив**
+Brief information about this edition:
+* Title: **Programming Basics with JavaScript**
+* Authors: **Svetlin Nakov & Team**
 * ISBN: **TODO**
-* Издание: **TODO**
-* Лиценз: **CC-BY-SA**
-* Сорс код: https://github.com/SoftUni/Programming-Basics-Book-JS-EN
-* Всички автори, редактори и **участници в проекта**: Бончо Вълков, Венцислав Петров, Димитър Далев, Елена Роглева, Жулиета Атанасова, Захария Пехливанова, Здравко Костадинов, Ивелин Арнаудов, Кристиан Мариянов, Мартин Чаов, Николай Банкин, Николай Костов, Павел Колев, Петър Иванов, Светлин Наков, Стилян Кангалов, Християн Христов, Христо Минков, Aлександър Кръстев, Александър Лазаров, Ангел Димитриев, Васко Викторов, Венцислав Петров, Даниел Цветков, Димитър Татарски, Димо Димов, Диян Тончев, Елена Роглева, Живко Недялков, Жулиета Атанасова, Захария Пехливанова, Ивелин Кирилов, Искра Николова, Калин Примов, Кристиян Памидов, Любослав Любенов, Николай Банкин, Николай Димов, Павлин Петков, Петър Иванов, Росица Ненова, Руслан Филипов, Светлин Наков, Стефка Василева, Теодор Куртев, Тоньо Желев, Християн Христов, Христо Христов, Цветан Илиев, Юлиан Линев, Яница Вълева, Марина Шидерова.
+* Edition: **TODO**
+* License: **CC-BY-SA**
+* Source code: https://github.com/SoftUni/Programming-Basics-Book-JS-EN
+* All authors, editors, translators and **contributors**: Boncho Valkov, Ventsislav Petrov, Dimitar Dalev, Elena Rogleva, Julieta Atanasova, Zahariya Pehlivanova, Zdravko Kostadinov, Ivelin Arnaudov, Kristian Mariyanov, Martin Chaov, Nikolay Bankin, Nikolay Kostov, Pavel Kolev, Petar Ivanov, Svetlin Nakov, Stilyan Kangalov, Hristiyan Hristov, Hristo Minkov, Aleksandar Krastev, Aleksandar Lazarov, Angel Dimitriev, Vasko Viktorov, Ventsislav Pertov, Daniel Tsvetkov, Dimirat Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Jivko Nedyalkov, Julieta Atanasova, Zahariya Pehlivanova, Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristiyan Pamidov, Lyuboslav Lyubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stefka Vasileva, Teodor Kurtev, Tonio Jelev, Hristiyan Hristov, Hristo Hristov, Tsvetan Iliev, Yulian Linev, Yanitsa Valeva, Marina Shiderova.
 
-## Книгата на хартия
+## Paper book
 
-Можете **да закупите хартиено копие на книгата** от СофтУни: https://softuni.bg/contacts. Свържете се по телефон или email за повече информация.
+You can **buy a paper copy of the book** from SoftUni: https://softuni.bg/contacts. Contact us via telephone or email for more information.
 
-## Безплатен практически курс към книгата
+## Free Practical Programming Course
 
-Приятно четене и не забравяйте да се запишете на [**практическия безплатен курс "Основи на програмирането"**](https://softuni.bg/apply) към тази книга, защото програмирането се учи с практика, писане на код и решаване на много, много задачи, а не само с четене!
+Enjoy reading and do not forget to **sign up** for the [**Practical Free Course "Programming Basics"**](https://softuni.bg/apply) coming together with this book, because programming is learned by practice, code writing and solving many, many problems, not just by reading!
