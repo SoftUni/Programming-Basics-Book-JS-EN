@@ -30,7 +30,7 @@ The book "**Programming Basics with JavaScript**" introduces the readers to writ
 
 ## Download the Book
 
-Download the book "**Programming Basics with JavScript**" in **PDF** format:
+Download the book "**Programming Basics with JavaScript**" in **PDF** format:
 * <a href="#">TODO</a>
 
 ## Book Editions
