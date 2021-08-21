@@ -18,9 +18,9 @@ The free course for beginners in SoftUni is suitable for **school students** (of
 
 **A new group starts each month**. The "Programming Basics" course at SoftUni is organized regularly using a few different programming languages as basis. So, just check it out!. The course is **free**, and you can quit any time you like. **Signing up** for free on-site or online training is available via the **SoftUni application form**: https://softuni.bg/apply.
 
-## Защо избрахме езика JavaScript?
+## Why did we choose the JavaScript language?
 
-За настоящата книга избрахме езика **JavaScript**, защото е **съвременен език** за програмиране от високо ниво и същевременно е лесен за научаване и **подходящ за начинаещи**. Като употреба **JavaScript** е **широкоразпространен**, с добре развита екосистема, с многобройни библиотеки и технологични рамки и съответно дава много **перспективи** за развитие. **JavaScript** комбинира парадигмите на процедурното, функционалното и обектно-ориентираното програмиране по съвременен начин с лесен за употреба синтаксис. В книгата ще използваме **езика JavaScript** и средата за разработка **Visual Studio Code**, която е достъпна безплатно от Microsoft.
+For this book we chose **JavaScript**, because it is **modern**language for high-level programming and at the same time it is easy to learn and suitable for **beginners**. As a use **JavaScript** е **widespread**, with a well-developed ecosystem, numerous libraries and technological frameworks, and therefore gives many **prospects** for development. **JavaScript** combines the paradigms of procedural, functional and object-oriented programming in a modern way with easy-to-use syntax. In the book, we'll use the **JavaScript language** and the **Visual Studio Code** development environment, which is available for free from Microsoft.
 
 Както ще обясним по-късно, **езикът за програмиране, с който стартираме, няма съществено значение**, но все пак трябва да ползваме някакъв програмен език, и в тази книга сме избрали именно **JavaScript**. Книгата може да се намери преведена огледално и на други езици за програмиране като Java и C# (вж. https://csharp-book.softuni.bg).
 
