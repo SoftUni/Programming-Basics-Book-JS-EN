@@ -39,13 +39,14 @@ If you prefer a different language, choose from the list above.
 
 ## Programming is learned by a lot of writing, not reading!
 
-Ако някой си мисли, че ще прочете една книга и ще се научи да програмира без да пише код и да решава здраво задачи, определено е в заблуда. Програмирането се учи с **много, много практика**, с писане на код всеки ден и решаване на стотици, дори хиляди задачи, сериозно и с постоянство, в продължение на години.
+If anyone thinks they're going to read a book and learn to program without writing a code and solve tasks hard, they're definitely delusional. Programming is learned with **many, many practice**, with writing code every day and solving hundreds, even thousands of tasks, seriously and with perseverance, for years.
 
-Трябва **да решавате здраво задачи**, да бъркате, да се поправяте, да търсите решения и информация в Интернет, да пробвате, да експериментирате, да намирате по-добри решения, да свиквате с кода, със синтаксиса, с езика за програмиране, със средата за разработка, с търсенето на грешки и дебъгването на неработещ код, с разсъжденията над задачите, с алгоритмичното мислене, с разбиването на проблемите на стъпки и имплементацията на всяка стъпка, да трупате опит и да вдигате уменията си всеки ден, защото да се научиш да пишеш код е само **първата стъпка към професията "софтуерен инженер"**. Имате да учите много, наистина много!
+You need to **solve a lot of problems** , to make mistakes, to fix them, search for solutions and information on the Internet, to try, to experiment, to find better solutions, get used to the code, syntax, programming language, development environment, error search and debugging of non-working code, task reasoning, algorithmic thinking, breaking down problems in steps and implementing every step, gaining experience and lifting your skills every day, because learning to write code is just **the first step towards the profession of software engineer**. You have a lot to learn, really!
 
-Съветваме читателя като минимум **да пробва всички примери от книгата**, да си поиграе с тях, да ги променя и тества. Още по-важни от примерите, обаче, са **задачите за упражнения**, защото те развиват практическите умения на програмиста.
+We advise the reader, as a minimum, **to try all the examples from book** , to play with them, to change and test them. Even more important than the examples, **are the exersices**, because they develop the practical skills of the developer.
 
-**Решавайте всички задачи от книгата**, защото програмиране се учи с практика! Задачите след всяка тема са внимателно подбрани, така че да покриват в дълбочина обхванатия учебен материал, а целта на решаването на всички задачи от всички обхванати теми е да дадат **цялостни умения за писане на програмен код** на начално ниво (каквато е целта и на тази книга). На курсовете в **СофтУни** не случайно **наблягаме на практиката** и решаването на задачи, и в повечето курсове писането на код в клас е над 70% от целия курс.
+**Solve all the tasks in the book**, because programming is learned by practice! The tasks after each topic are carefully selected to cover in depth the covered learning
+material. The purpose of solving all tasks from all the topics covered is to give **complete writing skills to a program code** at the beginners level (as is the purpose of this book). During the courses in **SoftUni** we purposefully **focus on practice** and problem solving, and in most courses code writing occupies over 70% of the entire course.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><b>Решавайте всички задачи за упражнения от книгата</b>. Иначе нищо няма да научите! Програмиране се учи с писане на много код и решаване на хиляди задачи!</td>
