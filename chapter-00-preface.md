@@ -3,10 +3,10 @@
 "**Programming basics**" is the official textbook for the course **Programming Basics"** in the Software university(SoftUni): [https://softuni.bg/courses/programming-basics](https://softuni.bg/courses/programming-basics). The book introduces readers with writing **programming code** at a beginner's level (basic coding skills), working with **development environment** (IDE), using **variables** and data, **operators** and **expressions**, working with the **console** (reading input data and printing output), usage of **conditional statements** (**`if`**, **`if-else`**, **`switch-case`**), **loops** (**`for`**, **`while`**, **`do-while`**) and working with **functions** (declaring and calling functions, passing parameters, and returning values). The book uses **JavaScript** programming language and **Visual Studio Code** development environment. The covered training material provides basic preparation for a deeper study of programming and prepares readers for the entrance exam in SoftUni.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Тази книга ви дава само <b>първите стъпки към програмирането</b>. Тя обхваща съвсем начални умения, които предстои да развивате години наред, докато достигнете до ниво, достатъчно за започване на работа като програмист.</td>
+<td>This book only gives you <b>the first steps to programming</b>. It covers very basic skills that you must develop for years, in order to reach a high enough level and start working as a programmer.</td>
 </tr></table>
 
-Книгата се използва и като неофициален **[учебник за училищните курсове по програмиране в професионалните гимназии](http://softuni.foundation/projects/applied-software-developer-profession/)**, изучаващи професиите "**Програмист**", "**Приложен програмист**" и "**Системен програмист**", както и като допълнително учебно пособие в началните курсове по програмиране в **средните училища, профилираните и математическите гимназии**, за паралелките с профил "информатика и информационни технологии".
+The book is also used as unofficial **[textbook for school-level programming courses in the high schools](http://softuni.foundation/projects/applied-software-developer-profession/)**,studying professions like "**Programmer**", "**Application Programmer**" and "**System Programmer**", as well as an additional teaching tool in the initial programming courses at the **secondary schools, mathematical and professional high schools.**, and specialty "informatics and IT".
 
 ## Who is this book intended for?
 
