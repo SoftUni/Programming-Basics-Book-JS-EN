@@ -22,22 +22,22 @@ The free course for beginners in SoftUni is suitable for **school students** (of
 
 For this book we chose **JavaScript**, because it is **modern**language for high-level programming and at the same time it is easy to learn and suitable for **beginners**. As a use **JavaScript** е **widespread**, with a well-developed ecosystem, numerous libraries and technological frameworks, and therefore gives many **prospects** for development. **JavaScript** combines the paradigms of procedural, functional and object-oriented programming in a modern way with easy-to-use syntax. In the book, we'll use the **JavaScript language** and the **Visual Studio Code** development environment, which is available for free from Microsoft.
 
-Както ще обясним по-късно, **езикът за програмиране, с който стартираме, няма съществено значение**, но все пак трябва да ползваме някакъв програмен език, и в тази книга сме избрали именно **JavaScript**. Книгата може да се намери преведена огледално и на други езици за програмиране като Java и C# (вж. https://csharp-book.softuni.bg).
+As we will explain later, **the programming language with which we start is not essential**, but we still need to use some programming language, and in this book we have chosen **JavaScript**. The book can also be found translated in other programming languages such as Java and C# (see https://csharp-book.softuni.bg).
 
-## Книгата на други програмни езици: Java, C#, C++, Python, PHP, Ruby
+## The book in other programming languages: Java, C#, C++, Python, PHP, Ruby
 
-Настоящата книга по програмиране за напълно начинаещи е достъпна на няколко езика за програмиране (или е в процес на адаптация за тях):
-* [Основи на програмирането със C#](https://csharp-book.softuni.bg)
-* [Основи на програмирането с Java](https://java-book.softuni.bg)
-* [Основи на програмирането с JavaScript](https://js-book.softuni.bg)
-* [Основи на програмирането с Python](https://python-book.softuni.bg)
-* [Основи на програмирането със C++](https://cpp-book.softuni.bg)
-* [Основи на програмирането с PHP](https://php-book.softuni.bg)
-* [Основи на програмирането с Ruby](https://ruby-book.softuni.bg)
+This programming book for complete beginners is available in several programming languages (or is in the process of being adapted for them):
+* [Programming basics with C#](https://csharp-book.softuni.bg)
+* [Programming basics with Java](https://java-book.softuni.bg)
+* [Programming basics with JavaScript](https://js-book.softuni.bg)
+* [Programming basics with с Python](https://python-book.softuni.bg)
+* [Programming basics with със C++](https://cpp-book.softuni.bg)
+* [Programming basics with с PHP](https://php-book.softuni.bg)
+* [Programming basics with с Ruby](https://ruby-book.softuni.bg)
 
-Ако предпочитате друг език, изберете си от списъка по-горе.
+If you prefer a different language, choose from the list above.
 
-## Програмиране се учи с много писане, не с четене!
+## Programming is learned by a lot of writing, not reading!
 
 Ако някой си мисли, че ще прочете една книга и ще се научи да програмира без да пише код и да решава здраво задачи, определено е в заблуда. Програмирането се учи с **много, много практика**, с писане на код всеки ден и решаване на стотици, дори хиляди задачи, сериозно и с постоянство, в продължение на години.
 
