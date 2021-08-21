@@ -96,9 +96,9 @@ There are **4 main skillgroups** that all programmers must possess. Most of thes
 * fundamental knowledge of the proffession (25%)
 * languages and development technologies (25%)
 
-### Умение #1 – кодене (20%)
+### Skill # 1 - Coding (20%)
 
-Да се научите **да пишете код** формира около 20% от минималните умения на програмиста, необходими за започване на работа в софтуерна фирма. Умението да кодиш включва следните компоненти:
+Learning how **to write code** forms about 20% of the minimum skills required for a programmer to start work in a software company. The ability to code includes the following components:
 * работа с променливи, проверки, цикли
 * ползване на функции, методи, класове и обекти
 * работа с данни: масиви, списъци, хеш-таблици, стрингове
