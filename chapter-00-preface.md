@@ -67,13 +67,13 @@ This **programming textbook** accompanies free programming courses for beginners
 
 ### Judge the task verification system
 
-**СофтУни Judge системата** (https://judge.softuni.bg) представлява автоматизирана система в Интернет **за проверка на решения на задачи по програмиране чрез поредица от тестове**. Предаването и проверката на задачите се извършва в **реално време**: пращате решение и след секунди получавате отговор дали е вярно. Всеки **успешно** преминат тест дава предвидените за него точки. При вярно решение получавате всички точки за задачата. При частично вярно решение получавате част от точките за дадената задача. При напълно грешно решение, получавате 0 точки.
+**The SoftUni Judge system** (https://judge.softuni.bg) is an automated system on the Internet **to check solutions to programming tasks through a series of tests**. **Real-time** task transmission and verification: you send a solution and in seconds you get an answer if it's true. Each **successful** test gives the points provided for it. With a correct solution, you get all the points for the task. With a partially correct solution, you get some of the points for the task. With a completely wrong decision, you get 0 points.
 
-**Всички задачи от настоящата книга са достъпни за тестване в СофтУни Judge системата** и силно препоръчваме да ги тествате, след като ги решите, за да знаете дали не изпускате нещо и дали наистина решението ви работи правилно, според изискванията на задачата.
+**All tasks in this book are available for testing in the SoftUni Judge system** and we strongly recommend that you test them once you have decided to know if you are missing something and whether your solution is really working properly, as required by the task.
 
-Имайте предвид и някои **особености на SoftUni Judge системата**:
- - За всяка задача **Judge системата пази най-високия постигнат резултат**. Ако качите решение с грешен код или по-слаб резултат от предишното ви изпратено, системата няма да ви отнеме точки.
- - Изходните резултати на вашата програма се **сравняват** от системата стриктно с очаквания резултат. Всеки **излишен символ, липсваща запетайка или интервал** може доведе до 0 точки на съответния тест. **Изходът**, който Judge системата очаква, е **описан в условието на всяка задача** и към него **не трябва да се добавя нищо повече**.
+Note also some **features of the SoftUni Judge system**:
+ - For each task **Judge system keeps the highest achieved result**. If you upload a solution with the wrong code or a weaker result than your previous one sent, the system won't take points away from you.
+ - The output results of your program are **compared** by the system strictly with the expected result. Any **redundant symbol missing a comma or space** may result in 0 points of the relevant test. **The output** that the Judge system expects is **described in the condition of each task** and **nothing more should be added to it**.
 
 **Пример:** ако в изхода се изисква да се отпечата число (напр. **`25`**), не извеждайте описателни съобщения като **`The result is: 25`**, а отпечатайте точно каквото се изисква, т.е. само числото.
 
