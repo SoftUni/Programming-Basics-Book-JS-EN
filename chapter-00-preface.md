@@ -75,26 +75,26 @@ Note also some **features of the SoftUni Judge system**:
  - For each task **Judge system keeps the highest achieved result**. If you upload a solution with the wrong code or a weaker result than your previous one sent, the system won't take points away from you.
  - The output results of your program are **compared** by the system strictly with the expected result. Any **redundant symbol missing a comma or space** may result in 0 points of the relevant test. **The output** that the Judge system expects is **described in the condition of each task** and **nothing more should be added to it**.
 
-**Пример:** ако в изхода се изисква да се отпечата число (напр. **`25`**), не извеждайте описателни съобщения като **`The result is: 25`**, а отпечатайте точно каквото се изисква, т.е. само числото.
+**Example**: if a number is required to be printed in the output (e.g. **`25`**), do not display descriptive messages such as **`The result is: 25`**, but print exactly what is required, i.e. only the number.
 
-СофтУни Judge системата е **достъпна по всяко време** от нейния сайт: [https://judge.softuni.bg](https://judge.softuni.bg).
- - За вход използвайте автентикацията си от сайта на СофтУни: [https://softuni.bg](https://softuni.bg).
- - Използването на системата е **безплатно** и не е обвързано с участието в курсовете на СофтУни.
+The SoftUni Judge system is **available at any time** from its website: [https://judge.softuni.bg](https://judge.softuni.bg).
+ - To sign in, use your authentication from the SoftUni website: [https://softuni.bg](https://softuni.bg).
+ - Use of the system is **free of charge** and is not subject to participation in SoftUni courses.
 
-Убедени сме, че след няколко изпратени задачи, **ще ви хареса да получавате моментална обратна връзка** дали написаното от вас решение е вярно, и Judge системата ще ви стане най-любимия помощник при учене на програмирането.
+We are convinced that after a few tasks sent, you **will like to receive instant feedback** on whether the solution you wrote is true, and judge system will become your favorite assistant when learning programming.
 
 <a name="become-a-developer"></a>
-## Как се става програмист?
+## How do you become a programmer?
 
-Драги читатели, сигурно много от вас имат амбицията да стават програмисти, да си изкарват прехраната с разработка на софтуер или да работят в ИТ сектора. Затова сме приготвили за вас **кратко ръководство "Как се става програмист"**, за да ви ориентираме за стъпките към тази така желана професия.
+Dear readers, many of you must have the ambition to become programmers, make a living with software development or work in the IT sector. That is why we have prepared for you a **short guide "How to become a programmer"** to navigate you on the steps to this much-desired profession.
 
-Програмист (на ниво започване на работа в софтуерна фирма) се става за **най-малко 1-2 години здраво учене и писане на код всеки ден**, решаване на няколко хиляди задачи по програмиране, разработка на няколко по-сериозни практически проекта и трупане на много опит с писането на код и разработката на софтуер. Не става за един месец, нито за два! Професията на софтуерния инженер изисква голям обем познания, покрити с много, много практика.
+A programmer (at the level of starting work in a software company) gets up for **at least 1-2 years of learning and writing code every day**, solving several thousand programming tasks, developing several practical projects and gaining a lot of experience with code writing and software development. It's not for a month or two! The profession of software engineer requires a large amount of knowledge, covered with many, many practices. 
 
-Има **4 основни групи умения**, които всички програмисти трябва да притежават. Повечето от тези умения са устойчиви във времето и не се влияят съществено от развитието на конкретните технологии (които се променят постоянно). Това са уменията, които **всеки добър програмист притежава** и към които всеки новобранец трябва да се стреми:
-* писане на код (20%)
-* алгоритмично мислене (30%)
-* фундаментални знания за професията (25%)
-* езици и технологии за разработка (25%)
+There are **4 main skillgroups** that all programmers must possess. Most of these skills are sustainable over time and are not significantly affected by the development of specific technologies (which change constantly). These are the skills that **every good programmer possesses** and which every rookie should aspire to:
+* code writing (20%)
+* algoritmic thinking (30%)
+* fundamental knowledge of the proffession (25%)
+* languages and development technologies (25%)
 
 ### Умение #1 – кодене (20%)
 
