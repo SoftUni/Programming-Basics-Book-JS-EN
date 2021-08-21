@@ -49,24 +49,23 @@ We advise the reader, as a minimum, **to try all the examples from book** , to p
 material. The purpose of solving all tasks from all the topics covered is to give **complete writing skills to a program code** at the beginners level (as is the purpose of this book). During the courses in **SoftUni** we purposefully **focus on practice** and problem solving, and in most courses code writing occupies over 70% of the entire course.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Решавайте всички задачи за упражнения от книгата</b>. Иначе нищо няма да научите! Програмиране се учи с писане на много код и решаване на хиляди задачи!</td>
-</tr></table>
+<td><b>Solve all the exercises in the book</b>.Otherwise you won't learn anything! Programming is learned by writing a lot of code and solving thousands of problems!</td>
+</tr></table> 
 
-## За Софтуерния университет (СофтУни)
+## About Software University(SoftUni)
+[The Software University (SoftUni)](https://softuni.bg) is **the largest training center for software engineers in Bulgaria**. Tens of thousands of students pass through it every year. SoftUni opened in 2014 as a continuation of **[Phd. Svetlin Nakov's](http://nakov.com)** efforts to build **framed software specialists** through real, modern and quality education, which combines fundamental knowledge with modern software technologies and many practices.
 
-[Софтуерният университет (СофтУни)](https://softuni.bg) е **най-мащабният учебен център за софтуерни инженери в България**. През него преминават десетки хиляди студенти всяка година. СофтУни отваря врати през 2014 г. като продължение на усилията на **[д-р Светлин Наков](http://nakov.com)** масирано да изгражда **кадърни софтуерни специалисти** чрез истинско, съвременно и качествено образование, което комбинира фундаментални знания със съвременни софтуерни технологии и много практика.
+The Software University provides **quality education**, **occupation**, **work** and **the opportunity to acquire a bachelor's degree** for programmers, software engineers and IT professionals. SoftUni builds an extremely successful lasting **relationship between education and industry**, collaborating with hundreds of software companies, **providing work and internships** to its students, providing quality specialists for the software industry and directly meeting the needs of employers through the learning process.
 
-Софтуерният университет предоставя **качествено образование**, **професия**, **работа** и **възможност за придобиване на бакалавърска степен** за програмисти, софтуерни инженери и ИТ специалисти. СофтУни изгражда изключително успешно трайна **връзка между образование и индустрия**, като си сътрудничи със стотици софтуерни фирми, **осигурява работа и стажове** на своите студенти, предоставя качествени специалисти за софтуерната индустрия и директно отговаря на нуждите на работодателите чрез учебния процес.
+### Free programming courses at SoftUni
 
-### Безплатните курсове по програмиране в СофтУни
+SoftUni organizes **free programming courses for complete beginners** in Bulgaria - attendance and online. The goal is **anyone with an interest** in programming and technologies to try programming and **to make sure whether it is interesting** to him and whether he wants to be a software developer. You can sign up for the free programming basics course from the SoftUni application page: https://softuni.bg/apply.
 
-СофтУни организира **безплатни курсове по програмиране за напълно начинаещи** в цяла България - присъствено и онлайн. Целта е **всеки, който има интерес** към програмиране и технологии, **да опита програмирането** и да се увери сам дали то е интересно за него и дали иска да се занимава сериозно с разработка на софтуер. Можете да се запишете за **безплатния курс по основи на програмирането** от страницата за кандидатстване в СофтУни: https://softuni.bg/apply.
+The free programming basics courses at SoftUni aim to introduce you to **the main programming structures** from the world of software development that you will be able to apply in any programming language. These include working with **data**, **variables** and **expressions**, using **conditional statements**, constructing **loops** and defining and calling **functions**, and other techniques to build programming logic. The trainings are **extremely practical** - which means there is a **strong emphasis on exercise** , and you get the opportunity to apply your knowledge as you learn them.
 
-Безплатните курсове по основи на програмирането в СофтУни имат за цел да ви запознаят с **основните програмни конструкции** от света на софтуерната разработка, които ще можете да приложите при всеки един език за програмиране. Те включват работа с **данни**, **променливи** и **изрази**, използване на **проверки**, конструиране на **цикли** и дефиниране и извикване на **функции** и други похвати за изграждане на програмна логика. Обученията са **изключително практически насочени**, което означава, че **силно се набляга на упражнения**, а вие получавате възможността да приложите знанията си още докато ги усвоявате.
+This **programming textbook** accompanies free programming courses for beginners at SoftUni and serves as an additional learning aid to support the learning process.
 
-Настоящият **учебник по програмиране** съпътства безплатните курсове по програмиране за начинаещи в СофтУни и служи като допълнително учебно помагало, в помощ на учебния процес.
-
-### Judge системата за проверка на задачите
+### Judge the task verification system
 
 **СофтУни Judge системата** (https://judge.softuni.bg) представлява автоматизирана система в Интернет **за проверка на решения на задачи по програмиране чрез поредица от тестове**. Предаването и проверката на задачите се извършва в **реално време**: пращате решение и след секунди получавате отговор дали е вярно. Всеки **успешно** преминат тест дава предвидените за него точки. При вярно решение получавате всички точки за задачата. При частично вярно решение получавате част от точките за дадената задача. При напълно грешно решение, получавате 0 точки.
 
