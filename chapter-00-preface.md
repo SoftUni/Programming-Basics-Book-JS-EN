@@ -228,36 +228,35 @@ Ask your **questions to this book** on Programming Basics in the **SoftUni’s f
 
 <p align="center"><strong><a href="https://softuni.bg/forum">https://softuni.bg/forum</a></strong></p>
 
-В този дискусионен форум ще получите безплатно **адекватен отговор по всякакви въпроси от учебното съдържание на настоящия учебник**, както и по други въпроси от програмирането. Общността на СофтУни за навлизащи в програмирането е толкова голяма, че обикновено отговор на зададен въпрос се получава **до няколко минути**. Преподавателите, асистентите и менторите от СофтУни също отговарят постоянно на вашите въпроси.
+In this discussion forum you will receive a free **adequate answer on any questions from the curriculum content of this textbook**, as well as on
+other programming issues. The SoftUni community for entering programming is so large that usually is an answer to a question is received **within a few minutes**. SoftUni's teachers, assistants and mentors also answer your questions constantly.
 
-Поради големия брой учащи по настоящия учебник, във форума можете да намерите **решение на практически всяка задача от него**, споделено от ваш колега. Хиляди студенти преди вас вече са решавали същите задачи, така че ако закъсате, потърсете из форума. Макар и задачите в курса "Основи на програмирането" да се сменят от време на време, споделянето е винаги насърчавано в СофтУни и затова лесно ще намерите решения и насоки за всички задачи.
+Due to the large number of students in this textbook, in the forum you can find a **solution to virtually any task from it** , shared by your colleague. Thousands of students before you have already solved the same tasks, so if you're in trouble, look around the forum. Although tasks in the Programming Basics course change from time to time, sharing is always encouraged in SoftUni, so you can easily find solutions and guidelines for all tasks.
 
-Ако все пак имате конкретен въпрос, например защо не тръгва дадена програма, над която умувате от няколко часа, **задайте го във форума** и ще получите отговор. Ще се учудите колко добронамерени и отзивчиви са обитателите на СофтУни форума.
+If you still have a specific question, such as why a program doesn't run, that you've been stuck with for a few hours, **ask it in the forum** and you'll get an answer. You will be surprised how well-intentioned and responsive the users of the SoftUni’s Forum are.
 
-## Официална Facebook страница на книгата
-
-Книгата си има и **официална Facebook страница**, от която може да следите за новини около книгите от поредицата "Основи на програмирането", нови издания, събития и инициативи:
+## Official Facebook page of the book
+The current book also has an **official Facebook page** , from which you can keep track of news around the books from the series "Basics of Programming", new editions, events and initiatives:
 
 <p align="center"><strong><a href="https://facebook.com/IntroProgrammingBooks/">fb.com/IntroProgrammingBooks</a></strong></p>
 
-## Лиценз и разпространение
+## License and distribution 
 
-Книгата се разпространява **безплатно** в електронен формат под отворен лиценз **[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
+The book is distributed **for free** in electronic format under an open CC-BY-NC-SA license **[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
 
-Книгата се издава и разпространява **на хартия** от СофтУни и хартиено копие може да се закупи от рецепцията на СофтУни (вж. https://softuni.bg/contacts).
+The book is published and distributed **on paper** by SoftUni and a paper copy can be purchased from the softuni reception (see https://softuni.bg/contacts).
 
-**Сорс кодът** на книгата може да се намери в GitHub: https://github.com/SoftUni/Programming-Basics-Book-JS-BG.
+**The source code** of the book can be found on GitHub: https://github.com/SoftUni/Programming-Basics-Book-JS-BG.
+ 
+International Standard Book Number ISBN: **978-619-00-0702-9**.
 
-Международен стандартен номер на книга ISBN: **978-619-00-0702-9**.
-
-## Докладване на грешки
-
-Ако откриете **грешки**, неточности или дефекти в книгата, можете да ги докладвате в официалния тракер на проекта:
+## Bug reports
+If you find **bugs**, inaccuracies or defects in the book, you can report them in the official tracker of the project:
 
 <p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-JS-BG/issues">https://github.com/SoftUni/Programming-Basics-Book-JS-BG/issues</a></strong></p>
 
-Не обещаваме, че ще поправим всичко, което ни изпратите, но пък имаме желание **постоянно да подобряваме качеството** на настоящата книга, така че докладваните безспорни грешки и всички разумни предложения ще бъдат разгледани.
+We do not promise that we will correct everything you send us, but we are willing to constantly improve the quality of this book, so that the reported unmistakable errors and all reasonable suggestions will be addressed. 
 
-## Приятно четене!
+## Enjoy your reading!
 
-И не забравяйте **да пишете код** в големи количества, да **пробвате примерите** от всяка тема и най-вече да **решавате задачите от упражненията**. Само с четене няма да се научите да програмирате, така че решавайте задачи здраво!
+And be sure **to write code** in large quantities, **try the examples** from each topic and, above all, **solve the tasks from the exercises**. With just reading, you won't learn to program, so make sure you put time in solving exercises! 
