@@ -120,9 +120,9 @@ How **to build algorithmic thinking**?
 
 This book develops **a beginner's level initial level of algorithmic thinking**, but it is absolutely not enough to make a good programmer. To become proficient in the professions, you will need to add **logical thinking skills and improve tasks** outside this book, such as **working with data structures** (arrays, lists, matrices, hash tables, tree structures) and basic **algorithms** (search, sorting, tree structures, recursion, etc.). 
 
-**Умения за алгоритмично мислене** се развиват сериозно в началните курсове за софтуерни инженери в СофтУни (вж. [учебния план](https://softuni.bg/curriculum)), както и в специализираните курсове по [структури от данни](https://softuni.bg/opencourses/data-structures) и [алгоритми](https://softuni.bg/opencourses/algorithms).
+**Algorithmic thinking skills** are prominently developed in the beginner courses for software engeneering in SoftUni (see. [curriculum](https://softuni.bg/curriculum)), also in the speciialiced courses of [data structures](https://softuni.bg/opencourses/data-structures) and [algorithms](https://softuni.bg/opencourses/algorithms).
 
-Както може би се досещате, **езикът за програмиране няма значение** за развиването на алгоритмичното мислене. Да мислиш логически е универсално, дори не е свързано само с програмирането. Именно заради силно развитото логическото мислене се счита, че **програмистите са доста умни** и че прост човек не може да стане програмист.
+As you may guess, **the programing language does not matter** for the development of algorithmic thinking. To think logically is universal, even if it's not related only to programming. Precisely for the well developed logical thinking it is considered that **developers are quite smart** and that a simple-minded person could not be a developer.
 
 ### Умение #3 – фундаментални знания за професията (25%)
 
