@@ -148,30 +148,30 @@ We must also make it clear this time that **the programming language is irreleva
 
 Fundamental knowledge and skills for programming, software development, software engineering and computer science are learned during **[the overall software engeneer program in SofUni](https://softuni.bg/curriculum)**, as well as with a number of [electoral courses](https://softuni.bg/trainings/opencourses). Working with a variety of software libraries, programming interfaces (APIs), frameworks and software technologies and their interaction gradually build that knowledge and skills, so don't expect to get them from a single course, book, or project.
 
-За започване на работа като програмист обикновено са достатъчни само **начални познания в изброените по-горе области**, а задълбаването става на работното място според използваните технологии и инструменти за разработка в съответната фирма и екип.
+Only **initial knowledge in the areas listed above** is usually sufficient to start working as a programmer, and the deepening takes place in the workplace according to the technologies and development tools used in the respective company and team.
 
-### Умение #4 - езици за програмиране и софтуерни технологии (25%)
+### Skill #4 - programming languages and software technologies (25%) 
 
-**Езиците за програмиране и технологиите за софтуерна разработка** формират около 25% от минималните умения на програмиста. Те са най-обемни за научаване, но най-бързо се променят с времето. Ако погледнем **обявите за работа** от софтуерната индустрия, там често се споменават всякакви думички (като изброените по-долу), но всъщност в обявите мълчаливо **се подразбират първите три умения**: да кодиш, да мислиш алгоритмично и да владееш фундамента на компютърните науки и софтуерното инженерство.
+**Programming languages and software development technologies** form about 25% of the developer's minimum skills. They are the most voluminous to learn, but they change most quickly over time. If we look at **job advertisements** from the software industry, there are often all sorts of words mentioned (such as those listed below), but in fact the ads tacitly **imply the first three skills** : to code, to think algorithmically and to master the foundation of computer science and software engineering.
 
-За тези чисто технологични умения вече **езикът за програмиране има значение**.
-* **Обърнете внимание**: само за тези 25% от професията има значение езикът за програмиране!
-* **За останалите 75% от уменията няма значение езикът** и тези умения са устойчиви във времето и преносими между различните езици и технологии.
+For these purely technological skills , **programming language is already relevant**.
+* **Note**: only for these 25% of the profession does programming language matter!
+* **For the remaining 75% of skills, language does not matter** and these skills are time-resilient and portable between different languages and technologies.
 
-Ето и някои често използвани езици и технологии (software development stacks), които се търсят от софтуерните фирми (актуални към януари 2018 г.):
-* **JavaScript** (JS) + ООП + ФП + бази данни + MongoDB или MySQL + HTTP + уеб програмиране + HTML + CSS + DOM + jQuery + Node.js + Express + Angular или React
-* **C#** + ООП + ФП + класовете от .NET + база данни SQL Server + Entity Framework (EF) + ASP.NET MVC + HTTP + HTML + CSS + JS + DOM + jQuеry
-* **Java** + Java API classes + ООП + ФП + бази данни + MySQL + HTTP + уеб програмиране + HTML + CSS + JS + DOM + jQuery + JSP/Servlets + Spring MVC или Java EE / JSF
-* **PHP** + ООП + бази данни + MySQL + HTTP + уеб програмиране + HTML + CSS + JS + DOM + jQuery + Laravel / Symfony / друг MVC framework за PHP
-* **Python** + ООП + ФП + бази данни + MongoDB или MySQL + HTTP + уеб програмиране + HTML + CSS + JS + DOM + jQuery + Django
-* **C++** + ООП + STL + Boost + native development + бази данни + HTTP + други езици
-* **Swift** + MacOS + iOS + Cocoa + Cocoa Touch + XCode + HTTP + REST + други езици
+Here are some commonly used software development stacks sought by software companies (up-to-date as of January 2018):
+* **JavaScript** (JS) + CMO + PH + databases + MongoDB or MySQL + HTTP + web programming + HTML + CSS + DOM + jQuery + Node.js + Express + Angular or React
+* **C#** + CMO + P + classes from .NET + DATABASE SQL Server + Entity Framework (EF) + ASP.NET MVC + HTTP + HTML + CSS + JS + DOM + jQuéry 
+* **Java** + Java API classes + CMO + AP + databases + MySQL + HTTP + web programming + HTML + CSS + JS + DOM + jQuery + JSP/Servlets + Spring MVC or Java EE / JSF
+* **PHP** + CMO + databases + MySQL + HTTP + web programming + HTML + CSS + JS + DOM + jQuery + Laravel / Symfony / other MVC framework for PHP 
+* **Python** + CMO + PH + databases + MongoDB or MySQL + HTTP + web programming + HTML + CSS + JS + DOM + jQuery + Django
+* **C++** + CMO + STL + Boost + native development + databases + HTTP + other languages 
+* **Swift** + MacOS + iOS + Cocoa + Cocoa Touch + XCode + HTTP + REST + other languages
 
-Ако изброените по-горе думички ви изглеждат страшни и абсолютно непонятни, значи сте съвсем в началото на кариерата си и имате **да учите още години** докато достигнете професията "**софтуерен инженер**". Не се притеснявайте, всеки програмист преминава през един или няколко технологични стека и се налага да изучи **съвкупност от взаимосвързани технологии**, но в основата на всичко това стои **умението да пишеш програмна логика (да кодиш)**, което се развива в тази книга, и умението **да мислиш алгоритмично** (да решаваш задачи по програмиране). Без тях не може!
+If the words listed above seem scary and absolutely incomprehensible to you, then you are quite at the beginning of your career and have **more years to learn** until you reach the profession of **software engineer**. Don't worry, every programmer goes through one or more technological stacks and has to study a **set of interconnected technologies**, but at the heart of it all is the **ability to write programming logic (coding)** that develops in this book, and the **ability to think algorithmically** (to solve programming tasks). You can not do without them!
 
-### Езикът за програмиране няма значение!
+### Programming language doesn't matter!
 
-Както вече стана ясно, **разликата между езиците за програмиране** и по-точно между уменията на програмистите на различните езици и технологии, е в около **10-20% от уменията**.
+As already made clear, **the difference between programming languages**, and more precisely between the skills of programmers in different languages and technologies, is in about **10-20% of skills**.
 * Всички програмисти имат около **80-90% еднакви умения**, които не зависят от езика! Това са уменията да програмираш и да разработваш софтуер, които са много подобни в различните езици за програмиране и технологии за разработка.
 * Колкото повече езици и технологии владеете, толкова по-бързо ще учите нови и толкова по-малко ще усещате разлика между тях.
 
