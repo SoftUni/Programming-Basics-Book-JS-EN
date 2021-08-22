@@ -124,29 +124,29 @@ This book develops **a beginner's level initial level of algorithmic thinking**,
 
 As you may guess, **the programing language does not matter** for the development of algorithmic thinking. To think logically is universal, even if it's not related only to programming. Precisely for the well developed logical thinking it is considered that **developers are quite smart** and that a simple-minded person could not be a developer.
 
-### Умение #3 – фундаментални знания за професията (25%)
+### Skill #3 – fundamental knowledge of the profession (25%) 
 
-**Фундаменталните знания и умения** за програмирането, разработката на софтуер, софтуерното инженерство и компютърните науки формират около 25% от минималните умения на програмиста за започване на работа. Ето по-важните от тези знания и умения:
-* **базови математически концепции**, свързани с програмирането: координатни системи, вектори и матрици, дискретни и недискретни математически функции, крайни автомати и state machines, понятия от комбинаториката и статистика, сложност на алгоритъм, математическо моделиране и други
-* **умения да програмираш** - писане на код, работа с данни, ползване на условни конструкции и цикли, работа с масиви, списъци и асоциативни масиви, стрингове и текстообработка, работа с потоци и файлове, ползване на програмни интерфейси (APIs), работа с дебъгер и други
-* **структури от данни и алгоритми** - списъци, дървета, хеш-таблици, графи, търсене, сортиране, рекурсия, обхождане на дървовидни структури и други
-* **обектно-ориентирано програмиране** (ООП) – работа с класове, обекти, наследяване, полиморфизъм, абстракция, интерфейси, капсулация на данни, управление на изключения, шаблони за дизайн
-* **функционално програмиране** (ФП) - работа с ламбда функции, функции от по-висок ред, функции, които връщат като резултат функция, затваряне на състояние във функция (closure) и други
-* **бази данни** - релационни и нерелационни бази данни, моделиране на бази данни (таблици и връзки между тях), език за заявки SQL, технологии за обектно-релационен достъп до данни (ORM), транзакционност и управление на транзакции
-* **мрежово програмиране** - мрежови протоколи, мрежова комуникация, TCP/IP, понятия, инструменти и технологии от компютърните мрежи
-* взаимодействие **клиент-сървър**, комуникация между системи, back-end технологии, front-end технологии, MVC архитектури
-* **технологии за сървърнa (back-end) разработка** - архитектура на уеб сървър, HTTP протокол, MVC архитектура, REST архитектура, frameworks за уеб разработка, templating engines
-* **уеб front-end технологии (клиентска разработка)** - HTML, CSS, JS, HTTP, DOM, AJAX, комуникация с back-end, извикване на REST API, front-end frameworks, базови дизайн и UX (user experience) концепции
-* **мобилни технологии** - мобилни приложения, Android и iOS разработка, мобилен потребителски интерфейс (UI), извикване на сървърна логика
-* **вградени системи** - микроконтролери, управление на цифров и аналогов вход и изход, достъп до сензори, управление на периферия
-* **операционни системи** - работа с операционни системи (Linux, Windows и други), инсталация, конфигурация и базова системна администрация, работа с процеси, памет, файлова система, потребители, многозадачност, виртуализация и контейнери
-* **паралелно програмиране и асинхронност** - управление на нишки, асинхронни задачи, promises, общи ресурси и синхронизация на достъпа
-* **софтуерно инженерство** - сорс контрол системи, управление на разработката, планиране и управление на задачи, методологии за софтуерна разработка, софтуерни изисквания и прототипи, софтуерен дизайн, софтуерни архитектури, софтуерна документация
-* **софтуерно тестване** - компонентно тестване (unit testing), test-driven development, QA инженерство, докладване на грешки и тракери за грешки, автоматизация на тестването, билд процеси и непрекъсната интеграция
+**Fundamental knowledge and skills** for programming, software development, software engineering and computer science form about 25% of the developer's minimum start-up skills. Here are the most important of these knowledge and skills: 
+* **basic mathematical concepts** related to programming: coordinate systems, vectors and matrices, discrete and indiscreet mathematical functions, end machines and state machines, concepts of combination and statistics, algorithm complexity, mathematical modeling and others. 
+* **skills to program** - code writing, data work, use of conditional structures and loops, work with arrays, lists and associative arrays, strings and word processing, working with streams and files, using program interfaces (APIs), working with a debugger and others.
+* **data structures and algorithms** - lists, trees, hash tables, columns, search, sorting, recursive, tree crawling, etc.
+* **object-oriented programming** (OOP) – working with classes, objects, inheritance, polymorphism, abstraction, interfaces, data encapsulation, exception management, design templates.
+* **functional programming** (PH) - working with lambda functions, high ordered functions, functions that return a function as a result, closing a state in a function (closure) and more.
+* **databases** - relational and non-relational databases, database modeling (tables and links between them), SQL query language, object-relational data access (ORM) technologies, transactionality and transaction management.
+* **network programming** - network protocols, network communication, TCP/IP, concepts, tools and technologies from computer networks.
+* **client-server** interaction, communication between systems, back-end technologies, front-end technologies, MVC architectures.
+* **back-end development technologies** - web server architecture, HTTP protocol, MVC architecture, REST architecture, web development frameworks, templating engines.
+* **web front-end technologies (client development)** - HTML, CSS, JS, HTTP, DOM, AJAX, back-end communication, REST API call, front-end frameworks, basic design and UX (user experience) concepts.
+* **mobile technologies** - mobile applications, Android and iOS development, mobile user interface (UI), server logic call.
+* **built-in systems** - microcontrollers, digital and analog input and output control, sensor access, peripheral control.
+* **operating systems** - work with operating systems (Linux, Windows, etc.), installation, configuration and basic system administration, process handling, memory, file system, users, multitasking, virtualization and containers.
+* **parallel programming and asynchronousness** - thread management, asynchronous tasks, promises, common resources and access synchronization.
+* **software engineering** - source control systems, development management, task planning and management, software development methodologies, software requirements and prototypes, software design, software architectures, software documentation.
+* **software testing** - unit testing, test-driven development, QA engineering, error reporting and error trackers, test automation, building processes and continuous integration.
 
-Трябва да поясним и този път, че **езикът за програмиране няма значение** за усвояването на всички тези умения. Те се натрупват бавно, в течение на много години практика в професията. Някои знания са фундаментални и могат да се усвояват теоретично, но за пълното им разбиране и осъзнаването им в дълбочина, са необходими години практика.
+We must also make it clear this time that **the programming language is irrelevant** to the uptake of all these skills. They accumulate slowly, over the course of many years of practice in the profession. Some knowledge is fundamental and can be learned theoretically, but it takes years of practice to fully understand them and realize them in depth.
 
-Фундаментални знания и умения за програмирането, разработката на софтуер, софтуерното инженерство и компютърните науки се учат по време на **[цялостната програма за софтуерни инженери в СофтУни](https://softuni.bg/curriculum)**, както и с редица [изборни курсове](https://softuni.bg/trainings/opencourses). Работата с разнообразни софтуерни библиотеки, програмни интерфейси (APIs), технологични рамки (frameworks) и софтуерни технологии и тяхното взаимодействие, постепенно изграждат тези знания и умения, така че не очаквайте да ги добиете от единичен курс, книга или проект.
+Fundamental knowledge and skills for programming, software development, software engineering and computer science are learned during **[the overall software engeneer program in SofUni](https://softuni.bg/curriculum)**, as well as with a number of [electoral courses](https://softuni.bg/trainings/opencourses). Working with a variety of software libraries, programming interfaces (APIs), frameworks and software technologies and their interaction gradually build that knowledge and skills, so don't expect to get them from a single course, book, or project.
 
 За започване на работа като програмист обикновено са достатъчни само **начални познания в изброените по-горе области**, а задълбаването става на работното място според използваните технологии и инструменти за разработка в съответната фирма и екип.
 
