@@ -199,33 +199,32 @@ The main engine and project manager for the creation of the current **free progr
 
 It all starts with the mass **free programming basics courses**, held across the country since 2014, when the SoftUni initiative was launched. In the beginning, these courses had a wider reach and included more theory, but in 2016 Svetlin Nakov, PhD completely revised them, renovated, simplified and **directed them to be more practical**. This is how the **learning content core of this book was created**.
 
-Безплатните обучения на СофтУни за старт в програмирането са може би най-мащабните, провеждани някога в България. До 2018 г. курсът на СофтУни по основи на програмирането **се провежда над 170 пъти в близо 40 български града** присъствено и многократно онлайн, с над 60 000 участника. Съвсем естествено възниква и нуждата да се напише **учебник** за десетките хиляди участници в курсовете на СофтУни по програмиране за начинаещи. На принципа на свободния софтуер и свободното знание, Светлин Наков повежда **екип от доброволци** и задвижва този open-source проект, първоначално за създаване на книга по основи на програмирането с езика C#, а по-късно и с други езици за програмиране.
+SoftUni's free programming start-up trainings are probably the largest ever conducted in Bulgaria. By 2018, SoftUni's basic programming course **is held over 170 times in nearly 40 Bulgarian cities** in person and repeatedly online, with over 60,000 participants. Quite naturally, the need to write a **textbook** for the tens of thousands of participants in SoftUni programming courses for beginners also arises. On the principle of free software and free knowledge, Svetlin Nakov led a **team of volunteers** and started this open-source project, initially to create a book based on programming with the C# language and later with other programming languages.
 
-Проектът е част от усилията на **[Фондация "Софтуерен университет"](http://softuni.foundation)** да създава и разпространява отворено учебно съдържание за обучение на софтуерни инженери и ИТ специалисти.
+The project is part of the efforts of **["Software University" foundation](http://softuni.foundation)** to create and distribute open learning content for training software engineers and IT professionals.
 
-### Авторски колектив
+### Author group
 
-Настоящата книга “Основи на програмирането с JavaScript” е разработена от широк авторски колектив от **доброволци**, които отделиха от своето време, за да ви подарят тези систематизирани знания и насоки при старта в програмирането. Списък на всички автори и редактори (по азбучен ред):
+This book, "JavaScript Basics", was developed by a broad author's team of **volunteers** who took their time to give you these systematic knowledge and guidance at the start of programming. List of all authors and editors (alphabetically):
 
-> **Бончо Вълков, Венцислав Петров, Димитър Далев, Елена Роглева, Жулиета Атанасова, Захария Пехливанова, Здравко Костадинов, Ивелин Арнаудов, Кристиан Мариянов, Мартин Чаов, Николай Банкин, Николай Костов, Павел Колев, Петър Иванов, Светлин Наков, Стилян Кангалов, Християн Христов, Христо Минков**
+> **Boncho Vulkov, Ventsislav Petrov, Dimitar Dalev, Elena Rogleva, Julieta Atanasova, Zacharia Pehlyavanova, Zdravko Kostadinov, Ivelin Arnaudov, Kristian Marianov, Martin Chaov, Nikolay Bankin, Nikolay Kostov, Pavel Kolev, Petar Ivanov, Svetlin Nakov, Stylyan Kangalov, Christian Hristov, Hristo Minkov**
 
-Книгата е базирана на нейния първоначален C# вариант ([Въведение в програмирането със C#](https://csharp-book.softuni.bg)), който е разработен от широк авторски колектив и който има принос и към настоящата книга:
+The book is based on its original C# version ([Introduction to programming with C#](https://csharp-book.softuni.bg)), which was developed by a broad author group and which also contributes to this book: 
 
-> Aлександър Кръстев, Александър Лазаров, Ангел Димитриев, Васко Викторов, Венцислав Петров, Даниел Цветков, Димитър Татарски, Димо Димов, Диян Тончев, Елена Роглева, Живко Недялков, Жулиета Атанасова, Захария Пехливанова, Ивелин Кирилов, Искра Николова, Калин Примов, Кристиян Памидов, Любослав Любенов, Николай Банкин, Николай Димов, Павлин Петков, Петър Иванов, Росица Ненова, Руслан Филипов, Светлин Наков, Стефка Василева, Теодор Куртев, Тоньо Желев, Християн Христов, Христо Христов, Цветан Илиев, Юлиан Линев, Яница Вълева
+> Alexander Krastev, Alexander Lazarov, Angel Dimitriev, Vasco Viktorov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Zhivko Nedyalkov, Juliet Atanasova, Zacharias Pehlivanova, Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristian Pamidov, Lyuboslav Lyubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stephka Vasileva, Teodor Christian Hristov, Hristo Hristov, Tsvetan Iliev, Julian Lynev, Yannitsa Valeva  
 
-Дизайн на корица: Марина Шидерова.
+Cover design: Marina Schiderova.
 
-## Официален сайт на книгата
+## Official website of the book 
 
-Настоящата книга по **основи на програмирането с JavaScript** за начинаещи е достъпна за свободно ползване в Интернет от адрес:
-
+The current book on **The basics of JavaScript programming for beginners** is available for free use on the Internet from: 
 <p align="center"><strong><a href="https://js-book.softuni.bg">https://js-book.softuni.bg</a></strong></p>
 
-Това е **официалният сайт на книгата** и там ще бъде качвана нейната последна версия. Книгата е преведена огледално и на други езици за програмиране, посочени на нейния сайт.
+This is **the official website of the book** and there will be uploaded its latest version. The book has been similarly translated to other programming languages listed on its website. 
 
-## Форум за вашите въпроси
+## Forum for your questions 
 
-Задавайте вашите **въпроси към настоящата книга** по основи на програмирането във **форума на СофтУни:**
+Ask your **questions to this book** on Programming Basics in the **SoftUni’s forum**:
 
 <p align="center"><strong><a href="https://softuni.bg/forum">https://softuni.bg/forum</a></strong></p>
 
