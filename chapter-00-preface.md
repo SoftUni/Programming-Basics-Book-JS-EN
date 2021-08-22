@@ -99,26 +99,26 @@ There are **4 main skillgroups** that all programmers must possess. Most of thes
 ### Skill # 1 - Coding (20%)
 
 Learning how **to write code** forms about 20% of the minimum skills required for a programmer to start work in a software company. The ability to code includes the following components:
-* работа с променливи, проверки, цикли
-* ползване на функции, методи, класове и обекти
-* работа с данни: масиви, списъци, хеш-таблици, стрингове
+* work with variables, conditionals, loops
+* functions, methods, classes and objects 
+* work with data: arrays, hash tables, strings
 
-Умението да кодиш **може да се усвои за няколко месеца** усилено учене и здраво решаване на практически задачи с писане на код всеки ден. Настоящата книга покрива само първата точка от умението да кодиш: **работа с променливи, проверки и цикли**. Останалото остава да се научи в последващи обучения, курсове и книги.
+The ability to code **can be mastered in a few months** of hard learning and solving of practical tasks by writing code every day. This book covers only the first point of the coding skill: **working with variables, conditionals and loops**. The rest remains to be learned in subsequent trainings, courses and books.
 
-Книгата (и курсовете, базирани на нея) дават само началото от едно дълго и сериозно учене, по пътя на професионалното програмиране. Ако не усвоите до съвършенство учебния материал от настоящата книга, няма как да станете програмист. Ще ви липсват фундаментални основи и ще ви става все по-трудно напред. Затова **отделете достатъчно внимание на основите на програмирането**: решавайте здраво задачи и пишете много код месеци наред, докато се научите **да решавате с лекота всички задачи от тази книга**. Тогава продължете напред.
+The book (and the courses based on it) give only the beginning of a long-term and serious study, on the path of professional programming. If you do not master the material from this book to perfection, you will not be able to become a programmer. You will lack programming fundamentals and it will become increasingly difficult for you to move forward. Therefore **pay enough attention to the basics of programming**: solve problems well and write a lot of code for months until you learn **to easily solve all the problems in this book**. Then move on.
 
-Специално обръщаме внимание, че **езикът за програмиране няма съществено значение** за умението да кодиш. Или можеш да кодиш или не. Ако можеш да кодиш на **JavaScript**, лесно ще се научиш да кодиш и на Java, и на C++, и на друг език. Затова **уменията да кодираш** се изучават доста сериозно в началните курсове за софтуерни инженери в СофтУни (вж. [учебния план](https://softuni.bg/curriculum)) и с тях стартира всяка книга за програмиране за напълно начинаещи, включително нашата.
+We pay special attention to the fact that **the programming language is not essential** for the ability to code. You can either code or not. If you can code in **JavaScript** , you can easily learn to code in Java, C ++, and another language. That's why **coding skills** are studied quite seriously in the initial courses for software engineers at SoftUni (see [curriculim](https://softuni.bg/curriculum) and with them starts every programming book for complete beginners, including ours.
 
-### Умение #2 – алгоритмично мислене (30%)
+### Skill # 2 - algorithmic thinking (30%) 
 
-Алгоритмичното (логическо, инженерно, математическо, абстрактно) мислене формира около 30% от минималните умения на програмиста за старт в професията. **Алгоритмичното мислене** е умението да разбивате една задача на логическа последователност от стъпки (алгоритъм) и да намирате решение за всяка отделна стъпка, след което да сглобявате стъпките в работещо решение на първоначалната задача. Това е най-важното умение на програмиста.
+Algorithmic (logical, engineering, mathematical, abstract) thinking forms about 30% of the minimum skills for a start in the profession. **Algorithmic thinking** is the ability to break a task into a logical sequence of steps (algorithm), and to find a solution for each step, then to put them together in a working solution for the initial task. This is the most important skill that the programmer has.
 
-Как **да си изградим алгоритмично мислене**?
-* Алгоритмичното мислене се развива се чрез решаване на **много (1000+) задачи** по програмиране, възможно най-разнообразни. Това е рецептата: решаване на хиляди практически задачи, измисляне на алгоритъм за тях и имплементиране на алгоритъма, заедно с дебъгване на грешките по пътя.
-* Помагат физика, математика и/или подобни науки, но не са задължителни! Хората с **инженерни и технически наклонности** обикновено по-лесно се научават да мислят логически, защото имат вече изградени умения за решаване на проблеми, макар и не алгоритмични.
-* Способността **да решавате задачи по програмиране** (за която е нужно алгоритмично мислене) е изключително важна за програмиста. Много фирми изпитват единствено това умение при интервюта за работа.
+How **to build algorithmic thinking**?
+* Algorithms for thinking are developed by reviewing **many (1000+) programming tasks**, using the most diverse of them. This is the recipe: reducing thousands of practical tasks, inventing an algorithm for them and executing the algorithm, along with debugging errors along the way.
+* Physics, mathematics and / or similar sciences help, but they are not restraining! People with **engineering and technical inclinations** usually learn to think logically easily, because they already have the skills for solving problems, although not algorithmic. 
+* The ability **to solve programming tasks** (which requires algorithmic thinking) is extremely important for programmers. Many companies require only this skill in job interviews.
 
-Настоящата книга развива **начално ниво на алгоритмично мислене**, но съвсем не е достатъчна, за да ви направи добър програмист. За да станете кадърни в професията, ще трябва да добавите **умения за логическо мислене и решаване на задачи** отвъд обхвата на тази книга, например работа със **структури от данни** (масиви, списъци, матрици, хеш-таблици, дървовидни структури) и базови **алгоритми** (търсене, сортиране, обхождане на дървовидни структури, рекурсия и други).
+This book develops **a beginner's level initial level of algorithmic thinking**, but it is absolutely not enough to make a good programmer. To become proficient in the professions, you will need to add **logical thinking skills and improve tasks** outside this book, such as **working with data structures** (arrays, lists, matrices, hash tables, tree structures) and basic **algorithms** (search, sorting, tree structures, recursion, etc.). 
 
 **Умения за алгоритмично мислене** се развиват сериозно в началните курсове за софтуерни инженери в СофтУни (вж. [учебния план](https://softuni.bg/curriculum)), както и в специализираните курсове по [структури от данни](https://softuni.bg/opencourses/data-structures) и [алгоритми](https://softuni.bg/opencourses/algorithms).
 
