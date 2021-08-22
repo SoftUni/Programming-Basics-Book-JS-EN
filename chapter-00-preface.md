@@ -53,7 +53,7 @@ material. The purpose of solving all tasks from all the topics covered is to giv
 </tr></table> 
 
 ## About Software University(SoftUni)
-[The Software University (SoftUni)](https://softuni.bg) is **the largest training center for software engineers in Bulgaria**. Tens of thousands of students pass through it every year. SoftUni opened in 2014 as a continuation of **[Phd. Svetlin Nakov's](http://nakov.com)** efforts to build **framed software specialists** through real, modern and quality education, which combines fundamental knowledge with modern software technologies and many practices.
+[The Software University (SoftUni)](https://softuni.bg) is **the largest training center for software engineers in Bulgaria**. Tens of thousands of students pass through it every year. SoftUni opened in 2014 as a continuation of **[Svetlin Nakov PhD's](http://nakov.com)** efforts to build **framed software specialists** through real, modern and quality education, which combines fundamental knowledge with modern software technologies and many practices.
 
 The Software University provides **quality education**, **occupation**, **work** and **the opportunity to acquire a bachelor's degree** for programmers, software engineers and IT professionals. SoftUni builds an extremely successful lasting **relationship between education and industry**, collaborating with hundreds of software companies, **providing work and internships** to its students, providing quality specialists for the software industry and directly meeting the needs of employers through the learning process.
 
@@ -172,31 +172,32 @@ If the words listed above seem scary and absolutely incomprehensible to you, the
 ### Programming language doesn't matter!
 
 As already made clear, **the difference between programming languages**, and more precisely between the skills of programmers in different languages and technologies, is in about **10-20% of skills**.
-* Всички програмисти имат около **80-90% еднакви умения**, които не зависят от езика! Това са уменията да програмираш и да разработваш софтуер, които са много подобни в различните езици за програмиране и технологии за разработка.
-* Колкото повече езици и технологии владеете, толкова по-бързо ще учите нови и толкова по-малко ще усещате разлика между тях.
+* All programmers have about **80-90% the same skills**, which do not depend on language! These are the skills to program and develop software that are very similar in different programming languages and development technologies.
+* The more languages and technologies you speak, the faster you will learn new languages and the less you will feel a difference between them.
 
-Наистина, **езикът за програмиране почти няма съществено значение**, просто трябва да се научите да програмирате, а това започва с **коденето** (настоящата книга), продължава в по-сложните **концепции от програмирането** (като структури от данни, алгоритми, ООП и ФП) и включва усвояването на **фундаментални знания и умения за разработката на софтуер, софтуерното инженерство и компютърните науки**.
+Indeed, **the programming language is almost irrelevant**, you just need to learn to program, and this starts with **coding** (this book), continues in the more complex **concepts of programming** (such as data structures, algorithms, OOP and PH) and involves the uptake of **fundamental knowledge and skills for software development, software engineering and computer science**.
 
-Едва накрая, когато захванете конкретни технологии в даден софтуерен проект, ще ви трябват **конкретен език за програмиране**, познания за конкретни програмни библиотеки (APIs), работни рамки (frameworks) и софтуерни технологии (front-end UI технологии, back-end технологии, ORM технологии и други). Спокойно, ще ги научите, всички програмисти ги научават, но първо се научават на фундамента: **да програмират и то добре**.
+Only finally, when you pinch specific technologies in a software project, will you need a **specific programming language**, knowledge of specific program libraries (APIs), frameworks, and software technologies (front-end UI technologies, back-end technologies, ORM technologies, etc.). Relax, you will learn them, all programmers learn them, but first they learn the foundation: **to program and to do it well**.
 
-Настоящата книга използва езика **JavaScript**, но той не е съществен и може да се замени с Java, C#, Python, PHP, C++, Ruby, Swift, Go, Kotlin или друг език. За овладяване на **професията "софтуерен разработчик"** е необходимо да се научите да **кодите** (20%), да се научите да **мислите алгоритмично** и да **решавате проблеми** (30%), да имате **фундаментални знания по програмиране и компютърни науки** (25%) и да владеете **конкретен език за програмиране и технологиите около него** (25%). Имайте търпение, за година-две всичко това може да се овладее на добро начално ниво, стига да сте сериозни и усърдни.
+This book uses the **JavaScript** language, but it is not essential and can be replaced by Java, C#, Python, PHP, C++, Ruby, Swift, Go, Kotlin or any other language. To master **the profession of "software developer"** it is necessary to learn **to code** (20%), learn to **think algorithmically** and **solve problems** (30%), have **fundamental knowledge of programming and computer science** (25%) and know a **specific programming language and the technologies around it** (25%). Be patient, for a year or two all this can be mastered at a good starting level, as long as you are serious and diligent.
 
-## Книгата в помощ на учителите
+## The Book which helps teachers 
 
-Ако сте **учител по програмиране**, информатика или информационни технологии или искате **да преподавате програмиране**, тази книга ви дава нещо повече от добре структуриран учебен материал с много примери и задачи. **Безплатно** към книгата получаватe **качествено учебно съдържание** за преподаване в училище, на **български език**, съобразено с училищните изисквания:
+If you are a **teacher of programming**, informatics or information technology or want **to teach programming**, this book gives you more
+than a well-structured learning material with many examples and tasks. **Free of charge** with the book you receive **quality educational content** for teaching in school, in **Bulgarian language**, in accordance with the school requirements:
 
-* **Учебни презентации** (PowerPoint слайдове) за всяка една учебна тема, съобразени с 45-минутните часове в училищата – безплатно.
-* Добре разработени **задачи за упражнения** в клас и за домашно, с детайлно описани условия и примерен вход и изход – безплатно.
-* **Система за автоматизирана проверка на задачите** и домашните (Online Judge System), която да се използва от учениците, също безплатно.
-* **Видео-уроци** с методически указания от **безплатния курс за учители по програмиране**, който се провежда регулярно от СофтУни фондацията.
+* **Educational presentations** (PowerPoint slides) for each learning topic tailored to 45-minute hours in schools – free of charge.
+* Well-designed **tasks** for class and homework, with detailed conditions and sample entrance and exit – free of charge.
+* **An automated task and homework verification system** (Online Judge System) to be used by students, also free of charge.
+* **Video lessons** with methodological instructions from the free course for programming teachers, which is held regularly by the SoftUni Foundation.
  
-Всички тези **безплатни преподавателски ресурси** можете да намерите на сайта на СофтУни фондацията, заедно с учебно съдържание за цяла поредица от курсове по програмиране и софтуерни технологии. Изтеглете ги свободно от тук: http://softuni.foundation/projects/applied-software-developer-profession/.
+All these **free teaching resources** can be found on the SoftUni Foundation website, along with learning content for a whole series of programming courses and software technologies. Download them freely from here: http://softuni.foundation/projects/applied-software-developer-profession/.
 
-## Историята на тази книга
+## The history behind this book
 
-Главен двигател и ръководител на проекта за създаване на настоящата **свободна книга по програмиране за начинаещи** с отворен код е **[д-р Светлин Наков](http://www.nakov.com)**. Той е основен идеолог и създател на учебното съдържание от **[курса "Основи на програмирането" в СофтУни](https://softuni.bg/courses/programming-basics)**, който е използван за основа на книгата.
+The main engine and project manager for the creation of the current free programming book for open source beginners is Dr. Svetlin Nakov. He is a major ideologue and creator of the learning content from the "Basics of Programming" course at SoftUni, which was used as the basis of the book.  Главен двигател и ръководител на проекта за създаване на настоящата **свободна книга по програмиране за начинаещи** с отворен код е **[д-р Светлин Наков](http://www.nakov.com)**. Той е основен идеолог и създател на учебното съдържание от **[курса "Основи на програмирането" в СофтУни](https://softuni.bg/courses/programming-basics)**, който е използван за основа на книгата.
 
-Всичко започва с масовите **безплатни курсове по основи на програмирането**, провеждани в цялата страна от 2014 г. насам, когато стартира инициативата "СофтУни". В началото тези курсове имат по-голям обхват и включват повече теория, но през 2016 г. д-р Светлин Наков изцяло ги преработва, обновява, опростява и **насочва много силно към практиката**. Така е създадено ядрото на **учебното съдържание от тази книга**.
+It all starts with the mass **free programming basics courses**, held across the country since 2014, when the SoftUni initiative was launched. In the beginning, these courses have a greater scope and include more theory, but in 2016 Dr. Svetlin Nakov completely revised them, renovated, simplified and directed very strongly to the practice. This is how the learning content core of this book was created. Всичко започва с масовите **безплатни курсове по основи на програмирането**, провеждани в цялата страна от 2014 г. насам, когато стартира инициативата "СофтУни". В началото тези курсове имат по-голям обхват и включват повече теория, но през 2016 г. д-р Светлин Наков изцяло ги преработва, обновява, опростява и **насочва много силно към практиката**. Така е създадено ядрото на **учебното съдържание от тази книга**.
 
 Безплатните обучения на СофтУни за старт в програмирането са може би най-мащабните, провеждани някога в България. До 2018 г. курсът на СофтУни по основи на програмирането **се провежда над 170 пъти в близо 40 български града** присъствено и многократно онлайн, с над 60 000 участника. Съвсем естествено възниква и нуждата да се напише **учебник** за десетките хиляди участници в курсовете на СофтУни по програмиране за начинаещи. На принципа на свободния софтуер и свободното знание, Светлин Наков повежда **екип от доброволци** и задвижва този open-source проект, първоначално за създаване на книга по основи на програмирането с езика C#, а по-късно и с други езици за програмиране.
 
