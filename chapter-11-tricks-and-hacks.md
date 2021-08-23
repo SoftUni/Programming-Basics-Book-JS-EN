@@ -299,7 +299,7 @@ To make it easier we can use a code snippet for an **`if` construction**: **`if`
 
 For a **`for` loop** we need a couple things:
 
-* Initializing block, in which the counter variable is declared (**`let i`**) and its itnitial value is set.
+* Initializing block, in which the counter variable is declared (**`let i`**) and its initial value is set.
 * Condition for repetition (**`i <= 10`**).
 * Updating statement (**`i++`**).
 * Body of the loop.
