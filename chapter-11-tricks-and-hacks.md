@@ -224,7 +224,7 @@ console.log(Math.round(secondNumber));
 ```
 
 
- * **`Math.floor(…)`** - in case we want the rounding always to be ** down to the previous integer **. For example, if we have the number 5.99 and use ** `Math.floor (5.99)` **, we get the number ** 5 **:
+ * **`Math.floor(…)`** - in case we want the rounding always to be **down to the previous integer**. For example, if we have the number 5.99 and use ** `Math.floor (5.99)` **, we get the number **5**:
 
 ```javascript
 let numberToFloor = 5.99;
