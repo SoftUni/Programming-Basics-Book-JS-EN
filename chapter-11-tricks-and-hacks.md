@@ -176,8 +176,8 @@ Debugging plays an important role in the process of creating software, which is 
 
 * **Finding** the problems (bugs).
 * **Locating** the code, which causes the problems.
-* **Correcting ** the code, which causes the problems, so that the program works correctly.
-* **Testing **, to make sure that the program works correctly after the corrections we have made.
+* **Correcting** the code, which causes the problems, so that the program works correctly.
+* **Testing**, to make sure that the program works correctly after the corrections we have made.
 
 **Visual Studio Code**  gives us **a built-in debugger**,  thanks to which we can place **breakpoints**, at places we have chosen.  When it reaches a **breakpoint**,  the program **stops running** and allows **step-by-step running** of the remaining lines. Debugging allows us to **get in the details of the program** and see where exactly the errors occur and what is the reason for this.
 
