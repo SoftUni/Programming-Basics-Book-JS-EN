@@ -10,7 +10,7 @@ In the current chapter we are going to see some tricks, hacks and techniques, wh
 
 ## Code Formatting
 
-The right formatting of aur code will make it **easier to read and understand**, In case someone else needs to work with it.This is important, because in practice we will need to work in a team with other people and it is highly important to write our code in a way that our colleagues can **quickly understand ** it.
+The right formatting of aur code will make it **easier to read and understand**, In case someone else needs to work with it.This is important, because in practice we will need to work in a team with other people and it is highly important to write our code in a way that our colleagues can **quickly understand** it.
 
 There are some defined rules for correct formatting of the code, which are collected in one placeand are called **conventions**. The conventions are group of rules, gennerally accepted by the programmers using a given language, which are massively used. These conventions help building norms in given languages - what is the best way to write and what are the **good practices**. It is accepted that if a programmer follows them then his code is easy to read and understand.
 
