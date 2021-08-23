@@ -144,44 +144,44 @@ In this section we are going to show you how to **make your own code snippet**. 
 
 ![](assets/chapter-11-images/01.Code-snippet-02.png) 
 
-**We choose JavaScript** from the drop-down menu and a window with a name will open **javascript.json**. This extention **json** is a special format for saving data, which is imposed in the ways of data transfer and storage. Освен това, **json** форматът може да се ползва и в нашите програми, както ще разгледаме малко по - късно. Файлът изглежда така:
+**We choose JavaScript** from the drop-down menu and a window with a name will open **javascript.json**. This extention **json** is a special format for saving data, which is imposed in the ways of data transfer and storage. In addition, the **json** format can be used in our programs, as we will discuss later. The file looks like this:
 
 ![](assets/chapter-11-images/01.Code-snippet-03.png) 
 
-Примерът, който виждаме по подразбиране генерира код за писане по конзолата чрез ключовия префикс **log**. Този код е само примерен и всъщност този шаблон е вграден, но ако не беше, би изглеждал като примера.
+The example we see by default is generating code to write to the console using the **log** key prefix. This code is just an example, and this template is actually embedded, but if it wasn't, it would look like the example.
 
-В този пример виждате доста непознати неща, но няма страшно, по-нататък ще се запознаем и с тях. Сега се фокусираме върху частта **`"Print to console":`** и кода между **отварящата и затварящата къдрави скоби `{}`**. Това, което виждаме вътре в скобите представлява съдържанието на един шаблон. Всеки шаблон трябва да съдържа **`prefix`**, който представлява краткия текст, който след като натиснете [**Tab**] + [**Tab**] ще създава кода на шаблона във вашата програма.
+In this example you see a lot of unknown things, but do not worry, we will get familiar with them later. We now focus on the part **`"Print to console":`** and the code between **opening and closing curly braces `{}`**. What we see inside the parentheses is the content of a template. . Each template must contain **`prefix`**, which is the short text that after pressing [**Tab**] + [**Tab**]  will generate the template code in your program.
 
 Второто нещо, което трябва да има вашият шаблон е **`body`**, това е най-сложната част от шаблона. Това всъщност е **кодът, който ще се генерира**, като в него може да използваме **променливи**, които се създават с **`$1`**, като на мястото на единицата може да бъде поставен друг текст. В примера е използвана променлива: **`"console.log('$1');"`**.
 
-Може да използваме **Tabstops**, които просто **поставят курсора на определени места в кода** и между тях може да се навигира с табулация. Те се създават автоматично чрез създаване на променлива.  Може да използваме и **Placeholders**, те представляват вид **Tabstops**, но могат да **съдържат и някаква стойност**, например: **`${1:myVal}`**.
+We can use **Tabstops**, which simply **place the cursor in certain places in the code** and between them can be navigated with tabs. They are created automatically by creating a variable. We can also use **Placeholders**, they are a type of **Tabstops**, but they can also **contain some value**, for example: **`${1:myVal}`**.
 
-Съществуват и по сложни конфигурации, но като за начало тези ще ни свършат отлична работа.
+There are also more complex configurations, but for begginig these will do an excellent job..
 
-Последната част от шаблона е **`description`**, което служи за добавяне на допълнително пояснение за това, което прави той. Сега нека да пробваме да направим собствен шаблон. Изтриваме дадения пример и въвеждаме следния код:
+The last part of the template is **`description`**, which serves to add additional explanation of what it does. Now let's try to make our own template. We delete the given example and enter the following code:
 
 ![](assets/chapter-11-images/01.Code-snippet-04.png) 
 
-Вече когато напишем **`json`** + [**Tab**] + [**Tab**] в отворен JavaScript файл във Visual Studio Code, **нашият нов snippet** се появява:
+Now when we type **`json`** + [**Tab**] + [**Tab**] in an open JavaScript file in Visual Studio Code, **our new snippet** appears:
 
 ![](assets/chapter-11-images/01.Code-snippet-05.png) 
 
-За тези от вас, които се интересуват повече от темата, доста от големите **frameworks** като **Angular, React и др.** имат собствени шаблони, които могат да се инсталират от прозореца за **разширения** (Extensions). Както самото име подсказва, **framework** представлява концептуална структура, която ни помага, като дава някои неща наготово, а също така и ни предпазва да не правим големи грешки, като налага някои ограничения. Основната идея е да дава завършено решение в дадена област, което да има възможност за надграждане на всички компоненти в тази област. Част от нещата, които можете да получите наготово са и именно тези шаблони.
+For those of you who are more interested in the topic, many of the big **frameworks** like **Angular, React ect.** have their own templates that can be installed from the  **Extensions** window.  As the name suggests, **framework** is a conceptual structure that helps us by giving us some things in advance, and also prevents us from making big mistakes by imposing certain restrictions. The main idea is to provide a complete solution in a given area,which has the ability to upgrade all components in this area. Some of the things you can get ready-made are these templates.
 
 ![](assets/chapter-11-images/01.Code-snippet-06.png) 
 
-## Техники за дебъгване на кода
+## Code Debugging Techniques
 
-Дебъгването играе важна роля в процеса на създаване на софтуер, която ни позволява **постъпково да проследим изпълнението** на нашата програма. С помощта на тази техника можем да **следим стойностите на локалните променливи**, тъй като те се променят по време на изпълнение на програмата, и да **отстраним** евентуални **грешки** (бъгове). Процесът на дебъгване включва:
+Debugging plays an important role in the process of creating software, which is to allow us to **follow the implementation of our program step by step**. With this technique we can **сfollow the values of the local variables**, because they are changing during the execution of the program, and to **remove** possible **errors** (bugs). The process of debugging includes:
 
-* **Забелязване** на проблемите (бъговете).
-* **Намиране** на кода, който причинява проблемите.
-* **Коригиране** на кода, причиняващ проблемите, така че програмата да работи правилно.
-* **Тестване**, за да се убедим, че програмата работи правилно след нанесените корекции.
+* **Finding** the problems (bugs).
+* **Locating** the code, which causes the problems.
+* **Correcting ** the code, which causes the problems, so that the program works correctly.
+* **Testing **, to make sure that the program works correctly after the corrections we have made.
 
-**Visual Studio Code** ни предоставя **вграден дебъгер** (debugger), чрез който можем да поставяме **точки на прекъсване** (или т.нар. breakpoints), на избрани от нас места. При среща на **стопер** (breakpoint), програмата **спира изпълнението** си и позволява **постъпково изпълнение** на останалите редове. Дебъгването ни дава възможност да **вникнем в детайлите на програмата** и да видим къде точно възникват грешките и каква е причината за това.
+**Visual Studio Code**  gives us **a built-in debugger**,  thanks to which we can place **breakpoints**, at places we have chosen.  When it reaches a **breakpoint**,  the program **stops running** and allows **step-by-step running** of the remaining lines. Debugging allows us to **get in the details of the program** and see where exactly the errors occur and what is the reason for this.
 
-За да демонстрираме работа с дебъгера, ще използваме следната програма:
+In order to demonstrate how to use the debugger, we will use the following program:
 
 ```javascript
 for (let i = 0; i < 100; i++) {
@@ -189,69 +189,69 @@ for (let i = 0; i < 100; i++) {
 }
 ```
 
-Ще сложим **стопер** (breakpoint) на метода **`console.log(…)`**. За целта трябва да преместим курсора на реда, който печата на конзолата, и да натиснем [**F9**]. Появява се **стопер** (червената точка, точно преди цифрата на ред 3), където програмата ще **спре** изпълнението си:
+We will place a **breakpoint** on the method **`console.log(…)`**. For this we will need to move our cursor to the line, which prints on the console, and press [**F9**]. A **breakpoint** (the red point, just before the number on line 3), where the program will  **stop** its execution:
 
 ![](assets/chapter-11-images/02.Debugger-01.png) 
 
-За да стартираме **програмата в режим на дебъгване**, избираме [**Debug**] -> [**Start Debugging**] или натискаме [**F5**]:
+In order to start  **the program in debug mode**, we choose [**Debug**] -> [**Start Debugging**] or press [**F5**]:
 
 ![](assets/chapter-11-images/02.Debugger-02.png) 
 
-След стартиране на програмата виждаме, че тя **спира изпълнението си** на ред 4, където сложихме стопера (breakpoint). Кодът на текущия ред се **оцветява с жълт цвят** и можем да го **изпълняваме постъпково**. За да преминем на **следващ ред** използваме клавиш [**F10**]. **Забелязваме, че кодът на текущия ред все още не е изпълнен**. **Изпълнява се, когато преминем на следващия ред**:
+After starting the program, we can see that it **stops executing** at line 4, where we placed our breakpoint.  The code in the current line **is colored in yellow** and we can **run it step by step**.In order to go to **the next line** e use the key [**F10**]. ** We can see that the code on the current line hasn't executed yet**. **It will execute when we go ahead to the next line**:
 
 ![](assets/chapter-11-images/02.Debugger-03.png) 
 
-От прозореца **Debug**, който се отваря от [**View -> Debug**] или чрез клавишна комбинация [**Ctrl + Shift + D**], можем да наблюдаваме **промените по локалните променливи**. 
+From the **Debug** window, which opens with  [**View -> Debug**] or with the keyboard shortcut [**Ctrl + Shift + D**], we can observe **the changes in the local variables**. 
 
 ![](assets/chapter-11-images/02.Debugger-04.png) 
 
-## Справочник с хитрости
+## A guide to tricks
 
-В тази секция ще покажем накратко **хитрости и техники** от програмирането с езика **JavaScript**, част от които споменавани вече в тази книга, които ще са ви много полезни, ако ходите на изпит по програмиране за начинаещи.
+In this section we will brefly show **tricks and techniques** of the programming with the **JavaScript** language, some of which are already mentioned in this book,which will be very useful, if you take a programming exam for beginners .
 
-### Закръгляне на числа
+### Rounding Numbers
+In case we need to round numbers we can use one of the following methods:
 
-При нужда от закръгляне можем да използваме един от следните методи:
-
- * **`Math.round(…)`** - приема 1 параметър - **числото, което искаме да закръглим**. Закръглянето се извършва по основното правило за закръгляване - ако десетичната част е по-малка 5, закръглението е надолу и обратно, ако е по-голяма от 5 - нагоре:
+ * **`Math.round(…)`** - accepts 1 parameter - **number, which we want to round**. Rounding is performed according to the basic rule of rounding - if the decimal part is less than 5, rounding is down and vice versa, if it is greater than 5 - up:
 
 ```javascript
 let number = 5.439;
 console.log(Math.round(number));
-// Tова ще отпечата на конзолата "5"
+// This will print on the console "5"
 let secondNumber = 5.539;
 console.log(Math.round(secondNumber));
-// Tова ще отпечата на конзолата "6"
+// This will print on the console "6"
 ```
 
 
- * **`Math.floor(…)`** - в случай, че искаме закръглянето да е винаги **надолу до предишното цяло число**. Например, ако имаме числото 5.99 и използваме **`Math.floor(5.99)`**, ще получим числото **5**:
+ * **`Math.floor(…)`** - in case we want the rounding always to be ** down to the previous integer **. For example, if we have the number 5.99 and use ** `Math.floor (5.99)` **, we get the number ** 5 **:
 
 ```javascript
 let numberToFloor = 5.99;
 console.log(Math.floor(numberToFloor));
-// Tова ще отпечата на конзолата 5
+// This will print on the console 5
 ```
 
- * **`Math.ceil(…)`** - в случай, че искаме закръглянето да е винаги **нагоре до следващото цяло число**. Например, ако имаме числото 5.13 и използваме **`Math.ceil(5.13)`**, ще получим числото **6**:
+ * **`Math.ceil(…)`** - in case we want the rounding always to be  **up to the previous integer**. For example, if we have the number 5.13 and use **`Math.ceil(5.13)`**, we
+ * will get the number **6**:
 
 ```javascript
 let numberToCeil = 5.13;
 console.log(Math.floor(numberToCeil));
-// Tова ще отпечата на конзолата 6
+// This will print on the console 6
 ```
 
- * **`Math.trunc(…)`** - в случай, че искаме да **премахнем дробната част**. Например, ако имаме числото 2.63 и използваме **`Math.trunc(2.63)`**, ще получим **2**:
+ * **`Math.trunc(…)`** - in case we want to **remove the fractional part**. For example, if we have the number 2.63 and use **`Math.trunc(2.63)`**, we will get the number **2**:
 
 ```javascript
 let numberToTrunc = 2.63;
 console.log(Math.floor(numberToTrunc));
-// Tова ще отпечата на конзолата 2
+// This will print on the console 2
 ```
 
-### Използвайте === вместо ==, както и !== вместо !=
+### Use === instead of ==, and !== insted of !=
 
-Операторите **`==`** и **`!=`** правят **автоматично преобразование** на сравняваната стойност или променлива, докато операторите  **`===`** и **`!==`** не прави такова преобразование и ако двете стойности не са от един и същ тип - резултатът е **`false`**. Те (**`==`** и **`!=`**) правят сравнение на **стойността и типа**, което е по-точно и дори по-бързо. Нека да видим следния пример, чрез който да изясним какво се има в предвид под **тип** на данните:
+The operators **`==`** and **`!=`** make **automatic conversion** of the compared value or variable, while the operators  **`===`** and **`!==`** does not make such a conversion and if both values are not of the same type - the result is **`false`**. They (**`==`** and **`!=`**) make a comparison of **value and type**, which is more accurate and even faster. Let's look at the following example to clarify what is meant by data **type**:
 
 ```javascript
 [10] === 10    // false
@@ -264,16 +264,16 @@ console.log(Math.floor(numberToTrunc));
  "" === false // false 
 ```
 
-Виждаме как числото **10** може да бъде записано в нашите програми по различни начини. Записано по този начин **`[10]`** представлява **масив** от едно число. Накратко масивите са **множество стойности** записани в дадена променлива. Например:
+We see how the number **10** can be written in our programs in different ways. Written in this way **`[10]`** is an **array** of one number. In short, arrays are **multiple values** stored to a variable. For example:
 
 ```javascript
 let array = [10, 20, 30, 40];
-// Това e променлива от тип масив
+// This is variable of type array
 ```
 
-В последствие ще научим повече относно масивите, но за сега нека само се замислим дали масивът **`[10]`** е нормално да е равен на числото **`10`**. Ще ви подскажем - **не е нормално**. Затова, ако не искаме неприятни грешки (бъгове) във нашите програми, най-добре да ползваме операторите **`===`** и **`!==`**.
+We will learn more about arrays later, but for now let's just think about whether the array **`[10]`** is normally equal to the number **`10`**. We will give you a hint - **it is not normal**. Therefore, if we do not want unpleasant errors (bugs) in our programs, it is best to use the operators  **`===`** and **`!==`**.
 
-Ситуацията с останалите оператори за сравнения е подобна и същата логика важи и там.
+The situation with other comparison operators is similar and the same logic applies there.
 
 ### How to Write a Conditional Statement?
 
@@ -299,10 +299,10 @@ To make it easier we can use a code snippet for an **`if` construction**: **`if`
 
 For a **`for` loop** we need a couple things:
 
-* Инициализационен блок, в който се декларира променливата-брояч (**`let i`**) и се задава нейна начална стойност.
-* Условие за повторение (**`i <= 10`**).
-* Обновяване на брояча (**`i++`**).
-* Тяло на цикъла.
+* Initializing block, in which the counter variable is declared (**`let i`**) and its itnitial value is set.
+* Condition for repetition (**`i <= 10`**).
+* Updating statement (**`i++`**).
+* Body of the loop.
 
 ```javascript
 for (let i = 0; i <= 10; i++;) {
@@ -312,9 +312,9 @@ for (let i = 0; i <= 10; i++;) {
 
 To be easier to write it, we can use the code snippet for the **`for` loop**: **`for`** + [**Tab**] + [**Tab**]**
 
-### Използване на т.нар. положителни (Truthy) и отрицателни (Falsy) стойности
+### Using the so-called positive (Truthy) and negative (Falsy) value
 
-Всичките **Truthy** стойности използвани в условната конструкция **`if`** ще дадат положителен резултат и съответно нашата програма ще продължи изпълнението си в тялото на условната конструкция (за целите на примера тук тялото на условната конструкция не е форматирано правилно).
+All **Truthy** values used in the conditional statement **`if`** will give positive result and accordingly or program will continue ist execution in the body of the conditional statement (for the purposes of the example here the body of the conditional statement is not formatted correctly).
 
 For some of them it seems logical to give a positive result, but for others not so much.
 
