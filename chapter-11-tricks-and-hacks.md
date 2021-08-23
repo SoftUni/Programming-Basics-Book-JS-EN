@@ -116,7 +116,7 @@ Shortcuts are **combinations**, that give us the ability to perform some actions
 |  [**CTRL + Y**] | The combination is opposite of [**CTRL + Z**] (the so-called Redo). |
 |  [**Shift + Alt + F**] | **Formats the code** according the default conventions. |
 |  [**CTRL + Backspace**] | **Deletes** the word to the left of the cursor. |
-|  [**CTRL + Del**] | **Deletes ** the word to the right of the cursor. |
+|  [**CTRL + Del**] | **Deletes** the word to the right of the cursor. |
 |  [**CTRL + K S**] | **Saves** all files in the project. |
 |  [**CTRL + S**] | **Saves** the current file. |
 
@@ -152,11 +152,11 @@ The example we see by default is generating code to write to the console using t
 
 In this example you see a lot of unknown things, but do not worry, we will get familiar with them later. We now focus on the part **`"Print to console":`** and the code between **opening and closing curly braces `{}`**. What we see inside the parentheses is the content of a template. . Each template must contain **`prefix`**, which is the short text that after pressing [**Tab**] + [**Tab**]  will generate the template code in your program.
 
-Второто нещо, което трябва да има вашият шаблон е **`body`**, това е най-сложната част от шаблона. Това всъщност е **кодът, който ще се генерира**, като в него може да използваме **променливи**, които се създават с **`$1`**, като на мястото на единицата може да бъде поставен друг текст. В примера е използвана променлива: **`"console.log('$1');"`**.
+The second thing your template should have is **`body`**,this is the most complex part of the template. This is actually the ** code that will be generated **, and in it we can use **variables**, which are created with **`$1`**,and in place of the unit can be placed other text. The example uses a variable: **`"console.log('$1');"`**.
 
 We can use **Tabstops**, which simply **place the cursor in certain places in the code** and between them can be navigated with tabs. They are created automatically by creating a variable. We can also use **Placeholders**, they are a type of **Tabstops**, but they can also **contain some value**, for example: **`${1:myVal}`**.
 
-There are also more complex configurations, but for begginig these will do an excellent job..
+There are also more complex configurations, but for begginig these will do an excellent job.
 
 The last part of the template is **`description`**, which serves to add additional explanation of what it does. Now let's try to make our own template. We delete the given example and enter the following code:
 
