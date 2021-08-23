@@ -197,7 +197,7 @@ In order to start  **the program in debug mode**, we choose [**Debug**] -> [**St
 
 ![](assets/chapter-11-images/02.Debugger-02.png) 
 
-After starting the program, we can see that it **stops executing** at line 4, where we placed our breakpoint.  The code in the current line **is colored in yellow** and we can **run it step by step**.In order to go to **the next line** e use the key [**F10**]. ** We can see that the code on the current line hasn't executed yet**. **It will execute when we go ahead to the next line**:
+After starting the program, we can see that it **stops executing** at line 4, where we placed our breakpoint.  The code in the current line **is colored in yellow** and we can **run it step by step**.In order to go to **the next line** e use the key [**F10**]. **We can see that the code on the current line hasn't executed yet**. **It will execute when we go ahead to the next line**:
 
 ![](assets/chapter-11-images/02.Debugger-03.png) 
 
