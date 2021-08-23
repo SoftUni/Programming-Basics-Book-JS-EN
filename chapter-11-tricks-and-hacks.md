@@ -10,15 +10,15 @@ In the current chapter we are going to see some tricks, hacks and techniques, wh
 
 ## Code Formatting
 
-The right formatting of aur code will make it **easier to read and understand**, In case someone else needs to work with it. Това е важно, защото в практиката ще ни се наложи да работим в екип с други хора и е от голямо значение да пишем кода си така, че колегите ни да могат **бързо да се ориентират** в него.
+The right formatting of aur code will make it **easier to read and understand**, In case someone else needs to work with it.This is important, because in practice we will need to work in a team with other people and it is highly important to write our code in a way that our colleagues can **quickly understand ** it.
 
-Има определени правила за правилно форматиране на кода, които събрани в едно се наричат **конвенции**. Конвенциите са група от правила, общоприети от програмистите на даден език, и се ползват масово. Тези конвенции помагат за изграждането на норми в дадени езици - как е най-добре да се пише и какви са **добрите практики**. Приема се, че ако един програмист ги спазва, то кодът му е лесно четим и разбираем.
+There are some defined rules for correct formatting of the code, which are collected in one placeand are called **conventions**. The conventions are group of rules, gennerally accepted by the programmers using a given language, which are massively used. These conventions help building norms in given languages - what is the best way to write and what are the **good practices**. It is accepted that if a programmer follows them then his code is easy to read and understand.
 
-Езикът **JavaScript** е създаден от **Брендън Айх** като част от развитието на един от първите браузъри **Netscape**. Основните конструкции и базов синтаксис преднамерено **приличат на Java**, за да се намалят усилията за научването им. Още повече, дори се използват подобни конвенции за писане и форматиране на кода. Трябва да знаете, че дори да не спазвате наложените конвенции, кодът ще **работи** (стига да е написан правилно), но просто **няма да бъде лесно разбираем**. Това, разбира се, не е фатално на основно ниво, но колкото по-бързо свикнете да пишете качествен код, толкова по-добре.
+The **JavaScript** language is created by **Brendan Eich** as part of the development of one of the first browsers **Netscape**. The basic constructions and basic syntax are intentionally **similar to Java**, to reduce the learning effort. Moreover, similar conventions are even used to write and format the code. You should know that , even if you do not follow the imposed conventions, the code will **work** (as long as it is written correctly), but simply **will not be easy to understand**. Of course, this is not fatal on base level, but the faster you get used to writing quality code, the better.
 
-Правилата, които се ползват при писане на **JavaScipt** могат да бъдат намерени на много места. Официалните правила или т.н. **JavaScript код конвенции** са описана много добре в статията "**Coding style**" в документацията на "Mozilla": [https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style). Важно е да се отбележи, че в примерите, които сме давали до сега и ще даваме занапред в тази книга, се ръководим основно от нея.
+The rules that are used for writing **JavaScipt** can be found on many sources. The oficcial rules, ect. **JavaScript code conventions** are very well described in the article "**Coding style**" in the documentation of "Mozilla": [https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style). It is important, to note that in the examples, we have given so far and will give in the future in this book, we are guided mainly by it.
 
-За форматиране на кода се препоръчва **къдравите скоби `{}`** да се отварят на същия ред и да се затварят точно под конструкцията, към която се отнасят, както е в примера по-долу.
+For code formatting **curly braces `{}`** to be opened on the same line and to be closed just below the construction, to which they refer, as in the example below.
 
 ```javascript
 if (someCondition) {
@@ -26,7 +26,7 @@ if (someCondition) {
 }
 ```
 
-Вижда се, че командата **`console.log(…)`** в примера е **4 празни полета навътре (един таб)**, което също се препоръчва в документацията. Също така, ако дадена конструкция с къдрави скоби е един таб навътре, то **къдравите скоби `{}`** трябва да са в **началото на конструкцията**, както е в примера по-долу:
+You can see that the command **`console.log(…)`** in the example is **offset by 4 white spaces(one tab)**, which is also recommended by the documentation. If given construction with curly brackets is offset by one tab,, then **the curly brackets `{}`** must be in  **the beginning of the construction**, as in the example below:
 
 ```javascript
 if (someCondition) {
@@ -36,7 +36,7 @@ if (someCondition) {
 }
 ```
 
-Ето това е пример за **лошо форматиран код** спрямо общоприетите конвенции за писане на код на езика **JavaScript**:
+This is an example for **badly formatted code** according to the accepted conventions for writing code in **JavaScript**:
    
 ```javascript
 if(someCondition)
@@ -44,17 +44,17 @@ if(someCondition)
 console.log("Inside the if statement");}
 ```
 
-Първото, което се забелязва са **къдравите скоби `{}`**. Първата (отваряща) скоба трябва да е **точно до `if` условието**, a втората (затваряща) скоба - **под командата `console.log(…)`, на отделен празен ред**. В допълнение, командата вътре в **`if`** конструкцията трябва да бъде **4 празни полета навътре (един таб)**. Веднага след ключовата дума **`if`** и преди условието на проверката се оставя **интервал**.
+The first thing we can notice are the **curly braces `{}`**. The first (opening) bracket must be **exactly next to the `if` condition**, and the second (closing) bracket - **under the command `console.log(…)`, on a separate blank line**. In addition, the command insede the **`if`** construction must be **offset by 4 white spaces(one tab)**. Immediately after the keyword **`if`** and before the condition of the check, a **space** is left.
 
-Същото правило важи и за **`for` циклите, както и всякакви други конструкции с къдрави скоби `{}`**. Ето още няколко примера:
+The same rule applies to **`for` loops, as well as any other constructions with curly braces `{}`**. Here are some more examples:
 
-**Правилно:**
+**Correct:**
 ```javascript
 for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 ```
-**Грешно:**
+**Wrong:**
 ```javascript
 for(let i=0;i<5;i++)
 {
@@ -62,12 +62,12 @@ console.log(i);
 }
 ```
 
-За ваше удобство има **бързи клавиши във Visual Studio Code**, за които ще обясним по-късно в настоящата глава, но засега ни интересуват следните комбинации за форматиране на **кода в целия документ**:
-* За Windows [**Shift + Alt + F**]
-* За Mac [**Shift + Option + F**]
-* За Ubuntu [**Ctrl + Shift + I**]
+For your comfort there are **keyboard shortcuts in Visual Studio Code**, which we will explain later in this chapter, but for now we are interested in the following combinations for formatting **the code in the whole document**:
+* For Windows [**Shift + Alt + F**]
+* For Mac [**Shift + Option + F**]
+* Fpr Ubuntu [**Ctrl + Shift + I**]
 
-Нека използваме **грешния пример** от преди малко:
+Let's use **the wrongly formatted example** from earlier:
 
 ```javascript
 for(let i=0;i<5;i++)
@@ -76,75 +76,75 @@ console.log(i);
 }
 ```
 
-Ако натиснем [**Shift + Alt + F**], което е нашата комбинация за форматиране на **целия документ**, ще получим код, форматиран според **общоприетите конвенции за JavaScript**. 
-Автоматичното форматиране, обаче не влияе на именуването на нашите променливи, за което ние трябва да се погрижим сами. Прието е променливите да **започват** винаги **с малка буква** и да **съдържат малки букви**, като **всяка следваща дума** в тях **започва с главна буква** (това именуване е още познато като **`camelCase`** конвенция).
+If we press [**Shift + Alt + F**], which is our combination to format **the entire document**, we will get code formatted according to **generally accepted JavaScript conventions**. 
+However, automatic formatting does not affect the naming of our variables, which we have to take care of ourselves. Прието е променливите да **започват** винаги **с малка буква** и да **съдържат малки букви**, като **всяка следваща дума** в тях **започва с главна буква** (това именуване е още познато като **`camelCase`** конвенция).
 * Трябва да се внимава за главни и малки букви, тъй като **JavaScript прави разлика** между тях. Например **`age`** и **`Age`** са различни променливи.
 * Имената на променливите **не могат** да съвпадат със служебна дума (keyword) от езика JavaScript, например **`let`** е невалидно име на променлива. Служебните или т.н. ключови фрази са просто думи, които са **част от синтаксиса на JavaScript** и поради тази причина те са резервирани и не могат да бъдат ползвани като имена на нашите променливи. Чрез тези думи ние имаме възможност да изграждаме нашите програми. Като пример за такива думи могат да се дадат вече използваните: **`for`**, **`while`**, **`do`**, **`if`**, **`else`**, **`let`** и др. Пълен списък с тези резервирани фрази можете да видите тук: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords)
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Въпреки че използването на символа <code><b>_</b></code> в имената на променливите е разрешено, в JavaScript това не се препоръчва и се счита за лош стил на именуване.</td>
+<td>Although using the symbol <code><b>_</b></code> in the manes of variables is allowed, in JavaScript it is not recommended and is considered a bad style of naming.</td>
 </tr></table>
 
-Ето няколко примера за **добре именувани** променливи:
+Here are some examples for **well named**variables:
 
 * **`firstName`**
 * **`age`**
 * **`startIndex`**
 * **`lastNegativeNumberIndex`**
 
-Ето няколко примера за **лошо именувани променливи**, макар и имената да са коректни от гледна точка на езика JavaScript:
+Here are some examples for **badly named variables**, even though the names are correct according to the JavaScript language:
 
-* **`_firstName`** (започва с '\_')
-* **`last_name`** (съдържа '\_')
-* **`AGE`** (изписана е с главни букви)
-* **`Start_Index`** (започва с главна буква и съдържа '\_')
-* **`lastNegativeNumber_Index`** (съдържа '\_')
+* **`_firstName`** (start with '\_')
+* **`last_name`** (contains '\_')
+* **`AGE`** (written in uppercase)
+* **`Start_Index`** (starts with an uppercase letter and contains '\_')
+* **`lastNegativeNumber_Index`** (contains '\_')
 
-Първоначално всички тези правила може да ни се струват безсмислени и ненужни, но с течение на времето и натрупването на опит ще видите нуждата от норми за писане на качествен код, за да може да се работи по-лесно и по-бързо в екип. Ще разберете, че е изключително досадна работата с код, който е написан без да се спазват никакви правила за качествен код.
+At a first look all these rules can seem meaningless and unnecessary, but with time passed and experience gaining you will see the need for conventions for writing quality code ,  in order to be able to work more easily and faster in a team. You will understand that the work with a code, which is written without complying with any rules for code quality, is annoying.
 
-## Бързи клавиши във Visual Studio Code
+## Shortcuts in Visual Studio Code
 
-В предната секция споменахме за някои от комбинациите, които се отнасят за форматиране на код. Едната комбинация [**Shift + Alt + F**] беше за **форматиране на целия код в даден файл**, а другите правиха същото нещо но на различна операционна система. Тези комбинации се наричат **бързи клавиши** и сега ще дадем по-подробна информация за тях.
+In the prevous section we mentioned some of the combinations, that are used for formatting code. One of them [**Shift + Alt + F**] is used for **formatting the whole code in a file**, and others did the same thing but on a different operating system.. These combinations are called **shortcuts** and now we will give more thorough information about them.
 
-Бързи клавиши са **комбинации**, които ни предоставят възможността да извършваме някои действия **по-лесно и по-бързо**, като всяка среда за разработка на софтуер си има своите бързи клавиши, въпреки че повечето се повтарят. Сега ще разгледаме някои от **бързите клавиши** във **Visual Studio Code**. Изброените клавишни комбинации работят със сигурност и са изпробвани на Windows. Идеята е да ви покажем, че това съществува, ползва се лесно и при нужда винаги можете да намерите, това което ви трябва за всяка една операционна система.
+Shortcuts are **combinations**, that give us the ability to perform some actions **easier and faster**, and each software development environment has its own shortcuts, although most are repetitive. We will now look at some of the **shortcuts** in **Visual Studio Code**. The listed keyboard shortcuts work for sure and have been tested on Windows. The idea is to show you that this exists, it is easy to use and when needed, you can always find what you need for every operating system.
 
-| Комбинация | Действие |
+| Combination | Action |
 | --- | --- |
-|  [**CTRL + F**] | Комбинацията **отваря търсачка**, с която можем да **търсим в нашия код**. |
-|  [**CTRL + /**] | **Закоментира** част от кода и съответно **премахва коментара** от закоментиран код |
-|  [**CTRL + Z**] | **Връща една промяна назад** (т.нар. Undo). |
-|  [**CTRL + Y**] | Комбинацията има противоположно действие на [**CTRL + Z**] (т.нар. Redo). |
-|  [**Shift + Alt + F**] | **Форматира кода** според конвенциите по подразбиране. |
-|  [**CTRL + Backspace**] | **Изтрива** думата вляво от курсора. |
-|  [**CTRL + Del**] | **Изтрива** думата вдясно от курсора. |
-|  [**CTRL + K S**] | **Запазва** всички файлове в проекта. |
-|  [**CTRL + S**] | **Запазва** текущия файл. |
+|  [**CTRL + F**] | The conbination **opens the search window**, by which we can **search in our code**. |
+|  [**CTRL + /**] | **Comments** part of our code and accordingly **removes the comment** which is already commented. |
+|  [**CTRL + Z**] | **Brings back one change** (so-called Undo). |
+|  [**CTRL + Y**] | The combination is opposite of [**CTRL + Z**] (the so-called Redo). |
+|  [**Shift + Alt + F**] | **Formats the code** according the default conventions. |
+|  [**CTRL + Backspace**] | **Deletes** the word to the left of the cursor. |
+|  [**CTRL + Del**] | **Deletes ** the word to the right of the cursor. |
+|  [**CTRL + K S**] | **Saves** all files in the project. |
+|  [**CTRL + S**] | **Saves** the current file. |
 
-Повече за **бързите клавиши във Visual Studio Code** може да намерите тук: [https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf). 
+More about the **shortcuts in Visual Studio Code** can be found here: [https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf). 
 
-Ако пък вече се чувствате достатъчно уверени в уменията си с бързите клавиши, отворете **Visual Studio Code** и натиснете [**CTRL + K + S**] (обърнете внимание, че е различно от [**CTRL + K S**], при което **Ctrl** и **K** се натискат едновременно, а **S** след това), при което ще се отвори прозорец в самата среда за разработка, който съдържа пълен списък с всички възможни клавишни комбинации в света на **Visual Studio Code**. Още повече, дори от там ще можете да правите **промени** по съществуващите клавишни комбинации:
+IF you feel confident enough about you shortcut skills, open **Visual Studio Code** and press [**CTRL + K + S**] (note that this is different from [**CTRL + K S**], where **Ctrl** and **K** are pressed simultaneously, and **S** after that), which will open a window in the development environment itself, which contains a complete list of all possible keys combinations in the world of **Visual Studio Code**. Moreover, even from there you will be able to make **changes** to existing keyboard shortcuts:
 
 ![](assets/chapter-11-images/00.Keyboard-Shortcuts-01.png)
 
-Не се колебайте, приложите наученото сега и използвайте клавишните комбинации, които мислите, че ще ви спомогнат в писането на вашите програми!
+Do not hesitate, apply what you have learned now and use the keyboard shortcuts that you think will help you in writing your programs!
 
-## Шаблони с код (code snippets)
+## Code Snippets (code snippets)
 
-Във **Visual Studio Code** съществуват т.нар. **шаблони с код** (code snippets), при изписването на които се изписва по шаблон някакъв блок с код. Тази полезна опция не е включена по подразбиране. Вие сами трябва да я активирате от [**File -> Preferences -> Settings**] (или просто **[Ctrl + Comma]**), при което ви се отваря прозорец наречен **User Settings**. Това са вашите лични настройки, които много лесно можете да промените. Просто добавете следния ред между отварящата и затварящата къдрави скоби в дясната част на екрана:
+In **Visual Studio Code** there are the so-called **code snippets** (code snippets), which write a block of code by using a code template. This useful option isn not enabled by default. You have to activate it yourself from [**File -> Preferences -> Settings**] (or just **[Ctrl + Comma]**), which opens window called **User Settings**. These are your personal settings, that you can easily change. Just add the following line between the opening and closing curly braces on the right side of the screen:
 
     "editor.tabCompletion": true
 
-След като направите това, при изписването на "**`for`**" и натискане на **[Tab]** + **[Tab]**, автоматично се генерира кодът на **цялостен `for` цикъл** в тялото на нашата програма. Това се нарича "разгъване на шаблон за кратък код". Подобно работи и шаблона "**`if`**" + **[Tab]** + **[Tab]**. На фигурата по-долу е показано действието на шаблона "**`for`**":
+After doing this, when you type "**`for`**" and press **[Tab]** + **[Tab]**, the code of **complete `for` loop** in automatically generated in the body of our program. This is called "unfolding a code snippet". The snippet "**`if`**" + **[Tab]** + **[Tab]** works similarly. On the figure below you can see the "**`for`**" snippet in action:
 
 ![](assets/chapter-11-images/01.Code-snippet-01.png)
 
-### Да си направим собствен шаблон за код
+### Creating Your Own Code Snippet
 
-В тази секция ще покажем как сами да си **направим собствен шаблон**. Ще разгледаме **как се прави code snippet** за **`json`** обект. Като за начало ще отидем на [**File -> Preferences -> User Snippets**], след което ще се отвори прозорец, от който да си изберете за кой език за програмиране ще създавате шаблон, както е показано на снимката:
+In this section we are going to show you how to **make your own code snippet**. We will see **how to make a code snippet** for **`json`** object. For a start, we will go to [**File -> Preferences -> User Snippets**], then a window will open from which you can choose for which programming language you will create a snippet, as shown in the picture:
 
 ![](assets/chapter-11-images/01.Code-snippet-02.png) 
 
-**Избираме JavaScript** от падащото меню и ще се отвори прозорец с наименуван  **javascript.json**. Това разширение **json** е един специален формат на записване на данни, който е наложен при начините за пренос и запазване на данни. Освен това, **json** форматът може да се ползва и в нашите програми, както ще разгледаме малко по - късно. Файлът изглежда така:
+**We choose JavaScript** from the drop-down menu and a window with a name will open **javascript.json**. This extention **json** is a special format for saving data, which is imposed in the ways of data transfer and storage. Освен това, **json** форматът може да се ползва и в нашите програми, както ще разгледаме малко по - късно. Файлът изглежда така:
 
 ![](assets/chapter-11-images/01.Code-snippet-03.png) 
 
@@ -275,29 +275,29 @@ let array = [10, 20, 30, 40];
 
 Ситуацията с останалите оператори за сравнения е подобна и същата логика важи и там.
 
-### Как се пише условна конструкция?
+### How to Write a Conditional Statement?
 
-Условната **`if` конструкция** се състои от следните елементи:
+The conditional **`if` statement** contains the following elements:
 
-* Ключова дума **`if`**
-* **Булев израз** (условие)
-* **Тяло** на условната конструкция
-* Незадължително: **`else` клауза**
+* Keyword **`if`**
+* **A Boolean expression** (condition)
+* **Body** of the conditonal construction
+* Optional: **`else` clause**
 
 ```javascript
-if (условие) {
-    // тяло
+if (condition) {
+    // body
 }
-else (условие) {
-    // тяло
+else (condition) {
+    // body
 }
 ```
 
-За улеснение при изписване, може да използваме шаблонът (code snippet) за **`if` конструкция**: **`if`** + [**Tab**] + [**Tab**]**
+To make it easier we can use a code snippet for an **`if` construction**: **`if`** + [**Tab**] + [**Tab**]**
 
-### Как се пише for цикъл?
+### How to Write a 'For' Loop?
 
-За **`for` цикъл** ни трябват няколко неща:
+For a **`for` loop** we need a couple things:
 
 * Инициализационен блок, в който се декларира променливата-брояч (**`let i`**) и се задава нейна начална стойност.
 * Условие за повторение (**`i <= 10`**).
@@ -306,17 +306,17 @@ else (условие) {
 
 ```javascript
 for (let i = 0; i <= 10; i++;) {
-    // тяло
+    // body
 }
 ```
 
- За улеснение при изписване, може да използваме шаблонът (code snippet) за **`for` цикъл**: **`for`** + [**Tab**] + [**Tab**]**
+To be easier to write it, we can use the code snippet for the **`for` loop**: **`for`** + [**Tab**] + [**Tab**]**
 
 ### Използване на т.нар. положителни (Truthy) и отрицателни (Falsy) стойности
 
 Всичките **Truthy** стойности използвани в условната конструкция **`if`** ще дадат положителен резултат и съответно нашата програма ще продължи изпълнението си в тялото на условната конструкция (за целите на примера тук тялото на условната конструкция не е форматирано правилно).
 
-За част от тях изглежда логично да дават положителен резултат, но за други не чак толкова.
+For some of them it seems logical to give a positive result, but for others not so much.
 
 ```javascript
 //Truthy
@@ -332,7 +332,7 @@ if (-3.14) {}      //true
 if (Infinity) {}   //true
 if (-Infinity) {}  //true
 ```
-Обратно, всички **Falsy** стойности, ще дадат отрицателен резултат и програмата няма да влезе в тялото на условната конструкция.
+Conversely, all **Falsy** values, will give negative result and the program will not enter the body of the conditional statement.
 
 ```javascript
 //Falsy
@@ -345,8 +345,8 @@ if ('') {}          //false
 if ("") {}          //false
 ```
 
-Не е необходимо тези стойности да се знаят наизуст на този етап, а само да се помни, че съществуват т.нар. **Truthy** и **Falsy** стойности. С времето ще свикнем как правилно да ги използваме и как да ни помагат, за да съкратим нашия код. 
+It is not necessary to know these values by heart at this stage, but only to remember that there are so-called **Truthy** and **Falsy** values. Over time, we will get used to how to use them properly and how they help us shorten our code. 
 
-## Какво научихме от тази глава?
+## What We Learned in This Chapter?
 
-В настоящата глава се запознахме как **правилно** да **форматираме** и **именуваме** елементите на нашия код, някои **бързи клавиши** (shortcuts) за работа във Visual Studio Code, **шаблони с код** (code snippets) и разгледахме как се **дебъгва код**.
+In the current chapter we learned how to **correctly** **format** and **name** the elements of our code, some **shortcuts** for work in Visual Studio Code, some **code snippets** and how to **debug code**.
