@@ -310,7 +310,7 @@ for (let i = 0; i <= 10; i++;) {
 }
 ```
 
-To be easier to write it, we can use the code snippet for the **`for` loop**: **`for`** + [**Tab**] + [**Tab**]**
+To be easier to write it, we can use the code snippet for the **`for` loop**: **`for`** + [**Tab**] + [**Tab**].
 
 ### Using the so-called positive (Truthy) and negative (Falsy) value
 
