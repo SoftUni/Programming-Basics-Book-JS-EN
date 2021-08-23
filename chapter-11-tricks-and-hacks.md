@@ -4,8 +4,8 @@ In the current chapter we are going to see some tricks, hacks and techniques, wh
 
 * How to properly **format our code**.
 * Conventions for **naming elements in the code**.
-* Some **keyboard shortcuts** (keyboard shortcuts).
-* Some **code snippets** (code snippets).
+* Some **keyboard shortcuts**.
+* Some **code snippets**.
 * Techniques to **debug our code**.
 
 ## Code Formatting
