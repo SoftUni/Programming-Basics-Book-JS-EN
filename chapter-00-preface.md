@@ -6,13 +6,13 @@
 <td>This book only gives you <b>the first steps to programming</b>. It covers very basic skills that you must develop for years, in order to reach a high enough level and start working as a programmer.</td>
 </tr></table>
 
-The book is also used as unofficial **[textbook for school-level programming courses in the high schools](http://softuni.foundation/projects/applied-software-developer-profession/)**,studying professions like "**Programmer**", "**Application Programmer**" and "**System Programmer**", as well as an additional teaching tool in the initial programming courses at the **secondary schools, mathematical and professional high schools.**, and specialty "informatics and IT".
+The book is also used as unofficial **[textbook for school-level programming courses in the high schools](http://softuni.foundation/projects/applied-software-developer-profession/)**, studying professions like "**Programmer**", "**Application Programmer**" and "**System Programmer**", as well as an additional teaching tool in the initial programming courses at the **secondary schools, mathematical and professional high schools.**, and specialty "informatics and IT".
 
 ## Who is this book intended for?
 
 This book is suitable for **complete beginners in programming**, who want to try what programming is and learn the main constructions for writing programming code that are used in software development, regardless of programming languages and technologies used. The book provides a **solid basis** of practical skills that are used for further study in programming and software development.
 
-For anyone who hadn't passed **[the free course on Programming Basics at SoftUni,](https://softuni.bg/apply)**, we specifically recommend to sign up for it **completely free**, because one learns programming by doing it, not by reading it! During the course you will get free access to lessons, explanations and demonstrations on site or online (such as video tutorials), **a lot of practice and code writing**, help with the task solutions after each topic, access to trainers, assistants and mentors, as well as forums and discussion groups for any questions, access to a community of thousands of people who are new in programming, and any other help that a beginner might need.
+For anyone who hadn't passed **[the free course on Programming Basics at SoftUni](https://softuni.bg/apply)**, we specifically recommend to sign up for it **completely free**, because one learns programming by doing it, not by reading it! During the course you will get free access to lessons, explanations and demonstrations on site or online (such as video tutorials), **a lot of practice and code writing**, help with the task solutions after each topic, access to trainers, assistants and mentors, as well as forums and discussion groups for any questions, access to a community of thousands of people who are new in programming, and any other help that a beginner might need.
 
 The free course for beginners in SoftUni is suitable for **school students** (of age 10+), **university students** and **workers** having any other professions, who want to gain technical knowledge and check if programming is what they like to do and understand if they would like to develop in the software development field.
 
@@ -39,7 +39,7 @@ If you prefer a different language, choose from the list above.
 
 ## Programming is learned by a lot of writing, not reading!
 
-If anyone thinks they're going to read a book and learn to program without writing a code and solve tasks hard, they're definitely delusional. Programming is learned with **many, many practice**, with writing code every day and solving hundreds, even thousands of tasks, seriously and with perseverance, for years.
+If anyone thinks they're going to read a book and learn to program without writing a code and solve tasks hard, they're definitely delusional. Programming is learned with **many,  many practice**, with writing code every day and solving hundreds, even thousands of tasks, seriously and with perseverance, for years.
 
 You need to **solve a lot of problems** , to make mistakes, to fix them, search for solutions and information on the Internet, to try, to experiment, to find better solutions, get used to the code, syntax, programming language, development environment, error search and debugging of non-working code, task reasoning, algorithmic thinking, breaking down problems in steps and implementing every step, gaining experience and lifting your skills every day, because learning to write code is just **the first step towards the profession of software engineer**. You have a lot to learn, really!
 
@@ -154,7 +154,7 @@ Only **initial knowledge in the areas listed above** is usually sufficient to st
 
 **Programming languages and software development technologies** form about 25% of the developer's minimum skills. They are the most voluminous to learn, but they change most quickly over time. If we look at **job advertisements** from the software industry, there are often all sorts of words mentioned (such as those listed below), but in fact the ads tacitly **imply the first three skills** : to code, to think algorithmically and to master the foundation of computer science and software engineering.
 
-For these purely technological skills , **programming language is already relevant**.
+For these purely technological skills, **programming language is already relevant**.
 * **Note**: only for these 25% of the profession does programming language matter!
 * **For the remaining 75% of skills, language does not matter** and these skills are time-resilient and portable between different languages and technologies.
 
@@ -231,12 +231,12 @@ Ask your **questions to this book** on Programming Basics in the **SoftUni’s f
 In this discussion forum you will receive a free **adequate answer on any questions from the curriculum content of this textbook**, as well as on
 other programming issues. The SoftUni community for entering programming is so large that usually is an answer to a question is received **within a few minutes**. SoftUni's teachers, assistants and mentors also answer your questions constantly.
 
-Due to the large number of students in this textbook, in the forum you can find a **solution to virtually any task from it** , shared by your colleague. Thousands of students before you have already solved the same tasks, so if you're in trouble, look around the forum. Although tasks in the Programming Basics course change from time to time, sharing is always encouraged in SoftUni, so you can easily find solutions and guidelines for all tasks.
+Due to the large number of students in this textbook, in the forum you can find a **solution to virtually any task from it**, shared by your colleague. Thousands of students before you have already solved the same tasks, so if you're in trouble, look around the forum. Although tasks in the Programming Basics course change from time to time, sharing is always encouraged in SoftUni, so you can easily find solutions and guidelines for all tasks.
 
 If you still have a specific question, such as why a program doesn't run, that you've been stuck with for a few hours, **ask it in the forum** and you'll get an answer. You will be surprised how well-intentioned and responsive the users of the SoftUni’s Forum are.
 
 ## Official Facebook page of the book
-The current book also has an **official Facebook page** , from which you can keep track of news around the books from the series "Basics of Programming", new editions, events and initiatives:
+The current book also has an **official Facebook page**, from which you can keep track of news around the books from the series "Basics of Programming", new editions, events and initiatives:
 
 <p align="center"><strong><a href="https://facebook.com/IntroProgrammingBooks/">fb.com/IntroProgrammingBooks</a></strong></p>
 
