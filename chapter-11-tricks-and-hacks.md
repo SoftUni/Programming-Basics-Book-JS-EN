@@ -293,7 +293,7 @@ else (condition) {
 }
 ```
 
-To make it easier we can use a code snippet for an **`if` construction**: **`if`** + [**Tab**] + [**Tab**]**
+To make it easier we can use a code snippet for an **`if` construction**: **`if`** + [**Tab**] + [**Tab**].
 
 ### How to Write a 'For' Loop?
 
