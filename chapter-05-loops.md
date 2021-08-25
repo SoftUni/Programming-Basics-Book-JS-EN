@@ -382,11 +382,11 @@ For your convenience, we have put the files in an archive, easy to download **Tu
 
 Let's take a look at each one of them:
 
-> **jquery.js (версия 2.0.3)**
+> **jquery.js (version 2.0.3)**
 
 One of the most popular JavaScript libraries which offers **speed and functionality** when working with HTML user interface. It changes the way we write code and plan its structure. Check out the tool at: [https://jquery.com](https://jquery.com/)
 
-> **jquery-turtle.js (версия 2.0.8)**
+> **jquery-turtle.js (version 2.0.8)**
 
 A plugin, written by **David Bau** for jQuery - **jQuery-turtle** which provides a set of features for **graphic drawing** of the "turtle" type. Find detailed information and rules of use here: [https://github.com/davidbau/jquery-turtle](https://github.com/davidbau/jquery-turtle)
 
