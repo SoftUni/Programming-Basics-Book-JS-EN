@@ -4,39 +4,39 @@ In this chapter we are going to get familiar with the following concepts and pro
 - How to work with **data types and variables** which we need when processing numbers and strings.
 - How to **print** a result on the screen.
 - How to **read** a custom input.
-- How to do simple **aritmetic operations**: addition, subtraction, multiplication, division, concatenate strings.
+- How to do simple **arithmetic operations**: addition, subtraction, multiplication, division, concatenate strings.
 - How to **round** numbers.
 
 ## Video
 
 <div class="video-player">
-   Watch video tutorial based on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=kP_1cKnciyA">https://www.youtube.com/watch?v=kP_1cKnciyA</a>.
+   Watch a video tutorial based on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=kP_1cKnciyA">https://www.youtube.com/watch?v=kP_1cKnciyA</a>.
 </div>
 
 
 ## Calculations in Programming
 
-We know that computers are machines which process data. All **data** is stored in the computer memory (RAM) in **variables**. Variables are named memory areas that store data of a certain type , for example number or string. Each **variable** in JavaScript has **name** and **value**. Here is how we would define a variable by assigning it a value at the same time as declaring it:
+We know that computers are machines that process data. All **data** is stored in the computer memory (RAM) in **variables**. Variables are named memory areas that store data of a certain type, for example, number or string. Each **variable** in JavaScript has a **name** and **value**. Here is how we would define a variable by assigning it a value at the same time as declaring it:
 
 ![](/assets/chapter-2-1-images/00.Declaring-variables-01.png)
 
-fter processing, the data is stored again in variables (i.e. somewhere in the memory set aside by our program).
+After processing, the data is stored again in variables (i.e. somewhere in the memory set aside by our program).
 
 ## Data Types and Variables
 
-In programming each variable stores a certain **value** of a particular **type**. For example, data types can be: **number**, **string** (text), **boolean** type, **data**, **list**, etc.
+In programming each variable stores a certain **value** of a particular **type**. For example, data types can be a **number**, **string** (text), **boolean** type, **data**, **list**, etc.
 Here are some examples of data types and values for them:
 - **number** - type of number: 1, 42, -5, 3.14, NaN, …
 - **string** - type of text (string): 'Hello', "Hi", 'Beer', …
 - **boolean** - boolean type: true, false
 - **Date** - date: Tue Jul 04 2017, ……
 
-**JavaScript** language has three keywords for declaring a variable - **`var`**, **`const`** and **`let`**. The main difference between **`let`** and **`var`** is in the scope of the variable. We use **`const`** when we are sure that what we assign to the variable will not change. A little further in the book we will find out more details about the range of variables but for now we will use the word ** `let` ** to declare a new variable.
+**JavaScript** language has three keywords for declaring a variable - **`var`**, **`const`**, and **`let`**. The main difference between **`let`** and **`var`** is in the scope of the variable. We use **`const`** when we are sure that what we assign to the variable will not change. A little further in the book, we will find out more details about the range of variables but for now, we will use the word ** `let` ** to declare a new variable.
 
 
 ## Print a Result on the Screen
 
-For printing text, number or other result on the screen, it's necessary to call the built-in method **`console.log()`**.With it we can print both the value of a variable and directly text or number:
+For printing text, number, or another result on the screen, it's necessary to call the built-in method **`console.log()`**. With it we can print both the value of a variable and directly text or number:
 
 ```javascript
 console.log(42); // prints number
@@ -59,11 +59,11 @@ function sum([arg1, arg2]) {
 }
 ```
 
-Let's note that the arguments **`arg1`** and **`arg2`** can be a different data type than the one we want. That's why it's necessary to convert them into a suitable one. If it's not done for the program **each number** will be just a **string** with which **we can't do operations** aritmetic operations.
+Let's note that the arguments **`arg1`** and **`arg2`** can be a different data type than the one we want. That's why it's necessary to convert them into a suitable one. If it's not done for the program **each number** will be just a **string** with which **we can't do operations** arithmetic operations.
 
-### Example: Calculating a Square Area with Length of a Side **а**
+### Example: Calculating a Square Area with Length of a Side **a**
 
-For example, let us look at the following function which reads an integer from the console, multiplies it by itself (squares it) and prints the result from the multiplication. That's how we can calculate square area by side length:
+For example, let's look at the following function which reads an integer from the console, multiplies it by itself (squares it), and prints the result from the multiplication. That's how we can calculate square area by side length:
 
 ```javascript
 function calculateSquareArea([arg1]) {
@@ -73,26 +73,26 @@ function calculateSquareArea([arg1]) {
 }
 ```
 
-If we call our function with parameter 3 - **`calculateSquareArea([3])`** the result will be - **`Square area = 9`**.  Here's how out code looks like in action in the web browser's JavaScript console:
+If we call our function with parameter 3 - **`calculateSquareArea([3])`** the result will be - **`Square area = 9`**.  Here's how our code looks like in action in the web browser's JavaScript console:
 
 ![](/assets/calculate-square-area-js.png)
 
-If we try to write a wrong number, for example "hello", we will get an error message during runtime (exception). This is normal. Later on, we will find out how we can catch these kinds of errors and make the user enter a number again.
+If we try to write a wrong number, for example, "hello", we will get an error message during runtime (exception). This is normal. Later on, we will find out how we can catch these kinds of errors and make the user enter a number again.
 
 #### How Does the Example Work?
 
-On the first line with **`function calculateSquareArea([arg1]) {`** we define our function by giving it a name and setting arguments that it needs. In our case we have one argument which is the side of the square.
+On the first line with **`function calculateSquareArea([arg1]) {`** we define our function by giving it a name and setting arguments that it needs. In our case, we have one argument which is the side of the square.
 
-On the next line with **`let a = parseInt(arg1);`** we get the argument of the function **`arg1`** and convert it to an integer with the method **`parseInt(arg1);`**. The result is saved in the variable **`a`**.
+On the next line with **`let a = parseInt(arg1);`** we get the argument of the function **`arg1`** and convert it to an integer with the method **`parseInt(arg1);`**. The result is saved in variable **`a`**.
 
-**Note**: If **`arg1`** contains **floating point number**, то ще бъде **rounded to integer**. Converting a floating number to integer is performed by  **removing**  all digits after the decimal point. Example: **`parseInt(2.3)`** = 2, **`parseInt(3.8)`** = 3
+**Note**: If **`arg1`** contains a **floating-point number**, that will be **rounded to an integer**. Converting a floating number to an integer is performed by  **removing**  all digits after the decimal point. Example: **`parseInt(2.3)`** = 2, **`parseInt(3.8)`** = 3
 
-The next command **`let area = a * a;`** is saved in new variable named **`area`** - the result of the multiplication **`a`** by **`a`**.
+The next command **`let area = a * a;`** is saved in a new variable named **`area`** - the result of the multiplication **`a`** by **`a`**.
 
 The next command **`console.log('Square area = ' + area);`** prints the specified text by placing the calculated face of the square, which we have saved in the variable **`area`** next to it.
 
 
-In fact, the above program can be simplified a bit, like this:
+The above program can be simplified a bit, like this:
 
 ```js
 function calculateSquareArea([a]) {
@@ -101,7 +101,7 @@ function calculateSquareArea([a]) {
 }
 ```
 
-The above code will work correctly, because when multiplied, the variable `a` will be converted to a number. When the input is only a single number, the parentheses `[]` can also be skipped, like this:
+The above code will work correctly because when multiplied, the variable `a` will be converted to a number. When the input is only a single number, the parentheses `[]` can also be skipped, like this:
 
 ```js
 function calculateSquareArea(a) {
@@ -120,9 +120,9 @@ function calculateSquareArea(a) {
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0). Try all four solutions of the problem.
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0). Try all four solutions to the problem.
 
-## Reading Floating Point Numbers
+## Reading Floating-Point Numbers
 
 To read user input as **floating-point number** it's necessary again to **define an argument** to our function. The syntax is similar to reading an integer, but here we have to use the function **`parseFloat(...)`**:
 
@@ -146,7 +146,7 @@ function convertInchesToCentimeters([arg1]) {
 }
 ```
 
-Let's call the function and make sure that when passing a value in inches, we get a correct result in centimeters:
+Let's call the function and make sure that when passing a value in inches, we get the correct result in centimeters:
 
 ```javascript
 convertInchesToCentimeters([5]); // Centimeters = 12.7
@@ -168,7 +168,7 @@ function print([arg1]) {
 
 ### Example: Greeting by Name
 
-Let's write a program that asks the user for their name and salutes them with the text "**Hello, (име)**".
+Let's write a program that asks the user for their name and salutes them with the text "**Hello, (name)**".
 
 ```javascript  
 function sayHello([arg1]) {
@@ -177,7 +177,7 @@ function sayHello([arg1]) {
 }
 ```
 
-In this case the expression **`${name}`** will be replaced with **the value of the variable `name`**. If we call the function with the name "Ivan", that will be the result:
+In this case, the expression **`${name}`** will be replaced with **the value of the variable `name`**. If we call the function with the name "Ivan", that will be the result:
 
 ```javascript  
 sayHello(['Ivan']); // Hello, Ivan!
@@ -202,9 +202,9 @@ We call the function with test parameters again and make sure that it works:
 ```javascript
 printInfo(['Ivan', 'Ivanov', 20, 'Sofia']);
 ```
-Except variables, we can make simple calculations in the templates.
+Except for variables, we can make simple calculations in the templates.
 
-It's possible the same variable to be used as a template more than once.Here's an example:
+The same variable can be used as a template more than once. Here's an example:
 
 ```javascript
 let a = 1;
@@ -220,7 +220,7 @@ The result is:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#3](https://judge.softuni.bg/Contests/Practice/Index/927#3).
 
 
-## Aritmetic Operations
+## Arithmetic Operations
 
 Let's examine the basic arithmetic operations in programming.
 
@@ -283,7 +283,7 @@ console.log(0 / 0);   // Result: NaN (Not a Number), i.e. the result
 
 ## Concatenating Text and Numbers
 
-Besides for summing up numbers, the operator **`+`** is also used for joining pieces of text (concatenation of two strings one after another). In programming, joining two pieces of text is called "**concatenation**". Here is how we can concatenate a text with a number by the **`+`** operator:
+Besides summing up numbers, the operator **`+`** is also used for joining pieces of text (concatenation of two strings one after another). In programming, joining two pieces of text is called "**concatenation**". Here is how we can concatenate a text with a number by the **`+`** operator:
 
 ```javascript
 let firstName = "Maria";
@@ -293,7 +293,7 @@ let str = firstName + " " + lastName + " @ " + age;
 console.log(str);  // Maria Ivanova @ 19
 ```
 
-Here is an another example:
+Here is another example:
 
 ```javascript
 let a = 1.5;
@@ -302,7 +302,7 @@ let sum = "The sum is: " + a + b;
 console.log(sum);  // The sum is: 1.52.5
 ```
 
-Do you notice anything strange? Maybe you expected the numbers ** `a` ** and **` b` ** to sum? Actually, the concatenation works from left to right and the above result is absolutely correct. If we want to sum the numbers, we will have to use **brackets** to change the order of operations:
+Do you notice anything strange? Maybe you expected the numbers ** `a` ** and **` b` ** to sum? The concatenation works from left to right and the above result is correct. If we want to sum the numbers, we will have to use **brackets** to change the order of operations:
 
 ```javascript
 let a = 1.5;
@@ -319,14 +319,14 @@ In programming, we can calculate **numerical expressions**, for example:
 let expr = (3 + 5) * (4 – 2);
 ```
 
-The  standard rule for priorities of arithmetic operations is applied:: **multiplying and dividing are always done before adding and subtracting**. In case of an **expression in brackets, it is calculated first**  but we already know all of that from the school math.
+The standard rule for priorities of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In the case of an **expression in brackets, it is calculated first**  but we already know all of that from the school math.
 
 ### Example: Calculating Trapezoid Area
 
-Let we  write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating point number per line) and calculates the **trapezoid area** by the standart math formula:
+Let's  write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the **trapezoid area** by the standard math formula:
 
 ```javascript
-function printТrapezoidArea([arg1, arg2, arg3]) {
+function printTrapezoidArea([arg1, arg2, arg3]) {
     let b1 = parseFloat(arg1);
     let b2 = parseFloat(arg2);
     let h = parseFloat(arg3);
@@ -335,9 +335,9 @@ function printТrapezoidArea([arg1, arg2, arg3]) {
 }
 ```
 
-Because we want our function to work with both integers and floating numbers, we use **`parseFloat()`**. If we start the function and enter values for the sides: **`3`**, **`4`** and **`5`**, we will obtain the following result::
+Because we want our function to work with both integers and floating numbers, we use **`parseFloat()`**. If we start the function and enter values for sides: **`3`**, **`4`**, and **`5`**, we will obtain the following result::
 ```javascript
-printТrapezoidArea([3, 4, 5]); // Trapezoid area = 17.5
+printTrapezoidArea([3, 4, 5]); // Trapezoid area = 17.5
 ```
 
 #### Testing in the Judge System
@@ -365,7 +365,7 @@ let down = Math.floor(45.67);	// down = 45
 let trunc = Math.trunc(45.67); // trunc = 45
 ```
 
-* **`Math.round(…)`** - rounding is done as a **basic rule for rounding numbers** - if the decimal part is less than 5, rounding is to previous number and if it's greater than 5 - to the next:
+* **`Math.round(…)`** - rounding is done as a **basic rule for rounding numbers** - if the decimal part is less than 5, rounding is to the previous number and if it's greater than 5 - to the next:
 ```javascript
 Math.round(5.439); // 5
 Math.round(5.539); // 6
@@ -381,7 +381,7 @@ Math.round(5.539); // 6
 
 ### Example: Circle Area and Perimeter 
 
-Let we write a function which receives an input **the radius r** of a circle and **calculates the area and the perimeter** of the circle.
+Let's write a function that receives an input of **the radius r** of a circle and **calculates the area and the perimeter** of the circle.
 
 Formulas:
 - Area = π \* r \* r
@@ -396,7 +396,7 @@ function calculateCircleAreaAndPerimeter([arg1]) {
     console.log("Perimeter = " + 2 * Math.PI * r);
 }
 ```
-Let we call the function with **radius `r = 10`**:
+Let's call the function with **radius `r = 10`**:
 
 ```javascript
 calculateCircleAreaAndPerimeter([10])
@@ -413,7 +413,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#5
 
 ### Example: 2D Rectangle Area
 
-Rectangle is given with the **coordinates of two of its opposite angles**. Calculate its **area and perimeter** :
+The rectangle is given with the **coordinates of two of its opposite angles**. Calculate its **area and perimeter** :
 
 <img alt="rectangleArea" src="/assets/chapter-2-1-images/00.Rectangle-area-01.png" width="250" height="200" />
 
@@ -437,7 +437,7 @@ function calculateRectangleArea([arg1, arg2, arg3, arg4]) {
 
 We use the method **`Math.max(x1, x2)`** to find the higher value from **`x1`** and **`x2`** and identically **`Math.min(y1, y2)`** to find the lower of both values.
 
-Let wе call the function with testing values from the coordinate system:
+Let we call the function with testing values from the coordinate system:
 
 ```javascript
 calculateRectangleArea([60, 20, 10, 50]); // 1500
@@ -449,9 +449,9 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#6](https://judge.softuni.bg/Contests/Practice/Index/927#6).
 
 
-## What we learned from this chapter?
+## What have we learned from this chapter?
 
-Let we summarize what we learned from this chapter of the book:
+Let's summarize what we learned from this chapter of the book:
 - **Reading an user input**: **`function sum([number1, number2])`**.
 - **Converting to number**: **`let num = parseInt(arg1)`**, **`let num = parseFloat(arg1)`**.
 - **Aritmetic operations** and using the relevant **aritmetic operators** [+, -, \*, /, ()]: **`let sum = 5 + 3`**.
@@ -464,7 +464,7 @@ Let's strengthen the knowledge gained throughout this chapter with a few more ex
 
 ### Empty **JS** File for our Solution of the Problem in Visual Studio Code
 
-We start by creating an empty **JS файл** in Visual Studio Code. In the current practical exercise we'll create and add a new **JS file** for each task, to organize the solutions of the tasks from the exercises:
+We start by creating an empty **JS file** in Visual Studio Code. In the current practical exercise we'll create and add a new **JS file** for each task, to organize the solutions of the tasks from the exercises:
 
 We start Visual Studio Code and create a **New File:** [**File**] -> [**New File**]:
 
@@ -480,7 +480,7 @@ Enter a **significant name** and expansion **.js** to our file, then press the b
 
 ### Problem: Calculating Square Area
 
-The first exercise from this topic is the following: write a function that **receives an integer `a` and calculates the area** fo a square with side **`a`**. The problem is trivially easy: **inputs a number** as an argument of the function, **multipy it by itself** and **prints a result** on the console.
+The first exercise from this topic is the following: write a function that **receives an integer `a` and calculates the area** of a square with side **`a`**. The problem is trivially easy: **inputs a number** as an argument of the function, **multiply it by itself**, and **prints a result** on the console.
 
 #### Hints and Guidelines
 
@@ -507,11 +507,11 @@ You must get 100 points (completely correct solution):
 
 ### Problem:	From Inches to Centimeters
 
-Write a function which **accepts a number** (not necessarily an integer) and converts the number from **inches to centimeters**. For the purpose **it multiplies the inches by 2.54** (because 1 inch = 2.54 centimeters).
+Write a function that **accepts a number** (not necessarily an integer) and converts the number from **inches to centimeters**. For this purpose, **it multiplies the inches by 2.54** (because 1 inch = 2.54 centimeters).
 
 #### Hints and Guidelines
 
-First we create a **new file** in the folder with the other solutions -  in Visual Studio Code we choose [**File**] -> [**New file**]. We save the file with name **convertInchesToCentimeters.js** and press the button [**Save**]. After that we have to write **the program code**:
+First, we create a **new file** in the folder with the other solutions -  in Visual Studio Code we choose [**File**] -> [**New file**]. We save the file with the name **convertInchesToCentimeters.js** and press the button [**Save**]. After that we have to write **the program code**:
 
 ![](assets/chapter-2-1-images/02.Inches-to-centimeters-01.png)
 
@@ -519,7 +519,7 @@ First we create a **new file** in the folder with the other solutions -  in Visu
 
 ![](assets/chapter-2-1-images/02.Inches-to-centimeters-02.png)
 
-Let we test it with floating numbers, for example **4.5**:
+Let's test it with floating numbers, for example, **4.5**:
 
 ![](assets/chapter-2-1-images/02.Inches-to-centimeters-03.png)
 
@@ -538,7 +538,7 @@ Write a function, which **takes as an argument a human name** and prints **`Hell
 
 #### Hints and Guidelines
 
-Again we create a **new file** in the folder with the other solutions and we save the file with the name **sayHello.js**. After that we have to write the program code . If you find it difficult, you can use the sample code below:
+Again we create a **new file** in the folder with the other solutions and we save the file with the name **sayHello.js**. After that, we have to write the program code. If you find it difficult, you can use the sample code below:
 
 ![](assets/chapter-2-1-images/03.Greeting-by-name-01.png)
 
@@ -557,7 +557,7 @@ Write a function that receives as an argument the name, surname, age and city an
 
 #### Hints and Guidelines
 
-Similarly we create a new file and name it **printInfo.js**. which prints the message described in the condition of the task, is purposefully blurred  in order for you to think of a way to finish it yourself:
+Similarly, we create a new file and name it **printInfo.js**. which prints the message described in the condition of the task, is purposefully blurred for you to think of a way to finish it yourself:
 
 ![](assets/chapter-2-1-images/04.Concatenate-data-01.png)
 
@@ -570,7 +570,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#3
 
 ### Problem:	Trapezoid Area
 
-Write a function which receives three arguments **b1, b2 and h and calculate the trapezoid area** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
+Write a function that receives three arguments **b1, b2, and h and calculate the trapezoid area** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
 
 The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
 
@@ -578,7 +578,7 @@ The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an a
 
 #### Hints and Guidelines
 
-We should add a new file in Visual Studio Code again with name **calculateTrapezoidArea.js** and to write a code which reads the inputs from function's arguments , calculates the trapezoid area and prints it. The code in the picture is purposely blurred, in order for you to give it a thought and finish it yourself:
+We should add a new file in Visual Studio Code again with the name **calculateTrapezoidArea.js** and write a code that reads the inputs from the function's arguments, calculates the trapezoid area, and prints it. The code in the picture is purposely blurred, for you to give it a thought and finish it yourself:
 
 ![](assets/chapter-2-1-images/05.Trapezoid-area-02.png)
 
@@ -591,7 +591,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#4
 
 ### Problem:	Circle Perimeter and Area
 
-Write a function, which receives an argument **number r** and calculates and prints **the area and perimeter of a circle** with **radius r**.
+Write a function, that receives an argument **number r** and calculates and prints **the area and perimeter of a circle** with **radius r**.
 
 #### Sample Input and Output
 
@@ -613,7 +613,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#5
 
 ### Problem: Rectangle Area
 
-A **Rectangle** is defined by the **coordinates** of both of its opposite corners (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is taken as a function argument. The numbers **x1, y1, x2 и y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
+A **Rectangle** is defined by the **coordinates** of both of its opposite corners (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is taken as a function argument. The numbers **x1, y1, x2, and y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
 
 ![](/assets/old-images/chapter-2-images/07.Rectangle-area-01.png)
 
@@ -632,7 +632,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#6
 
 ### Problem:   Triangle Area
 
-Write a function which receives an argument **a side and height of a triangle** and calculates its area. Use **the formula** for triangle area: **area = a * h / 2**. Round the result to  **2 digits after the decimal point using `area.toFixed(2)`**.
+Write a function that receives arguments which are **a side and a height of a triangle** and calculates its area. Use **the formula** for triangle area: **area = a * h / 2**. Round the result to  **2 digits after the decimal point using `area.toFixed(2)`**.
 
 #### Sample Input and Output
 
@@ -650,7 +650,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#7
 
 ### Problem: Converter – from °C Degrees to °F Degrees
 
-Write a function that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F).  Look on the Internet for a proper  [formula](http://bfy.tw/3rGh "Търсене в Google")to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few examples:
+Write a function that reads **degrees on the Celsius scale** (°C) and converts them to **degrees on the Fahrenheit scale** (°F).  Look on the Internet for a proper  [formula](http://bfy.tw/3rGh "Search on Google") to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few examples:
 
 #### Sample Input and Output
 
@@ -685,7 +685,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#9
 
 ### Problem: Converter - USD to BGN
 
-Write a function for **conversion of US dollars** (USD) **into Bulgarian levs** (BGN). **Round** the result to **2 digits** after the decimal point. Use a fixed rate between a dolar and lev: **1 USD = 1.79549 BGN**.
+Write a function for **conversion of US dollars** (USD) **into Bulgarian levs** (BGN). **Round** the result to **2 digits** after the decimal point. Use a fixed rate between a dollar and lev: **1 USD = 1.79549 BGN**.
 
 #### Sample Input and Output
 
@@ -702,13 +702,13 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#1
 
 ### Problem:	\*  Currency Converter
 
-Write a function for **conversion of money from one currency into another**.  It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
+Write a function for the **conversion of money from one currency into another**.  It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
 
 | Rate  | USD     | EUR     | GBP     |
 | :---: | :-----: | :-----: | :-----: |
 | 1 BGN | 1.79549 | 1.95583 | 2.53405 |
 
-**The input** is **sum for conversion**, **input currency** and **output currency**. **The output**is one number – the converted value of the above currency rates, rounded **2 digits** after the decimal point. 
+**The input** is a **sum for conversion**, **input currency**, and **output currency**. **The output** is one number – the converted value of the above currency rates rounded **2 digits** after the decimal point. 
 
 #### Sample Input and Output
 
@@ -739,7 +739,7 @@ Write a function that reads **a birth date** in format **`dd-MM-yyyy`** and calc
 | 1980-06-14 | 10-03-1983 |
 
 #### Hints and Guidelines
-* Look for information about the data type **``Date``** in JavaScript and in particular look at the methods **``setDate(...)``**, **``getDate()``**, **``getMonth()``** and **``getYear()``**. With their help you can solve the problem without the need to calculate days, months and leap years.
+* Look for information about the data type **``Date``** in JavaScript and in particular look at the methods **``setDate(...)``**, **``getDate()``**, **``getMonth()``** and **``getYear()``**. With their help, you can solve the problem without the need to calculate days, months, and leap years.
 * **Don't print** anything additional on the console except for the wanted date!
 
 #### Testing in the Judge System
@@ -749,17 +749,17 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#1
 
 ## Graphic Applications with Numerical Expressions
 
-To exercise working with variables and calculations with operators and numerical expressions, we will make something interesting: we will develop a **web application**  with graphical user interface. In it, we will use calculations with floating point numbers.
+To exercise working with variables and calculations with operators and numerical expressions, we will make something interesting: we will develop a **web application**  with a graphical user interface. In it, we will use calculations with floating-point numbers.
 
 ### Web Application: \*\*\* Converter - BGN to EUR!
-Create a web application that calculates the value in **Euro** (EUR)of monetary amount given in **Bulgarian levs** (BGN). By changing the amount in BGN, the amount in EUR has to be recalculated automatically. Use the fixed rate levs / euro: **1.95583**.
+Create a web application that calculates the value in **Euro** (EUR) of the monetary amount given in **Bulgarian levs** (BGN). By changing the amount in BGN, the amount in EUR has to be recalculated automatically. Use the fixed-rate BGN / Euro: **1.95583**.
 
 ![](assets/chapter-2-1-images/13.Bgn-to-eur-01.png)
 
-In a similar way as in the first chapter ("First Steps in Programming"), we will use the languages **JavaScript**, **HTML** and **CSS** for our application.
+Similarly, as in the first chapter ("First Steps in Programming"), we will use the languages **JavaScript**, **HTML**, and **CSS** for our application.
 
 1. The first step is to **create a folder** in which we will store all the files that are needed for our application.
-2. Then we need to create an html file in the folder: **index.html**
+2. Then we need to create an HTML file in the folder: **index.html**
 
 ```html
 <!DOCTYPE html>
@@ -789,9 +789,9 @@ In a similar way as in the first chapter ("First Steps in Programming"), we will
 ```
 
 
-Note that each html page must have a **specific structure**. For example, always the main code we write is in the tag **`<body>`** ,  and always the title of the page is in the tag **`<title>`** .
+Note that each HTML page must have a **specific structure**. For example, always the main code we write is in the tag **`<body>`**,  and always the title of the page is in the tag **`<title>`**.
 
-3. Now we already have the structure of the page, it remains to add a **JavaScript** file with the logic itself. We create a new file and name it **converter.js**
+3. We have the structure of the page, it remains to add a **JavaScript** file with the logic itself. We create a new file and name it **converter.js**
 
 ```javascript
 function eurConverter() {
@@ -803,13 +803,13 @@ function eurConverter() {
 
 4. Once we have the logic of the application, we need to find a way to tell where to use it. To do this we need to make 2 changes to the existing **index.html** file:
 
-First we add the following line just below the **`title`** tag, through which the connection between the files is made **index.html** and **converter.js**:
+First, we add the following line just below the **`title`** tag, through which the connection between the files is made **index.html** and **converter.js**:
    
 ```html
  <script src="converter.js" type="text/javascript"></script>
 ```
 
-And second, we find and replace the **`input`** field with type **`button`** with the following code. In this way we set **when clicking** on the button [**Convert!**] to call the function **`eurConverter()`**:
+And second, we find and replace the **`input`** field with the type **`button`** with the following code. In this way we set **when clicking** on the button [**Convert!**] to call the function **`eurConverter()`**:
 
 ```html
 <input class="primary-btn" type="button" onclick="eurConverter()" value="Convert!" />
@@ -819,7 +819,7 @@ If we start the file **index.html** from the folder, we should have a working ap
  
 ![](assets/chapter-2-1-images/13.Bgn-to-eur-02.png)
 
-Let we make it more beautiful.
+Let's make it more beautiful.
 
 5.	We create a new file with extension **\*.css** and name **index**. [CSS](https://www.w3schools.com/html/html_css.asp) is used to stylize the elements in HTML. We open the file  **index.html** and add this line in the tag **`<head>`**:
 
@@ -888,9 +888,10 @@ body {
 
 ### Web Application: \*\*\* Catch the Mouse!
 
-Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that **the image runs form the mouse** and it is hard to catch“. When the image gets “caught”, a congratulations message is shown..
+Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that **the image runs from the mouse** and it is hard to catch“. When the image gets “caught”, a congratulations message is shown.
 
-**Hint**: Write a Event Handler **`mouseover`**  and move the image to a random position. Use the random numbers generator **`Math.random()`**. Позицията на изображението се задава от свойството **`style.position`**. To "catch the mouse" **`onclick`** to "catch the mouse". 
+**Hint**: Write an Event Handler **`mouseover`**  and move the image to a random position. Use the random numbers generator **`Math.random()`**.
+The position of the image is set from the property **`style.position`**. To "catch the mouse" **`onclick`** to "catch the mouse". 
 
 ![](assets/chapter-2-1-images/14.Catch-the-mouse-00.png)
 
