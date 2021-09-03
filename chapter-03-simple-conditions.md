@@ -1,6 +1,6 @@
 # Chapter 3.1. Simple conditions
 
-In the present chapter we will take a look at the **conditional constructs in the JavaScript programming language**. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (**`if`** and **`if-else`**) by implementing appropriate examples and also we will take a look a the range in which a variable lives (its **scope**). Finally, we will go over different **debugging** techniques, in order to follow the programming steps through which our program goes during its run.
+In the present chapter, we will take a look at the **conditional constructs in the JavaScript programming language**. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (**`if`** and **`if-else`**) by implementing appropriate examples and also we will take a look at the range in which a variable lives (its **scope**). Finally, we will go over different **debugging** techniques, to follow the programming steps through which our program goes during its run.
 
 ## Video
 
@@ -11,7 +11,7 @@ In the present chapter we will take a look at the **conditional constructs in th
 
 ## Conditional operators
 
-In programming we can compare values through the use of the following **operators**:
+In programming, we can compare values through the use of the following **operators**:
 
 * operator **`<`** (less than)
 * operator **`>`** (greater than)
@@ -20,7 +20,7 @@ In programming we can compare values through the use of the following **operator
 * operator **`===`** (equals)
 * operator **`!==`** (not equal; different than)
 
-The result from a comparison is the so called Boolean value, which can be either **`true`** or **`false`** depending on the evaluated result being ether true or false.
+The result from a comparison is the so-called Boolean value, which can be either **`true`** or **`false`** depending on the evaluated result being either true or false.
 
 It is important to note that in **JavaScript** there are further comparison operators - for **comparison**  **`==`** and **difference** **`!=`**. The implementation of these operators without having intimate knowledge of their evaluation may lead to unexpected results and problems, for the moment we will not take look at them in detail.
 
@@ -67,7 +67,7 @@ In **JavaScript** we can use the following operators to compare data:
 
 ## Simple **`if`** comparisons
 
-In programming we often **check particular conditions** and perform various actions depending on the result of the comparison. This is done through the **`if`** comparison, which has the following structure:
+In programming, we often **check particular conditions** and perform various actions depending on the result of the comparison. This is done through the **`if`** comparison, which has the following structure:
 
 ```javascript
 if (Boolean condition) {
@@ -77,11 +77,11 @@ if (Boolean condition) {
 
 ### Example: Excellent Grade
 
-We take the grade as an input argument to our function and upon evaluation we check if the input value is an excellent grade (**`≥ 5.50`**).
+We take the grade as an input argument to our function and upon evaluation, we check if the input value is an excellent grade (**`≥ 5.50`**).
 
 ![](assets/chapter-3-1-images/01.ЕxcellentResult-01.png)
 
-Test the example code locally. Try entering different grades, for example **4.75**, **5.49**, **5.50** и **6.00**. For grades **less than 5.50** the program will not give any output, however for grades of **5.50 or greater**, the output will be "**Excellent!**". The function is called by simply writing its name and filling the input value in the parenthesis:
+Test the example code locally. Try entering different grades, for example, **4.75**, **5.49**, **5.50** and **6.00**. For grades **less than 5.50** the program will not give any output, however for grades of **5.50 or greater**, the output will be "**Excellent!**". The function is called by simply writing its name and filling the input value in the parenthesis:
 
 ![](assets/chapter-3-1-images/01.ЕxcellentResult-02.png)
 
@@ -93,13 +93,13 @@ You can test the solution example here:
 
 ## If-else conditional constructs
 
-The **`if`** conditional can also have an **`else`** option in order to provide a specific action to be performed in case the Boolean expression (which is specified at the beginning **`if (Boolean expression)`**) returns a negative / falsy result (**`false`**). Written in this way the **conditional statement** is called **`if-else`** and its behaviour is as follows: if the result of the condition is **positive / truthy** (**`true`**) - a set of instructions is executed. By contrast, when the result is **negative / falsy** (**`false`**) - a different set is executed. The format of this structure in **JavaScript** is as follows:
+The **`if`** conditional can also have an **`else`** option to provide a specific action to be performed in case the Boolean expression (which is specified at the beginning **`if (Boolean expression)`**) returns a negative/falsy result (**`false`**). Written in this way the **conditional statement** is called **`if-else`** and its behavior is as follows: if the result of the condition is **positive / truthy** (**`true`**) - a set of instructions is executed. By contrast, when the result is **negative / falsy** (**`false`**) - a different set is executed. The format of this structure in **JavaScript** is as follows:
 
 ```javascript
 if (Boolean condition) {
-    // Condition body to be executed if condition is true;
+    // Condition body to be executed if a condition is true
 } else {
-    // else structure body to be executed if condition is false;
+    // else structure body to be executed if a condition is false
 }
 
 ```
@@ -120,7 +120,7 @@ You can test your solution at the following link: [https://judge.softuni.bg/Cont
 When we have **only one command** in the body of the **`if` statement**, we can **skip the curly braces**, indicating the body of the conditional operator. When we need to execute a **block of code** (group of commands), curly braces are **mandatory**. In case the braces are omitted, **only the first line of code** will be executed after the **`if` statement**.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>It is a good practice to <strong> always include curly braces</strong>, since this makes the code more readable, neater and cleaner.</td>
+<td>It is a good practice to <strong> always include curly braces</strong> since this makes the code more readable, neater and cleaner.</td>
 </tr></table>
 
 Here is an example, where omitting the curly braces leads to confusion:
@@ -156,7 +156,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#2
 
 Write a program that reads two integers and outputs the greater one.
 
-Our first task is to **read** the two numbers. After which through the use of a simple **`if-else`** structure, in combination with the **greater than operator** (**`>`**), to perform the comparison. We have deliberately blurred parts of the code, so that the reader can implement the learned so far.
+Our first task is to **read** the two numbers. After which through the use of a simple **`if-else`** structure, in combination with the **greater than operator** (**`>`**), to perform the comparison. We have deliberately blurred parts of the code so that the reader can implement the learned so far.
 
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
@@ -164,20 +164,20 @@ Our first task is to **read** the two numbers. After which through the use of a 
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#3](https://judge.softuni.bg/Contests/Practice/Index/929#3).
 
-## Lifetime of a variable
+## The Lifetime of a variable
 
-Every variable has a scope in which  it exists, called **variable scope**. This scope specifies where the variable can be used and accessed. In **JavaScript** there are **two ways** to initialize variables. This is done through the key-word **`var`** or **`let`**. It is important to note the difference between them, as to avoid unexpected and unwanted results during the design and execution of our functions.
+Every variable has a scope in which it exists, called **variable scope**. This scope specifies where the variable can be used and accessed. In **JavaScript**, there are **two ways** to initialize variables. This is done through the keyword **`var`** or **`let`**. It is important to note the difference between them, as to avoid unexpected and unwanted results during the design and execution of our functions.
 
-Variables initialized with the key-word **`var`** have the properties of **global variables**. They are characterized with the fact that they **can be accessed anywhere, regardless of the location in our code, where they are declared**.
-Using the key-word **`let`**, our variable assumes the properties of **a local variable**. This means that its lifetime begins at the row in which it is **defined** and ends until the first closing curly brace **`}`** (of the function, of the **`if` statement** etc.). Owing to this it is important to know that every variable initialized with the key-word **`let`** within the body of an **`if`**, **will not be accessible outside its code block / scope**, unless we have defined it higher in the code.
+Variables initialized with the keyword **`var`** have the properties of **global variables**. They are characterized by the fact that they **can be accessed anywhere, regardless of the location in our code, where they are declared**.
+Using the keyword **`let`**, our variable assumes the properties of **a local variable**. This means that its lifetime begins at the row in which it is **defined** and ends until the first closing curly brace **`}`** (of the function, of the **`if` statement**, etc.). Owing to this it is important to know that every variable initialized with the keyword **`let`** within the body of an **`if`**, **will not be accessible outside its code block / scope**, unless we have defined it higher in the code.
 
-In the example below, in the last lines we will try to access the defined variables. We will print **`myMoney`** on the console, because it is declared in the beginning of our function, before the **`if` structure**, which makes it **available anywhere in the function body**. Even though **`salary`** is declared in the **`if`** structure block, we can print it because it has the properties of a **global variable** (since it is declared with **`var`**) and can be **used anywhere**. When we try to print the **`bonus`** variable, which is initialized in the **`if` structure**, we will get an **error**, since the lifetime of this variable ends with the first closing curly brace **`}`**, which in this case is the one closing the **`if`** structure:
+In the example below, in the last lines, we will try to access the defined variables. We will print **`myMoney`** on the console, because it is declared at the beginning of our function, before the **`if` structure**, which makes it **available anywhere in the function body**. Even though the **`salary`** is declared in the **`if`** structure block, we can print it because it has the properties of a **global variable** (since it is declared with **`var`**) and can be **used anywhere**. When we try to print the **`bonus`** variable, which is initialized in the **`if` structure**, we will get an **error**, since the lifetime of this variable ends with the first closing curly brace **`}`**, which in this case is the one closing the **`if`** structure:
 
 ![](assets/chapter-3-1-images/00.Variable-scope-01.png)
 
-Using the key-word **`var`** was the only way **in the past** to declare a variable, nowadays however this is **not recommended**. Because of this in all examples in this book we will use the key-word **`let`**.
+Using the keyword **`var`** was the only way **in the past** to declare a variable, nowadays however this is **not recommended**. Because of this in all examples in this book, we will use the keyword **`let`**.
 
-It is important to note that there is a **third way** to initialize variables - through the use of the key-word **`const`**. These variables have the same scope as if defined through **`let`**, however have one key difference - they are **constant variables**. This means that after the initial assignment, their value is **impossible to be changed or the variable re-defined**.
+It is important to note that there is a **third way** to initialize variables - through the use of the keyword **`const`**. These variables have the same scope as if defined through **`let`**, however have one key difference - they are **constant variables**. This means that after the initial assignment, their value is **impossible to be changed or the variable re-defined**.
 
 ## Conditional chaining
 
@@ -219,7 +219,7 @@ function number1to9([arg1]) {
 }
 ```
 
-The program logic of the above example **sequentially compares** the input number with the digits from 1 to 9 **with each consecutive comparison being performed only in case the previous result is not true**. Eventually if none of the **`if`** conditionals are astisfied, the last **`else` clause** is executed.
+The program logic of the above example **sequentially compares** the input number with the digits from 1 to 9 **with each consecutive comparison being performed only in case the previous result is not true**. Eventually, if none of the **`if`** conditionals are satisfied, the last **`else` clause** is executed.
 
 #### Testing in the Judge System
 
@@ -228,11 +228,11 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4
 
 ## Exercise: Simple conditions
 
-In order to practice the implementation of the conditional constructs **`if`** and **`if-else`**, we will take a look at a few practical problems.
+To practice the implementation of the conditional constructs **`if`** and **`if-else`**, we will take a look at a few practical problems.
 
 ### Problem: Bonus Score 
 
-We are given an **integer** – a number of points. Additional **bonus points** are awarded as per the rules described below. Write a function that calculates the **bonus points** for the given number and outputs the **total points** including the bonus.
+We are given an **integer** – several points. Additional **bonus points** are awarded as per the rules described below. Write a function that calculates the **bonus points** for the given number and outputs the **total points** including the bonus.
 
 - If the number is **up to 100** inclusive, the bonus points are 5.
 - If the number is **larger than 100**, the bonus points are **20%** of the number.
@@ -256,11 +256,11 @@ We can calculate the base and additional bonus score with a series of **`if-else
 
 ![](assets/chapter-3-1-images/06.Bonus-score-01.png)
 
-This is an example output, when the function is called with 175:
+This is an example output when the function is called with 175:
 
 ![](assets/chapter-3-1-images/06.Bonus-score-02.png)
 
-Please note that for this problem the Judge system is set-up to ignore any non-number outputs, so we may print explanations along with the number output.
+Please note that for this problem the Judge system is set up to ignore any non-number outputs, so we may print explanations along with the number output.
 
 #### Testing in the Judge System
 
@@ -282,7 +282,7 @@ Three athletes finish with some **number of seconds** (between **1** and **50**)
 
 #### Hints and pointers
 
-Firstly we sum the three numbers, in order to obtain the seconds total. As we know that **1 minute = 60 seconds**, we should calculate the minutes and seconds in the range 0 to 59:
+Firstly we sum the three numbers, to obtain the seconds total. As we know that **1 minute = 60 seconds**, we should calculate the minutes and seconds in the range 0 to 59:
 - If the result is between 0 and 59, we print 0 minutes + calculated seconds.
 - If the result is between 60 and 119, we print 1 minute + calculated seconds minus 60.
 - If the result is between 120 and 179, we print 2 minutes + calculated seconds minus 120.
@@ -301,7 +301,7 @@ Write a function, that **converts distance** between the following **8 units of 
 
 | Input measure | Output measure |
 | :-------------: | :--------------: |
-| 1 meter (m) | 1000 millimetres (mm) |
+| 1 meter (m) | 1000 millimeters (mm) |
 | 1 meter (m) | 100 centimetres (cm) |
 | 1 meter (m) | 0.000621371192 miles (mi) |
 | 1 meter (m) | 39.3700787 inches (in) |
@@ -325,7 +325,7 @@ The input will be three parameters:
 
 #### Hints and pointers
 
-We take the input data and to the units of measure we can add the method **`toLowerCase()`**, which will convert all letters to lower case. As we can see from the conversion table above, we have data for **converting only between meters and any other measuring unit**. In order to make the conversion, firstly we must calculate the input measurement in meters. To this effect we need to create a set of conditionals to determine the input measuring unit and then the output.
+We take the input data and to the units of measure, we can add the method **`toLowerCase()`**, which will convert all letters to lower case. As we can see from the conversion table above, we have data for **converting only between meters and any other measuring unit**. To make the conversion, firstly we must calculate the input measurement in meters. To this effect, we need to create a set of conditionals to determine the input measuring unit and then the output.
 
 ![](assets/chapter-3-1-images/08.Metric-converter-01.png)
 
@@ -336,7 +336,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#7
 
 ## Debugging - simple operations with a debugger
 
-To date we have written quite a lot of code and often times there were mistakes, were there? Now we can show you a tool to make finding mistakes easier.
+To date, we have written quite a lot of code and oftentimes there were mistakes, were there? Now we can show you a tool to make finding mistakes easier.
 
 ### What is "debugging"?
 
@@ -346,7 +346,7 @@ To date we have written quite a lot of code and often times there were mistakes,
 
 ### Debugging in Visual Studio Code
 
-We add a point, at which our function will stop its execution - a **breakpoint** after which we start the program in **debug mode** through pressing [**F5**]. The program will follow its course until it reaches our interrupt (**breakpoint**). After which we the execution can proceed to the **next line of code** with pressing [**F10**]. 
+We add a point, at which our function will stop its execution - a **breakpoint** after which we start the program in **debug mode** through pressing [**F5**]. The program will follow its course until it reaches our interrupt (**breakpoint**). After which we the execution can proceed to the **next line of code** by pressing [**F10**]. 
 
 ## Exercises: Simple Conditions
 
@@ -358,7 +358,7 @@ We start Visual Studio Code and create a new file [**File**] -> [**New File**]:
 
 ![](assets/chapter-3-1-images/00.Visual-studio-01.png)
 
-After that we will see a new file, which is anonymous for the moment to our system. In order to be recognized correctly, we need to save our code as a **JavaScript** file: [**File**] -> [**Save**]:
+After that, we will see a new file, which is anonymous for the moment to our system. To be recognized correctly, we need to save our code as a **JavaScript** file: [**File**] -> [**Save**]:
 
 ![](assets/chapter-3-1-images/00.VisualStuido-02.png)
 
@@ -422,11 +422,11 @@ The next exercise for this topic is to write a **JavaScript function**, which **
 
 #### Hints and pointers
 
-Firstly we create a **new JavaScript file**. After that we **write the code** of the program. You may use the following example code as a hint:
+Firstly we create a **new JavaScript file**. After that, we **write the code** of the program. You may use the following example code as a hint:
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
-After that we call the function and pass some sample data, so we can test its functionality:
+After that, we call the function and pass some sample data, so we can test its functionality:
 
 ![](assets/chapter-3-1-images/02.Excellent-or-not-02.png)
 
@@ -480,7 +480,7 @@ Write a function that takes **two integers** and prints the bigger one on the co
 
 #### Hints and pointers
 
-As usual, first we need to create a **new JavaScript file**. For the main logic we beed a single **`if-else`** construct. The code below is deliberately blurred, however there is enough visible to give you some hint, so you can complete it your self:  
+As usual, first, we need to create a **new JavaScript file**. For the main logic, we need a single **`if-else`** construct. The code below is deliberately blurred, however, there is enough visible to give you some hint, so you can complete it yourself:  
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
 When we are done with the implementation of the solution, we call the function and pass it example parameters, we **run** the program with [**Ctrl+F5**] and test it:
@@ -555,7 +555,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#9
 ### Problem: Identical words
 
 
-Write a function that **accepts two words** as parameters and checks if they are the same. Comparison should be case insensitive and the output should be either “**yes**” or “**no**”. 
+Write a function that **accepts two words** as parameters and checks if they are the same. A comparison should be case-insensitive and the output should be either “**yes**” or “**no**”. 
 
 #### Sample Input and Output
 
@@ -569,7 +569,7 @@ Write a function that **accepts two words** as parameters and checks if they are
 
 #### Hints and pointers
 
-Before the comparison it is advisable that both words are in lower case, so that case (uppercase / lowercase) does not influence the result: **`word = word.toLowerCase()`**.
+Before the comparison, both words should be in lower case, so that case (uppercase / lowercase) does not influence the result: **`word = word.toLowerCase()`**.
 
 #### Testing in the Judge System
 
@@ -578,7 +578,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#1
 
 ### Problem: Speed Assessment
 
-Write a function, that **takes speed** (decimal number) as a parameter and prints **speed information**. For speeds **up to 10** (inclusive), print "**slow**". For speed **over 10** and **up to 50**, print "**average**". For speed **over 50** and **up to 150**, print "**fast**". For speed **over 150** and **up to 1000**, print "**ultra fast**". For higher speed, print "**extremely fast**".
+Write a function, that **takes speed** (decimal number) as a parameter and prints **speed information**. For speeds **up to 10** (inclusive), print "**slow**". For speed **over 10** and **up to 50**, print "**average**". For speeds **over 50** and **up to 150**, print "**fast**". For speeds **over 150** and **up to 1000**, print "**ultra fast**". For higher speed, print "**extremely fast**".
 
 #### Sample Input and Output
 
@@ -601,9 +601,9 @@ Write a function that takes **the measures of a geometric shape** and **calculat
 
 The first argument of the function is the type of shape (**`square`**, **`rectangle`**, **`circle`**, **`triangle`**).
 * If the shape is a **square**, the next argument will be one number - the length of its side.
-* If the shape is a **rectangle**, the next arguments will be two numbers - the lengths of its sides.
+* If the shape is a **rectangle**, the next argument will be two numbers - the lengths of its sides.
 * If the shape is a **circle**, the next argument will be one number - the radius of the circle.
-* If the shape is a **triangle**, the next arguments will be two numbers - its base and the corresponding altitude.
+* If the shape is a **triangle**, the next argument will be two numbers - its base and the corresponding altitude.
 
 The result should be rounded up to the **third decimal point**. 
 
@@ -637,7 +637,7 @@ Write a function that takes **two parameters - hours and minutes** based on a 24
 
 #### Hints and pointers
 
-Add 15 minutes and check using a set of conditions. If minutes are over 59 **increase the hours** by 1 and **decrease the minutes** by 60. You may handle the case when hours are over 23 in a similar manner. Take care when printing the minutes to add a **leading zero** where appropriate.
+Add 15 minutes and check using a set of conditions. If minutes are over 59 **increase the hours** by 1 and **decrease the minutes** by 60. You may handle the case when hours are over 23 similarly. Take care when printing the minutes to add a **leading zero** where appropriate.
 
 #### Testing in the Judge System
 
@@ -674,7 +674,7 @@ Write a function that converts numbers in the range of [**0 … 100**] in text.
 
 #### Hints and pointers
 
-Firstly you should check for a **single digit numbers** and if this is the case, print the corresponding word. Then you can check if the number is a **double digit number**. These can be printed in two parts: left part (**tens** = number / 10) and right part (**units** = number % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.
+Firstly you should check for **single-digit numbers** and if this is the case, print the corresponding word. Then you can check if the number is a **double-digit number**. These can be printed in two parts: left part (**tens** = number / 10) and right part (**units** = number % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.
 
 #### Testing in the Judge System
 
@@ -687,13 +687,13 @@ Now since we have completed a few exercises on **conditional statements (checks)
 
 ### Problem: \*\*Currency converter
 
-Now let's see how to create a graphical (**GUI**) application for **currency conversion**. The application will look similarly to the picture below:  
+Now let's see how to create a graphical (**GUI**) application for **currency conversion**. The application will look similar to the picture below:  
 
 ![](assets/chapter-3-1-images/14.Converter-01.png)
 
-For visualization we will use an **internet browser**, that interprets **HTML** pages. We will create a new page and will build the **structure**, **appearance** and **functionality** of our application.
+For visualization, we will use an **internet browser**, that interprets **HTML** pages. We will create a new page and will build the **structure**, **appearance** and **functionality** of our application.
 
-As usual, we **create an new file**, save it with the name **Currency-Converter**, however this time we add the file extension **.html**.
+As usual, we **create a new file**, save it with the name **Currency-Converter**, however this time we add the file extension **.html**.
 
 ![](assets/chapter-3-1-images/14.Converter-02.png)
 
@@ -827,6 +827,6 @@ function convert(){
 }
 ```
 
-The above code takes the **amount** to be converted from the field **`cash-input`** and the **chosen currency** for the result of the field **`currency-options`**. After that with the use of a **conditional statement**, depending on the chosen currency, the amount is divided by the **exchange rate** (which is hard-coded by you in the source code). Finally we generate a **text message with the result** (rounded to the second digit after the decimal point) and we output the message in the green box **`result`**. Have a go!
+The above code takes the **amount** to be converted from the field **`cash-input`** and the **chosen currency** for the result of the field **`currency-options`**. After that with the use of a **conditional statement**, depending on the chosen currency, the amount is divided by the **exchange rate** (which is hard-coded by you in the source code). Finally, we generate a **text message with the result** (rounded to the second digit after the decimal point) and we output the message in the green box **`result`**. Have a go!
 
-If you have problems with the examples above, **watch the video** in the beginning of this chapter or ask for help in the SoftUni official **discussion forum**: https://softuni.bg/forum.
+If you have problems with the examples above, **watch the video** at the beginning of this chapter or ask for help in the SoftUni official **discussion forum**: https://softuni.bg/forum.
