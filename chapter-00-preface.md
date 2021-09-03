@@ -29,7 +29,6 @@ As we will explain later, **the programming language with which we start is not 
 This programming book for complete beginners is available in several programming languages (or is in the process of being adapted for them):
 * [Programming basics with C#](https://csharp-book.softuni.bg)
 * [Programming basics with Java](https://java-book.softuni.bg)
-* [Programming basics with JavaScript](https://js-book.softuni.bg)
 * [Programming basics with с Python](https://python-book.softuni.bg)
 * [Programming basics with със C++](https://cpp-book.softuni.bg)
 * [Programming basics with с PHP](https://php-book.softuni.bg)
@@ -67,7 +66,7 @@ This **programming textbook** accompanies free programming courses for beginners
 
 ### Judge the task verification system
 
-**The SoftUni Judge system** (https://judge.softuni.bg) is an automated system on the Internet **which checks solutions to programming tasks through a series of tests**. **Real-time** task transmission and verification: you send a solution and in seconds you get an answer if it's true. Each **successful** test gives the points provided for it. With a correct solution, you get all the points for the task. With a partially correct solution, you get some of the points for the task. With a completely wrong decision, you get 0 points.
+**The SoftUni Judge system** (https://judge.softuni.org) is an automated system on the Internet **which checks solutions to programming tasks through a series of tests**. **Real-time** task transmission and verification: you send a solution and in seconds you get an answer if it's true. Each **successful** test gives the points provided for it. With a correct solution, you get all the points for the task. With a partially correct solution, you get some of the points for the task. With a completely wrong decision, you get 0 points.
 
 **All tasks in this book are available for testing in the SoftUni Judge system** and we strongly recommend that you test them once you have decided to know if you are missing something and whether your solution is really working properly, as required by the task.
 
@@ -77,7 +76,7 @@ Note also some **features of the SoftUni Judge system**:
 
 **Example**: if a number is required to be printed in the output (e.g. **`25`**), do not display descriptive messages such as **`The result is: 25`**, but print exactly what is required, i.e. only the number.
 
-The SoftUni Judge system is **available at any time** from its website: [https://judge.softuni.bg](https://judge.softuni.bg).
+The SoftUni Judge system is **available at any time** from its website: [https://judge.softuni.org](https://judge.softuni.bg).
  - To sign in, use your authentication from the SoftUni website: [https://softuni.bg](https://softuni.bg).
  - Use of the system is **free of charge** and is not subject to participation in SoftUni courses.
 
@@ -146,7 +145,7 @@ As you may guess, **the programing language does not matter** for the developmen
 
 We must also make it clear this time that **the programming language is irrelevant** to the uptake of all these skills. They accumulate slowly, over the course of many years of practice in the profession. Some knowledge is fundamental and can be learned theoretically, but it takes years of practice to fully understand them and realize them in depth.
 
-Fundamental knowledge and skills for programming, software development, software engineering and computer science are learned during **[the overall software engineer program in SofUni](https://softuni.bg/curriculum)**, as well as with a number of [electoral courses](https://softuni.bg/trainings/opencourses). Working with a variety of software libraries, programming interfaces (APIs), frameworks and software technologies, and their interaction gradually build that knowledge and skills, so don't expect to get them from a single course, book, or project.
+Fundamental knowledge and skills for programming, software development, software engineering and computer science are learned during **[the overall software engineer program in SofUni](https://softuni.bg/curriculum)**, as well as with a number of [additional courses](https://softuni.bg/trainings/opencourses). Working with a variety of software libraries, programming interfaces (APIs), frameworks and software technologies, and their interaction gradually build that knowledge and skills, so don't expect to get them from a single course, book, or project.
 
 Only **initial knowledge in the areas listed above** is usually sufficient to start working as a programmer, and the deepening takes place in the workplace according to the technologies and development tools used in the respective company and team.
 
