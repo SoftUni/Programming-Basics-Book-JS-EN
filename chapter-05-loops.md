@@ -1,6 +1,6 @@
 # Chapter 5.1. Loops (Repetitions)
 
-In this chapter we will introduce the **repeat blocks of commands**, also known as "**loops**". We will write a number of loops, using the **`for`** operator in its simplest form. Finally, we will solve a few practical problems that require repetition of commands, using loops.
+In this chapter, we will introduce the **repeat blocks of commands**, also known as "**loops**". We will write a set of loops, using the **`for`** operator in its simplest form. Finally, we will solve a few practical problems that require repetition of commands, using loops.
 
 
 ## Video
@@ -14,7 +14,7 @@ In this chapter we will introduce the **repeat blocks of commands**, also known 
 
 ## Repeating code blocks (for loops)
 
-In programming we often need **to execute a block of commands multiple times**. In order to do that we use **loops**. Let's look at one example of a **`for` loop**, which will loop through the numbers from 1 to 10 and print each one:
+In programming, we often need **to execute a block of commands multiple times**. To do that we use **loops**. Let's look at one example of a **`for` loop**, which will loop through the numbers from 1 to 10 and print each one:
 
 ```js
 for (let i = 1; i <= 10; i++) {
@@ -22,7 +22,7 @@ for (let i = 1; i <= 10; i++) {
 }
 ```
 
-The loop starts with the **operator `for`** and loops through all values of a given variable in a given range, for example all numbers from 1 to 10 included. For each value it executes a sequence of commands.
+The loop starts with the **operator `for`** and loops through all values of a given variable in a given range, for example, all numbers from 1 to 10 included. For each value, it executes a sequence of commands.
 
 Upon declaring the loop you can specify a **start value** and an **end value**. **The loop's body** is usually in curly braces **`{ }`** and contains one or more commands. The figure below shows the structure of a **`for` loop**:
 
@@ -61,7 +61,7 @@ While programming, we often need to use loops, dozens of times a day. That's why
 
 ![](assets/chapter-5-1-images/00.For-loop-code-snippet-02.png)
 
-**Try it yourself**, so you can master the skill of using the code snippet for **`for` loops** in Visual Studio Code.
+**Try it yourself**, so you can master the skill of using the code snippet for the **`for` loops** in Visual Studio Code.
 
 ### Problem: Numbers up to 1000 ending in 7
 
@@ -115,11 +115,11 @@ Write a program that **sums `n` given integer numbers**.
 
 #### Hints and Guidelines
 
-We can solve the problem with summing up numbers in the following way:
+We can solve the problem by summing up numbers in the following way:
  - Read the input number **`n`**.
  - We start with a sum that initially equals zero **`sum = 0`**.
- - We run a loop from 1 to **`args.length`**. On each step of the loop we read the number **`args[i]`** and add it to the sum **`sum`**.
- - Finally, we print the calculated sum **`sum`**.
+ - We run a loop from 1 to **`args.length`**. On each step of the loop, we read the number **`args[i]`** and add it to the **`sum`**.
+ - Finally, we print the calculated **`sum`**.
  
 Here's the source code for the solution:
 
@@ -145,7 +145,7 @@ Write a program that reads **n integer numbers** (**n** > 0) and finds **the big
 
 #### Hints and Guidelines
 
-First, we read one number **`n`** (the number of integers that will be entered). We assign an initial neutral value to the current maximum **`max`**, for example **-10000000000000** (or **`Number.NEGATIVE_INFINITY`**). Using a **`for` цикъл** that iterates **n times** (**`n = args[0]`**), we read one integer number **`num`** on each iteration. If the current number **`num`** is higher than the current maximum **`max`**, we assign the value of the **`num`** to the variable **`max`**. Finally, we have the highest number's value stored in **`max`**. We print the number on the console.
+First, we read one number **`n`** (the number of integers that will be entered). We assign an initial neutral value to the current maximum **`max`**, for example **-10000000000000** (or **`Number.NEGATIVE_INFINITY`**). Using a **`for` loop** that iterates **n times** (**`n = args[0]`**), we read one integer number **`num`** on each iteration. If the current number **`num`** is higher than the current maximum **`max`**, we assign the value of the **`num`** to the variable **`max`**. Finally, we have the highest number's value stored in **`max`**. We print the number on the console.
 
 ![](assets/chapter-5-1-images/05.Max-number-01.png)
 
@@ -168,7 +168,7 @@ Write a program that reads **n integer numbers** (**n** > 0) and finds **the sma
 
 #### Hints and Guidelines
 
-The problem is completely identical with the previous one, except this time we will use another neutral value for a start.
+The problem is completely identical to the previous one, except this time we will use another neutral value for a start.
 
 ![](assets/chapter-5-1-images/06.Min-number-01.png)
 
@@ -179,7 +179,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#5
 
 ### Problem: Left and Right Sum
 
-Write a program that reads **2 \* n integer numbers** and checks whether **the sum of the first n integers** (left sum) equals **the sum of the second group of n integers** (right sum). In case the sums are equal, print **"Yes" + the sum**, otherwise print **"No" + the difference**. The difference is calculated as a possitive number (by absolute value). The format of the output must be identical to the one in the examples below.
+Write a program that reads **2 \* n integer numbers** and checks whether **the sum of the first n integers** (left sum) equals **the sum of the second group of n integers** (right sum). In case the sums are equal, print **"Yes" + the sum**, otherwise print **"No" + the difference**. The difference is calculated as a positive number (by absolute value). The format of the output must be identical to the one in the examples below.
 
 #### Sample Input and Output
 
@@ -189,7 +189,7 @@ Write a program that reads **2 \* n integer numbers** and checks whether **the s
 
 #### Hints and Guidelines
 
-First, we read the number **n**, after that we enter the first **n** numbers (**the left** half) and calculate their sum. We will then proceed reading more **n** numbers (**the right** half) and sum them up. We calculate **the difference** between the sums by absolute value: **`Math.abs(leftSum - rightSum)`**. If the difference is **0**, print **"Yes" + the sum**, otherwise print **"No" + the difference**.
+First, we read the number **n**, after that we enter the first **n** numbers (**the left** half) and calculate their sum. We will then proceed to read more **n** numbers (**the right** half) and sum them up. We calculate **the difference** between the sums by absolute value: **`Math.abs(leftSum - rightSum)`**. If the difference is **0**, print **"Yes" + the sum**, otherwise print **"No" + the difference**.
 
 ![](assets/chapter-5-1-images/07.Left-and-right-sum-01.png)
 
@@ -301,7 +301,7 @@ Write a program that reads **n numbers** and calculates **the sum**, **the min**
 
 The problem combines some of the previous problems: finding **the min**, **the max** value and **the sum**, as well as processing the elements on **even and odd positions**. Check them out.
 
-In this problem it's better to work with **fractions** (not integers). The sum, the minimum and the maximum value are also fractions. We must use **a neutral start value** upon finding the minimum / maximum, for example **1000000000.0** and **-1000000000.0**. If the final result is the neutral value, print **“No”**.
+In this problem, it's better to work with **fractions** (not integers). The sum, the minimum and the maximum value are also fractions. We must use **a neutral start value** upon finding the minimum / maximum, for example **1000000000.0** and **-1000000000.0**. If the final result is the neutral value, print **“No”**.
 
 #### Testing in the Judge System
 
@@ -309,7 +309,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#1
 
 ### Problem: Equal Pairs
 
-There are **2 \* n numbers**. The first and the second number form **a pair**, so do the third and the forth number, and so on. Each pair has **a value** – the sum of its numbers. Write a program that checks **whether all pairs have the same value**.
+There are **2 \* n numbers**. The first and the second number form **a pair**, so do the third and the fourth number, and so on. Each pair has **a value** – the sum of its numbers. Write a program that checks **whether all pairs have the same value**.
 
 In case the value is the same, print **"Yes, value=…" + the value**, otherwise, print **the maximum difference** between two consecutive pairs in the following format - **"No, maxdiff=…" + the maximum difference**. 
 
@@ -328,15 +328,15 @@ The input holds the number **n**, followed by **2*n integers**, all of them on a
 
 #### Hints and Guidelines
 
-Read the numbers from the input **in pairs**. For each pair calculate its **sum**. As we read the number pairs from the input, for each pair, except for the first one, we must calculate **the difference with the previous one**. In order to do that, we need to store the sum of the previous pair in a separate variable. Finally, find **the biggest difference** between two pairs. If it is **0**, print **“Yes”** + the value, otherwise - **“No”** + the difference.
+Read the numbers from the input **in pairs**. For each pair calculate its **sum**. As we read the number pairs from the input, for each pair, except for the first one, we must calculate **the difference with the previous one**. To do that, we need to store the sum of the previous pair in a separate variable. Finally, find **the biggest difference** between the two pairs. If it is **0**, print **“Yes”** + the value, otherwise - **“No”** + the difference.
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#11](https://judge.softuni.bg/Contests/Practice/Index/933#11).
 
-## Lab: Graphic and Web applications
+## Lab: Graphics and Web applications
 
-In this chapter we learned about **loops** as a programming construction that allows us to repeat a particular action or a group of actions multiple times. Now let's play with them. In order to do that, we will draw several figures, which consist of a large number of repetitive graphic elements, and this time we will not do it on the console, but in a graphical environment, using "**turtle graphics**". It will be interesting. And it's not complicated at all. Try it!
+In this chapter, we learned about **loops** as a programming construction that allows us to repeat a particular action or a group of actions multiple times. Now let's play with them. To do that, we will draw several figures, which consist of a large number of repetitive graphic elements, and this time we will not do it on the console, but in a graphical environment, using "**turtle graphics**". It will be interesting. And it's not complicated at all. Try it!
 
 ### Problem: Drawing with a turtle – a graphical application (GUI)
 
@@ -353,8 +353,8 @@ First, let's check out **the drawing concept “Turtle Graphics”**. Take a loo
 We will build the application, using the following technologies:
   - **HTML** language – to describe the user interface (drawing field and buttons).
   - **JavaScript** code – to implement the actions of the buttons.
-  - JS library **[jQuery](https://jquery.com/)** – to facilitate access to in the user's interface.
-  - JS library **[jQuerу-Turtle](https://github.com/PencilCode/jquery-turtle)** – in order to implement screen drawing with the mechanics of “turtle graphics”.
+  - JS library **[jQuery](https://jquery.com/)** – to facilitate access to the user's interface.
+  - JS library **[jQuerу-Turtle](https://github.com/PencilCode/jquery-turtle)** – to implement screen drawing with the mechanics of “turtle graphics”.
   
 There are two options to load all libraries and resources for our web application **Turtle Graphics**:
 
@@ -366,11 +366,11 @@ This option is suitable when we have a permanent internet connection. We need to
 
 All the necessary resources will be loaded automatically when the file is started and we can directly write our **JavaScript** code.
 
-If for some reason you don't have permenent access to the Internet, you can use the second option:
+If for some reason you don't have permanent access to the Internet, you can use the second option:
 
 + **Loading resources locally**
 
-You have to download all the necessary files and change a few lines in the html file. Start by creating a folder called **Turtle-Demo** and create the main **html file** and a subfolder for the necessary resources in it:
+You have to download all the necessary files and change a few lines in the HTML file. Start by creating a folder called **Turtle-Demo** and create the main **HTML file** and a subfolder for the necessary resources in it:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-03.png)
 
@@ -388,7 +388,7 @@ One of the most popular JavaScript libraries which offers **speed and functional
 
 > **jquery-turtle.js (version 2.0.8)**
 
-A plugin, written by **David Bau** for jQuery - **jQuery-turtle** which provides a set of features for **graphic drawing** of the "turtle" type. Find detailed information and rules of use here: [https://github.com/davidbau/jquery-turtle](https://github.com/davidbau/jquery-turtle)
+A plugin, written by **David Bau** for jQuery - **jQuery-turtle** which provides a set of features for the **graphic drawing** of the "turtle" type. Find detailed information and rules of use here: [https://github.com/davidbau/jquery-turtle](https://github.com/davidbau/jquery-turtle)
 
 > **style.css**
 
@@ -396,7 +396,7 @@ A set of **design rules** in a separate file.
 
 > **turtle-icon.png**
 
-**Raster graphic**, which we use for a better presentation of the application.
+A **raster graphic**, which we use for a better presentation of the application.
 
 Once we have put all files in one folder, we need to change the network address of the resources in our **HTML** file - **index.html**:
 
@@ -412,25 +412,25 @@ Now we can proceed to the fun part - **writing the JavaScript code** for the web
 The code with the functions of the application will be relatively short (about 70-80 lines) and so we don't need to put it into a new separate file. The important thing is to place it correctly in our HTML file.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>It is recommended that all JavaScript files be placed at the end of the HTML document before the final <strong>"body"</strong> tag. This guarantees the faster loading of the page, because we do not delay the rendering (processing) of its elements.</td>
+<td>It is recommended that all JavaScript files be placed at the end of the HTML document before the final <strong>"body"</strong> tag. This guarantees the faster loading of the page because we do not delay the rendering (processing) of its elements.</td>
 </tr></table>
 
-Always **insert the library file first** [**jquery.js**], then the one with the plugin code [**jquery-turtle.js**]. Only then we write our code because it's based on the first two files. If we try to change their places, we will get errors and our application will not work properly.
+Always **insert the library file first** [**jquery.js**], then the one with the plugin code [**jquery-turtle.js**]. Only then we will write our code because it's based on the first two files. If we try to change their places, we will get errors and our application will not work properly.
 
 The library **"jQuery"** allows us to manipulate **HTML** elements, using valid design selectors (**CSS**). We have to apply a specific syntax:
 ```js
 $('#ID') or $('.Class')  
 ```
-We can use the **HTML** element's name, **ID** or its **class**. The selectors are always strings of text, so they are enclosed in single or double quotes. If the selector is the **ID** (a separate name for each element), in the beginning we put a **sharp sign** (**#**). But if we have decided to select **by class** (one name for multiple elements), then we write a **dot**.
+We can use the **HTML** element's name, **ID** or its **class**. The selectors are always strings of text, so they are enclosed in single or double-quotes. If the selector is the **ID** (a separate name for each element), in the beginning, we put a **sharp sign** (**#**). But if we have decided to select **by class** (one name for multiple elements), then we write a **dot**.
 
-Adhering to the **jQuery-turtle** documentation, we have to initialize our obejct and set the basic characteristics of the "turtle". With the following code we will determine **the size** of the graph (**`turtleScale`**) and **the speed** of movement (**`turtleSpeed`**):
+Adhering to the **jQuery-turtle** documentation, we have to initialize our object and set the basic characteristics of the "turtle". With the following code we will determine **the size** of the graph (**`turtleScale`**) and **the speed** of movement (**`turtleSpeed`**):
 
 ```js
 eval($.turtle());
 $('#turtle').css('turtleScale', '2').css('turtleSpeed', '4');
 ```
 
-Once we are done with the basis of our application, we have to write the functions for each button. In order to do that, we use the selectors (**ID**) of the objects that we have preset in the **html file**. We will share the code for the first three buttons to get you acquainted with the basic principles:
+Once we are done with the basis of our application, we have to write the functions for each button. To do that, we use the selectors (**ID**) of the objects that we have preset in the **HTML file**. We will share the code for the first three buttons to get you acquainted with the basic principles:
 
 + **"Draw" Button**
 
@@ -494,7 +494,7 @@ $('#hide').click(function() {
       });
 });
 ```
-We use a preset function from the library **jQuery - `toggle()`**. With its help we can **hide and show** elements. Apart from that, we attach another function which **changes the button's text** when clicked. We have to use the keyword **`this`**. It plays an important role in the JavaScript language syntax and **in our thoughts** we can replace it with **self/itself**. In this case it is equal to the element **`hide`**, ie. **`this = #hide`**. We turn to the element itself and set a text changing function which is also activated each time the button is clicked.
+We use a preset function from the library **jQuery - `toggle()`**. With its help, we can **hide and show** elements. Apart from that, we attach another function that **changes the button's text** when clicked. We have to use the keyword **`this`**. It plays an important role in the JavaScript language syntax and **our thoughts** we can replace it with **self/itself**. In this case, it is equal to the element **`hide`**, ie. **`this = #hide`**. We turn to the element itself and set a text changing function which is also activated each time the button is clicked.
 
 Let's sum up the code we have written so far:
 
@@ -537,7 +537,7 @@ function resetCanvas() {
     $('#turtle').css('turtleScale', '2').css('turtleSpeed', '4');
 }
 ```
-Apply the preset functions in David Bau's plugin in order to **erase all graph elements** (**`cg()`**) and **move** the turtle to its **starting position** (**`home()`**). Then we set the initial settings of the **`turtle`** element once again. The whole function **`resetCanvas()`** is added at the beginning of each new function that will be attached to the other buttons.
+Apply the preset functions in David Bau's plugin to **erase all graph elements** (**`cg()`**) and **move** the turtle to its **starting position** (**`home()`**). Then we set the initial settings of the **`turtle`** element once again. The whole function **`resetCanvas()`** is added at the beginning of each new function that will be attached to the other buttons.
 
 **Example:**
 ```js
@@ -606,12 +606,12 @@ Repeat the following 36 times in a loop:
 
 ### Problem: * Draw a Spiral Triangles with the Turtle
 
-Add a [**Triangle**] button that draws three trinagles with 22 beams each, as shown in the figure below:
+Add a [**Triangle**] button that draws three triangles with 22 beams each, as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-17.png)
 
 **Hint:**
 
-Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step with 10 and rotate 120 degrees. Repeat 3 times in another loop for the three triangles.
+Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step by 10 and rotate 120 degrees. Repeat 3 times in another loop for the three triangles.
 
-If you have difficulties with the exercises above, ask for help in **the SoftUni's discussion forum**: https://softuni.bg/forum.
+If you have difficulties with the exercises above, ask for help in **SoftUni's discussion forum**: https://softuni.bg/forum.
