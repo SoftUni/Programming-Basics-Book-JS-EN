@@ -266,7 +266,7 @@ We gave **`n`** as a parameter to our function:
 ![](/assets/chapter-6-1-images/09.House-02.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into <b><code>Number</code></b>type, because it is said that we will be given valid integers. If you are making more complex programs it is a good practice to check the data. What will happen if instead of the character "A" the user inputs a number?</td>
+<td><b>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into <b><code>Number</code></b>type, because it is said that we will be given valid integers. If you are making more complex programs it is a good practice to check the data. What will happen if instead of the character "A" the user inputs a number?</td>
 </tr></table>
 
 To draw **the roof**, we write down how many **stars** we start with a variable called **`stars`**:
