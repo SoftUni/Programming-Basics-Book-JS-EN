@@ -175,7 +175,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#5
 
 ### Problem: Christmas Tree
 
-Write a program that takes a number **n** (1 ≤ n ≤ 100) and prints a Christmas tree with height of **n+1**.
+Write a program that takes a number **n** (1 ≤ n ≤ 100) and prints a Christmas tree with a height of **n+1**.
 
 |Input|Output|Input|Output|
 |---|---|---|---|
