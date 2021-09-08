@@ -1,14 +1,14 @@
 # Chapter 1. First Steps in Programming
 
-In this chapter we are going to find out **what programming** is at its core. We will get familiar with the idea of programming languages and explore the **environments for software development** (Integrated Development Environment – IDEs); we'll see how to work with them, in particular with **Visual Studio Code**. We will write and execute our **first program** written in the programming language **JavaScript** and then we'll exercise on a few tasks: we will create a console-based program and a Web application. We will learn how use **SoftUni's Judge System** to check the correctness of our solutions to the problems in this book. Finally, we'll look at some typical mistakes made during code writing and we'll learn how to avoid them.
+In this chapter, we are going to find out **what programming** is at its core. We will get familiar with the idea of programming languages and explore the **environments for software development** (Integrated Development Environment – IDEs); we'll see how to work with them, in particular with **Visual Studio Code**. We will write and execute our **first program** written in the programming language **JavaScript** and then we'll exercise on a few tasks: we will create a console-based program and a Web application. We will learn how to use **SoftUni's Judge System** to check the correctness of our solutions to the problems in this book. Finally, we'll look at some typical mistakes made during code writing and we'll learn how to avoid them.
 
 ## What Does "To Program" Mean?
 
-To program means to give instructions to the computer, for example *play a certain sound*, *print something on the screen* or *multiply two numbers*. When there's a series of commands, we have a computer program (script). The computer program's text is called **program code** (**source code** or just **code**).
+To program means to give instructions to the computer, for example, *play a certain sound*, *print something on the screen* or *multiply two numbers*. When there's a series of commands, we have a computer program (script). The computer program's text is called **program code** (**source code** or just **code**).
 
 ## Computer Programs
 
-**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go etc. In order to write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **JavaScript**. In this book we'll cover programming in general, as well as JavaScript's particular syntax and semantics. We'll examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
+**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go, etc. In order to write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **JavaScript**. In this book, we'll cover programming in general, as well as JavaScript's particular syntax and semantics. We'll examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
 
 ### Algorithms
 
@@ -17,11 +17,11 @@ To make creating programs, writing program code (commands), executing it and oth
 
 ### Programming Languages, Compilers, Interpreters and Development Environments
 
-**Programming languages** are an artificial languages (syntax for expression), designed to **issue commands** which we expect the computer to read, process and execute. With the help of programming languages we write series of commands (**programs**) which **tell the computer what to do**. Execution of computer programs can be achieved by using either a **compiler** or an **interpreter**.
+**Programming languages** are artificial languages (syntax for expression), designed to **issue commands** which we expect the computer to read, process and execute. With the help of programming languages, we write series of commands (**programs**) which **tell the computer what to do**. Execution of computer programs can be achieved by using either a **compiler** or an **interpreter**.
 
-**The compiler** translates code from a programming language into **machine code** and for each construct (command) in the code, it chooses an appropriate, predefined fragment of machine code while simultaneously checking the program's text for **errors**. Together, all the compiled fragments represent the original program translated in machine code, exactly how the computer's microprocessor is expecting it. After it's been complied, the program can be directly executed by the microprocessor in cooperation with the operation system. Compiled programming languages **compile the program** before executing it and find syntactic errors (incorrect commands) during compile time. Languages like C++, C#, Java, Swift and Go work with compilers.
+**The compiler** translates code from a programming language into **machine code** and for each construct (command) in the code, it chooses an appropriate, predefined fragment of machine code while simultaneously checking the program's text for **errors**. Together, all the compiled fragments represent the original program translated in machine code, exactly how the computer's microprocessor is expecting it. After it's been compiled, the program can be directly executed by the microprocessor in cooperation with the operating system. Compiled programming languages **compile the program** before executing it and find syntactic errors (incorrect commands) during compile time. Languages like C++, C#, Java, Swift and Go work with compilers.
 
-Some programming languages don't use a compiler, but are **directly interpreted** by specialized software called an interpreter. **The interpreter** is a **program that executes programs**, written in some programming language. It executes the program's commands in sequence, and understands not only single commands and series of commands, but also other language constructs (checks, iterations, functions etc.). PHP, Python and **JavaScript** are languages that work with an interpreter and are executed without the need to be compiled. Due to lack of preliminary compilation, interpreted languages' errors are found during run time, after the program has already started working.
+Some programming languages don't use a compiler but are **directly interpreted** by specialized software called an interpreter. **The interpreter** is a **program that executes programs**, written in some programming language. It executes the program's commands in sequence and understands not only single commands and series of commands but also other language constructs (checks, iterations, functions, etc.). PHP, Python and **JavaScript** are languages that work with an interpreter and are executed without the need to be compiled. Due to lack of preliminary compilation, interpreted languages' errors are found during run time, after the program has already started working.
 
 Overall, **compiled languages work more slowly than their interpreted counterparts**. The difference in execution speed is sometimes insignificant, but in other cases massive. In interpreted programming languages **we can change code more quickly and re-execute** (in order to remove a mistake, for example), while compiled languages are slower after a change in code has been introduced, due to the need for compilation.
 
@@ -30,7 +30,7 @@ Overall, **compiled languages work more slowly than their interpreted counterpar
 **Development environments** are convenient because they incorporate everything necessary to develop a program, so there's no need to leave the environment. If we don't use a development environment, we'll have to write code in a text editor, compile it with a command from the console, execute it with another command from the console and write additional commands, when needed, which will cost a lot of time. This is why most programmers use IDEs for everyday work.
 
 Programming with **JavaScript** is usually done in the development environment **Visual Studio Code** which is developed and freely distributed by Microsoft. You can download it from: https://www.visualstudio.com/downloads/.
-Alternatives to Visual Studio Code are **WebStorm** (https://www.jetbrains.com/webstorm/), **Atom** (https://atom.io/) and others. In this book we'll be using the development environment **Visual Studio Code**.
+Alternatives to Visual Studio Code are **WebStorm** (https://www.jetbrains.com/webstorm/), **Atom** (https://atom.io/) and others. In this book, we'll be using the development environment **Visual Studio Code**.
 
 ### Low-Level, High-Level Languages and Runtime Environments
 
@@ -40,15 +40,15 @@ There are different types of **programming languages**. **Lowest-level** languag
 
 **Low-level languages** command hardware directly and require a lot of effort and a vast number of commands, to carry out a certain task. **Higher-level languages** require less code to achieve the same result, but have no direct access to hardware. They are used to develop application software like web and mobile applications.
 
-Most of the software we use on a daily basis like music players, video players, GSP programs etc. is written on high-level **languages for application programming** like Python, JavaScript, C#, Java, C++, PHP etc.
+Most of the software we use on a daily basis like music players, video players, GPS programs, etc. is written on high-level **languages for application programming** like Python, JavaScript, C#, Java, C++, PHP, etc.
 
 **JavaScript is an interpreted language** which means we write commands and they're executed immediately after running the program. As a result of that, we will realize we've made a mistake in our code only after we've started our program and reached the incorrect command. In cases like these, **IDEs** like Visual Studio Code are extremely helpful as they check our code while we're writing it and alarm us of potential issues. After we've written our code and want to test it, we can save it in a file with extension **.js**. 
 
-Most **programming languages** are specialized in the development of certain types of applications – Desktop for Windows and Mac, mobile apps, server applications, applications which command smart gadgets and many more. **JavaScript** is one of the few languages which allow you to create an application in every field you can think of – from websites and mobile apps to desktop applications.
+Most **programming languages** are specialized in the development of certain types of applications – Desktop for Windows and Mac, mobile apps, server applications, applications that command smart gadgets and many more. **JavaScript** is one of the few languages which allow you to create an application in every field you can think of – from websites and mobile apps to desktop applications.
 
-The most popular JavaScript **interpreters** are the web browsers you use every day – Chrome, Firefox, Internet Explorer etc. When loading your favourite web site, it's highly likely it will contain **JavaScript** files which will execute upon opening the site and make your viewing experience of the site much more pleasant and dynamic. It's also very often the case that if the site has dropdown menus, animations, user registration and annoying adverts, they are realized exactly by using the **JavaScript** language. 
+The most popular JavaScript **interpreters** are the web browsers you use every day – Chrome, Firefox, Internet Explorer, etc. When loading your favorite website, it's highly likely it will contain **JavaScript** files which will execute upon opening the site and make your viewing experience of the site much more pleasant and dynamic. It's also very often the case that if the site has dropdown menus, animations, user registration and annoying adverts, they are realized exactly by using the **JavaScript** language. 
 
-You'll often hear that a certain piece of code is run on the **client side**, which means that the **JavaScript** code is executed in your **browser**, which plays the role of client or receiver. But a receiver would have no purpose to exist without a transmitter. In the world of technology, these transmitters are called servers. You can imagine servers as extremely powerful computers, which many people have access to. Every site uses a similar server as its base – i.e. files which enable the site to look the way you see it – **pictures**, **texts**, **JavaScript files**, are located on a certain server. Your **browser** (client) connects to the **server** where the site you're visiting is located, and the server, in turn, **sends** back the necessary files for your favourite website to visualize in front of your eyes. Your browser is like a car radio where you listen to your favourite program, and the server is the building which transmits that program, although the communication follows a slightly different route in this case. 
+You'll often hear that a certain piece of code is run on the **client-side**, which means that the **JavaScript** code is executed in your **browser**, which plays the role of client or receiver. But a receiver would have no purpose to exist without a transmitter. In the world of technology, these transmitters are called servers. You can imagine servers as extremely powerful computers, which many people have access to. Every site uses a similar server as its base – i.e. files that enable the site to look the way you see it – **pictures**, **texts**, **JavaScript files**, are located on a certain server. Your **browser** (client) connects to the **server** where the site you're visiting is located, and the server, in turn, **sends** back the necessary files for your favorite website to visualize in front of your eyes. Your browser is like a car radio where you listen to your favorite program, and the server is the building that transmits that program, although the communication follows a slightly different route in this case. 
 
 The other popular **JavaScript interpreter** is **NodeJS**. You can imagine it's like an application you install on your computer which enables it to understand JavaScript the same way your browser does. That way you can execute **JavaScript** code directly on your computer, without the need for a browser. As we just mentioned, servers are just more powerful computers. They start understanding **JavaScript** in the same way your computer does – by having **NodeJS** installed. You can install **NodeJS** from their official website [https://nodejs.org](https://nodejs.org) completely free of charge, by simply following the instructions. 
 
@@ -60,7 +60,7 @@ The program is written in text format and the text is called **source code**. It
 Let's start with a very basic example of a short **JavaScript program** which we'll run directly in your web browser (it supports JS without the need to install additional software).
 
 #### Example: a Program, Which Notifies the User
-Our first program will consist of a single **JavaScript command**, which notifies the user they've won 1 000 000 dollars, as is often the case, when you're browsing through a website with a lot of spam and adverts:
+Our first program will consist of a single **JavaScript command**, which notifies the user they've won 1 000 000 dollars, as is often the case when you're browsing through a website with a lot of spam and adverts:
 ```javascript
 alert("Congratulations!!! You have just won $1 000 000!");
 ```
@@ -82,10 +82,10 @@ for (i = 0; i < 10; i += 1) {
 ```
 In the example above we make the computer display notifications one after another until they become 10. The result is one very irritated user:
 ![](/assets/js-alert-10-times-loop.png)
-We will learn how iterations (loops) in programming work in chapter "[Loops](chapter-05-loops.md)", but for now, let's assume that they just repeat a command many times.
+We will learn how iterations (loops) in programming work in the chapter "[Loops](chapter-05-loops.md)", but for now, let's assume that they just repeat a command many times.
 
 #### Example: Program, Which Converts Bulgarian Levs into Euro
-Let's have a look at another simple program which asks the user for an amount of money in levs (whole number), makes sure that what's been entered is a number, converts it in euro (by dividing it by the euro exchange rate) and prints the result. This is a program of 3 consecutive commands. 
+Let's have a look at another simple program that asks the user for an amount of money in levs (whole number), makes sure that what's been entered is a number, converts it into euro (by dividing it by the euro exchange rate) and prints the result. This is a program of 3 consecutive commands. 
 ```javascript
 let myMoney = prompt("How much money do you want to convert:");
 
@@ -104,12 +104,12 @@ Let's go through the **steps for creating and executing a computer program** whi
 
 ## Development Environment (IDE)
 As previously mentioned, we need a **development environment (IDE)** in order to program. The IDE is actually a program editor, where we can write, compile and execute our program code, discover our mistakes, correct them and start the program again.
--	For programming in JavaScript we use the Visual Studio Code environment, suitable Windows, Linux and MacOS operating systems.
+-	For programming in JavaScript we use the Visual Studio Code environment, suitable Windows, Linux and macOS operating systems.
 - If we are programming in **Java** we can use **IntelliJ**, **Eclipse** or **NetBeans**.
 - If we are programming in **Python** we can use **PyCharm**.
 
 ### Installing Visual Studio Code
-In the following paragraphs we go through the steps for installing **Visual Studio Code** (version 1.19.1) in great detail. After we download and start the installation file, the following screen should appear:
+In the following paragraphs, we go through the steps for installing **Visual Studio Code** (version 1.19.1) in great detail. After we download and start the installation file, the following screen should appear:
 
 ![](assets/chapter-1-images/00.Visual-studio-01.png)
 
@@ -122,13 +122,13 @@ After you start VS Code, a window similar to the one below should appear:
 
 ![](assets/chapter-1-images/00.Visual-studio-03.png)
 
-Now is the time to make our **development environment** as pleasant as possible. **Visual Studio Code** is famous for being the IDE with the most options for personalization. Usually this personalization comes in the form of **add-ons** (extensions). A list of all add-ons can be found on the official website: [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/). Just keep in mind that most of these extensions are specific to a particular programming language. 
+Now is the time to make our **development environment** as pleasant as possible. **Visual Studio Code** is famous for being the IDE with the most options for personalization. Usually, this personalization comes in the form of **add-ons** (extensions). A list of all add-ons can be found on the official website: [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/). Just keep in mind that most of these extensions are specific to a particular programming language. 
 
-For a start, we recommend installing a couple of extensions which will drastically improve your JavaScript code writing:
-* **Beautify** - [https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) – this is an extension which helps you order your code and keep it looking clean.
-* **JSHint** - [https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint) – as we mentioned, JavaScript is an interpreted language and core errors would appear only after running the program. This extension scans and alarms for potential isues while the code is written and before running the program.
+For a start, we recommend installing a couple of extensions that will drastically improve your JavaScript code writing:
+* **Beautify** - [https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) – this is an extension that helps you order your code and keep it looking clean.
+* **JSHint** - [https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint) – as we mentioned, JavaScript is an interpreted language and core errors would appear only after running the program. This extension scans and alarms for potential issues while the code is written and before running the program.
 
-They can be installed either via the given links, or by going through the following steps in **Visual Studio Code**:
+They can be installed either via the given links or by going through the following steps in **Visual Studio Code**:
 1.	In the leftmost panel, open the lowest tab – Extensions.
 2.	In the search field enter the name of the extension you'd like to install.
 3.	Choose the most appropriate option from the results.
@@ -144,7 +144,7 @@ There are also **alternative environments to develop online**, directly in your 
 
 ![](/assets/jsbin-example.png)
 
-Alternatively, we can do quick tests directly in our browser by pressing **F12** but in general, this is an option that works for very few lines of 
+Alternatively, we can do quick tests directly in our browser by pressing **F12** but in general, this is an option that works for very few lines of
 code. Here's an example:
 
 ![](/assets/js-console-f12.png)
@@ -167,7 +167,7 @@ Here's what our program should look like in **Visual Studio Code**:
 
 ![](assets/chapter-1-images/01.Hello-js-01.png)
 
-The `console.log('Hello JavaScript!')` command means printing (`log(…)`) on the console (`console`) the message `Hello JavaScript!` which we need to surrounded with quotes, in order to signify it is text. At the end of every **JavaScript** command we place a semicolon `;` which indicates the end of the command (meaning it doesn't continue on the next row). Although the latter is not compulsory, it's considered good practice which helps find problems more easily.
+The `console.log('Hello JavaScript!')` command means printing (`log(…)`) on the console (`console`) the message `Hello JavaScript!` which we need to surround with quotes, in order to signify it is text. At the end of every **JavaScript** command, we place a semicolon `;` which indicates the end of the command (meaning it doesn't continue on the next row). Although the latter is not compulsory, it's considered good practice which helps find problems more easily.
 
 Important: the `alert(…)` and `prompt(…)` commands we used, work only in the web browser and are not available in VS Code console applications. If you try using them, you will receive an error. 
 
@@ -188,11 +188,11 @@ Hello JavaScript!
 The "**Debugging with inspector protocol . . .**" and  **Debugger listening on...** messages are displayed as additional information at the very top of Visual Studio Code's console after the program starts executing. This gives us additional information about the execution which, for the time being, we will ignore. 
 
 ### Testing Our Program in the Judge System
-Testing the solutions to the problems in this book is completely automated via the **Judge System's website**: [https://judge.softuni.bg](https://judge.softuni.bg). The solutions are judged in real time by the system. Each solution goes through a series of tests which are hidden; every test that passes grants the user certain points.
+Testing the solutions to the problems in this book is completely automated via the **Judge System's website**: [https://judge.softuni.bg](https://judge.softuni.bg). The solutions are judged in real-time by the system. Each solution goes through a series of tests that are hidden; every test that passes grants the user certain points.
 
 The program we just wrote can be tested here: [https://judge.softuni.bg/Contests/Practice/Index/926#0](https://judge.softuni.bg/Contests/Practice/Index/926#0).
 
-Each piece of **JavaScript** we'd like to test in the **Judge System**, needs to be surrounded by the following lines of code:
+Each piece of **JavaScript** we'd like to test in the **Judge System** needs to be surrounded by the following lines of code:
 ````javascript
 function solve() {
     // we place our code here
@@ -217,7 +217,7 @@ In that table, the Judge System will display one of the following **possible res
 * Number of points (between 0 and 100), when the submitted code is compiled successfully (there are no syntactic errors) and can be tested.
   -	If our solution is **completely correct**, all tests are marked in green and we receive **100 points**.
   -	If our solution is **incorrect**, some tests are marked in red and we receive **less than 100** or **0 points**.
-*	If there are syntactic errors in our program, we receive a **compile time error message**.
+*	If there are syntactic errors in our program, we receive a **compile-time error message**.
 
 ### How do I Register at SoftUni Judge?
 Just use your id (Username + Password) from the site [softuni.bg](softuni.bg). If you haven't yet registered, go right ahead – it will take no more than a minute since it's just a standard website registration.
@@ -225,7 +225,7 @@ Just use your id (Username + Password) from the site [softuni.bg](softuni.bg). I
 ## Executing Code in the Browser using HTML + JS
 So far we've seen how to make and execute a console program. Let's now look at how we can write code, which runs in our browser. All the websites you visit are created in a very similar fashion.
 
-Actually the principle is very similar to what we just did. The only difference is that when creating a new file, we use the **.html** extension instead of **.js**. All that's left is to enclose our code with a opening `<script>` and closing `</script>` **html** tag. We enclosed our code in much the same way when submitting our code in the Judge System. Here's what our code in **Visual Studio Code** should now look like:
+Actually, the principle is very similar to what we just did. The only difference is that when creating a new file, we use the **.html** extension instead of **.js**. All that's left is to enclose our code with a opening `<script>` and closing `</script>` **HTML** tag. We enclosed our code in much the same way when submitting our code in the Judge System. Here's what our code in **Visual Studio Code** should now look like:
 
 ![](assets/chapter-1-images/01.Hello-js-05.png)
 
@@ -233,7 +233,7 @@ With this approach, now we just need to find the **helloJS.html** file in the lo
 
 ![](assets/chapter-1-images/01.Hello-js-06.png)
 
-Now that you've **learned how to execute programs**, you can test the sample notification programs you have above. Have fun with them, try out different things. Try changing them and playing with them. Swap the `console.log("Hello JavaScript");`** command for `console.error("Error occured");`** and start your program. Note that notification programs can only be executed in our browser and when we try running them from the console, we receive an error. This is due to the fact that the console doesn't support notification via visual elements, like `alert`.
+Now that you've **learned how to execute programs**, you can test the sample notification programs you have above. Have fun with them, try out different things. Try changing them and playing with them. Swap the `console.log("Hello JavaScript");`** command for `console.error("Error occurred");`** and start your program. Note that notification programs can only be executed in our browser and when we try running them from the console, we receive an error. This is due to the fact that the console doesn't support notification via visual elements, like `alert`.
 
 ## Typical Mistakes in JavaScript Programs
 One of the usual mistakes beginners make is mixing up **capital and lowercase letters**. However, they matter when we call commands and can impede proper functioning. Here's an example of such a mistake:
@@ -255,13 +255,13 @@ This program will return an **error after it's started executing** and even prio
 
 ![](assets/chapter-1-images/01.Hello-js-07.png)
 
-## What Did We Learn in This Capter?
+## What Did We Learn in This Chapter?
 First of all, we learned **what programming is – issuing commands written in a programming language** which the machine can understand and carry out. We also found out what a **computer program** is – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **JavaScript programming language** and learned how to create **simple console and web programs using Visual Studio Code**. Then we examined JavaScript's program code structure. We looked at printing on the console with the function `console.log()` and starting the program with **[F5]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
 
 Top work! Let's now tackle the **exercises**. You do remember that learning how to program involves a lot of code writing and problem-solving, right? Let's do just that and put what we've learned into practice.
 
 ## First Steps in Programming – Exercises
-Welcome to the exercises. We are now going to write a few console applications, which will help us make a few more steps into programming. Then we will show you how to program something more complex – programs with graphical and web user interface.
+Welcome to the exercises. We are now going to write a few console applications, which will help us make a few more steps into programming. Then we will show you how to program something more complex – programs with graphical and web user interfaces.
 
 ### Problem: Console-based Program 'Expression'
 Write a console-based **JavaScript** program that **calculates** and **prints** the value of the following numerical expression:
@@ -356,7 +356,7 @@ Create a new **JavaScript file**. For now, programs of similar type will be test
 ![](assets/chapter-1-images/05.Rectangle-area-01.png)
 
 Did you notice the change? We placed additional square brackets within the brackets of the function, inside which we described what data we're expecting to receive – in this case the numbers `a` and `b`, set as an array.
-What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of  `a` and `b` to the familiar `console.log()` command. In programming we multiply using the `*` operator.
+What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of  `a` and `b` to the familiar `console.log()` command. In programming, we multiply using the `*` operator.
 
 ### Testing in the Judge System
 Test your solution here:
@@ -377,7 +377,7 @@ Create a new **JavaScript console program**:
 
 Finish the program so that it prints a square made up of stars. You may need to use `for`-loops. Search for additional information on the Internet.
 
-**Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, in order to provoke you to **look for information on the Internet**. This is one of the most important skills you have to develop while you're learning programming. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. If you're having difficulties, you can also ask for help in the SoftUni forum: https://softuni.bg/forum.
+**Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, in order to provoke you to **look for information on the Internet**. This is one of the most important skills you have to develop while you're learning to program. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. If you're having difficulties, you can also ask for help in the SoftUni forum: https://softuni.bg/forum.
 
 ### Testing in the Judge System
 Test your solution here:
@@ -396,15 +396,15 @@ We will now build a basic **web application** and after that a simple graphical 
 ## Problem: Web application Numbers Summator'
 Write a **Web application** which **calculates the sum of two numbers**. 
 
-After the numbers are entered in the first text fields, and the button **[Calculate]** is clicked, calculate their sum and display the result in the third text field. For our application we'll use **HTML technology** which in combination with the **JavaScript programming language**, allows for the creation of **web applications and sites**, in the **Visual Studio Code** programming environment.
+After the numbers are entered in the first text fields, and the button **[Calculate]** is clicked, calculate their sum and display the result in the third text field. For our application, we'll use **HTML technology** which in combination with the **JavaScript programming language**, allows for the creation of **web applications and sites**, in the **Visual Studio Code** programming environment.
 
-**HTML** is a descriptive language which is used to declare the content of a website. Without going into too much detail, we'll just mention that **HTML** is based on the use of combinations of **tags** in order to visualize and give **semanticity** to the content. In one of our previous examples we already created an **HTML page** by utilizing the `<script>` tag.
+**HTML** is a descriptive language that is used to declare the content of a website. Without going into too much detail, we'll just mention that **HTML** is based on the use of combinations of **tags** in order to visualize and give **semanticity** to the content. In one of our previous examples, we already created an **HTML page** by utilizing the `<script>` tag.
 
-Notice that we'll be creating a **web-based application**. This is an application accessible through a web browser, exactly like your favourite web mail or news site. The web application will have a server side (Back-end), written in **JavaScript** and a client side (front-end), written in **HTML**. The Web application is expected to look similar to the following:
+Notice that we'll be creating a **web-based application**. This is an application accessible through a web browser, exactly like your favorite webmail or news site. The web application will have a server-side (Back-end), written in **JavaScript** and a client-side (front-end), written in **HTML**. The Web application is expected to look similar to the following:
 
 ![](assets/chapter-1-images/07.Sumator-01.png)
 
-As opposed to console applications which read and write data in the form of text on the console, Web applications have a **Web-based user interface**. Web applications are **loaded from some Internet address** (URL) through a standard web browser. Users write input data in a page, visualized by the web browser, the data is processed on a web server and the results are shown again on a page in the web browser. As we mentioned we'll be using **HTML and JavaScript** for our web application. Other technologies which support creating **web applications** are the **ASP.NET MVC technology**, **PHP technology** etc. These technologies make creating the general application architecture – the server, as well as the client side, much easier.
+As opposed to console applications that read and write data in the form of text on the console, Web applications have a **Web-based user interface**. Web applications are **loaded from some Internet address** (URL) through a standard web browser. Users write input data on a page, visualized by the web browser, the data is processed on a web server and the results are shown again on a page in the web browser. As we mentioned we'll be using **HTML and JavaScript** for our web application. Other technologies which support creating **web applications** are the **ASP.NET MVC technology**, **PHP technology**, etc. These technologies make creating the general application architecture – the server, as well as the client-side, much easier.
 
 Let's move on to realizing our web application.
 
@@ -422,19 +422,19 @@ Let's examine the code we just wrote.
 
 ![](assets/chapter-1-images/07.Sumator-04.png)
 
-On the first 2 rows we declare that we're describing an **HTML page**, using the `<html>` and `<body>` tags, the latter declaring the start of our page's body – its main part which will be visualized. Respectively, the last 2 rows represent the corresponding **closing tags**, which declare the end of that particular part of our HTML page. Look more closely and you'll notice they're different from the **opening tags** – they have a forward slash '/' before the tag name - `</body>`, for example.
+On the first 2 rows we declare that we're describing an **HTML page**, using the `<html>` and `<body>` tags, the latter declaring the start of our page's body – it's the main part which will be visualized. Respectively, the last 2 rows represent the corresponding **closing tags**, which declare the end of that particular part of our HTML page. Look more closely and you'll notice they're different from the **opening tags** – they have a forward slash '/' before the tag name - `</body>`, for example.
 
-Using HTML tags in our page's body we'll describe what we want visualized on our webpage – three fields where numbers can be entered. This can be achieved with the `<input type ="number">` tag. Using this tag we declare that we want input of type number to be visualized. The additional **attribute** – `id`, serves to let us determine a unique name for this **tag**. What we decide to call it is completely up to us. We'll need the `id` attribute later in order to get hold of information about this particular **HTML element**.
+Using HTML tags in our page's body we'll describe what we want to be visualized on our webpage – three fields where numbers can be entered. This can be achieved with the `<input type ="number">` tag. Using this tag we declare that we want the input of type number to be visualized. The additional **attribute** – `id`, serves to let us determine a unique name for this **tag**. What we decide to call it is completely up to us. We'll need the `id` attribute later in order to get hold of information about this particular **HTML element**.
 
-Then, on the 7th row we have another `input` tag declared, but this time it's of type `button`. This is how we indicate we want an element which, upon being clicked, produces some result. 
+Then, on the 7th row we have another `input` tag declared, but this time it's of type `button`. This is how we indicate we want an element that, upon being clicked, produces some result. 
 
 Let's now also look at the **JavaScript code** we wrote:
 
 ![](assets/chapter-1-images/07.Sumator-05.png)
 
-First we **declare the `calculate()` function** which reads the information from our first two text fields (from our HTML page), then calculates their sum and **assigns** it as the third field's value. The function spans from the 9th to the 17th row. We'll learn what functions are, how they're declared and called, in this book's following chapters.
+First, we **declare the `calculate()` function** which reads the information from our first two text fields (from our HTML page), then calculates their sum and **assigns** it as the third field's value. The function spans from the 9th to the 17th row. We'll learn what functions are, how they're declared and called, in this book's following chapters.
 
-Looking more closely at the **function's body**, we observe that on the 10th row the **variable `firstNumber` is declared** and then the value of the text field with `id=firstNumber` is assigned to it. The `parseInt(…)` function makes sure that the text that's been entered will be converted to a number. Then in a similar fashion we get the value of our second text field (with `id=secondNumber`). Finally, using the same mechanism, instead of obtaining the value of the third field with `id=result`, we **assign** a value to it by placing it on the left side of the equation.
+Looking more closely at the **function's body**, we observe that on the 10th row the **variable `firstNumber` is declared** and then the value of the text field with `id=firstNumber` is assigned to it. The `parseInt(…)` function makes sure that the text that's been entered will be converted to a number. Then in a similar way, we get the value of our second text field (with `id=secondNumber`). Finally, using the same mechanism, instead of obtaining the value of the third field with `id=result`, we **assign** a value to it by placing it on the left side of the equation.
 
 Then on the 19th and 20th row we access our button and tell it to **listen** for `click` events which, when received, will trigger the function `calculate()` we just **declared**. In other words, when we use our mouse to click the button, the `calculate()` function will execute.
 The application is ready. We can start it by finding its location and opening it. It will load inside the browser by default. 
