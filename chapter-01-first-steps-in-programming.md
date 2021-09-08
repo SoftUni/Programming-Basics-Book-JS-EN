@@ -188,9 +188,9 @@ Hello JavaScript!
 The "**Debugging with inspector protocol . . .**" and  **Debugger listening on...** messages are displayed as additional information at the very top of Visual Studio Code's console after the program starts executing. This gives us additional information about the execution which, for the time being, we will ignore. 
 
 ### Testing Our Program in the Judge System
-Testing the solutions to the problems in this book is completely automated via the **Judge System's website**: [https://judge.softuni.bg](https://judge.softuni.bg). The solutions are judged in real-time by the system. Each solution goes through a series of tests that are hidden; every test that passes grants the user certain points.
+Testing the solutions to the problems in this book is completely automated via the **Judge System's website**: [https://judge.softuni.org/](https://judge.softuni.org/). The solutions are judged in real-time by the system. Each solution goes through a series of tests that are hidden; every test that passes grants the user certain points.
 
-The program we just wrote can be tested here: [https://judge.softuni.bg/Contests/Practice/Index/926#0](https://judge.softuni.bg/Contests/Practice/Index/926#0).
+The program we just wrote can be tested here: [https://judge.softuni.org/Contests/Practice/Index/926#0](https://judge.softuni.org/Contests/Practice/Index/926#0).
 
 Each piece of **JavaScript** we'd like to test in the **Judge System** needs to be surrounded by the following lines of code:
 ````javascript
@@ -220,7 +220,7 @@ In that table, the Judge System will display one of the following **possible res
 *	If there are syntactic errors in our program, we receive a **compile-time error message**.
 
 ### How do I Register at SoftUni Judge?
-Just use your id (Username + Password) from the site [softuni.bg](softuni.bg). If you haven't yet registered, go right ahead – it will take no more than a minute since it's just a standard website registration.
+Just use your id (Username + Password) from the site [https://softuni.bg/](softuni.bg). If you haven't yet registered, go right ahead – it will take no more than a minute since it's just a standard website registration.
 
 ## Executing Code in the Browser using HTML + JS
 So far we've seen how to make and execute a console program. Let's now look at how we can write code, which runs in our browser. All the websites you visit are created in a very similar fashion.
