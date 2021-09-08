@@ -1,6 +1,6 @@
 # Chapter 6.2. Nested loops – exam problems
 
-In the previous chapter we introduced **nested loops** and how to use them for **drawing** a various kinds of **figures on the console**. We've learned how to print figures with different sizes, establishing suitable logic construction by using **single and nested `for`** loops in combination with different calculations and program logic:
+In the previous chapter, we introduced **nested loops** and how to use them for **drawing** various kinds of **figures on the console**. We've learned how to print figures with different sizes, establishing suitable logic construction by using **single and nested `for`** loops in combination with different calculations and program logic:
 
 ```javascript
 let result = "";
@@ -28,7 +28,7 @@ Now let's solve some exam problems to consolidate what we have learned and to de
 
 ## Problem: Drawing a fortress
 
-Write a program, that reads from the console an **integer n** and draws a **fortress** with width of **2 * n columns** and height of **n rows**, as in the below given examples. The left and the right inner columns have width of **n / 2**.
+Write a program, that reads from the console an **integer n** and draws a **fortress** with a width of **2 * n columns** and height of **n rows**, as in the below-given examples. The left and the right inner columns have a width of **n / 2**.
 
 ### Input data
 
@@ -50,7 +50,7 @@ Print on the console **n** text lines, depicting the **fortress**, just as in th
 
 ### Hints and guidelines
 
-By the set task condition we can see that the **input data** will contain only one **integer** within the range [**3 … 1000**], therefore we have to create a function, that receives as argument an **array with one element**. Because we have to work with numbers, we can use the method **`Number()`** as a function, to convert the received argument from a **string** to a number type: 
+By the set task condition, we can see that the **input data** will contain only one **integer** within the range [**3 … 1000**], therefore we have to create a function, that receives as argument an **array with one element**. Because we have to work with numbers, we can use the method **`Number()`** as a function, to convert the received argument from a **string** to a number type: 
 
 ![](assets/chapter-6-2-images/01.Draw-fort-01.PNG)
 
@@ -61,7 +61,7 @@ After we've declared and initialized the input data, we have to divide the **for
 
 We can see from the examples, that the **roof** consists of **two towers** and **a middle part**. Each tower has a beginning **`/`**, middle part **`^`** and an end **`\`**.
 
-By the set task condition the left and the right inner columns have width of **`n / 2`**, therefore we can save this value as a separate **variable**, keeping in mind, that if we receive an **odd number** as input, the result of dividing by two will be a number with a whole and fractional part. In this case we need **only the whole part** (in the set task condition we can see, that when the input is equal to **3** the count of **`^`** in the inner part column is equal to **1**, and at input of **5** it is **3**), we can separate it with the method **`Math.trunc()`** and to save only its value in our new variable:
+By the set task condition the left and the right inner columns have a width of **`n / 2`**, therefore we can save this value as a separate **variable**, keeping in mind, that if we receive an **odd number** as input, the result of dividing by two will be a number with a whole and fractional part. In this case, we need **only the whole part** (in the set task condition we can see, that when the input is equal to **3** the count of **`^`** in the inner part column is equal to **1**, and input of **5** it is **3**), we can separate it with the method **`Math.trunc()`** and to save only its value in our new variable:
 
 ![](assets/chapter-6-2-images/01.Draw-fort-02.PNG)
 
@@ -69,11 +69,11 @@ By the set task condition the left and the right inner columns have width of **`
 <td>It's always a good practice, whenever we have an expression with value we intend to use <b>more than once</b>, to keep it in a variable. In this way, on the one hand, our code will be <b>easier to read</b>, and on the other hand, it will be <b>easier to correct</b> possible <b>errors</b>, as we will not have to look for each use of the expression separately. </td>
 </tr></table>
 
-We also declare a second **variable**, which will keep **the value** of the part **between the two towers**. By the set task condition, we know that the total width of the fortress is **`n * 2`**. In addition we have two towers with one slash for a start and one slash for an end (a total of 4 characters) and width of **`colSize`**. Therefore, to get the number of characters in the middle part, we have to subtract the size of the towers from the width of entire fortress: **`2 * n - 2 * colSize - 4`**.
+We also declare a second **variable**, which will keep **the value** of the part **between the two towers**. By the set task condition, we know that the total width of the fortress is **`n * 2`**. In addition, we have two towers with one slash for a start and one slash for an end (a total of 4 characters) and a width of **`colSize`**. Therefore, to get the number of characters in the middle part, we have to subtract the size of the towers from the width of the entire fortress: **`2 * n - 2 * colSize - 4`**.
 
 ![](assets/chapter-6-2-images/01.Draw-fort-03.PNG)
 
-To print the **roof** part, on the console we will use **`repeat(n)`** method, that join a given string **n** number of times.
+To print the **roof** part, on the console we will use the **`repeat(n)`** method, which joins a given string **n** number of times.
 
 ![](assets/chapter-6-2-images/01.Draw-fort-04.PNG)
 
@@ -81,11 +81,11 @@ To print the **roof** part, on the console we will use **`repeat(n)`** method, t
 <td><strong><code>\</code></strong> is a special symbol in JavaScript and using it solely in the method <strong><code>console.log(…)</code></strong>, the console will not print it out, so with <strong><code>\\</code></strong> we indicate on the console, that we want to print out exactly this character, without interpreting it as special character (<b>we screen it </b>, in English this is called “<b>character escaping</b>”).</td>
 </tr></table>
 
-**The fortress body** consists of beginning **`|`**, middle part **`(white spaces)`** and an end **`|`**. **The middle part** of white spaces has width of **`2 * n - 2`**. The number of **rows** for the walls, we can determine from the given examples: **`n - 3`**.
+**The fortress body** consists of beginning **`|`**, middle part **`(white spaces)`** and an end **`|`**. **The middle part** of white spaces has a width of **`2 * n - 2`**. The number of **rows** for the walls can be determined from the given examples: **`n - 3`**.
 
 ![](assets/chapter-6-2-images/01.Draw-fort-05.PNG)
 
-In order to draw penultimate row, which is part of the base, we need to print a beginning **`|`**, middle part **`(white space)_(white space)`** and an end **`|`**. To do this, we can use already declared variables **`colSize`** and **`midSize`**, because as we see from the examples they are equal to the number of **`_`** in the roof.
+In order to draw a penultimate row, which is part of the base, we need to print a beginning **`|`**, middle part **`(white space)_(white space)`** and an end **`|`**. To do this, we can use already declared variables **`colSize`** and **`midSize`** because as we see from the examples they are equal to the number of **`_`** in the roof.
 
 ![](assets/chapter-6-2-images/01.Draw-fort-06.PNG)
 
@@ -127,7 +127,7 @@ Similar to the previous task, we can see from the condition, that the **input da
 
 ![](assets/chapter-6-2-images/02.Butterfly-01.PNG)
 
-We can divide the figure into 3 parts - **upper wing**, **body** and **lower wing**. In order to draw the upper wing of the butterfly, we have to divide it into three parts - a beggining with **`*`**, middle part with **`\ /`** and an end with **`*`**. After looking at the examples, we can say that the upper wing of the butterfly is with size of**`n - 2`**.
+We can divide the figure into 3 parts - **upper wing**, **body** and **lower wing**. In order to draw the upper wing of the butterfly, we have to divide it into three parts - a beginning with **`*`**, a middle part with **`\ /`** and an end with **`*`**. After looking at the examples, we can say that the upper wing of the butterfly is with a size of**`n - 2`**.
 
 ![](assets/chapter-6-2-images/02.Butterfly-02.PNG)
 
@@ -135,7 +135,7 @@ To draw the upper wing we make a loop repeated **`halfRowSize`** number of times
 
 ![](assets/chapter-6-2-images/02.Butterfly-03.PNG)
 
-We can see in the examples, that on an **even** row we have a beginning **`*`**, middle part **`\ /`** and an end **`*`**, on the other hand on an **odd** row we have a beginning **`-`**, middle part **`\ /`** and an end **`-`**. Therefore, at each iteration of the loop, we have to do **`if-else`** check to see whether the row that we print is even or odd. From the examples given in the set condition, we can see that the number of star characters and dashes on each row is equal to **`n - 2`**, i. e. we can use again  the variable **`halfRowSize`** to print them. 
+We can see in the examples, that on an **even** row we have a beginning **`*`**, middle part **`\ /`** and an end **`*`**, on the other hand on an **odd** row we have a beginning **`-`**, middle part **`\ /`** and an end **`-`**. Therefore, at each iteration of the loop, we have to do an **`if-else`** check to see whether the row that we print is even or odd. From the examples given in the set condition, we can see that the number of star characters and dashes on each row is equal to **`n - 2`**, i. e. we can use again the variable **`halfRowSize`** to print them. 
 
 ![](assets/chapter-6-2-images/02.Butterfly-04.PNG)
 
@@ -174,7 +174,7 @@ Print on the console text lines, representing **the STOP warning sign**, just as
 
 ### Hints and guidelines
 
-As in the previous examples, we have to create a function that takes an array of one element and using the Number() method , we convert it from text (String) type to number type:
+As in the previous examples, we have to create a function that takes an array of one element and using the Number() method, we convert it from text (String) type to number type:
 
 ![](assets/chapter-6-2-images/03.Stop-01.PNG)
 
@@ -202,7 +202,7 @@ At each subsequent iteration **the beginning** and **the end** decrease by 1, an
 
 ![](assets/chapter-6-2-images/03.Stop-07.PNG)
 		
-**The lower part** of the figure, in which the width of the sign **decreases**, can be done by creating **loop**, that iterates **`n`** number of times. The structure of a row should has a beginning **`.`** + **`\\`**, middle part **`_`** and an end **`//`** + **`.`**. The number of the **dots** in the first loop iteration have to be 0 and on each subsequent have to **increase** by one. Therefore we can say that the **the dots in the lower part of the figure** is equal to **`i`**.
+**The lower part** of the figure, in which the width of the sign **decreases**, can be done by creating а **loop**, that iterates **`n`** number of times. The structure of a row should have a beginning **`.`** + **`\\`**, middle part **`_`** and an end **`//`** + **`.`**. The number of the **dots** in the first loop iteration has to be 0 and on each subsequent have to **increase** by one. Therefore we can say that the **the dots in the lower part of the figure** are equal to **`i`**.
 
 To ensure proper operation of our program, on each **loop** iteration, we have to **decrease** the number of **`_`** by **2**.
 
@@ -310,17 +310,17 @@ Once we have declared and initialized the **variables**, we can draw the figure,
 
 ![](assets/chapter-6-2-images/05.Axe-02.PNG)
 
-Now we have to draw the **the handle of the axe**. In order to be able to use the newly created **variables**, when drawing the handle of the axe, we have to decrease **the middle dashes** by 1, and to increase **these on the left and right** by 1.
+Now we have to draw the **the handle of the axe**. In order to be able to use the newly created **variables**, when drawing the handle of the axe, we have to decrease **the middle dashes** by 1 and to increase **these on the left and right** by 1.
 
 ![](assets/chapter-6-2-images/05.Axe-03.PNG)
 
-**The handle of the axe** we can draw, by iterating a loop that repeats **`n / 2`** number of times. We can set this value into separate **variable**, considering that when dividing **odd number** inputs by 2 the result will be **a real number** with a whole and fractional part. Since in this case we need **only the whole part** (from  the example condition we see that at input **5** the height of the axe handle is **2**), we can use the **`Math.trunc()`** method, to save only its value in our new variable.
+**The handle of the axe** we can draw, by iterating a loop that repeats **`n / 2`** number of times. We can set this value into separate **variable**, considering that when dividing **odd number** inputs by 2 the result will be **a real number** with a whole and fractional part. Since in this case we need **only the whole part** (from the example condition we see that at input **5** the height of the axe handle is **2**), we can use the **`Math.trunc()`** method, to save only its value in our new variable.
 
 We get the structure of the handle from the examples given:
 
 ![](assets/chapter-6-2-images/05.Axe-04.PNG)
 
-**The lower part** of the figure, should be divided into two subparts  - **head of the axe** and **last row of the figure**. We will print on the console **the head of the axe**, by making a self iterating loop **`axeHeight - 1`** number of times. On each iteration **the left dashes** and **the right dashes** decrease by 1, and **the middle dashes** increase by 2.
+**The lower part** of the figure, should be divided into two subparts  - the **head of the axe** and the **last row of the figure**. We will print on the console **the head of the axe**, by making a self iterating loop **`axeHeight - 1`** number of times. On each iteration **the left dashes** and **the right dashes** decrease by 1, and **the middle dashes** increase by 2.
 
 ![](assets/chapter-6-2-images/05.Axe-05.PNG)
 
