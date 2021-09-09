@@ -1,6 +1,6 @@
 # Chapter 4.2. More Complex Conditions – Exam Problems
 
-The previous chapter introduced you to **nested conditions** in **JavaScript**. Via nested conditions, the program logic in a particular application can be represented using **`if` conditional statements** that are nested one into another. We also explained the **`switch-case`** conditional statement that allows selecting from a list of options. Now we are going to solve some practical exercises and make sure we have in-depth understanding of the material, by discussing a number of more complex problems that had been given to students on exams. Before moving to the problems, let's first recall what nested conditions are:
+The previous chapter introduced you to **nested conditions** in **JavaScript**. Via nested conditions, the program logic in a particular application can be represented using **`if` conditional statements** that are nested one into another. We also explained the **`switch-case`** conditional statement that allows selecting from a list of options. Now we are going to solve some practical exercises and make sure we have an in-depth understanding of the material, by discussing a set of more complex problems that had been given to students on exams. Before moving to the problems, let's first recall what nested conditions are:
 
 ## Nested Conditions
 
@@ -26,7 +26,7 @@ switch (selector) {
     case value1:
         statement;
         break;
-    case стойност2:
+    case value2:
         statement;
         break;
     default:
@@ -41,11 +41,11 @@ The structure consists of:
 
 ## Exam Problems
 
-Now, after we refreshed our knowledge on how to use and nested conditional statements in order to implement more complex conditions and program logic, let's solve some exam problems.
+Now, after we refreshed our knowledge on how to use and nested conditional statements to implement more complex conditions and program logic, let's solve some exam problems.
 
 ## Problem: On Time for the Exam
 
-A student has to attend **an exam at a particular time** (for example at 9:30 am). They arrive in the exam room at a particular **time of arrival** (for example 9:40 am). It is considered that the student has arrived **on time**, if they have arrived **at the time when the exam starts or up to half an hour earlier**. If the student has arrived **more than 30 minutes earlier**, the student has come **too early**. If they have arrived **after the time when the exam starts**, they are **late**.
+A student has to attend **an exam at a particular time** (for example at 9:30 am). They arrive in the exam room at a particular **time of arrival** (for example 9:40 am). It is considered that the student has arrived **on time** if they have arrived **at the time when the exam starts or up to half an hour earlier**. If the student has arrived **more than 30 minutes earlier**, the student has come **too early**. If they have arrived **after the time when the exam starts**, they are **late**.
 
 Write a program that inputs the exam starting time and the time of student's arrival, and prints if the student has arrived **on time**, if they have arrived **early** or if they are **late**, as well as **how many hours or minutes** the student is early or late.
 
@@ -53,9 +53,9 @@ Write a program that inputs the exam starting time and the time of student's arr
 
 Read the following **four integers** (arguments):
 
-- The first line (argument) contains **exam starting time (hours)** – an integer from 0 to 23.
-- The second line (argument) contains **exam starting time (minutes)** – an integer from 0 to 59.
-- The third line (argument) contains **hour of arrival** – an integer from 0 to 23.
+- The first line (argument) contains the **exam starting time (hours)** – an integer from 0 to 23.
+- The second line (argument) contains the **exam starting time (minutes)** – an integer from 0 to 59.
+- The third line (argument) contains the **hour of arrival** – an integer from 0 to 23.
 - The fourth line (argument) contains **minutes of arrival** – an integer from 0 to 59.
 
 ### Output Data
@@ -91,21 +91,21 @@ If the student arrives with more than one minute difference compared to the exam
 ### Hints and Guidelines
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>It is recommended <strong>to read the assignment a few times,</strong> take notes and sketch the examples while thinking, before you start with the code.</td></tr></table>
+<td>It is recommended <strong>to read the assignment a few times,</strong> take notes and sketch the examples while thinking before you start with the code.</td></tr></table>
 
 #### Processing the Input Data
 
-According to the assignment, we expect **four** lines containing different **integers** to be passed. Examining the provided parameters, we can use the **`Number`** type, as it is suitable for the expected values. We simultaneously **read** the input data and **parse** the string value to the selected data type for **integer**.
+According to the assignment, we expect **four** lines containing different **integers** to be passed. Examining the provided parameters, we can use the **`Number`** type, as it is suitable for the expected values. We simultaneously **read** the input data and **parse** the string value to the selected data type for the **integer**.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-01.PNG)
 
-Examining the expected output, we can create variables that contain the different output data types, in order to avoid using the so called **"magic strings"** in the code.
+Examining the expected output, we can create variables that contain the different output data types, to avoid using the so-called **"magic strings"** in the code.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-02.PNG)
 
 #### Calculations
 
-After reading the input data, we can now start writing the logic for calculating the result. Let's first calculate the **start time** of the exam **in minutes** for easier and more accurate comparison:
+After reading the input data, we can now start writing the logic for calculating the result. Let's first calculate the **start time** of the exam **in minutes** for an easier and more accurate comparison:
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-03.PNG)
 
@@ -113,26 +113,26 @@ Let's also calculate the **student arrival time** using the same logic:
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-04.PNG)
 
-What remains is to calculate the difference between the two times, in order to determine **when** and **what time compared to the exam time** the student arrived at:
+What remains is to calculate the difference between the two times, to determine **when** and **what time compared to the exam time** the student arrived at:
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-05.PNG)
 
-Our next step is to do the required **checks and calculations**, and finally we will print the output. Let's separate the code into **two** parts. 
+Our next step is to do the required **checks and calculations**, and finally, we will print the output. Let's separate the code into **two** parts. 
 
-- First, let's show when the student arrived – were they **early**, **late** or **on time**. In order to do that, we will use an **`if-else`** statement. 
-- After that, we will show the **time difference**, if the student arrives in a **different time** compared to the **exam starting time**.
+- First, let's show when the student arrived – were they **early**, **late** or **on time**. To do that, we will use an **`if-else`** statement. 
+- After that, we will show the **time difference**, if the student arrives at a **different time** compared to the **exam starting time**.
 
-In order to spare one additional check (**`else`**), we can, by default, assume that the student was late. 
+To spare one additional check (**`else`**), we can, by default, assume that the student was late. 
 
 After that, according to the condition, we will check whether the difference in times is **more than 30 minutes**. If this is true, we assume that the student is **early**. If we do not match the first condition, we need to check if **the difference is less than or equal to zero (**`<= 0`**)**, by which we are checking the condition whether the student arrived within the range of **0 to 30 minutes** before the exam. 
 
-In all other cases we assume that the student **was late**, which we set as **default**, and no additional check is needed:
+In all other cases, we assume that the student **was late**, which we set as **default**, and no additional check is needed:
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-06.png)
 
-Finally, we need to understand and print **what is the time difference between exam start time and student arrival time**, as well as whether this time difference indicates time of arrival **before or after the exam start**.
+Finally, we need to understand and print **what is the time difference between exam start time and student arrival time**, as well as whether this time difference indicates the time of arrival **before or after the exam start**.
 
-We check whether the time difference is **more than** one hour, in order to print hours and minutes in the required **format**, or **less than** one hour, in order to print **only minutes** as a format and description. 
+We check whether the time difference is **more than** one hour, to print hours and minutes in the required **format**, or **less than** one hour, to print **only minutes** as a format and description. 
 
 We also need to do one more check – whether the time of student's arrival is **before** or **after** the exam start time.
 
@@ -144,7 +144,7 @@ Finally, what remains is to print the result on the console. According to the re
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-08.png)
 
-Actually, for the purposes of the task, printing the result **on the console** can be done on a much earlier stage – during the calculations. This, however, is not a very good practice. **Why?** Let's examine the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a **file** or displayed as a **web application**. Then, how many places in the code you will make changes at, due to such a correction? Are you sure you won't miss some places?
+Actually, for the task, printing the result **on the console** can be done at a much earlier stage – during the calculations. This, however, is not a very good practice. **Why?** Let's examine the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a **file** or displayed as a **web application**. Then, how many places in the code you will make changes at, due to such a correction? Are you sure you won't miss some places?
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Always consider the code that contains logical calculations as a separate part, different from the part that processes the input and output data. It has to be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
@@ -156,16 +156,16 @@ Test your solution here:  [https://judge.softuni.bg/Contests/Practice/Index/932#
 
 ## Problem: Trip
 
-It is strange, but most people start planning their vacations well in advance. A young programmer from Bulgaria has **certain budget** and spare time in a particular **season**.
+It is strange, but most people start planning their vacations well in advance. A young programmer from Bulgaria has a **certain budget** and spare time in a particular **season**.
 
-Write a program that accepts **as input the budget and season**, and **as output** displays programmer's **vacation place** and **the amount of money they will spend**.
+Write a program that accepts **as input the budget and season** and **as output** displays programmer's **vacation place** and **the amount of money they will spend**.
 
-**The budget determines the destination, and the season determines what amount of the budget will be spent**. If the season is summer, the programmer will go camping, if it is winter – he will stay in a hotel. If it is in Europe, regardless of the season, the programmer will stay in a hotel. Each camp or hotel, according to the destination, has its own price, which corresponds to a particular **percentage of the budget**:
+**The budget determines the destination, and the season determines what amount of the budget will be spent**. If the season is summer, the programmer will go camping, if it is winter – he will stay in a hotel. If it is in Europe, regardless of the season, the programmer will stay in a hotel. Each camp or hotel, according to the destination, has its price, which corresponds to a particular **percentage of the budget**:
 
 - If **100 BGN or less** – somewhere in **Bulgaria**.
   - **Summer** – **30%** of the budget.
   - **Winter** – **70%** of the budget.
-- If **1000 BGN or less** – somewhere on the **Balkans**.
+- If **1000 BGN or less** – somewhere in the **Balkans**.
   - **Summer** – **40%** of the budget.
   - **Winter** – **80%** of the budget.
 - If **more than 1000 BGN** – somewhere in **Europe**.
@@ -175,8 +175,8 @@ Write a program that accepts **as input the budget and season**, and **as output
 
 The input data will be read from the console and will consist of **two lines** (arguments):
 
-- The **first** line (argument) holds **the budget** – **real number** in the range [**10.00 … 5000.00**].
-- The **second** line (argument) holds **one** of two possible seasons: "**summer**" or "**winter**".
+- The **first** line (argument) holds **the budget** – a **real number** in the range [**10.00 … 5000.00**].
+- The **second** line (argument) holds **one** of two possible seasons that are "**summer**" or "**winter**".
 
 ### Output Data
 
@@ -206,12 +206,12 @@ Typically, as for the other tasks, we can separate the solution into the followi
 
 #### Processing the Input Data
 
-While reading carefully the requirements, we understand that we expect **two** parameters of input data. The first parameter is a **real number**, for which we need to pick an appropriate variable type. For higher level of calculation accuracy, we can pick **`Number`** as a variable for the budget and – **`String`** for the season.
+While reading carefully the requirements, we understand that we expect **two** parameters of input data. Our first parameter is a **real number**, for which we need to pick an appropriate variable type. For a higher level of calculation accuracy, we can pick **`Number`** as a variable for the budget and – **`String`** for the season.
 
 ![](assets/chapter-4-2-images/02.Trip-01.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Always take into consideration what <b>value type</b> is passed in the input data, as well as what type these need to be converted to, in order for the program conditions to work properly!</td>
+<td>Always take into consideration what <b>value type</b> is passed in the input data, as well as what type these need to be converted to, for the program conditions to work properly!</td>
 </tr></table>
 
 #### Calculations
@@ -220,13 +220,13 @@ Let's create and initialize the variables needed for applying the logic and calc
 
 ![](assets/chapter-4-2-images/02.Trip-02.png)
 
-Similarly to the example in the previous task, we can initialize variables with some of the output results, in order to spare additional initialization.
+Similar to the example in the previous task, we can initialize variables with some of the output results, to spare additional initialization.
 
 When examining once again the problem requirements, we notice that the main distribution of where the vacation will take place is determined by the **value of the budget**, i.e. our main logic is divided into two cases: 
 * If the budget is **less than** a particular value.
 * If it is **less than** another value or is **more than** the specified border value.
 
-Based on the way we arrange the logical scheme (the order in which we will check the border values), we will have more or less conditions in the solution. **Think why!**
+Based on the way we arrange the logical scheme (the order in which we will check the border values), we will have more or fewer conditions in the solution. **Think why!**
 
 After that, we need to apply a condition to check the value of the **season**. Based on it, we will determine what percentage of the budget will be spent, as well as where the programmer will stay – in a **hotel** or a **camp**.
 
@@ -256,7 +256,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/932#1
 
 ## Problem: Operations with Numbers
 
-Write a program that reads **two integers (n1 and n2)** and an **operator** that performs a particular mathematical operation with them. Possible operations are: **summing up** (**`+`**), **subtraction** (**`-`**), **multiplying** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon summing up, subtracting and multiplying, the console must print the result and display whether it is **even** or **odd** number. Upon regular division – **just the result**, and upon modular division – **the remainder**. You need to take into consideration the fact that **the divisor can be equal to zero** (**`= 0`**) and dividing by zero is not possible. In this case, a **special notification** must be printed.
+Write a program that reads **two integers (n1 and n2)** and an **operator** that performs a particular mathematical operation with them. Possible operations are: **summing up** (**`+`**), **subtraction** (**`-`**), **multiplying** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon summing up, subtracting and multiplying, the console must print the result and display whether it is an **even** or an **odd** number. Upon regular division – **just the result**, and upon modular division – **the remainder**. You need to take into consideration the fact that **the divisor can be equal to zero** (**`= 0`**) and dividing by zero is not possible. In this case, a **special notification** must be printed.
 
 ### Input Data
 
@@ -304,13 +304,13 @@ Upon reading the requirements, we understand that we expect **three** parameters
 
 #### Calculations
 
-Let's create and initialize the variables needed for the logic and calculations. In one variable we will store **the calculations output**, and the other one we will use for the **final output** of the program.
+Let's create and initialize the variables needed for the logic and calculations. In one variable we will store **the calculations output**, and in the other one, we will use it for the **final output** of the program.
 
 ![](assets/chapter-4-2-images/03.Operations-02.PNG)
 
 When carefully reading the requirements, we understand that there are cases where we don't need to do **any** calculations, and simply display a result.
 
-Therefore, we can first check if the second number is **`0`** (zero), as well as whether the operation is **division** or **modular division**, and then initialize the output.
+Therefore, we can first check if the second number is **`0`** (zero), as well as whether the operation is a **division** or a **modular division**, and then initialize the output.
 
 ![](assets/chapter-4-2-images/03.Operations-03.PNG)
 
@@ -326,13 +326,13 @@ We finish the solution by applying conditions for summing up, subtraction and mu
 
 ![](assets/chapter-4-2-images/03.Operations-05.PNG)
 
-For short and clear conditions, such as the above example for even and odd number, you can use a **ternary operator**. Let's examine the possibility to apply a condition **with** or **without** a ternary operator.
+For short and clear conditions, such as the above example for even and odd numbers, you can use a **ternary operator**. Let's examine the possibility to apply a condition **with** or **without** a ternary operator.
 
-**Without using a ternary operator** the code is longer, but easier to read:
+**Without using a ternary operator** the code is longer but easier to read:
 
 ![](assets/chapter-4-2-images/03.Operations-06.png)
 
-**Upon using a ternary operator** the code is much shorter, it but may require additional efforts to read and understand the logic:
+**Upon using a ternary operator** the code is much shorter, but may require additional efforts to read and understand the logic:
 
 ![](assets/chapter-4-2-images/03.Operations-07.png)
 
@@ -368,7 +368,7 @@ The football fans **have a shared budget**, and the **number of people** in the 
 
 The input data contains **exactly 3 lines** (arguments):
 
-- The **first** line (argument) contains the **budget** – real number within the range [**1 000.00 … 1 000 000.00**].
+- The **first** line (argument) contains the **budget** – a real number within the range [**1 000.00 … 1 000 000.00**].
 - The **second** line (argument) contains the **category** – "**VIP**" or "**Normal**".
 - The **third** line (argument) contains the **number of people in the group** – an integer within the range [**1 … 200**].
 
@@ -379,7 +379,7 @@ The input data contains **exactly 3 lines** (arguments):
 - If the **budget is sufficient**:
   - "**Yes! You have {N} leva left.**" – where **N is the amount of remaining money** for the group.
 - If the **budget is NOT sufficient**:
-  - "**Not enough money! You need {М} leva.**" – where **М is the amount that is insufficient**.
+  - "**Not enough money! You need {M} leva.**" – where **М is the insufficient amount**.
 
 **The amounts** must be **formatted up to the second digit after the decimal point**.
 
@@ -387,7 +387,7 @@ The input data contains **exactly 3 lines** (arguments):
 
 | Input | Output | Explanations  |
 |---|---|---|
-|1000<br>Normal<br>1|Yes! You have 0.01 leva left.|**1 person : 75%** of the budget are spent on **transportation**.<br>**Remaining amount:** 1000 – 750 = **250**.<br>Category **Normal**: the ticket **price is 249.99 \* 1 = 249.99**<br>249.99 < 250: **the person will have** 250 – 249.99 = **0.01** money left|
+|1000<br>Normal<br>1|Yes! You have 0.01 leva left.|**1 person: 75%** of the budget is spent on **transportation**.<br>**Remaining amount:** 1000 – 750 = **250**.<br>Category **Normal**: the ticket **price is 249.99 \* 1 = 249.99**<br>249.99 < 250: **the person will have** 250 – 249.99 = **0.01** money left|
 
 | Input | Output | Explanations |
 |---|---|---|
@@ -395,7 +395,7 @@ The input data contains **exactly 3 lines** (arguments):
 
 ### Hints and Guidelines
 
-We will read the input data and perform the calculations described in the task requirements, in order to check if the money will be sufficient.
+We will read the input data and perform the calculations described in the task requirements, to check if the money will be sufficient.
 
 #### Processing the Input Data
 
@@ -413,21 +413,21 @@ Let's create and initialize the variables needed for doing the calculations:
 
 Let's review the requirements once again. We need to perform **two** different block calculations.
 
-By the first set of calculations we must understand what part of the budget has to be spent on **transportation**. You will notice that the logic for doing these calculations only depends on the **number of people in the group**. Therefore, we will do a logical breakdown according to the number of football fans.
+By the first set of calculations, we must understand what part of the budget has to be spent on **transportation**. You will notice that the logic for doing these calculations only depends on the **number of people in the group**. Therefore, we will do a logical breakdown according to the number of football fans.
 
-We will use conditional statement – a sequence of **`if-else`** blocks.
+We will use a conditional statement – a sequence of **`if-else`** blocks.
 
 ![](assets/chapter-4-2-images/04.Match-tickets-03.png)
 
-By the second set of calculations we need to find out what amount will be needed for **purchasing tickets** for the group. According to the requirements, this only depends on the type of tickets that we need to buy. 
+By the second set of calculations, we need to find out what amount will be needed for **purchasing tickets** for the group. According to the requirements, this only depends on the type of tickets that we need to buy. 
 
 Let's use a **`switch-case`** conditional statement.
 
 ![](assets/chapter-4-2-images/04.Match-tickets-04.png)
 
-Once we have calculated the **transportation costs** and **ticket costs**, what remains is to calculate the end result and understand if the group of football fans will **attend** Euro Cup 2016 or **not**, by the provided the available parameters. 
+Once we have calculated the **transportation costs** and **ticket costs**, what remains is to calculate the final result and understand if the group of football fans will **attend** Euro Cup 2016 or **not**, by the provided the available parameters. 
 
-For the output, in order to spare one **`else` condition** in the construction, we will assume that the group can, by default, attend Euro Cup 2016.
+For the output, to spare one **`else` condition** in the construction, we will assume that the group can, by default, attend Euro Cup 2016.
 
 ![](assets/chapter-4-2-images/04.Match-tickets-05.png)
 
@@ -467,6 +467,7 @@ The input data contains **exactly two lines** (arguments):
 
 ### Output Data
 
+In this problem, our currency will be **lv**, which is BGN (Bulgarian lev).
 **Print** the following **two lines** on the console:
 
 - On the **first line**: "**Apartment: { price for the whole stay } lv.**"
@@ -487,11 +488,11 @@ The input data contains **exactly two lines** (arguments):
 
 ### Hints and Guidelines
 
-We will read the input data and do the calculations according to the provided price list and the discount rules, and finally print the result.
+We will read the input data and do the calculations according to the provided price list and the discount rules, and finally, print the result.
 
 #### Processing the Input Data
 
-According to the task requirements we expect two parameters, that contains the input data - the first parameter is **the month in which the stay is planned**, and the second - **the number of stays**.
+According to the task requirements, we expect two parameters, that contain the input data - the first parameter is **the month in which the stay is planned**, and the second - **the number of stays**.
 
 Let's process and store the input data in the appropriate parameters:
 
@@ -507,7 +508,7 @@ When doing an additional analysis of the requirements, we understand that our ma
 
 In general, there are different approaches and ways to apply the above conditions, but let's examine a basic **`switch-case`** conditional statement, as in the individual **`case` blocks** we will use **`if`** and **`if-else`** conditional statements.
 
-Let's start with the first group of months: **May** and **October**. For these two months **the price for stay is the same** for both types of accommodation – a **studio** or an **apartment**. Therefore, the only thing that remains is to apply an internal condition regarding the **number of stays** and recalculate **the relevant price** (if needed):
+Let's start with the first group of months: **May** and **October**. For these two months, **the price for a stay is the same** for both types of accommodation – a **studio** or an **apartment**. Therefore, the only thing that remains is to apply an internal condition regarding the **number of stays** and recalculate **the relevant price** (if needed):
 
 ![](assets/chapter-4-2-images/05.Hotel-room-03.png)
 
@@ -521,7 +522,7 @@ After calculating the relevant prices and the total amount for the stay, now let
 
 ![](assets/chapter-4-2-images/05.Hotel-room-06.png)
 
-In order to calculate the output parameters, we will use the **`.toFixed(Number)`** **method**. This method **rounds the decimal** number up to a **specified number of characters** after the decimal point. In our case, we will round the decimal number up to **2 digits** after the decimal point.
+To calculate the output parameters, we will use the **`.toFixed(Number)`** **method**. This method **rounds the decimal** number up to a **specified number of characters** after the decimal point. In our case, we will round the decimal number up to **2 digits** after the decimal point.
 
 #### Printing the Result
 
