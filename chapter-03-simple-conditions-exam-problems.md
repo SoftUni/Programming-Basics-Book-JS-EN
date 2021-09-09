@@ -1,6 +1,6 @@
 # Chapter 3.2. Simple Conditions – Exam Problems
 
-In the previous chapter, we went through the simple conditional statements in **JavaScript**, which we can use to execute different actions depending on a given condition. We mentioned what is the scope of a variable (it's **`scope`**) and how to track the execution of our program step by step (the so-called  **debugging**). In this chapter, working with simple conditions by going through some exam tasks. To do this, let's first revise their construction:
+In the previous chapter, we went through the simple conditional statements in **JavaScript**, which we can use to execute different actions depending on a given condition. We mentioned what is the scope of a variable (it's **`scope`**) and how to track the execution of our program step by step (the so-called **debugging**). In this chapter, working with simple conditions by going through some exam tasks. To do this, let's first revise their construction:
 
 ```javascript
 if (bool expression) {
@@ -13,20 +13,20 @@ if (bool expression) {
 **`if` conditions** consist of:
  * **`if` clause**
  * **bool expression** - a variable of bool type (**`Boolean`**) or bool logical expression (an expression that results in **`true/false`**)
- * **condition body** - contains random block of source code
+ * **condition body** - contains a random block of source code
  * **`else` clause** and its block of source code (**optional**)
 
  
 ## Exam Problems
 
-After having revised how to write simple conditions, let' s solve a few exam problems in order to practice the **`if-else`** construction:
+After having revised how to write simple conditions, let's solve a few exam problems to practice the **`if-else`** construction:
 
 ## Problem: Transportation Price
 
 A student has to travel **n kilometers**. He can choose between **three types of transportation**: 
 * **Taxi**. Starting fee: **0.70** BGN. Day rate: **0.79** BGN/km. Night rate: **0.90** BGN/km.
-* **Bus**. Day / Night rate: **0.09** BGN/km. Can be used for distances of minimum **20** km.
-* **Train**. Day / Night rate: **0.06** BGN/km. Can be used for distances of minimum **100** km.
+* **Bus**. Day / Night rate: **0.09** BGN/km. Can be used for distances of a minimum of **20** km.
+* **Train**. Day / Night rate: **0.06** BGN/km. Can be used for distances of a minimum of **100** km.
 
 Write a program that reads the number of **kilometers n** and **period of the day** (day or night) and calculates **the price for the cheapest transport**.
 
@@ -34,7 +34,7 @@ Write a program that reads the number of **kilometers n** and **period of the da
 
 **Two lines** (arguments) are read from the console:
 * The first line (arguments) contains a number **n** – number of kilometers – an integer in the range of [**1 … 5000**].
-* The second line contains the word "**day**" or "**night**" – traveling during the day or during the night.
+* The second line contains the word "**day**" or "**night**" – traveling during the day or the night.
 
 ### Output Data
 
@@ -68,11 +68,11 @@ Before starting with the conditional statements, we need to **declare** one more
 
 After having **declared and initialized** the input data and the variable that stores the value of the price, we have to decide which **conditions** of the task have to be **checked first**. 
 
-The task specifies that the rates of two of the vehicles **do not depend** on whether it is **day** or **night**, but the rate of one of the transports (taxi) **depends**. This is why the **first condition** will be whether it is **day or night**, so that it is clear which rate the taxi will be **using**. To do that, we **declare one more variable** that stores **the value of the taxi rate**:
+The task specifies that the rates of two of the vehicles **do not depend** on whether it is **day** or **night**, but the rate of one of the transports (taxi) **depends**. This is why the **first condition** will be whether it is **day or night** so that it is clear which rate the taxi will be **using**. To do that, we **declare one more variable** that stores **the value of the taxi rate**:
 
 ![](assets/chapter-3-2-images/01.Transport-price-03.png)
 
-In order to calculate **the taxi rate**, we will use conditional statement of type **`if-else`**:
+To calculate **the taxi rate**, we will use a conditional statement of type **`if-else`**:
 
 ![](assets/chapter-3-2-images/01.Transport-price-04.png)
 
@@ -118,7 +118,7 @@ Print on the console **one of the two possible states**:
 * If the pool has overflown – with how many liters it has overflown for the given time – a floating-point number. 
   * "For **[x]** hours the pool overflows with **[y]** liters."
 
-**Have in mind** that due to **the rounding to an integer**, there is **data loss** and it is normal **the sum of the percents to be 99%, not 100%**. 
+**Have in mind** that due to **the rounding to an integer**, there is **data loss** and it is normal for **the sum of the percents to be 99%, not 100%**. 
 
 ### Sample Input and Output
 
@@ -128,7 +128,7 @@ Print on the console **one of the two possible states**:
 
 ### Hints and Guidelines
 
-In order to solve the task, we read the input data, write a few conditional statements, do some calculations and print the result.
+To solve the task, we read the input data, write a few conditional statements, do some calculations and print the result.
 
 #### Processing the Input Data
 
@@ -136,7 +136,7 @@ Our first step is to read the input data:
 
 ![](assets/chapter-3-2-images/02.Pipes-in-pool-01.png)
 
-Our next step is to **declare and initialize** a variable in which we are going to calculate with how many **liters** the pool has **filled up** for the **time** the worker was **absent**. We do the calculations by **summing** the values of the flow rates of the **two pipes** and **multiplying** them by the **hours** that are given as input data:
+Our next step is to **declare and initialize** a variable in which we are going to calculate how many **liters** the pool has **filled up** for the **time** the worker was **absent**. We do the calculations by **summing** the values of the flow rates of the **two pipes** and **multiplying** them by the **hours** that are given as input data:
 
 ![](assets/chapter-3-2-images/02.Pipes-in-pool-02.png)
 
@@ -146,11 +146,11 @@ After we have **the value of the quantity** of water that has flown through the 
 
 We do that with a simple **`if-else`** statement, where the condition will be whether **the quantity of water is less than the volume of the pool**. If the statement returns **`true`**, we have to print one **line** that contains **the ratio** between the quantity of **water that has flown through the pipes** and **the volume of the pool**, as well as the **ratio of the quantity of the water** from **each pipe** to the **volume of the pool**. 
 
-The ratio has to be in **percentage**, that is why all the calculations so far will be **multiplied by 100**. The values will be printed using **placeholders**, and as there is a condition **the result in percentage** to be formatted to **two digits** after **the decimal** point **without rounding**, we will use the method **`Math.trunc(…)`**:
+The ratio has to be in **percentage**, that is why all the calculations so far will be **multiplied by 100**. The values will be printed using **placeholders**, and as there is a condition for **the result in percentage** to be formatted to **two digits** after **the decimal** point **without rounding**, we will use the method **`Math.trunc(…)`**:
 
 ![](assets/chapter-3-2-images/02.Pipes-in-pool-03.png)
 
-However, if **the condition** returns **`false`**, that means that **the quantity of water** is **more** than the **volume** of the pool, therefore, it has **overflown**. Again, the output data has to be on **one line**, but this time it should contain only two values – the one of the **hours** when the worker was absent, and the **quantity of water**, which is the **difference** between *the incoming water and the volume of the pool.
+However, if **the condition** returns **`false`**, that means that **the quantity of water** is **more** than the **volume** of the pool, therefore, it has **overflown**. Again, the output data has to be on **one line**, but this time it should contain only two values – one of the **hours** when the worker was absent, and the **quantity of water**, which is the **difference** between *the incoming water and the volume of the pool.
 
 ### Testing in the Judge System
 
@@ -159,8 +159,8 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/930#1
 
 ## Problem: Sleepy Tom Cat
 
-Tom Cat likes to sleep all day but, unfortunately, his owner is always playing with him whenever he has free time. In order to sleep well, **the norm of games** that Tom has is **30 000 minutes per year**. The time for games he has **depends on the holidays that his owner has**:
-* During **work days**, his owner plays with him **63 minutes per day**. 
+Tom Cat likes to sleep all day but, unfortunately, his owner is always playing with him whenever he has free time. To sleep well, **the norm of games** that Tom has is **30 000 minutes per year**. The time for games he has **depends on the holidays that his owner has**:
+* During **workdays**, his owner plays with him **63 minutes per day**. 
 * During **holidays**, his owner plays with him **127 minutes per day**. 
 
 Write a program that reads **the number of holidays** and prints whether **Tom can sleep well** and how much **the difference from the norm** for the current year is. It is assumed that **there are 365 days in one year**. 
@@ -191,15 +191,15 @@ The input is read from the console and consists of an integer – **the number o
 
 ### Hints and Guidelines
 
-In order to solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
+To solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
 
 #### Reading the Input Data and calculating
 
-From the task we see that **the input data** will be **an integer** in the range of [**0 … 365**].
+From the task, we see that **the input data** will be **an integer** in the range of [**0 … 365**].
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-01.png)
 
-To solve the problem, **first** we have to calculate **the total minutes** the owner of Tom is playing with him. We see that not only does the sleepy cat has to play with his owner during **the holidays**, but also during **the working days**. **The number** that we read from the console refers to **the holidays**. 
+To solve the problem, **first**, we have to calculate **the total minutes** the owner of Tom is playing with him. We see that not only does the sleepy cat has to play with his owner during **the holidays**, but also during **the working days**. **The number** that we read from the console refers to **the holidays**. 
 
 Out next step is to **calculate**, with the help of that number, how many **the working days** of the owner are, as without them we cannot calculate **the total minutes for play**. As the total number of days per year is ***365*** and the number of holidays is **X**, that means that the number of working days is **365 - X***. We store **the difference** in a new variable that only stores this value:
 
@@ -209,15 +209,15 @@ Once we have the number of days for playing, we can calculate **the time for gam
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-03.png)
 
-In the task condition we see that we have to **print the difference** between the two values in **hours** and **minutes** as output data. That is why we **subtract** the **total** time for play from the norm of **30 000** minutes and **store** the result in a **new** variable. After that, we **divide** that variable by 60 to get the **hours**, and then, to find out how many the **minutes** are, we use **modular division with the operator `%`**, as again we divide the variable of the difference by 60.
+In the task condition, we see that we have to **print the difference** between the two values in **hours** and **minutes** as output data. That is why we **subtract** the **total** time for play from the norm of **30 000** minutes and **store** the result in a **new** variable. After that, we **divide** that variable by 60 to get the **hours**, and then, to find out how many the **minutes** are, we use **modular division with the operator `%`**, as again we divide the variable of the difference by 60.
 
-Here we have to note that if the total **time for play** of Tom is **less** than **30,000**, when **subtracting** the norm from it, we will obtain **a negative number**. In order to **neutralize** the number in the division, we use **the method `Math.аbs(…)`** when finding the difference:
+Here we have to note that if the total **time for the playing** of Tom is **less** than **30,000** when **subtracting** the norm from it, we will obtain **a negative number**. To **neutralize** the number in the division, we use **the method `Math.abs(…)`** when finding the difference:
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-04.png)
 
 #### Checking the Conditions
 
-The time for games is already calculated, which leads us to the **next** step – **comparing** the **time for play** of Tom with the **norm** on which the good sleep of the cat depends. In order to do so, we will use an **`if-else`** conditional statement. In the **`if` clause** we will check whether **the time for play is more than 30 000** (the norm).
+The time for games is already calculated, which leads us to the **next** step – **comparing** the **time for play** of Tom with the **norm** on which the good sleep of the cat depends. To do so, we will use an **`if-else`** conditional statement. In the **`if` clause** we will check whether **the time for play is more than 30 000** (the norm).
 
 #### Processing the Output Data
 
@@ -232,13 +232,13 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/930#2
 
 ## Problem: Harvest
 
-In a vineyard with area X square meters, **40% of the harvest goes for wine production**. **Y kilograms of grapes** are extracted from **1 square meters vineyard**. **2,5 kg of grapes** are needed for **1 liter of wine**. The wanted quantity of wine for sale is **Z liters**.
+In a vineyard with an area of X square meters, **40% of the harvest goes for wine production**. **Y kilograms of grapes** are extracted from a **1 square meters vineyard**. **2,5 kg of grapes** is needed for **1 liter of wine**. The wanted quantity of wine for sale is **Z liters**.
 
 Write a program that **calculates how much wine can be produced** and whether that quantity is enough. **If it is enough, the rest is divided between the vineyard workers equally**.
 
 ### Input Data
 
-The input data consists **exactly 4 lines** (arguments): 
+The input data consists of **exactly 4 lines** (arguments): 
 * First line (argument): **X square meters is the vineyard size – an integer in the range of** [**10 … 5000**].
 * Second line (argument): **Y grapes for one square meters – an integer in the range of** [**0.00 … 10.00**].
 * Third line (argument): **Z needed liters of wine – an integer in the range of** [**10 … 600**].
@@ -264,7 +264,7 @@ The following has to be printed on the console:
 
 ### Hints and Guidelines
 
-In order to solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
+To solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
 
 #### Processing the Input Data and performing the calculations
 
@@ -272,19 +272,19 @@ First, we have to **read the input data**:
 
 ![](assets/chapter-3-2-images/04.Harvest-01.png)
 
-To solve the problem, based on the input data, we have to **calculate** how many **liters of wine** will be produced. From the task requirements, we see that in order to **calculate** the quantity of **wine in liters**, we firstly have to find **the quantity of grapes in kilograms**, which will be get from the harvest. For that, we will declare a variable that keeps a **value**, equal to **40%** of the result from the **multiplication** of the vineyard area by the quantity of grapes, which is extracted from 1 $$m^2$$.
+To solve the problem, based on the input data, we have to **calculate** how many **liters of wine** will be produced. From the task requirements, we see that to **calculate** the quantity of **wine in liters**, we first, have to find **the number of grapes in kilograms**, which we will get from the harvest. For that, we will declare a variable that keeps a **value**, equal to **40%** of the result from the **multiplication** of the vineyard area by the number of grapes, which is extracted from 1 $$m^2$$.
 
-After having done these calculations, we are ready to **calculate the quantity of wine in liters** that will be produced from the harvest as well. For that, we declare one more variable that stores that **quantity**. In order to calculate, we have to **divide the quantity of grapes in kg by 2.5**:
+After having done these calculations, we are ready to **calculate the quantity of wine in liters** that will be produced from the harvest as well. For that, we declare one more variable that stores that **quantity**. To calculate, we have to **divide the number of grapes in kg by 2.5**:
 
 ![](assets/chapter-3-2-images/04.Harvest-02.png)
 
 #### Checking the Conditions and Processing Output Data
 
-After having done the necessary calculations, the next step is to **check** whether the liters of wine that have been produced, **are enough**. For that we will use **a simple conditional statement** of the **`if-else`** type and we will check whether the liters of wine from the harvest are **more than** or **equal to** the **needed liters**. 
+After having done the necessary calculations, the next step is to **check** whether the liters of wine that have been produced, **is enough**. For that, we will use **a simple conditional statement** of the **`if-else`** type and we will check whether the liters of wine from the harvest are **more than** or **equal to** the **needed liters**. 
 
 If the condition returns **`true`**, from the task requirement we see that **on the first line** we have to print **the wine that has been produced from the harvest**. That value has to be **rounded down to the nearest integer**, which we will do by using both the method **`Math.floor(…)`** and a **placeholder** when printing it.
 
-On the second line we have to print the results by **rounding them up to the higher integer**, which we will do by using the method **`Math.ceil(…)`**. The values that we have to print are **the quantity of wine left** and **the quantity that each worker gets**. The wine left is equal to **the difference** between the produced liters of wine and the needed liters of wine. 
+On the second line, we have to print the results by **rounding them up to the higher integer**, which we will do by using the method **`Math.ceil(…)`**. The values that we have to print are **the quantity of wine left** and **the quantity that each worker gets**. The wine left is equal to **the difference** between the produced liters of wine and the needed liters of wine. 
 We calculate the value of that quantity in a new variable, which we declare and initialize in the **`if` condition body**, before printing the first line. We calculate the quantity of wine that **each worker gets** by dividing the wine left by the number of workers.
 
 ![](assets/chapter-3-2-images/04.Harvest-03.png)
@@ -329,17 +329,17 @@ Print **one line** on **the console**:
 
 ### Hints and Guidelines
 
-In order to solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
+To solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
 
 #### Reading the Input Data
 
-**First** we haveto read the input data in order to solve the problem.
+**First**, we have to read the input data to solve the problem.
 
 ![](assets/chapter-3-2-images/05.Firm-01.png)
 
 #### Auxiliary Calculations
 
-The next step is to calculate **the number of total working hours** by multiplying the working days by 8 (every working day is 8 hours long) with the number of workers and then sum them with the overtime. **The working days** equal **90% of the days** that the firm has. **The overtime** equals to the result of the multiplication of the number of workers by 2 (the possible hours of overtime) and then it is multiplied by the number of days that the firm has. From the task requirements we see that **the hours** should be **rounded down to the nearest integer**, which we will do with the method **`Math.floor(…)`**.
+The next step is to calculate **the number of total working hours** by multiplying the working days by 8 (every working day is 8 hours long) with the number of workers and then sum them with the overtime. **The working days** equal **90% of the days** that the firm has. **The overtime** equals the result of the multiplication of the number of workers by 2 (the possible hours of overtime) and then it is multiplied by the number of days that the firm has. From the task requirements, we see that **the hours** should be **rounded down to the nearest integer**, which we will do with the method **`Math.floor(…)`**.
 
 ![](assets/chapter-3-2-images/05.Firm-02.png)
 
