@@ -8,7 +8,7 @@ In this chapter, we will introduce you to **functions** and you will learn their
 
 Until this moment, we have found out that while **writing** a programming code for an exercise, **separating** the exercise into different **parts**, favors us a lot. Every part is responsible for a **corresponding action** and by doing so it's **easier** to solve the problem, and the **readability** and the debugging of the code are better.
 
-A block of code designed to perform a particular task and which we have separated logically is called **function**. **Functions – slices of code, that are named** by us in a specific way.They can be called numerous times when we need them, and they will be run that many times as we want to.
+A block of code designed to perform a particular task and which we have separated logically is called **function**. **Functions – slices of code, that are named** by us in a specific way. They can be called numerous times when we need them, and they will be run that many times as we want to.
 
 One **function** can be **called** that many times, as we think is needed for solving a problem. That **saves** us from repeating the same code and **reduces** the opportunities of making a mistake while editing the repeated code. 
 
@@ -63,7 +63,7 @@ With the next example, we will take a look at the required elements in the decla
 * **Name of the variable**. The name of the variable is **decided by us**. In the example, the name is **`getSquare`** which tells us that the task of this function is to calculate the area of the square.
 * **Declaration of a function**. Using the same structure that we have learned in **function declaration** -  first **Keyword function** then **Name of function**, **List of parameters** surrounded by round brackets **`()`**, **Body of the function** surrounded by curly brackets **`{}`**. The difference, in this case, is that **Name of a function** is not necessary, but it is recommended to get used to writing the name. In the example, the program will work without problems even if we don't type **`getSquareFunc`**. If we don't type the name, the function will become **anonymous**.
 
-When we declare a variable in the body of a function (using the keyword **`let`** or **`const`**). We call it  a **local** variable for the function. The scope in which it exists and can be used is from the row it is defined to the end of the closing bracket **`}`** of the function. That scope is called **variable scope**.
+When we declare a variable in the body of a function (using the keyword **`let`** or **`const`**). We call it a **local** variable for the function. The scope in which it exists and can be used is from the row it is defined to the end of the closing bracket **`}`** of the function. That scope is called **variable scope**.
 
 ### Function declaration or Function expression
 
@@ -385,7 +385,7 @@ Here the variable  **`personNames`** will get all the returns values. By calling
 
 ## Variant of function
 
-In many programming languages, one function can be declared as **different variants** with the same name but different parameters. This is known as **method  overloading**. For good or bad **Javascript**, language doesn't support this.
+In many programming languages, one function can be declared as **different variants** with the same name but different parameters. This is known as **method overloading**. For good or bad **Javascript**, language doesn't support this.
 
 When we declare **two or more functions with the same names**, our program will use the **last declared**. Declaring the second function with the same name removes the old function and overrides the new one in that place. 
 
@@ -424,7 +424,7 @@ In this part, we will take a look at some of the **best practices** for writing 
 
 ### Naming functions
 
-When we name a function it's recommended to use **logical names**. This is good because every function must **correspond** to a specific part of our problem. We must take into consideration the **task** which  the function will do. This is why it's a good practice **for the name to describes the purpose of the function**.
+When we name a function it's recommended to use **logical names**. This is good because every function must **correspond** to a specific part of our problem. We must take into consideration the **task** which the function will do. This is why it's a good practice **for the name to describes the purpose of the function**.
 
 It is required for the name of the function to start with a **small letter** and to be a verb or a combination of a verb and a noun. Formatting the names must be done following **Lower Camel Case** convention - **every word except the first to start with an upper letter**. Round brackets 
 **`( `** and **`)`** are always after the name of the function.
@@ -609,7 +609,7 @@ To solve the problem, we will declare a string, in which we will keep the result
 * Calculate **the remainder** of the number, divided by the base.
 * **Insert the remainder** at the beginning of the string.
 * **Divide** the number to the base.
-* **Repeat** the algorithm, until the input integer equals 0.
+* **Repeat** the algorithm until the input integer equals 0.
 
 Write the missing logic in the function below:
 
