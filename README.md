@@ -1,8 +1,8 @@
 # Book "Programming Basics" (with JavaScript)
 
-> This is work in progress. This open-source free book, originally written in Bulgarian, will be translated into English, but this will take a few months (or years). Please be patient. We will officially announce when the translation is completed.
+> This is a work in progress. This open-source free book, originally written in Bulgarian, will be translated into English, but this will take a few months (or years). Please be patient. We will officially announce when the translation is completed.
 
-The book "**Programming Basics with JavaScript**" introduces the readers to writing **programming code** at beginner level (variables and data, conditional statements, loops and methods) using the **JavaScript** 
+The book "**Programming Basics with JavaScript**" introduces the readers to writing **programming code** at a beginner level (variables and data, conditional statements, loops and methods) using the **JavaScript** 
 
 <a href="#"><img src="/assets/JavaScript-Programming-Basics-Book-Cover.png" alt="Book Programming Basics with JavaScript - Cover" class="readme-book-cover-image" /></a>
 
@@ -36,12 +36,13 @@ Download the book "**Programming Basics with JavaScript**" in **PDF** format:
 ## Book Editions
 
 This book is available in several versions in different programming languages:
-* [Основи на програмирането със C#](https://csharp-book.softuni.bg)
-* [Programming Basics with C# (English)](https://csharp-book.softuni.org)
-* [Основи на програмирането с Java](https://java-book.softuni.bg)
-* [Основи на програмирането с JavaScript](https://js-book.softuni.bg)
-* [Основи на програмирането с Python](https://python-book.softuni.bg)
-* [Основи на програмирането със C++](https://cpp-book.softuni.bg)
+* [Programming Basics with C#](https://csharp-book.softuni.org)
+* [Programming Basics with C# (Bulgarian)](https://csharp-book.softuni.bg)
+* [Programming Basics with Java](https://softuni.github.io/Programming-Basics-Book-Java-EN/)
+* [Programming Basics with Java (Bulgarian)](https://java-book.softuni.bg)
+* [Programming Basics with JavaScript (Bulgarian)](https://js-book.softuni.bg)
+* [Programming Basics with Python (Bulgarian)](https://python-book.softuni.bg)
+* [Programming Basics with C++ (Bulgarian)](https://cpp-book.softuni.bg)
 
 ## Book Details
 
