@@ -1,11 +1,11 @@
 # Chapter 7.2. More Complex Loops – Exam Problems
 
-We already learned  how to execute **a block of commands more than once** using a **`for`** loop. In the previous chapter **we reviewed some loop structures** that would help us solve more complex problems like:
+We already learned how to execute **a block of commands more than once** using a **`for`** loop. In the previous chapter, **we reviewed some loop structures** that would help us solve more complex problems like:
 - **loops with a step**
 - **nested** loops
 - **`while`** loops
 - **`do-while`** loops
-- **infinite** loops and breaking out of loop (**`break`** operator)
+- **infinite** loops and breaking out of the loop (**`break`** operator)
 - **`try-catch`** construction 
 
 
@@ -16,7 +16,7 @@ Let's start work on solving the following practical exam problems.
 
 ## Problem: Dumb Passwords Generator
 
-Write a program that enters two integers **n** and **l** and generates in alphabetical order all possible  **"dumb" passwords** that consist of the following **5 characters**:
+Write a program that enters two integers **n** and **l** and generates in alphabetical order all possible **"dumb" passwords** that consist of the following **5 characters**:
 -	Character 1: digit from **1** to **n**.
 -	Character 2: digit from **1** to **n**.
 -	Character 3: small letter among the first **l** letters of the Latin alphabet.
@@ -45,9 +45,9 @@ Print on the console **all "dumb" passwords in alphabetical order**, separated b
 
 We can split the solution of the problem into 3 parts:
 
-* **Reading the input** – in the current problem this includes reading two numbers **`n`** and **`l`** and converting them to numbers.
-* **Processing the input data** – using of nested loops to iterate through every possible symbol for each of the five password symbols.
-* **Printing the output** – printing every "dumb" password that meets the  requirements.
+* **Reading the input** – in the current problem, this includes reading two numbers **`n`** and **`l`** and converting them to numbers.
+* **Processing the input data** – using nested loops to iterate through every possible symbol for each of the five password symbols.
+* **Printing the output** – printing every "dumb" password that meets the requirements.
 
 #### Reading the Input Data
 
@@ -95,14 +95,14 @@ Print on the console **all magic numbers**, separated by **space**.
 
 **The solution** of this problem follows the **same** conception (we have to generate all n combinations of the element). Follow the steps and try to solve the problem on your own:
 
-- Initialize the **variable** where you will sotre the magic number.
+- Initialize the **variable** where you will store the magic number.
 - Nest **six `for` loops**, one for each digit.
 - In the last loop, using an **`if`** statement, check if the **product** of the six digits is **equal** to the **magic** number.
 
 
 ![](assets/chapter-7-2-images/02.Magic-numbers-01.PNG)
 
-In the previous chapter we reviewed other loop constructions. Let's look at the sample solution of the same problem using the **`while`** loop.
+In the previous chapter, we reviewed other loop constructions. Let's look at the sample solution of the same problem using the **`while`** loop.
 First, we need to store the **input magical number** in a suitable variable. Then we will initialize 6 variables – one for each of the six digits of **the searched numbers**. 
 
 ![](assets/chapter-7-2-images/02.Magic-numbers-02.PNG)
@@ -110,13 +110,13 @@ First, we need to store the **input magical number** in a suitable variable. The
 Then we will start writing **`while`** loops.
 - We will initialize **first digit**: **`d1 = 1`**.
 - We will set a **condition for each** loop: the digit will be less than or equal to 10.
-- In the **beginning** of each loop we set a value of the **next** digit, in this case: **`d2 = 1`**. In the nested **`for`** loops we initialize the variables in the inner loops at each increment of the outer ones. We want to do the same here.
-- At **the end** of each loop we will increase the digit by one: **`d++`**.
-- In the **innermost** loop we will make **the check** and if necessary, we add the result into the variable, that stores the solution.
+- At the **beginning** of each loop, we set a value of the **next** digit, in this case: **`d2 = 1`**. In the nested **`for`** loops, we initialize the variables in the inner loops at each increment of the outer ones. We want to do the same here.
+- At **the end** of each loop, we will increase the digit by one: **`d++`**.
+- In the **innermost** loop, we will make **the check** and if necessary, we add the result into the variable, that stores the solution.
 
 ![](assets/chapter-7-2-images/02.Magic-numbers-03.PNG)
 
-As we can see, we can solve a problem using different types of loops. Of course, each task has its most appropriate choice. In order to practice each type of loops – try to solve each of the following problems with all the learned loops.
+As we can see, we can solve a problem using different types of loops. Of course, each task has its most appropriate choice. To practice each type of loop – try to solve each of the following problems with all the learned loops.
 
 ### Testing in the Judge System
 
@@ -124,7 +124,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/938#1
 
 ## Problem: Stop Number
 
-Write a program that prints on the console all numbers from **N** to **M**, that are **divisible by 2** and **3 without reminder**, in **reversed order**. We will read one more "stop" number from the console – **S**. If any of the numbers divisible by 2 and 3 **is equal to the stop number, it should not be printed**, and the program should end. **Otherwise print all numbers up to N**, that meet the condition.
+Write a program that prints on the console all numbers from **N** to **M**, that are **divisible by 2** and **3 without remainder**, in **reversed order**. We will read one more "stop" number from the console – **S**. If any of the numbers divisible by 2 and 3 **is equal to the stop number, it should not be printed**, and the program should end. **Otherwise print all numbers up to N**, that meet the condition.
 
 ### Input Data
 
@@ -141,11 +141,11 @@ Print on the console on a single line all numbers, that meet the condition, sepa
 
 |Input|Output|Comments|
 |---|---|---|
-|1<br>30<br>15|30 24 18 12 6|Numbers from 30 to 1, that are divisible at the same time by 2 and 3 without reminder are: 30, 24, 18, 12 and 6. The number 15 **is not equal** to any, so the sequence **continues**.|
+|1<br>30<br>15|30 24 18 12 6|Numbers from 30 to 1, that are divisible at the same time by 2 and 3 without remainder are: 30, 24, 18, 12 and 6. The number 15 **is not equal** to any, so the sequence **continues**.|
 
 |Input|Output|Comments|
 |---|---|---|
-|1<br>36<br>12|36 30 24 18|Numbers from 36 to 1, that are divisible at the same time by 2 and 3 without reminder are: 36, 30, 24, 18, 12 and 6. The number 12 **is equal** to the stop number, so **we stop by 18**.|
+|1<br>36<br>12|36 30 24 18|Numbers from 36 to 1, that are divisible at the same time by 2 and 3 without remainder are: 36, 30, 24, 18, 12 and 6. The number 12 **is equal** to the stop number, so **we stop by 18**.|
 
 |Input|Output|
 |---|---|
@@ -159,17 +159,17 @@ The problem can be divided into **four** logical parts:
 * **Checking** the conditions of the problem according to every number in the given range.
 * **Printing** the numbers.
 
-**First** part is ordinary – we read **three** integer numbers from the console.
+The **First** part is ordinary – we read **three** integer numbers from the console.
 
-We have already seen examples of the **second** part – initialization of the **`for`** loop. It is a bit **tricky** – the explanation mentions that the numbers have to be printed in **reversed order**. This means that the **initial** value of the variable **`i`** will be **bigger**, and from the examples we can see that it is **M**. Thus, the **final** value of **`i`** should be **N**. The fact that we will print the results in reversed order and the values of **`i`**, suggests that the step would be **decreased by 1**.
+We have already seen examples of the **second** part – initialization of the **`for`** loop. It is a bit **tricky** – the explanation mentions that the numbers have to be printed in **reversed order**. This means that the **initial** value of the variable **`i`** will be **bigger**, and from the examples, we can see that it is **M**. Thus, the **final** value of **`i`** should be **N**. The fact that we will print the results in reversed order and the values of **`i`**, suggests that the step would be **decreased by 1**.
 
 ![](assets/chapter-7-2-images/04.Stop-number-01.PNG)
 
-After we have initialized the **`for`** loop, it is time for the **third** part of the problem – **checking** the condition if the given **number is divisible both by 2 and 3 without reminder**. We will do this using one simple **`if`** condition that we will leave to the reader to do by themselves.
+After we have initialized the **`for`** loop, it is time for the **third** part of the problem – **checking** the condition if the given **number is divisible both by 2 and 3 without remainder**. We will do this using one simple **`if`** condition that we will leave to the reader to do by themselves.
 
 Another **tricky** part of this problem is that apart from the above check we need to do **another** one – whether the **number is equal to the "stop" number** entered from the console on the third line. To do this check, the previous one has to be passed. For this reason, we will add another **`if`** statement that we will **nest in the previous one**. If the condition is **true**, we need to stop the program from printing. We can do this using a **`break`** operator, and it will lead us **out** of the **`for`** loop.
  
-If the **condition** that checks whether the number is equal with "stop" number returns a **`false`** result, our program should **continue to print**. This covers the **fourth and last** part of our program.
+If the **condition** that checks whether the number is equal with the "stop" number returns a **`false`** result, our program should **continue to print**. This covers the **fourth and last** part of our program.
 
 ### Testing in the Judge System
 
@@ -178,13 +178,13 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/938#2
 ## Problem: Special Numbers
 
 Write a program that **reads one integer number N** and generates all possible **special numbers** from **1111** to **9999**. To be considered **special**, a number must correspond to the **following condition**:
-- **N to be divisible by each of its digits without reminder**.
+- **N to be divisible by each of its digits without remainder**.
 
 **Example:** upon **N = 16, 2418** is a special number:
-- 16 / 2 = 8 **without reminder**
-- 16 / 4 = 4 **without reminder**
-- 16 / 1 = 16 **without reminder**
-- 16 / 8 = 2 **without reminder**
+- 16 / 2 = 8 **without remainder**
+- 16 / 4 = 4 **without remainder**
+- 16 / 1 = 16 **without remainder**
+- 16 / 8 = 2 **without remainder**
 
 ### Input Data
 
@@ -198,7 +198,7 @@ Print on the console **all special numbers**, separated by **space**.
 
 |Input|Output|Comments|
 |---|---|---|
-|3|1111 1113 1131 1133 1311 1313 1331 1333 3111 3113 3131 3133 3311 3313 3331 3333|3 / 1 = 3 without reminder<br>3 / 3 = 1 without reminder<br>3 / 3 = 1 without reminder<br>3 / 3 = 1 without reminder|
+|3|1111 1113 1131 1133 1311 1313 1331 1333 3111 3113 3131 3133 3311 3313 3331 3333|3 / 1 = 3 without remainder<br>3 / 3 = 1 without remainder<br>3 / 3 = 1 without remainder<br>3 / 3 = 1 without remainder|
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -206,7 +206,7 @@ Print on the console **all special numbers**, separated by **space**.
 
 ### Hints and Guidelines
 
-Solve the problem by yourself using what you learned from the previous two problems. Keep in mind the difference between operators for **integer division ( __/__ )** and **division with reminder ( __%__ )** in JavaScript.
+Solve the problem by yourself using what you learned from the previous two problems. Keep in mind the difference between operators for **integer division ( __/__ )** and **division with remainder ( __%__ )** in JavaScript.
 
 ### Testing in the Judge System
 
@@ -216,27 +216,27 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/938#3
 ## Problem: Digits
 
 Write a program that reads from the console 1 integer within the range [**100 … 999**], and then prints it a predefined number of times – modifying it before each print, as follows:
-- If the number is divisible by **5** without reminder, **subtract** from it **its first digit**.
-- If the number is divisible by **3** without reminder, **subtract** from it **its second digit**
+- If the number is divisible by **5** without remainder, **subtract** from it **its first digit**.
+- If the number is divisible by **3** without remainder, **subtract** from it **its second digit**
 - If none of the above-mentioned conditions is valid, **add** to it **its third digit**.
 
-Print on the console **N lines**, and each line has **M numbers**, that are result of the above actions.
-- N = sum of the first and second digit of the number.
-- M = sum of the first and third digit of the number.
+Print on the console **N lines**, and each line has **M numbers**, that are the result of the above actions.
+- N = sum of the first and second digits of the number.
+- M = sum of the first and third digits of the number.
 
 ### Input Data
 
-The input is read from the program and is **an integer** (argument) within the range  [**100 … 999**].
+The input is read from the program and is **an integer** (argument) within the range [**100 … 999**].
 
 ### Output Data
 
-Print on the console **all integer numbers**, result of the above-mentioned calculations in the respective number of rows and columns as in the examples. 
+Print on the console **all integer numbers**, that is the result of the above-mentioned calculations in the respective number of rows and columns as in the examples. 
 
 ### Sample Input and Output
 
 |Input|Output|Comments|
 |---|---|---|
-|132|129 126 123<br>120 119 121<br>123 120 119<br>121 123 120|(1 + 3) = 4 и (1 + 2) = 3 &rarr; 4 lines with 3 numbers in each<br>Input number 132 <br>132 &rarr; division by 3 &rarr; 132 - 3 =<br>= 129 &rarr; division by 3 &rarr; 129 - 3 = <br>= 126 &rarr; division by 3 &rarr; 126 - 3 = <br>= 123 &rarr; division by 3 &rarr; 123 - 3 = <br>= 120 &rarr; division by 5 &rarr; 120 - 1 = <br>..... 121 &rarr; neither by 5, nor 3 &rarr; 121 + 2 = 123|
+|132|129 126 123<br>120 119 121<br>123 120 119<br>121 123 120|(1 + 3) = 4 and (1 + 2) = 3 &rarr; 4 lines with 3 numbers in each<br>Input number 132 <br>132 &rarr; division by 3 &rarr; 132 - 3 =<br>= 129 &rarr; division by 3 &rarr; 129 - 3 = <br>= 126 &rarr; division by 3 &rarr; 126 - 3 = <br>= 123 &rarr; division by 3 &rarr; 123 - 3 = <br>= 120 &rarr; division by 5 &rarr; 120 - 1 = <br>..... 121 &rarr; neither by 5, nor 3 &rarr; 121 + 2 = 123|
 
 |Input|Output|Comments|
 |---|---|---|
