@@ -56,7 +56,7 @@ Brief information about this edition:
 * Source code: https://github.com/SoftUni/Programming-Basics-Book-JS-EN
 * All authors, editors, translators and **contributors**: Boncho Valkov, Ventsislav Petrov, Dimitar Dalev, Elena Rogleva, Julieta Atanasova, Zahariya Pehlivanova, Zdravko Kostadinov, Ivelin Arnaudov, Kristian Mariyanov, Martin Chaov, Nikolay Bankin, Nikolay Kostov, Pavel Kolev, Petar Ivanov, Svetlin Nakov, Stilyan Kangalov, Hristiyan Hristov, Hristo Minkov, Aleksandar Krastev, Aleksandar Lazarov, Angel Dimitriev, Vasko Viktorov, Ventsislav Pertov, Daniel Tsvetkov, Dimirat Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Jivko Nedyalkov, Julieta Atanasova, Zahariya Pehlivanova, Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristiyan Pamidov, Lyuboslav Lyubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stefka Vasileva, Teodor Kurtev, Tonio Jelev, Hristiyan Hristov, Hristo Hristov, Tsvetan Iliev, Yulian Linev, Yanitsa Valeva, Marina Shiderova.
 
-## Paper book
+## Paper Book
 
 You can **buy a paper copy of the book** from SoftUni: https://softuni.bg/contacts. Contact us via telephone or email for more information.
 
