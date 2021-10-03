@@ -88,7 +88,7 @@ Test the example code locally. Try entering different grades, for example, **4.7
 #### Testing in the Judge System
 
 You can test the solution example here:
-[https://judge.softuni.bg/Contests/Practice/Index/929#0](https://judge.softuni.bg/Contests/Practice/Index/929#0).
+[https://judge.softuni.org/Contests/Practice/Index/929#0](https://judge.softuni.org/Contests/Practice/Index/929#0).
 
 
 ## If-else conditional constructs
@@ -112,7 +112,7 @@ Similarly to the example above, we input a grade and check if it is excellent, b
 
 #### Testing in Judge System
 
-You can test your solution at the following link: [https://judge.softuni.bg/Contests/Practice/Index/929#1](https://judge.softuni.bg/Contests/Practice/Index/929#1).
+You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/929#1](https://judge.softuni.org/Contests/Practice/Index/929#1).
 
 
 ## About the Curly Braces { } after an if / else
@@ -149,7 +149,7 @@ The problem can be solved with a single **`if-else`** structure and the operator
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#2](https://judge.softuni.bg/Contests/Practice/Index/929#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#2](https://judge.softuni.org/Contests/Practice/Index/929#2).
 
 
 ### Problem: Finding the Greater Number
@@ -162,7 +162,7 @@ Our first task is to **read** the two numbers. After which through the use of a 
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#3](https://judge.softuni.bg/Contests/Practice/Index/929#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#3](https://judge.softuni.org/Contests/Practice/Index/929#3).
 
 ## The Lifetime of a variable
 
@@ -223,7 +223,7 @@ The program logic of the above example **sequentially compares** the input numbe
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4](https://judge.softuni.bg/Contests/Practice/Index/929#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#4](https://judge.softuni.org/Contests/Practice/Index/929#4).
 
 
 ## Exercise: Simple conditions
@@ -264,7 +264,7 @@ Please note that for this problem the Judge system is set up to ignore any non-n
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#5](https://judge.softuni.bg/Contests/Practice/Index/929#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#5](https://judge.softuni.org/Contests/Practice/Index/929#5).
 
 
 ### Problem: Summing Up Seconds
@@ -292,7 +292,7 @@ Firstly we sum the three numbers, to obtain the seconds total. As we know that *
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#6](https://judge.softuni.bg/Contests/Practice/Index/929#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#6](https://judge.softuni.org/Contests/Practice/Index/929#6).
 
 
 ### Problem: Metric Converter
@@ -331,7 +331,7 @@ We take the input data and to the units of measure, we can add the method **`toL
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#7](https://judge.softuni.bg/Contests/Practice/Index/929#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#7](https://judge.softuni.org/Contests/Practice/Index/929#7).
 
 
 ## Debugging - simple operations with a debugger
@@ -400,7 +400,7 @@ For values **less than 5.50** - there is no output.
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#0](https://judge.softuni.bg/Contests/Practice/Index/929#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#0](https://judge.softuni.org/Contests/Practice/Index/929#0).
 
  ![](assets/chapter-3-1-images/01.ЕxcellentResult-05.png) 
 
@@ -434,7 +434,7 @@ After that, we call the function and pass some sample data, so we can test its f
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#1](https://judge.softuni.bg/Contests/Practice/Index/929#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#1](https://judge.softuni.org/Contests/Practice/Index/929#1).
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-04.png)
 
@@ -462,7 +462,7 @@ Now we have to **start** the program with [**Ctrl+F5**] and test it:
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#2](https://judge.softuni.bg/Contests/Practice/Index/929#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#2](https://judge.softuni.org/Contests/Practice/Index/929#2).
 
 
 ### Problem: Find the greater number
@@ -489,7 +489,7 @@ When we are done with the implementation of the solution, we call the function a
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#3](https://judge.softuni.bg/Contests/Practice/Index/929#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#3](https://judge.softuni.org/Contests/Practice/Index/929#3).
 
 
 ### Problem: Output a Digit's Word Equivalent
@@ -511,7 +511,7 @@ We can use a sequence of **`if-else`** statements to cover every one of the poss
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#4](https://judge.softuni.bg/Contests/Practice/Index/929#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#4](https://judge.softuni.org/Contests/Practice/Index/929#4).
 
 
 ### Problem: Guess the Password
@@ -532,7 +532,7 @@ Use an **`if-else`** statement.
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#8](https://judge.softuni.bg/Contests/Practice/Index/929#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#8](https://judge.softuni.org/Contests/Practice/Index/929#8).
 
 
 ### Problem: Numbers from 100 to 200
@@ -549,7 +549,7 @@ Write a function that **accepts an integer** as a parameter and checks if it is 
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#9](https://judge.softuni.bg/Contests/Practice/Index/929#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#9](https://judge.softuni.org/Contests/Practice/Index/929#9).
 
 
 ### Problem: Identical words
@@ -573,7 +573,7 @@ Before the comparison, both words should be in lower case, so that case (upperca
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#10](https://judge.softuni.bg/Contests/Practice/Index/929#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#10](https://judge.softuni.org/Contests/Practice/Index/929#10).
 
 
 ### Problem: Speed Assessment
@@ -592,7 +592,7 @@ Write a function, that **takes speed** (decimal number) as a parameter and print
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#11](https://judge.softuni.bg/Contests/Practice/Index/929#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#11](https://judge.softuni.org/Contests/Practice/Index/929#11).
 
 
 ### Problem: Areas of Figures
@@ -618,7 +618,7 @@ The result should be rounded up to the **third decimal point**.
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#12](https://judge.softuni.bg/Contests/Practice/Index/929#12).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#12](https://judge.softuni.org/Contests/Practice/Index/929#12).
 
 
 ### Problem: Time + 15 Minutes
@@ -641,7 +641,7 @@ Add 15 minutes and check using a set of conditions. If minutes are over 59 **inc
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#13](https://judge.softuni.bg/Contests/Practice/Index/929#13).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#13](https://judge.softuni.org/Contests/Practice/Index/929#13).
 
 
 ### Problem: Tree equal numbers
@@ -657,7 +657,7 @@ Write a function that takes **3 numbers** as arguments and prints whether they a
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#14](https://judge.softuni.bg/Contests/Practice/Index/929#14).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#14](https://judge.softuni.org/Contests/Practice/Index/929#14).
 
 
 ### Problem: \*Convert a number to words
@@ -678,7 +678,7 @@ Firstly you should check for **single-digit numbers** and if this is the case, p
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/929#15](https://judge.softuni.bg/Contests/Practice/Index/929#15).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#15](https://judge.softuni.org/Contests/Practice/Index/929#15).
 
 
 ## Graphical Web Application

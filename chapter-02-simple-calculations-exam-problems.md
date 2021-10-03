@@ -151,7 +151,7 @@ With **`console.log(…)`** we print the result in the console:
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/928#0](https://judge.softuni.bg/Contests/Practice/Index/928#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/928#0](https://judge.softuni.org/Contests/Practice/Index/928#0).
 
 
 ## Problem: Vegetable Market
@@ -222,7 +222,7 @@ The task does not specify a special output format, therefore, we just have to ca
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/928#1](https://judge.softuni.bg/Contests/Practice/Index/928#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/928#1](https://judge.softuni.org/Contests/Practice/Index/928#1).
 
 
 ## Problem: Repair Tiles
@@ -309,7 +309,7 @@ In the task is specified that the number of the output should be rounded **to th
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/928#2](https://judge.softuni.bg/Contests/Practice/Index/928#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/928#2](https://judge.softuni.org/Contests/Practice/Index/928#2).
 
 
 ## Problem: Money
@@ -399,7 +399,7 @@ This code would print a correct result, **but it is hard to read**. It won't be 
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/928#3](https://judge.softuni.bg/Contests/Practice/Index/928#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/928#3](https://judge.softuni.org/Contests/Practice/Index/928#3).
 
 
 ## Problem: Daily Earnings
@@ -470,4 +470,4 @@ Finally, we have to print the result on the console. We notice that the number h
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/928#4](https://judge.softuni.bg/Contests/Practice/Index/928#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/928#4](https://judge.softuni.org/Contests/Practice/Index/928#4).

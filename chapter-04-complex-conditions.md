@@ -55,7 +55,7 @@ After reading the input data from the console, the following program logic shoul
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#0](https://judge.softuni.bg/Contests/Practice/Index/931#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#0](https://judge.softuni.org/Contests/Practice/Index/931#0).
 
 
 ### Example: Small Shop
@@ -86,7 +86,7 @@ We **convert** all of the letters into the **lower register** by using the metho
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#1](https://judge.softuni.bg/Contests/Practice/Index/931#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#1](https://judge.softuni.org/Contests/Practice/Index/931#1).
 
 
 ## More Complex Conditions
@@ -144,7 +144,7 @@ A point is internal for a given polygon if the following four conditions are app
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#2](https://judge.softuni.bg/Contests/Practice/Index/931#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#2](https://judge.softuni.org/Contests/Practice/Index/931#2).
 
 
 ## Logical "OR"
@@ -194,7 +194,7 @@ We have to use a few conditional statements with logical "**OR**" (**`||`**):
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#3](https://judge.softuni.bg/Contests/Practice/Index/931#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#3](https://judge.softuni.org/Contests/Practice/Index/931#3).
 
 
 ## Logical Negation
@@ -225,7 +225,7 @@ A given **number is valid** if it is in the range [**100 … 200**] or it is **0
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#4](https://judge.softuni.bg/Contests/Practice/Index/931#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#4](https://judge.softuni.org/Contests/Practice/Index/931#4).
 
 
 ## The Parentheses `()` Operator
@@ -267,7 +267,7 @@ What remains is to finish writing the code to print “**Inside / Outside**”, 
 
 #### Testing in the Judge System
 
-After you finish writing the solution, you can test it here: [https://judge.softuni.bg/Contests/Practice/Index/931#5](https://judge.softuni.bg/Contests/Practice/Index/931#5).
+After you finish writing the solution, you can test it here: [https://judge.softuni.org/Contests/Practice/Index/931#5](https://judge.softuni.org/Contests/Practice/Index/931#5).
 
 
 ### Example: Fruit Shop
@@ -302,7 +302,7 @@ Write a program that reads from the console **fruit** (banana / apple / …), **
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#6](https://judge.softuni.bg/Contests/Practice/Index/931#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#6](https://judge.softuni.org/Contests/Practice/Index/931#6).
 
 
 ### Example: Trade Fees
@@ -329,7 +329,7 @@ When reading the input, we could convert the city into small letters (with the m
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#7](https://judge.softuni.bg/Contests/Practice/Index/931#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#7](https://judge.softuni.org/Contests/Practice/Index/931#7).
 
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
@@ -381,7 +381,7 @@ Let's write a program that prints the **day of the week** (in English) depending
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#8](https://judge.softuni.bg/Contests/Practice/Index/931#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#8](https://judge.softuni.org/Contests/Practice/Index/931#8).
 
 
 ### Multiple Labels in Switch-Cases
@@ -428,7 +428,7 @@ We can solve the task with **`switch-case`** conditions with multiple labels in 
 
 #### Testing in the Judge System
 
-Thes your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#9](https://judge.softuni.bg/Contests/Practice/Index/931#9).
+Thes your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#9](https://judge.softuni.org/Contests/Practice/Index/931#9).
 
 
 ## What have we learned from this chapter?
@@ -503,7 +503,7 @@ Sample code (parts of the code are blurred with the purpose to stimulate your th
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#10](https://judge.softuni.bg/Contests/Practice/Index/931#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#10](https://judge.softuni.org/Contests/Practice/Index/931#10).
 
 
 ### Problem: Volleyball
@@ -537,7 +537,7 @@ A sample code (parts of the code are blurred on purpose to stimulate independent
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#11](https://judge.softuni.bg/Contests/Practice/Index/931#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#11](https://judge.softuni.org/Contests/Practice/Index/931#11).
 
 
 ### Problem: * Point in the Figure
@@ -588,7 +588,7 @@ Sample code (parts of the code are blurred to stimulate logical thinking and sol
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/931#12](https://judge.softuni.bg/Contests/Practice/Index/931#12).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#12](https://judge.softuni.org/Contests/Practice/Index/931#12).
 
 
 ## Exercise: Graphic Application with More Complex Conditions 

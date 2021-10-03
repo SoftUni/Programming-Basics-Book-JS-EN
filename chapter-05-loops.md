@@ -46,7 +46,7 @@ We can solve this problem with a **`for` loop** which will pass through the numb
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#0](https://judge.softuni.bg/Contests/Practice/Index/933#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#0](https://judge.softuni.org/Contests/Practice/Index/933#0).
 
 You should get **100 points** (completely correct solution).
 
@@ -75,7 +75,7 @@ We can solve this problem by combining a **`for` loop** that loops through the n
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#1](https://judge.softuni.bg/Contests/Practice/Index/933#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#1](https://judge.softuni.org/Contests/Practice/Index/933#1).
 
 ### Problem: All Latin Letters
 
@@ -93,7 +93,7 @@ If we want to make the code easier to read, we can write the following:
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#2](https://judge.softuni.bg/Contests/Practice/Index/933#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#2](https://judge.softuni.org/Contests/Practice/Index/933#2).
 
 ### Problem: Sum Numbers
 
@@ -127,7 +127,7 @@ Here's the source code for the solution:
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#3](https://judge.softuni.bg/Contests/Practice/Index/933#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#3](https://judge.softuni.org/Contests/Practice/Index/933#3).
 
 ### Problem: Max Number
 
@@ -151,7 +151,7 @@ First, we read one number **`n`** (the number of integers that will be entered).
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#4](https://judge.softuni.bg/Contests/Practice/Index/933#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#4](https://judge.softuni.org/Contests/Practice/Index/933#4).
 
 
 ### Problem: Min Number
@@ -174,7 +174,7 @@ The problem is completely identical to the previous one, except this time we wil
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#5](https://judge.softuni.bg/Contests/Practice/Index/933#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#5](https://judge.softuni.org/Contests/Practice/Index/933#5).
 
 
 ### Problem: Left and Right Sum
@@ -195,7 +195,7 @@ First, we read the number **n**, after that we enter the first **n** numbers (**
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#6](https://judge.softuni.bg/Contests/Practice/Index/933#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#6](https://judge.softuni.org/Contests/Practice/Index/933#6).
 
 
 ### Problem: Even / Odd Sum
@@ -218,7 +218,7 @@ The program reads the numbers one by one and calculates the two **sums** (the su
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#7](https://judge.softuni.bg/Contests/Practice/Index/933#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#7](https://judge.softuni.org/Contests/Practice/Index/933#7).
 
 
 ### Problem: Sum of Vowels
@@ -244,7 +244,7 @@ We read the text input **`arg1`**, then create a sum that equals zero and run a 
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#8](https://judge.softuni.bg/Contests/Practice/Index/933#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#8](https://judge.softuni.org/Contests/Practice/Index/933#8).
 
 
 ## What did we learn in this chapter?
@@ -281,7 +281,7 @@ Calculate **the sum** of all elements, find **the biggest** among them and check
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#9](https://judge.softuni.bg/Contests/Practice/Index/933#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#9](https://judge.softuni.org/Contests/Practice/Index/933#9).
 
 
 ### Problem: Even / Odd Positions
@@ -305,7 +305,7 @@ In this problem, it's better to work with **fractions** (not integers). The sum,
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#10](https://judge.softuni.bg/Contests/Practice/Index/933#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#10](https://judge.softuni.org/Contests/Practice/Index/933#10).
 
 ### Problem: Equal Pairs
 
@@ -332,7 +332,7 @@ Read the numbers from the input **in pairs**. For each pair calculate its **sum*
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/933#11](https://judge.softuni.bg/Contests/Practice/Index/933#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#11](https://judge.softuni.org/Contests/Practice/Index/933#11).
 
 ## Lab: Graphics and Web applications
 
@@ -346,9 +346,8 @@ The purpose of the next exercise is to play with a **drawing library**, also kno
 
 First, let's check out **the drawing concept “Turtle Graphics”**. Take a look at the following sources:
 
-* Definition of “turtle graphics”: [http://c2.com/cgi/wiki?TurtleGraphics](http://c2.com/cgi/wiki?TurtleGraphics)
+* Definition of “turtle graphics”: [https://wiki.c2.com/?TurtleGraphics](https://wiki.c2.com/?TurtleGraphics)
 * Article on “turtle graphics” in Wikipedia: [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
-* Interactive online tool for drawing with a turtle:<br>[http://davidbau.github.io/jquery-turtle/demo.html](http://davidbau.github.io/jquery-turtle/demo.html)
 
 We will build the application, using the following technologies:
   - **HTML** language – to describe the user interface (drawing field and buttons).

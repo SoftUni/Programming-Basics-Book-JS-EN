@@ -119,7 +119,7 @@ In the end, we will **invoke** **`printReceipt`** from the global scope of our p
 
 #### Testing in the Judge System
 
-The program with a total of four functions that call one another is ready and we can **run and debug it**. After that, we will send it for test in the Judge system: [https://judge.softuni.bg/Contests/Practice/Index/943#0](https://judge.softuni.bg/Contests/Practice/Index/943#0).
+The program with a total of four functions that call one another is ready and we can **run and debug it**. After that, we will send it for test in the Judge system: [https://judge.softuni.org/Contests/Practice/Index/943#0](https://judge.softuni.org/Contests/Practice/Index/943#0).
 
 ## Functions with parameters
 
@@ -179,7 +179,7 @@ Our next step is to call the function we have created:
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#1](https://judge.softuni.bg/Contests/Practice/Index/943#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#1](https://judge.softuni.org/Contests/Practice/Index/943#1).
 
 
 ### Optional parameters
@@ -228,7 +228,7 @@ In the end, we will print the **bottom part** from the triangle but this time wi
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#2](https://judge.softuni.bg/Contests/Practice/Index/943#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#2](https://judge.softuni.org/Contests/Practice/Index/943#2).
 
 ### Example: draw a filled square.
 
@@ -256,7 +256,7 @@ In the end, we invoke the declared functions to draw the whole square:
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#3](https://judge.softuni.bg/Contests/Practice/Index/943#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#3](https://judge.softuni.org/Contests/Practice/Index/943#3).
 
 
 ## Return result from a function
@@ -327,7 +327,7 @@ Our next step is to **call the new** function and **record the returned value in
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#4](https://judge.softuni.bg/Contests/Practice/Index/943#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#4](https://judge.softuni.org/Contests/Practice/Index/943#4).
 
 
 ### Example: Power of a number
@@ -350,7 +350,7 @@ After we have done our calculations, all we are left to do is calling the functi
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#5](https://judge.softuni.bg/Contests/Practice/Index/943#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#5](https://judge.softuni.org/Contests/Practice/Index/943#5).
 
 
 ### Functions, returning multiple values 
@@ -526,7 +526,7 @@ Define a function **`printName(name)`**  and implement it. Write a function **`s
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#7](https://judge.softuni.bg/Contests/Practice/Index/943#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#7](https://judge.softuni.org/Contests/Practice/Index/943#7).
 
 ### Problem: Min Method
 
@@ -550,7 +550,7 @@ function solve([num1, num2, num3]) {
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#8](https://judge.softuni.bg/Contests/Practice/Index/943#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#8](https://judge.softuni.org/Contests/Practice/Index/943#8).
 
 
 ### Problem: String Repeater
@@ -571,7 +571,7 @@ Write function and add the input string to the result in the for loop:
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#9](https://judge.softuni.bg/Contests/Practice/Index/943#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#9](https://judge.softuni.org/Contests/Practice/Index/943#9).
 
 
 ### Problem: Nth Digit
@@ -590,7 +590,7 @@ To perform the algorithm we will use a **`while`** loop. While the number isn't 
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#10](https://judge.softuni.bg/Contests/Practice/Index/943#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#10](https://judge.softuni.org/Contests/Practice/Index/943#10).
 
 
 ### Problem: Integer to Base
@@ -625,7 +625,7 @@ function integerToBase(number, toBase) {
 
 #### Testing in the Judge System 
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#11](https://judge.softuni.bg/Contests/Practice/Index/943#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#11](https://judge.softuni.org/Contests/Practice/Index/943#11).
 
 
 # Problem: Notifications
@@ -657,7 +657,7 @@ In **`processMessage()`** read the type of message from the console and accordin
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#12](https://judge.softuni.bg/Contests/Practice/Index/943#12).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#12](https://judge.softuni.org/Contests/Practice/Index/943#12).
 
 
 ### Problem: Numbers to Words
@@ -691,7 +691,7 @@ The third special case is when the number formed by the last two digits of the i
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#13](https://judge.softuni.bg/Contests/Practice/Index/943#13).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#13](https://judge.softuni.org/Contests/Practice/Index/943#13).
 
 
 ### Problem: String Encryption
@@ -734,4 +734,4 @@ To find the first and the last digit of the ASCII code, we will use the same alg
  
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/943#14](https://judge.softuni.bg/Contests/Practice/Index/943#14).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#14](https://judge.softuni.org/Contests/Practice/Index/943#14).

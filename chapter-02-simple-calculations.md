@@ -120,7 +120,7 @@ function calculateSquareArea(a) {
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0). Try all four solutions to the problem.
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#0](https://judge.softuni.org/Contests/Practice/Index/927#0). Try all four solutions to the problem.
 
 ## Reading Floating-Point Numbers
 
@@ -153,7 +153,7 @@ convertInchesToCentimeters([5]); // Centimeters = 12.7
 ```
 
 #### Testing in the Judge System
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#1](https://judge.softuni.bg/Contests/Practice/Index/927#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#1](https://judge.softuni.org/Contests/Practice/Index/927#1).
 
 ## Reading a Text Input
 
@@ -185,7 +185,7 @@ sayHello(['Ivan']); // Hello, Ivan!
 
 #### Testing in Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#2](https://judge.softuni.bg/Contests/Practice/Index/927#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#2](https://judge.softuni.org/Contests/Practice/Index/927#2).
 
 
 ## Concatenating Text and Numbers
@@ -217,7 +217,7 @@ The result is:
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#3](https://judge.softuni.bg/Contests/Practice/Index/927#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#3](https://judge.softuni.org/Contests/Practice/Index/927#3).
 
 
 ## Arithmetic Operations
@@ -344,7 +344,7 @@ printTrapezoidArea([3, 4, 5]); // Trapezoid area = 17.5
 
 Test your solution here: 
 
-[https://judge.softuni.bg/Contests/Practice/Index/927#4](https://judge.softuni.bg/Contests/Practice/Index/927#4).
+[https://judge.softuni.org/Contests/Practice/Index/927#4](https://judge.softuni.org/Contests/Practice/Index/927#4).
 
 
 ## Rounding Numbers
@@ -408,7 +408,7 @@ The result is:
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#5](https://judge.softuni.bg/Contests/Practice/Index/927#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#5](https://judge.softuni.org/Contests/Practice/Index/927#5).
 
 
 ### Example: 2D Rectangle Area
@@ -446,7 +446,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#6](https://judge.softuni.bg/Contests/Practice/Index/927#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#6](https://judge.softuni.org/Contests/Practice/Index/927#6).
 
 
 ## What have we learned from this chapter?
@@ -495,7 +495,7 @@ For **testing**, it's necessary to **call the function** in the same file with a
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#0](https://judge.softuni.org/Contests/Practice/Index/927#0).
 
 
 You must get 100 points (completely correct solution):
@@ -525,7 +525,7 @@ Let's test it with floating numbers, for example, **4.5**:
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#1](https://judge.softuni.bg/Contests/Practice/Index/927#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#1](https://judge.softuni.org/Contests/Practice/Index/927#1).
 
 The solution should be taken as completely correct:
 
@@ -548,7 +548,7 @@ Again we create a **new file** in the folder with the other solutions and we sav
 
 #### Testing in the Judge System
 
-Test your solution here:  [https://judge.softuni.bg/Contests/Practice/Index/927#2](https://judge.softuni.bg/Contests/Practice/Index/927#2).
+Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/927#2](https://judge.softuni.org/Contests/Practice/Index/927#2).
 
 
 ### Problem:	Concatenating Text and Numbers
@@ -565,7 +565,7 @@ The solution should be tested locally by calling the function with sample values
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#3](https://judge.softuni.bg/Contests/Practice/Index/927#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#3](https://judge.softuni.org/Contests/Practice/Index/927#3).
 
 
 ### Problem:	Trapezoid Area
@@ -586,7 +586,7 @@ We should add a new file in Visual Studio Code again with the name **calculateTr
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#4](https://judge.softuni.bg/Contests/Practice/Index/927#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#4](https://judge.softuni.org/Contests/Practice/Index/927#4).
 
 
 ### Problem:	Circle Perimeter and Area
@@ -608,7 +608,7 @@ For the calculations you may use the following formulas:
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#5](https://judge.softuni.bg/Contests/Practice/Index/927#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#5](https://judge.softuni.org/Contests/Practice/Index/927#5).
 
 
 ### Problem: Rectangle Area
@@ -627,7 +627,7 @@ A **Rectangle** is defined by the **coordinates** of both of its opposite corner
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#6](https://judge.softuni.bg/Contests/Practice/Index/927#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#6](https://judge.softuni.org/Contests/Practice/Index/927#6).
 
 
 ### Problem:   Triangle Area
@@ -645,12 +645,12 @@ Write a function that receives arguments which are **a side and a height of a tr
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#7](https://judge.softuni.bg/Contests/Practice/Index/927#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#7](https://judge.softuni.org/Contests/Practice/Index/927#7).
 
 
 ### Problem: Converter – from °C Degrees to °F Degrees
 
-Write a function that reads **degrees on the Celsius scale** (°C) and converts them to **degrees on the Fahrenheit scale** (°F).  Look on the Internet for a proper  [formula](http://bfy.tw/3rGh "Search on Google") to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few examples:
+Write a function that reads **degrees on the Celsius scale** (°C) and converts them to **degrees on the Fahrenheit scale** (°F).  Look on the Internet for a proper  [formula](https://bfy.tw/3rGh "Search on Google") to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few examples:
 
 #### Sample Input and Output
 
@@ -663,7 +663,7 @@ Write a function that reads **degrees on the Celsius scale** (°C) and converts 
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#8](https://judge.softuni.bg/Contests/Practice/Index/927#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#8](https://judge.softuni.org/Contests/Practice/Index/927#8).
 
 
 ### Problem: Converter - Radians to Degrees
@@ -680,7 +680,7 @@ Write a function that reads **an angle in [radians](https://en.wikipedia.org/wik
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#9](https://judge.softuni.bg/Contests/Practice/Index/927#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#9](https://judge.softuni.org/Contests/Practice/Index/927#9).
 
 
 ### Problem: Converter - USD to BGN
@@ -697,7 +697,7 @@ Write a function for **conversion of US dollars** (USD) **into Bulgarian levs** 
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#10](https://judge.softuni.bg/Contests/Practice/Index/927#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#10](https://judge.softuni.org/Contests/Practice/Index/927#10).
 
 
 ### Problem:	\*  Currency Converter
@@ -721,7 +721,7 @@ Write a function for the **conversion of money from one currency into another**.
  
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#11](https://judge.softuni.bg/Contests/Practice/Index/927#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#11](https://judge.softuni.org/Contests/Practice/Index/927#11).
 
 
 ### Problem:	** Date Calculations – 1000 Days on the Earth
@@ -744,7 +744,7 @@ Write a function that reads **a birth date** in format **`dd-MM-yyyy`** and calc
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/927#12](https://judge.softuni.bg/Contests/Practice/Index/927#12).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#12](https://judge.softuni.org/Contests/Practice/Index/927#12).
 
 
 ## Graphic Applications with Numerical Expressions
@@ -764,7 +764,7 @@ Similarly, as in the first chapter ("First Steps in Programming"), we will use t
 ```html
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <meta charset="utf-8">
     <title>BGN to EUR Converter</title>
@@ -908,7 +908,7 @@ The file **index.html** must look like this:
 ```html
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <meta charset="utf-8" />
     <title>Catch the mouse!</title>

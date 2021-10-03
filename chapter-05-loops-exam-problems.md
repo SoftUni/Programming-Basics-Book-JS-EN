@@ -154,7 +154,7 @@ All we have to do at this point is to print the final results:
 
 ### Testing in the Judge system
 
-You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/934#0](https://judge.softuni.bg/Contests/Practice/Index/934#0).
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#0](https://judge.softuni.org/Contests/Practice/Index/934#0).
 
 
 ## Problem: the smart Lily
@@ -250,7 +250,7 @@ To avoid declaring additional variables we can use a template literal - **`${exp
 
 ### Testing in the Judge system
 
-You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/934#1](https://judge.softuni.bg/Contests/Practice/Index/934#1).
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#1](https://judge.softuni.org/Contests/Practice/Index/934#1).
 
 ## Problem: Return to the past
 
@@ -326,7 +326,7 @@ Finally, we have to print out the result by **checking whether the inheritance**
 
 ### Testing in the Judge system
 
-You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/934#2](https://judge.softuni.bg/Contests/Practice/Index/934#2).
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#2](https://judge.softuni.org/Contests/Practice/Index/934#2).
 
 
 ## Problem: Hospital
@@ -416,7 +416,7 @@ Finally, the only thing left is to print the number of treated and untreated pat
 
 ### Testing in the Judge system
 
-You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/934#3](https://judge.softuni.bg/Contests/Practice/Index/934#3).
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#3](https://judge.softuni.org/Contests/Practice/Index/934#3).
 
 
 ## Problem: division without remainder
@@ -504,7 +504,7 @@ Finally, you need to print the obtained results, by following the specified form
 
 ### Testing in the Judge system
 
-You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/934#4](https://judge.softuni.bg/Contests/Practice/Index/934#4).
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#4](https://judge.softuni.org/Contests/Practice/Index/934#4).
 
 
 ## Problem: Logistics
@@ -599,4 +599,4 @@ Before printing the output, we have to **calculate the percentage of tons, trans
 
 ### Testing in the Judge system
 
-You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/934#5](https://judge.softuni.bg/Contests/Practice/Index/934#5).
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#5](https://judge.softuni.org/Contests/Practice/Index/934#5).

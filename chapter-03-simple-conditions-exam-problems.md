@@ -94,7 +94,7 @@ After we have checked the distance conditions and we have **calculated the price
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/930#0](https://judge.softuni.bg/Contests/Practice/Index/930#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/930#0](https://judge.softuni.org/Contests/Practice/Index/930#0).
 
 
 ## Problem: Pipes in Pool
@@ -154,7 +154,7 @@ However, if **the condition** returns **`false`**, that means that **the quantit
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/930#1](https://judge.softuni.bg/Contests/Practice/Index/930#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/930#1](https://judge.softuni.org/Contests/Practice/Index/930#1).
 
 
 ## Problem: Sleepy Tom Cat
@@ -227,7 +227,7 @@ Whatever the result of the conditional statement is, we have to print how much *
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/930#2](https://judge.softuni.bg/Contests/Practice/Index/930#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/930#2](https://judge.softuni.org/Contests/Practice/Index/930#2).
 
 
 ## Problem: Harvest
@@ -295,7 +295,7 @@ If the condition returns **`false`**, we have to **print the difference** betwee
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/930#3](https://judge.softuni.bg/Contests/Practice/Index/930#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/930#3](https://judge.softuni.org/Contests/Practice/Index/930#3).
 
 
 ## Problem: Firm
@@ -355,5 +355,5 @@ If **the time is not enough**, we print the additional hours that are needed for
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/930#4](https://judge.softuni.bg/Contests/Practice/Index/930#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/930#4](https://judge.softuni.org/Contests/Practice/Index/930#4).
 

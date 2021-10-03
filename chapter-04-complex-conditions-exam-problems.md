@@ -151,7 +151,7 @@ Actually, for the task, printing the result **on the console** can be done at a 
 
 ### Testing in the Judge System
 
-Test your solution here:  [https://judge.softuni.bg/Contests/Practice/Index/932#0](https://judge.softuni.bg/Contests/Practice/Index/932#0).
+Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/932#0](https://judge.softuni.org/Contests/Practice/Index/932#0).
 
 
 ## Problem: Trip
@@ -252,7 +252,7 @@ What remains is to display the calculated result on the console:
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/932#1](https://judge.softuni.bg/Contests/Practice/Index/932#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/932#1](https://judge.softuni.org/Contests/Practice/Index/932#1).
 
 ## Problem: Operations with Numbers
 
@@ -344,7 +344,7 @@ Finally, what remains is to print the calculated result on the console:
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/932#2](https://judge.softuni.bg/Contests/Practice/Index/932#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/932#2](https://judge.softuni.org/Contests/Practice/Index/932#2).
 
 
 ## Problem: Game Tickets
@@ -437,7 +437,7 @@ Finally, we need to display the calculated result on the console.
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/932#3](https://judge.softuni.bg/Contests/Practice/Index/932#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/932#3](https://judge.softuni.org/Contests/Practice/Index/932#3).
 
 
 ## Problem: Hotel Room
@@ -530,4 +530,4 @@ Finally, what remains is to print the calculated results on the console.
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/932#4](https://judge.softuni.bg/Contests/Practice/Index/932#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/932#4](https://judge.softuni.org/Contests/Practice/Index/932#4).

@@ -25,7 +25,7 @@ How does the example work? We initialize **a loop with a variable `i = 1`**, whi
 
 #### Testing in the Judge System
 
-Test your solution here:: [https://judge.softuni.bg/Contests/Practice/Index/935#0](https://judge.softuni.bg/Contests/Practice/Index/935#0).
+Test your solution here:: [https://judge.softuni.org/Contests/Practice/Index/935#0](https://judge.softuni.org/Contests/Practice/Index/935#0).
 
 
 ###Example: Rectangle Made of N x N Stars
@@ -46,7 +46,7 @@ On some web browsers, the repeating results on the console merge in one. It's ad
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#1](https://judge.softuni.bg/Contests/Practice/Index/935#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#1](https://judge.softuni.org/Contests/Practice/Index/935#1).
 
 
 ## Nested loops
@@ -92,7 +92,7 @@ The problem is similar to the last one. The difference here is that we need to f
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#2](https://judge.softuni.bg/Contests/Practice/Index/935#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#2](https://judge.softuni.org/Contests/Practice/Index/935#2).
 
 
 ### Example: Triangle Made of Dollars
@@ -111,7 +111,7 @@ The problem is **similar** to those for drawing **a rectangle** and **square**. 
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#3](https://judge.softuni.bg/Contests/Practice/Index/935#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#3](https://judge.softuni.org/Contests/Practice/Index/935#3).
 
 
 ### Example: Square Frame
@@ -140,7 +140,7 @@ Here is an example implementation of the above idea with nested loops:
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#4](https://judge.softuni.bg/Contests/Practice/Index/935#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#4](https://judge.softuni.org/Contests/Practice/Index/935#4).
 
 
 ### Problem: Rhombus Made of Stars
@@ -170,7 +170,7 @@ To solve this problem, we need to mentally **divide** **the rhombus** into **two
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#5](https://judge.softuni.bg/Contests/Practice/Index/935#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#5](https://judge.softuni.org/Contests/Practice/Index/935#5).
 
 
 ### Problem: Christmas Tree
@@ -193,7 +193,7 @@ From the examples, we see that **the Christmas tree** can be **divided** into **
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#6](https://judge.softuni.bg/Contests/Practice/Index/935#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#6](https://judge.softuni.org/Contests/Practice/Index/935#6).
 
 
 ## Exercises: Drawing more complex figures
@@ -223,7 +223,7 @@ When drawing **the middle** part, we need to **check** if the row is **`(n-1) / 
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#7](https://judge.softuni.bg/Contests/Practice/Index/935#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#7](https://judge.softuni.org/Contests/Practice/Index/935#7).
 
 
 ### Problem: House
@@ -311,7 +311,7 @@ If you have written everything as it is here, the problem should be solved.
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#8](https://judge.softuni.bg/Contests/Practice/Index/935#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#8](https://judge.softuni.org/Contests/Practice/Index/935#8).
 
 
 ### Example: Diamond
@@ -390,7 +390,7 @@ If we have written all correctly, then the problem is solved.
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/935#9](https://judge.softuni.bg/Contests/Practice/Index/935#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#9](https://judge.softuni.org/Contests/Practice/Index/935#9).
 
 
 ## What did you learn from this chapter?

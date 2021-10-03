@@ -281,7 +281,7 @@ Start the program with **[F5]** and check whether the result matches the one fro
 
 ### Testing in the Judge System
 Test your solution here:
-[https://judge.softuni.bg/Contests/Practice/Index/926#1](https://judge.softuni.bg/Contests/Practice/Index/926#1).
+[https://judge.softuni.org/Contests/Practice/Index/926#1](https://judge.softuni.org/Contests/Practice/Index/926#1).
 
 **Note**: Don't forget to enclose your code in the `solve()` function:
 ````javascript
@@ -309,7 +309,7 @@ Let's now **start the program** and check whether the result is what we're expec
 ```
 ### Testing in the Judge System
 Test your solution here:
-[https://judge.softuni.bg/Contests/Practice/Index/926#2](https://judge.softuni.bg/Contests/Practice/Index/926#2).
+[https://judge.softuni.org/Contests/Practice/Index/926#2](https://judge.softuni.org/Contests/Practice/Index/926#2).
 Did you receive 100 points? If not, think of what you may be missing. Then try and think of a **cleverer** way to write this program, so as to avoid repeating the same command so many times. Look up information for "**[for loop JavaScript](https://www.google.bg/search?q=for+loop+JavaScript)**" on the Internet.
 
 ### Problem: Triangle of 55 stars
@@ -337,7 +337,7 @@ console.log("**");
 
 ### Testing in the Judge System
 Test your solution here:
-[https://judge.softuni.bg/Contests/Practice/Index/926#3](https://judge.softuni.bg/Contests/Practice/Index/926#3).
+[https://judge.softuni.org/Contests/Practice/Index/926#3](https://judge.softuni.org/Contests/Practice/Index/926#3).
 Try and **improve your solution** to avoid repeating the same command so many times. Can this be achieved with a for-loop? Did you manage to invent a better solution (with a for-loop, for example) to the previous problem? The current problem can be solved with a similar, but a little more complex approach (a loop within another loop). It's completely fine if you can't figure it out, you'll remember this problem when we learn about loops in a few chapters.
 
 ### Problem: Rectangle Area
@@ -360,7 +360,7 @@ What's left is to finish the program so it can calculate the rectangle's area an
 
 ### Testing in the Judge System
 Test your solution here:
-[https://judge.softuni.bg/Contests/Practice/Index/926#4](https://judge.softuni.bg/Contests/Practice/Index/926#4).
+[https://judge.softuni.org/Contests/Practice/Index/926#4](https://judge.softuni.org/Contests/Practice/Index/926#4).
 
 ### \* Problem: Square of Stars
 Write a **JavaScript** console program which **receives a whole positive number N** and **prints** a square of N stars on the console, like in the examples below.
@@ -381,7 +381,7 @@ Finish the program so that it prints a square made up of stars. You may need to 
 
 ### Testing in the Judge System
 Test your solution here:
-[https://judge.softuni.bg/Contests/Practice/Index/926#5](https://judge.softuni.bg/Contests/Practice/Index/926#5).
+[https://judge.softuni.org/Contests/Practice/Index/926#5](https://judge.softuni.org/Contests/Practice/Index/926#5).
 
 ## Console, Graphical and Web Applications
 With **console applications**, as you've already noticed, all operations for reading input and printing output are done on the console. The input data is entered on the **console** and then it is read by the application; the console is also used to print the output data after or during the runtime of the program.

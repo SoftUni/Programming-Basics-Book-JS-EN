@@ -92,7 +92,7 @@ If you worked accurately and wrote the program using the input data given in the
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/940#0](https://judge.softuni.bg/Contests/Practice/Index/940#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/940#0](https://judge.softuni.org/Contests/Practice/Index/940#0).
 
 
 ## Problem: Changing Tiles
@@ -156,7 +156,7 @@ We can find the final result by **calculating the total amount** that is needed 
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/940#1](https://judge.softuni.bg/Contests/Practice/Index/940#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/940#1](https://judge.softuni.org/Contests/Practice/Index/940#1).
 
 
 ## Problem: Flowers Shop
@@ -225,7 +225,7 @@ What remains is to perform **a few checks** regarding **the discounts** of the d
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/940#2](https://judge.softuni.bg/Contests/Practice/Index/940#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/940#2](https://judge.softuni.org/Contests/Practice/Index/940#2).
 
 
 ## Problem: Grades
@@ -282,7 +282,7 @@ We can calculate what **percentage** is taken by a particular **group of student
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/940#3](https://judge.softuni.bg/Contests/Practice/Index/940#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/940#3](https://judge.softuni.org/Contests/Practice/Index/940#3).
 
 
 ## Problem: Christmas Hat
@@ -337,7 +337,7 @@ In case we have worked properly, we will obtain figures identical to those in th
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/940#4](https://judge.softuni.bg/Contests/Practice/Index/940#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/940#4](https://judge.softuni.org/Contests/Practice/Index/940#4).
 
 
 ## Problem: Letters Combinations
@@ -371,7 +371,7 @@ Print on one line **all combinations** corresponding to the requirements, follow
 
 ### Hints and Guidelines
 
-By requirements, we have input data of **3 arguments**, each of which is represented by one character of the **ASCII table** ([http://www.asciitable.com/](http://www.asciitable.com/)). We could use the already defined method in JavaScript, **`.charCodeAt()`** through which we will receive the ASCII code of the symbol:
+By requirements, we have input data of **3 arguments**, each of which is represented by one character of the **ASCII table** ([https://www.asciitable.com/](https://www.asciitable.com/)). We could use the already defined method in JavaScript, **`.charCodeAt()`** through which we will receive the ASCII code of the symbol:
 
 ![](assets/chapter-8-2-images/06.Letters-01.png)
 
@@ -391,4 +391,4 @@ Let's not forget that we also need to print the **total number of valid combinat
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/940#5](https://judge.softuni.bg/Contests/Practice/Index/940#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/940#5](https://judge.softuni.org/Contests/Practice/Index/940#5).

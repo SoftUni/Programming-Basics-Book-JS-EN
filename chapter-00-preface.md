@@ -6,7 +6,7 @@
 <td>This book only gives you <b>the first steps to programming</b>. It covers very basic skills that you must develop for years, in order to reach a high enough level and start working as a programmer.</td>
 </tr></table>
 
-The book is also used as an unofficial **[textbook for school-level programming courses in the high schools](http://softuni.foundation/projects/applied-software-developer-profession/)**, studying professions like "**Programmer**", "**Application Programmer**" and "**System Programmer**", as well as an additional teaching tool in the initial programming courses at the **secondary schools, mathematical and professional high schools.**, and specialty "informatics and IT".
+The book is also used as an unofficial **[textbook for school-level programming courses in the high schools](https://softuni.foundation/projects/applied-software-developer-profession/)**, studying professions like "**Programmer**", "**Application Programmer**" and "**System Programmer**", as well as an additional teaching tool in the initial programming courses at the **secondary schools, mathematical and professional high schools.**, and specialty "informatics and IT".
 
 ## Who is this book intended for?
 
@@ -52,7 +52,7 @@ material. The purpose of solving all tasks from all the topics covered is to giv
 </tr></table> 
 
 ## About Software University(SoftUni)
-[The Software University (SoftUni)](https://softuni.bg) is **the largest training center for software engineers in Bulgaria**. Tens of thousands of students pass through it every year. SoftUni opened in 2014 as a continuation of **[Svetlin Nakov PhD's](http://nakov.com)** efforts to build **framed software specialists** through real, modern and quality education, which combines fundamental knowledge with modern software technologies and many practices.
+[The Software University (SoftUni)](https://softuni.bg) is **the largest training center for software engineers in Bulgaria**. Tens of thousands of students pass through it every year. SoftUni opened in 2014 as a continuation of **[Svetlin Nakov PhD's](https://nakov.com)** efforts to build **framed software specialists** through real, modern and quality education, which combines fundamental knowledge with modern software technologies and many practices.
 
 The Software University provides **quality education**, **occupation**, **work** and **the opportunity to acquire a bachelor's degree** for programmers, software engineers and IT professionals. SoftUni builds an extremely successful lasting **relationship between education and industry**, collaborating with hundreds of software companies, **providing work and internships** to its students, providing quality specialists for the software industry and directly meeting the needs of employers through the learning process.
 
@@ -76,7 +76,7 @@ Note also some **features of the SoftUni Judge system**:
 
 **Example**: if a number is required to be printed in the output (e.g. **`25`**), do not display descriptive messages such as **`The result is: 25`**, but print exactly what is required, i.e. only the number.
 
-The SoftUni Judge system is **available at any time** from its website: [https://judge.softuni.org](https://judge.softuni.bg).
+The SoftUni Judge system is **available at any time** from its website: [https://judge.softuni.org](https://judge.softuni.org).
  - To sign in, use your authentication from the SoftUni website: [https://softuni.bg](https://softuni.bg).
  - Use of the system is **free of charge** and is not subject to participation in SoftUni courses.
 
@@ -190,17 +190,17 @@ than a well-structured learning material with many examples and tasks. **Free of
 * **An automated task and homework verification system** (Online Judge System) to be used by students, also free of charge.
 * **Video lessons** with methodological instructions from the free course for programming teachers, which is held regularly by the SoftUni Foundation.
  
-All these **free teaching resources** can be found on the SoftUni Foundation website, along with learning content for a whole series of programming courses and software technologies. Download them free from here: http://softuni.foundation/projects/applied-software-developer-profession/.
+All these **free teaching resources** can be found on the SoftUni Foundation website, along with learning content for a whole series of programming courses and software technologies. Download them free from here: https://softuni.foundation/projects/applied-software-developer-profession/.
 
 ## The history behind this book
 
-The main engine and project manager for the creation of the current **free programming book for beginners** with open source is **[Svetlin Nakov, PhD](http://www.nakov.com)**. He is a major ideologist and creator of the learning content from the **[course "Basics of Programming" at SoftUni](https://softuni.bg/courses/programming-basics)**, which was used as a foundation of this book.
+The main engine and project manager for the creation of the current **free programming book for beginners** with open source is **[Svetlin Nakov, PhD](https://nakov.com)**. He is a major ideologist and creator of the learning content from the **[course "Basics of Programming" at SoftUni](https://softuni.bg/courses/programming-basics)**, which was used as a foundation of this book.
 
 It all starts with the mass **free programming basics courses**, held across the country since 2014, when the SoftUni initiative was launched. In the beginning, these courses had a wider reach and included more theory, but in 2016 Svetlin Nakov, PhD completely revised them, renovated, simplified and **directed them to be more practical**. This is how the **learning content core of this book was created**.
 
 SoftUni's free programming start-up trainings are probably the largest ever conducted in Bulgaria. By 2018, SoftUni's basic programming course **is held over 170 times in nearly 40 Bulgarian cities** in person and repeatedly online, with over 60,000 participants. Quite naturally, the need to write a **textbook** for the tens of thousands of participants in SoftUni programming courses for beginners also arises. On the principle of free software and free knowledge, Svetlin Nakov led a **team of volunteers** and started this open-source project, initially to create a book based on programming with the C# language and later with other programming languages.
 
-The project is part of the efforts of **["Software University" foundation](http://softuni.foundation)** to create and distribute open learning content for training software engineers and IT professionals.
+The project is part of the efforts of **["Software University" foundation](https://softuni.foundation)** to create and distribute open learning content for training software engineers and IT professionals.
 
 ### Author group
 

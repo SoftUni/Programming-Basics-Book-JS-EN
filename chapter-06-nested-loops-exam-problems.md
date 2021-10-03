@@ -97,7 +97,7 @@ The structure of the **fortress base** is the same as the one in the **roof**. I
 
 ### Testing in the Judge system
 
-You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/936#0](https://judge.softuni.bg/Contests/Practice/Index/936#0).
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/936#0](https://judge.softuni.org/Contests/Practice/Index/936#0).
 
 ## Problem: Butterfly
 
@@ -148,7 +148,7 @@ What is left now is to print on the console the **lower wing**, which is **analo
 
 ### Testing in the Judge system
 
-You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/936#1](https://judge.softuni.bg/Contests/Practice/Index/936#1).
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/936#1](https://judge.softuni.org/Contests/Practice/Index/936#1).
 
 ## Problem: "Stop" sign
 
@@ -210,7 +210,7 @@ To ensure proper operation of our program, on each **loop** iteration, we have t
 	
 ### Testing in the Judge system
 
-You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/936#2](https://judge.softuni.bg/Contests/Practice/Index/936#2).
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/936#2](https://judge.softuni.org/Contests/Practice/Index/936#2).
 
 ## Problem: Arrow
 Write a program that receives from the console **an odd integer n** and draws **a vertical arrow** with size as in the examples below.
@@ -274,7 +274,7 @@ The height of the lower part of the arrow is **`n - 1`**, therefore **the loop**
 
 ### Testing in the Judge system
 
-You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/936#3](https://judge.softuni.bg/Contests/Practice/Index/936#3).
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/936#3](https://judge.softuni.org/Contests/Practice/Index/936#3).
 
 
 ## Problem: Axe
@@ -330,4 +330,4 @@ For **the last row** of the figure, we can use again, the already declared varia
 
 ### Testing in the Judge system
 
-You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/936#4](https://judge.softuni.bg/Contests/Practice/Index/936#4).
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/936#4](https://judge.softuni.org/Contests/Practice/Index/936#4).
