@@ -15,7 +15,7 @@ Remember the **[four main groups of skills](chapter-00-preface.md#become-a-devel
 
 If you were **not able** to solve all problems or a large part of them, go back and solve them! Remember that **becoming a programmer** requires **a lot of work and effort**. This profession is not for lazy people. There is no way to learn it unless **you seriously practice** programming for years!
 
-As we already explained, the first and basic skill of a programmer is **to learn to write code** with ease and pleasure. This is namely the mission of this book: to teach you how to code. We recommend you, besides reading the book, to enroll in the **[practical course "Programming Basics" at SoftUni](https://softuni.bg/apply)**, as an online format of training.
+As we already explained, the first and basic skill of a programmer is **to learn to write code** with ease and pleasure. This is namely the mission of this book: to teach you how to code. We recommend you, besides reading the book, to enroll in the **[practical course "Programming Basics" at SoftUni](https://softuni.org)**, as an online format of training.
 
 ### What to do after reading this book?
 
@@ -26,7 +26,7 @@ This book **gives you solid grounds**, thanks to which it will be easy for you t
 
 ### Study software engineering in SoftUni
 
-The first, and respectively recommended option to master on a high level the profession of a "software engineer", is to start your training via the **end-to-end SoftUni program for software engineers**: [https://softuni.bg/curriculum](https://softuni.bg/curriculum). The SoftUni curriculum is carefully developed by **Dr. Svetlin Nakov and his team**, to provide you consequently and with gradually increasing complexity all the skills that a software engineer must have, **to start a career as a software developer** in an IT company.
+The first, and respectively recommended option to master on a high level the profession of a "software engineer", is to start your training via the **end-to-end SoftUni program for software engineers**: [https://softuni.org](https://softuni.org). The SoftUni curriculum is carefully developed by **Dr. Svetlin Nakov and his team**, to provide you consequently and with gradually increasing complexity all the skills that a software engineer must have, **to start a career as a software developer** in an IT company.
 
 ### Training duration in SoftUni
 
@@ -40,7 +40,7 @@ Keep in mind that **to become a programmer takes a lot of effort**, writing tens
 
 **To enroll at SoftUni** you need to attend an **entrance exam** in "Programming Basics" on the material from this book. If you easily solve the problems in this book, then you are ready for the exam. Also, pay attention to the chapters on **preparation for the practical exam in programming**. They will give you a good idea of the level of difficulty of the exam and the types of tasks that you need to learn to solve.
 
-If the tasks from the book and the preparation examples are hard for you, then you **need more preparation**. Enroll for the [free course in "Programming Basics"](https://softuni.bg/apply) or go through the book carefully one more time, without skipping solving **the problems in any of the studied topics**! You must learn how **to solve them with ease**, without helping yourselves with the guidelines and the sample solutions.
+If the tasks from the book and the preparation examples are hard for you, then you **need more preparation**. Enroll for the [free course in "Programming Basics"](https://softuni.org) or go through the book carefully one more time, without skipping solving **the problems in any of the studied topics**! You must learn how **to solve them with ease**, without helping yourselves with the guidelines and the sample solutions.
 
 ### SoftUni curriculum for Software Engineers
 
