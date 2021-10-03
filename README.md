@@ -36,9 +36,10 @@ Download the book "**Programming Basics with JavaScript**" in **PDF** format:
 ## Book Editions
 
 This book is available in several versions in different programming languages:
-* [Programming Basics with C#](https://csharp-book.softuni.org)
+* [Programming Basics with C# (English)](https://csharp-book.softuni.org)
+* [Programming Basics with Java (English)](https://java-book.softuni.org)
+* [Programming Basics with JavaScript (English)](https://js-book.softuni.org)
 * [Programming Basics with C# (Bulgarian)](https://csharp-book.softuni.bg)
-* [Programming Basics with Java](https://softuni.github.io/Programming-Basics-Book-Java-EN/)
 * [Programming Basics with Java (Bulgarian)](https://java-book.softuni.bg)
 * [Programming Basics with JavaScript (Bulgarian)](https://js-book.softuni.bg)
 * [Programming Basics with Python (Bulgarian)](https://python-book.softuni.bg)
