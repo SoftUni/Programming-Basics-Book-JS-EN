@@ -210,7 +210,7 @@ This book, "JavaScript Basics", was developed by a broad author's team of **volu
 
 The book is based on its original C# version ([Introduction to programming with C#](https://csharp-book.softuni.bg)), which was developed by a broad author group and which also contributes to this book: 
 
-> Aleksander Krastev, Aleksander Lazarov, Angel Dimitriev, Vasko Viktorov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Zhivko Nedyalkov, Julieta Atanasova, Zahariya Pehlivanova, Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristiyan Pamidov, Luboslav Lubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stefka Vasileva, Teodor Kurtev, Tonyo Zhelev, Hristiyan Hristov, Hristo Hristov, Tsvetan Iliev, Yulian Linev, Yanitsa Vuleva.
+> Aleksander Krastev, Aleksander Lazarov, Angel Dimitriev, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Hristiyan Hristov, Hristo Hristov, Iskra Nikolova, Ivelin Kirilov, Julieta Atanasova, Kalin Primov, Kristiyan Pamidov, Luboslav Lubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Preslav Mihaylov, Rositsa Nenova, Ruslan Filipov, Stefka Vasileva, Svetlin Nakov, Teodor Kurtev, Tonyo Zhelev, Tsvetan Iliev, Vasko Viktorov, Ventsislav Petrov, Yanitsa Vuleva, Yulian Linev, Zahariya Pehlivanova, Zhivko Nedyalkov.
 
 Cover design: Marina Schiderova.
 
