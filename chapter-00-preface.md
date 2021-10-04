@@ -206,7 +206,7 @@ The project is part of the efforts of **["Software University" foundation](https
 
 This book, "JavaScript Basics", was developed by a broad author's team of **volunteers** who took their time to give you this systematic knowledge and guidance at the start of programming. List of all authors and editors (alphabetically):
 
-> **Boncho Vulkov, Ventsislav Petrov, Dimitar Dalev, Elena Rogleva, Julieta Atanasova, Zahariya Pehlyavanova, Zdravko Kostadinov, Ivelin Arnaudov, Kristian Marianov, Martin Chaov, Nikolay Bankin, Nikolay Kostov, Pavel Kolev, Petar Ivanov, Svetlin Nakov, Stiliyan Kangalov, Christian Hristov, Hristo Minkov**
+> **Boncho Vulkov, Christian Hristov, Dimitar Dalev, Elena Rogleva, Hristo Minkov, Ivelin Arnaudov, Julieta Atanasova, Kristian Marianov, Martin Chaov, Nikolay Bankin, Nikolay Kostov, Pavel Kolev, Petar Ivanov, Stiliyan Kangalov, Svetlin Nakov, Ventsislav Petrov, Zahariya Pehlyavanova, Zdravko Kostadinov**
 
 The book is based on its original C# version ([Introduction to programming with C#](https://csharp-book.softuni.bg)), which was developed by a broad author group and which also contributes to this book: 
 
