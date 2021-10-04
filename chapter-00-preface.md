@@ -48,8 +48,7 @@ We advise the reader, as a minimum, **to try all the examples from the book**, t
 material. The purpose of solving all tasks from all the topics covered is to give **complete writing skills to a program code** at the beginners level (as is the purpose of this book). During the courses in **SoftUni** we purposefully **focus on practice** and problem-solving, and in most courses code writing occupies over 70% of the entire course.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Solve all the exercises in the book</b>.Otherwise you won't learn anything! Programming is learned by writing a lot of code and solving thousands of problems!</td>
-</tr></table> 
+<td><b>Solve all the exercises in the book</b>. Otherwise you won't learn anything! Programming is learned by writing a lot of code and solving thousands of problems!</td></tr></table> 
 
 ## About Software University(SoftUni)
 [The Software University (SoftUni)](https://softuni.bg) is **the largest training center for software engineers in Bulgaria**. Tens of thousands of students pass through it every year. SoftUni opened in 2014 as a continuation of **[Svetlin Nakov PhD's](https://nakov.com)** efforts to build **framed software specialists** through real, modern and quality education, which combines fundamental knowledge with modern software technologies and many practices.
@@ -202,15 +201,15 @@ SoftUni's free programming start-up trainings are probably the largest ever cond
 
 The project is part of the efforts of **["Software University" foundation](https://softuni.foundation)** to create and distribute open learning content for training software engineers and IT professionals.
 
-### Author group
+### Authors team
 
 This book, "JavaScript Basics", was developed by a broad author's team of **volunteers** who took their time to give you this systematic knowledge and guidance at the start of programming. List of all authors and editors (alphabetically):
 
-> **Boncho Vulkov, Ventsislav Petrov, Dimitar Dalev, Elena Rogleva, Julieta Atanasova, Zacharia Pehlyavanova, Zdravko Kostadinov, Ivelin Arnaudov, Kristian Marianov, Martin Chaov, Nikolay Bankin, Nikolay Kostov, Pavel Kolev, Petar Ivanov, Svetlin Nakov, Stylyan Kangalov, Christian Hristov, Hristo Minkov**
+> **Boncho Vulkov, Christian Hristov, Dimitar Dalev, Elena Rogleva, Hristo Minkov, Ivelin Arnaudov, Julieta Atanasova, Kristian Marianov, Martin Chaov, Nikolay Bankin, Nikolay Kostov, Pavel Kolev, Petar Ivanov, Stiliyan Kangalov, Svetlin Nakov, Ventsislav Petrov, Zahariya Pehlyavanova, Zdravko Kostadinov**
 
 The book is based on its original C# version ([Introduction to programming with C#](https://csharp-book.softuni.bg)), which was developed by a broad author group and which also contributes to this book: 
 
-> Alexander Krastev, Alexander Lazarov, Angel Dimitriev, Vasco Viktorov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Zhivko Nedyalkov, Juliet Atanasova, Zacharias Pehlivanova, Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristian Pamidov, Lyuboslav Lyubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stephka Vasileva, Teodor Christian Hristov, Hristo Hristov, Tsvetan Iliev, Julian Lynev, Yannitsa Valeva  
+> Aleksander Krastev, Aleksander Lazarov, Angel Dimitriev, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Hristiyan Hristov, Hristo Hristov, Iskra Nikolova, Ivelin Kirilov, Julieta Atanasova, Kalin Primov, Kristiyan Pamidov, Luboslav Lubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Preslav Mihaylov, Rositsa Nenova, Ruslan Filipov, Stefka Vasileva, Svetlin Nakov, Teodor Kurtev, Tonyo Zhelev, Tsvetan Iliev, Vasko Viktorov, Ventsislav Petrov, Yanitsa Vuleva, Yulian Linev, Zahariya Pehlivanova, Zhivko Nedyalkov.
 
 Cover design: Marina Schiderova.
 
