@@ -48,8 +48,7 @@ We advise the reader, as a minimum, **to try all the examples from the book**, t
 material. The purpose of solving all tasks from all the topics covered is to give **complete writing skills to a program code** at the beginners level (as is the purpose of this book). During the courses in **SoftUni** we purposefully **focus on practice** and problem-solving, and in most courses code writing occupies over 70% of the entire course.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Solve all the exercises in the book</b>.Otherwise you won't learn anything! Programming is learned by writing a lot of code and solving thousands of problems!</td>
-</tr></table> 
+<td><b>Solve all the exercises in the book</b>. Otherwise you won't learn anything! Programming is learned by writing a lot of code and solving thousands of problems!</td></tr></table> 
 
 ## About Software University(SoftUni)
 [The Software University (SoftUni)](https://softuni.bg) is **the largest training center for software engineers in Bulgaria**. Tens of thousands of students pass through it every year. SoftUni opened in 2014 as a continuation of **[Svetlin Nakov PhD's](https://nakov.com)** efforts to build **framed software specialists** through real, modern and quality education, which combines fundamental knowledge with modern software technologies and many practices.
@@ -202,7 +201,7 @@ SoftUni's free programming start-up trainings are probably the largest ever cond
 
 The project is part of the efforts of **["Software University" foundation](https://softuni.foundation)** to create and distribute open learning content for training software engineers and IT professionals.
 
-### Author group
+### Authors team
 
 This book, "JavaScript Basics", was developed by a broad author's team of **volunteers** who took their time to give you this systematic knowledge and guidance at the start of programming. List of all authors and editors (alphabetically):
 
