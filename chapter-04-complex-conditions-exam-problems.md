@@ -97,25 +97,25 @@ If the student arrives with more than one minute difference compared to the exam
 
 According to the assignment, we expect **four** lines containing different **integers** to be passed. Examining the provided parameters, we can use the **`Number`** type, as it is suitable for the expected values. We simultaneously **read** the input data and **parse** the string value to the selected data type for the **integer**.
 
-![](assets/chapter-4-2-images/01.On-time-for-the-exam-01.PNG)
+![](assets/chapter-4-2-images/01.On-time-for-the-exam-01.png)
 
 Examining the expected output, we can create variables that contain the different output data types, to avoid using the so-called **"magic strings"** in the code.
 
-![](assets/chapter-4-2-images/01.On-time-for-the-exam-02.PNG)
+![](assets/chapter-4-2-images/01.On-time-for-the-exam-02.png)
 
 #### Calculations
 
 After reading the input data, we can now start writing the logic for calculating the result. Let's first calculate the **start time** of the exam **in minutes** for an easier and more accurate comparison:
 
-![](assets/chapter-4-2-images/01.On-time-for-the-exam-03.PNG)
+![](assets/chapter-4-2-images/01.On-time-for-the-exam-03.png)
 
 Let's also calculate the **student arrival time** using the same logic:
 
-![](assets/chapter-4-2-images/01.On-time-for-the-exam-04.PNG)
+![](assets/chapter-4-2-images/01.On-time-for-the-exam-04.png)
 
 What remains is to calculate the difference between the two times, to determine **when** and **what time compared to the exam time** the student arrived at:
 
-![](assets/chapter-4-2-images/01.On-time-for-the-exam-05.PNG)
+![](assets/chapter-4-2-images/01.On-time-for-the-exam-05.png)
 
 Our next step is to do the required **checks and calculations**, and finally, we will print the output. Let's separate the code into **two** parts. 
 
@@ -306,13 +306,13 @@ Upon reading the requirements, we understand that we expect **three** parameters
 
 Let's create and initialize the variables needed for the logic and calculations. In one variable we will store **the calculations output**, and in the other one, we will use it for the **final output** of the program.
 
-![](assets/chapter-4-2-images/03.Operations-02.PNG)
+![](assets/chapter-4-2-images/03.Operations-02.png)
 
 When carefully reading the requirements, we understand that there are cases where we don't need to do **any** calculations, and simply display a result.
 
 Therefore, we can first check if the second number is **`0`** (zero), as well as whether the operation is a **division** or a **modular division**, and then initialize the output.
 
-![](assets/chapter-4-2-images/03.Operations-03.PNG)
+![](assets/chapter-4-2-images/03.Operations-03.png)
 
 Let's place the output as a value upon initializing the **`output`** parameter. This way we can apply **only one condition** – whether it is needed to **recalculate** or **replace** this output. 
 
@@ -324,7 +324,7 @@ From the requirements we can see that for **summing up** (**`+`**), **subtractio
 
 We finish the solution by applying conditions for summing up, subtraction and multiplying:
 
-![](assets/chapter-4-2-images/03.Operations-05.PNG)
+![](assets/chapter-4-2-images/03.Operations-05.png)
 
 For short and clear conditions, such as the above example for even and odd numbers, you can use a **ternary operator**. Let's examine the possibility to apply a condition **with** or **without** a ternary operator.
 
