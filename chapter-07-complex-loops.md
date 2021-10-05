@@ -73,7 +73,7 @@ In the following example, we will use the standard size 1 stride.
 
 Write a program that prints the numbers **from 1 to 2^n** (two to the power of n). For example, **if n = 10**, then the output would be **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
 
-![](assets/chapter-7-1-images/03.Numbers-1-tо-2^n-01.png)
+![](assets/chapter-7-1-images/03.Numbers-1-to-2^n-01.png)
 
 #### Testing in the Judge System
 

@@ -202,7 +202,7 @@ At each subsequent iteration **the beginning** and **the end** decrease by 1, an
 
 ![](assets/chapter-6-2-images/03.Stop-07.png)
 		
-**The lower part** of the figure, in which the width of the sign **decreases**, can be done by creating а **loop**, that iterates **`n`** number of times. The structure of a row should have a beginning **`.`** + **`\\`**, middle part **`_`** and an end **`//`** + **`.`**. The number of the **dots** in the first loop iteration has to be 0 and on each subsequent have to **increase** by one. Therefore we can say that the **the dots in the lower part of the figure** are equal to **`i`**.
+**The lower part** of the figure, in which the width of the sign **decreases**, can be done by creating a **loop**, that iterates **`n`** number of times. The structure of a row should have a beginning **`.`** + **`\\`**, middle part **`_`** and an end **`//`** + **`.`**. The number of the **dots** in the first loop iteration has to be 0 and on each subsequent have to **increase** by one. Therefore we can say that the **the dots in the lower part of the figure** are equal to **`i`**.
 
 To ensure proper operation of our program, on each **loop** iteration, we have to **decrease** the number of **`_`** by **2**.
 
@@ -262,7 +262,7 @@ In order to draw **the lower part of the arrow**, we have to assign new values o
 
 ![](assets/chapter-6-2-images/04.Arrow-07.png)
 
-On each loop iteration **`outerDots`** increases by 1, and **`innerDots`** decreases by 2. We can notice, that on the penultimate row the **`innerDots`** value will be 1 and on each subsequent loop iteration will be а **negative number**. If we use **the method `str.repeat(count)`** with a negative number, the program will **throw an error**. In order to avoid that we can print the last row of the figure separately.
+On each loop iteration **`outerDots`** increases by 1, and **`innerDots`** decreases by 2. We can notice, that on the penultimate row the **`innerDots`** value will be 1 and on each subsequent loop iteration will be a **negative number**. If we use **the method `str.repeat(count)`** with a negative number, the program will **throw an error**. In order to avoid that we can print the last row of the figure separately.
 
 The height of the lower part of the arrow is **`n - 1`**, therefore **the loop**,  that will print all the rows, except the last one, have to iterate **`n - 2`** number of times:
 

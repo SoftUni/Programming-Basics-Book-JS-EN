@@ -359,7 +359,7 @@ Print on one line **all combinations** corresponding to the requirements, follow
 
 |Input|Output|Comments|
 |---|---|---|
-|a<br>c<br>b|aaa aac aca acc caa cac cca ccc 8|All possible combinations with letters '**а**', '**b**' and '**c**' are:<br>aaa aab aac aba abb abc aca acb acc baa bab bac bba bbb bbc bca bcb bcc caa cab cac cba cbb cbc cca ccb ccc<br>The combinations **containing 'b' are not valid**.<br>**8** valid combinations remain.|
+|a<br>c<br>b|aaa aac aca acc caa cac cca ccc 8|All possible combinations with letters '**a**', '**b**' and '**c**' are:<br>aaa aab aac aba abb abc aca acb acc baa bab bac bba bbb bbc bca bcb bcc caa cab cac cba cbb cbc cca ccb ccc<br>The combinations **containing 'b' are not valid**.<br>**8** valid combinations remain.|
 
 |Input|Output|
 |---|---|
