@@ -62,7 +62,7 @@
 
         
     
-    <meta name="google-site-verification" content="TODO">
+    <meta name="google-site-verification" content="AWhQilrxdrfKBZwgDA4W3HgenyIiC8kw9ImVuYNSTAg">
     
     
     
@@ -511,7 +511,7 @@
 </ul>
 <h4 id="reading-the-input-data"><a name="reading-the-input-data" class="plugin-anchor" href="#reading-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Reading the Input Data</h4>
 <p>For <strong>reading</strong> of <strong>input</strong> data we will declare two constants <strong><code>const</code></strong>: <strong><code>n</code></strong> and <strong><code>l</code></strong> and also we will declare a variable <code>solution</code> in which we will store a <strong>string</strong> with the result.</p>
-<p><img src="assets/chapter-7-2-images/01.Stupid-password-generator-01.PNG" alt=""></p>
+<p><img src="assets/chapter-7-2-images/01.Stupid-password-generator-01.png" alt=""></p>
 <h4 id="printing-output"><a name="printing-output" class="plugin-anchor" href="#printing-output"><i class="fa fa-link" aria-hidden="true"></i></a>Printing Output</h4>
 <p>One of the ways to find a solution for this problem is to create <strong>five</strong> <strong><code>for</code></strong> nested loops, one for each variable. To ensure that the last digit is <strong>greater</strong> than the first two, we will use the built-in method <strong><code>Math.max(&#x2026;)</code></strong>:</p>
 <p><img src="assets/chapter-7-2-images/01.Stupid-password-generator-02.png" alt=""></p>
@@ -562,10 +562,10 @@
 <li>Nest <strong>six <code>for</code> loops</strong>, one for each digit.</li>
 <li>In the last loop, using an <strong><code>if</code></strong> statement, check if the <strong>product</strong> of the six digits is <strong>equal</strong> to the <strong>magic</strong> number.</li>
 </ul>
-<p><img src="assets/chapter-7-2-images/02.Magic-numbers-01.PNG" alt=""></p>
+<p><img src="assets/chapter-7-2-images/02.Magic-numbers-01.png" alt=""></p>
 <p>In the previous chapter, we reviewed other loop constructions. Let&apos;s look at the sample solution of the same problem using the <strong><code>while</code></strong> loop.
 First, we need to store the <strong>input magical number</strong> in a suitable variable. Then we will initialize 6 variables &#x2013; one for each of the six digits of <strong>the searched numbers</strong>. </p>
-<p><img src="assets/chapter-7-2-images/02.Magic-numbers-02.PNG" alt=""></p>
+<p><img src="assets/chapter-7-2-images/02.Magic-numbers-02.png" alt=""></p>
 <p>Then we will start writing <strong><code>while</code></strong> loops.</p>
 <ul>
 <li>We will initialize <strong>first digit</strong>: <strong><code>d1 = 1</code></strong>.</li>
@@ -574,7 +574,7 @@ First, we need to store the <strong>input magical number</strong> in a suitable 
 <li>At <strong>the end</strong> of each loop, we will increase the digit by one: <strong><code>d++</code></strong>.</li>
 <li>In the <strong>innermost</strong> loop, we will make <strong>the check</strong> and if necessary, we add the result into the variable, that stores the solution.</li>
 </ul>
-<p><img src="assets/chapter-7-2-images/02.Magic-numbers-03.PNG" alt=""></p>
+<p><img src="assets/chapter-7-2-images/02.Magic-numbers-03.png" alt=""></p>
 <p>As we can see, we can solve a problem using different types of loops. Of course, each task has its most appropriate choice. To practice each type of loop &#x2013; try to solve each of the following problems with all the learned loops.</p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/938#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/938#1</a>.</p>
@@ -646,7 +646,7 @@ First, we need to store the <strong>input magical number</strong> in a suitable 
 </ul>
 <p>The <strong>First</strong> part is ordinary &#x2013; we read <strong>three</strong> integer numbers from the console.</p>
 <p>We have already seen examples of the <strong>second</strong> part &#x2013; initialization of the <strong><code>for</code></strong> loop. It is a bit <strong>tricky</strong> &#x2013; the explanation mentions that the numbers have to be printed in <strong>reversed order</strong>. This means that the <strong>initial</strong> value of the variable <strong><code>i</code></strong> will be <strong>bigger</strong>, and from the examples, we can see that it is <strong>M</strong>. Thus, the <strong>final</strong> value of <strong><code>i</code></strong> should be <strong>N</strong>. The fact that we will print the results in reversed order and the values of <strong><code>i</code></strong>, suggests that the step would be <strong>decreased by 1</strong>.</p>
-<p><img src="assets/chapter-7-2-images/04.Stop-number-01.PNG" alt=""></p>
+<p><img src="assets/chapter-7-2-images/04.Stop-number-01.png" alt=""></p>
 <p>After we have initialized the <strong><code>for</code></strong> loop, it is time for the <strong>third</strong> part of the problem &#x2013; <strong>checking</strong> the condition if the given <strong>number is divisible both by 2 and 3 without remainder</strong>. We will do this using one simple <strong><code>if</code></strong> condition that we will leave to the reader to do by themselves.</p>
 <p>Another <strong>tricky</strong> part of this problem is that apart from the above check we need to do <strong>another</strong> one &#x2013; whether the <strong>number is equal to the &quot;stop&quot; number</strong> entered from the console on the third line. To do this check, the previous one has to be passed. For this reason, we will add another <strong><code>if</code></strong> statement that we will <strong>nest in the previous one</strong>. If the condition is <strong>true</strong>, we need to stop the program from printing. We can do this using a <strong><code>break</code></strong> operator, and it will lead us <strong>out</strong> of the <strong><code>for</code></strong> loop.</p>
 <p>If the <strong>condition</strong> that checks whether the number is equal with the &quot;stop&quot; number returns a <strong><code>false</code></strong> result, our program should <strong>continue to print</strong>. This covers the <strong>fourth and last</strong> part of our program.</p>
@@ -803,7 +803,7 @@ First, we need to store the <strong>input magical number</strong> in a suitable 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"7.2. More Complex Loops – Exam Problems","level":"1.15","depth":1,"next":{"title":"8.1. Practical Exam Preparation – part I","level":"1.16","depth":1,"path":"chapter-08-exam-preparation.md","ref":"chapter-08-exam-preparation.md","articles":[]},"previous":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"path":"chapter-07-complex-loops.md","ref":"chapter-07-complex-loops.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts"],"pluginsConfig":{"meta":{"content":"TODO","data":[],"name":"google-site-verification"},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://js-book.softuni.org/"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"TODO"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-07-complex-loops-exam-problems.md","mtime":"2021-10-04T08:47:26.511Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-04T08:48:07.458Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"7.2. More Complex Loops – Exam Problems","level":"1.15","depth":1,"next":{"title":"8.1. Practical Exam Preparation – part I","level":"1.16","depth":1,"path":"chapter-08-exam-preparation.md","ref":"chapter-08-exam-preparation.md","articles":[]},"previous":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"path":"chapter-07-complex-loops.md","ref":"chapter-07-complex-loops.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts"],"pluginsConfig":{"meta":{"content":"AWhQilrxdrfKBZwgDA4W3HgenyIiC8kw9ImVuYNSTAg","data":[],"name":"google-site-verification"},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://js-book.softuni.org/"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"G-QD5GDH1B6D"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-07-complex-loops-exam-problems.md","mtime":"2021-10-17T21:00:25.124Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-17T21:01:23.182Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
