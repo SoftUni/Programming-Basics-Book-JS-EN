@@ -373,7 +373,7 @@ You have to download all the necessary files and change a few lines in the HTML 
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-03.png)
 
-In the folder **"lib"** we need to put a few files that we can download from the book's online storage: [https://github.com/SoftUni/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-5-1-assets](https://github.com/SoftUni/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-5-1-assets)
+In the folder **"lib"** we need to put a few files that we can download from the book's online storage: [https://github.com/SoftUni/Programming-Basics-Book-JS-EN/tree/master/assets/chapter-5-1-assets](https://github.com/SoftUni/Programming-Basics-Book-JS-EN/tree/master/assets/chapter-5-1-assets)
 
 For your convenience, we have put the files in an archive, easy to download **Turtle-Graphics-Demo-Files.zip**:
 
