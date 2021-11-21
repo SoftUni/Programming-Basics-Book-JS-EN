@@ -219,9 +219,6 @@ In that table, the Judge System will display one of the following **possible res
   -	If our solution is **incorrect**, some tests are marked in red and we receive **less than 100** or **0 points**.
 *	If there are syntactic errors in our program, we receive a **compile-time error message**.
 
-### How do I Register at SoftUni Judge?
-Just use your id (Username + Password) from the site [https://softuni.bg/](https://softuni.bg). If you haven't yet registered, go right ahead – it will take no more than a minute since it's just a standard website registration.
-
 ## Executing Code in the Browser using HTML + JS
 So far we've seen how to make and execute a console program. Let's now look at how we can write code, which runs in our browser. All the websites you visit are created in a very similar fashion.
 

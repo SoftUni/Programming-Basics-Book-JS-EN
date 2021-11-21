@@ -738,7 +738,7 @@ let canvas = document.getElementById('a');
 let context = canvas.getContext('2d');
 ```
 
-The **`<canvas>`** element is a field,in which the object generated with the method <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext">**`.getContext('2d')`**</a>, is drawing graphics, text, images and other elements. In this case, the **`context`** variable represents this object. We store in separate variables the coordinates of the two angles of the rectangle:
+The **`<canvas>`** element is a field, in which the object generated with the method <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext">**`.getContext('2d')`**</a>, is drawing graphics, text, images and other elements. In this case, the **`context`** variable represents this object. We store in separate variables the coordinates of the two angles of the rectangle:
   
 ```javascript
 // Get input for rectangle coordinates

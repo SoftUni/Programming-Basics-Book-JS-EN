@@ -76,7 +76,6 @@ Note also some **features of the SoftUni Judge system**:
 **Example**: if a number is required to be printed in the output (e.g. **`25`**), do not display descriptive messages such as **`The result is: 25`**, but print exactly what is required, i.e. only the number.
 
 The SoftUni Judge system is **available at any time** from its website: [https://judge.softuni.org](https://judge.softuni.org).
- - To sign in, use your authentication from the SoftUni website: [https://softuni.bg](https://softuni.bg).
  - Use of the system is **free of charge** and is not subject to participation in SoftUni courses.
 
 We are convinced that after a few tasks are sent, you **will like to receive instant feedback** on whether the solution you wrote is true, and the judge system will become your favorite assistant when learning to program.
@@ -251,7 +250,7 @@ International Standard Book Number ISBN: **978-619-00-0702-9**.
 ## Bug reports
 If you find **bugs**, inaccuracies or defects in the book, you can report them in the official tracker of the project:
 
-<p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-JS-BG/issues">https://github.com/SoftUni/Programming-Basics-Book-JS-BG/issues</a></strong></p>
+<p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-JS-EN/issues">https://github.com/SoftUni/Programming-Basics-Book-JS-EN/issues</a></strong></p>
 
 We do not promise that we will correct everything you send us, but we are willing to constantly improve the quality of this book, so that the reported unmistakable errors and all reasonable suggestions will be addressed. 
 

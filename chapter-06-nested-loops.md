@@ -433,7 +433,7 @@ We create an empty folder in our file system with the name "**ratings**". In the
 - **script.js**
 - **images** (folder)
 
-Now we add **images with stars** (they are part of the resources of this lab which can be downloaded from [here](https://github.com/mchaov/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-6-1-assets)). We copy them from windows explorer and paste them into the folder **images** using copy/paste.
+Now we add **images with stars** (they are part of the resources of this lab which can be downloaded from [here](https://github.com/SoftUni/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-6-1-assets)). We copy them from windows explorer and paste them into the folder **images** using copy/paste.
 
 We open **index.html** and add the following code:
 
