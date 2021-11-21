@@ -9,11 +9,11 @@
     ],
     "pluginsConfig": {
         "ga": {
-            "token": "TODO"
+            "token": "UA-11309924-34"
         },
         "meta": {
             "name": "google-site-verification",
-            "content": "TODO"
+            "content": "AWhQilrxdrfKBZwgDA4W3HgenyIiC8kw9ImVuYNSTAg"
         },
         "sitemap": {
             "hostname": "https://js-book.softuni.org/"

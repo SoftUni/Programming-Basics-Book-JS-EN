@@ -17,6 +17,6 @@
 * [8.2. Practical Exam Preparation – part II](chapter-08-exam-preparation-part-2.md)
 * [9.1. Problems for Champions – Part I](chapter-09-problems-for-champions.md)
 * [9.2. Problems for Champions – Part II](chapter-09-problems-for-champions-part-2.md)
-* [10. Methods](chapter-10-functions.md)
+* [10. Functions](chapter-10-functions.md)
 * [11. Tricks and Hacks](chapter-11-tricks-and-hacks.md)
 * [Conclusion](chapter-12-conclusion.md)
