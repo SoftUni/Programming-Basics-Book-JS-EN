@@ -13,15 +13,12 @@
         "anchors",
         "expandable-chapters-small",
         "katex",
-        "scripts"
+        "scripts",
+        "page-toc-button"
     ],
     "pluginsConfig": {
         "ga": {
             "token": "UA-11309924-34"
-        },
-        "meta": {
-            "name": "google-site-verification",
-            "content": "AWhQilrxdrfKBZwgDA4W3HgenyIiC8kw9ImVuYNSTAg"
         },
         "scripts": {
             "files": [
