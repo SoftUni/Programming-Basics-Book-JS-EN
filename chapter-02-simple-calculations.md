@@ -18,7 +18,7 @@ In this chapter we are going to get familiar with the following concepts and pro
 
 We know that computers are machines that process data. All **data** is stored in the computer memory (RAM) in **variables**. Variables are named memory areas that store data of a certain type, for example, number or string. Each **variable** in JavaScript has a **name** and **value**. Here is how we would define a variable by assigning it a value at the same time as declaring it:
 
-![](/assets/chapter-2-1-images/00.Declaring-variables-01.png)
+![](/assets/chapter-2-1-images/00.Declaring-variables-01.PNG)
 
 After processing, the data is stored again in variables (i.e. somewhere in the memory set aside by our program).
 
@@ -75,7 +75,7 @@ function calculateSquareArea([arg1]) {
 
 If we call our function with parameter 3 - **`calculateSquareArea([3])`** the result will be - **`Square area = 9`**.  Here's how our code looks like in action in the web browser's JavaScript console:
 
-![](/assets/calculate-square-area-js.png)
+![](/assets/calculate-square-area-js.PNG)
 
 If we try to write a wrong number, for example, "hello", we will get an error message during runtime (exception). This is normal. Later on, we will find out how we can catch these kinds of errors and make the user enter a number again.
 
@@ -404,7 +404,7 @@ calculateCircleAreaAndPerimeter([10])
 
 The result is:
 
-![](assets/chapter-2-1-images/00.Calculate-circle-area-and-perimeter.png)
+![](assets/chapter-2-1-images/00.Calculate-circle-area-and-perimeter.PNG)
 
 #### Testing in the Judge System
 
@@ -415,7 +415,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#
 
 The rectangle is given with the **coordinates of two of its opposite angles**. Calculate its **area and perimeter** :
 
-<img alt="rectangleArea" src="/assets/chapter-2-1-images/00.Rectangle-area-01.png" width="250" height="200" />
+<img alt="rectangleArea" src="/assets/chapter-2-1-images/00.Rectangle-area-01.PNG" width="250" height="200" />
 
 In this problem, we have to consider that if we subtract the smaller **`x`**  from the bigger **`x`** , we will obtain the length of the rectangle. Identically, if we subtract the smaller **`y`** from the bigger **`y`**, , we will obtain the height of the rectangle. What is left is to multiply both sides. Here is an example of an implementation of the described logic:
 
@@ -468,15 +468,15 @@ We start by creating an empty **JS file** in Visual Studio Code. In the current 
 
 We start Visual Studio Code and create a **New File:** [**File**] -> [**New File**]:
 
-![](assets/chapter-2-1-images/00.Visual-studio-01.png)
+![](assets/chapter-2-1-images/00.Visual-studio-01.PNG)
 
 **Save** the file from [**File**] -> [**Save**] or by keyboard shortcut [**Ctrl + S**]:
 
-![](assets/chapter-2-1-images/00.Visual-studio-02.png)
+![](assets/chapter-2-1-images/00.Visual-studio-02.PNG)
 
 Enter a **significant name** and expansion **.js** to our file, then press the button [**Save**]:
 
-![](assets/chapter-2-1-images/00.Visual-studio-03.png)
+![](assets/chapter-2-1-images/00.Visual-studio-03.PNG)
 
 ### Problem: Calculating Square Area
 
@@ -486,12 +486,12 @@ The first exercise from this topic is the following: write a function that **rec
 
 We have a correctly named empty file. What remains is to write the **code for solving the problem**. For this purpose, we write the following code:
 
-![](assets/chapter-2-1-images/01.Calculate-square-area-01.png)
+![](assets/chapter-2-1-images/01.Calculate-square-area-01.PNG)
 
 The code defines a function **`calculateSquareArea()`**, which receives one argument **`arg1`**. Since the argument is expected to be an integer, convert arguments with the method **`parseInt()`** and then calculate the area: **`area = a * a`**. At the end print the value of the variable **`area`**. 
 For **testing**, it's necessary to **call the function** in the same file with a random parameter and then to start the program by pressing [**Ctrl + F5**]:
 
-![](assets/chapter-2-1-images/01.Calculate-square-area-02.png)
+![](assets/chapter-2-1-images/01.Calculate-square-area-02.PNG)
 
 #### Testing in the Judge System
 
@@ -500,9 +500,9 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#
 
 You must get 100 points (completely correct solution):
 
-![](assets/chapter-2-1-images/01.Calculate-square-area-03.png)
+![](assets/chapter-2-1-images/01.Calculate-square-area-03.PNG)
 
-![](assets/chapter-2-1-images/01.Calculate-square-area-04.png)
+![](assets/chapter-2-1-images/01.Calculate-square-area-04.PNG)
 
 
 ### Problem:	From Inches to Centimeters
@@ -513,15 +513,15 @@ Write a function that **accepts a number** (not necessarily an integer) and conv
 
 First, we create a **new file** in the folder with the other solutions -  in Visual Studio Code we choose [**File**] -> [**New file**]. We save the file with the name **convertInchesToCentimeters.js** and press the button [**Save**]. After that we have to write **the program code**:
 
-![](assets/chapter-2-1-images/02.Inches-to-centimeters-01.png)
+![](assets/chapter-2-1-images/02.Inches-to-centimeters-01.PNG)
 
 **We call the function** with parameter **2** and start the problem with [**Ctrl + F5**]:
 
-![](assets/chapter-2-1-images/02.Inches-to-centimeters-02.png)
+![](assets/chapter-2-1-images/02.Inches-to-centimeters-02.PNG)
 
 Let's test it with floating numbers, for example, **4.5**:
 
-![](assets/chapter-2-1-images/02.Inches-to-centimeters-03.png)
+![](assets/chapter-2-1-images/02.Inches-to-centimeters-03.PNG)
 
 #### Testing in the Judge System
 
@@ -529,7 +529,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#
 
 The solution should be taken as completely correct:
 
-![](assets/chapter-2-1-images/02.Inches-to-centimeters-04.png)
+![](assets/chapter-2-1-images/02.Inches-to-centimeters-04.PNG)
 
 
 ### Problem: Greeting by Name
@@ -540,11 +540,11 @@ Write a function, which **takes as an argument a human name** and prints **`Hell
 
 Again we create a **new file** in the folder with the other solutions and we save the file with the name **sayHello.js**. After that, we have to write the program code. If you find it difficult, you can use the sample code below:
 
-![](assets/chapter-2-1-images/03.Greeting-by-name-01.png)
+![](assets/chapter-2-1-images/03.Greeting-by-name-01.PNG)
 
 **We call the function** with an example parameter and **start the program** with [**Ctrl+F5**], to test if it works properly:
 
-![](assets/chapter-2-1-images/03.Greeting-by-name-02.png)
+![](assets/chapter-2-1-images/03.Greeting-by-name-02.PNG)
 
 #### Testing in the Judge System
 
@@ -559,7 +559,7 @@ Write a function that receives as an argument the name, surname, age and city an
 
 Similarly, we create a new file and name it **printInfo.js**. which prints the message described in the condition of the task, is purposefully blurred for you to think of a way to finish it yourself:
 
-![](assets/chapter-2-1-images/04.Concatenate-data-01.png)
+![](assets/chapter-2-1-images/04.Concatenate-data-01.PNG)
 
 The solution should be tested locally by calling the function with sample values and starting the program with [**Ctrl+F5**].
 
@@ -574,13 +574,13 @@ Write a function that receives three arguments **b1, b2, and h and calculate the
 
 The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
 
-![](assets/chapter-2-1-images/05.Trapezoid-area-01.png)
+![](assets/chapter-2-1-images/05.Trapezoid-area-01.PNG)
 
 #### Hints and Guidelines
 
 We should add a new file in Visual Studio Code again with the name **calculateTrapezoidArea.js** and write a code that reads the inputs from the function's arguments, calculates the trapezoid area, and prints it. The code in the picture is purposely blurred, for you to give it a thought and finish it yourself:
 
-![](assets/chapter-2-1-images/05.Trapezoid-area-02.png)
+![](assets/chapter-2-1-images/05.Trapezoid-area-02.PNG)
 
 **Test** your solution locally by calling the function and starting the program with [**Ctrl+F5**].
 
@@ -615,7 +615,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#
 
 A **Rectangle** is defined by the **coordinates** of both of its opposite corners (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is taken as a function argument. The numbers **x1, y1, x2, and y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
 
-![](/assets/old-images/chapter-2-images/07.Rectangle-area-01.png)
+![](/assets/old-images/chapter-2-images/07.Rectangle-area-01.PNG)
 
 #### Sample Input and Output
 
@@ -754,7 +754,7 @@ To exercise working with variables and calculations with operators and numerical
 ### Web Application: \*\*\* Converter - BGN to EUR!
 Create a web application that calculates the value in **Euro** (EUR) of the monetary amount given in **Bulgarian levs** (BGN). By changing the amount in BGN, the amount in EUR has to be recalculated automatically. Use the fixed-rate BGN / Euro: **1.95583**.
 
-![](assets/chapter-2-1-images/13.Bgn-to-eur-01.png)
+![](assets/chapter-2-1-images/13.Bgn-to-eur-01.PNG)
 
 Similarly, as in the first chapter ("First Steps in Programming"), we will use the languages **JavaScript**, **HTML**, and **CSS** for our application.
 
@@ -817,7 +817,7 @@ And second, we find and replace the **`input`** field with the type **`button`**
 
 If we start the file **index.html** from the folder, we should have a working application that converts from BGN to EUR:
  
-![](assets/chapter-2-1-images/13.Bgn-to-eur-02.png)
+![](assets/chapter-2-1-images/13.Bgn-to-eur-02.PNG)
 
 Let's make it more beautiful.
 
@@ -883,7 +883,7 @@ body {
 
 6. Start the file **index.html**:
 
-![](assets/chapter-2-1-images/13.Bgn-to-eur-03.png)
+![](assets/chapter-2-1-images/13.Bgn-to-eur-03.PNG)
 
 
 ### Web Application: \*\*\* Catch the Mouse!
@@ -893,13 +893,13 @@ Upon moving the mouse cursor onto the button, it moves to a random position. Thi
 **Hint**: Write an Event Handler **`mouseover`**  and move the image to a random position. Use the random numbers generator **`Math.random()`**.
 The position of the image is set from the property **`style.position`**. To "catch the mouse" **`onclick`** to "catch the mouse". 
 
-![](assets/chapter-2-1-images/14.Catch-the-mouse-00.png)
+![](assets/chapter-2-1-images/14.Catch-the-mouse-00.PNG)
 
 1. We create a new folder **catch-the-mouse** in which we will save the files for the application.
 2. We create two files in the folder: **index.html** and **app.js**. The folder structure must look like this:
 
 
-![](assets/chapter-2-1-images/14.Catch-the-mouse-01.png)
+![](assets/chapter-2-1-images/14.Catch-the-mouse-01.PNG)
 
 3.	You can help yourself with the code below:
 
@@ -940,7 +940,7 @@ function catchMouse() {
 
 Test the application by opening the project folder in **explorer** and launching the file **index.html**:
 
-![](assets/chapter-2-1-images/14.Catch-the-mouse-02.png)
+![](assets/chapter-2-1-images/14.Catch-the-mouse-02.PNG)
 
 5. Done the application.
 

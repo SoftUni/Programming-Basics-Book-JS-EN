@@ -79,7 +79,7 @@ But there is a detail that we need to take into consideration. The requirements 
 
 This is where we need to take into consideration the fact that inside **our array we should start processing commands**, but **only after we receive** the command **"mall.Enter"**. How can we do that? Using a **`while`** or a **`do-while`** loop is a good option. Here is an exemplary solution of how **to skip** all commands before processing the command **"mall.Enter"**:
 
-![](assets/chapter-9-2-images/passion-days.01.png)
+![](assets/chapter-9-2-images/passion-days.01.PNG)
 
 *We can replace this __`while`__ with __`for`__ loop using only the condition and step of the __`for`__* loop.
 
@@ -93,7 +93,7 @@ Let's examine the first two problems for our algorithm. The first problem concer
 
 This is how the code may look like:
 
-![](assets/chapter-9-2-images/passion-days.02.png)
+![](assets/chapter-9-2-images/passion-days.02.PNG)
 
 The next part of the algorithm is to **process the symbols from the commands**, according to the following rules in the requirements:
 
@@ -112,7 +112,7 @@ The other problem is how **to skip a particular symbol** if it is not an operati
 
 An exemplary condition for the first part of the requirements looks like this:
 
-![](assets/chapter-9-2-images/passion-days.03.png)
+![](assets/chapter-9-2-images/passion-days.03.PNG)
 
 **Note**: the variable “**`purchases`**” is of **`int`** type, in which we store the number of all purchases.
 
@@ -146,11 +146,11 @@ The expression is solved without considering the mathematical rules for calculat
 
 The expression
 
-![](assets/chapter-9-2-images/x-expression.01.png)
+![](assets/chapter-9-2-images/x-expression.01.PNG)
 
 is solved in the following way:
 
-![](assets/chapter-9-2-images/x-expression.02.png)
+![](assets/chapter-9-2-images/x-expression.02.PNG)
 
 Bonny is very pretty, but not as wise, so she will need our help to master the power of Expressions.
 
@@ -193,11 +193,11 @@ For the tasks of our problem we need to use some variables:
 * One variable will store our **current index** which we process.
 * And our final variable will store the **current operator** from our string.
 
-![](assets/chapter-9-2-images/x-expression.03.png)
+![](assets/chapter-9-2-images/x-expression.03.PNG)
 
 Now that we already have our starting variables, we must decide **what will be the main structure** of our program. By the requirements, we understand that **each expression ends with `=`**, i.e. we must read and process symbols until we reach a **`=`**. This is followed by an accurately written **`while` loop**.
 
-![](assets/chapter-9-2-images/x-expression.04.png)
+![](assets/chapter-9-2-images/x-expression.04.PNG)
 
 Our next step is to process our **`symbol`**  variable.
 
@@ -206,24 +206,24 @@ The next step is the processing of our **`symbol`** variable. We have 3 possible
 * If the symbol is a **digit between 0 and 9**. But how can we check this? How can we check if our symbol is a digit? We can use for assistance the **ASCII code** of the symbol, via which we can use the following formula: **`[ASCII code of our symbol] – [ASCII code of the symbol 0] = [the digit that represents the symbol]`**. If **the result of this condition is between 0 and 9**, then our symbol is a **number**. (* We can also use directly `'0'` and `'9'` symbols or their **ASCII codes***.)
 * If the symbol is an **operator**, i.e. it is **`+`**, **`-`**, **`*`** or **`/`**.
 
-![](assets/chapter-9-2-images/x-expression.05.png)
+![](assets/chapter-9-2-images/x-expression.05.PNG)
 
 
 Let's examine the actions that we need to undertake in the relevant cases that we defined:
 * If our symbol is an **operator**, then the only thing we need to do is to **set a new value for the `expressionOperator` variable**.
 * If our symbol is a **digit**, then we need to **change the current result of the expression depending on the current operator**, i.e. if  **`expressionOperator`** is a **`-`**, then we must **decrease the result by the numerical representation of the current symbol**. We can get the numerical representation of the current symbol via the formula that we used upon checking the condition for this case (the **`[ASCII code of our symbol] – [the ASCII code of the symbol `0`] = [the digit that represents the symbol]`**)
 
-![](assets/chapter-9-2-images/x-expression.06.png)
+![](assets/chapter-9-2-images/x-expression.06.PNG)
 
 * If our symbol is a **`(`**, this indicates the **beginning of a sub-expression** (an expression in brackets). By definition, **the sub-expression must be calculated before modifying the result of the whole expression** (the actions in brackets are performed first). This means that we will have a local result for the sub-expression and a local operator.
 
-![](assets/chapter-9-2-images/x-expression.07.png)
+![](assets/chapter-9-2-images/x-expression.07.PNG)
 
 After that, to **calculate the sub-expression value**, we will use the same methods that we used for calculating the main expression – we use a **`while` loop** to **read symbols** (until we reach an **`)`** symbol). Depending on whether the read symbol is a number or an operator, we modify the result of the sub-expression. The implementation of these operations is identical to the above-described implementation for calculating expressions. This is why we believe the reader will be able to easily handle it.
 
 After finishing the result calculation for our sub-expression, we **modify the result of the whole expression** depending on the value of the **`expressionOperator`**.
 
-![](assets/chapter-9-2-images/x-expression.08.png)
+![](assets/chapter-9-2-images/x-expression.08.PNG)
 
 #### Formatting the Output
 
@@ -299,28 +299,28 @@ Because our input comes directly as an argument of our function we can do the fo
 Before starting to write the algorithm for solving our problem, we must **declare a flag** that indicates whether a solution is found:
 
 
-![](assets/chapter-9-2-images/bulls-and-cows.01.png)
+![](assets/chapter-9-2-images/bulls-and-cows.01.PNG)
 
 If after finishing our algorithm this flag is still **`false`**, then we will print **`No`** on the console, as specified in the requirements.
 
-![](assets/chapter-9-2-images/bulls-and-cows.02.png)
+![](assets/chapter-9-2-images/bulls-and-cows.02.PNG)
 
 Let's start analyzing our problem. What we need to do is **analyze all numbers from `1111` to `9999`**, excluding those that contain zeroes (for example **`9011`**, **`3401`**, etc. are invalid). What is the easiest way to **generate** all these **numbers**? We will **use nested loops**. As we have a **4-digit number**, we will have **4 nested loops**, as each of them will generate **an individual digit in our number** for testing.
 
 *An alternative solution is to go through all the numbers from 1111 to 999 with a loop and ignore every number with '0' inside it. But this will change the code, which we will do below.*
 
-![](assets/chapter-9-2-images/bulls-and-cows.03.png)
+![](assets/chapter-9-2-images/bulls-and-cows.03.PNG)
 
 Thanks to these loops, **we have access to every digit** of all numbers that we need to check. Our next step is to **separate the secret number into digits**. This can be achieved very easily using **a combination of integer division and modular division**.
 
-![](assets/chapter-9-2-images/bulls-and-cows.04.png)
+![](assets/chapter-9-2-images/bulls-and-cows.04.PNG)
 
 How? When we divide we get a decimal number. We can use `Math.floor(…)` then divide it with a remainder operator(%) by 10, or we can cast the number with  `parseInt(…)`.
 In the example above we remove the fractional part.
 
 Only two last steps remain until we start analyzing how many cows and bulls there are in a particular number. Accordingly, the first one is the **declaration of `counter` variables** in the nested loops, to **count the cows and bulls** for the current number. The second step is to make **copies of the digits of the current number** that we will analyze, to prevent problems upon working with nested loops, in case we make changes to them.
 
-![](assets/chapter-9-2-images/bulls-and-cows.05.png)
+![](assets/chapter-9-2-images/bulls-and-cows.05.PNG)
 
 We are ready to start analyzing the generated numbers. What logic can we use? The easiest way to check how many cows and bulls there are inside a number is via a **sequence of `if-else` conditions**. Yes, this is not the most optimal way, but to stick to what is covered in the current book, we will use this approach.
 
@@ -328,13 +328,13 @@ What conditions do we need?
 
 The condition for the bulls is very simple – we check whether the **first digit** of the generated number matches the **same digit** in the secret number. We remove the digits that are already checked to avoid repetitions of bulls and cows.
 
-![](assets/chapter-9-2-images/bulls-and-cows.06.png)
+![](assets/chapter-9-2-images/bulls-and-cows.06.PNG)
 
 We repeat the action for the second, third, and fourth digits. 
 
 Our conditional statement for cows can be done by this method - we check if the **first digit** from the generated number **matches with the second**, **the third**, or **the fourth** digit of the secret number. We can combine all conditional statements inside one condition, know that in the three cases we have a cow, but we won't know which digit to remove. That's why we type it one by one:
 
-![](assets/chapter-9-2-images/bulls-and-cows.07.png)
+![](assets/chapter-9-2-images/bulls-and-cows.07.PNG)
 
 After that, we sequentially check whether the **second digit** of the generated number **matches the first one**, the **third one**, or the **fourth digit** of the secret number; whether the **third digit** of the generated number matches the **first one**, the **second one**, or the **fourth digit** of the secret number; and finally, we check whether the **fourth digit** of the generated number matches the **first one**, the **second one** or the **third digit** of the secret number.
 
@@ -342,7 +342,7 @@ After that, we sequentially check whether the **second digit** of the generated 
 
 After completing all conditions, we just need to **check whether the bulls and cows in the currently generated number match the desired bulls and cows read from the console**. If this is true, we print the current number on the console.
 
-![](assets/chapter-9-2-images/bulls-and-cows.08.png)
+![](assets/chapter-9-2-images/bulls-and-cows.08.PNG)
 
 ### Testing in the Judge System
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/942#2](https://judge.softuni.org/Contests/Practice/Index/942#2).

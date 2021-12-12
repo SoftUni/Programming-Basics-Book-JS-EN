@@ -19,7 +19,7 @@ Print on the console a rectangle made out of **10 x 10** stars.
 
 #### Hints and Guidelines
 
-![](/assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
+![](/assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.PNG)
 
 How does the example work? We initialize **a loop with a variable `i = 1`**, which increases with each iteration of the loop, while it is **less or equal to 10**. This way the code in the body of the loop is executed **10 times**. In the body of the loop, we print a new line on the console **`"*".repeat(10)`**, which creates a string of 10 stars.
 
@@ -38,7 +38,7 @@ Write a program that gets a positive integer **n** and prints on the console **a
 
 #### Hints and Guidelines
 
-![](/assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.png)
+![](/assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.PNG)
 
 #### Note
 
@@ -88,7 +88,7 @@ Print on the console a square made of **N x N** stars (use a space between the s
 
 The problem is similar to the last one. The difference here is that we need to figure out how to add a whitespace after the stars so that there aren't any excess white spaces at the beginning and the end.
 
-![](/assets/chapter-6-1-images/03.Square-01.png)
+![](/assets/chapter-6-1-images/03.Square-01.PNG)
 
 #### Testing in the Judge System
 
@@ -107,7 +107,7 @@ Write a program that takes an integer **n** and prints **a triangle made of doll
 
 The problem is **similar** to those for drawing **a rectangle** and **square**. Once again, we will use **nested loops**, but there is **a  catch** here. The difference is that **the number of columns** that we need to print depends on **the row**, on which we are and not on the input number **`n`**. From the example input and output data, we see that **the count of dollars depends** on which **row** we are on at the moment of the printing, i.e. 1 dollar means the first row, 3 dollars mean the third row, and so on. Let's see the following example in detail. We see that **the variable** of **the nested** loop is connected with the variable of **the outer** one. This way our program prints the desired triangle.
 
-![](/assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
+![](/assets/chapter-6-1-images/04.Triangle-of-dollars-01.PNG)
 
 #### Testing in the Judge System
 
@@ -136,7 +136,7 @@ We can solve the problem in the following way:
 
 Here is an example implementation of the above idea with nested loops:
 
-![](/assets/chapter-6-1-images/05.Square-frame-01.png)
+![](/assets/chapter-6-1-images/05.Square-frame-01.PNG)
 
 #### Testing in the Judge System
 
@@ -166,7 +166,7 @@ To solve this problem, we need to mentally **divide** **the rhombus** into **two
 
 **The second** (lower) part will be printed **similarly**, which again we leave to the reader to do.
 
-![](/assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
+![](/assets/chapter-6-1-images/06.Rhombus-of-stars-01.PNG)
 
 #### Testing in the Judge System
 
@@ -189,7 +189,7 @@ Write a program that takes a number **n** (1 ≤ n ≤ 100) and prints a Christm
 
 From the examples, we see that **the Christmas tree** can be **divided** into **three** logical parts. **The first** part is **the stars and the white spaces before and after them**, **the middle** part is **` | `**, and **the last** part is again **stars**, but this time there are **white spaces** only **before** them. The printing can be done with only **one loop** and the **`.repeat(n)`** method, which we will use once for the stars and once for the white spaces:
 
-![](/assets/chapter-6-1-images/07.Christmas-tree-01.png)
+![](/assets/chapter-6-1-images/07.Christmas-tree-01.PNG)
 
 #### Testing in the Judge System
 
@@ -215,11 +215,11 @@ Write a program that takes an integer **n** (3 ≤ n ≤ 100) and prints sunglas
 
 From the examples, we can see that the sunglasses can be divided into **three parts** – upper, middle, and lower. A part of the code with which the problem can be solved is given below. When drawing the upper and lower rows we need to print **`2 * n`** stars, **`n`** white spaces, and **`2 * n`** stars:
 
-![](/assets/chapter-6-1-images/08.Sunglasses-01.png)
+![](/assets/chapter-6-1-images/08.Sunglasses-01.PNG)
 
 When drawing **the middle** part, we need to **check** if the row is **`(n-1) / 2 - 1`**, because in the examples we can see that in **this row** we need to print **pipes** instead of white spaces. The problem with **`(n - 1) / 2 - 1`** is that it can be a number with the decimal remainder. Because of this, we must use a mathematical method for removing a decimal remainder - **`Math.floor(...)`**. **`Math.floor(...)`** returns the bigger number, which is smaller or equal to the last number:
 
-![](/assets/chapter-6-1-images/08.Sunglasses-02.png)
+![](/assets/chapter-6-1-images/08.Sunglasses-02.PNG)
 
 #### Testing in the Judge System
 
@@ -245,7 +245,7 @@ We understand from the problem explanation that the house is with a size of **`n
 
 * The house is divided into two parts: **roof and base**. 
 
-![](assets/old-images/chapter-6-images/09.House-01.png)
+![](assets/old-images/chapter-6-images/09.House-01.PNG)
 
 * When **`n`** is an even number, the point of the house is "dull".
 * When **`n`** is odd, **the roof** is one row larger than the **base**.
@@ -263,9 +263,9 @@ We understand from the problem explanation that the house is with a size of **`n
 
 We gave **`n`** as a parameter to our function:
 
-![](/assets/chapter-6-1-images/09.House-02.png)
+![](/assets/chapter-6-1-images/09.House-02.PNG)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><b>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into <b><code>Number</code></b>type, because it is said that we will be given valid integers. If you are making more complex programs it is a good practice to check the data. What will happen if instead of the character "A" the user inputs a number?</td>
 </tr></table>
 
@@ -273,11 +273,11 @@ To draw **the roof**, we write down how many **stars** we start with a variable 
 * If **`n`** is **an even** number, there will be 2 stars.
 * If it is **odd**, there will be 1.
 
-![](/assets/chapter-6-1-images/09.House-03.png)
+![](/assets/chapter-6-1-images/09.House-03.PNG)
 
 Calculate the length of **the roof**. It equals half of **`n`**. Write the result in the variable **`roofLength`**.
 
-![](/assets/chapter-6-1-images/09.House-04.png)
+![](/assets/chapter-6-1-images/09.House-04.PNG)
 
 It is important to note that when **`n`** is an odd number, the length of the roof is one row more than that of the **base**. In **JavaScript** language, when you divide two numbers with a remainder, the result will be a decimal number
  Example:
@@ -291,21 +291,21 @@ If we want to round up to the next largest integer. number, we need to use the m
 After we have calculated the length of the roof, we make a loop from 0 to **`roofLength`**. On each iteration we will:
 * Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - stars) / 2`**. We store it in variable **`padding`**.
 
-![](/assets/chapter-6-1-images/09.House-05.png)
+![](/assets/chapter-6-1-images/09.House-05.PNG)
 
 * We print on the console: "**dash**" (**`padding / 2`** times) + "**stars**" (**`stars`** times) + "**dash**" (**`padding / 2`** times):
 
-![](/assets/chapter-6-1-images/09.House-06.png)
+![](/assets/chapter-6-1-images/09.House-06.PNG)
 
 * Before the iteration is over, we add 2 to **`stars`** (the number of **the stars**).
 
-![](/assets/chapter-6-1-images/09.House-07.png)
+![](/assets/chapter-6-1-images/09.House-07.PNG)
 
 After we have finished with the **roof**, it is time for **the base**. It is easier to print:
 * We start with a loop from 0 to n (not inclusive).
 * We print on the console: `|` + `*` (**`n - 2`** times) + `|`.
 
-![](/assets/chapter-6-1-images/09.House-08.png)
+![](/assets/chapter-6-1-images/09.House-08.PNG)
 
 If you have written everything as it is here, the problem should be solved.
 
@@ -354,27 +354,27 @@ From the example input and output we can conclude that all rows contain exactly 
 
 As an entering parameter **n** of our function we give it a Number value:
 
-![](/assets/chapter-6-1-images/10.Diamond-01.png)
+![](/assets/chapter-6-1-images/10.Diamond-01.PNG)
 
 We start drawing the upper part of the diamond. The first thing we need to do is to calculate the number of the outer **dashes `leftRight`** (the dashes on the outer side of **the stars**). It is equal to **`(n - 1) / 2`**, rounded down. To round the number we will use the method **`Math.floor(...)`** to remove the residue. We can have this case if our input is odd.
 
-![](/assets/chapter-6-1-images/10.Diamond-02.png)
+![](/assets/chapter-6-1-images/10.Diamond-02.PNG)
 
 After we have calculated **`leftRight`**, we start drawing **the upper part** of the diamond. We can start by running a **loop** from **`0`** to **`n / 2 + 1`** (rounded down). At each iteration of the loop the following steps must be taken:
 
 * * We draw on the console the left **dashes** (with length **`leftRight`**) and right after them the first **star**:
 
-![](/assets/chapter-6-1-images/10.Diamond-03.png)
+![](/assets/chapter-6-1-images/10.Diamond-03.PNG)
 
 * We will calculate the distance between the two **stars**. We can do this by subtracting from **n** the number of the outer **dashes**, and the number 2 (the number of **the stars**, i.e. the diamond's outline). We need to store the result of the subtraction in a variable **`mid`**.  
 
-![](/assets/chapter-6-1-images/10.Diamond-04.png)
+![](/assets/chapter-6-1-images/10.Diamond-04.PNG)
 
 * If the **`mid`** is lower than 0, we know that on the row there should be only 1 star. If it is higher or equal to 0 then we have to print **dashes** with length **`mid`** and one **star** after them.
 
 * We draw on the console the right outer **dashes** with length **`leftRight`**:
 
-![](/assets/chapter-6-1-images/10.Diamond-05.png)
+![](/assets/chapter-6-1-images/10.Diamond-05.PNG)
 
 *  At the end of the loop, we decrease **`leftRight`** by 1 (**the stars** are moving away from each other).
 
@@ -382,7 +382,7 @@ We are ready with the upper part.
 
 Printing the lower part is very similar to that of the upper part. The difference is that instead of decreasing **`leftRight`** with 1 at the end of the loop, we will increase **`leftRight`** with 1 at the beginning of the loop. Also, **the loop will be from 0 to `(n - 1) / 2`**.   
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><b>Repeating a code is considered bad practice</b> because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond) at a few more places and we decide to change it. For this, we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2, or 3 times but tens of times. A way to overcome this problem is to use <b>functions</b>. You can look for additional information for functions on the Internet or look at  <a href="chapter-10-functions.md">Chapter “10” (Functions)</a>.</td>
 </tr></table>
 
@@ -425,7 +425,7 @@ Don't worry if you don't understand all of the code, how exactly it is written a
 
 Your task is to create a  **JavaScript** web application for visualizing a rating (a number from 0 to 100). From 1 to 10 stars should be drawn with halves. The starts should be generated with a `for` loop.
 
-![](assets/old-images/chapter-6-images/11.Ratings-01.png)
+![](assets/old-images/chapter-6-images/11.Ratings-01.PNG)
 
 We create an empty folder in our file system with the name "**ratings**". In there we create 2 files and one folder:
 
@@ -437,7 +437,7 @@ Now we add **images with stars** (they are part of the resources of this lab whi
 
 We open **index.html** and add the following code:
 
-![](/assets/chapter-6-1-images/11.Ratings-01.png)
+![](/assets/chapter-6-1-images/11.Ratings-01.PNG)
 
 This code creates one input field **`input-rating`**, in which the user can add a number from [**0 … 100**] and a button [**Draw**] which when clicked calculates the value of the stars with their input value. The action which will approve the input data is called **`drawRating`**. After that the form will print the content of **`<div id="ratingHolder"></div>`**. The code which is inside it will be dynamically generated HTML with a series of stars.
 
@@ -467,13 +467,13 @@ function drawRating(rating) {
 
     // build of HTML
     for (let i = 0; i < fullStars; i++) {
-        html += '<img src="images/full-star.png">';
+        html += '<img src="images/full-star.PNG">';
     }
     for (let i = 0; i < halfStars; i++) {
-        html += '<img src="images/half-star.png">';
+        html += '<img src="images/half-star.PNG">';
     }
     for (let i = 0; i < emptyStars; i++) {
-        html += '<img src="images/empty-star.png">';
+        html += '<img src="images/empty-star.PNG">';
     }
 
     // return of created HTML

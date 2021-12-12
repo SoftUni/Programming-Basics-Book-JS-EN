@@ -81,7 +81,7 @@ However, automatic formatting does not affect the naming of our variables, which
 * We must be aware of uppercase and lowercase letters because **JavaScript makes a difference** between them. or example **`age`** and **`Age`** are different variables.
 * Variable names **cannot** match a JavaScript keyword, for example, **`let`** is an invalid variable name. The official or etc. keyword phrases are just words that are **part of the syntax of JavaScript** and for this reason, they are reserved and cannot be used as names of our variables. Through these words, we have the opportunity to build our programs. As an example of such words can be given the already used: **`for`**, **`while`**, **`do`**, **`if`**, **`else`**, **`let`**, etc. You can see a full list of these reserved phrases here: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords)
 
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Although using the symbol <code><b>_</b></code> in the manes of variables is allowed, in JavaScript it is not recommended and is considered a bad style of naming.</td>
 </tr></table>
 
@@ -124,7 +124,7 @@ More about the **shortcuts in Visual Studio Code** can be found here: [https://c
 
 If you feel confident enough about your shortcut skills, open **Visual Studio Code** and press [**CTRL + K + S**] (note that this is different from [**CTRL + K S**], where **Ctrl** and **K** are pressed simultaneously, and **S** after that), which will open a window in the development environment itself, which contains a complete list of all possible keys combinations in the world of **Visual Studio Code**. Moreover, even from there, you will be able to make **changes** to existing keyboard shortcuts:
 
-![](assets/chapter-11-images/00.Keyboard-Shortcuts-01.png)
+![](assets/chapter-11-images/00.Keyboard-Shortcuts-01.PNG)
 
 Do not hesitate, apply what you have learned now and use the keyboard shortcuts that you think will help you in writing your programs!
 
@@ -136,17 +136,17 @@ In **Visual Studio Code** there are the so-called **code snippets** (code snippe
 
 After doing this, when you type "**`for`**" and press **[Tab]** + **[Tab]**, the code of **complete `for` loop** in automatically generated in the body of our program. This is called "unfolding a code snippet". The snippet "**`if`**" + **[Tab]** + **[Tab]** works similarly. On the figure below you can see the "**`for`**" snippet in action:
 
-![](assets/chapter-11-images/01.Code-snippet-01.png)
+![](assets/chapter-11-images/01.Code-snippet-01.PNG)
 
 ### Creating Your Own Code Snippet
 
 In this section, we are going to show you how to **make your own code snippet**. We will see **how to make a code snippet** for **`json`** object. For a start, we will go to [**File -> Preferences -> User Snippets**], then a window will open from which you can choose for which programming language you will create a snippet, as shown in the picture:
 
-![](assets/chapter-11-images/01.Code-snippet-02.png) 
+![](assets/chapter-11-images/01.Code-snippet-02.PNG) 
 
 **We choose JavaScript** from the drop-down menu and a window with a name will open **JavaScript.json**. This extension **json** is a special format for saving data, which is imposed in the ways of data transfer and storage. In addition, the **json** format can be used in our programs, as we will discuss later. The file looks like this:
 
-![](assets/chapter-11-images/01.Code-snippet-03.png) 
+![](assets/chapter-11-images/01.Code-snippet-03.PNG) 
 
 The example we see by default is generating code to write to the console using the **log** key prefix. This code is just an example, and this template is actually embedded, but if it wasn't, it would look like the example.
 
@@ -160,15 +160,15 @@ There are also more complex configurations, but for begging these will do an exc
 
 The last part of the template is **`description`**, which serves to add an additional explanation of what it does. Now let's try to make our own template. We delete the given example and enter the following code:
 
-![](assets/chapter-11-images/01.Code-snippet-04.png) 
+![](assets/chapter-11-images/01.Code-snippet-04.PNG) 
 
 Now when we type **`json`** + [**Tab**] + [**Tab**] in an open JavaScript file in Visual Studio Code, **our new snippet** appears:
 
-![](assets/chapter-11-images/01.Code-snippet-05.png) 
+![](assets/chapter-11-images/01.Code-snippet-05.PNG) 
 
 For those of you who are more interested in the topic, many of the big **frameworks** like **Angular, React, etc.** have their own templates that can be installed from the  **Extensions** window.  As the name suggests, **framework** is a conceptual structure that helps us by giving us some things in advance, and also prevents us from making big mistakes by imposing certain restrictions. The main idea is to provide a complete solution in a given area, which has the ability to upgrade all components in this area. Some of the things you can get ready-made are these templates.
 
-![](assets/chapter-11-images/01.Code-snippet-06.png) 
+![](assets/chapter-11-images/01.Code-snippet-06.PNG) 
 
 ## Code Debugging Techniques
 
@@ -191,19 +191,19 @@ for (let i = 0; i < 100; i++) {
 
 We will place a **breakpoint** on the method **`console.log(…)`**. For this, we will need to move our cursor to the line, which prints on the console, and press [**F9**]. A **breakpoint** (the red point, just before the number on line 3), where the program will  **stop** its execution:
 
-![](assets/chapter-11-images/02.Debugger-01.png) 
+![](assets/chapter-11-images/02.Debugger-01.PNG) 
 
 In order to start  **the program in debug mode**, we choose [**Debug**] -> [**Start Debugging**] or press [**F5**]:
 
-![](assets/chapter-11-images/02.Debugger-02.png) 
+![](assets/chapter-11-images/02.Debugger-02.PNG) 
 
 After starting the program, we can see that it **stops executing** at line 4, where we placed our breakpoint.  The code in the current line **is colored in yellow** and we can **run it step by step**.In order to go to **the next line** e use the key [**F10**]. **We can see that the code on the current line hasn't been executed yet**. **It will execute when we go ahead to the next line**:
 
-![](assets/chapter-11-images/02.Debugger-03.png) 
+![](assets/chapter-11-images/02.Debugger-03.PNG) 
 
 From the **Debug** window, which opens with  [**View -> Debug**] or with the keyboard shortcut [**Ctrl + Shift + D**], we can observe **the changes in the local variables**. 
 
-![](assets/chapter-11-images/02.Debugger-04.png) 
+![](assets/chapter-11-images/02.Debugger-04.PNG) 
 
 ## A guide to tricks
 

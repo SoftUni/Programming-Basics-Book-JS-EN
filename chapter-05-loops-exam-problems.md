@@ -3,7 +3,7 @@
 In the previous chapter, we learned how to run a block of commands **more than once**. That's why we introduced a **`for` loop** and reviewed some of its main use cases. The purpose of this chapter is to improve our knowledge, by solving some more complex exam problems with loops, used for entrance exams. For some of them, we will show examples of comprehensive solutions, and for others, we will provide only guidance.
 Before we start, let's take another look at the **`for` loop** construction:
 
-![](assets/chapter-5-2-images/00.For-construction-01.png)
+![](assets/chapter-5-2-images/00.For-construction-01.PNG)
 
 The **`for` loops** consist of:
  * **Initialization expression**, in which the variable-counter (**`let i`**) is created and its initial value is set. 
@@ -106,7 +106,7 @@ The program that solves this problem could be divided into three parts:
   
 Before we proceed to the actual reading of the input data, we have to **declare the variables**, in which the input data will be stored:
   
-![](assets/chapter-5-2-images/01.Histogram-01.png)
+![](assets/chapter-5-2-images/01.Histogram-01.PNG)
 
 In the variable **`n`**, we will store the count of numbers that we will need to read. Additionally, we have to declare the variables **`p1`**, **`p2`** etc., in which we will store the count of numbers for each corresponding group.
 Once the variables have been declared we can proceed with input data processing.
@@ -115,7 +115,7 @@ Once the variables have been declared we can proceed with input data processing.
   
 To be able to read and distribute each number to its respective group, a **`for` loop** from **0** to **`n`** (count of numbers) will be used. Each loop iteration will read and distribute **one single** number (**`currentNum`**) to its respective group. To define, if a number belongs to a certain group we have to, **perform a check in the respective range**. Once the check returns true - we increase the count of numbers in this group (**`p1`**, **`p2`** etc.) by 1:
 
-![](assets/chapter-5-2-images/01.Histogram-03.png)
+![](assets/chapter-5-2-images/01.Histogram-03.PNG)
 
 After determining the count of numbers in each group we can move on to the main objective and calculate the percentages. For the calculation we will use the following formula:
 
@@ -123,7 +123,7 @@ After determining the count of numbers in each group we can move on to the main 
 
 This formula in the source code would look as:
 
-![](assets/chapter-5-2-images/01.Histogram-04.png)
+![](assets/chapter-5-2-images/01.Histogram-04.PNG)
 
 According to the task assignment, the percentages have to be **formatted with precision two digits after the decimal point**. Considering this, **`.toFixed(...)`** method should be added to the formula and the first variable would look like this:
 
@@ -150,7 +150,7 @@ After reading the numbers, we have in group **`p1`** two numbers and in group **
   
 All we have to do at this point is to print the final results:
 
-![](assets/chapter-5-2-images/01.Histogram-06.png)
+![](assets/chapter-5-2-images/01.Histogram-06.PNG)
 
 ### Testing in the Judge system
 
@@ -212,15 +212,15 @@ In a single line print on the console:
 
 Similar to the previous problem, the solution could be divided into three parts – **reading** the input data, **processing** the input data and **printing the output**.
 
-![](assets/chapter-5-2-images/02.Smart-lilly-01.png)
+![](assets/chapter-5-2-images/02.Smart-lilly-01.PNG)
 
 Again, we should start with choosing appropriate variable names. For Lily's age(**`age`**), for the washing machine price (**`washingMachinePrice`**) and the single toy price (**`toyPrice`**). In the above code we **declare** and **initialized** (assign value to a variable) also variables for the toys count(**`toysCount`**), and money from birthdays (**`moneyFromBirthdays`**):
 
-![](assets/chapter-5-2-images/02.Smart-lilly-02.png)
+![](assets/chapter-5-2-images/02.Smart-lilly-02.PNG)
 
 We use a **`for` loop** to iterate through every Lily's birthday. If the leading variable is an **odd number**, we increase the count of **toys**. We can do the parity check using **division with the remainder** (**`%`**) **by 2** – if the remainder is equal to 0, the number is **even** and if the remainder is equal to 1 - **odd**. Inversely, if the leading variable is an **even number**, that would mean, that Lily has **received money** so we have to add this amount of money to her savings. Then we **Increase** the value of the variable **`moneyFromBirthdays`**, i.e. **we increase by 10** the sum, that she will receive for her next birthday. At the same time, we **subtract 1 USD** - the money taken from her brother. To use the decrement operator we have to add two minus signs after the last sign of the variable (**`moneyFromBirthdays--`**):
 
-![](assets/chapter-5-2-images/02.Smart-lilly-03.png)
+![](assets/chapter-5-2-images/02.Smart-lilly-03.PNG)
 
 Probably you will encounter some difficulties calculating the amount of birthday money  if you let the bonus money be added in the following way:
 
@@ -240,11 +240,11 @@ moneyFromBirthdays += 10 * i/2;
 
 Then we have to add the money received from the sold toys to Lily's savings.
 
-![](assets/chapter-5-2-images/02.Smart-lilly-04.png)
+![](assets/chapter-5-2-images/02.Smart-lilly-04.PNG)
 
 At this point what is left is to print the results considering the required formating i.e. the sum should be **formatted with precision to the second digit after a decimal point**:
 
-![](assets/chapter-5-2-images/02.Smart-lilly-05.png)
+![](assets/chapter-5-2-images/02.Smart-lilly-05.PNG)
 
 To avoid declaring additional variables we can use a template literal - **`${expression}`**. It's a text literal with a specific sequence of characters allowing embedding of expressions. Using it the calculation can be performed and the result to be directly included in the text string. 
 
@@ -314,11 +314,11 @@ The program receives **2 numbers (arguments)**, entered by the user on separate 
 
 The method for solving this problem is similar to the previous ones, so we should start with **declaring and initializing** the required variables. According to the problem description, Ivan is eighteen years old, so we could declare the variable **`years`** and set an initial value of **18**. The values of the other variables we can read from the function parameters:
 
-![](assets/chapter-5-2-images/03.Back-to-the-past-01.png)
+![](assets/chapter-5-2-images/03.Back-to-the-past-01.PNG)
 
 Using a **`for` loop** we can iterate through all the years. **Starting from 1800** – the year, in which Ivan wants to return, and reach **the year until which he has to live in the past**. In the loop, we check, if the current year is **even** or **odd**. We perform the check using **division with a remainder** (**`%`**) by 2. If the year is **even**, we subtract from the (**`heritage`**) **12000**, and if the year is **odd**, we subtract from the (**`heritage`**) **12000 + 50 * (the age he would have reached in the given year)**:
 
-![](assets/chapter-5-2-images/03.Back-to-the-past-02.png)
+![](assets/chapter-5-2-images/03.Back-to-the-past-02.PNG)
 
 Finally, we have to print out the result by **checking whether the inheritance** (**`heritage`**) was enough to live without working or not. If the inheritance (**`heritage`**) is a **positive number**, we print out: "**`Yes! He will live a carefree life and will have {N} dollars left.`**", and if it's a **negative number**: "**`He will need {M} dollars to survive.`**". Don't forget to format the result with precision to the second digit after the decimal point.
 
@@ -393,7 +393,7 @@ On the first line (argument) there is an integer in the range of [**1 … 1000**
 
 We start again by, **declaring and initializing** the required variables. The calculation period we read from the console and save in the **`period`** variable. We will need some additional variables such as the number of treated patients (**`treatedPatients`**), the number of untreated patients (**`untreatedPatients`**) and the number of doctors (**`countOfDoctors`**), which initially is set to 7.
 
-![](assets/chapter-5-2-images/04.Hospital-01.png)
+![](assets/chapter-5-2-images/04.Hospital-01.PNG)
 
 Using **`for` loop** we iterate through all days in the given period (**`period`**). For each day, we read from the console the number of the patients(**`currentPatients`**). According to the problem description, the increase of the doctors can occur **every third day**, **but** only if the count of untreated patients is **greater** than the count of treated ones. For this purpose we check, if the day is the third one – using the division with a remainder operator (**`%`**): **`day % 3 == 0`**.
 
@@ -410,7 +410,7 @@ Then we have to check if the daily count of patients (**`currentPatients`**) is 
  
 If the count of patients **is not greater**, we increase only the value of the variable **`treatedPatients`** by the count of patients for the day (**`currentPatients`**).
 
-![](assets/chapter-5-2-images/04.Hospital-02.png)
+![](assets/chapter-5-2-images/04.Hospital-02.PNG)
 
 Finally, the only thing left is to print the number of treated and untreated patients.
 

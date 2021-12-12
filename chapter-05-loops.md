@@ -26,7 +26,7 @@ The loop starts with the **operator `for`** and loops through all values of a gi
 
 Upon declaring the loop you can specify a **start value** and an **end value**. **The loop's body** is usually in curly braces **`{ }`** and contains one or more commands. The figure below shows the structure of a **`for` loop**:
 
-![](assets/chapter-5-1-images/00.For-loop-02.png)
+![](assets/chapter-5-1-images/00.For-loop-02.PNG)
 
 A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). The goal is to **loop** through the numbers 1, 2, 3, …, n sequentially and after each pass through the loop to **perform a certain action**. In the example above the variable **`i`** holds values from 1 to 10 and the current value is printed in the loop's body. The loop repeats 10 times and each of these repetitions is called an "**iteration**".
 
@@ -38,11 +38,11 @@ Write a program that **prints the numbers from 1 to 100**. The program does not 
 
 We can solve this problem with a **`for` loop** which will pass through the numbers from 1 to 100 using the variable **`i`** and will print the numbers in the loop's body:
 
-![](assets/chapter-5-1-images/01.Numbers-1-to-100-01.png)
+![](assets/chapter-5-1-images/01.Numbers-1-to-100-01.PNG)
 
 **Start** the program with [**Ctrl+F5**] and **test** it:
 
-![](assets/chapter-5-1-images/01.Numbers-1-to-100-02.png)
+![](assets/chapter-5-1-images/01.Numbers-1-to-100-02.PNG)
 
 #### Testing in the Judge System
 
@@ -55,11 +55,11 @@ You should get **100 points** (completely correct solution).
 
 While programming, we often need to use loops, dozens of times a day. That's why in most development environments (IDE) there are **code snippets** for writing loops. An example of such a snippet is the **snippet for a `for` loop in Visual Studio Code**. Write **`for`** in the JavaScript code editor in Visual Studio Code and **hit** [**Tab**]:
 
-![](assets/chapter-5-1-images/00.For-loop-code-snippet-01.png)
+![](assets/chapter-5-1-images/00.For-loop-code-snippet-01.PNG)
 
  **VS Code** will open a snippet and write a complete **`for` loop**:
 
-![](assets/chapter-5-1-images/00.For-loop-code-snippet-02.png)
+![](assets/chapter-5-1-images/00.For-loop-code-snippet-02.PNG)
 
 **Try it yourself**, so you can master the skill of using the code snippet for the **`for` loops** in Visual Studio Code.
 
@@ -71,7 +71,7 @@ Write a program that finds all numbers ending in 7 in the range [**1 … 1000**]
 
 We can solve this problem by combining a **`for` loop** that loops through the numbers from 1 to 1000 and a **conditional statement** that checks if the number ends in 7. Of course, there are other options, too, but let's solve the problem using a **for loop + conditional statement**:
 
-![](assets/chapter-5-1-images/02.Numbers-ending-in-7-01.png)
+![](assets/chapter-5-1-images/02.Numbers-ending-in-7-01.PNG)
 
 #### Testing in the Judge System
 
@@ -85,11 +85,11 @@ Write a program that prints the letters from the alphabet: **a, b, c, …, z**.
 
 We can solve this problem using a **`for` loop**, that loops through all letters' code numbers. Keep in mind that the code of the letter (the serial number in the [Unicode list of letters and characters](https://unicode-table.com/en/)\) ‘`a`’ is 97, the code of the letter ‘`b`’ is 98 and so on, and the code of the letter ‘`z`’ is 122. The transition from the number of the character to the letter itself is done with the help of the function `String.fromCharCode(x)`. Here's the example:
 
-![](assets/chapter-5-1-images/03.Latin-letters-01.png)
+![](assets/chapter-5-1-images/03.Latin-letters-01.PNG)
 
 If we want to make the code easier to read, we can write the following:
 
-![](/assets/latin-letters-better.png)
+![](/assets/latin-letters-better.PNG)
 
 #### Testing in the Judge System
 
@@ -123,7 +123,7 @@ We can solve the problem by summing up numbers in the following way:
  
 Here's the source code for the solution:
 
-![](assets/chapter-5-1-images/04.Sum-numbers-01.png)
+![](assets/chapter-5-1-images/04.Sum-numbers-01.PNG)
 
 #### Testing in the Judge System
 
@@ -147,7 +147,7 @@ Write a program that reads **n integer numbers** (**n** > 0) and finds **the big
 
 First, we read one number **`n`** (the number of integers that will be entered). We assign an initial neutral value to the current maximum **`max`**, for example **-10000000000000** (or **`Number.NEGATIVE_INFINITY`**). Using a **`for` loop** that iterates **n times** (**`n = args[0]`**), we read one integer number **`num`** on each iteration. If the current number **`num`** is higher than the current maximum **`max`**, we assign the value of the **`num`** to the variable **`max`**. Finally, we have the highest number's value stored in **`max`**. We print the number on the console.
 
-![](assets/chapter-5-1-images/05.Max-number-01.png)
+![](assets/chapter-5-1-images/05.Max-number-01.PNG)
 
 #### Testing in the Judge System
 
@@ -170,7 +170,7 @@ Write a program that reads **n integer numbers** (**n** > 0) and finds **the sma
 
 The problem is completely identical to the previous one, except this time we will use another neutral value for a start.
 
-![](assets/chapter-5-1-images/06.Min-number-01.png)
+![](assets/chapter-5-1-images/06.Min-number-01.PNG)
 
 #### Testing in the Judge System
 
@@ -191,7 +191,7 @@ Write a program that reads **2 \* n integer numbers** and checks whether **the s
 
 First, we read the number **n**, after that we enter the first **n** numbers (**the left** half) and calculate their sum. We will then proceed to read more **n** numbers (**the right** half) and sum them up. We calculate **the difference** between the sums by absolute value: **`Math.abs(leftSum - rightSum)`**. If the difference is **0**, print **"Yes" + the sum**, otherwise print **"No" + the difference**.
 
-![](assets/chapter-5-1-images/07.Left-and-right-sum-01.png)
+![](assets/chapter-5-1-images/07.Left-and-right-sum-01.PNG)
 
 #### Testing in the Judge System
 
@@ -214,7 +214,7 @@ Write a program that reads **n integer numbers** and checks whether **the sum of
 
 The program reads the numbers one by one and calculates the two **sums** (the sum of numbers on **even** positions and the sum of numbers on **odd** positions). We calculate the absolute value of the difference, like in the previous problem, and print the result (**"Yes" + the sum** in case the difference is 0 or **"No" + the difference** in any other case).
 
-![](assets/chapter-5-1-images/08.Odd-even-sum-01.png)
+![](assets/chapter-5-1-images/08.Odd-even-sum-01.PNG)
 
 #### Testing in the Judge System
 
@@ -240,7 +240,7 @@ Write a program that reads a **text** (string), calculates and prints **the sum 
 
 We read the text input **`arg1`**, then create a sum that equals zero and run a loop from **0** to **`input.length`** (the text's length). Check whether each letter **`input[i]`** is a vowel and add its value to the sum.
 
-![](assets/chapter-5-1-images/09.Vowels-sum-01.png)
+![](assets/chapter-5-1-images/09.Vowels-sum-01.PNG)
 
 #### Testing in the Judge System
 
@@ -251,11 +251,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#
 
 We can repeat a block of code using a **`for` loop**:
 
-![](assets/chapter-5-1-images/00.For-loop-01.png)
+![](assets/chapter-5-1-images/00.For-loop-01.PNG)
 
 We can perform various mathematical operations:
 
-![](assets/chapter-5-1-images/00.For-loop-03.png)
+![](assets/chapter-5-1-images/00.For-loop-03.PNG)
 
 ## Exercises: Loops (Repetitions)
 
@@ -342,7 +342,7 @@ In this chapter, we learned about **loops** as a programming construction that a
 
 The purpose of the next exercise is to play with a **drawing library**, also known as **turtle graphics**. We will build a graphical application in which we will **draw different shapes**, moving our **“turtle”** on the screen through commands like “move 100 positions forward”, “turn 30 degrees to the right”, “move 50 positions more forward”. The application will look something like this:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-13.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-13.PNG)
 
 First, let's check out **the drawing concept “Turtle Graphics”**. Take a look at the following sources:
 
@@ -361,7 +361,7 @@ There are two options to load all libraries and resources for our web applicatio
 
 This option is suitable when we have a permanent internet connection. We need to make a standard HTML file (for example **index.html**) and write the following code in it:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-02.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-02.PNG)
 
 All the necessary resources will be loaded automatically when the file is started and we can directly write our **JavaScript** code.
 
@@ -371,13 +371,13 @@ If for some reason you don't have permanent access to the Internet, you can use 
 
 You have to download all the necessary files and change a few lines in the HTML file. Start by creating a folder called **Turtle-Demo** and create the main **HTML file** and a subfolder for the necessary resources in it:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-03.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-03.PNG)
 
 In the folder **"lib"** we need to put a few files that we can download from the book's online storage: [https://github.com/SoftUni/Programming-Basics-Book-JS-EN/tree/master/assets/chapter-5-1-assets](https://github.com/SoftUni/Programming-Basics-Book-JS-EN/tree/master/assets/chapter-5-1-assets)
 
 For your convenience, we have put the files in an archive, easy to download **Turtle-Graphics-Demo-Files.zip**:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-04.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-04.PNG)
 
 Let's take a look at each one of them:
 
@@ -393,13 +393,13 @@ A plugin, written by **David Bau** for jQuery - **jQuery-turtle** which provides
 
 A set of **design rules** in a separate file.
 
-> **turtle-icon.png**
+> **turtle-icon.PNG**
 
 A **raster graphic**, which we use for a better presentation of the application.
 
 Once we have put all files in one folder, we need to change the network address of the resources in our **HTML** file - **index.html**:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-05.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-05.PNG)
 
 After this change, each time you start the file, the browser will load the files locally from the **"lib"** folder.
 
@@ -410,7 +410,7 @@ Now we can proceed to the fun part - **writing the JavaScript code** for the web
 ```
 The code with the functions of the application will be relatively short (about 70-80 lines) and so we don't need to put it into a new separate file. The important thing is to place it correctly in our HTML file.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>It is recommended that all JavaScript files be placed at the end of the HTML document before the final <strong>"body"</strong> tag. This guarantees the faster loading of the page because we do not delay the rendering (processing) of its elements.</td>
 </tr></table>
 
@@ -559,7 +559,7 @@ $('#turtle').css('turtleSpeed', '6').pen('red', '5');
 
 Add a [**Hexagon**] button that draws a regular hexagon:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-13.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-13.PNG)
 
 **Hint:**
 
@@ -571,7 +571,7 @@ Repeat 6 times the following in a loop:
 
 Add a [**Star**] button that draws a star with 5 beams (**pentagram**), as shown in the figure below:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-14.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-14.PNG)
 
 **Hint:**
 
@@ -585,7 +585,7 @@ Repeat 5 times the following in a loop:
 
 Add a [**Spiral**] button that draws a spiral with 30 beams, as shown in the figure below:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-15.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-15.PNG)
 
 **Hint:**
 
@@ -595,7 +595,7 @@ Draw in a loop by moving forward and rotating. In each step, increase gradually 
 
 Add a [**Sun**] button that draws a sun with 36 beams, as shown in the figure below:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-16.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-16.PNG)
 
 **Hint:**
  
@@ -607,7 +607,7 @@ Repeat the following 36 times in a loop:
 
 Add a [**Triangle**] button that draws three triangles with 22 beams each, as shown in the figure below:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-17.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-17.PNG)
 
 **Hint:**
 
