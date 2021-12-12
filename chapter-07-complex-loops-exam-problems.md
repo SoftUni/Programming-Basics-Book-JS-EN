@@ -53,13 +53,13 @@ We can split the solution of the problem into 3 parts:
 
 For **reading** of **input** data we will declare two constants **`const`**: **`n`** and **`l`** and also we will declare a variable `solution` in which we will store a **string** with the result.
 
-![](assets/chapter-7-2-images/01.Stupid-password-generator-01.PNG)
+![](assets/chapter-7-2-images/01.Stupid-password-generator-01.png)
 
 #### Printing Output
 
 One of the ways to find a solution for this problem is to create **five** **`for`** nested loops, one for each variable. To ensure that the last digit is **greater** than the first two, we will use the built-in method **`Math.max(…)`**:
 
-![](assets/chapter-7-2-images/01.Stupid-password-generator-02.PNG)
+![](assets/chapter-7-2-images/01.Stupid-password-generator-02.png)
 
 ### Testing in the Judge System
 
@@ -100,12 +100,12 @@ Print on the console **all magic numbers**, separated by **space**.
 - In the last loop, using an **`if`** statement, check if the **product** of the six digits is **equal** to the **magic** number.
 
 
-![](assets/chapter-7-2-images/02.Magic-numbers-01.PNG)
+![](assets/chapter-7-2-images/02.Magic-numbers-01.png)
 
 In the previous chapter, we reviewed other loop constructions. Let's look at the sample solution of the same problem using the **`while`** loop.
 First, we need to store the **input magical number** in a suitable variable. Then we will initialize 6 variables – one for each of the six digits of **the searched numbers**. 
 
-![](assets/chapter-7-2-images/02.Magic-numbers-02.PNG)
+![](assets/chapter-7-2-images/02.Magic-numbers-02.png)
 
 Then we will start writing **`while`** loops.
 - We will initialize **first digit**: **`d1 = 1`**.
@@ -114,7 +114,7 @@ Then we will start writing **`while`** loops.
 - At **the end** of each loop, we will increase the digit by one: **`d++`**.
 - In the **innermost** loop, we will make **the check** and if necessary, we add the result into the variable, that stores the solution.
 
-![](assets/chapter-7-2-images/02.Magic-numbers-03.PNG)
+![](assets/chapter-7-2-images/02.Magic-numbers-03.png)
 
 As we can see, we can solve a problem using different types of loops. Of course, each task has its most appropriate choice. To practice each type of loop – try to solve each of the following problems with all the learned loops.
 
@@ -163,7 +163,7 @@ The **First** part is ordinary – we read **three** integer numbers from the co
 
 We have already seen examples of the **second** part – initialization of the **`for`** loop. It is a bit **tricky** – the explanation mentions that the numbers have to be printed in **reversed order**. This means that the **initial** value of the variable **`i`** will be **bigger**, and from the examples, we can see that it is **M**. Thus, the **final** value of **`i`** should be **N**. The fact that we will print the results in reversed order and the values of **`i`**, suggests that the step would be **decreased by 1**.
 
-![](assets/chapter-7-2-images/04.Stop-number-01.PNG)
+![](assets/chapter-7-2-images/04.Stop-number-01.png)
 
 After we have initialized the **`for`** loop, it is time for the **third** part of the problem – **checking** the condition if the given **number is divisible both by 2 and 3 without remainder**. We will do this using one simple **`if`** condition that we will leave to the reader to do by themselves.
 

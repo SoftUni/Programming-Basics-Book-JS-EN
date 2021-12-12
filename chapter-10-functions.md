@@ -18,7 +18,7 @@ Simple functions are responsible for running a specific **action**, that will **
 
 Let's see an **example of a simple function**:
 
-![](assets/chapter-10-images/01.Simple-method-01.PNG)
+![](assets/chapter-10-images/01.Simple-method-01.png)
 
 This **function** has the task to print a header, that is a series of the symbol **`-`**. Because of this, the name of the function is **`printHeader`**. The round brackets **`( `** and **`)`** are always after the name, no matter how we have named the functions. Later we will take a look at how we have to name a function we are working with. For now, we will only say that the **name of the function must define the action** that is doing.
 
@@ -44,7 +44,7 @@ There are two ways, to declare a function in JavaScript - **function declaration
 
 With the next example, we will take a look at the required elements inside a function, using **function declaration**.
 
-![](assets/chapter-10-images/02.Declaring-methods-02.PNG)
+![](assets/chapter-10-images/02.Declaring-methods-02.png)
 
 * **Keyword function**. We start by using the keyword ***function***, with which we define that there will be declared a function. We name it **keyword** because it is reserved in the JavaScript language. We can't have a variable that is named **function** exactly because it is reserved.
 * **Name of the function**.  The name of the function is **defined by us** and we must never forget that it must **define the task** it is doing. In the example, the name **`getSquare`** tells us that the task of this function is to find the area of a square.
@@ -57,7 +57,7 @@ When declaring functions it is important to follow the **sequence** of the funda
 
 With the next example, we will take a look at the required elements in the declaration of an **expression function**. It is similar to **function declaration** which we have already viewed and it can be said that it's a **set** of **declaring a variable** and **declaring a declaration function**.
 
-![](assets/chapter-10-images/02.Declaring-methods-03.PNG)
+![](assets/chapter-10-images/02.Declaring-methods-03.png)
 
 * **Keyword `let`**. We will start with using the **keyword `let`**, with which we will declare a declaration of a variable.
 * **Name of the variable**. The name of the variable is **decided by us**. In the example, the name is **`getSquare`** which tells us that the task of this function is to calculate the area of the square.
@@ -74,15 +74,15 @@ In theory, this means that we can **call a function** that is declared with **fu
 ## Invoking a function
 Invoking a function is a **start of the execution of a code** that is located inside the body of a function. We call it by typing the **name** of the function followed by **`()`** and **`;`** to end the row. Here is an example:
 
-![](assets/chapter-10-images/03.Invoking-methods-01.PNG)
+![](assets/chapter-10-images/03.Invoking-methods-01.png)
 
 This function can be called from **different points** in our program. One of the ways to be called is to be called from the **global scope**.
 
-![](assets/chapter-10-images/03.Invoking-methods-02.PNG)
+![](assets/chapter-10-images/03.Invoking-methods-02.png)
 
 A Function can be invoked from the **body of another function** which is **not** the global scope of our program.
 
-![](assets/chapter-10-images/03.Invoking-methods-03.PNG)
+![](assets/chapter-10-images/03.Invoking-methods-03.png)
 
 A Function can be called from **its own body**. This is called **recursion** and you can find more about it on [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) or google it.
 
@@ -106,16 +106,16 @@ Write a function, that prints empty cash receipt. The function must call another
 
 Our first step is to create a function for **creating a title**. We should give it a short descriptive name. For example: **`printReceiptHeader`**. In the body we will write the following code:
 
-![](assets/chapter-10-images/04.Print-receipt-01.PNG)
+![](assets/chapter-10-images/04.Print-receipt-01.png)
 In a like manner, we will create another two functions **to print the middle part** of the receipt (body) **`printReceiptBody`** and **to print the bottom part** of the receipt (footer **`printReceiptFooter`**.
 
 After this we will set **one more function*** which will call the other three functions which we have written so far:
 
-![](assets/chapter-10-images/04.Print-receipt-02.PNG)
+![](assets/chapter-10-images/04.Print-receipt-02.png)
 
 In the end, we will **invoke** **`printReceipt`** from the global scope of our program:
 
-![](assets/chapter-10-images/04.Print-receipt-03.PNG)
+![](assets/chapter-10-images/04.Print-receipt-03.png)
 
 #### Testing in the Judge System
 
@@ -131,11 +131,11 @@ If the function requires **input data**, it is passed inside **`()`** brackets. 
 
 **Declaring** function **`printNumbers(...)`** and the **list** of **parameters** which the programs need to work correctly will look like this:
 
-![](assets/chapter-10-images/05.Method-parameters-01.PNG)
+![](assets/chapter-10-images/05.Method-parameters-01.png)
 
 After this, we **invoke** the function, and we give it the **corresponding function arguments**:
 
-![](assets/chapter-10-images/05.Method-parameters-02.PNG)
+![](assets/chapter-10-images/05.Method-parameters-02.png)
 
 When **declaring function parameters** we should check if every parameter has a **name**. It's also important when we invoke a function we should always pass **values** in the order that they were declared. In the previous example, the variable **`start`** will be passed to the first element (in our case the number 5). The variable **`end`** will have the next number which is 10.
 
@@ -143,13 +143,13 @@ It's important to point out that in the programming language **JavaScript** decl
 
 Let's look at this example:
 
-![](assets/chapter-10-images/05.Method-parameters-03.PNG)
+![](assets/chapter-10-images/05.Method-parameters-03.png)
 
 In this example, we call the function  **`printNumbers(...)`** and we give 4 instead of the **declared** 2 parameters. All unnecessary parameters will be ignored. These are the numbers 15 and 20. They won't go to the function because the function doesn't have a declared parameter that will get them.
 
 Let's look at another example:
 
-![](assets/chapter-10-images/05.Method-parameters-04.PNG)
+![](assets/chapter-10-images/05.Method-parameters-04.png)
 
 In this example, we call the function **`printNumbers(...)`** but this time we give only 1 parameter instead of the **declared** 2 parameters. All parameters that are not **set as values** will automatically get **`undefined`** values. In our case the variable.
 
@@ -169,13 +169,13 @@ Create a function that checks if a number is a positive or negative number.
 
 Our first step is **declaring** a function and giving it describing name - **`printSign`**. This function will only have one parameter:
 
-![](assets/chapter-10-images/06.Print-sign-01.PNG)
+![](assets/chapter-10-images/06.Print-sign-01.png)
 
 Our next step is **implementing** logic by which our program will check if the number is positive or negative. From the example, we can see that there are 3 cases:  if the number is bigger and smaller than zero or if it's zero. We will make three conditional statements in the body of our function.
 
 Our next step is to call the function we have created:
 
-![](assets/chapter-10-images/06.Print-sign-02.PNG)
+![](assets/chapter-10-images/06.Print-sign-02.png)
 
 #### Testing in the Judge System
 
@@ -188,11 +188,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#
 
 Our next example shows the use of optional parameters:
 
-![](assets/chapter-10-images/07.Optional-parameters-01.PNG)
+![](assets/chapter-10-images/07.Optional-parameters-01.png)
 
 **`printNumbers(...)`** can be invoked in different ways:
 
-![](assets/chapter-10-images/07.Optional-parameters-02.PNG)
+![](assets/chapter-10-images/07.Optional-parameters-02.png)
 
 When we are not **setting value** for the parameter, he will **get the value** that we have given him when declaring the function.
 
@@ -210,21 +210,21 @@ Create a function that will create a triangle as shown in the example.
 
 We choose a name according to the task it will do. For example, **`printLine`** and we implement it:
 
-![](assets/chapter-10-images/08.Print-triangle-01.PNG)
+![](assets/chapter-10-images/08.Print-triangle-01.png)
 
 From drawing on console exercises we remember that it's a good practice to **divide the figure into different parts**. We will divide the triangle into 3 parts - upper, middle, and bottom.
 
 Our next step is to print the **upper body** of the triangle with a loop:
 
-![](assets/chapter-10-images/08.Print-triangle-02.PNG)
+![](assets/chapter-10-images/08.Print-triangle-02.png)
 
 After that, we will print the **middle part**:
 
-![](assets/chapter-10-images/08.Print-triangle-03.PNG)
+![](assets/chapter-10-images/08.Print-triangle-03.png)
 
 In the end, we will print the **bottom part** from the triangle but this time with a reverse loop.
 
-![](assets/chapter-10-images/08.Print-triangle-04.PNG)
+![](assets/chapter-10-images/08.Print-triangle-04.png)
 
 #### Testing in the Judge System
 
@@ -244,15 +244,15 @@ Draw a square with side **`n`**, as shown in the example.
 
 We create a function that prints the first and last row because they are the same. We shouldn't forget that we have to give him a **corresponding name** and set as a **parameter** the length of the side. We will use the built-in function **`repeat(...)`**:
 
-![](assets/chapter-10-images/09.Draw-filled-square-01.PNG)
+![](assets/chapter-10-images/09.Draw-filled-square-01.png)
 
 Our next step is to create a function that will draw on the console the middle rows. Again we set a descriptive name such as **`printMiddleRow`**.
 
-![](assets/chapter-10-images/09.Draw-filled-square-02.PNG)
+![](assets/chapter-10-images/09.Draw-filled-square-02.png)
 
 In the end, we invoke the declared functions to draw the whole square:
 
-![](assets/chapter-10-images/09.Draw-filled-square-03.PNG)
+![](assets/chapter-10-images/09.Draw-filled-square-03.png)
 
 #### Testing in the Judge System
 
@@ -268,19 +268,19 @@ To get a result from a function we use the operator **`return`**. He must be **u
 
 In the example underneath we have a **function** that gets the first and last name as **parameters**. Then it combines them and returns the full name.
 
-![](assets/chapter-10-images/11.Return-operator-01.PNG)
+![](assets/chapter-10-images/11.Return-operator-01.png)
 
 **There are cases** in which **`return`** can be called from different places inside the function, but if only the **conditions** are met. 
 
 In the example below, we have a function that compares 2 numbers and **returns** the result which can be  **`-1`**, **`0`**, or **`1`** if the first argument is smaller, equal, or bigger than the second argument. The function uses the operator **`return`** on 3 different places. It returns different values depending on the logic of the code. 
 
-![](assets/chapter-10-images/11.Return-operator-02.PNG)
+![](assets/chapter-10-images/11.Return-operator-02.png)
 
 #### Code after a return is unreachable
 
 When the **return** operator is located inside a conditional statement such as **`if`**, after the statement in the same block, we must **not** have rows with code because Visual Studio Code will display a warning telling us that it had found an **unreachable** code.
 
-![](assets/chapter-10-images/11.Return-operator-03.PNG)
+![](assets/chapter-10-images/11.Return-operator-03.png)
 
 The operator **`return`** can be also used without a **specific value**. In this case, the function will be **terminated** and the return value will be **`undefined`**.
 
@@ -295,15 +295,15 @@ After a function is executed and has returned a value, we can use the value in s
 
 The first is to **assign the result to a variable**:
 
-![](assets/chapter-10-images/12.Return-value-01.PNG)
+![](assets/chapter-10-images/12.Return-value-01.png)
 
 The second is to be used inside **an expression**:
 
-![](assets/chapter-10-images/12.Return-value-02.PNG)
+![](assets/chapter-10-images/12.Return-value-02.png)
 
 The third is to **pass** the result from one function to **another function**:
 
-![](assets/chapter-10-images/12.Return-value-03.PNG)
+![](assets/chapter-10-images/12.Return-value-03.png)
 
 ### Example: Find the area of a triangle
 
@@ -319,11 +319,11 @@ Write a function that finds the area of a triangle by given side and altitude an
 
 We **Create** a function with a descriptive name.
 
-![](assets/chapter-10-images/13.Calculate-triangle-area-01.PNG)
+![](assets/chapter-10-images/13.Calculate-triangle-area-01.png)
 
 Our next step is to **call the new** function and **record the returned value inside another variable**.
 
-![](assets/chapter-10-images/13.Calculate-triangle-area-02.PNG)
+![](assets/chapter-10-images/13.Calculate-triangle-area-02.png)
 
 #### Testing in the Judge System
 
@@ -344,7 +344,7 @@ Write a function that calculates and returns the result the power of a number.
 
 Our first step is again to create a function that will get 2 parameters (base and exponent(power)). Then the function will return the result.  
 
-![](assets/chapter-10-images/14.Number-power-01.PNG)
+![](assets/chapter-10-images/14.Number-power-01.png)
 
 After we have done our calculations, all we are left to do is calling the function.
 
@@ -361,11 +361,11 @@ In practice, there are some cases in which we need a function that returns more 
 
 When we want a function to return **more than one value**, we use the keyword **`return`** and after that, we list all the values we want to return between **`[`**, **`]`** brackets:
 
-![](assets/chapter-10-images/15.Return-multiple-values-01.PNG)
+![](assets/chapter-10-images/15.Return-multiple-values-01.png)
 
 After that to get the returned values using the square brackets we list a new set of variables that will get the returned values. We must follow the order we have returned them in the function.
 
-![](assets/chapter-10-images/15.Return-multiple-values-02.PNG)
+![](assets/chapter-10-images/15.Return-multiple-values-02.png)
 
 In the upper example, the variable **`name`**  will get the value "**John Doe**", which is the first of the returned function of **`getNames`**, and *`fullName`** will get "**John Silver Doe**" which is second.
 
@@ -373,15 +373,15 @@ In the upper example, the variable **`name`**  will get the value "**John Doe**"
 
 This way is very similar to the previous one. The only difference is that we don't just **list** all the values which we want to return. We give them **names**. **Objects** are extremely important and a big part of the **JavaScript** language. For now, it's enough for us to know that they are declared with curly brackets **`{`** **`}`** and we type the **name** of the value (it's called a key). After the **name**, we type **`:`**  followed by a value. We divide different **key-value** pairs with **`,`**. 
 
-![](assets/chapter-10-images/15.Return-multiple-values-03.PNG)
+![](assets/chapter-10-images/15.Return-multiple-values-03.png)
 
 In this example, we return an object which holds 2 values - **`name`** and **`fullName`**. 
 
-![](assets/chapter-10-images/15.Return-multiple-values-04.PNG)
+![](assets/chapter-10-images/15.Return-multiple-values-04.png)
 
 Here the variable  **`personNames`** will get all the returns values. By calling **`.name`** and **`.fullName`** we get the returned values:   
 
-![](assets/chapter-10-images/15.Return-multiple-values-05.PNG)
+![](assets/chapter-10-images/15.Return-multiple-values-05.png)
 
 ## Variant of function
 
@@ -393,7 +393,7 @@ When we declare **two or more functions with the same names**, our program will 
 
 Let's take a look at this example:
 
-![](assets/chapter-10-images/19.Local-functions-01.PNG)
+![](assets/chapter-10-images/19.Local-functions-01.png)
 
 ### What is a local function?
 
@@ -408,13 +408,13 @@ we might need only once or another function is becoming too long. We have alread
 
 Let's look again at the previous example
 
-![](assets/chapter-10-images/19.Local-functions-01.PNG)
+![](assets/chapter-10-images/19.Local-functions-01.png)
 
 In this example **`sum()`** is local function because it's nested inside **`solve()`** function. This means that **`sum()`** can be  called **only** inside **`solve()`** function because it's **only declared inside it**.
 
 Local functions have access to variables, which are declared in the same or upper level from them. Our next example shows how this happens.
 
-![](assets/chapter-10-images/19.Local-functions-02.PNG)
+![](assets/chapter-10-images/19.Local-functions-02.png)
 
 This feature of nested functions makes them convenient helpers when solving a task. They save time and code by not having to pass values to parameters and variables.
 
@@ -473,7 +473,7 @@ Some examples of **incorrectly** named parameters:
 We must keep in mind that a function must do **only one** specific **task**. If this can't be achieved, then we must come up with a way to **divide** the functionality into different parts.
 As we have already said the name must be clear and descriptive. Another **good practice** is to **avoid** functions that are longer than our screen. If this happens it's recommended to **split** the function into smaller ones as shown in the example below.
 
-![](assets/chapter-10-images/20.Good-practice-01.PNG)
+![](assets/chapter-10-images/20.Good-practice-01.png)
 
 ### Structure and formatting of the code
 
@@ -481,15 +481,15 @@ When writing functions we must keep in mind to follow a correct **indication** (
 
 Here are some examples of **correctly** formatted JavaScript code:
 
-![](assets/chapter-10-images/20.Good-practice-02.PNG)
+![](assets/chapter-10-images/20.Good-practice-02.png)
 
 Some examples of **incorrectly** formatted JavaScript code:
 
-![](assets/chapter-10-images/20.Good-practice-03.PNG)
+![](assets/chapter-10-images/20.Good-practice-03.png)
 
 When the headline row of the function is **too long**, it's recommended to be split into several rows, and every row after the first should be moved 2 tabulations to right (for clear readability).
 
-![](assets/chapter-10-images/20.Good-practice-04.PNG)
+![](assets/chapter-10-images/20.Good-practice-04.png)
 
 Another good practice is to **leave an empty row** between functions, after loops, and conditional statements. You should always try to **avoid** writing **long rows and complicated expressions**.
 Over time you will find out that improves the readability and saves time.
@@ -567,7 +567,7 @@ Write a function **`repeatString(str, count)`** which gets as parameters string 
 
 Write function and add the input string to the result in the for loop:
 
-![](assets/chapter-10-images/21.Repeated-string-01.PNG)
+![](assets/chapter-10-images/21.Repeated-string-01.png)
 
 #### Testing in the Judge System
 
@@ -639,7 +639,7 @@ Print on the console **each read message** formatted depending on its **`message
 
 The problem should be solved by defining four functions: **`showSuccessMessage()`**, **`showWarningMessage()`**, **`showErrorMessage()`** and **`processMessage()`**, so that only the last function is invoked by the **`Main()`** function:
 
-![](assets/chapter-10-images/23.Notifications-01.PNG)
+![](assets/chapter-10-images/23.Notifications-01.png)
 
 #### Sample Input and Output
 
@@ -651,7 +651,7 @@ The problem should be solved by defining four functions: **`showSuccessMessage()
 
 Define and implement the four shown functions. After that call **`processMessage(...)`** from the main **`solve(...)`** function.
 
-![](assets/chapter-10-images/23.Notifications-02.PNG)
+![](assets/chapter-10-images/23.Notifications-02.png)
 
 In **`processMessage()`** read the type of message from the console and according to the read, type read the rest of the data (one, two, or three more lines). After that invoke the function for printing the given type of message.
 

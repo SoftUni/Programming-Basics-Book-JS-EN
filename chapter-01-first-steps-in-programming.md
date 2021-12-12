@@ -67,11 +67,11 @@ alert("Congratulations!!! You have just won $1 000 000!");
 
 We can run our program by using our browser's **JavaScript console**. In **Chrome**, for example, we can pull that up by pressing **[F12]** and we can then write our code in the **[Console]** window.
 
-![](/assets/console-js-alert.PNG)
+![](/assets/console-js-alert.png)
 
 The result is something like this: a **modal popup message** in your browser: 
 
-![](/assets/js-alert-modal-popop.PNG)
+![](/assets/js-alert-modal-popop.png)
 
 #### Example: a Program, Which Spams the User with Notifications
 We can increase the previous program's complexity by creating numerous command which repeat in sequence and notify the user they've won the lottery:
@@ -81,7 +81,7 @@ for (i = 0; i < 10; i += 1) {
 }
 ```
 In the example above we make the computer display notifications one after another until they become 10. The result is one very irritated user:
-![](/assets/js-alert-10-times-loop.PNG)
+![](/assets/js-alert-10-times-loop.png)
 We will learn how iterations (loops) in programming work in the chapter "[Loops](chapter-05-loops.md)", but for now, let's assume that they just repeat a command many times.
 
 #### Example: Program, Which Converts Bulgarian Levs into Euro
@@ -95,7 +95,7 @@ console.log(euro);
 ```
 If we run this program in the browser's JavaScript console, we'll receive something like this:
 
-![](/assets/js-euro-leva-converter-in-the-browser.PNG)
+![](/assets/js-euro-leva-converter-in-the-browser.png)
 
 We looked at **three examples of computer programs**: single command, series of commands in a loop and a sequence of four commands. Let's now move on to the more exciting bit: writing our own programs in **JavaScript** and executing them outside the browser.
 
@@ -111,16 +111,16 @@ As previously mentioned, we need a **development environment (IDE)** in order to
 ### Installing Visual Studio Code
 In the following paragraphs, we go through the steps for installing **Visual Studio Code** (version 1.19.1) in great detail. After we download and start the installation file, the following screen should appear:
 
-![](assets/chapter-1-images/00.Visual-studio-01.PNG)
+![](assets/chapter-1-images/00.Visual-studio-01.png)
 
 Press the **[Next]** button and then agree to the terms and conditions:
 
-![](assets/chapter-1-images/00.Visual-studio-02.PNG)
+![](assets/chapter-1-images/00.Visual-studio-02.png)
 
 Visual Studio Code starts installing and once it's finished, we're almost ready to start writing code.
 After you start VS Code, a window similar to the one below should appear:
 
-![](assets/chapter-1-images/00.Visual-studio-03.PNG)
+![](assets/chapter-1-images/00.Visual-studio-03.png)
 
 Now is the time to make our **development environment** as pleasant as possible. **Visual Studio Code** is famous for being the IDE with the most options for personalization. Usually, this personalization comes in the form of **add-ons** (extensions). A list of all add-ons can be found on the official website: [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/). Just keep in mind that most of these extensions are specific to a particular programming language. 
 
@@ -135,28 +135,28 @@ They can be installed either via the given links or by going through the followi
 4.	Then press the **[Install]** button.
 5.	And restart **Visual Studio Code**.
 
-![](assets/chapter-1-images/00.Visual-studio-04.PNG)
+![](assets/chapter-1-images/00.Visual-studio-04.png)
 
 That's it. We're ready to start working with **Visual Studio Code** and **JavaScript**.
 
  ### Online Development Environments
 There are also **alternative environments to develop online**, directly in your web browser. They aren't very easy to use but if you have no other option, you can start your education with them and install **Visual Studio Code** later. Such a site for online JavaScript development is **JSBin** - [https://jsbin.com/?js,console](https://jsbin.com/?js,console).
 
-![](/assets/jsbin-example.PNG)
+![](/assets/jsbin-example.png)
 
 Alternatively, we can do quick tests directly in our browser by pressing **F12** but in general, this is an option that works for very few lines of
 code. Here's an example:
 
-![](/assets/js-console-f12.PNG)
+![](/assets/js-console-f12.png)
 
 ## Example: Creating a Console Application 'Hello JavaScript'
 Let's go back to our console program. We already have Visual Studio Code and we can start it. Then create a new **JavaScript file**: [**File**] &rarr; [**New File**]:
 
-![](assets/chapter-1-images/00.Visual-studio-05.PNG)
+![](assets/chapter-1-images/00.Visual-studio-05.png)
 
 It's crucial to save our file from [**File**] &rarr; [**Save**], and don't forget the **.js** extension! We also need to give it a meaningful name like **helloJS**:
 
-![](assets/chapter-1-images/00.Visual-studio-06.PNG)
+![](assets/chapter-1-images/00.Visual-studio-06.png)
 
 ### Writing Program Code
 Writing code in **JavaScript** requires no additional preparation – creating a file with the **.js** extension is all we need. So let's directly proceed with writing our first line of code. We'll write the following command:
@@ -165,7 +165,7 @@ console.log("Hello JavaScript!");
 ```
 Here's what our program should look like in **Visual Studio Code**:
 
-![](assets/chapter-1-images/01.Hello-js-01.PNG)
+![](assets/chapter-1-images/01.Hello-js-01.png)
 
 The `console.log('Hello JavaScript!')` command means printing (`log(…)`) on the console (`console`) the message `Hello JavaScript!` which we need to surround with quotes, in order to signify it is text. At the end of every **JavaScript** command, we place a semicolon `;` which indicates the end of the command (meaning it doesn't continue on the next row). Although the latter is not compulsory, it's considered good practice which helps find problems more easily.
 
@@ -176,7 +176,7 @@ This command is very typical for programming: we signify we need a certain **obj
 ### Starting the Program
 To start the program we need to hit **[F5]**. The result will be displayed on the console, which, for our convenience, will open directly at the bottom of **Visual Studio Code**:
 
-![](assets/chapter-1-images/01.Hello-js-02.PNG)
+![](assets/chapter-1-images/01.Hello-js-02.png)
 
 Notice we run the program with **[F5]**, not **[Ctrl + F5]**. If we use the latter, we won't be able to see the result because the program will execute very quickly and then disappear.
 
@@ -207,11 +207,11 @@ function solve() {
 ````
 We need to place the entire source code of the program in the black field and choose **JavaScript code**, as shown in the screenshot below:
 
-![](assets/chapter-1-images/01.Hello-js-03.PNG)
+![](assets/chapter-1-images/01.Hello-js-03.png)
 
 Then we can send our solution by clicking the **[Submit]** button. The system returns a result in a few seconds which is displayed in the table of submitted solutions. If necessary, we can hit the **[Refresh]** button at the upper right-hand corner of the table of submitted solutions:
 
-![](assets/chapter-1-images/01.Hello-js-04.PNG)
+![](assets/chapter-1-images/01.Hello-js-04.png)
 
 In that table, the Judge System will display one of the following **possible results**:
 * Number of points (between 0 and 100), when the submitted code is compiled successfully (there are no syntactic errors) and can be tested.
@@ -224,11 +224,11 @@ So far we've seen how to make and execute a console program. Let's now look at h
 
 Actually, the principle is very similar to what we just did. The only difference is that when creating a new file, we use the **.html** extension instead of **.js**. All that's left is to enclose our code with a opening `<script>` and closing `</script>` **HTML** tag. We enclosed our code in much the same way when submitting our code in the Judge System. Here's what our code in **Visual Studio Code** should now look like:
 
-![](assets/chapter-1-images/01.Hello-js-05.PNG)
+![](assets/chapter-1-images/01.Hello-js-05.png)
 
 With this approach, now we just need to find the **helloJS.html** file in the location we've saved it, and double click it. It will load in the browser but in order to see the result, we need to hit **F12**, which will open the browser's console. Our command prints on the console, so it makes sense that we need to bring it up to see the result. 
 
-![](assets/chapter-1-images/01.Hello-js-06.PNG)
+![](assets/chapter-1-images/01.Hello-js-06.png)
 
 Now that you've **learned how to execute programs**, you can test the sample notification programs you have above. Have fun with them, try out different things. Try changing them and playing with them. Swap the `console.log("Hello JavaScript");`** command for `console.error("Error occurred");`** and start your program. Note that notification programs can only be executed in our browser and when we try running them from the console, we receive an error. This is due to the fact that the console doesn't support notification via visual elements, like `alert`.
 
@@ -250,7 +250,7 @@ function solve() {
 
 This program will return an **error after it's started executing** and even prior to that, the code will be underlined by the extensions which monitor syntax, to draw the programmer's attention to the missed closing bracket.
 
-![](assets/chapter-1-images/01.Hello-js-07.PNG)
+![](assets/chapter-1-images/01.Hello-js-07.png)
 
 ## What Did We Learn in This Chapter?
 First of all, we learned **what programming is – issuing commands written in a programming language** which the machine can understand and carry out. We also found out what a **computer program** is – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **JavaScript programming language** and learned how to create **simple console and web programs using Visual Studio Code**. Then we examined JavaScript's program code structure. We looked at printing on the console with the function `console.log()` and starting the program with **[F5]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
@@ -270,11 +270,11 @@ Note: **you are not allowed to previously calculate the value** (for example wit
 ### Hints and Guidelines
 Create a new **JavaScript file** and name it `expression.js`. Then we need to write the **code** which will calculate the numeric expression above and print its value on the console. Pass the expression to the `console.log(...)` command by writing it within its brackets:
 
-![](assets/chapter-1-images/02.Expression-01.PNG)
+![](assets/chapter-1-images/02.Expression-01.png)
 
 Start the program with **[F5]** and check whether the result matches the one from the picture:
 
-![](assets/chapter-1-images/02.Expression-02.PNG)
+![](assets/chapter-1-images/02.Expression-02.png)
 
 ### Testing in the Judge System
 Test your solution here:
@@ -287,7 +287,7 @@ function solve() {
 }
 ````
 
-![](assets/chapter-1-images/02.Expression-03.PNG)
+![](assets/chapter-1-images/02.Expression-03.png)
 
 ### Problem : Numbers from 1 to 20
 Write a **JavaScript** console program that **prints the numbers from 1 to 20** on separate lines on the console.
@@ -295,7 +295,7 @@ Write a **JavaScript** console program that **prints the numbers from 1 to 20** 
 ### Hints and Guidelines
 Create a new **JavaScript file** and name it `nums1to20.js`. Inside the file write 20 `console.log()` commands,  each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a cleverer way. Don't worry, there is, but we will mention it later on.
 
-![](assets/chapter-1-images/03.Numbers-1-to-20-01.PNG)
+![](assets/chapter-1-images/03.Numbers-1-to-20-01.png)
 
 Let's now **start the program** and check whether the result is what we're expecting:
 ```
@@ -350,7 +350,7 @@ Write a **JavaScript program** which **receives two numbers a and b, then calcul
 ### Hints and Guidelines
 Create a new **JavaScript file**. For now, programs of similar type will be tested only in the **Judge System**, which has a built-in mechanism for passing input data to the program. In order to **receive the two numbers**, we need to declare our request by changing the enclosing code (the `solve()` function) we got used to writing:
 
-![](assets/chapter-1-images/05.Rectangle-area-01.PNG)
+![](assets/chapter-1-images/05.Rectangle-area-01.png)
 
 Did you notice the change? We placed additional square brackets within the brackets of the function, inside which we described what data we're expecting to receive – in this case the numbers `a` and `b`, set as an array.
 What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of  `a` and `b` to the familiar `console.log()` command. In programming, we multiply using the `*` operator.
@@ -370,7 +370,7 @@ Write a **JavaScript** console program which **receives a whole positive number 
 ### Hints and Guidelines
 Create a new **JavaScript console program**:
 
-![](assets/chapter-1-images/06.Stars-01.PNG)
+![](assets/chapter-1-images/06.Stars-01.png)
 
 Finish the program so that it prints a square made up of stars. You may need to use `for`-loops. Search for additional information on the Internet.
 
@@ -399,7 +399,7 @@ After the numbers are entered in the first text fields, and the button **[Calcul
 
 Notice that we'll be creating a **web-based application**. This is an application accessible through a web browser, exactly like your favorite webmail or news site. The web application will have a server-side (Back-end), written in **JavaScript** and a client-side (front-end), written in **HTML**. The Web application is expected to look similar to the following:
 
-![](assets/chapter-1-images/07.Sumator-01.PNG)
+![](assets/chapter-1-images/07.Sumator-01.png)
 
 As opposed to console applications that read and write data in the form of text on the console, Web applications have a **Web-based user interface**. Web applications are **loaded from some Internet address** (URL) through a standard web browser. Users write input data on a page, visualized by the web browser, the data is processed on a web server and the results are shown again on a page in the web browser. As we mentioned we'll be using **HTML and JavaScript** for our web application. Other technologies which support creating **web applications** are the **ASP.NET MVC technology**, **PHP technology**, etc. These technologies make creating the general application architecture – the server, as well as the client-side, much easier.
 
@@ -407,17 +407,17 @@ Let's move on to realizing our web application.
 
 Create a **new HTML file** in VS Code and name it `sumator.html`.
 
-![](assets/chapter-1-images/07.Sumator-02.PNG)
+![](assets/chapter-1-images/07.Sumator-02.png)
 
 Then write the following code:
 
-![](assets/chapter-1-images/07.Sumator-03.PNG)
+![](assets/chapter-1-images/07.Sumator-03.png)
 
 This code **creates one web form containing three text fields and a button**. It's specified that pressing the **[Calculate]** button will call the `calculate` action.
 
 Let's examine the code we just wrote.
 
-![](assets/chapter-1-images/07.Sumator-04.PNG)
+![](assets/chapter-1-images/07.Sumator-04.png)
 
 On the first 2 rows we declare that we're describing an **HTML page**, using the `<html>` and `<body>` tags, the latter declaring the start of our page's body – it's the main part which will be visualized. Respectively, the last 2 rows represent the corresponding **closing tags**, which declare the end of that particular part of our HTML page. Look more closely and you'll notice they're different from the **opening tags** – they have a forward slash '/' before the tag name - `</body>`, for example.
 
@@ -427,7 +427,7 @@ Then, on the 7th row we have another `input` tag declared, but this time it's of
 
 Let's now also look at the **JavaScript code** we wrote:
 
-![](assets/chapter-1-images/07.Sumator-05.PNG)
+![](assets/chapter-1-images/07.Sumator-05.png)
 
 First, we **declare the `calculate()` function** which reads the information from our first two text fields (from our HTML page), then calculates their sum and **assigns** it as the third field's value. The function spans from the 9th to the 17th row. We'll learn what functions are, how they're declared and called, in this book's following chapters.
 

@@ -28,11 +28,11 @@ Additional information on the differences between the two types of comparison op
 
 ### Examples of Number Comparisons
 
-![](assets/chapter-3-1-images/00.Comparing-numbers-01.PNG)
+![](assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
 ### Examples of comparing "text" (string) type variables
 
-![](assets/chapter-3-1-images/00.Comparing-numbers-02.PNG)
+![](assets/chapter-3-1-images/00.Comparing-numbers-02.png)
 
 It is important to note that the case of the letters **upper case** or **lower case** is important for the comparison. If the compared values are not **completely identical**, the output will always be **`false`**.
 
@@ -79,11 +79,11 @@ if (Boolean condition) {
 
 We take the grade as an input argument to our function and upon evaluation, we check if the input value is an excellent grade (**`≥ 5.50`**).
 
-![](assets/chapter-3-1-images/01.ЕxcellentResult-01.PNG)
+![](assets/chapter-3-1-images/01.ЕxcellentResult-01.png)
 
 Test the example code locally. Try entering different grades, for example, **4.75**, **5.49**, **5.50** and **6.00**. For grades **less than 5.50** the program will not give any output, however for grades of **5.50 or greater**, the output will be "**Excellent!**". The function is called by simply writing its name and filling the input value in the parenthesis:
 
-![](assets/chapter-3-1-images/01.ЕxcellentResult-02.PNG)
+![](assets/chapter-3-1-images/01.ЕxcellentResult-02.png)
 
 #### Testing in the Judge System
 
@@ -108,7 +108,7 @@ if (Boolean condition) {
 
 Similarly to the example above, we input a grade and check if it is excellent, but this time we should **output a result in both cases**:
 
-![](assets/chapter-3-1-images/02.Excellent-or-not-01.PNG)
+![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
 #### Testing in Judge System
 
@@ -125,19 +125,19 @@ When we have **only one command** in the body of the **`if` statement**, we can 
 
 Here is an example, where omitting the curly braces leads to confusion:
 
-![](assets/chapter-3-1-images/00.Brackets-tip-01.PNG)
+![](assets/chapter-3-1-images/00.Brackets-tip-01.png)
 
 Executing the code above will produce the following console output:
 
-![](assets/chapter-3-1-images/00.Brackets-tip-02.PNG)
+![](assets/chapter-3-1-images/00.Brackets-tip-02.png)
 
 With curly braces:
 
-![](assets/chapter-3-1-images/00.Brackets-tip-03.PNG)
+![](assets/chapter-3-1-images/00.Brackets-tip-03.png)
 
 The following output will be printed on the console:
 
-![](assets/chapter-3-1-images/00.Brackets-tip-04.PNG)
+![](assets/chapter-3-1-images/00.Brackets-tip-04.png)
 
 ### Problem: Even or Odd
 
@@ -145,7 +145,7 @@ Write a function that checks whether a given input number is **even** or **odd**
 
 The problem can be solved with a single **`if-else`** structure and the operator **`%`**, which returns the **division remainder** of two numbers.
 
-![](assets/chapter-3-1-images/03.Even-or-odd-01.PNG)
+![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
 #### Testing in the Judge System
 
@@ -158,7 +158,7 @@ Write a program that reads two integers and outputs the greater one.
 
 Our first task is to **read** the two numbers. After which through the use of a simple **`if-else`** structure, in combination with the **greater than operator** (**`>`**), to perform the comparison. We have deliberately blurred parts of the code so that the reader can implement the learned so far.
 
-![](assets/chapter-3-1-images/04.Greater-number-01.PNG)
+![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
 #### Testing in the Judge System
 
@@ -173,7 +173,7 @@ Using the keyword **`let`**, our variable assumes the properties of **a local va
 
 In the example below, in the last lines, we will try to access the defined variables. We will print **`myMoney`** on the console, because it is declared at the beginning of our function, before the **`if` structure**, which makes it **available anywhere in the function body**. Even though the **`salary`** is declared in the **`if`** structure block, we can print it because it has the properties of a **global variable** (since it is declared with **`var`**) and can be **used anywhere**. When we try to print the **`bonus`** variable, which is initialized in the **`if` structure**, we will get an **error**, since the lifetime of this variable ends with the first closing curly brace **`}`**, which in this case is the one closing the **`if`** structure:
 
-![](assets/chapter-3-1-images/00.Variable-scope-01.PNG)
+![](assets/chapter-3-1-images/00.Variable-scope-01.png)
 
 Using the keyword **`var`** was the only way **in the past** to declare a variable, nowadays however this is **not recommended**. Because of this in all examples in this book, we will use the keyword **`let`**.
 
@@ -254,11 +254,11 @@ We are given an **integer** – several points. Additional **bonus points** are 
 
 We can calculate the base and additional bonus score with a series of **`if-else-if-else`** statements. for the **main bonus points we have 3 cases** (the input is less than or equal to 100, it is between 100 and 1000, and finally it is greater than 1000), for the **additional bonus sore - further 2 cases** (whether the number is even or odd and whether the remainder of division by 5 is 5).
 
-![](assets/chapter-3-1-images/06.Bonus-score-01.PNG)
+![](assets/chapter-3-1-images/06.Bonus-score-01.png)
 
 This is an example output when the function is called with 175:
 
-![](assets/chapter-3-1-images/06.Bonus-score-02.PNG)
+![](assets/chapter-3-1-images/06.Bonus-score-02.png)
 
 Please note that for this problem the Judge system is set up to ignore any non-number outputs, so we may print explanations along with the number output.
 
@@ -288,7 +288,7 @@ Firstly we sum the three numbers, to obtain the seconds total. As we know that *
 - If the result is between 120 and 179, we print 2 minutes + calculated seconds minus 120.
 - If the seconds are less than 10, we print the number with a leading zero.
 
-![](assets/chapter-3-1-images/07.Sum-seconds-01.PNG)
+![](assets/chapter-3-1-images/07.Sum-seconds-01.png)
 
 #### Testing in the Judge System
 
@@ -327,7 +327,7 @@ The input will be three parameters:
 
 We take the input data and to the units of measure, we can add the method **`toLowerCase()`**, which will convert all letters to lower case. As we can see from the conversion table above, we have data for **converting only between meters and any other measuring unit**. To make the conversion, firstly we must calculate the input measurement in meters. To this effect, we need to create a set of conditionals to determine the input measuring unit and then the output.
 
-![](assets/chapter-3-1-images/08.Metric-converter-01.PNG)
+![](assets/chapter-3-1-images/08.Metric-converter-01.png)
 
 #### Testing in the Judge System
 
@@ -342,7 +342,7 @@ To date, we have written quite a lot of code and oftentimes there were mistakes,
 
 **Debugging** is the process of „**attaching**“ to a program's execution, which allows us to follow closely the execution of our program. We can follow **line by line** the events in our program, what is its evaluation route, what are the intermediate values of the declared variables at each step of the execution, among other useful information and thus allowing us to locate errors - the so-called **bugs**.
 
-![](assets/chapter-3-1-images/00.Debugging-01.PNG)
+![](assets/chapter-3-1-images/00.Debugging-01.png)
 
 ### Debugging in Visual Studio Code
 
@@ -356,15 +356,15 @@ Now let's practice the lessons learned in this chapter with a few practical exer
 
 We start Visual Studio Code and create a new file [**File**] -> [**New File**]:
 
-![](assets/chapter-3-1-images/00.Visual-studio-01.PNG)
+![](assets/chapter-3-1-images/00.Visual-studio-01.png)
 
 After that, we will see a new file, which is anonymous for the moment to our system. To be recognized correctly, we need to save our code as a **JavaScript** file: [**File**] -> [**Save**]:
 
-![](assets/chapter-3-1-images/00.VisualStuido-02.PNG)
+![](assets/chapter-3-1-images/00.VisualStuido-02.png)
 
 After this a pop-up window will open, where we need to specify a name for our file and give it the **obligatory .js file extension**:
 
-![](assets/chapter-3-1-images/00.VisualStuido-03.PNG)
+![](assets/chapter-3-1-images/00.VisualStuido-03.png)
 
 
 ### Problem: Excellent Grade
@@ -386,15 +386,15 @@ We create a **new anonymous file** by clicking [**File**] -> [**New File**]. The
  
 Now that we have prepared a JavaScript file, we have to solve the problem. To this effect we write the following code:
 
- ![](assets/chapter-3-1-images/01.ЕxcellentResult-01.PNG)
+ ![](assets/chapter-3-1-images/01.ЕxcellentResult-01.png)
 
 **Start** the program with [**Ctrl+F5**], so we can **test** it with different input values:
 
- ![](assets/chapter-3-1-images/01.ЕxcellentResult-03.PNG)
+ ![](assets/chapter-3-1-images/01.ЕxcellentResult-03.png)
  
 For values **greater than 5.50** - there is an **Excellent!** output.
 
- ![](assets/chapter-3-1-images/01.ЕxcellentResult-04.PNG)
+ ![](assets/chapter-3-1-images/01.ЕxcellentResult-04.png)
  
 For values **less than 5.50** - there is no output.
 
@@ -402,9 +402,9 @@ For values **less than 5.50** - there is no output.
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#0](https://judge.softuni.org/Contests/Practice/Index/929#0).
 
- ![](assets/chapter-3-1-images/01.ЕxcellentResult-05.PNG) 
+ ![](assets/chapter-3-1-images/01.ЕxcellentResult-05.png) 
 
- ![](assets/chapter-3-1-images/01.ЕxcellentResult-06.PNG)
+ ![](assets/chapter-3-1-images/01.ЕxcellentResult-06.png)
 
 
 ### Problem: Excellent Grade or Not
@@ -424,19 +424,19 @@ The next exercise for this topic is to write a **JavaScript function**, which **
 
 Firstly we create a **new JavaScript file**. After that, we **write the code** of the program. You may use the following example code as a hint:
 
- ![](assets/chapter-3-1-images/02.Excellent-or-not-01.PNG)
+ ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
 After that, we call the function and pass some sample data, so we can test its functionality:
 
-![](assets/chapter-3-1-images/02.Excellent-or-not-02.PNG)
+![](assets/chapter-3-1-images/02.Excellent-or-not-02.png)
 
- ![](assets/chapter-3-1-images/02.Excellent-or-not-03.PNG)
+ ![](assets/chapter-3-1-images/02.Excellent-or-not-03.png)
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#1](https://judge.softuni.org/Contests/Practice/Index/929#1).
 
- ![](assets/chapter-3-1-images/02.Excellent-or-not-04.PNG)
+ ![](assets/chapter-3-1-images/02.Excellent-or-not-04.png)
 
 
 ### Problem: Even or Odd
@@ -458,7 +458,7 @@ Again firstly we must create a **new JavaScript file**. Then the check if a numb
 
 Now we have to **start** the program with [**Ctrl+F5**] and test it:  
 
-![](assets/chapter-3-1-images/03.Even-or-odd-02.PNG)
+![](assets/chapter-3-1-images/03.Even-or-odd-02.png)
 
 #### Testing in the Judge System
 
@@ -481,11 +481,11 @@ Write a function that takes **two integers** and prints the bigger one on the co
 #### Hints and pointers
 
 As usual, first, we need to create a **new JavaScript file**. For the main logic, we need a single **`if-else`** construct. The code below is deliberately blurred, however, there is enough visible to give you some hint, so you can complete it yourself:  
-![](assets/chapter-3-1-images/04.Greater-number-01.PNG)
+![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
 When we are done with the implementation of the solution, we call the function and pass it example parameters, we **run** the program with [**Ctrl+F5**] and test it:
 
-![](assets/chapter-3-1-images/04.Greater-number-02.PNG)
+![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
 #### Testing in the Judge System
 
@@ -689,13 +689,13 @@ Now since we have completed a few exercises on **conditional statements (checks)
 
 Now let's see how to create a graphical (**GUI**) application for **currency conversion**. The application will look similar to the picture below:  
 
-![](assets/chapter-3-1-images/14.Converter-01.PNG)
+![](assets/chapter-3-1-images/14.Converter-01.png)
 
 For visualization, we will use an **internet browser**, that interprets **HTML** pages. We will create a new page and will build the **structure**, **appearance** and **functionality** of our application.
 
 As usual, we **create a new file**, save it with the name **Currency-Converter**, however this time we add the file extension **.html**.
 
-![](assets/chapter-3-1-images/14.Converter-02.PNG)
+![](assets/chapter-3-1-images/14.Converter-02.png)
 
 
 We open the newly created file and input the **document structure**, as **HTML code**:
@@ -742,7 +742,7 @@ We open the newly created file and input the **document structure**, as **HTML c
 
 We save the file and open it in the internet browser.
 
-![](assets/chapter-3-1-images/14.Converter-03.PNG)
+![](assets/chapter-3-1-images/14.Converter-03.png)
      
 At this point we already have the document skeleton, but it can be visually enhanced through the addition of **styling**. To do this we add the following code in the **`<style>`** section for our **HTML** document:
 

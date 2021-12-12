@@ -51,7 +51,7 @@ We should notice that the **output** of the program **depends on few things**. F
 
 After reading the input data from the console, the following program logic should be executed:
 
-![](/assets/chapter-4-1-images/01.Personal-titles-02.PNG)
+![](/assets/chapter-4-1-images/01.Personal-titles-02.png)
 
 #### Testing in the Judge System
 
@@ -82,7 +82,7 @@ Calculate the price by the given **city** (string), **product** (string), and **
 
 We **convert** all of the letters into the **lower register** by using the method **`.toLowerCase()`**, to compare products and cities **no matter** what the letters are - small/capital ones.
 
-![](/assets/chapter-4-1-images/02.Small-shop-01.PNG)
+![](/assets/chapter-4-1-images/02.Small-shop-01.png)
 
 #### Testing in the Judge System
 
@@ -129,7 +129,7 @@ Checks whether **point {x, y}** is placed **inside the rectangle {x1, y1} – {x
 
 |Input |Output |Visualization|
 |-----|------|:------:|
-|2<br>-3<br>12<br>3<br>8<br>-1|Inside|![shop](/assets/chapter-4-1-images/03.Point-in-rectangle-01.PNG)|
+|2<br>-3<br>12<br>3<br>8<br>-1|Inside|![shop](/assets/chapter-4-1-images/03.Point-in-rectangle-01.png)|
 
 #### Solution
 
@@ -140,7 +140,7 @@ A point is internal for a given polygon if the following four conditions are app
 * The point is placed downwards from the upper side of the rectangle.
 * The point is placed upwards from the downside of the rectangle.
  
-![](/assets/chapter-4-1-images/03.Point-in-rectangle-02.PNG)
+![](/assets/chapter-4-1-images/03.Point-in-rectangle-02.png)
 
 #### Testing in the Judge System
 
@@ -190,7 +190,7 @@ Let's check whether a given product is a **fruit** or a **vegetable**. The "**fr
 
 We have to use a few conditional statements with logical "**OR**" (**`||`**):
 
-![](assets/chapter-4-1-images/04.Fruit-or-vegetable-01.PNG)
+![](assets/chapter-4-1-images/04.Fruit-or-vegetable-01.png)
 
 #### Testing in the Judge System
 
@@ -221,7 +221,7 @@ A given **number is valid** if it is in the range [**100 … 200**] or it is **0
 
 #### Solution
 
-![](assets/chapter-4-1-images/05.Invalid-number-01.PNG)
+![](assets/chapter-4-1-images/05.Invalid-number-01.png)
 
 #### Testing in the Judge System
 
@@ -241,7 +241,7 @@ Sometimes the conditions may be very complex, so they can require a long boolean
 
 Write a program that checks whether a **point {x, y}** is placed **onto any of the sides of a rectangle {x1, y1} - {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x**, and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**). Print "**Border**" (if the point lies on any of the sides) or "**Inside / Outside**" (in the opposite case).
 
-![](assets/chapter-4-1-images/06.Point-on-rectangle-border-01.PNG)
+![](assets/chapter-4-1-images/06.Point-on-rectangle-border-01.png)
 
 #### Sample Input and Output
 
@@ -255,11 +255,11 @@ The point lies on any of the sides of the rectangle, if:
 * **x** coincides with **x1** or **x2** and at the same time **y** is between **y1** and **y2** or
 * **y** coincides with **y1** or **y2** and at the same time **x** is between **x1** and **x2**.
 
-![](assets/chapter-4-1-images/06.Point-on-rectangle-border-02.PNG)
+![](assets/chapter-4-1-images/06.Point-on-rectangle-border-02.png)
 
 The previous evaluation might be simplified in the following way:
 
-![](assets/chapter-4-1-images/06.Point-on-rectangle-border-03.PNG)
+![](assets/chapter-4-1-images/06.Point-on-rectangle-border-03.png)
 
 The second way with the additional boolean variables is longer, but is much more understandable than the first one, isn't it? We recommend when you write boolean conditions to make them **easy to read and understand**, instead of making them short. Use additional variables with meaningful names, if needed. The names of the boolean variables have to hint at what the value that is kept inside them represents.
 
@@ -298,7 +298,7 @@ Write a program that reads from the console **fruit** (banana / apple / …), **
 
 #### Solution
 
-![](assets/chapter-4-1-images/07.Fruit-shop-01.PNG)
+![](assets/chapter-4-1-images/07.Fruit-shop-01.png)
 
 #### Testing in the Judge System
 
@@ -325,7 +325,7 @@ Write a program that reads the name of a **city** (string) and the volume of **s
 
 When reading the input, we could convert the city into small letters (with the method **`.toLowerCase()`**). Initially, we set the commission fee to **`-1`**. It will be changed if the city and the price range are found in the table of commissions. To calculate the commission according to the city and volume of sales, we need a few nested **`if` statements**, as in the sample code below:
 
-![](assets/chapter-4-1-images/08.Trade-comissions-01.PNG)
+![](assets/chapter-4-1-images/08.Trade-comissions-01.png)
 
 #### Testing in the Judge System
 
@@ -373,7 +373,7 @@ Let's write a program that prints the **day of the week** (in English) depending
 
 #### Solution
 
-![](assets/chapter-4-1-images/09.Day-of-week-01.PNG)
+![](assets/chapter-4-1-images/09.Day-of-week-01.png)
 
 <table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>It is a good practice to put at <b>first</b> place those <b><code>case</code> statements</b>, that process <b>the most common situations</b>, and leave the <b><code>case</code> construction</b>, processing <b>the more rare situations</b>, in <b>the end, before the <code>default</code> constructions</b>. Another good practice is to  <b>arrange the <code>case</code> labels</b> in <b>ascending order</b>, regardless of whether they are integral or symbolic.</td>
@@ -424,7 +424,7 @@ Write a program that prints the type of the animal depending on its name:
 
 We can solve the task with **`switch-case`** conditions with multiple labels in the following way:
 
-![](assets/chapter-4-1-images/10.Animal-type-01.PNG)
+![](assets/chapter-4-1-images/10.Animal-type-01.png)
 
 #### Testing in the Judge System
 
@@ -499,7 +499,7 @@ While reading the input, we could convert the screening type into small letters 
 
 Sample code (parts of the code are blurred with the purpose to stimulate your thinking and solving skills):
 
-![](assets/chapter-4-1-images/11.Cinema-01.PNG)
+![](assets/chapter-4-1-images/11.Cinema-01.png)
 
 #### Testing in the Judge System
 
@@ -533,7 +533,7 @@ As usual, we read the input data from the console and, to avoid making mistakes,
 
 A sample code (parts of the code are blurred on purpose to stimulate independent thinking and solving skills):
 
-![](assets/chapter-4-1-images/12.Volleyball-01.PNG)
+![](assets/chapter-4-1-images/12.Volleyball-01.png)
 
 #### Testing in the Judge System
 
@@ -584,7 +584,7 @@ A possible logic for solving the task (not the only correct one):
 
 Sample code (parts of the code are blurred to stimulate logical thinking and solving skills):
 
-![](assets/chapter-4-1-images/13.Point-in-the-figure-02.PNG)
+![](assets/chapter-4-1-images/13.Point-in-the-figure-02.png)
 
 #### Testing in the Judge System
 
@@ -599,7 +599,7 @@ In this chapter, we learned how we can make **statements with non-trivial condit
 
 The task we have is to develop a graphical (**GUI**) application for **visualizing a point in a rectangle**. The application must look like identically the following:
 
-![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-01.PNG)
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-01.png)
 
 Using the controls on the left we set the coordinates of  **two of the angles of the rectangle** (decimal numbers) and the coordinates of the **point**. The application **visualizes graphically** the rectangle and the point and prints whether the point is **inside** the rectangle (**Inside**),  **outside** of it (**Outside**), or on one of the sides (**Border**). The application **moves and resizes** the coordinates of the rectangle and the point to be maximum large, but to fit the field for visualization, on the right side of the application.
 
@@ -651,7 +651,7 @@ app.on('activate', () => {
 
 5. In the project folder, we create an **HTML** file with the name **`index.html`**. The **`<title>`** tag is mandatory for every **HTML** document and defines its title. We open it and write **`"Point in Rectangle"`**:
 
-![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-05.PNG)
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-05.png)
 
 We add the following code under the **`<title>`** in the **index.html** file:
 
@@ -659,7 +659,7 @@ We add the following code under the **`<title>`** in the **index.html** file:
 <script src="app.js" type="text/JavaScript"></script>
 ```
 
-![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-06.PNG)
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-06.png)
 
 In this way the connection bettween the files **`index.html`** and **`app.js`** (which we will create later) is realized. The **`<body>`**  tag defines **the body of the html document**. We write in it the following code:
 
@@ -726,7 +726,7 @@ electron .
 
 The application should look like the following:
 
-![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-04.PNG)
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-04.png)
 
 6. The most complicated part remains to be implemented: **visualization of the rectangle and the point** at the field of the element **`<canvas>`** by using the function **`draw()`** in the file **`app.js`**, which we create in the directory of the application, in the way described at Point 2.
   
@@ -875,14 +875,14 @@ electron .
 
 **Case 1: The point is in the rectangle**:
 
-![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-01.PNG)
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-01.png)
 
 **Case 2: The point lies on one of the sides of the rectangle**:
 
-![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-02.PNG)
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-02.png)
 
 **Case 3: The point is outside the rectangle**:
 
-![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-03.PNG)
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-03.png)
 
 If you have problems with the last task, feel free to ask in **the SoftUni Forum**: https://softuni.bg/forum.
