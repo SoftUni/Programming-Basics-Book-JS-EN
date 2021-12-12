@@ -177,7 +177,7 @@ In the next problem we will use one of the first published algorithms for findin
 
 Euclid's algorithm **pseudo-code**:
 
-```javascript
+```JavaScript
 while b ≠ 0
   var oldB = b;
   b = a % b;
@@ -396,7 +396,7 @@ Fibonacci's numbers in mathematics form a sequence that looks like this: **1, 1,
 
 **The formula** to derive the next member of Fibonacci's sequence is:
 
-```javascript
+```JavaScript
 F0 = 1
 F1 = 1
 Fn = Fn-1 + Fn-2
@@ -504,7 +504,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#
 
 We can use **`for`** loops with a **stride**:
 
-```javascript
+```JavaScript
 for (let i = 1; i <= n; i+=3) {
    console.log(i);
 }
@@ -512,7 +512,7 @@ for (let i = 1; i <= n; i+=3) {
 
 The **`while`** / **`do-while`** loops are repeated while a **condition is true**:
 
-```javascript
+```JavaScript
 let num = 1;
 while (num <= n) {
    console.log(num++);
@@ -521,7 +521,7 @@ while (num <= n) {
 
 If we have to **interrupt** the loop execution, we use the **`break`** operator:
 
-```javascript
+```JavaScript
 let n = 0;
 while (true) {
    n = parseInt(arg1);

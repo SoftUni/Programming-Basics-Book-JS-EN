@@ -24,7 +24,7 @@ jQuery-turtle provides:
   * Operations on sets of turtles, and turtle motion of arbitrary elements.
   * Accurate collision-testing of turtles with arbitrary convex hulls.
   * Simplified access to CSS3 transforms, jQuery animations, Canvas, and Web Audio.
-  * An interactive turtle console in either Javascript or CoffeeScript.
+  * An interactive turtle console in either JavaScript or CoffeeScript.
 
 The plugin can also create a learning environment with a default
 turtle that is friendly for beginners.  The following is a complete
@@ -285,7 +285,7 @@ tick 10, ->
 </pre>
 
 The turtle teaching environment is designed to work well with either
-Javascript or CoffeeScript.
+JavaScript or CoffeeScript.
 
 JQuery CSS Hooks for Turtle Geometry
 ------------------------------------
@@ -4471,7 +4471,7 @@ var Instrument = (function() {
     // If there are no future events, then we do not need a timer.
     if (isNaN(delay) || delay == Infinity) { return; }
 
-    // Use the Javascript timer to wake up at the right moment.
+    // Use the JavaScript timer to wake up at the right moment.
     this._pollTimer = setTimeout(poll, Math.round(delay * 1000));
   };
 
@@ -8367,7 +8367,7 @@ var dollar_turtle_methods = {
       "<mark>s = new Sprite({width:50,height:50,color:blue}); " +
       "s.fd 100</mark>"], Sprite),
   loadscript: wrapraw('loadscript',
-  ["<u>loadscript(url, callback)</u> Loads Javascript or Coffeescript from " +
+  ["<u>loadscript(url, callback)</u> Loads JavaScript or Coffeescript from " +
        "the given URL, calling callback when done."],
   function loadscript(url, callback) {
     if (global.CoffeeScript && /\.(?:coffee|cs)$/.test(url)) {

@@ -2,7 +2,7 @@
 
 In the previous chapter, we introduced **nested loops** and how to use them for **drawing** various kinds of **figures on the console**. We've learned how to print figures with different sizes, establishing suitable logic construction by using **single and nested `for`** loops in combination with different calculations and program logic:
 
-```javascript
+```JavaScript
 let result = "";
 
 for (let i = 0; i < 10; i++) {
@@ -18,7 +18,7 @@ for (let i = 0; i < 10; i++) {
 
 We also learned the **method `str.repeat(count)`**, which lets you for defined by us **number** of times, a **given string** to be printed:
 
-``` javascript
+``` JavaScript
 'abc'.repeat(2); // 'abcabc'
 ```
 

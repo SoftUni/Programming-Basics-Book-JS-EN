@@ -34,11 +34,11 @@ Functions offer us a **good method** to use **code several times**. With solving
 
 ## Declaring functions
 
-In Javascript language we can **define** functions everywhere, using the same way we define variables. Declaring represents the **registration of a function** inside a program and to be recognized inside it.
+In JavaScript language we can **define** functions everywhere, using the same way we define variables. Declaring represents the **registration of a function** inside a program and to be recognized inside it.
 
-Javascript isn't **strongly typed** language. That's why when we **declare a function** it doesn't have a type(string, number, array, etc.), which other programming language methods have.
+JavaScript isn't **strongly typed** language. That's why when we **declare a function** it doesn't have a type(string, number, array, etc.), which other programming language methods have.
 
-There are two ways, to declare a function in Javascript - **function declaration** and **Function expression**.
+There are two ways, to declare a function in JavaScript - **function declaration** and **Function expression**.
 
 ### Function declaration
 
@@ -46,7 +46,7 @@ With the next example, we will take a look at the required elements inside a fun
 
 ![](assets/chapter-10-images/02.Declaring-methods-02.png)
 
-* **Keyword function**. We start by using the keyword ***function***, with which we define that there will be declared a function. We name it **keyword** because it is reserved in the Javascript language. We can't have a variable that is named **function** exactly because it is reserved.
+* **Keyword function**. We start by using the keyword ***function***, with which we define that there will be declared a function. We name it **keyword** because it is reserved in the JavaScript language. We can't have a variable that is named **function** exactly because it is reserved.
 * **Name of the function**.  The name of the function is **defined by us** and we must never forget that it must **define the task** it is doing. In the example, the name **`getSquare`** tells us that the task of this function is to find the area of a square.
 * **List of parameters**. We declare them between **`(`** and **`)`** brackets, which we type after the name of the function. Here we list a series of **parameters**, which the function will use. We can have **only one** parameter, **more than one** parameter or we can leave it empty. If there are no parameters we will only type the brackets **`()`**. In the current example, the parameter is only the **`n`**.
 * **Body of the function**. It is declared between  **`{`** and **`}`** brackets which we type after the closing bracket **`)`**. In our **body of the function**, we define all operations, that we want our function to do, **using code**. We also describe the **algorithm** by which the function will solve the given problem. We achieve the **logic** of the function. In the current example, we calculate the area of the square using **`n * n`**.
@@ -355,7 +355,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#
 
 ### Functions, returning multiple values 
 
-In practice, there are some cases in which we need a function that returns more than one element as a result. In the **Javascript** language, there are 2 ways of doing that. They are with **destruction** and by **returning an object**.
+In practice, there are some cases in which we need a function that returns more than one element as a result. In the **JavaScript** language, there are 2 ways of doing that. They are with **destruction** and by **returning an object**.
 
 #### Destruction
 
@@ -371,7 +371,7 @@ In the upper example, the variable **`name`**  will get the value "**John Doe**"
 
 #### Objects
 
-This way is very similar to the previous one. The only difference is that we don't just **list** all the values which we want to return. We give them **names**. **Objects** are extremely important and a big part of the **Javascript** language. For now, it's enough for us to know that they are declared with curly brackets **`{`** **`}`** and we type the **name** of the value (it's called a key). After the **name**, we type **`:`**  followed by a value. We divide different **key-value** pairs with **`,`**. 
+This way is very similar to the previous one. The only difference is that we don't just **list** all the values which we want to return. We give them **names**. **Objects** are extremely important and a big part of the **JavaScript** language. For now, it's enough for us to know that they are declared with curly brackets **`{`** **`}`** and we type the **name** of the value (it's called a key). After the **name**, we type **`:`**  followed by a value. We divide different **key-value** pairs with **`,`**. 
 
 ![](assets/chapter-10-images/15.Return-multiple-values-03.png)
 
@@ -385,7 +385,7 @@ Here the variable  **`personNames`** will get all the returns values. By calling
 
 ## Variant of function
 
-In many programming languages, one function can be declared as **different variants** with the same name but different parameters. This is known as **method overloading**. For good or bad **Javascript**, language doesn't support this.
+In many programming languages, one function can be declared as **different variants** with the same name but different parameters. This is known as **method overloading**. For good or bad **JavaScript**, language doesn't support this.
 
 When we declare **two or more functions with the same names**, our program will use the **last declared**. Declaring the second function with the same name removes the old function and overrides the new one in that place. 
 
@@ -479,11 +479,11 @@ As we have already said the name must be clear and descriptive. Another **good p
 
 When writing functions we must keep in mind to follow a correct **indication** (move more inward blocks of the code).
 
-Here are some examples of **correctly** formatted Javascript code:
+Here are some examples of **correctly** formatted JavaScript code:
 
 ![](assets/chapter-10-images/20.Good-practice-02.png)
 
-Some examples of **incorrectly** formatted Javascript code:
+Some examples of **incorrectly** formatted JavaScript code:
 
 ![](assets/chapter-10-images/20.Good-practice-03.png)
 
@@ -542,7 +542,7 @@ Define a function **`GetMin(int a, int b)`** and implement it, after which invok
 
 Define function  **`getMin(int a, int b)`** and implement it, after that call it from  **`solve(...)`** as shown in the example below. To find the minimum of the tree numbers find first the minimum of the first and second value. Then find the minimum of the result of the two and the third number:
 
-```javascript
+```JavaScript
 function solve([num1, num2, num3]) {
     let min = getMin(getMin(num1, num2), num3);
 }
@@ -613,7 +613,7 @@ To solve the problem, we will declare a string, in which we will keep the result
 
 Write the missing logic in the function below:
 
-```javascript
+```JavaScript
 function integerToBase(number, toBase) {
     string result = "";
     while (number !== 0) {

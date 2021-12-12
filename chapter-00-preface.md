@@ -243,7 +243,7 @@ The book is distributed **for free** in electronic format under an open CC-BY-NC
 
 The book is published and distributed **on paper** by SoftUni and a paper copy can be purchased from the SoftUni reception (see https://softuni.bg/contacts).
 
-**The source code** of the book can be found on GitHub: https://github.com/SoftUni/Programming-Basics-Book-JS-BG.
+**The source code** of the book can be found on GitHub: https://github.com/SoftUni/Programming-Basics-Book-JS-EN.
  
 International Standard Book Number ISBN: **978-619-00-0702-9**.
 

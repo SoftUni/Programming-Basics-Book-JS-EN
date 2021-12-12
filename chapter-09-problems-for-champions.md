@@ -200,7 +200,7 @@ Two numbers are given: **start** and **end**. Write a program that **generates a
 
 **The weight of the letters** is calculated as follows:
 
-```javascript 
+```JavaScript 
 weight('a') = 5;
 weight('b') = -12;
 weight('c') = 47;
@@ -210,7 +210,7 @@ weight('e') = -32;
 
 **The weight of the sequence** of the letters **`c1, c2, …, cn`** is calculated by removing all the letters that are repeated (from right to left) and then calculating the formula:
 
-```javascript 
+```JavaScript 
 weight(c1, c2, …, cn) = 1 * weight(c1) + 2 * weight(c2) + … + n * weight(cn)
 ```
 

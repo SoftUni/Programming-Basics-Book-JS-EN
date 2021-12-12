@@ -5,7 +5,7 @@ In this chapter we will review three additional problems that belong to the cate
 
 ## More Complex Problems on the Studied Material
 
-Before we move on to particular tasks, we must clarify that these can be solved more easily with **additional knowledge in programming with Javascript** \(functions, arrays, collections, recursion, etc.\), but each solution that will be provided now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge collected up to the present moment.
+Before we move on to particular tasks, we must clarify that these can be solved more easily with **additional knowledge in programming with JavaScript** \(functions, arrays, collections, recursion, etc.\), but each solution that will be provided now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge collected up to the present moment.
 
 
 ## Problem: Passion Shopping Days

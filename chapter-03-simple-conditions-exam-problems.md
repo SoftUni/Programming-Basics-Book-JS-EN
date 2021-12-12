@@ -2,7 +2,7 @@
 
 In the previous chapter, we went through the simple conditional statements in **JavaScript**, which we can use to execute different actions depending on a given condition. We mentioned what is the scope of a variable (it's **`scope`**) and how to track the execution of our program step by step (the so-called **debugging**). In this chapter, working with simple conditions by going through some exam tasks. To do this, let's first revise their construction:
 
-```javascript
+```JavaScript
 if (bool expression) {
     // condition body;
 } else {

@@ -13,7 +13,7 @@ In this **current** chapter, we are going to examine **nested conditional statem
 
 Pretty often the program logic requires the use of **`if`** or **`if-else`** statements, which are contained one inside another. They are called **nested** **`if`** or **`if-else`** statements. As implied by the title **"nested"**,these are **`if`** or **`if-else`** statements, that are placed inside other **`if`** or  **`else`** statements.
 
-```javascript
+```JavaScript
 if (condition1) {
     if (condition2) {
         // body; 
@@ -109,7 +109,7 @@ The operator **`&&`** accepts **a couple of Boolean** (conditional) statements, 
 
 **Example**:
 
-```javascript
+```JavaScript
 let a = true;
 let b = true;
 let c = false;
@@ -164,7 +164,7 @@ We have already learned what the logical **"OR"** **represents**. But how is it 
 
 Here is one **example** of the operator **`||`** in action:
 
-```javascript
+```JavaScript
 let a = false;
 let b = true;
 let c = false;
@@ -184,7 +184,7 @@ Let's check whether a given product is a **fruit** or a **vegetable**. The "**fr
 
 |Input|Output|
 |----|----|
-|banana<br>tomato<br>java|fruit<br>vegetable<br>unknown|
+|banana<br>tomato<br>Java|fruit<br>vegetable<br>unknown|
 
 #### Solution
 
@@ -343,7 +343,7 @@ The **`switch-case`**  construction works as a sequence of **`if-else`** blocks.
 
 We put **the variable**, that we want to **compare**, inside the **brackets after the operator `switch`** and it is called a "**selector**". Here **the type must be comparable** (numbers, strings). **Consecutively**, the program starts **comparing** each **value**, that **is found** after the **`case` labels**. Upon a match, the executions of the code from the respective place continue, until it reaches the **`break`** operator. When **no matches** are **found**, the **`default`** construction is being executed, **if** such **exist**.
 
-```javascript
+```JavaScript
 switch (selector) {
     case value1:
         construction;
@@ -388,7 +388,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#
 
 In **JavaScript**, we can **use multiple `case`** labels, when they have to execute **the same** code. In this way, when our program finds a **match**, it will execute **the next** code, because **after** the respective **`case`** label **there is no code** for execution and a **`break`** operator:
 
-```javascript
+```JavaScript
 switch (selector) {
     case value1:
     case value2:
@@ -437,7 +437,7 @@ Let's look back on what new constructions and programming techniques we have lea
 
 ### Nested Conditions
 
-```javascript
+```JavaScript
 if (condition1) {
     if (condition2) {
         // body; 
@@ -449,14 +449,14 @@ if (condition1) {
 
 ### More Complex Conditions with &&, ||, !, and ()
 
-```javascript
+```JavaScript
 if ((x === left || x === right) && y >= top && y <= bottom)
     console.log(…); 
 ```
 
 #### Switch-case statements
 
-```javascript
+```JavaScript
 switch (selector) {
     case value1:
         construction;
@@ -620,7 +620,7 @@ npm install -g electron
 
 4. The code, described in **main.js**, manages the events and creates new windows in the application. It should look like the following code below: 
 
-```javascript
+```JavaScript
 const path = require('path');
 const url = require('url');
 const { app, BrowserWindow } = require('electron');
@@ -655,8 +655,8 @@ app.on('activate', () => {
 
 We add the following code under the **`<title>`** in the **index.html** file:
 
-```javascript
-<script src="app.js" type="text/javascript"></script>
+```JavaScript
+<script src="app.js" type="text/JavaScript"></script>
 ```
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-06.png)
@@ -732,7 +732,7 @@ The application should look like the following:
   
 We create  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D">**`CanvasRenderingContext2D`**</a> an object by writing the following code:
   
-```javascript
+```JavaScript
 // Create canvas element
 let canvas = document.getElementById('a');
 let context = canvas.getContext('2d');
@@ -740,7 +740,7 @@ let context = canvas.getContext('2d');
 
 The **`<canvas>`** element is a field, in which the object generated with the method <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext">**`.getContext('2d')`**</a>, is drawing graphics, text, images and other elements. In this case, the **`context`** variable represents this object. We store in separate variables the coordinates of the two angles of the rectangle:
   
-```javascript
+```JavaScript
 // Get input for rectangle coordinates
 let rectX1 = Number(document.getElementById("rect-x1").value) * 10;
 let rectY1 = Number(document.getElementById("rect-y1").value) * 10;
@@ -750,7 +750,7 @@ let rectY2 = Number(document.getElementById("rect-y2").value) * 10;
 
 The coordinate values are accesible through the **`id`** of the **`<input>`** fields. For better visualization of the screen, we scale the values by **increasing them 10 times**. The next step is to calculate the sides of the rectangle, because the object **`context`** draws a rectangle on four parameters: **`x`** - coordinate, **`y`**  coordinate, **`width`** in pixels and **`height`** in pixels:
 
-```javascript
+```JavaScript
 // Calculate rectangle parameters
 let rectWidth = Math.abs(rectX1 - rectX2);
 let rectHeight = Math.abs(rectY1 - rectY2);
@@ -758,7 +758,7 @@ let rectHeight = Math.abs(rectY1 - rectY2);
 
 We can use the code below, which draws a red rectangle, according to the coordinates given in the form, using the method <a target="_blank" href="https://www.w3schools.com/tags/canvas_strokerect.asp">**`.strokeRect(...)`**</a>:
 
-```javascript
+```JavaScript
 // Set rectangle style
 context.strokeStyle = "#ff0000";
 context.lineWidth = 3;
@@ -769,7 +769,7 @@ context.strokeRect(rectX1, rectY1, rectWidth, rectHeight);
 
 Similar to the rectangle, we take the coordinates of the point and scale them. After that, we set the style of the point - orange color. For better visualization of the screen, we convert the point into a circle with the method <a target="_blank" href="https://www.w3schools.com/tags/canvas_arc.asp">**`.arc(...)`**</a>. This method accepts five parameters: **`x`** - coordinate, **`y`** - coordinate, **`radius`**, **`start of the arc`** in radians, **`end of the arc`** radians:
 
-```javascript
+```JavaScript
 // Get input for point coordinates
 let pointX = Number(document.getElementById("point-x").value) * 10;
 let pointY = Number(document.getElementById("point-y").value) * 10;
@@ -784,7 +784,7 @@ context.fill();
 
 To reflect the results in the **`if`** checks, we store the following elements of the html code in separate variables:
 
-```javascript
+```JavaScript
 // Assign variables to (<div id="result">) and (<span id="status">) html elements
 let result = document.getElementById("status");
 let output = document.getElementById("result");
@@ -792,7 +792,7 @@ let output = document.getElementById("result");
 
 The last step is to check the position of the point relative to the rectangle:
 
-```javascript
+```JavaScript
 // Check point position
 if () {
     result.innerHTML = "Inside";
@@ -810,7 +810,7 @@ Let's now think about how **to add** the unfinished (on purpose) conditions in t
 
 This is the full version of the function **`draw()`**:
 
-```javascript
+```JavaScript
 function draw() {
     // Create canvas element
     let canvas = document.getElementById('a');

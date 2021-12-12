@@ -4,7 +4,7 @@ The previous chapter introduced you to **nested conditions** in **JavaScript**. 
 
 ## Nested Conditions
 
-```javascript
+```JavaScript
 if (condition1) {
     if (condition2)
         // body; 
@@ -21,7 +21,7 @@ if (condition1) {
 
 When the program operation depends on the value of a variable, instead of doing consecutive checks with multiple **`if-else`** blocks, we can use the **`switch-case`** conditional statement.
 
-```javascript
+```JavaScript
 switch (selector) {
     case value1:
         statement;

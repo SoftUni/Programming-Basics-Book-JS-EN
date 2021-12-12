@@ -69,7 +69,7 @@ In **JavaScript** we can use the following operators to compare data:
 
 In programming, we often **check particular conditions** and perform various actions depending on the result of the comparison. This is done through the **`if`** comparison, which has the following structure:
 
-```javascript
+```JavaScript
 if (Boolean condition) {
     // body of the conditional construct;  
 }
@@ -95,7 +95,7 @@ You can test the solution example here:
 
 The **`if`** conditional can also have an **`else`** option to provide a specific action to be performed in case the Boolean expression (which is specified at the beginning **`if (Boolean expression)`**) returns a negative/falsy result (**`false`**). Written in this way the **conditional statement** is called **`if-else`** and its behavior is as follows: if the result of the condition is **positive / truthy** (**`true`**) - a set of instructions is executed. By contrast, when the result is **negative / falsy** (**`false`**) - a different set is executed. The format of this structure in **JavaScript** is as follows:
 
-```javascript
+```JavaScript
 if (Boolean condition) {
     // Condition body to be executed if a condition is true
 } else {
@@ -183,7 +183,7 @@ It is important to note that there is a **third way** to initialize variables - 
 
 Sometimes we have to do a series of checks, before deciding what actions our program will execute. In such cases we can apply the structure **`if-else if…-else` in series**. For this purpose we employ the following structure: 
 
-```javascript
+```JavaScript
 if (first condition) {
     // condition body;
 } else if (second condition) {
@@ -201,7 +201,7 @@ else {
 
 Print the digits one through nine in English on the console (the numbers are passed as arguments of the function upon call). We can take the digit and through a **series of conditions** print the corresponding English word on the console:
 
-```javascript
+```JavaScript
 function number1to9([arg1]) {
   let num = parseInt(arg1);
   
@@ -733,7 +733,7 @@ We open the newly created file and input the **document structure**, as **HTML c
   </main>
   <script>
 
-    // enter Javascript functionality here
+    // enter JavaScript functionality here
 
   </script>
 </body>
@@ -807,7 +807,7 @@ input[type=number], input[type=text], select {
 Now if we save and hit refresh, our application should look much better. All that is left now is to add the **functionality**. This is done through the **``<script>``** section of our **HTML** document.
 We will use the following **JavaScript code** to handle different user inputs and events:
 
-```javascript
+```JavaScript
 function convert(){
   let x = document.getElementById("cash-input").value;
   let e = document.getElementById("currency-options");
