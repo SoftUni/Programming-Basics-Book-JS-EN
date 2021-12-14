@@ -21,7 +21,7 @@ Let **the Tribonacci sequence** start with **1**, **2** and **3**. This means th
 
 At the same time, let the **numbers in the spiral** begin with **5** and the spiral increases by **2** at each step.
 
-<img src="assets/chapter-9-1-images/01.Crossing-sequences-01.png" style="float: right; height: 300px;" />
+<img src="assets/chapter-9-1-images/01.Crossing-sequences-01.PNG" style="float: right; height: 300px;" />
 
 Then **the second sequence** will contain the numbers 5, 7, 9, 13, 17, 23, 29, 37 and so on. We see that **37** is the first number to be found in the Tribonacci sequence and the spiral one, and that is the desired solution to the problem.
 
@@ -200,7 +200,7 @@ Two numbers are given: **start** and **end**. Write a program that **generates a
 
 **The weight of the letters** is calculated as follows:
 
-```javascript 
+```JavaScript 
 weight('a') = 5;
 weight('b') = -12;
 weight('c') = 47;
@@ -210,7 +210,7 @@ weight('e') = -32;
 
 **The weight of the sequence** of the letters **`c1, c2, …, cn`** is calculated by removing all the letters that are repeated (from right to left) and then calculating the formula:
 
-```javascript 
+```JavaScript 
 weight(c1, c2, …, cn) = 1 * weight(c1) + 2 * weight(c2) + … + n * weight(cn)
 ```
 

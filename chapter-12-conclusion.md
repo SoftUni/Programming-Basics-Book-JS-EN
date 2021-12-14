@@ -11,7 +11,7 @@ Remember the **[four main groups of skills](chapter-00-preface.md#become-a-devel
 
 ## This book is only the first step!
 
-**The present** book on programming basics is just the **first step** in building the skills of a programmer. If you were able to solve **all problems**, this means you have **obtained valuable knowledge** in the programming principles with **Javascript** language on a **basic level**. You are about to start **in-depth** studying of programming, and develop **your algorithmic thinking**, and then add **technological knowledge** regarding the Javascript language, Node.js ecosystem (Node.js, npm, Express.js, etc.), front-end technologies (HTML, CSS, Angular, React, AJAX, HTML5) and many other concepts, technologies and instruments for software development.
+**The present** book on programming basics is just the **first step** in building the skills of a programmer. If you were able to solve **all problems**, this means you have **obtained valuable knowledge** in the programming principles with **JavaScript** language on a **basic level**. You are about to start **in-depth** studying of programming, and develop **your algorithmic thinking**, and then add **technological knowledge** regarding the JavaScript language, Node.js ecosystem (Node.js, npm, Express.js, etc.), front-end technologies (HTML, CSS, Angular, React, AJAX, HTML5) and many other concepts, technologies and instruments for software development.
 
 If you were **not able** to solve all problems or a large part of them, go back and solve them! Remember that **becoming a programmer** requires **a lot of work and effort**. This profession is not for lazy people. There is no way to learn it unless **you seriously practice** programming for years!
 
@@ -74,7 +74,7 @@ Another possibility to develop after this book is to **continue studying program
 
 After you gain some experience, find a way to start **an internship in a company** (which will be almost impossible unless you'd spent at least a year of intense code writing before that) or come up with **your practical project**, on which you need to spend a few months, even a year, to learn based on the trial-and-error principle.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Keep in mind that there are many ways to become a programmer, but they all have something in common: <b>intense code writing and years of practice</b>!</td>
 </tr></table>
 
@@ -93,8 +93,6 @@ Here are some recommended **resources** that will be useful for your development
 * https://stackoverflow.com - ***Stack Overflow** is one of the **widest** discussion forums for programmers worldwide, where you will find assistance for any possible question in the world of programming. If you are fluent in English, look up at StackOverflow and ask your questions there.
 * https://fb.com/groups/bg.developers - "**Programing Bulgaria @ Facebook**" group is one of the biggest Bulgarian communities for programmers related to software development on Facebook. 
 * https://www.meetup.com/find/tech/ - search **tech meetups** around your town and enter the community that you like. More of the tech meetups are free and the newcomers are welcome.
-* If you are interested in IT events, tech conferences, studying, and inters, look inside the 
-**sites for IT events** such as https://techevents.bg, https://dev.bg, and https://iteventz.bg.
 
 
 ### Good Luck to All of You!

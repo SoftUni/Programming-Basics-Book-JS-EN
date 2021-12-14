@@ -61,7 +61,7 @@ Let's start with a very basic example of a short **JavaScript program** which we
 
 #### Example: a Program, Which Notifies the User
 Our first program will consist of a single **JavaScript command**, which notifies the user they've won 1 000 000 dollars, as is often the case when you're browsing through a website with a lot of spam and adverts:
-```javascript
+```JavaScript
 alert("Congratulations!!! You have just won $1 000 000!");
 ```
 
@@ -75,7 +75,7 @@ The result is something like this: a **modal popup message** in your browser:
 
 #### Example: a Program, Which Spams the User with Notifications
 We can increase the previous program's complexity by creating numerous command which repeat in sequence and notify the user they've won the lottery:
-```javascript
+```JavaScript
 for (i = 0; i < 10; i += 1) {
     alert("Congratulations!!! You have just won $1 000 000!");
 }
@@ -86,7 +86,7 @@ We will learn how iterations (loops) in programming work in the chapter "[Loops]
 
 #### Example: Program, Which Converts Bulgarian Levs into Euro
 Let's have a look at another simple program that asks the user for an amount of money in levs (whole number), makes sure that what's been entered is a number, converts it into euro (by dividing it by the euro exchange rate) and prints the result. This is a program of 3 consecutive commands. 
-```javascript
+```JavaScript
 let myMoney = prompt("How much money do you want to convert:");
 
 let leva = parseInt(myMoney);
@@ -160,7 +160,7 @@ It's crucial to save our file from [**File**] &rarr; [**Save**], and don't forge
 
 ### Writing Program Code
 Writing code in **JavaScript** requires no additional preparation – creating a file with the **.js** extension is all we need. So let's directly proceed with writing our first line of code. We'll write the following command:
-```javascript
+```JavaScript
 console.log("Hello JavaScript!");
 ```
 Here's what our program should look like in **Visual Studio Code**:
@@ -181,7 +181,7 @@ To start the program we need to hit **[F5]**. The result will be displayed on th
 Notice we run the program with **[F5]**, not **[Ctrl + F5]**. If we use the latter, we won't be able to see the result because the program will execute very quickly and then disappear.
 
 Actually, the output from the program is the following text message:
-```javascript
+```JavaScript
 Hello JavaScript!
 ```
 
@@ -193,14 +193,14 @@ Testing the solutions to the problems in this book is completely automated via t
 The program we just wrote can be tested here: [https://judge.softuni.org/Contests/Practice/Index/926#0](https://judge.softuni.org/Contests/Practice/Index/926#0).
 
 Each piece of **JavaScript** we'd like to test in the **Judge System** needs to be surrounded by the following lines of code:
-````javascript
+````JavaScript
 function solve() {
     // we place our code here
 }
 ````
 
 In other words, if we'd like to test the program we just wrote in the system, it will look like this:
-````javascript
+````JavaScript
 function solve() {
     console.log("Hello JavaScript");
 }
@@ -234,7 +234,7 @@ Now that you've **learned how to execute programs**, you can test the sample not
 
 ## Typical Mistakes in JavaScript Programs
 One of the usual mistakes beginners make is mixing up **capital and lowercase letters**. However, they matter when we call commands and can impede proper functioning. Here's an example of such a mistake:
-```javascript
+```JavaScript
 function solve() {
     Console.Log("Hello JavaScript");
 }
@@ -242,7 +242,7 @@ function solve() {
 In the example above, `Console` is written incorrectly and the capital letter needs to be changed to lowercase. Is there another similar mistake in the same example?
 
 A missing **quotation mark** or **closing bracket** can also cause issues – the program will either **function improperly** or not execute at all. Such mistakes are hard to notice, especially with larger amounts of code. Here's an example:
-```javascript
+```JavaScript
 function solve() {
     console.log("Hello JavaScript);
 }
@@ -281,7 +281,7 @@ Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/926#1](https://judge.softuni.org/Contests/Practice/Index/926#1).
 
 **Note**: Don't forget to enclose your code in the `solve()` function:
-````javascript
+````JavaScript
 function solve() {
     // your code
 }
@@ -326,7 +326,7 @@ Write a **JavaScript** console program that **prints a triangle of 55 stars** on
 ```
 ### Hints and Guidelines
 Create a new **JavaScript file** and name it `triangleOf55Stars.js`. Inside we need to write code that prints our triangle, for example by using 10 print commands, like in the example below:
-```javascript
+```JavaScript
 console.log("*");
 console.log("**");
 …

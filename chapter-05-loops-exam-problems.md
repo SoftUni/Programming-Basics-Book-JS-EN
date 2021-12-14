@@ -127,7 +127,7 @@ This formula in the source code would look as:
 
 According to the task assignment, the percentages have to be **formatted with precision two digits after the decimal point**. Considering this, **`.toFixed(...)`** method should be added to the formula and the first variable would look like this:
 
-```javascript
+```JavaScript
 p1Percentage = (p1 / n * 100).toFixed(2);
 //Add the formula for the rest of the variables
 ```
@@ -224,17 +224,17 @@ We use a **`for` loop** to iterate through every Lily's birthday. If the leading
 
 Probably you will encounter some difficulties calculating the amount of birthday money  if you let the bonus money be added in the following way:
 
-```javascript 
+```JavaScript 
 moneyFromBirthdays += 10;
 ```
 The final result would be **10 x 5 = 50**, while our goal is to have **10 + 20 + 30 + 40 + 50 = 150**. The problem could be solved by declaring an additional variable(**`bonusMoney`**):
 
-```javascript
+```JavaScript
 bonusMoney += 10; 
 moneyFromBirthdays += bonusMoney;
 ```
 Or we can include the value of the variable **`i`**, which **counts the loops** and then divide it by **2**:
-```javascript
+```JavaScript
 moneyFromBirthdays += 10 * i/2;
 ```
 
@@ -588,7 +588,7 @@ We still need a**`for` loop** from **`0`** to **`countOfLoads - 1`**, to iterate
 
  * If the value of the variable **`tons`** is **less than 3**, increase the value of **`microbusTons`** by the value of **`tons`**:
  
-   ```javascript
+   ```JavaScript
    microbusTons += tons;
    ```
    

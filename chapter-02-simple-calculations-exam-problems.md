@@ -10,7 +10,7 @@ Before going to the tasks, we are going to revise the most important aspects of 
 
 We need to create a function, which will get one argument **`arg1`**. We will create a variable in the function, where we will store the number (for example **`num`**), combined with the method **`parseInt(…)`**, which converts a string to an integer:
 
-```javascript
+```JavaScript
 function readNumber(arg1) {
   let num = parseInt(arg1);
 }
@@ -20,7 +20,7 @@ function readNumber(arg1) {
 
 The same way we read an integer one, but this time we use the method **`parseFloat(…)`**:
 
-```javascript
+```JavaScript
 let num = parseFloat(arg1);
 ```
 
@@ -28,7 +28,7 @@ let num = parseFloat(arg1);
 
 A **placeholder** is an expression that is replaced with a particular value while printing an output. For this placeholder to work, we will have to use backticks **`` `…` ``**. The method **`console.log(…)`** supports printing a string based on a placeholder, where the first arguments, which have to be printed are written in the **`${…}`**:
 
-```javascript
+```JavaScript
 let firstName = "Ivan";
 let lastName = "Ivanov";
 let age = 19;
@@ -43,25 +43,25 @@ Let's revise the main arithmetic operators for simple calculations.
 
 ### Operator +
 
-```javascript
+```JavaScript
 let result = 3 + 5; // the result is 8
 ```
 
 ### Operator -
 
-```javascript
+```JavaScript
 let result = 3 - 5; // the result is -2
 ```
 
 ### Operator *
 
-```javascript
+```JavaScript
 let result = 3 * 5; // the result is 15
 ```
 
 ### Operator /
 
-```javascript
+```JavaScript
 let result2 = 5 / 2; // the result is 2.5 (floating-point division)
 ```
 
@@ -69,7 +69,7 @@ let result2 = 5 / 2; // the result is 2.5 (floating-point division)
 
 By using the operator `+` between string variables \(or between a string and a number\), **concatenation** is being performed \(combining strings\):
 
-```javascript
+```JavaScript
 let firstName = "Ivan";
 let lastName = "Ivanov";
 let age = 19;
@@ -137,11 +137,11 @@ The first thing we have to do is read the input from the console. We create a fu
 
 Let's move to the calculations. The special part here is that after having divided the numbers, we have to store only the whole part of the result in a variable.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><b>Search in Google!</b> Whenever we have an idea how to solve a particular problem, but we do not know how to write it in JavaScript or we are dealing with one that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
 </tr></table>
 
-In this case, we can try with the following search: "[***JavaScript gets the whole number part of double***](https://www.google.com/?q=javascript+get+whole+number+part+of+double)". One possible way is to use the method **`Math.trunc(…)`**. The code down below is blurred on purpose and it should be completed by the reader:
+In this case, we can try with the following search: "[***JavaScript gets the whole number part of double***](https://www.google.com/?q=JavaScript+get+whole+number+part+of+double)". One possible way is to use the method **`Math.trunc(…)`**. The code down below is blurred on purpose and it should be completed by the reader:
 
 ![](assets/chapter-2-2-images/01.Training-lab-04.png)
 

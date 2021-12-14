@@ -1,22 +1,24 @@
 {
+    "title": 
+        "Programming Basics with JavaScript",
+    "description": 
+        "Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises.",
+    "isbn": 
+        "978-619-00-1401-0",
+    "language":
+        "en",
     "plugins": [
         "ga",
         "meta",
         "anchors",
         "expandable-chapters-small",
         "katex",
-        "scripts"
+        "scripts",
+        "page-toc-button"
     ],
     "pluginsConfig": {
         "ga": {
             "token": "UA-11309924-34"
-        },
-        "meta": {
-            "name": "google-site-verification",
-            "content": "AWhQilrxdrfKBZwgDA4W3HgenyIiC8kw9ImVuYNSTAg"
-        },
-        "sitemap": {
-            "hostname": "https://js-book.softuni.org/"
         },
         "scripts": {
             "files": [

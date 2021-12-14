@@ -2,7 +2,7 @@
 
 "**Programming Basics**" is the official textbook for the course **Programming Basics"** in the Software University (SoftUni): [https://softuni.org](https://softuni.org). The book introduces readers with writing **programming code** at a beginner's level (basic coding skills), working with **development environment** (IDE), using **variables** and data, **operators** and **expressions**, working with the **console** (reading input data and printing output), usage of **conditional statements** (**`if`**, **`if-else`**, **`switch-case`**), **loops** (**`for`**, **`while`**, **`do-while`**) and working with **functions** (declaring and calling functions, passing parameters, and returning values). The book uses **JavaScript** programming language and **Visual Studio Code** development environment. The covered training material provides basic preparation for a deeper study of programming and prepares readers for the entrance exam in SoftUni.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>This book only gives you <b>the first steps to programming</b>. It covers very basic skills that you must develop for years, in order to reach a high enough level and start working as a programmer.</td>
 </tr></table>
 
@@ -47,7 +47,7 @@ We advise the reader, as a minimum, **to try all the examples from the book**, t
 **Solve all the tasks in the book**, because programming is learned by practice! The tasks after each topic are carefully selected to cover in-depth the covered learning
 material. The purpose of solving all tasks from all the topics covered is to give **complete writing skills to a program code** at the beginners level (as is the purpose of this book). During the courses in **SoftUni** we purposefully **focus on practice** and problem-solving, and in most courses code writing occupies over 70% of the entire course.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><b>Solve all the exercises in the book</b>. Otherwise you won't learn anything! Programming is learned by writing a lot of code and solving thousands of problems!</td></tr></table> 
 
 ## About Software University(SoftUni)
@@ -243,9 +243,9 @@ The book is distributed **for free** in electronic format under an open CC-BY-NC
 
 The book is published and distributed **on paper** by SoftUni and a paper copy can be purchased from the SoftUni reception (see https://softuni.bg/contacts).
 
-**The source code** of the book can be found on GitHub: https://github.com/SoftUni/Programming-Basics-Book-JS-BG.
+**The source code** of the book can be found on GitHub: https://github.com/SoftUni/Programming-Basics-Book-JS-EN.
  
-International Standard Book Number ISBN: **978-619-00-0702-9**.
+International Standard Book Number (ISBN): **978-619-00-1401-0**.
 
 ## Bug reports
 If you find **bugs**, inaccuracies or defects in the book, you can report them in the official tracker of the project:

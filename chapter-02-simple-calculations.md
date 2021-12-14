@@ -38,7 +38,7 @@ Here are some examples of data types and values for them:
 
 For printing text, number, or another result on the screen, it's necessary to call the built-in method **`console.log()`**. With it we can print both the value of a variable and directly text or number:
 
-```javascript
+```JavaScript
 console.log(42); // prints number
 
 console.log('Hello!'); // prints string
@@ -51,7 +51,7 @@ console.log(msg); // prints a value of variable
 
 For reading a user input as a **number** is necessary to **define an argument** of our function:
 
-```javascript
+```JavaScript
 function sum([arg1, arg2]) {
     let a = parseInt(arg1);
     let b = parseInt(arg2);
@@ -65,7 +65,7 @@ Let's note that the arguments **`arg1`** and **`arg2`** can be a different data 
 
 For example, let's look at the following function which reads an integer from the console, multiplies it by itself (squares it), and prints the result from the multiplication. That's how we can calculate square area by side length:
 
-```javascript
+```JavaScript
 function calculateSquareArea([arg1]) {
     let a = parseInt(arg1);
     let area = a * a;
@@ -126,7 +126,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#
 
 To read user input as **floating-point number** it's necessary again to **define an argument** to our function. The syntax is similar to reading an integer, but here we have to use the function **`parseFloat(...)`**:
 
-```javascript
+```JavaScript
 function sum([arg1, arg2]) {
     let a = parseFloat(arg1);
     let b = parseFloat(arg2);
@@ -138,7 +138,7 @@ function sum([arg1, arg2]) {
 
 Let's write a function that reads a floating-point number in inches and converts it to centimeters::
 
-```javascript
+```JavaScript
 function convertInchesToCentimeters([arg1]) {
     let inches = parseFloat(arg1);
     let centimeters = inches * 2.54;
@@ -148,7 +148,7 @@ function convertInchesToCentimeters([arg1]) {
 
 Let's call the function and make sure that when passing a value in inches, we get the correct result in centimeters:
 
-```javascript
+```JavaScript
 convertInchesToCentimeters([5]); // Centimeters = 12.7
 ```
 
@@ -159,7 +159,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#
 
 Same with other data types, to read a **string** it's necessary to **define an argument** to our function and after that to assign it to a variable:
 
-```javascript
+```JavaScript
 function print([arg1]) {
     let text = arg1;
     ...
@@ -170,7 +170,7 @@ function print([arg1]) {
 
 Let's write a program that asks the user for their name and salutes them with the text "**Hello, (name)**".
 
-```javascript  
+```JavaScript  
 function sayHello([arg1]) {
     let name = arg1;
     console.log(`Hello, ${name}!`);
@@ -179,7 +179,7 @@ function sayHello([arg1]) {
 
 In this case, the expression **`${name}`** will be replaced with **the value of the variable `name`**. If we call the function with the name "Ivan", that will be the result:
 
-```javascript  
+```JavaScript  
 sayHello(['Ivan']); // Hello, Ivan!
 ```
 
@@ -192,21 +192,21 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#
 
 When printing text, numbers and other data **we can concatenate them** by using templates **``` `variable = ${variable}` ```**. In programming these templates are called **placeholders**. Pay attention: We need to use italicized apostrophes <code><strong>`</strong></code> (**backticks**) instead of normal quotes to recognize the template:
 
-```javascript
+```JavaScript
 function printInfo([firstName, lastName, age, town]) {
     console.log(`You are ${firstName} ${lastName}, a ${age}-years old person from ${town}.`);
 }
 ```
 We call the function with test parameters again and make sure that it works:
 
-```javascript
+```JavaScript
 printInfo(['Ivan', 'Ivanov', 20, 'Sofia']);
 ```
 Except for variables, we can make simple calculations in the templates.
 
 The same variable can be used as a template more than once. Here's an example:
 
-```javascript
+```JavaScript
 let a = 1;
 console.log(`${a} + ${a} = ${a + a}`);
 ```
@@ -228,7 +228,7 @@ Let's examine the basic arithmetic operations in programming.
 
 We can sum numbers using the operator **`+`**:
 
-```javascript
+```JavaScript
 let a = 5;
 let b = 7;
 let sum = a + b; // the result is 12
@@ -238,7 +238,7 @@ let sum = a + b; // the result is 12
 
 Subtracting numbers is done using the **`-`** operator:
 
-```javascript
+```JavaScript
 function substractNumbers([arg1, arg2]) {
     let a = parseInt(a);
     let b = parseInt(b);
@@ -248,7 +248,7 @@ function substractNumbers([arg1, arg2]) {
 ```
 
 Let we check the result of the execution of this program (with numbers 10 and 3):
-```javascript
+```JavaScript
 substractNumbers([10, 3]); // 7
 ```
 
@@ -256,7 +256,7 @@ substractNumbers([10, 3]); // 7
 
 For multiplication of numbers we use the **`*`** operator:
 
-```javascript
+```JavaScript
 let a = 5;
 let b = 7;
 let product = a * b; // 35
@@ -270,7 +270,7 @@ Dividing numbers is done using the **`/`** operator.
 
 Here are a few examples with the division operator:
 
-```javascript
+```JavaScript
 console.log(10 / 2.5); // Result: 4
 console.log(10 / 4);   // Result: 2.5
 console.log(10 / 6);   // Result: 1.6666666666666667
@@ -285,7 +285,7 @@ console.log(0 / 0);   // Result: NaN (Not a Number), i.e. the result
 
 Besides summing up numbers, the operator **`+`** is also used for joining pieces of text (concatenation of two strings one after another). In programming, joining two pieces of text is called "**concatenation**". Here is how we can concatenate a text with a number by the **`+`** operator:
 
-```javascript
+```JavaScript
 let firstName = "Maria";
 let lastName = "Ivanova";
 let age = 19;
@@ -295,7 +295,7 @@ console.log(str);  // Maria Ivanova @ 19
 
 Here is another example:
 
-```javascript
+```JavaScript
 let a = 1.5;
 let b = 2.5;
 let sum = "The sum is: " + a + b;
@@ -304,7 +304,7 @@ console.log(sum);  // The sum is: 1.52.5
 
 Do you notice anything strange? Maybe you expected the numbers ** `a` ** and **` b` ** to sum? The concatenation works from left to right and the above result is correct. If we want to sum the numbers, we will have to use **brackets** to change the order of operations:
 
-```javascript
+```JavaScript
 let a = 1.5;
 let b = 2.5;
 let sum = "The sum is: " + (a + b);
@@ -315,7 +315,7 @@ console.log(sum);  // The sum is: 4
 
 In programming, we can calculate **numerical expressions**, for example:
 
-```javascript
+```JavaScript
 let expr = (3 + 5) * (4 – 2);
 ```
 
@@ -325,7 +325,7 @@ The standard rule for priorities of arithmetic operations is applied: **multiply
 
 Let's  write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the **trapezoid area** by the standard math formula:
 
-```javascript
+```JavaScript
 function printTrapezoidArea([arg1, arg2, arg3]) {
     let b1 = parseFloat(arg1);
     let b2 = parseFloat(arg2);
@@ -336,7 +336,7 @@ function printTrapezoidArea([arg1, arg2, arg3]) {
 ```
 
 Because we want our function to work with both integers and floating numbers, we use **`parseFloat()`**. If we start the function and enter values for sides: **`3`**, **`4`**, and **`5`**, we will obtain the following result::
-```javascript
+```JavaScript
 printTrapezoidArea([3, 4, 5]); // Trapezoid area = 17.5
 ```
 
@@ -352,27 +352,27 @@ Test your solution here:
 Sometimes when we work with floating numbers, it's necessary to bring them to integers. This bringing is named **rounding**. The programming language **JavaScript** provides us with several methods for rounding numbers:
 
 * **`Math.ceil(…)`** - **rounding up** to next (greater) integer:
-```javascript
+```JavaScript
 let up = Math.ceil(45.15); // up = 46
 ```
 * **`Math.floor(…)`** - **rounding down** to previous (less) integer:
-```javascript
+```JavaScript
 let down = Math.floor(45.67);	// down = 45
 ```
 
 * **`Math.trunc(…)`** - **cutting** the decimal places:
-```javascript
+```JavaScript
 let trunc = Math.trunc(45.67); // trunc = 45
 ```
 
 * **`Math.round(…)`** - rounding is done as a **basic rule for rounding numbers** - if the decimal part is less than 5, rounding is to the previous number and if it's greater than 5 - to the next:
-```javascript
+```JavaScript
 Math.round(5.439); // 5
 Math.round(5.539); // 6
 ```
 
 * **`.toFixed([number of characters after the decimal point])`** - rounding to **the closest** number:
-```javascript
+```JavaScript
 (123.456).toFixed(2);	 // 123.46
 (123).toFixed(2);	     // 123.00
 (123.456).toFixed(0);	 // 123
@@ -388,7 +388,7 @@ Formulas:
 - Perimeter = 2 \* π \* r
 - π ≈ 3.14159265358979323846…
 
-```javascript
+```JavaScript
 function calculateCircleAreaAndPerimeter([arg1]) {
     let r = parseInt(arg1);
     console.log("Area = " + Math.PI * r * r); 
@@ -398,7 +398,7 @@ function calculateCircleAreaAndPerimeter([arg1]) {
 ```
 Let's call the function with **radius `r = 10`**:
 
-```javascript
+```JavaScript
 calculateCircleAreaAndPerimeter([10])
 ```
 
@@ -415,11 +415,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#
 
 The rectangle is given with the **coordinates of two of its opposite angles**. Calculate its **area and perimeter** :
 
-<img alt="rectangleArea" src="/assets/chapter-2-1-images/00.Rectangle-area-01.png" width="250" height="200" />
+<img alt="rectangleArea" src="/assets/chapter-2-1-images/00.Rectangle-area-01.PNG" width="250" height="200" />
 
 In this problem, we have to consider that if we subtract the smaller **`x`**  from the bigger **`x`** , we will obtain the length of the rectangle. Identically, if we subtract the smaller **`y`** from the bigger **`y`**, , we will obtain the height of the rectangle. What is left is to multiply both sides. Here is an example of an implementation of the described logic:
 
-```javascript
+```JavaScript
 function calculateRectangleArea([arg1, arg2, arg3, arg4]) {
     let x1 = parseFloat(arg1);
     let y1 = parseFloat(arg2);
@@ -439,7 +439,7 @@ We use the method **`Math.max(x1, x2)`** to find the higher value from **`x1`** 
 
 Let we call the function with testing values from the coordinate system:
 
-```javascript
+```JavaScript
 calculateRectangleArea([60, 20, 10, 50]); // 1500
                                           // 160
 ```
@@ -793,7 +793,7 @@ Note that each HTML page must have a **specific structure**. For example, always
 
 3. We have the structure of the page, it remains to add a **JavaScript** file with the logic itself. We create a new file and name it **converter.js**
 
-```javascript
+```JavaScript
 function eurConverter() {
     let bgn = document.getElementById("bgn").value;
     let eur = (bgn / 1.95583).toFixed(2);
@@ -806,7 +806,7 @@ function eurConverter() {
 First, we add the following line just below the **`title`** tag, through which the connection between the files is made **index.html** and **converter.js**:
    
 ```html
- <script src="converter.js" type="text/javascript"></script>
+ <script src="converter.js" type="text/JavaScript"></script>
 ```
 
 And second, we find and replace the **`input`** field with the type **`button`** with the following code. In this way we set **when clicking** on the button [**Convert!**] to call the function **`eurConverter()`**:
@@ -912,7 +912,7 @@ The file **index.html** must look like this:
 <head>
     <meta charset="utf-8" />
     <title>Catch the mouse!</title>
-    <script src="app.js" type="text/javascript"></script>
+    <script src="app.js" type="text/JavaScript"></script>
 </head>
 <body>
     <img id="image" style="position:absolute;top:30%;left:30%; width:10%; height:auto; " src="images/mouse.jpg" />
@@ -923,7 +923,7 @@ The file **index.html** must look like this:
 
 The file **app.js** must look like this:
 
-```javascript
+```JavaScript
 function chaseMouse() {
     let img = document.getElementById("image");
     img.style.position = "absolute";

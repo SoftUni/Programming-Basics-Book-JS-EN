@@ -4,7 +4,7 @@ The previous chapter introduced you to **nested conditions** in **JavaScript**. 
 
 ## Nested Conditions
 
-```javascript
+```JavaScript
 if (condition1) {
     if (condition2)
         // body; 
@@ -13,7 +13,7 @@ if (condition1) {
 }
 ```
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Remember that it is not a good practice to write <strong>deeply nested conditional statements</strong> (with more than three levels of nesting). Avoid nesting of more than three conditional statements inside one another. This complicates the code and makes its reading and understanding difficult.</td>
 </tr></table>
 
@@ -21,7 +21,7 @@ if (condition1) {
 
 When the program operation depends on the value of a variable, instead of doing consecutive checks with multiple **`if-else`** blocks, we can use the **`switch-case`** conditional statement.
 
-```javascript
+```JavaScript
 switch (selector) {
     case value1:
         statement;
@@ -90,7 +90,7 @@ If the student arrives with more than one minute difference compared to the exam
 
 ### Hints and Guidelines
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>It is recommended <strong>to read the assignment a few times,</strong> take notes and sketch the examples while thinking before you start with the code.</td></tr></table>
 
 #### Processing the Input Data
@@ -146,7 +146,7 @@ Finally, what remains is to print the result on the console. According to the re
 
 Actually, for the task, printing the result **on the console** can be done at a much earlier stage – during the calculations. This, however, is not a very good practice. **Why?** Let's examine the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a **file** or displayed as a **web application**. Then, how many places in the code you will make changes at, due to such a correction? Are you sure you won't miss some places?
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Always consider the code that contains logical calculations as a separate part, different from the part that processes the input and output data. It has to be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
 ### Testing in the Judge System
@@ -210,7 +210,7 @@ While reading carefully the requirements, we understand that we expect **two** p
 
 ![](assets/chapter-4-2-images/02.Trip-01.png)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Always take into consideration what <b>value type</b> is passed in the input data, as well as what type these need to be converted to, for the program conditions to work properly!</td>
 </tr></table>
 

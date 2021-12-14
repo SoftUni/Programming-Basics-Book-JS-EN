@@ -20,7 +20,7 @@ The rules that are used for writing **JavaScipt** can be found in many sources. 
 
 For code formatting **curly braces `{}`** to be opened on the same line and to be closed just below the construction, to which they refer, as in the example below.
 
-```javascript
+```JavaScript
 if (someCondition) {
     console.log("Inside the if statement");
 }
@@ -28,7 +28,7 @@ if (someCondition) {
 
 You can see that the command **`console.log(…)`** in the example is **offset by 4 white spaces(one tab)**, which is also recommended by the documentation. If given construction with curly brackets is offset by one tab, then **the curly brackets `{}`** must be in  **the beginning of the construction**, as in the example below:
 
-```javascript
+```JavaScript
 if (someCondition) {
    if (anotherCondition) {
        console.log("Inside the if statement");
@@ -38,7 +38,7 @@ if (someCondition) {
 
 This is an example for **badly formatted code** according to the accepted conventions for writing code in **JavaScript**:
    
-```javascript
+```JavaScript
 if(someCondition)
 {
 console.log("Inside the if statement");}
@@ -49,13 +49,13 @@ The first thing we can notice is the **curly braces `{}`**. The first (opening) 
 The same rule applies to **`for` loops, as well as any other constructions with curly braces `{}`**. Here are some more examples:
 
 **Correct:**
-```javascript
+```JavaScript
 for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 ```
 **Wrong:**
-```javascript
+```JavaScript
 for(let i=0;i<5;i++)
 {
 console.log(i);
@@ -69,7 +69,7 @@ For your comfort, there are **keyboard shortcuts in Visual Studio Code**, which 
 
 Let's use **the wrongly formatted example** from earlier:
 
-```javascript
+```JavaScript
 for(let i=0;i<5;i++)
 {
 console.log(i);
@@ -81,7 +81,7 @@ However, automatic formatting does not affect the naming of our variables, which
 * We must be aware of uppercase and lowercase letters because **JavaScript makes a difference** between them. or example **`age`** and **`Age`** are different variables.
 * Variable names **cannot** match a JavaScript keyword, for example, **`let`** is an invalid variable name. The official or etc. keyword phrases are just words that are **part of the syntax of JavaScript** and for this reason, they are reserved and cannot be used as names of our variables. Through these words, we have the opportunity to build our programs. As an example of such words can be given the already used: **`for`**, **`while`**, **`do`**, **`if`**, **`else`**, **`let`**, etc. You can see a full list of these reserved phrases here: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords)
 
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Although using the symbol <code><b>_</b></code> in the manes of variables is allowed, in JavaScript it is not recommended and is considered a bad style of naming.</td>
 </tr></table>
 
@@ -144,7 +144,7 @@ In this section, we are going to show you how to **make your own code snippet**.
 
 ![](assets/chapter-11-images/01.Code-snippet-02.png) 
 
-**We choose JavaScript** from the drop-down menu and a window with a name will open **javascript.json**. This extension **json** is a special format for saving data, which is imposed in the ways of data transfer and storage. In addition, the **json** format can be used in our programs, as we will discuss later. The file looks like this:
+**We choose JavaScript** from the drop-down menu and a window with a name will open **JavaScript.json**. This extension **json** is a special format for saving data, which is imposed in the ways of data transfer and storage. In addition, the **json** format can be used in our programs, as we will discuss later. The file looks like this:
 
 ![](assets/chapter-11-images/01.Code-snippet-03.png) 
 
@@ -183,7 +183,7 @@ Debugging plays an important role in the process of creating software, which is 
 
 In order to demonstrate how to use the debugger, we will use the following program:
 
-```javascript
+```JavaScript
 for (let i = 0; i < 100; i++) {
     console.log(i);
 }
@@ -214,7 +214,7 @@ In case we need to round numbers we can use one of the following methods:
 
  * **`Math.round(…)`** - accepts 1 parameter - **number, which we want to round**. Rounding is performed according to the basic rule of rounding - if the decimal part is less than 5, rounding is down and vice versa, if it is greater than 5 - up:
 
-```javascript
+```JavaScript
 let number = 5.439;
 console.log(Math.round(number));
 // This will print on the console "5"
@@ -226,7 +226,7 @@ console.log(Math.round(secondNumber));
 
  * **`Math.floor(…)`** - in case we want the rounding always to be **down to the previous integer**. For example, if we have the number 5.99 and use ** `Math.floor (5.99)` **, we get the number **5**:
 
-```javascript
+```JavaScript
 let numberToFloor = 5.99;
 console.log(Math.floor(numberToFloor));
 // This will print on the console 5
@@ -235,7 +235,7 @@ console.log(Math.floor(numberToFloor));
  * **`Math.ceil(…)`** - in case we want the rounding always to be  **up to the previous integer**. For example, if we have the number 5.13 and use **`Math.ceil(5.13)`**, we
  * will get the number **6**:
 
-```javascript
+```JavaScript
 let numberToCeil = 5.13;
 console.log(Math.floor(numberToCeil));
 // This will print on the console 6
@@ -243,7 +243,7 @@ console.log(Math.floor(numberToCeil));
 
  * **`Math.trunc(…)`** - in case we want to **remove the fractional part**. For example, if we have the number 2.63 and use **`Math.trunc(2.63)`**, we will get the number **2**:
 
-```javascript
+```JavaScript
 let numberToTrunc = 2.63;
 console.log(Math.floor(numberToTrunc));
 // This will print on the console 2
@@ -253,7 +253,7 @@ console.log(Math.floor(numberToTrunc));
 
 The operators **`==`** and **`!=`** make **automatic conversion** of the compared value or variable, while the operators  **`===`** and **`!==`** does not make such a conversion and if both values are not of the same type - the result is **`false`**. They (**`==`** and **`!=`**) make a comparison of **value and type**, which is more accurate and even faster. Let's look at the following example to clarify what is meant by data **type**:
 
-```javascript
+```JavaScript
 [10] === 10    // false
 [10] == 10    // true
 "10" == 10     // true
@@ -266,7 +266,7 @@ The operators **`==`** and **`!=`** make **automatic conversion** of the compare
 
 We see how the number **10** can be written in our programs in different ways. Written in this way **`[10]`** is an **array** of one number. In short, arrays are **multiple values** stored to a variable. For example:
 
-```javascript
+```JavaScript
 let array = [10, 20, 30, 40];
 // This is a variable of type array
 ```
@@ -284,7 +284,7 @@ The conditional **`if` statement** contains the following elements:
 * **Body** of the conditonal construction
 * Optional: **`else` clause**
 
-```javascript
+```JavaScript
 if (condition) {
     // body
 }
@@ -304,7 +304,7 @@ For a **`for` loop** we need a couple of things:
 * Updating statement (**`i++`**).
 * Body of the loop.
 
-```javascript
+```JavaScript
 for (let i = 0; i <= 10; i++;) {
     // body
 }
@@ -318,7 +318,7 @@ All **Truthy** values used in the conditional statement **`if`** will give a pos
 
 For some of them it seems logical to give a positive result, but for others not so much.
 
-```javascript
+```JavaScript
 //Truthy
 if (true) {}       //true
 if ({}) {}         //true
@@ -334,7 +334,7 @@ if (-Infinity) {}  //true
 ```
 Conversely, all **Falsy** values will give a negative result and the program will not enter the body of the conditional statement.
 
-```javascript
+```JavaScript
 //Falsy
 if (false) {}       //false
 if (null) {}        //false

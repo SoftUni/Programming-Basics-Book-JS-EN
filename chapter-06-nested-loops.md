@@ -60,7 +60,7 @@ A **nested loop** is a construction where **the body of one loop** (the outer on
 
 Here is an **example** that illustrates nested loops. The aim is again to print a rectangle made of `n` \*_ _`n` stars, in which for each row a loop iterates from **1** to `n`, and for each column a nested loop is executed from **1** to \*`n`:
 
-```javascript
+```JavaScript
 function drawSquare(n) {
     for (let i = 1; i <= n; i++) {
         let stars = "";
@@ -265,7 +265,7 @@ We gave **`n`** as a parameter to our function:
 
 ![](/assets/chapter-6-1-images/09.House-02.png)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><b>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into <b><code>Number</code></b>type, because it is said that we will be given valid integers. If you are making more complex programs it is a good practice to check the data. What will happen if instead of the character "A" the user inputs a number?</td>
 </tr></table>
 
@@ -282,7 +282,7 @@ Calculate the length of **the roof**. It equals half of **`n`**. Write the resul
 It is important to note that when **`n`** is an odd number, the length of the roof is one row more than that of the **base**. In **JavaScript** language, when you divide two numbers with a remainder, the result will be a decimal number
  Example:
 
-```javascript
+```JavaScript
     let result = 3 / 2; // result 1.5
 ```
 
@@ -382,7 +382,7 @@ We are ready with the upper part.
 
 Printing the lower part is very similar to that of the upper part. The difference is that instead of decreasing **`leftRight`** with 1 at the end of the loop, we will increase **`leftRight`** with 1 at the beginning of the loop. Also, **the loop will be from 0 to `(n - 1) / 2`**.   
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><b>Repeating a code is considered bad practice</b> because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond) at a few more places and we decide to change it. For this, we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2, or 3 times but tens of times. A way to overcome this problem is to use <b>functions</b>. You can look for additional information for functions on the Internet or look at  <a href="chapter-10-functions.md">Chapter “10” (Functions)</a>.</td>
 </tr></table>
 
@@ -397,13 +397,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#
 
 We learned how to use the **`repeat(...)`** method which constructs and returns a new object from type **`String`**:
 
-```javascript
+```JavaScript
 let foo = "*".repeat(10);
 ```
 
 We learned how to draw figures using nested **`for`** loops:
 
-```javascript
+```JavaScript
 for (let i = 1; i <= n; i++) {
     let stars = "";
 
@@ -433,7 +433,7 @@ We create an empty folder in our file system with the name "**ratings**". In the
 - **script.js**
 - **images** (folder)
 
-Now we add **images with stars** (they are part of the resources of this lab which can be downloaded from [here](https://github.com/SoftUni/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-6-1-assets)). We copy them from windows explorer and paste them into the folder **images** using copy/paste.
+Now we add **images with stars** (they are part of the resources of this lab which can be downloaded from [here](https://github.com/SoftUni/Programming-Basics-Book-JS-EN/tree/master/assets/chapter-6-1-assets)). We copy them from windows explorer and paste them into the folder **images** using copy/paste.
 
 We open **index.html** and add the following code:
 
@@ -443,7 +443,7 @@ This code creates one input field **`input-rating`**, in which the user can add 
 
 We add the function **`drawRating()`** inside the file **script.js**, which has the following code:
 
-```javascript
+```JavaScript
 /**
  * drawRating, draws HTML, which is needed for the visualization of the stars
  * @param {Number} rating
@@ -467,13 +467,13 @@ function drawRating(rating) {
 
     // build of HTML
     for (let i = 0; i < fullStars; i++) {
-        html += '<img src="images/full-star.png">';
+        html += '<img src="images/full-star.PNG">';
     }
     for (let i = 0; i < halfStars; i++) {
-        html += '<img src="images/half-star.png">';
+        html += '<img src="images/half-star.PNG">';
     }
     for (let i = 0; i < emptyStars; i++) {
-        html += '<img src="images/empty-star.png">';
+        html += '<img src="images/empty-star.PNG">';
     }
 
     // return of created HTML
@@ -483,7 +483,7 @@ function drawRating(rating) {
 The code above takes the number **`rating`**, makes some calculations to find the number of **empty stars** and the number of **half-full stars**, after which it generates an HTML code, which orders a few pictures of stars one after the other so that it can make the rating picture from them. The ready HTML code is returned as a result of the function and it is ready for further use. Up to this moment, the result from this point can't be used because we can't connect it to the button. We create a function named 
 **`drawHandler()`** with the following code:
 
-```javascript
+```JavaScript
 /**
 * drawHandler, a function that runs, when the user clicks on the button Draw
  * @return {Void}
@@ -515,7 +515,7 @@ Our function **`drawHandler()`** makes several things:
 
 We need one more function that will combine the above 2 functions and connect them to the HTML elements. This function is called **`appInit()`**. The name hints that its role will be to initialize our application. We add the following code in our function **`appInit()`**:
 
-```javascript
+```JavaScript
 /**
  * appInit is responsible for our initial run of the application
  * @return {Void}
@@ -531,18 +531,18 @@ function appInit() {
     drawHandler();
 }
 ```
-After we have all the needed functions it's time to start our application. Keep in mind that **script.js** is added at the end of our file (after the closing tag of **`</body>`**). This is a **good practice** and gives us faster loading of the **DOM** tree. This allows us to run the following Javascript code, which uses HTML elements. Because of these conditions, we can be sure that all conditions are already loaded inside the memory of our browser.
+After we have all the needed functions it's time to start our application. Keep in mind that **script.js** is added at the end of our file (after the closing tag of **`</body>`**). This is a **good practice** and gives us faster loading of the **DOM** tree. This allows us to run the following JavaScript code, which uses HTML elements. Because of these conditions, we can be sure that all conditions are already loaded inside the memory of our browser.
 
 However, instead of calling directly **`appInit()`** at the end of the file, we will use one more **good practice**:
 
-```javascript
+```JavaScript
 /**
  * Stars the application asynchronous using "event listener".
  * Listens for "DOMContentLoaded".
  */
 document.addEventListener("DOMContentLoaded", appInit);
 ```
-The event **`DOMContentLoaded`** confirms that the browser has finished will all actions connected to the creation of the **`DOM`** tree. Adding to it using **`addEventListener(...)`** provides it with a correct run of our Javascript program.
+The event **`DOMContentLoaded`** confirms that the browser has finished will all actions connected to the creation of the **`DOM`** tree. Adding to it using **`addEventListener(...)`** provides it with a correct run of our JavaScript program.
 
 When the browser is ready, it will run our starting function **`appInit()`**. The result from our function is:
 
