@@ -4,7 +4,7 @@
 
 The free book "**Programming Basics with JavaScript**" introduces the readers to writing **programming code** at a beginner level (variables and data, conditional statements, loops and functions) using the **JavaScript** programming language.
 
-<a href="#"><img src="/assets/JavaScript-Programming-Basics-Book-Cover.PNG" alt="Book Programming Basics with JavaScript - Cover" class="readme-book-cover-image" /></a>
+<a href="#"><img src="/assets/JavaScript-Programming-Basics-Book-Cover.png" alt="Book Programming Basics with JavaScript - Cover" class="readme-book-cover-image" /></a>
 
 * [Preface](chapter-00-preface.md)
 * [1. First Steps in Programming](chapter-01-first-steps-in-programming.md)
