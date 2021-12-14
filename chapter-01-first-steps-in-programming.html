@@ -477,7 +477,7 @@ The program is written in text format and the text is called <strong>source code
 <p>Let&apos;s start with a very basic example of a short <strong>JavaScript program</strong> which we&apos;ll run directly in your web browser (it supports JS without the need to install additional software).</p>
 <h4 id="example-a-program-which-notifies-the-user"><a name="example-a-program-which-notifies-the-user" class="plugin-anchor" href="#example-a-program-which-notifies-the-user"><i class="fa fa-link" aria-hidden="true"></i></a>Example: a Program, Which Notifies the User</h4>
 <p>Our first program will consist of a single <strong>JavaScript command</strong>, which notifies the user they&apos;ve won 1 000 000 dollars, as is often the case when you&apos;re browsing through a website with a lot of spam and adverts:</p>
-<pre><code class="lang-javascript">alert(<span class="hljs-string">&quot;Congratulations!!! You have just won $1 000 000!&quot;</span>);
+<pre><code class="lang-JavaScript">alert(<span class="hljs-string">&quot;Congratulations!!! You have just won $1 000 000!&quot;</span>);
 </code></pre>
 <p>We can run our program by using our browser&apos;s <strong>JavaScript console</strong>. In <strong>Chrome</strong>, for example, we can pull that up by pressing <strong>[F12]</strong> and we can then write our code in the <strong>[Console]</strong> window.</p>
 <p><img src="assets/console-js-alert.png" alt=""></p>
@@ -485,7 +485,7 @@ The program is written in text format and the text is called <strong>source code
 <p><img src="assets/js-alert-modal-popop.png" alt=""></p>
 <h4 id="example-a-program-which-spams-the-user-with-notifications"><a name="example-a-program-which-spams-the-user-with-notifications" class="plugin-anchor" href="#example-a-program-which-spams-the-user-with-notifications"><i class="fa fa-link" aria-hidden="true"></i></a>Example: a Program, Which Spams the User with Notifications</h4>
 <p>We can increase the previous program&apos;s complexity by creating numerous command which repeat in sequence and notify the user they&apos;ve won the lottery:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i += <span class="hljs-number">1</span>) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i += <span class="hljs-number">1</span>) {
     alert(<span class="hljs-string">&quot;Congratulations!!! You have just won $1 000 000!&quot;</span>);
 }
 </code></pre>
@@ -494,7 +494,7 @@ The program is written in text format and the text is called <strong>source code
 We will learn how iterations (loops) in programming work in the chapter &quot;<a href="chapter-05-loops.html">Loops</a>&quot;, but for now, let&apos;s assume that they just repeat a command many times.</p>
 <h4 id="example-program-which-converts-bulgarian-levs-into-euro"><a name="example-program-which-converts-bulgarian-levs-into-euro" class="plugin-anchor" href="#example-program-which-converts-bulgarian-levs-into-euro"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Program, Which Converts Bulgarian Levs into Euro</h4>
 <p>Let&apos;s have a look at another simple program that asks the user for an amount of money in levs (whole number), makes sure that what&apos;s been entered is a number, converts it into euro (by dividing it by the euro exchange rate) and prints the result. This is a program of 3 consecutive commands. </p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> myMoney = prompt(<span class="hljs-string">&quot;How much money do you want to convert:&quot;</span>);
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> myMoney = prompt(<span class="hljs-string">&quot;How much money do you want to convert:&quot;</span>);
 
 <span class="hljs-keyword">let</span> leva = <span class="hljs-built_in">parseInt</span>(myMoney);
 <span class="hljs-keyword">let</span> euro = leva / <span class="hljs-number">1.95583</span>;
@@ -549,7 +549,7 @@ code. Here&apos;s an example:</p>
 <p><img src="assets/chapter-1-images/00.Visual-studio-06.png" alt=""></p>
 <h3 id="writing-program-code"><a name="writing-program-code" class="plugin-anchor" href="#writing-program-code"><i class="fa fa-link" aria-hidden="true"></i></a>Writing Program Code</h3>
 <p>Writing code in <strong>JavaScript</strong> requires no additional preparation &#x2013; creating a file with the <strong>.js</strong> extension is all we need. So let&apos;s directly proceed with writing our first line of code. We&apos;ll write the following command:</p>
-<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Hello JavaScript!&quot;</span>);
+<pre><code class="lang-JavaScript"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Hello JavaScript!&quot;</span>);
 </code></pre>
 <p>Here&apos;s what our program should look like in <strong>Visual Studio Code</strong>:</p>
 <p><img src="assets/chapter-1-images/01.Hello-js-01.png" alt=""></p>
@@ -561,19 +561,19 @@ code. Here&apos;s an example:</p>
 <p><img src="assets/chapter-1-images/01.Hello-js-02.png" alt=""></p>
 <p>Notice we run the program with <strong>[F5]</strong>, not <strong>[Ctrl + F5]</strong>. If we use the latter, we won&apos;t be able to see the result because the program will execute very quickly and then disappear.</p>
 <p>Actually, the output from the program is the following text message:</p>
-<pre><code class="lang-javascript">Hello JavaScript!
+<pre><code class="lang-JavaScript">Hello JavaScript!
 </code></pre>
 <p>The &quot;<strong>Debugging with inspector protocol . . .</strong>&quot; and  <strong>Debugger listening on...</strong> messages are displayed as additional information at the very top of Visual Studio Code&apos;s console after the program starts executing. This gives us additional information about the execution which, for the time being, we will ignore. </p>
 <h3 id="testing-our-program-in-the-judge-system"><a name="testing-our-program-in-the-judge-system" class="plugin-anchor" href="#testing-our-program-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing Our Program in the Judge System</h3>
 <p>Testing the solutions to the problems in this book is completely automated via the <strong>Judge System&apos;s website</strong>: <a href="https://judge.softuni.org/" target="_blank">https://judge.softuni.org/</a>. The solutions are judged in real-time by the system. Each solution goes through a series of tests that are hidden; every test that passes grants the user certain points.</p>
 <p>The program we just wrote can be tested here: <a href="https://judge.softuni.org/Contests/Practice/Index/926#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/926#0</a>.</p>
 <p>Each piece of <strong>JavaScript</strong> we&apos;d like to test in the <strong>Judge System</strong> needs to be surrounded by the following lines of code:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">solve</span>(<span class="hljs-params"></span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">solve</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-comment">// we place our code here</span>
 }
 </code></pre>
 <p>In other words, if we&apos;d like to test the program we just wrote in the system, it will look like this:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">solve</span>(<span class="hljs-params"></span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">solve</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Hello JavaScript&quot;</span>);
 }
 </code></pre>
@@ -599,13 +599,13 @@ code. Here&apos;s an example:</p>
 <p>Now that you&apos;ve <strong>learned how to execute programs</strong>, you can test the sample notification programs you have above. Have fun with them, try out different things. Try changing them and playing with them. Swap the <code>console.log(&quot;Hello JavaScript&quot;);</code><strong> command for <code>console.error(&quot;Error occurred&quot;);</code></strong> and start your program. Note that notification programs can only be executed in our browser and when we try running them from the console, we receive an error. This is due to the fact that the console doesn&apos;t support notification via visual elements, like <code>alert</code>.</p>
 <h2 id="typical-mistakes-in-javascript-programs"><a name="typical-mistakes-in-javascript-programs" class="plugin-anchor" href="#typical-mistakes-in-javascript-programs"><i class="fa fa-link" aria-hidden="true"></i></a>Typical Mistakes in JavaScript Programs</h2>
 <p>One of the usual mistakes beginners make is mixing up <strong>capital and lowercase letters</strong>. However, they matter when we call commands and can impede proper functioning. Here&apos;s an example of such a mistake:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">solve</span>(<span class="hljs-params"></span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">solve</span>(<span class="hljs-params"></span>) </span>{
     Console.Log(<span class="hljs-string">&quot;Hello JavaScript&quot;</span>);
 }
 </code></pre>
 <p>In the example above, <code>Console</code> is written incorrectly and the capital letter needs to be changed to lowercase. Is there another similar mistake in the same example?</p>
 <p>A missing <strong>quotation mark</strong> or <strong>closing bracket</strong> can also cause issues &#x2013; the program will either <strong>function improperly</strong> or not execute at all. Such mistakes are hard to notice, especially with larger amounts of code. Here&apos;s an example:</p>
-<pre><code class="lang-javascript">function solve() {
+<pre><code class="lang-JavaScript">function solve() {
     console.log(&quot;Hello JavaScript);
 }
 </code></pre>
@@ -630,7 +630,7 @@ code. Here&apos;s an example:</p>
 <p>Test your solution here:
 <a href="https://judge.softuni.org/Contests/Practice/Index/926#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/926#1</a>.</p>
 <p><strong>Note</strong>: Don&apos;t forget to enclose your code in the <code>solve()</code> function:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">solve</span>(<span class="hljs-params"></span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">solve</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-comment">// your code</span>
 }
 </code></pre>
@@ -663,7 +663,7 @@ Did you receive 100 points? If not, think of what you may be missing. Then try a
 **********
 </code></pre><h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>Create a new <strong>JavaScript file</strong> and name it <code>triangleOf55Stars.js</code>. Inside we need to write code that prints our triangle, for example by using 10 print commands, like in the example below:</p>
-<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;*&quot;</span>);
+<pre><code class="lang-JavaScript"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;*&quot;</span>);
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;**&quot;</span>);
 &#x2026;
 </code></pre>
@@ -816,7 +816,7 @@ The application is ready. We can start it by finding its location and opening it
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"next":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"path":"chapter-02-simple-calculations.md","ref":"chapter-02-simple-calculations.md","articles":[]},"previous":{"title":"Preface","level":"1.2","depth":1,"path":"chapter-00-preface.md","ref":"chapter-00-preface.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-01-first-steps-in-programming.md","mtime":"2021-11-21T18:47:12.641Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:48:01.932Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"next":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"path":"chapter-02-simple-calculations.md","ref":"chapter-02-simple-calculations.md","articles":[]},"previous":{"title":"Preface","level":"1.2","depth":1,"path":"chapter-00-preface.md","ref":"chapter-00-preface.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-01-first-steps-in-programming.md","mtime":"2021-12-14T12:49:39.561Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-14T12:50:36.030Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

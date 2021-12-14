@@ -445,20 +445,20 @@
                                 <h1 id="chapter-42-more-complex-conditions-&#x2013;-exam-problems"><a name="chapter-42-more-complex-conditions-&#x2013;-exam-problems" class="plugin-anchor" href="#chapter-42-more-complex-conditions-&#x2013;-exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 4.2. More Complex Conditions &#x2013; Exam Problems</h1>
 <p>The previous chapter introduced you to <strong>nested conditions</strong> in <strong>JavaScript</strong>. Via nested conditions, the program logic in a particular application can be represented using <strong><code>if</code> conditional statements</strong> that are nested one into another. We also explained the <strong><code>switch-case</code></strong> conditional statement that allows selecting from a list of options. Now we are going to solve some practical exercises and make sure we have an in-depth understanding of the material, by discussing a set of more complex problems that had been given to students on exams. Before moving to the problems, let&apos;s first recall what nested conditions are:</p>
 <h2 id="nested-conditions"><a name="nested-conditions" class="plugin-anchor" href="#nested-conditions"><i class="fa fa-link" aria-hidden="true"></i></a>Nested Conditions</h2>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (condition1) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span> (condition1) {
     <span class="hljs-keyword">if</span> (condition2)
         <span class="hljs-comment">// body; </span>
     <span class="hljs-keyword">else</span>
         <span class="hljs-comment">// body;</span>
 }
 </code></pre>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
 <td>Remember that it is not a good practice to write <strong>deeply nested conditional statements</strong> (with more than three levels of nesting). Avoid nesting of more than three conditional statements inside one another. This complicates the code and makes its reading and understanding difficult.</td>
 </tr></table>
 
 <h2 id="switch-case-conditions"><a name="switch-case-conditions" class="plugin-anchor" href="#switch-case-conditions"><i class="fa fa-link" aria-hidden="true"></i></a>Switch-Case Conditions</h2>
 <p>When the program operation depends on the value of a variable, instead of doing consecutive checks with multiple <strong><code>if-else</code></strong> blocks, we can use the <strong><code>switch-case</code></strong> conditional statement.</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">switch</span> (selector) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">switch</span> (selector) {
     <span class="hljs-keyword">case</span> value1:
         statement;
         <span class="hljs-keyword">break</span>;
@@ -556,7 +556,7 @@
 </tbody>
 </table>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
 <td>It is recommended <strong>to read the assignment a few times,</strong> take notes and sketch the examples while thinking before you start with the code.</td></tr></table>
 
 <h4 id="processing-the-input-data"><a name="processing-the-input-data" class="plugin-anchor" href="#processing-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Processing the Input Data</h4>
@@ -588,7 +588,7 @@
 <p>Finally, what remains is to print the result on the console. According to the requirements, if the student arrived right on time (<strong>not even a minute difference</strong>), we do not need to print a second result. This is why we apply the following <strong>condition</strong>:</p>
 <p><img src="assets/chapter-4-2-images/01.On-time-for-the-exam-08.png" alt=""></p>
 <p>Actually, for the task, printing the result <strong>on the console</strong> can be done at a much earlier stage &#x2013; during the calculations. This, however, is not a very good practice. <strong>Why?</strong> Let&apos;s examine the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a <strong>file</strong> or displayed as a <strong>web application</strong>. Then, how many places in the code you will make changes at, due to such a correction? Are you sure you won&apos;t miss some places?</p>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
 <td>Always consider the code that contains logical calculations as a separate part, different from the part that processes the input and output data. It has to be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
@@ -670,7 +670,7 @@
 <h4 id="processing-the-input-data"><a name="processing-the-input-data" class="plugin-anchor" href="#processing-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Processing the Input Data</h4>
 <p>While reading carefully the requirements, we understand that we expect <strong>two</strong> parameters of input data. Our first parameter is a <strong>real number</strong>, for which we need to pick an appropriate variable type. For a higher level of calculation accuracy, we can pick <strong><code>Number</code></strong> as a variable for the budget and &#x2013; <strong><code>String</code></strong> for the season.</p>
 <p><img src="assets/chapter-4-2-images/02.Trip-01.png" alt=""></p>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
 <td>Always take into consideration what <b>value type</b> is passed in the input data, as well as what type these need to be converted to, for the program conditions to work properly!</td>
 </tr></table>
 
@@ -1037,7 +1037,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.2. More Complex Conditions – Exam Problems","level":"1.9","depth":1,"next":{"title":"5.1. Loops","level":"1.10","depth":1,"path":"chapter-05-loops.md","ref":"chapter-05-loops.md","articles":[]},"previous":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-04-complex-conditions-exam-problems.md","mtime":"2021-11-21T18:47:12.645Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:48:01.932Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.2. More Complex Conditions – Exam Problems","level":"1.9","depth":1,"next":{"title":"5.1. Loops","level":"1.10","depth":1,"path":"chapter-05-loops.md","ref":"chapter-05-loops.md","articles":[]},"previous":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-04-complex-conditions-exam-problems.md","mtime":"2021-12-14T12:49:39.565Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-14T12:50:36.030Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

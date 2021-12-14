@@ -592,7 +592,7 @@
 <li>We take the remainder of the division.</li>
 </ul>
 <p>Euclid&apos;s algorithm <strong>pseudo-code</strong>:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">while</span> b &#x2260; <span class="hljs-number">0</span>
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">while</span> b &#x2260; <span class="hljs-number">0</span>
   <span class="hljs-keyword">var</span> oldB = b;
   b = a % b;
   a = oldB;
@@ -651,7 +651,7 @@ print a;
 <li>Outside the body of the loop, we print the final value of the sum.</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/09.Sum-digits-01.png" alt=""></p>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px;"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px;"></td>
 <td><code>n % 10</code>: <b>returns</b> the last digit of the number <code>n</code>.<br>
 <code>Math.floor(n / 10)</code>: <b>deletes</b> the last digit of <code>n</code>.</td>
 </tr></table>
@@ -668,7 +668,7 @@ print a;
 <p><img src="assets/chapter-7-1-images/00.Infinite-for-loop-01.png" alt=""></p>
 <h3 id="the-break-operator"><a name="the-break-operator" class="plugin-anchor" href="#the-break-operator"><i class="fa fa-link" aria-hidden="true"></i></a>The Break Operator</h3>
 <p>We already know that the infinite loop executes a certain code infinitely, but what if we want at some point under a given condition to interrupt and exit the loop? The <strong>break</strong> operator comes in handy in this situation.</p>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
 <td>The operator <b><code>break</code></b> stops a loop&apos;s execution at the point it is called and the execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingly and the rest of the code in the body of the loop will not be executed.</td>
 </tr></table>
 
@@ -689,7 +689,7 @@ print a;
 <li>If it is divisible by any of the numbers, it is <strong>composite</strong>.</li>
 <li>If it is not divisible by any of the numbers, then it is <strong>prime</strong>.</li>
 </ul>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
 <td>We can optimize the algorithm by instead of checking until <code>n-1</code>, checking divisors only until <code>&#x221A;n</code>. Think of the reasons why this is so.</td>
 </tr></table>
 
@@ -736,7 +736,7 @@ print a;
 <p>If we leave our function that way, our result will be as follows:</p>
 <p><img src="assets/chapter-7-1-images/00.Nested-and-break-undesired-result-01.png" alt=""></p>
 <p>Why is this so? As we can see, the result is <strong>missing &quot;1 1&quot;</strong>. When the function reaches the point when <strong><code>i = 1</code></strong> and <strong><code>j = 1</code></strong>, it enters the <strong><code>if</code></strong> check and executes the <strong><code>break</code></strong> operation. This way, it <strong>exits the inner loop</strong>, but then continues the execution of the <strong>outer loop</strong>. <strong><code>i</code></strong> increases, the function enters the inner loop and prints the result.</p>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
 <td>When we use the <b><code>break</code> operator</b> in a <b>nested loop</b>, it interrupts <b>only</b> the execution of the inner loop.</td>
 </tr></table>
 
@@ -750,7 +750,7 @@ print a;
 <h3 id="problem-fibonacci-numbers"><a name="problem-fibonacci-numbers" class="plugin-anchor" href="#problem-fibonacci-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Fibonacci Numbers</h3>
 <p>Fibonacci&apos;s numbers in mathematics form a sequence that looks like this: <strong>1, 1, 2, 3, 5, 8, 13, 21, 34, &#x2026;</strong>.</p>
 <p><strong>The formula</strong> to derive the next member of Fibonacci&apos;s sequence is:</p>
-<pre><code class="lang-javascript">F0 = <span class="hljs-number">1</span>
+<pre><code class="lang-JavaScript">F0 = <span class="hljs-number">1</span>
 F1 = <span class="hljs-number">1</span>
 Fn = Fn<span class="hljs-number">-1</span> + Fn<span class="hljs-number">-2</span>
 </code></pre>
@@ -898,18 +898,18 @@ Fn = Fn<span class="hljs-number">-1</span> + Fn<span class="hljs-number">-2</spa
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/937#14" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#14</a>.</p>
 <h2 id="what-have-we-learned-in-this-chapter"><a name="what-have-we-learned-in-this-chapter" class="plugin-anchor" href="#what-have-we-learned-in-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What have we learned in this chapter?</h2>
 <p>We can use <strong><code>for</code></strong> loops with a <strong>stride</strong>:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt;= n; i+=<span class="hljs-number">3</span>) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt;= n; i+=<span class="hljs-number">3</span>) {
    <span class="hljs-built_in">console</span>.log(i);
 }
 </code></pre>
 <p>The <strong><code>while</code></strong> / <strong><code>do-while</code></strong> loops are repeated while a <strong>condition is true</strong>:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> num = <span class="hljs-number">1</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> num = <span class="hljs-number">1</span>;
 <span class="hljs-keyword">while</span> (num &lt;= n) {
    <span class="hljs-built_in">console</span>.log(num++);
 }
 </code></pre>
 <p>If we have to <strong>interrupt</strong> the loop execution, we use the <strong><code>break</code></strong> operator:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> n = <span class="hljs-number">0</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> n = <span class="hljs-number">0</span>;
 <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) {
    n = <span class="hljs-built_in">parseInt</span>(arg1);
    <span class="hljs-keyword">if</span> (n % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>) {
@@ -962,7 +962,7 @@ Fn = Fn<span class="hljs-number">-1</span> + Fn<span class="hljs-number">-2</spa
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"next":{"title":"7.2. More Complex Loops – Exam Problems","level":"1.15","depth":1,"path":"chapter-07-complex-loops-exam-problems.md","ref":"chapter-07-complex-loops-exam-problems.md","articles":[]},"previous":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"path":"chapter-06-nested-loops-exam-problems.md","ref":"chapter-06-nested-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-07-complex-loops.md","mtime":"2021-11-21T18:47:12.649Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:48:01.932Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"next":{"title":"7.2. More Complex Loops – Exam Problems","level":"1.15","depth":1,"path":"chapter-07-complex-loops-exam-problems.md","ref":"chapter-07-complex-loops-exam-problems.md","articles":[]},"previous":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"path":"chapter-06-nested-loops-exam-problems.md","ref":"chapter-06-nested-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-07-complex-loops.md","mtime":"2021-12-14T12:49:39.569Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-14T12:50:36.030Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

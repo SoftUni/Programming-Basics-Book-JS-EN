@@ -452,7 +452,7 @@
 
 <h2 id="nested-conditions"><a name="nested-conditions" class="plugin-anchor" href="#nested-conditions"><i class="fa fa-link" aria-hidden="true"></i></a>Nested conditions</h2>
 <p>Pretty often the program logic requires the use of <strong><code>if</code></strong> or <strong><code>if-else</code></strong> statements, which are contained one inside another. They are called <strong>nested</strong> <strong><code>if</code></strong> or <strong><code>if-else</code></strong> statements. As implied by the title <strong>&quot;nested&quot;</strong>,these are <strong><code>if</code></strong> or <strong><code>if-else</code></strong> statements, that are placed inside other <strong><code>if</code></strong> or  <strong><code>else</code></strong> statements.</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (condition1) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span> (condition1) {
     <span class="hljs-keyword">if</span> (condition2) {
         <span class="hljs-comment">// body; </span>
     } <span class="hljs-keyword">else</span> {
@@ -600,7 +600,7 @@
 <h3 id="how-does-the--operator-work"><a name="how-does-the--operator-work" class="plugin-anchor" href="#how-does-the--operator-work"><i class="fa fa-link" aria-hidden="true"></i></a>How does the &amp;&amp; Operator Work?</h3>
 <p>The operator <strong><code>&amp;&amp;</code></strong> accepts <strong>a couple of Boolean</strong> (conditional) statements, which have a <strong><code>true</code></strong> or <strong><code>false</code></strong> value, and returns <strong>one</strong> boolean statement as a <strong>result</strong>. Using it <strong>instead</strong> of a couple of nested <strong><code>if</code></strong> blocks, makes the code <strong>more readable</strong>, <strong>ordered</strong>, and <strong>easy</strong> to maintain. But how does it <strong>work</strong>, when we put a <strong>few</strong> conditions one after another? As we saw above, the logical <strong>&quot;AND&quot;</strong> returns <strong><code>true</code></strong>, <strong>only</strong> when it accepts as <strong>arguments statements</strong> with the value <strong><code>true</code></strong>. Respectively, when we have a <strong>sequence</strong> of arguments, the logical &quot;<strong>AND</strong>&quot; checks either until one of the arguments is <strong>over</strong>, or until it <strong>meets</strong> an argument with value <strong><code>false</code></strong>. </p>
 <p><strong>Example</strong>:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> a = <span class="hljs-literal">true</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> a = <span class="hljs-literal">true</span>;
 <span class="hljs-keyword">let</span> b = <span class="hljs-literal">true</span>;
 <span class="hljs-keyword">let</span> c = <span class="hljs-literal">false</span>;
 <span class="hljs-keyword">let</span> d = <span class="hljs-literal">true</span>;
@@ -661,7 +661,7 @@
 <h3 id="how-does-the--operator-work"><a name="how-does-the--operator-work" class="plugin-anchor" href="#how-does-the--operator-work"><i class="fa fa-link" aria-hidden="true"></i></a>How does the || Operator Work?</h3>
 <p>We have already learned what the logical <strong>&quot;OR&quot;</strong> <strong>represents</strong>. But how is it being achieved? Just like the logical <strong>&quot;AND&quot;</strong>, the program <strong>checks</strong> from left to right <strong>the arguments</strong>, that are given. To obtain <strong><code>true</code></strong> from the expression, just one argument must have a <strong><code>true</code></strong> value, respectively the checking <strong>continues</strong> until an <strong>argument</strong> with <strong>such</strong> value is met or until the arguments <strong>are over</strong>.</p>
 <p>Here is one <strong>example</strong> of the operator <strong><code>||</code></strong> in action:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> a = <span class="hljs-literal">false</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> a = <span class="hljs-literal">false</span>;
 <span class="hljs-keyword">let</span> b = <span class="hljs-literal">true</span>;
 <span class="hljs-keyword">let</span> c = <span class="hljs-literal">false</span>;
 <span class="hljs-keyword">let</span> d = <span class="hljs-literal">true</span>;
@@ -682,7 +682,7 @@
 </thead>
 <tbody>
 <tr>
-<td>banana<br>tomato<br>java</td>
+<td>banana<br>tomato<br>Java</td>
 <td>fruit<br>vegetable<br>unknown</td>
 </tr>
 </tbody>
@@ -901,7 +901,7 @@
 <p><img src="assets/chapter-4-1-images/08.Trade-comissions-01.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/931#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/931#7</a>.</p>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
 <td><b>It is a good practice</b> to use <b>blocks</b>, that are <b>enclosed</b> with curly braces <b><code>{ }</code></b> after <b><code>if</code></b> and <b><code>else</code></b>. Also, it is recommended during writing to <b>move aside</b> the code <b>after <code>if</code> and <code>else</code></b> with a single tabulation <b>inward</b>, to make the code more easily readable.</td>
 </tr></table>
 
@@ -909,7 +909,7 @@
 <h2 id="switch-case-conditional-statements"><a name="switch-case-conditional-statements" class="plugin-anchor" href="#switch-case-conditional-statements"><i class="fa fa-link" aria-hidden="true"></i></a>Switch-Case Conditional Statements</h2>
 <p>The <strong><code>switch-case</code></strong>  construction works as a sequence of <strong><code>if-else</code></strong> blocks. Whenever the work of our program depends on the value of <strong>one variable</strong>, instead of making consecutive with <strong><code>if-else</code></strong> blocks, we can <strong>use</strong> the conditional <strong><code>switch-case</code></strong> statement. It is being used for <strong>choosing between a list of possibilities</strong>. The statement compares a given value with defined constants and depending on the result, it takes an action.</p>
 <p>We put <strong>the variable</strong>, that we want to <strong>compare</strong>, inside the <strong>brackets after the operator <code>switch</code></strong> and it is called a &quot;<strong>selector</strong>&quot;. Here <strong>the type must be comparable</strong> (numbers, strings). <strong>Consecutively</strong>, the program starts <strong>comparing</strong> each <strong>value</strong>, that <strong>is found</strong> after the <strong><code>case</code> labels</strong>. Upon a match, the executions of the code from the respective place continue, until it reaches the <strong><code>break</code></strong> operator. When <strong>no matches</strong> are <strong>found</strong>, the <strong><code>default</code></strong> construction is being executed, <strong>if</strong> such <strong>exist</strong>.</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">switch</span> (selector) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">switch</span> (selector) {
     <span class="hljs-keyword">case</span> value1:
         construction;
         <span class="hljs-keyword">break</span>;
@@ -944,7 +944,7 @@
 </table>
 <h4 id="solution"><a name="solution" class="plugin-anchor" href="#solution"><i class="fa fa-link" aria-hidden="true"></i></a>Solution</h4>
 <p><img src="assets/chapter-4-1-images/09.Day-of-week-01.png" alt=""></p>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
 <td>It is a good practice to put at <b>first</b> place those <b><code>case</code> statements</b>, that process <b>the most common situations</b>, and leave the <b><code>case</code> construction</b>, processing <b>the more rare situations</b>, in <b>the end, before the <code>default</code> constructions</b>. Another good practice is to  <b>arrange the <code>case</code> labels</b> in <b>ascending order</b>, regardless of whether they are integral or symbolic.</td>
 </tr></table>
 
@@ -952,7 +952,7 @@
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/931#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/931#8</a>.</p>
 <h3 id="multiple-labels-in-switch-cases"><a name="multiple-labels-in-switch-cases" class="plugin-anchor" href="#multiple-labels-in-switch-cases"><i class="fa fa-link" aria-hidden="true"></i></a>Multiple Labels in Switch-Cases</h3>
 <p>In <strong>JavaScript</strong>, we can <strong>use multiple <code>case</code></strong> labels, when they have to execute <strong>the same</strong> code. In this way, when our program finds a <strong>match</strong>, it will execute <strong>the next</strong> code, because <strong>after</strong> the respective <strong><code>case</code></strong> label <strong>there is no code</strong> for execution and a <strong><code>break</code></strong> operator:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">switch</span> (selector) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">switch</span> (selector) {
     <span class="hljs-keyword">case</span> value1:
     <span class="hljs-keyword">case</span> value2:
     <span class="hljs-keyword">case</span> value3:
@@ -1006,7 +1006,7 @@
 <h2 id="what-have-we-learned-from-this-chapter"><a name="what-have-we-learned-from-this-chapter" class="plugin-anchor" href="#what-have-we-learned-from-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What have we learned from this chapter?</h2>
 <p>Let&apos;s look back on what new constructions and programming techniques we have learned in this chapter:</p>
 <h3 id="nested-conditions"><a name="nested-conditions" class="plugin-anchor" href="#nested-conditions"><i class="fa fa-link" aria-hidden="true"></i></a>Nested Conditions</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (condition1) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span> (condition1) {
     <span class="hljs-keyword">if</span> (condition2) {
         <span class="hljs-comment">// body; </span>
     } <span class="hljs-keyword">else</span> {
@@ -1015,11 +1015,11 @@
 }
 </code></pre>
 <h3 id="more-complex-conditions-with----and-"><a name="more-complex-conditions-with----and-" class="plugin-anchor" href="#more-complex-conditions-with----and-"><i class="fa fa-link" aria-hidden="true"></i></a>More Complex Conditions with &amp;&amp;, ||, !, and ()</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> ((x === left || x === right) &amp;&amp; y &gt;= top &amp;&amp; y &lt;= bottom)
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span> ((x === left || x === right) &amp;&amp; y &gt;= top &amp;&amp; y &lt;= bottom)
     <span class="hljs-built_in">console</span>.log(&#x2026;);
 </code></pre>
 <h4 id="switch-case-statements"><a name="switch-case-statements" class="plugin-anchor" href="#switch-case-statements"><i class="fa fa-link" aria-hidden="true"></i></a>Switch-case statements</h4>
-<pre><code class="lang-javascript"><span class="hljs-keyword">switch</span> (selector) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">switch</span> (selector) {
     <span class="hljs-keyword">case</span> value1:
         construction;
         <span class="hljs-keyword">break</span>;
@@ -1122,7 +1122,7 @@ Write a program, that calculates <strong>how many times Vlady has played volleyb
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/931#11" target="_blank">https://judge.softuni.org/Contests/Practice/Index/931#11</a>.</p>
 <h3 id="problem--point-in-the-figure"><a name="problem--point-in-the-figure" class="plugin-anchor" href="#problem--point-in-the-figure"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: * Point in the Figure</h3>
 <p>The figure consists of <strong>6 blocks with size h * h</strong>, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is on position {<strong>2*h</strong>, <strong>4*h</strong>}. The coordinates given in the figure are for <strong>h = 2</strong>:</p>
-<p><img src="assets/chapter-4-1-images/13.Point-in-the-figure-01.png"></p>
+<p><img src="assets/chapter-4-1-images/13.Point-in-the-figure-01.PNG"></p>
 
 <p>Write a program, that enters an integer <strong>h</strong> and the coordinates of given <strong>point {x, y}</strong> (integers) and prints whether the points are inside the figure (<strong>inside</strong>), outside the figure (<strong>outside</strong>), or on any of the borders of the figure (<strong>border</strong>).</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
@@ -1221,7 +1221,7 @@ Write a program, that calculates <strong>how many times Vlady has played volleyb
 <ul>
 <li>We might split the figure into <strong>two rectangles</strong> with a shared side:</li>
 </ul>
-<p><img src="assets/chapter-4-1-images/13.Point-in-the-figure-03.png"></p>
+<p><img src="assets/chapter-4-1-images/13.Point-in-the-figure-03.PNG"></p>
 
 <ul>
 <li>A point is <strong>outer (outside)</strong> for the figure when it is <strong>outside</strong> both of the rectangles.</li>
@@ -1238,7 +1238,7 @@ Write a program, that calculates <strong>how many times Vlady has played volleyb
 <p>The task we have is to develop a graphical (<strong>GUI</strong>) application for <strong>visualizing a point in a rectangle</strong>. The application must look like identically the following:</p>
 <p><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-01.png" alt=""></p>
 <p>Using the controls on the left we set the coordinates of  <strong>two of the angles of the rectangle</strong> (decimal numbers) and the coordinates of the <strong>point</strong>. The application <strong>visualizes graphically</strong> the rectangle and the point and prints whether the point is <strong>inside</strong> the rectangle (<strong>Inside</strong>),  <strong>outside</strong> of it (<strong>Outside</strong>), or on one of the sides (<strong>Border</strong>). The application <strong>moves and resizes</strong> the coordinates of the rectangle and the point to be maximum large, but to fit the field for visualization, on the right side of the application.</p>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
 <td><b>Attention</b>: this application is significantly <b>more complex</b> than the previous graphical applications, which we have to develop until now because it requires using functions for drawing (Canvas ), work with HTML, JavaScript, and GUI framework (Electron).</td>
 </tr></table>
 
@@ -1254,7 +1254,7 @@ Write a program, that calculates <strong>how many times Vlady has played volleyb
 <li><p>The code, described in <strong>main.js</strong>, manages the events and creates new windows in the application. It should look like the following code below: </p>
 </li>
 </ol>
-<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
 <span class="hljs-keyword">const</span> url = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;url&apos;</span>);
 <span class="hljs-keyword">const</span> { app, BrowserWindow } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;electron&apos;</span>);
 
@@ -1286,7 +1286,7 @@ app.on(<span class="hljs-string">&apos;activate&apos;</span>, () =&gt; {
 </ol>
 <p><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-05.png" alt=""></p>
 <p>We add the following code under the <strong><code>&lt;title&gt;</code></strong> in the <strong>index.html</strong> file:</p>
-<pre><code class="lang-javascript">&lt;script src=<span class="hljs-string">&quot;app.js&quot;</span> type=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+<pre><code class="lang-JavaScript">&lt;script src=<span class="hljs-string">&quot;app.js&quot;</span> type=<span class="hljs-string">&quot;text/JavaScript&quot;</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
 </code></pre>
 <p><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-06.png" alt=""></p>
 <p>In this way the connection bettween the files <strong><code>index.html</code></strong> and <strong><code>app.js</code></strong> (which we will create later) is realized. The <strong><code>&lt;body&gt;</code></strong>  tag defines <strong>the body of the html document</strong>. We write in it the following code:</p>
@@ -1334,7 +1334,7 @@ app.on(<span class="hljs-string">&apos;activate&apos;</span>, () =&gt; {
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 </code></pre>
 <p>To enter the coordinates of the rectangle and the point, we use <strong><code>input</code></strong> fields of type <strong><code>Number</code></strong>, with tags <strong><code>&lt;label&gt;</code></strong>. To draw geometric figures in the application, we use the html tag <strong><code>&lt;canvas&gt;</code></strong>:</p>
-<p><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-07.png"></p>
+<p><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-07.PNG"></p>
 
 <p>It accepts the following parameters:</p>
 <ul>
@@ -1351,24 +1351,24 @@ app.on(<span class="hljs-string">&apos;activate&apos;</span>, () =&gt; {
 <li>The most complicated part remains to be implemented: <strong>visualization of the rectangle and the point</strong> at the field of the element <strong><code>&lt;canvas&gt;</code></strong> by using the function <strong><code>draw()</code></strong> in the file <strong><code>app.js</code></strong>, which we create in the directory of the application, in the way described at Point 2.</li>
 </ol>
 <p>We create  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D"><strong><code>CanvasRenderingContext2D</code></strong></a> an object by writing the following code:</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">// Create canvas element</span>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">// Create canvas element</span>
 <span class="hljs-keyword">let</span> canvas = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;a&apos;</span>);
 <span class="hljs-keyword">let</span> context = canvas.getContext(<span class="hljs-string">&apos;2d&apos;</span>);
 </code></pre>
 <p>The <strong><code>&lt;canvas&gt;</code></strong> element is a field, in which the object generated with the method <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext"><strong><code>.getContext(&apos;2d&apos;)</code></strong></a>, is drawing graphics, text, images and other elements. In this case, the <strong><code>context</code></strong> variable represents this object. We store in separate variables the coordinates of the two angles of the rectangle:</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">// Get input for rectangle coordinates</span>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">// Get input for rectangle coordinates</span>
 <span class="hljs-keyword">let</span> rectX1 = <span class="hljs-built_in">Number</span>(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;rect-x1&quot;</span>).value) * <span class="hljs-number">10</span>;
 <span class="hljs-keyword">let</span> rectY1 = <span class="hljs-built_in">Number</span>(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;rect-y1&quot;</span>).value) * <span class="hljs-number">10</span>;
 <span class="hljs-keyword">let</span> rectX2 = <span class="hljs-built_in">Number</span>(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;rect-x2&quot;</span>).value) * <span class="hljs-number">10</span>;
 <span class="hljs-keyword">let</span> rectY2 = <span class="hljs-built_in">Number</span>(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;rect-y2&quot;</span>).value) * <span class="hljs-number">10</span>;
 </code></pre>
 <p>The coordinate values are accesible through the <strong><code>id</code></strong> of the <strong><code>&lt;input&gt;</code></strong> fields. For better visualization of the screen, we scale the values by <strong>increasing them 10 times</strong>. The next step is to calculate the sides of the rectangle, because the object <strong><code>context</code></strong> draws a rectangle on four parameters: <strong><code>x</code></strong> - coordinate, <strong><code>y</code></strong>  coordinate, <strong><code>width</code></strong> in pixels and <strong><code>height</code></strong> in pixels:</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">// Calculate rectangle parameters</span>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">// Calculate rectangle parameters</span>
 <span class="hljs-keyword">let</span> rectWidth = <span class="hljs-built_in">Math</span>.abs(rectX1 - rectX2);
 <span class="hljs-keyword">let</span> rectHeight = <span class="hljs-built_in">Math</span>.abs(rectY1 - rectY2);
 </code></pre>
 <p>We can use the code below, which draws a red rectangle, according to the coordinates given in the form, using the method <a target="_blank" href="https://www.w3schools.com/tags/canvas_strokerect.asp"><strong><code>.strokeRect(...)</code></strong></a>:</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">// Set rectangle style</span>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">// Set rectangle style</span>
 context.strokeStyle = <span class="hljs-string">&quot;#ff0000&quot;</span>;
 context.lineWidth = <span class="hljs-number">3</span>;
 
@@ -1376,7 +1376,7 @@ context.lineWidth = <span class="hljs-number">3</span>;
 context.strokeRect(rectX1, rectY1, rectWidth, rectHeight);
 </code></pre>
 <p>Similar to the rectangle, we take the coordinates of the point and scale them. After that, we set the style of the point - orange color. For better visualization of the screen, we convert the point into a circle with the method <a target="_blank" href="https://www.w3schools.com/tags/canvas_arc.asp"><strong><code>.arc(...)</code></strong></a>. This method accepts five parameters: <strong><code>x</code></strong> - coordinate, <strong><code>y</code></strong> - coordinate, <strong><code>radius</code></strong>, <strong><code>start of the arc</code></strong> in radians, <strong><code>end of the arc</code></strong> radians:</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">// Get input for point coordinates</span>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">// Get input for point coordinates</span>
 <span class="hljs-keyword">let</span> pointX = <span class="hljs-built_in">Number</span>(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;point-x&quot;</span>).value) * <span class="hljs-number">10</span>;
 <span class="hljs-keyword">let</span> pointY = <span class="hljs-built_in">Number</span>(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;point-y&quot;</span>).value) * <span class="hljs-number">10</span>;
 
@@ -1388,12 +1388,12 @@ context.closePath();
 context.fill();
 </code></pre>
 <p>To reflect the results in the <strong><code>if</code></strong> checks, we store the following elements of the html code in separate variables:</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">// Assign variables to (&lt;div id=&quot;result&quot;&gt;) and (&lt;span id=&quot;status&quot;&gt;) html elements</span>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">// Assign variables to (&lt;div id=&quot;result&quot;&gt;) and (&lt;span id=&quot;status&quot;&gt;) html elements</span>
 <span class="hljs-keyword">let</span> result = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;status&quot;</span>);
 <span class="hljs-keyword">let</span> output = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;result&quot;</span>);
 </code></pre>
 <p>The last step is to check the position of the point relative to the rectangle:</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">// Check point position</span>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">// Check point position</span>
 <span class="hljs-keyword">if</span> () {
     result.innerHTML = <span class="hljs-string">&quot;Inside&quot;</span>;
     output.style.backgroundColor = <span class="hljs-string">&quot;palegreen&quot;</span>;
@@ -1407,7 +1407,7 @@ context.fill();
 </code></pre>
 <p>Let&apos;s now think about how <strong>to add</strong> the unfinished (on purpose) conditions in the <strong><code>if</code></strong> constructions. The code above is intentionally not compiled, because its purpose is to make the reader think about how and why it works and to complete the missing parts. The code above takes the coordinates of the rectangle and the point checks whether the point is inside, outside, or on the side of the rectangle. When the result is visualized, the background color of the text block that contains it also changes.</p>
 <p>This is the full version of the function <strong><code>draw()</code></strong>:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-comment">// Create canvas element</span>
     <span class="hljs-keyword">let</span> canvas = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;a&apos;</span>);
     <span class="hljs-keyword">let</span> context = canvas.getContext(<span class="hljs-string">&apos;2d&apos;</span>);
@@ -1514,7 +1514,7 @@ context.fill();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"next":{"title":"4.2. More Complex Conditions – Exam Problems","level":"1.9","depth":1,"path":"chapter-04-complex-conditions-exam-problems.md","ref":"chapter-04-complex-conditions-exam-problems.md","articles":[]},"previous":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"path":"chapter-03-simple-conditions-exam-problems.md","ref":"chapter-03-simple-conditions-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-04-complex-conditions.md","mtime":"2021-11-21T18:47:12.645Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:48:01.932Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"next":{"title":"4.2. More Complex Conditions – Exam Problems","level":"1.9","depth":1,"path":"chapter-04-complex-conditions-exam-problems.md","ref":"chapter-04-complex-conditions-exam-problems.md","articles":[]},"previous":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"path":"chapter-03-simple-conditions-exam-problems.md","ref":"chapter-03-simple-conditions-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-04-complex-conditions.md","mtime":"2021-12-14T12:49:39.565Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-14T12:50:36.030Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

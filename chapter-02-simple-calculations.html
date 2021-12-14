@@ -473,7 +473,7 @@ Here are some examples of data types and values for them:</p>
 <p><strong>JavaScript</strong> language has three keywords for declaring a variable - <strong><code>var</code></strong>, <strong><code>const</code></strong>, and <strong><code>let</code></strong>. The main difference between <strong><code>let</code></strong> and <strong><code>var</code></strong> is in the scope of the variable. We use <strong><code>const</code></strong> when we are sure that what we assign to the variable will not change. A little further in the book, we will find out more details about the range of variables but for now, we will use the word <strong> <code>let</code> </strong> to declare a new variable.</p>
 <h2 id="print-a-result-on-the-screen"><a name="print-a-result-on-the-screen" class="plugin-anchor" href="#print-a-result-on-the-screen"><i class="fa fa-link" aria-hidden="true"></i></a>Print a Result on the Screen</h2>
 <p>For printing text, number, or another result on the screen, it&apos;s necessary to call the built-in method <strong><code>console.log()</code></strong>. With it we can print both the value of a variable and directly text or number:</p>
-<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-number">42</span>); <span class="hljs-comment">// prints number</span>
+<pre><code class="lang-JavaScript"><span class="hljs-built_in">console</span>.log(<span class="hljs-number">42</span>); <span class="hljs-comment">// prints number</span>
 
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Hello!&apos;</span>); <span class="hljs-comment">// prints string</span>
 
@@ -482,7 +482,7 @@ Here are some examples of data types and values for them:</p>
 </code></pre>
 <h2 id="reading-a-user-input-as-an-integer"><a name="reading-a-user-input-as-an-integer" class="plugin-anchor" href="#reading-a-user-input-as-an-integer"><i class="fa fa-link" aria-hidden="true"></i></a>Reading a User Input as an Integer:</h2>
 <p>For reading a user input as a <strong>number</strong> is necessary to <strong>define an argument</strong> of our function:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params">[arg1, arg2]</span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params">[arg1, arg2]</span>) </span>{
     <span class="hljs-keyword">let</span> a = <span class="hljs-built_in">parseInt</span>(arg1);
     <span class="hljs-keyword">let</span> b = <span class="hljs-built_in">parseInt</span>(arg2);
     ...
@@ -491,7 +491,7 @@ Here are some examples of data types and values for them:</p>
 <p>Let&apos;s note that the arguments <strong><code>arg1</code></strong> and <strong><code>arg2</code></strong> can be a different data type than the one we want. That&apos;s why it&apos;s necessary to convert them into a suitable one. If it&apos;s not done for the program <strong>each number</strong> will be just a <strong>string</strong> with which <strong>we can&apos;t do operations</strong> arithmetic operations.</p>
 <h3 id="example-calculating-a-square-area-with-length-of-a-side-a"><a name="example-calculating-a-square-area-with-length-of-a-side-a" class="plugin-anchor" href="#example-calculating-a-square-area-with-length-of-a-side-a"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Calculating a Square Area with Length of a Side <strong>a</strong></h3>
 <p>For example, let&apos;s look at the following function which reads an integer from the console, multiplies it by itself (squares it), and prints the result from the multiplication. That&apos;s how we can calculate square area by side length:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateSquareArea</span>(<span class="hljs-params">[arg1]</span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateSquareArea</span>(<span class="hljs-params">[arg1]</span>) </span>{
     <span class="hljs-keyword">let</span> a = <span class="hljs-built_in">parseInt</span>(arg1);
     <span class="hljs-keyword">let</span> area = a * a;
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Square area = &apos;</span> + area);
@@ -527,7 +527,7 @@ Here are some examples of data types and values for them:</p>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#0</a>. Try all four solutions to the problem.</p>
 <h2 id="reading-floating-point-numbers"><a name="reading-floating-point-numbers" class="plugin-anchor" href="#reading-floating-point-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Reading Floating-Point Numbers</h2>
 <p>To read user input as <strong>floating-point number</strong> it&apos;s necessary again to <strong>define an argument</strong> to our function. The syntax is similar to reading an integer, but here we have to use the function <strong><code>parseFloat(...)</code></strong>:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params">[arg1, arg2]</span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params">[arg1, arg2]</span>) </span>{
     <span class="hljs-keyword">let</span> a = <span class="hljs-built_in">parseFloat</span>(arg1);
     <span class="hljs-keyword">let</span> b = <span class="hljs-built_in">parseFloat</span>(arg2);
     ...
@@ -535,48 +535,48 @@ Here are some examples of data types and values for them:</p>
 </code></pre>
 <h3 id="example-converting-inches-into-centimeters"><a name="example-converting-inches-into-centimeters" class="plugin-anchor" href="#example-converting-inches-into-centimeters"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Converting Inches into Centimeters</h3>
 <p>Let&apos;s write a function that reads a floating-point number in inches and converts it to centimeters::</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">convertInchesToCentimeters</span>(<span class="hljs-params">[arg1]</span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">convertInchesToCentimeters</span>(<span class="hljs-params">[arg1]</span>) </span>{
     <span class="hljs-keyword">let</span> inches = <span class="hljs-built_in">parseFloat</span>(arg1);
     <span class="hljs-keyword">let</span> centimeters = inches * <span class="hljs-number">2.54</span>;
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Centimeters = &apos;</span> + centimeters);
 }
 </code></pre>
 <p>Let&apos;s call the function and make sure that when passing a value in inches, we get the correct result in centimeters:</p>
-<pre><code class="lang-javascript">convertInchesToCentimeters([<span class="hljs-number">5</span>]); <span class="hljs-comment">// Centimeters = 12.7</span>
+<pre><code class="lang-JavaScript">convertInchesToCentimeters([<span class="hljs-number">5</span>]); <span class="hljs-comment">// Centimeters = 12.7</span>
 </code></pre>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#1</a>.</p>
 <h2 id="reading-a-text-input"><a name="reading-a-text-input" class="plugin-anchor" href="#reading-a-text-input"><i class="fa fa-link" aria-hidden="true"></i></a>Reading a Text Input</h2>
 <p>Same with other data types, to read a <strong>string</strong> it&apos;s necessary to <strong>define an argument</strong> to our function and after that to assign it to a variable:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">print</span>(<span class="hljs-params">[arg1]</span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">print</span>(<span class="hljs-params">[arg1]</span>) </span>{
     <span class="hljs-keyword">let</span> text = arg1;
     ...
 }
 </code></pre>
 <h3 id="example-greeting-by-name"><a name="example-greeting-by-name" class="plugin-anchor" href="#example-greeting-by-name"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Greeting by Name</h3>
 <p>Let&apos;s write a program that asks the user for their name and salutes them with the text &quot;<strong>Hello, (name)</strong>&quot;.</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params">[arg1]</span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params">[arg1]</span>) </span>{
     <span class="hljs-keyword">let</span> name = arg1;
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Hello, <span class="hljs-subst">${name}</span>!`</span>);
 }
 </code></pre>
 <p>In this case, the expression <strong><code>${name}</code></strong> will be replaced with <strong>the value of the variable <code>name</code></strong>. If we call the function with the name &quot;Ivan&quot;, that will be the result:</p>
-<pre><code class="lang-javascript">sayHello([<span class="hljs-string">&apos;Ivan&apos;</span>]); <span class="hljs-comment">// Hello, Ivan!</span>
+<pre><code class="lang-JavaScript">sayHello([<span class="hljs-string">&apos;Ivan&apos;</span>]); <span class="hljs-comment">// Hello, Ivan!</span>
 </code></pre>
 <h4 id="testing-in-judge-system"><a name="testing-in-judge-system" class="plugin-anchor" href="#testing-in-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#2</a>.</p>
 <h2 id="concatenating-text-and-numbers"><a name="concatenating-text-and-numbers" class="plugin-anchor" href="#concatenating-text-and-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Concatenating Text and Numbers</h2>
 <p>When printing text, numbers and other data <strong>we can concatenate them</strong> by using templates <strong><code>`variable = ${variable}` </code></strong>. In programming these templates are called <strong>placeholders</strong>. Pay attention: We need to use italicized apostrophes <code>`</code> (<strong>backticks</strong>) instead of normal quotes to recognize the template:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printInfo</span>(<span class="hljs-params">[firstName, lastName, age, town]</span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printInfo</span>(<span class="hljs-params">[firstName, lastName, age, town]</span>) </span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`You are <span class="hljs-subst">${firstName}</span> <span class="hljs-subst">${lastName}</span>, a <span class="hljs-subst">${age}</span>-years old person from <span class="hljs-subst">${town}</span>.`</span>);
 }
 </code></pre>
 <p>We call the function with test parameters again and make sure that it works:</p>
-<pre><code class="lang-javascript">printInfo([<span class="hljs-string">&apos;Ivan&apos;</span>, <span class="hljs-string">&apos;Ivanov&apos;</span>, <span class="hljs-number">20</span>, <span class="hljs-string">&apos;Sofia&apos;</span>]);
+<pre><code class="lang-JavaScript">printInfo([<span class="hljs-string">&apos;Ivan&apos;</span>, <span class="hljs-string">&apos;Ivanov&apos;</span>, <span class="hljs-number">20</span>, <span class="hljs-string">&apos;Sofia&apos;</span>]);
 </code></pre>
 <p>Except for variables, we can make simple calculations in the templates.</p>
 <p>The same variable can be used as a template more than once. Here&apos;s an example:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> a = <span class="hljs-number">1</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> a = <span class="hljs-number">1</span>;
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">${a}</span> + <span class="hljs-subst">${a}</span> = <span class="hljs-subst">${a + a}</span>`</span>);
 </code></pre>
 <p>The result is:</p>
@@ -587,13 +587,13 @@ Here are some examples of data types and values for them:</p>
 <p>Let&apos;s examine the basic arithmetic operations in programming.</p>
 <h3 id="summing-numbers-operator-"><a name="summing-numbers-operator-" class="plugin-anchor" href="#summing-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Summing Numbers (operator <strong><code>+</code></strong>)</h3>
 <p>We can sum numbers using the operator <strong><code>+</code></strong>:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> a = <span class="hljs-number">5</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> a = <span class="hljs-number">5</span>;
 <span class="hljs-keyword">let</span> b = <span class="hljs-number">7</span>;
 <span class="hljs-keyword">let</span> sum = a + b; <span class="hljs-comment">// the result is 12</span>
 </code></pre>
 <h3 id="subtracting-numbers-operator--"><a name="subtracting-numbers-operator--" class="plugin-anchor" href="#subtracting-numbers-operator--"><i class="fa fa-link" aria-hidden="true"></i></a>Subtracting Numbers (operator <strong><code>-</code></strong>)</h3>
 <p>Subtracting numbers is done using the <strong><code>-</code></strong> operator:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">substractNumbers</span>(<span class="hljs-params">[arg1, arg2]</span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">substractNumbers</span>(<span class="hljs-params">[arg1, arg2]</span>) </span>{
     <span class="hljs-keyword">let</span> a = <span class="hljs-built_in">parseInt</span>(a);
     <span class="hljs-keyword">let</span> b = <span class="hljs-built_in">parseInt</span>(b);
     <span class="hljs-keyword">let</span> result = a - b;
@@ -601,11 +601,11 @@ Here are some examples of data types and values for them:</p>
 }
 </code></pre>
 <p>Let we check the result of the execution of this program (with numbers 10 and 3):</p>
-<pre><code class="lang-javascript">substractNumbers([<span class="hljs-number">10</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// 7</span>
+<pre><code class="lang-JavaScript">substractNumbers([<span class="hljs-number">10</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// 7</span>
 </code></pre>
 <h3 id="multiplying-numbers-operator-"><a name="multiplying-numbers-operator-" class="plugin-anchor" href="#multiplying-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Multiplying Numbers (operator <strong><code>*</code></strong>)</h3>
 <p>For multiplication of numbers we use the <strong><code>*</code></strong> operator:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> a = <span class="hljs-number">5</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> a = <span class="hljs-number">5</span>;
 <span class="hljs-keyword">let</span> b = <span class="hljs-number">7</span>;
 <span class="hljs-keyword">let</span> product = a * b; <span class="hljs-comment">// 35</span>
 </code></pre>
@@ -613,7 +613,7 @@ Here are some examples of data types and values for them:</p>
 <p>Dividing numbers is done using the <strong><code>/</code></strong> operator. </p>
 <p><strong>Note:</strong> Float numbers <strong>divided by 0</strong> do not cause an exception and the result is <strong>+/- infinity</strong> or the special value <strong>Infinity</strong>.</p>
 <p>Here are a few examples with the division operator:</p>
-<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-number">10</span> / <span class="hljs-number">2.5</span>); <span class="hljs-comment">// Result: 4</span>
+<pre><code class="lang-JavaScript"><span class="hljs-built_in">console</span>.log(<span class="hljs-number">10</span> / <span class="hljs-number">2.5</span>); <span class="hljs-comment">// Result: 4</span>
 <span class="hljs-built_in">console</span>.log(<span class="hljs-number">10</span> / <span class="hljs-number">4</span>);   <span class="hljs-comment">// Result: 2.5</span>
 <span class="hljs-built_in">console</span>.log(<span class="hljs-number">10</span> / <span class="hljs-number">6</span>);   <span class="hljs-comment">// Result: 1.6666666666666667</span>
 
@@ -624,32 +624,32 @@ Here are some examples of data types and values for them:</p>
 </code></pre>
 <h2 id="concatenating-text-and-numbers"><a name="concatenating-text-and-numbers" class="plugin-anchor" href="#concatenating-text-and-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Concatenating Text and Numbers</h2>
 <p>Besides summing up numbers, the operator <strong><code>+</code></strong> is also used for joining pieces of text (concatenation of two strings one after another). In programming, joining two pieces of text is called &quot;<strong>concatenation</strong>&quot;. Here is how we can concatenate a text with a number by the <strong><code>+</code></strong> operator:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> firstName = <span class="hljs-string">&quot;Maria&quot;</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> firstName = <span class="hljs-string">&quot;Maria&quot;</span>;
 <span class="hljs-keyword">let</span> lastName = <span class="hljs-string">&quot;Ivanova&quot;</span>;
 <span class="hljs-keyword">let</span> age = <span class="hljs-number">19</span>;
 <span class="hljs-keyword">let</span> str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <span class="hljs-string">&quot; @ &quot;</span> + age; 
 <span class="hljs-built_in">console</span>.log(str);  <span class="hljs-comment">// Maria Ivanova @ 19</span>
 </code></pre>
 <p>Here is another example:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> a = <span class="hljs-number">1.5</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> a = <span class="hljs-number">1.5</span>;
 <span class="hljs-keyword">let</span> b = <span class="hljs-number">2.5</span>;
 <span class="hljs-keyword">let</span> sum = <span class="hljs-string">&quot;The sum is: &quot;</span> + a + b;
 <span class="hljs-built_in">console</span>.log(sum);  <span class="hljs-comment">// The sum is: 1.52.5</span>
 </code></pre>
 <p>Do you notice anything strange? Maybe you expected the numbers <strong> <code>a</code> </strong> and <strong><code>b</code> </strong> to sum? The concatenation works from left to right and the above result is correct. If we want to sum the numbers, we will have to use <strong>brackets</strong> to change the order of operations:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> a = <span class="hljs-number">1.5</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> a = <span class="hljs-number">1.5</span>;
 <span class="hljs-keyword">let</span> b = <span class="hljs-number">2.5</span>;
 <span class="hljs-keyword">let</span> sum = <span class="hljs-string">&quot;The sum is: &quot;</span> + (a + b);
 <span class="hljs-built_in">console</span>.log(sum);  <span class="hljs-comment">// The sum is: 4</span>
 </code></pre>
 <h2 id="numerical-expressions"><a name="numerical-expressions" class="plugin-anchor" href="#numerical-expressions"><i class="fa fa-link" aria-hidden="true"></i></a>Numerical Expressions</h2>
 <p>In programming, we can calculate <strong>numerical expressions</strong>, for example:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> expr = (<span class="hljs-number">3</span> + <span class="hljs-number">5</span>) * (<span class="hljs-number">4</span> &#x2013; <span class="hljs-number">2</span>);
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> expr = (<span class="hljs-number">3</span> + <span class="hljs-number">5</span>) * (<span class="hljs-number">4</span> &#x2013; <span class="hljs-number">2</span>);
 </code></pre>
 <p>The standard rule for priorities of arithmetic operations is applied: <strong>multiplying and dividing are always done before adding and subtracting</strong>. In the case of an <strong>expression in brackets, it is calculated first</strong>  but we already know all of that from the school math.</p>
 <h3 id="example-calculating-trapezoid-area"><a name="example-calculating-trapezoid-area" class="plugin-anchor" href="#example-calculating-trapezoid-area"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Calculating Trapezoid Area</h3>
 <p>Let&apos;s  write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the <strong>trapezoid area</strong> by the standard math formula:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printTrapezoidArea</span>(<span class="hljs-params">[arg1, arg2, arg3]</span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printTrapezoidArea</span>(<span class="hljs-params">[arg1, arg2, arg3]</span>) </span>{
     <span class="hljs-keyword">let</span> b1 = <span class="hljs-built_in">parseFloat</span>(arg1);
     <span class="hljs-keyword">let</span> b2 = <span class="hljs-built_in">parseFloat</span>(arg2);
     <span class="hljs-keyword">let</span> h = <span class="hljs-built_in">parseFloat</span>(arg3);
@@ -658,7 +658,7 @@ Here are some examples of data types and values for them:</p>
 }
 </code></pre>
 <p>Because we want our function to work with both integers and floating numbers, we use <strong><code>parseFloat()</code></strong>. If we start the function and enter values for sides: <strong><code>3</code></strong>, <strong><code>4</code></strong>, and <strong><code>5</code></strong>, we will obtain the following result::</p>
-<pre><code class="lang-javascript">printTrapezoidArea([<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]); <span class="hljs-comment">// Trapezoid area = 17.5</span>
+<pre><code class="lang-JavaScript">printTrapezoidArea([<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]); <span class="hljs-comment">// Trapezoid area = 17.5</span>
 </code></pre>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: </p>
@@ -666,24 +666,24 @@ Here are some examples of data types and values for them:</p>
 <h2 id="rounding-numbers"><a name="rounding-numbers" class="plugin-anchor" href="#rounding-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Rounding Numbers</h2>
 <p>Sometimes when we work with floating numbers, it&apos;s necessary to bring them to integers. This bringing is named <strong>rounding</strong>. The programming language <strong>JavaScript</strong> provides us with several methods for rounding numbers:</p>
 <ul>
-<li><strong><code>Math.ceil(&#x2026;)</code></strong> - <strong>rounding up</strong> to next (greater) integer:<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> up = <span class="hljs-built_in">Math</span>.ceil(<span class="hljs-number">45.15</span>); <span class="hljs-comment">// up = 46</span>
+<li><strong><code>Math.ceil(&#x2026;)</code></strong> - <strong>rounding up</strong> to next (greater) integer:<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> up = <span class="hljs-built_in">Math</span>.ceil(<span class="hljs-number">45.15</span>); <span class="hljs-comment">// up = 46</span>
 </code></pre>
 </li>
 <li><p><strong><code>Math.floor(&#x2026;)</code></strong> - <strong>rounding down</strong> to previous (less) integer:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> down = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-number">45.67</span>);    <span class="hljs-comment">// down = 45</span>
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> down = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-number">45.67</span>);    <span class="hljs-comment">// down = 45</span>
 </code></pre>
 </li>
 <li><p><strong><code>Math.trunc(&#x2026;)</code></strong> - <strong>cutting</strong> the decimal places:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> trunc = <span class="hljs-built_in">Math</span>.trunc(<span class="hljs-number">45.67</span>); <span class="hljs-comment">// trunc = 45</span>
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> trunc = <span class="hljs-built_in">Math</span>.trunc(<span class="hljs-number">45.67</span>); <span class="hljs-comment">// trunc = 45</span>
 </code></pre>
 </li>
 <li><p><strong><code>Math.round(&#x2026;)</code></strong> - rounding is done as a <strong>basic rule for rounding numbers</strong> - if the decimal part is less than 5, rounding is to the previous number and if it&apos;s greater than 5 - to the next:</p>
-<pre><code class="lang-javascript"><span class="hljs-built_in">Math</span>.round(<span class="hljs-number">5.439</span>); <span class="hljs-comment">// 5</span>
+<pre><code class="lang-JavaScript"><span class="hljs-built_in">Math</span>.round(<span class="hljs-number">5.439</span>); <span class="hljs-comment">// 5</span>
 <span class="hljs-built_in">Math</span>.round(<span class="hljs-number">5.539</span>); <span class="hljs-comment">// 6</span>
 </code></pre>
 </li>
 <li><p><strong><code>.toFixed([number of characters after the decimal point])</code></strong> - rounding to <strong>the closest</strong> number:</p>
-<pre><code class="lang-javascript">(<span class="hljs-number">123.456</span>).toFixed(<span class="hljs-number">2</span>);     <span class="hljs-comment">// 123.46</span>
+<pre><code class="lang-JavaScript">(<span class="hljs-number">123.456</span>).toFixed(<span class="hljs-number">2</span>);     <span class="hljs-comment">// 123.46</span>
 (<span class="hljs-number">123</span>).toFixed(<span class="hljs-number">2</span>);         <span class="hljs-comment">// 123.00</span>
 (<span class="hljs-number">123.456</span>).toFixed(<span class="hljs-number">0</span>);     <span class="hljs-comment">// 123</span>
 (<span class="hljs-number">123.512</span>).toFixed(<span class="hljs-number">0</span>);     <span class="hljs-comment">// 124</span>
@@ -698,7 +698,7 @@ Here are some examples of data types and values for them:</p>
 <li>Perimeter = 2 * &#x3C0; * r</li>
 <li>&#x3C0; &#x2248; 3.14159265358979323846&#x2026;</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateCircleAreaAndPerimeter</span>(<span class="hljs-params">[arg1]</span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateCircleAreaAndPerimeter</span>(<span class="hljs-params">[arg1]</span>) </span>{
     <span class="hljs-keyword">let</span> r = <span class="hljs-built_in">parseInt</span>(arg1);
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Area = &quot;</span> + <span class="hljs-built_in">Math</span>.PI * r * r); 
     <span class="hljs-comment">// Math.PI - Built-in JavaScript constant for the value of the number &#x3C0;</span>
@@ -706,7 +706,7 @@ Here are some examples of data types and values for them:</p>
 }
 </code></pre>
 <p>Let&apos;s call the function with <strong>radius <code>r = 10</code></strong>:</p>
-<pre><code class="lang-javascript">calculateCircleAreaAndPerimeter([<span class="hljs-number">10</span>])
+<pre><code class="lang-JavaScript">calculateCircleAreaAndPerimeter([<span class="hljs-number">10</span>])
 </code></pre>
 <p>The result is:</p>
 <p><img src="assets/chapter-2-1-images/00.Calculate-circle-area-and-perimeter.png" alt=""></p>
@@ -714,9 +714,9 @@ Here are some examples of data types and values for them:</p>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#5</a>.</p>
 <h3 id="example-2d-rectangle-area"><a name="example-2d-rectangle-area" class="plugin-anchor" href="#example-2d-rectangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Example: 2D Rectangle Area</h3>
 <p>The rectangle is given with the <strong>coordinates of two of its opposite angles</strong>. Calculate its <strong>area and perimeter</strong> :</p>
-<p><img alt="rectangleArea" src="assets/chapter-2-1-images/00.Rectangle-area-01.png" width="250" height="200"></p>
+<p><img alt="rectangleArea" src="assets/chapter-2-1-images/00.Rectangle-area-01.PNG" width="250" height="200"></p>
 <p>In this problem, we have to consider that if we subtract the smaller <strong><code>x</code></strong>  from the bigger <strong><code>x</code></strong> , we will obtain the length of the rectangle. Identically, if we subtract the smaller <strong><code>y</code></strong> from the bigger <strong><code>y</code></strong>, , we will obtain the height of the rectangle. What is left is to multiply both sides. Here is an example of an implementation of the described logic:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateRectangleArea</span>(<span class="hljs-params">[arg1, arg2, arg3, arg4]</span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateRectangleArea</span>(<span class="hljs-params">[arg1, arg2, arg3, arg4]</span>) </span>{
     <span class="hljs-keyword">let</span> x1 = <span class="hljs-built_in">parseFloat</span>(arg1);
     <span class="hljs-keyword">let</span> y1 = <span class="hljs-built_in">parseFloat</span>(arg2);
     <span class="hljs-keyword">let</span> x2 = <span class="hljs-built_in">parseFloat</span>(arg3);
@@ -732,7 +732,7 @@ Here are some examples of data types and values for them:</p>
 </code></pre>
 <p>We use the method <strong><code>Math.max(x1, x2)</code></strong> to find the higher value from <strong><code>x1</code></strong> and <strong><code>x2</code></strong> and identically <strong><code>Math.min(y1, y2)</code></strong> to find the lower of both values.</p>
 <p>Let we call the function with testing values from the coordinate system:</p>
-<pre><code class="lang-javascript">calculateRectangleArea([<span class="hljs-number">60</span>, <span class="hljs-number">20</span>, <span class="hljs-number">10</span>, <span class="hljs-number">50</span>]); <span class="hljs-comment">// 1500</span>
+<pre><code class="lang-JavaScript">calculateRectangleArea([<span class="hljs-number">60</span>, <span class="hljs-number">20</span>, <span class="hljs-number">10</span>, <span class="hljs-number">50</span>]); <span class="hljs-comment">// 1500</span>
                                           <span class="hljs-comment">// 160</span>
 </code></pre>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
@@ -1115,7 +1115,7 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 <ol>
 <li>We have the structure of the page, it remains to add a <strong>JavaScript</strong> file with the logic itself. We create a new file and name it <strong>converter.js</strong></li>
 </ol>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">eurConverter</span>(<span class="hljs-params"></span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">eurConverter</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">let</span> bgn = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;bgn&quot;</span>).value;
     <span class="hljs-keyword">let</span> eur = (bgn / <span class="hljs-number">1.95583</span>).toFixed(<span class="hljs-number">2</span>);
     <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;euro&quot;</span>).value = eur;    
@@ -1125,7 +1125,7 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 <li>Once we have the logic of the application, we need to find a way to tell where to use it. To do this we need to make 2 changes to the existing <strong>index.html</strong> file:</li>
 </ol>
 <p>First, we add the following line just below the <strong><code>title</code></strong> tag, through which the connection between the files is made <strong>index.html</strong> and <strong>converter.js</strong>:</p>
-<pre><code class="lang-html"> <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;converter.js&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<pre><code class="lang-html"> <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;converter.js&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/JavaScript&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
 <p>And second, we find and replace the <strong><code>input</code></strong> field with the type <strong><code>button</code></strong> with the following code. In this way we set <strong>when clicking</strong> on the button [<strong>Convert!</strong>] to call the function <strong><code>eurConverter()</code></strong>:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;primary-btn&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;eurConverter()&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Convert!&quot;</span> /&gt;</span>
@@ -1212,7 +1212,7 @@ The position of the image is set from the property <strong><code>style.position<
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Catch the mouse!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;app.js&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;app.js&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/JavaScript&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;image&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;position:absolute;top:30%;left:30%; width:10%; height:auto; &quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/mouse.jpg&quot;</span> /&gt;</span>
@@ -1220,7 +1220,7 @@ The position of the image is set from the property <strong><code>style.position<
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 <p>The file <strong>app.js</strong> must look like this:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">chaseMouse</span>(<span class="hljs-params"></span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">chaseMouse</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">let</span> img = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;image&quot;</span>);
     img.style.position = <span class="hljs-string">&quot;absolute&quot;</span>;
     img.style.left = (<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">300</span>) + <span class="hljs-string">&quot;px&quot;</span>;
@@ -1283,7 +1283,7 @@ The position of the image is set from the property <strong><code>style.position<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"next":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"previous":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"path":"chapter-01-first-steps-in-programming.md","ref":"chapter-01-first-steps-in-programming.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-02-simple-calculations.md","mtime":"2021-11-21T18:47:12.645Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:48:01.932Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"next":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"previous":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"path":"chapter-01-first-steps-in-programming.md","ref":"chapter-01-first-steps-in-programming.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-02-simple-calculations.md","mtime":"2021-12-14T12:49:39.561Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-14T12:50:36.030Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

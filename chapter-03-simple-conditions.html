@@ -497,7 +497,7 @@
 
 <h2 id="simple-if-comparisons"><a name="simple-if-comparisons" class="plugin-anchor" href="#simple-if-comparisons"><i class="fa fa-link" aria-hidden="true"></i></a>Simple <strong><code>if</code></strong> comparisons</h2>
 <p>In programming, we often <strong>check particular conditions</strong> and perform various actions depending on the result of the comparison. This is done through the <strong><code>if</code></strong> comparison, which has the following structure:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">Boolean</span> condition) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">Boolean</span> condition) {
     <span class="hljs-comment">// body of the conditional construct;  </span>
 }
 </code></pre>
@@ -511,7 +511,7 @@
 <a href="https://judge.softuni.org/Contests/Practice/Index/929#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/929#0</a>.</p>
 <h2 id="if-else-conditional-constructs"><a name="if-else-conditional-constructs" class="plugin-anchor" href="#if-else-conditional-constructs"><i class="fa fa-link" aria-hidden="true"></i></a>If-else conditional constructs</h2>
 <p>The <strong><code>if</code></strong> conditional can also have an <strong><code>else</code></strong> option to provide a specific action to be performed in case the Boolean expression (which is specified at the beginning <strong><code>if (Boolean expression)</code></strong>) returns a negative/falsy result (<strong><code>false</code></strong>). Written in this way the <strong>conditional statement</strong> is called <strong><code>if-else</code></strong> and its behavior is as follows: if the result of the condition is <strong>positive / truthy</strong> (<strong><code>true</code></strong>) - a set of instructions is executed. By contrast, when the result is <strong>negative / falsy</strong> (<strong><code>false</code></strong>) - a different set is executed. The format of this structure in <strong>JavaScript</strong> is as follows:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">Boolean</span> condition) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">Boolean</span> condition) {
     <span class="hljs-comment">// Condition body to be executed if a condition is true</span>
 } <span class="hljs-keyword">else</span> {
     <span class="hljs-comment">// else structure body to be executed if a condition is false</span>
@@ -524,7 +524,7 @@
 <p>You can test your solution at the following link: <a href="https://judge.softuni.org/Contests/Practice/Index/929#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/929#1</a>.</p>
 <h2 id="about-the-curly-braces---after-an-if--else"><a name="about-the-curly-braces---after-an-if--else" class="plugin-anchor" href="#about-the-curly-braces---after-an-if--else"><i class="fa fa-link" aria-hidden="true"></i></a>About the Curly Braces { } after an if / else</h2>
 <p>When we have <strong>only one command</strong> in the body of the <strong><code>if</code> statement</strong>, we can <strong>skip the curly braces</strong>, indicating the body of the conditional operator. When we need to execute a <strong>block of code</strong> (group of commands), curly braces are <strong>mandatory</strong>. In case the braces are omitted, <strong>only the first line of code</strong> will be executed after the <strong><code>if</code> statement</strong>.</p>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
 <td>It is a good practice to <strong> always include curly braces</strong> since this makes the code more readable, neater and cleaner.</td>
 </tr></table>
 
@@ -558,7 +558,7 @@ Using the keyword <strong><code>let</code></strong>, our variable assumes the pr
 <p>It is important to note that there is a <strong>third way</strong> to initialize variables - through the use of the keyword <strong><code>const</code></strong>. These variables have the same scope as if defined through <strong><code>let</code></strong>, however have one key difference - they are <strong>constant variables</strong>. This means that after the initial assignment, their value is <strong>impossible to be changed or the variable re-defined</strong>.</p>
 <h2 id="conditional-chaining"><a name="conditional-chaining" class="plugin-anchor" href="#conditional-chaining"><i class="fa fa-link" aria-hidden="true"></i></a>Conditional chaining</h2>
 <p>Sometimes we have to do a series of checks, before deciding what actions our program will execute. In such cases we can apply the structure <strong><code>if-else if&#x2026;-else</code> in series</strong>. For this purpose we employ the following structure: </p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (first condition) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span> (first condition) {
     <span class="hljs-comment">// condition body;</span>
 } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (second condition) {
     <span class="hljs-comment">// condition body;</span>
@@ -572,7 +572,7 @@ Using the keyword <strong><code>let</code></strong>, our variable assumes the pr
 </code></pre>
 <h3 id="example-numbers-one-through-9-in-english"><a name="example-numbers-one-through-9-in-english" class="plugin-anchor" href="#example-numbers-one-through-9-in-english"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Numbers one through 9 in English</h3>
 <p>Print the digits one through nine in English on the console (the numbers are passed as arguments of the function upon call). We can take the digit and through a <strong>series of conditions</strong> print the corresponding English word on the console:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">number1to9</span>(<span class="hljs-params">[arg1]</span>) </span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">number1to9</span>(<span class="hljs-params">[arg1]</span>) </span>{
   <span class="hljs-keyword">let</span> num = <span class="hljs-built_in">parseInt</span>(arg1);
 
   <span class="hljs-keyword">if</span> (num === <span class="hljs-number">1</span>) {
@@ -1254,7 +1254,7 @@ Using the keyword <strong><code>let</code></strong>, our variable assumes the pr
   <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
 
-    <span class="hljs-comment">// enter Javascript functionality here</span>
+    <span class="hljs-comment">// enter JavaScript functionality here</span>
 
   </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -1321,7 +1321,7 @@ Using the keyword <strong><code>let</code></strong>, our variable assumes the pr
 </code></pre>
 <p>Now if we save and hit refresh, our application should look much better. All that is left now is to add the <strong>functionality</strong>. This is done through the <strong><code>&lt;script&gt;</code></strong> section of our <strong>HTML</strong> document.
 We will use the following <strong>JavaScript code</strong> to handle different user inputs and events:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">convert</span>(<span class="hljs-params"></span>)</span>{
+<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">convert</span>(<span class="hljs-params"></span>)</span>{
   <span class="hljs-keyword">let</span> x = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;cash-input&quot;</span>).value;
   <span class="hljs-keyword">let</span> e = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;currency-options&quot;</span>);
   <span class="hljs-keyword">let</span> selected = e.options[e.selectedIndex].text;
@@ -1384,7 +1384,7 @@ We will use the following <strong>JavaScript code</strong> to handle different u
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"next":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"path":"chapter-03-simple-conditions-exam-problems.md","ref":"chapter-03-simple-conditions-exam-problems.md","articles":[]},"previous":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-03-simple-conditions.md","mtime":"2021-11-21T18:47:12.645Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:48:01.932Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"next":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"path":"chapter-03-simple-conditions-exam-problems.md","ref":"chapter-03-simple-conditions-exam-problems.md","articles":[]},"previous":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-03-simple-conditions.md","mtime":"2021-12-14T12:49:39.565Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-14T12:50:36.030Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

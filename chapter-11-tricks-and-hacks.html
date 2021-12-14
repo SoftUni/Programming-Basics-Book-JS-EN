@@ -457,31 +457,31 @@
 <p>The <strong>JavaScript</strong> language is created by <strong>Brendan Eich</strong> as part of the development of one of the first browsers <strong>Netscape</strong>. The basic constructions and basic syntax are intentionally <strong>similar to Java</strong>, to reduce the learning effort. Moreover, similar conventions are even used to write and format the code. You should know that, even if you do not follow the imposed conventions, the code will <strong>work</strong> (as long as it is written correctly), but simply <strong>will not be easy to understand</strong>. Of course, this is not fatal on a base level, but the faster you get used to writing quality code, the better.</p>
 <p>The rules that are used for writing <strong>JavaScipt</strong> can be found in many sources. The official rules, etc. <strong>JavaScript code conventions</strong> are very well described in the article &quot;<strong>Coding style</strong>&quot; in the documentation of &quot;Mozilla&quot;: <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style" target="_blank">https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style</a>. It is important, to note that in the examples, we have given so far and will give in the future in this book, we are guided mainly by it.</p>
 <p>For code formatting <strong>curly braces <code>{}</code></strong> to be opened on the same line and to be closed just below the construction, to which they refer, as in the example below.</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (someCondition) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span> (someCondition) {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Inside the if statement&quot;</span>);
 }
 </code></pre>
 <p>You can see that the command <strong><code>console.log(&#x2026;)</code></strong> in the example is <strong>offset by 4 white spaces(one tab)</strong>, which is also recommended by the documentation. If given construction with curly brackets is offset by one tab, then <strong>the curly brackets <code>{}</code></strong> must be in  <strong>the beginning of the construction</strong>, as in the example below:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (someCondition) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span> (someCondition) {
    <span class="hljs-keyword">if</span> (anotherCondition) {
        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Inside the if statement&quot;</span>);
    }
 }
 </code></pre>
 <p>This is an example for <strong>badly formatted code</strong> according to the accepted conventions for writing code in <strong>JavaScript</strong>:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span>(someCondition)
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span>(someCondition)
 {
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Inside the if statement&quot;</span>);}
 </code></pre>
 <p>The first thing we can notice is the <strong>curly braces <code>{}</code></strong>. The first (opening) bracket must be <strong>exactly next to the <code>if</code> condition</strong>, and the second (closing) bracket - <strong>under the command <code>console.log(&#x2026;)</code>, on a separate blank line</strong>. In addition, the command inside the <strong><code>if</code></strong> construction must be <strong>offset by 4 white spaces(one tab)</strong>. Immediately after the keyword <strong><code>if</code></strong> and before the condition of the check, a <strong>space</strong> is left.</p>
 <p>The same rule applies to <strong><code>for</code> loops, as well as any other constructions with curly braces <code>{}</code></strong>. Here are some more examples:</p>
 <p><strong>Correct:</strong></p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
     <span class="hljs-built_in">console</span>.log(i);
 }
 </code></pre>
 <p><strong>Wrong:</strong></p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++)
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++)
 {
 <span class="hljs-built_in">console</span>.log(i);
 }
@@ -493,7 +493,7 @@
 <li>For Ubuntu [<strong>Ctrl + Shift + I</strong>]</li>
 </ul>
 <p>Let&apos;s use <strong>the wrongly formatted example</strong> from earlier:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++)
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++)
 {
 <span class="hljs-built_in">console</span>.log(i);
 }
@@ -504,7 +504,7 @@ However, automatic formatting does not affect the naming of our variables, which
 <li>We must be aware of uppercase and lowercase letters because <strong>JavaScript makes a difference</strong> between them. or example <strong><code>age</code></strong> and <strong><code>Age</code></strong> are different variables.</li>
 <li>Variable names <strong>cannot</strong> match a JavaScript keyword, for example, <strong><code>let</code></strong> is an invalid variable name. The official or etc. keyword phrases are just words that are <strong>part of the syntax of JavaScript</strong> and for this reason, they are reserved and cannot be used as names of our variables. Through these words, we have the opportunity to build our programs. As an example of such words can be given the already used: <strong><code>for</code></strong>, <strong><code>while</code></strong>, <strong><code>do</code></strong>, <strong><code>if</code></strong>, <strong><code>else</code></strong>, <strong><code>let</code></strong>, etc. You can see a full list of these reserved phrases here: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords</a></li>
 </ul>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
 <td>Although using the symbol <code>_</code> in the manes of variables is allowed, in JavaScript it is not recommended and is considered a bad style of naming.</td>
 </tr></table>
 
@@ -585,7 +585,7 @@ However, automatic formatting does not affect the naming of our variables, which
 <h3 id="creating-your-own-code-snippet"><a name="creating-your-own-code-snippet" class="plugin-anchor" href="#creating-your-own-code-snippet"><i class="fa fa-link" aria-hidden="true"></i></a>Creating Your Own Code Snippet</h3>
 <p>In this section, we are going to show you how to <strong>make your own code snippet</strong>. We will see <strong>how to make a code snippet</strong> for <strong><code>json</code></strong> object. For a start, we will go to [<strong>File -&gt; Preferences -&gt; User Snippets</strong>], then a window will open from which you can choose for which programming language you will create a snippet, as shown in the picture:</p>
 <p><img src="assets/chapter-11-images/01.Code-snippet-02.png" alt=""> </p>
-<p><strong>We choose JavaScript</strong> from the drop-down menu and a window with a name will open <strong>javascript.json</strong>. This extension <strong>json</strong> is a special format for saving data, which is imposed in the ways of data transfer and storage. In addition, the <strong>json</strong> format can be used in our programs, as we will discuss later. The file looks like this:</p>
+<p><strong>We choose JavaScript</strong> from the drop-down menu and a window with a name will open <strong>JavaScript.json</strong>. This extension <strong>json</strong> is a special format for saving data, which is imposed in the ways of data transfer and storage. In addition, the <strong>json</strong> format can be used in our programs, as we will discuss later. The file looks like this:</p>
 <p><img src="assets/chapter-11-images/01.Code-snippet-03.png" alt=""> </p>
 <p>The example we see by default is generating code to write to the console using the <strong>log</strong> key prefix. This code is just an example, and this template is actually embedded, but if it wasn&apos;t, it would look like the example.</p>
 <p>In this example, you see a lot of unknown things, but do not worry, we will get familiar with them later. We now focus on the part <strong><code>&quot;Print to console&quot;:</code></strong> and the code between <strong>opening and closing curly braces <code>{}</code></strong>. What we see inside the parentheses is the content of a template. . Each template must contain <strong><code>prefix</code></strong>, which is the short text that after pressing [<strong>Tab</strong>] + [<strong>Tab</strong>]  will generate the template code in your program.</p>
@@ -608,7 +608,7 @@ However, automatic formatting does not affect the naming of our variables, which
 </ul>
 <p><strong>Visual Studio Code</strong>  gives us <strong>a built-in debugger</strong>,  thanks to which we can place <strong>breakpoints</strong>, at places we have chosen.  When it reaches a <strong>breakpoint</strong>,  the program <strong>stops running</strong> and allows <strong>step-by-step running</strong> of the remaining lines. Debugging allows us to <strong>get in the details of the program</strong> and see where exactly the errors occur and what is the reason for this.</p>
 <p>In order to demonstrate how to use the debugger, we will use the following program:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
     <span class="hljs-built_in">console</span>.log(i);
 }
 </code></pre>
@@ -627,7 +627,7 @@ However, automatic formatting does not affect the naming of our variables, which
 <ul>
 <li><strong><code>Math.round(&#x2026;)</code></strong> - accepts 1 parameter - <strong>number, which we want to round</strong>. Rounding is performed according to the basic rule of rounding - if the decimal part is less than 5, rounding is down and vice versa, if it is greater than 5 - up:</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> number = <span class="hljs-number">5.439</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> number = <span class="hljs-number">5.439</span>;
 <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.round(number));
 <span class="hljs-comment">// This will print on the console &quot;5&quot;</span>
 <span class="hljs-keyword">let</span> secondNumber = <span class="hljs-number">5.539</span>;
@@ -637,7 +637,7 @@ However, automatic formatting does not affect the naming of our variables, which
 <ul>
 <li><strong><code>Math.floor(&#x2026;)</code></strong> - in case we want the rounding always to be <strong>down to the previous integer</strong>. For example, if we have the number 5.99 and use <strong> <code>Math.floor (5.99)</code> </strong>, we get the number <strong>5</strong>:</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> numberToFloor = <span class="hljs-number">5.99</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> numberToFloor = <span class="hljs-number">5.99</span>;
 <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.floor(numberToFloor));
 <span class="hljs-comment">// This will print on the console 5</span>
 </code></pre>
@@ -645,20 +645,20 @@ However, automatic formatting does not affect the naming of our variables, which
 <li><strong><code>Math.ceil(&#x2026;)</code></strong> - in case we want the rounding always to be  <strong>up to the previous integer</strong>. For example, if we have the number 5.13 and use <strong><code>Math.ceil(5.13)</code></strong>, we</li>
 <li>will get the number <strong>6</strong>:</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> numberToCeil = <span class="hljs-number">5.13</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> numberToCeil = <span class="hljs-number">5.13</span>;
 <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.floor(numberToCeil));
 <span class="hljs-comment">// This will print on the console 6</span>
 </code></pre>
 <ul>
 <li><strong><code>Math.trunc(&#x2026;)</code></strong> - in case we want to <strong>remove the fractional part</strong>. For example, if we have the number 2.63 and use <strong><code>Math.trunc(2.63)</code></strong>, we will get the number <strong>2</strong>:</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> numberToTrunc = <span class="hljs-number">2.63</span>;
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> numberToTrunc = <span class="hljs-number">2.63</span>;
 <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.floor(numberToTrunc));
 <span class="hljs-comment">// This will print on the console 2</span>
 </code></pre>
 <h3 id="use--instead-of--and--insted-of-"><a name="use--instead-of--and--insted-of-" class="plugin-anchor" href="#use--instead-of--and--insted-of-"><i class="fa fa-link" aria-hidden="true"></i></a>Use === instead of ==, and !== insted of !=</h3>
 <p>The operators <strong><code>==</code></strong> and <strong><code>!=</code></strong> make <strong>automatic conversion</strong> of the compared value or variable, while the operators  <strong><code>===</code></strong> and <strong><code>!==</code></strong> does not make such a conversion and if both values are not of the same type - the result is <strong><code>false</code></strong>. They (<strong><code>==</code></strong> and <strong><code>!=</code></strong>) make a comparison of <strong>value and type</strong>, which is more accurate and even faster. Let&apos;s look at the following example to clarify what is meant by data <strong>type</strong>:</p>
-<pre><code class="lang-javascript">[<span class="hljs-number">10</span>] === <span class="hljs-number">10</span>    <span class="hljs-comment">// false</span>
+<pre><code class="lang-JavaScript">[<span class="hljs-number">10</span>] === <span class="hljs-number">10</span>    <span class="hljs-comment">// false</span>
 [<span class="hljs-number">10</span>] == <span class="hljs-number">10</span>    <span class="hljs-comment">// true</span>
 <span class="hljs-string">&quot;10&quot;</span> == <span class="hljs-number">10</span>     <span class="hljs-comment">// true</span>
 <span class="hljs-string">&quot;10&quot;</span> === <span class="hljs-number">10</span>    <span class="hljs-comment">// false</span>
@@ -668,7 +668,7 @@ However, automatic formatting does not affect the naming of our variables, which
  <span class="hljs-string">&quot;&quot;</span> === <span class="hljs-literal">false</span> <span class="hljs-comment">// false</span>
 </code></pre>
 <p>We see how the number <strong>10</strong> can be written in our programs in different ways. Written in this way <strong><code>[10]</code></strong> is an <strong>array</strong> of one number. In short, arrays are <strong>multiple values</strong> stored to a variable. For example:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> array = [<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>];
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> array = [<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>];
 <span class="hljs-comment">// This is a variable of type array</span>
 </code></pre>
 <p>We will learn more about arrays later but for now, let&apos;s just think about whether the array <strong><code>[10]</code></strong> is normally equal to the number <strong><code>10</code></strong>. We will give you a hint - <strong>it is not normal</strong>. Therefore, if we do not want unpleasant errors (bugs) in our programs, it is best to use the operators  <strong><code>===</code></strong> and <strong><code>!==</code></strong>.</p>
@@ -681,7 +681,7 @@ However, automatic formatting does not affect the naming of our variables, which
 <li><strong>Body</strong> of the conditonal construction</li>
 <li>Optional: <strong><code>else</code> clause</strong></li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (condition) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span> (condition) {
     <span class="hljs-comment">// body</span>
 }
 <span class="hljs-keyword">else</span> (condition) {
@@ -697,7 +697,7 @@ However, automatic formatting does not affect the naming of our variables, which
 <li>Updating statement (<strong><code>i++</code></strong>).</li>
 <li>Body of the loop.</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt;= <span class="hljs-number">10</span>; i++;) {
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt;= <span class="hljs-number">10</span>; i++;) {
     <span class="hljs-comment">// body</span>
 }
 </code></pre>
@@ -705,7 +705,7 @@ However, automatic formatting does not affect the naming of our variables, which
 <h3 id="using-the-so-called-positive-truthy-and-negative-falsy-value"><a name="using-the-so-called-positive-truthy-and-negative-falsy-value" class="plugin-anchor" href="#using-the-so-called-positive-truthy-and-negative-falsy-value"><i class="fa fa-link" aria-hidden="true"></i></a>Using the so-called positive (Truthy) and negative (Falsy) value</h3>
 <p>All <strong>Truthy</strong> values used in the conditional statement <strong><code>if</code></strong> will give a positive result and accordingly or program will continue ist execution in the body of the conditional statement (for the purposes of the example here the body of the conditional statement is not formatted correctly).</p>
 <p>For some of them it seems logical to give a positive result, but for others not so much.</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">//Truthy</span>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">//Truthy</span>
 <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {}       <span class="hljs-comment">//true</span>
 <span class="hljs-keyword">if</span> ({}) {}         <span class="hljs-comment">//true</span>
 <span class="hljs-keyword">if</span> ([]) {}         <span class="hljs-comment">//true</span>
@@ -719,7 +719,7 @@ However, automatic formatting does not affect the naming of our variables, which
 <span class="hljs-keyword">if</span> (-<span class="hljs-literal">Infinity</span>) {}  <span class="hljs-comment">//true</span>
 </code></pre>
 <p>Conversely, all <strong>Falsy</strong> values will give a negative result and the program will not enter the body of the conditional statement.</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">//Falsy</span>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">//Falsy</span>
 <span class="hljs-keyword">if</span> (<span class="hljs-literal">false</span>) {}       <span class="hljs-comment">//false</span>
 <span class="hljs-keyword">if</span> (<span class="hljs-literal">null</span>) {}        <span class="hljs-comment">//false</span>
 <span class="hljs-keyword">if</span> (<span class="hljs-literal">undefined</span>) {}   <span class="hljs-comment">//false</span>
@@ -774,7 +774,7 @@ However, automatic formatting does not affect the naming of our variables, which
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"11. Tricks and Hacks","level":"1.21","depth":1,"next":{"title":"Conclusion","level":"1.22","depth":1,"path":"chapter-12-conclusion.md","ref":"chapter-12-conclusion.md","articles":[]},"previous":{"title":"10. Functions","level":"1.20","depth":1,"path":"chapter-10-functions.md","ref":"chapter-10-functions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-11-tricks-and-hacks.md","mtime":"2021-11-21T18:47:12.653Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:48:01.932Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"11. Tricks and Hacks","level":"1.21","depth":1,"next":{"title":"Conclusion","level":"1.22","depth":1,"path":"chapter-12-conclusion.md","ref":"chapter-12-conclusion.md","articles":[]},"previous":{"title":"10. Functions","level":"1.20","depth":1,"path":"chapter-10-functions.md","ref":"chapter-10-functions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-11-tricks-and-hacks.md","mtime":"2021-12-14T12:49:39.573Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-14T12:50:36.030Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
