@@ -172,7 +172,7 @@ For those of you who are more interested in the topic, many of the big **framewo
 
 ## Code Debugging Techniques
 
-Debugging plays an important role in the process of creating software, which is to allow us to **follow the implementation of our program step by step**. With this technique, we can **сfollow the values of the local variables** because they are changing during the execution of the program and to **remove** possible **errors** (bugs). The process of debugging includes:
+Debugging plays an important role in the process of creating software, which is to allow us to **follow the implementation of our program step by step**. With this technique, we can **follow the values of the local variables** because they are changing during the execution of the program and to **remove** possible **errors** (bugs). The process of debugging includes:
 
 * **Finding** the problems (bugs).
 * **Locating** the code, which causes the problems.

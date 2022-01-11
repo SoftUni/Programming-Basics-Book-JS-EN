@@ -379,7 +379,7 @@ The input data contains **exactly 3 lines** (arguments):
 - If the **budget is sufficient**:
   - "**Yes! You have {N} leva left.**" – where **N is the amount of remaining money** for the group.
 - If the **budget is NOT sufficient**:
-  - "**Not enough money! You need {M} leva.**" – where **М is the insufficient amount**.
+  - "**Not enough money! You need {M} leva.**" – where **M is the insufficient amount**.
 
 **The amounts** must be **formatted up to the second digit after the decimal point**.
 
