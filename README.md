@@ -52,7 +52,8 @@ Brief information about this edition:
 * Title: **Programming Basics with JavaScript**
 * Authors: **Svetlin Nakov & Team**
   * Main authors: Boncho Vulkov, Christian Hristov, Dimitar Dalev, Elena Rogleva, Hristo Minkov, Ivelin Arnaudov, Julieta Atanasova, Kristian Marianov, Martin Chaov, Nikolay Bankin, Nikolay Kostov, Pavel Kolev, Petar Ivanov, Stiliyan Kangalov, Svetlin Nakov, Ventsislav Petrov, Zahariya Pehlyavanova, Zdravko Kostadinov
-  * Other contributors:  Aleksander Krastev, Aleksander Lazarov, Angel Dimitriev, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Hristiyan Hristov, Hristo Hristov, Iskra Nikolova, Ivelin Kirilov, Julieta Atanasova, Kalin Primov, Kristiyan Pamidov, Luboslav Lubenov, Marina Shideroff, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Preslav Mihaylov, Rositsa Nenova, Ruslan Filipov, Stefka Vasileva, Svetlin Nakov, Teodor Kurtev, Tonyo Zhelev, Tsvetan Iliev, Vasko Viktorov, Ventsislav Petrov, Yanitsa Vuleva, Yulian Linev, Zahariya Pehlivanova, Zhivko Nedyalkov
+  * Other contributors: Aleksandar Peev, Aleksander Krastev, Aleksander Lazarov, Alen Paunov, Angel Dimitriev,Ariet Motzeva, Daniel Tsvetkov, Denis Milanov, Dimitar Dimitrov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Hristiyan Hristov, Hristo Hristov, Iskra Nikolova, Ivelin Kirilov, Julieta Atanasova, Kalin Primov, Kristiyan Pamidov, Luboslav Lubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Preslav Mihaylov, Rositsa Nenova, Rozalina Zaharieva, Ruslan Filipov, Stefany Boyanova, Stefany Ilieva, Stefka Vasileva, Svetlin Nakov, Teodor Kurtev, Todor Cholakov, Tonyo Zhelev, Tsvetan Iliev, Vasil Krumov, Vasko Viktorov, Ventsislav Petrov, Violeta Taseva, Yanitsa Vuleva, Yulian Linev, Zahariya Pehlivanova, Zhivko Nedyalkov
+
 * ISBN: **978-619-00-1401-0** (9786190014010)
 * Edition: **Faber Publishing, Sofia, Oct 2021**
 * License: **CC-BY-SA**
