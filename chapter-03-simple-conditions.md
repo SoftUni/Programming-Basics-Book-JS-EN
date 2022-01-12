@@ -119,7 +119,7 @@ You can test your solution at the following link: [https://judge.softuni.org/Con
 
 When we have **only one command** in the body of the **`if` statement**, we can **skip the curly braces**, indicating the body of the conditional operator. When we need to execute a **block of code** (group of commands), curly braces are **mandatory**. In case the braces are omitted, **only the first line of code** will be executed after the **`if` statement**.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>It is a good practice to <strong> always include curly braces</strong> since this makes the code more readable, neater and cleaner.</td>
 </tr></table>
 

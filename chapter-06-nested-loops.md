@@ -265,7 +265,7 @@ We gave **`n`** as a parameter to our function:
 
 ![](/assets/chapter-6-1-images/09.House-02.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><b>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into <b><code>Number</code></b>type, because it is said that we will be given valid integers. If you are making more complex programs it is a good practice to check the data. What will happen if instead of the character "A" the user inputs a number?</td>
 </tr></table>
 
@@ -382,7 +382,7 @@ We are ready with the upper part.
 
 Printing the lower part is very similar to that of the upper part. The difference is that instead of decreasing **`leftRight`** with 1 at the end of the loop, we will increase **`leftRight`** with 1 at the beginning of the loop. Also, **the loop will be from 0 to `(n - 1) / 2`**.   
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><b>Repeating a code is considered bad practice</b> because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond) at a few more places and we decide to change it. For this, we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2, or 3 times but tens of times. A way to overcome this problem is to use <b>functions</b>. You can look for additional information for functions on the Internet or look at  <a href="chapter-10-functions.md">Chapter “10” (Functions)</a>.</td>
 </tr></table>
 
@@ -467,13 +467,13 @@ function drawRating(rating) {
 
     // build of HTML
     for (let i = 0; i < fullStars; i++) {
-        html += '<img src="images/full-star.PNG">';
+        html += '<img src="images/full-star.png">';
     }
     for (let i = 0; i < halfStars; i++) {
-        html += '<img src="images/half-star.PNG">';
+        html += '<img src="images/half-star.png">';
     }
     for (let i = 0; i < emptyStars; i++) {
-        html += '<img src="images/empty-star.PNG">';
+        html += '<img src="images/empty-star.png">';
     }
 
     // return of created HTML

@@ -250,7 +250,7 @@ We can use the following idea to solve the problem:
 
 ![](assets/chapter-7-1-images/09.Sum-digits-01.png)
 
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px;" /></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px;" /></td>
 <td><code><strong>n % 10</strong></code>: <b>returns</b> the last digit of the number <code><strong>n</strong></code>.<br>
 <code><strong>Math.floor(n / 10)</strong></code>: <b>deletes</b> the last digit of <code><strong>n</strong></code>.</td>
 </tr></table>
@@ -280,7 +280,7 @@ And here is an **infinite `for`** loop:
 
 We already know that the infinite loop executes a certain code infinitely, but what if we want at some point under a given condition to interrupt and exit the loop? The **break** operator comes in handy in this situation.
 
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td>The operator <b><code>break</code></b> stops a loop's execution at the point it is called and the execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingly and the rest of the code in the body of the loop will not be executed.</td>
 </tr></table>
 
@@ -305,7 +305,7 @@ Here are some examples of composite numbers:
 * If it is divisible by any of the numbers, it is **composite**.
 * If it is not divisible by any of the numbers, then it is **prime**.
 
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td>We can optimize the algorithm by instead of checking until <code><strong>n-1</strong></code>, checking divisors only until <code><strong>√n</strong></code>. Think of the reasons why this is so.</td>
 </tr></table>
 
@@ -372,7 +372,7 @@ If we leave our function that way, our result will be as follows:
 
 Why is this so? As we can see, the result is **missing "1 1"**. When the function reaches the point when **`i = 1`** and **`j = 1`**, it enters the **`if`** check and executes the **`break`** operation. This way, it **exits the inner loop**, but then continues the execution of the **outer loop**. **`i`** increases, the function enters the inner loop and prints the result.
 
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td>When we use the <b><code>break</code> operator</b> in a <b>nested loop</b>, it interrupts <b>only</b> the execution of the inner loop.</td>
 </tr></table>
 

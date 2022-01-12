@@ -81,7 +81,7 @@ However, automatic formatting does not affect the naming of our variables, which
 * We must be aware of uppercase and lowercase letters because **JavaScript makes a difference** between them. or example **`age`** and **`Age`** are different variables.
 * Variable names **cannot** match a JavaScript keyword, for example, **`let`** is an invalid variable name. The official or etc. keyword phrases are just words that are **part of the syntax of JavaScript** and for this reason, they are reserved and cannot be used as names of our variables. Through these words, we have the opportunity to build our programs. As an example of such words can be given the already used: **`for`**, **`while`**, **`do`**, **`if`**, **`else`**, **`let`**, etc. You can see a full list of these reserved phrases here: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords)
 
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Although using the symbol <code><b>_</b></code> in the manes of variables is allowed, in JavaScript it is not recommended and is considered a bad style of naming.</td>
 </tr></table>
 

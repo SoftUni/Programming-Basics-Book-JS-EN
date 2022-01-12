@@ -332,7 +332,7 @@ When reading the input, we could convert the city into small letters (with the m
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#7](https://judge.softuni.org/Contests/Practice/Index/931#7).
 
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><b>It is a good practice</b> to use <b>blocks</b>, that are <b>enclosed</b> with curly braces <b><code>{ }</code></b> after <b><code>if</code></b> and <b><code>else</code></b>. Also, it is recommended during writing to <b>move aside</b> the code <b>after <code>if</code> and <code>else</code></b> with a single tabulation <b>inward</b>, to make the code more easily readable.</td>
 </tr></table>
 
@@ -375,7 +375,7 @@ Let's write a program that prints the **day of the week** (in English) depending
 
 ![](assets/chapter-4-1-images/09.Day-of-week-01.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>It is a good practice to put at <b>first</b> place those <b><code>case</code> statements</b>, that process <b>the most common situations</b>, and leave the <b><code>case</code> construction</b>, processing <b>the more rare situations</b>, in <b>the end, before the <code>default</code> constructions</b>. Another good practice is to  <b>arrange the <code>case</code> labels</b> in <b>ascending order</b>, regardless of whether they are integral or symbolic.</td>
 </tr></table>
 
@@ -544,7 +544,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#
 
 The figure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is on position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
 
-<p><img src="assets/chapter-4-1-images/13.Point-in-the-figure-01.PNG" /></p>
+<p><img src="assets/chapter-4-1-images/13.Point-in-the-figure-01.png" /></p>
 
 Write a program, that enters an integer **h** and the coordinates of given **point {x, y}** (integers) and prints whether the points are inside the figure (**inside**), outside the figure (**outside**), or on any of the borders of the figure (**border**).
 
@@ -576,7 +576,7 @@ A possible logic for solving the task (not the only correct one):
 
 * We might split the figure into **two rectangles** with a shared side:
 
-<p><img src="assets/chapter-4-1-images/13.Point-in-the-figure-03.PNG" /></p>
+<p><img src="assets/chapter-4-1-images/13.Point-in-the-figure-03.png" /></p>
 
 * A point is **outer (outside)** for the figure when it is **outside** both of the rectangles.
 * A point is **inner (inside)** for the figure if it is inside one of the rectangles (excluding their borders) or lies on their shared side.
@@ -603,7 +603,7 @@ The task we have is to develop a graphical (**GUI**) application for **visualizi
 
 Using the controls on the left we set the coordinates of  **two of the angles of the rectangle** (decimal numbers) and the coordinates of the **point**. The application **visualizes graphically** the rectangle and the point and prints whether the point is **inside** the rectangle (**Inside**),  **outside** of it (**Outside**), or on one of the sides (**Border**). The application **moves and resizes** the coordinates of the rectangle and the point to be maximum large, but to fit the field for visualization, on the right side of the application.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><b>Attention</b>: this application is significantly <b>more complex</b> than the previous graphical applications, which we have to develop until now because it requires using functions for drawing (Canvas ), work with HTML, JavaScript, and GUI framework (Electron).</td>
 </tr></table>
 
@@ -710,7 +710,7 @@ In this way the connection bettween the files **`index.html`** and **`app.js`** 
 
 To enter the coordinates of the rectangle and the point, we use **`input`** fields of type **`Number`**, with tags **`<label>`**. To draw geometric figures in the application, we use the html tag **`<canvas>`**:
 
-<p><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-07.PNG" /></p>
+<p><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-07.png" /></p>
 
 It accepts the following parameters:
   - **Width** (width) in pixels (px)

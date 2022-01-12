@@ -284,7 +284,7 @@ When the **return** operator is located inside a conditional statement such as *
 
 The operator **`return`** can be also used without a **specific value**. In this case, the function will be **terminated** and the return value will be **`undefined`**.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" />
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" />
 </td><td>In programming, we can't have 2 times the operator <code><b>return</b></code> one after another because the first return won't allow us to use the second. Sometimes programmers joke
 with the phrase <b><i>type</i> <code>return; return;</code> <i>and let's go home</i></b>”, to explain that the logic of the program is wrongly typed.</td></tr>
 </table>

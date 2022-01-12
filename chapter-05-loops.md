@@ -393,7 +393,7 @@ A plugin, written by **David Bau** for jQuery - **jQuery-turtle** which provides
 
 A set of **design rules** in a separate file.
 
-> **turtle-icon.PNG**
+> **turtle-icon.png**
 
 A **raster graphic**, which we use for a better presentation of the application.
 
@@ -410,7 +410,7 @@ Now we can proceed to the fun part - **writing the JavaScript code** for the web
 ```
 The code with the functions of the application will be relatively short (about 70-80 lines) and so we don't need to put it into a new separate file. The important thing is to place it correctly in our HTML file.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>It is recommended that all JavaScript files be placed at the end of the HTML document before the final <strong>"body"</strong> tag. This guarantees the faster loading of the page because we do not delay the rendering (processing) of its elements.</td>
 </tr></table>
 

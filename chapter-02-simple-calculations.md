@@ -415,7 +415,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#
 
 The rectangle is given with the **coordinates of two of its opposite angles**. Calculate its **area and perimeter** :
 
-<img alt="rectangleArea" src="/assets/chapter-2-1-images/00.Rectangle-area-01.PNG" width="250" height="200" />
+<img alt="rectangleArea" src="/assets/chapter-2-1-images/00.Rectangle-area-01.png" width="250" height="200" />
 
 In this problem, we have to consider that if we subtract the smaller **`x`**  from the bigger **`x`** , we will obtain the length of the rectangle. Identically, if we subtract the smaller **`y`** from the bigger **`y`**, , we will obtain the height of the rectangle. What is left is to multiply both sides. Here is an example of an implementation of the described logic:
 
