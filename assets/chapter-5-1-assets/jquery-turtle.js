@@ -7023,7 +7023,7 @@ var turtlefn = {
   }),
   saveimg: wrapcommand('saveimg', 1,
   ["<u>saveimg(filename)</u> Saves the turtle's image as a file. " +
-      "<mark>t.saveimg 'mypicture.PNG'</mark>"],
+      "<mark>t.saveimg 'mypicture.png'</mark>"],
   function saveimg(cc, filename) {
     return this.plan(function(j, elem) {
       cc.appear(j);

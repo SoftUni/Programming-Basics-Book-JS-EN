@@ -21,13 +21,13 @@ function drawRating(rating) {
 
     // построяване на HTML
     for (let i = 0; i < fullStars; i++) {
-        html += '<img src="images/full-star.PNG">';
+        html += '<img src="images/full-star.png">';
     }
     for (let i = 0; i < halfStars; i++) {
-        html += '<img src="images/half-star.PNG">';
+        html += '<img src="images/half-star.png">';
     }
     for (let i = 0; i < emptyStars; i++) {
-        html += '<img src="images/empty-star.PNG">';
+        html += '<img src="images/empty-star.png">';
     }
 
     // връщане на готовият HTML
