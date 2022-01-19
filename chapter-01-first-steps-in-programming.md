@@ -8,7 +8,7 @@ To program means to give instructions to the computer, for example, *play a cert
 
 ## Computer Programs
 
-**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go, etc. In order to write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **JavaScript**. In this book, we'll cover programming in general, as well as JavaScript's particular syntax and semantics. We'll examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
+**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, PHP, C, C++, Go, etc. In order to write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **JavaScript**. In this book, we'll cover programming in general, as well as JavaScript's particular syntax and semantics. We'll examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
 
 ### Algorithms
 

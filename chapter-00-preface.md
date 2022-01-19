@@ -179,7 +179,7 @@ Indeed, **the programming language is almost irrelevant**, you just need to lear
 
 Only finally, when you pinch specific technologies in a software project, will you need a **specific programming language**, knowledge of specific program libraries (APIs), frameworks, and software technologies (front-end UI technologies, back-end technologies, ORM technologies, etc.). Relax, you will learn them, all programmers learn them, but first, they learn the foundation: **to program and to do it well**.
 
-This book uses the **JavaScript** language, but it is not essential and can be replaced by Java, C#, Python, PHP, C++, Ruby, Swift, Go, Kotlin or any other language. To master **the profession of "software developer"** it is necessary to learn **to code** (20%), learn to **think algorithmically** and **solve problems** (30%), have **fundamental knowledge of programming and computer science** (25%) and know a **specific programming language and the technologies around it** (25%). Be patient, for a year or two, all this can be mastered at a good starting level, as long as you are serious and diligent.
+This book uses the **JavaScript** language, but it is not essential and can be replaced by Java, C#, Python, PHP, C++, Swift, Go, Kotlin or any other language. To master **the profession of "software developer"** it is necessary to learn **to code** (20%), learn to **think algorithmically** and **solve problems** (30%), have **fundamental knowledge of programming and computer science** (25%) and know a **specific programming language and the technologies around it** (25%). Be patient, for a year or two, all this can be mastered at a good starting level, as long as you are serious and diligent.
 
 ## The Book which helps teachers 
 
