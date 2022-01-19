@@ -9,16 +9,6 @@ Since we have learned what **`for`** loops are and their function in code, now i
 
 In the current chapter, we will also take a look at the **`break`** operator and **how** to empty it to **interrupt** a loop.
 
-
-## Video
-
-<div class="video-player">
-  Watch the video course for this chapter: <a target="_blank"
-  href="https://www.youtube.com/watch?v=KuaOHr3RpNs">
-  https://www.youtube.com/watch?v=KuaOHr3RpNs</a>.
-</div>
-
-
 ## Loops with stride
 
 In the **"Loops (Repetitions)"** chapter we learned how the **`for`** loop works and we already know when and to what purpose to use it. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step** or as it is also known **stride**.  

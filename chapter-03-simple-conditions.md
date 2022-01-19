@@ -2,13 +2,6 @@
 
 In the present chapter, we will take a look at the **conditional constructs in the JavaScript programming language**. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (**`if`** and **`if-else`**) by implementing appropriate examples and also we will take a look at the range in which a variable lives (its **scope**). Finally, we will go over different **debugging** techniques, to follow the programming steps through which our program goes during its run.
 
-## Video
-
-<div class="video-player">
-  Watch the video course for this chapter: <a target="_blank" href="https://www.youtube.com/watch?v=0GTknpT5mw8">https://www.youtube.com/watch?v=0GTknpT5mw8</a>.
-</div>
-
-
 ## Conditional operators
 
 In programming, we can compare values through the use of the following **operators**:

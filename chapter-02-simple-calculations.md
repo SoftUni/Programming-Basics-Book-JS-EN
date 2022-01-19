@@ -7,13 +7,6 @@ In this chapter we are going to get familiar with the following concepts and pro
 - How to do simple **arithmetic operations**: addition, subtraction, multiplication, division, concatenate strings.
 - How to **round** numbers.
 
-## Video
-
-<div class="video-player">
-   Watch a video tutorial based on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=kP_1cKnciyA">https://www.youtube.com/watch?v=kP_1cKnciyA</a>.
-</div>
-
-
 ## Calculations in Programming
 
 We know that computers are machines that process data. All **data** is stored in the computer memory (RAM) in **variables**. Variables are named memory areas that store data of a certain type, for example, number or string. Each **variable** in JavaScript has a **name** and **value**. Here is how we would define a variable by assigning it a value at the same time as declaring it:
