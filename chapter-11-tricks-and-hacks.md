@@ -1,6 +1,6 @@
 # Chapter 11. Tricks and Hacks
 
-In the current chapter, we are going to see some tricks, hacks and techniques, which will make our work with **JavaScript**  easier in the **Visual Studio Code** IDE. In particular, we will see:
+In the current chapter, we are going to see some tricks, hacks and techniques, which will make our work with **JavaScript** easier in the **Visual Studio Code** IDE. In particular, we will see:
 
 * How to properly **format our code**.
 * Conventions for **naming elements in the code**.
@@ -26,7 +26,7 @@ if (someCondition) {
 }
 ```
 
-You can see that the command **`console.log(…)`** in the example is **offset by 4 white spaces(one tab)**, which is also recommended by the documentation. If given construction with curly brackets is offset by one tab, then **the curly brackets `{}`** must be in  **the beginning of the construction**, as in the example below:
+You can see that the command **`console.log(…)`** in the example is **offset by 4 white spaces(one tab)**, which is also recommended by the documentation. If given construction with curly brackets is offset by one tab, then **the curly brackets `{}`** must be in **the beginning of the construction**, as in the example below:
 
 ```JavaScript
 if (someCondition) {
@@ -100,7 +100,7 @@ Here are some examples for **badly named variables**, even though the names are 
 * **`Start_Index`** (starts with an uppercase letter and contains '\_')
 * **`lastNegativeNumber_Index`** (contains '\_')
 
-At a first look all these rules can seem meaningless and unnecessary, but with time passed and experience gaining you will see the need for conventions for writing quality code,  in order to be able to work more easily and faster in a team. You will understand that the work with a code, which is written without complying with any rules for code quality, is annoying.
+At a first look all these rules can seem meaningless and unnecessary, but with time passed and experience gaining you will see the need for conventions for writing quality code, in order to be able to work more easily and faster in a team. You will understand that the work with a code, which is written without complying with any rules for code quality, is annoying.
 
 ## Shortcuts in Visual Studio Code
 
@@ -150,7 +150,7 @@ In this section, we are going to show you how to **make your own code snippet**.
 
 The example we see by default is generating code to write to the console using the **log** key prefix. This code is just an example, and this template is actually embedded, but if it wasn't, it would look like the example.
 
-In this example, you see a lot of unknown things, but do not worry, we will get familiar with them later. We now focus on the part **`"Print to console":`** and the code between **opening and closing curly braces `{}`**. What we see inside the parentheses is the content of a template. . Each template must contain **`prefix`**, which is the short text that after pressing [**Tab**] + [**Tab**]  will generate the template code in your program.
+In this example, you see a lot of unknown things, but do not worry, we will get familiar with them later. We now focus on the part **`"Print to console":`** and the code between **opening and closing curly braces `{}`**. What we see inside the parentheses is the content of a template. . Each template must contain **`prefix`**, which is the short text that after pressing [**Tab**] + [**Tab**] will generate the template code in your program.
 
 The second thing your template should have is **`body`**, this is the most complex part of the template. This is actually the ** code that will be generated ** and in it, we can use **variables**, which are created with **`$1`** and in place of the unit can be placed other text. The example uses a variable: **`"console.log('$1');"`**.
 
@@ -166,7 +166,7 @@ Now when we type **`json`** + [**Tab**] + [**Tab**] in an open JavaScript file i
 
 ![](assets/chapter-11-images/01.Code-snippet-05.png) 
 
-For those of you who are more interested in the topic, many of the big **frameworks** like **Angular, React, etc.** have their own templates that can be installed from the  **Extensions** window.  As the name suggests, **framework** is a conceptual structure that helps us by giving us some things in advance, and also prevents us from making big mistakes by imposing certain restrictions. The main idea is to provide a complete solution in a given area, which has the ability to upgrade all components in this area. Some of the things you can get ready-made are these templates.
+For those of you who are more interested in the topic, many of the big **frameworks** like **Angular, React, etc.** have their own templates that can be installed from the **Extensions** window. As the name suggests, **framework** is a conceptual structure that helps us by giving us some things in advance, and also prevents us from making big mistakes by imposing certain restrictions. The main idea is to provide a complete solution in a given area, which has the ability to upgrade all components in this area. Some of the things you can get ready-made are these templates.
 
 ![](assets/chapter-11-images/01.Code-snippet-06.png) 
 
@@ -179,7 +179,7 @@ Debugging plays an important role in the process of creating software, which is 
 * **Correcting** the code, which causes the problems so that the program works correctly.
 * **Testing**, to make sure that the program works correctly after the corrections we have made.
 
-**Visual Studio Code**  gives us **a built-in debugger**,  thanks to which we can place **breakpoints**, at places we have chosen.  When it reaches a **breakpoint**,  the program **stops running** and allows **step-by-step running** of the remaining lines. Debugging allows us to **get in the details of the program** and see where exactly the errors occur and what is the reason for this.
+**Visual Studio Code** gives us **a built-in debugger**, thanks to which we can place **breakpoints**, at places we have chosen. When it reaches a **breakpoint**, the program **stops running** and allows **step-by-step running** of the remaining lines. Debugging allows us to **get in the details of the program** and see where exactly the errors occur and what is the reason for this.
 
 In order to demonstrate how to use the debugger, we will use the following program:
 
@@ -189,19 +189,19 @@ for (let i = 0; i < 100; i++) {
 }
 ```
 
-We will place a **breakpoint** on the method **`console.log(…)`**. For this, we will need to move our cursor to the line, which prints on the console, and press [**F9**]. A **breakpoint** (the red point, just before the number on line 3), where the program will  **stop** its execution:
+We will place a **breakpoint** on the method **`console.log(…)`**. For this, we will need to move our cursor to the line, which prints on the console, and press [**F9**]. A **breakpoint** (the red point, just before the number on line 3), where the program will **stop** its execution:
 
 ![](assets/chapter-11-images/02.Debugger-01.png) 
 
-In order to start  **the program in debug mode**, we choose [**Debug**] -> [**Start Debugging**] or press [**F5**]:
+In order to start **the program in debug mode**, we choose [**Debug**] -> [**Start Debugging**] or press [**F5**]:
 
 ![](assets/chapter-11-images/02.Debugger-02.png) 
 
-After starting the program, we can see that it **stops executing** at line 4, where we placed our breakpoint.  The code in the current line **is colored in yellow** and we can **run it step by step**.In order to go to **the next line** e use the key [**F10**]. **We can see that the code on the current line hasn't been executed yet**. **It will execute when we go ahead to the next line**:
+After starting the program, we can see that it **stops executing** at line 4, where we placed our breakpoint. The code in the current line **is colored in yellow** and we can **run it step by step**.In order to go to **the next line** e use the key [**F10**]. **We can see that the code on the current line hasn't been executed yet**. **It will execute when we go ahead to the next line**:
 
 ![](assets/chapter-11-images/02.Debugger-03.png) 
 
-From the **Debug** window, which opens with  [**View -> Debug**] or with the keyboard shortcut [**Ctrl + Shift + D**], we can observe **the changes in the local variables**. 
+From the **Debug** window, which opens with [**View -> Debug**] or with the keyboard shortcut [**Ctrl + Shift + D**], we can observe **the changes in the local variables**. 
 
 ![](assets/chapter-11-images/02.Debugger-04.png) 
 
@@ -232,7 +232,7 @@ console.log(Math.floor(numberToFloor));
 // This will print on the console 5
 ```
 
- * **`Math.ceil(…)`** - in case we want the rounding always to be  **up to the previous integer**. For example, if we have the number 5.13 and use **`Math.ceil(5.13)`**, we
+ * **`Math.ceil(…)`** - in case we want the rounding always to be **up to the previous integer**. For example, if we have the number 5.13 and use **`Math.ceil(5.13)`**, we
  * will get the number **6**:
 
 ```JavaScript
@@ -251,7 +251,7 @@ console.log(Math.floor(numberToTrunc));
 
 ### Use === instead of ==, and !== insted of !=
 
-The operators **`==`** and **`!=`** make **automatic conversion** of the compared value or variable, while the operators  **`===`** and **`!==`** does not make such a conversion and if both values are not of the same type - the result is **`false`**. They (**`==`** and **`!=`**) make a comparison of **value and type**, which is more accurate and even faster. Let's look at the following example to clarify what is meant by data **type**:
+The operators **`==`** and **`!=`** make **automatic conversion** of the compared value or variable, while the operators **`===`** and **`!==`** does not make such a conversion and if both values are not of the same type - the result is **`false`**. They (**`==`** and **`!=`**) make a comparison of **value and type**, which is more accurate and even faster. Let's look at the following example to clarify what is meant by data **type**:
 
 ```JavaScript
 [10] === 10    // false

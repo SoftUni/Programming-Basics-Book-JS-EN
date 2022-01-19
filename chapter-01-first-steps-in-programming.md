@@ -12,7 +12,7 @@ To program means to give instructions to the computer, for example, *play a cert
 
 ### Algorithms
 
-Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a certain recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they're cooked, and finally move the pan away from the heat.  Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a certain task. If we want to print a series of numbers in ascending order, for example, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
+Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a certain recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they're cooked, and finally move the pan away from the heat. Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a certain task. If we want to print a series of numbers in ascending order, for example, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
 To make creating programs, writing program code (commands), executing it and other operations that have to do with programming more convenient, we need a **development environment** (IDE) like Visual Studio Code.
 
 ### Programming Languages, Compilers, Interpreters and Development Environments
@@ -185,7 +185,7 @@ Actually, the output from the program is the following text message:
 Hello JavaScript!
 ```
 
-The "**Debugging with inspector protocol . . .**" and  **Debugger listening on...** messages are displayed as additional information at the very top of Visual Studio Code's console after the program starts executing. This gives us additional information about the execution which, for the time being, we will ignore. 
+The "**Debugging with inspector protocol . . .**" and **Debugger listening on...** messages are displayed as additional information at the very top of Visual Studio Code's console after the program starts executing. This gives us additional information about the execution which, for the time being, we will ignore. 
 
 ### Testing Our Program in the Judge System
 Testing the solutions to the problems in this book is completely automated via the **Judge System's website**: [https://judge.softuni.org/](https://judge.softuni.org/). The solutions are judged in real-time by the system. Each solution goes through a series of tests that are hidden; every test that passes grants the user certain points.
@@ -293,7 +293,7 @@ function solve() {
 Write a **JavaScript** console program that **prints the numbers from 1 to 20** on separate lines on the console.
 
 ### Hints and Guidelines
-Create a new **JavaScript file** and name it `nums1to20.js`. Inside the file write 20 `console.log()` commands,  each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a cleverer way. Don't worry, there is, but we will mention it later on.
+Create a new **JavaScript file** and name it `nums1to20.js`. Inside the file write 20 `console.log()` commands, each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a cleverer way. Don't worry, there is, but we will mention it later on.
 
 ![](assets/chapter-1-images/03.Numbers-1-to-20-01.png)
 
@@ -353,7 +353,7 @@ Create a new **JavaScript file**. For now, programs of similar type will be test
 ![](assets/chapter-1-images/05.Rectangle-area-01.png)
 
 Did you notice the change? We placed additional square brackets within the brackets of the function, inside which we described what data we're expecting to receive – in this case the numbers `a` and `b`, set as an array.
-What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of  `a` and `b` to the familiar `console.log()` command. In programming, we multiply using the `*` operator.
+What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of `a` and `b` to the familiar `console.log()` command. In programming, we multiply using the `*` operator.
 
 ### Testing in the Judge System
 Test your solution here:

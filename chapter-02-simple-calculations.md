@@ -814,7 +814,7 @@ If we start the file **index.html** from the folder, we should have a working ap
 
 Let's make it more beautiful.
 
-5.	We create a new file with extension **\*.css** and name **index**. [CSS](https://www.w3schools.com/html/html_css.asp) is used to stylize the elements in HTML. We open the file  **index.html** and add this line in the tag **`<head>`**:
+5.	We create a new file with extension **\*.css** and name **index**. [CSS](https://www.w3schools.com/html/html_css.asp) is used to stylize the elements in HTML. We open the file **index.html** and add this line in the tag **`<head>`**:
 
 ```html
 <link rel="stylesheet" href="index.css" type="text/css" />
@@ -883,7 +883,7 @@ body {
 
 Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that **the image runs from the mouse** and it is hard to catch“. When the image gets “caught”, a congratulations message is shown.
 
-**Hint**: Write an Event Handler **`mouseover`**  and move the image to a random position. Use the random numbers generator **`Math.random()`**.
+**Hint**: Write an Event Handler **`mouseover`** and move the image to a random position. Use the random numbers generator **`Math.random()`**.
 The position of the image is set from the property **`style.position`**. To "catch the mouse" **`onclick`** to "catch the mouse". 
 
 ![](assets/chapter-2-1-images/14.Catch-the-mouse-00.png)

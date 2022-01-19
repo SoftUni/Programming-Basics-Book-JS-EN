@@ -15,7 +15,7 @@ In programming, we can compare values through the use of the following **operato
 
 The result from a comparison is the so-called Boolean value, which can be either **`true`** or **`false`** depending on the evaluated result being either true or false.
 
-It is important to note that in **JavaScript** there are further comparison operators - for **comparison**  **`==`** and **difference** **`!=`**. The implementation of these operators without having intimate knowledge of their evaluation may lead to unexpected results and problems, for the moment we will not take look at them in detail.
+It is important to note that in **JavaScript** there are further comparison operators - for **comparison** **`==`** and **difference** **`!=`**. The implementation of these operators without having intimate knowledge of their evaluation may lead to unexpected results and problems, for the moment we will not take look at them in detail.
 
 Additional information on the differences between the two types of comparison operators can be found on the following link: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
 

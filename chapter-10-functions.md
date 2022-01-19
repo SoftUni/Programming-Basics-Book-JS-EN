@@ -522,7 +522,7 @@ Write a function that takes a name as a parameter and prints on the console "*He
 
 #### Hints and Guidelines
 
-Define a function **`printName(name)`**  and implement it. Write a function **`solve(...)`** which receives as input name of a person and calls **`printName`** function.
+Define a function **`printName(name)`** and implement it. Write a function **`solve(...)`** which receives as input name of a person and calls **`printName`** function.
 
 #### Testing in the Judge System
 
@@ -530,7 +530,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#
 
 ### Problem: Min Method
 
-Define a function **`GetMin(int a, int b)`** and implement it, after which invoke it from the function **`solve(...)`**  as shown below. To find the minimum of three numbers, first, find the minimum of the first two and then the minimum of the result and the third number:
+Define a function **`GetMin(int a, int b)`** and implement it, after which invoke it from the function **`solve(...)`** as shown below. To find the minimum of three numbers, first, find the minimum of the first two and then the minimum of the result and the third number:
 
 #### Sample Input and Output
 
@@ -540,7 +540,7 @@ Define a function **`GetMin(int a, int b)`** and implement it, after which invok
 
 #### Hints and Guidelines
 
-Define function  **`getMin(int a, int b)`** and implement it, after that call it from  **`solve(...)`** as shown in the example below. To find the minimum of the tree numbers find first the minimum of the first and second value. Then find the minimum of the result of the two and the third number:
+Define function  **`getMin(int a, int b)`** and implement it, after that call it from **`solve(...)`** as shown in the example below. To find the minimum of the tree numbers find first the minimum of the first and second value. Then find the minimum of the result of the two and the third number:
 
 ```JavaScript
 function solve([num1, num2, num3]) {
@@ -555,7 +555,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#
 
 ### Problem: String Repeater
 
-Write a function **`repeatString(str, count)`** which gets as parameters string variable **`str`** and number **`n`** then returns the string repeated  **`n`** times. After that print the result on the console.
+Write a function **`repeatString(str, count)`** which gets as parameters string variable **`str`** and number **`n`** then returns the string repeated **`n`** times. After that print the result on the console.
 
 #### Sample Input and Output
 
@@ -711,7 +711,7 @@ Example:
   * At **the beginning** of the string, which represents the result, concatenate the symbol, which you get from the sum of the ASCII code + the last digit &rarr; 106 + 6 &rarr; 112 &rarr; **p**.
   * At **the end** of the string, which represents the result, concatenate the symbol, which you get from subtracting the ASCII code – the first digit &rarr; 106 - 1 &rarr; 105 &rarr; **i**.
   
-Using the function shown above, write a function **`solve(...)`** which takes  **a sequence of characters**, **encrypts them**, and prints the result on one line. The input data will always be valid. The Main function must read the data given by the user – an integer **`n`**, followed by a character for each of the following **`n`** lines. Encrypt the symbols and add them to the encrypted string. In the end, as a result, you must print **an encrypted string** as in the following example.
+Using the function shown above, write a function **`solve(...)`** which takes **a sequence of characters**, **encrypts them**, and prints the result on one line. The input data will always be valid. The Main function must read the data given by the user – an integer **`n`**, followed by a character for each of the following **`n`** lines. Encrypt the symbols and add them to the encrypted string. In the end, as a result, you must print **an encrypted string** as in the following example.
 
 **Example**:
 * S, o, f, t, U, n, i &rarr; V83Kp11nh12ez16sZ85Mn10mn15h
