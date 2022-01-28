@@ -385,7 +385,7 @@ The method **`String.fromCharCode(...)`** will convert the received ASCII code i
 
 We use a **loop** that runs through **all characters** from the starting to the end letter (included). On **each iteration** of the **first** loop, we run a **second** one with the same parameters (but **only if** the letter of the first loop is valid, i.e. does not match the one that we must exclude, by requirements). In each iteration of the **second** loop, we run **one** more with the **same parameters** and the same **condition**. This way we have three nested loops and in the body of **the latter** we will add the symbols to the final result:
 
-![](assets/old-images/chapter-8-2-images/06.Letters-03.png)
+![](assets/chapter-8-2-images/06.Letters-03.png)
 
 Let's not forget that we also need to print the **total number of valid combinations** that we have found, and they must be printed on the **same line**, separated by a space. We leave this sub-task to the reader.
 

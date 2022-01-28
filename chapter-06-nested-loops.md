@@ -238,7 +238,7 @@ We understand from the problem explanation that the house is with a size of **`n
 
 * The house is divided into two parts: **roof and base**. 
 
-![](assets/old-images/chapter-6-images/09.House-01.png)
+![](/assets/chapter-6-1-images/09.House-01.png)
 
 * When **`n`** is an even number, the point of the house is "dull".
 * When **`n`** is odd, **the roof** is one row larger than the **base**.
@@ -417,8 +417,6 @@ Don't worry if you don't understand all of the code, how exactly it is written a
 ### Problem: Ratings – Visualization in a Web Environment
 
 Your task is to create a  **JavaScript** web application for visualizing a rating (a number from 0 to 100). From 1 to 10 stars should be drawn with halves. The starts should be generated with a `for` loop.
-
-![](assets/old-images/chapter-6-images/11.Ratings-01.png)
 
 We create an empty folder in our file system with the name "**ratings**". In there we create 2 files and one folder:
 

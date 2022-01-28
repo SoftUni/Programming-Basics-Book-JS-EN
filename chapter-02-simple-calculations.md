@@ -608,7 +608,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#
 
 A **Rectangle** is defined by the **coordinates** of both of its opposite corners (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is taken as a function argument. The numbers **x1, y1, x2, and y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
 
-![](/assets/old-images/chapter-2-images/07.Rectangle-area-01.png)
+![](assets/chapter-2-1-images/00.Rectangle-area-01.png)
 
 #### Sample Input and Output
 
