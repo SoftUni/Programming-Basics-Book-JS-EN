@@ -203,16 +203,15 @@ SoftUni's free programming start-up trainings are probably the largest ever cond
 
 The project is part of the efforts of **["Software University" foundation](https://softuni.foundation)** to create and distribute open learning content for training software engineers and IT professionals.
 
-### Authors team
+### Authors Team
 
-This book, "JavaScript Basics", was developed by a broad author's team of **volunteers** who took their time to give you this systematic knowledge and guidance at the start of programming. List of all authors and editors (alphabetically):
+This book, "**JavaScript Basics**", was developed by a broad author's team of **volunteers** who took their time to give you this systematic knowledge and guidance at the start of programming. List of all book authors and editors (alphabetically):
 
 > **Boncho Vulkov, Christian Hristov, Dimitar Dalev, Elena Rogleva, Hristo Minkov, Ivelin Arnaudov, Julieta Atanasova, Kristian Marianov, Martin Chaov, Nikolay Bankin, Nikolay Kostov, Pavel Kolev, Petar Ivanov, Stiliyan Kangalov, Svetlin Nakov, Ventsislav Petrov, Zahariya Pehlyavanova, Zdravko Kostadinov**
 
-The book is based on its original C# version ([Introduction to programming with C#](https://csharp-book.softuni.bg)), which was developed by a broad author group and which also contributes to this book: 
+The book is based on its initial C# variant ([Introduction to Programming with C#](https://csharp-book.softuni.org)), which is developed by a large team of authors that has a significant contribution to the current book. Below is a list of the additional book contributors (editors, translators, others):
 
 > Aleksander Krastev, Aleksander Lazarov, Aleksander Peev, Alen Paunov, Angel Dimitriev, Ariet Motzeva, Daniel Tsvetkov, Denis Milanov, Dimitar Dimitrov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Hristiyan Hristov, Hristo Hristov, Iskra Nikolova, Ivelin Kirilov, Julieta Atanasova, Kalin Primov, Kristiyan Pamidov, Luboslav Lubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Preslav Mihaylov, Rositsa Nenova, Rozalina Zaharieva, Ruslan Filipov, Stefany Boyanova, Stefany Ilieva, Stefka Vasileva, Svetlin Nakov, Teodor Kurtev, Todor Cholakov, Tonyo Zhelev, Tsvetan Iliev, Vasil Krumov, Vasko Viktorov, Ventsislav Petrov, Violeta Taseva, Yanitsa Vuleva, Yulian Linev, Zahariya Pehlivanova, Zhivko Nedyalkov.
-
 
 Cover design: Marina Schiderova.
 
