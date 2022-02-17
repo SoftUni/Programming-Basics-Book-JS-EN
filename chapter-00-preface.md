@@ -24,13 +24,13 @@ For this book we chose **JavaScript**, because it is a **modern** language for h
 
 As we will explain later, **the programming language with which we start is not essential**, but we still need to use some programming language, and in this book, we have chosen **JavaScript**. The book can also be found translated in other programming languages such as Java and C# (see https://csharp-book.softuni.bg).
 
-## The book in other programming languages: Java, C#, C++, Python
+## The Book in Other Programming Languages: Java, C#, C++, Python
 
 This book is available in several versions in different programming languages:
-* [Programming Basics with JavaScript (English)](https://js-book.softuni.org)
+* [Programming Basics with Java (English)](https://java-book.softuni.org)
 * [Programming Basics with Python (English)](https://python-book.softuni.org)
 * [Programming Basics with C# (English)](https://csharp-book.softuni.org)
-* [Programming Basics with Java (English)](https://java-book.softuni.org)
+* [Programming Basics with JavaScript (English)](https://js-book.softuni.org)
 * [Programming Basics with JavaScript (Bulgarian)](https://js-book.softuni.bg)
 * [Programming Basics with Python (Bulgarian)](https://python-book.softuni.bg)
 * [Programming Basics with C# (Bulgarian)](https://csharp-book.softuni.bg)
