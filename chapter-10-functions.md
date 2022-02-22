@@ -86,7 +86,7 @@ A Function can be invoked from the **body of another function** which is **not**
 
 A Function can be called from **its own body**. This is called **recursion** and you can find more about it on [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) or google it.
 
-### Example: empty cash receipt
+### Problem: empty cash receipt
 
 Write a function, that prints empty cash receipt. The function must call another three functions: one to print the title, one for the main part, and the last for the bottom part.
 
@@ -153,7 +153,7 @@ Let's look at another example:
 
 In this example, we call the function **`printNumbers(...)`** but this time we give only 1 parameter instead of the **declared** 2 parameters. All parameters that are not **set as values** will automatically get **`undefined`** values. In our case the variable.
 
-### Example: Symbol of integer
+### Problem: Symbol of integer
 
 Create a function that checks if a number is a positive or negative number.
 
@@ -196,7 +196,7 @@ Our next example shows the use of optional parameters:
 
 When we are not **setting value** for the parameter, he will **get the value** that we have given him when declaring the function.
 
-### Example: Print of triangle
+### Problem: Print of triangle
 
 Create a function that will create a triangle as shown in the example.
 
@@ -230,7 +230,7 @@ In the end, we will print the **bottom part** from the triangle but this time wi
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#2](https://judge.softuni.org/Contests/Practice/Index/943#2).
 
-### Example: draw a filled square.
+### Problem: draw a filled square.
 
 Draw a square with side **`n`**, as shown in the example.
 
@@ -305,7 +305,7 @@ The third is to **pass** the result from one function to **another function**:
 
 ![](assets/chapter-10-images/12.Return-value-03.png)
 
-### Example: Find the area of a triangle
+### Problem: Find the area of a triangle
 
 Write a function that finds the area of a triangle by given side and altitude and then returns the area.
 
@@ -330,7 +330,7 @@ Our next step is to **call the new** function and **record the returned value in
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#4](https://judge.softuni.org/Contests/Practice/Index/943#4).
 
 
-### Example: Power of a number
+### Problem: Power of a number
 
 Write a function that calculates and returns the result the power of a number. 
 

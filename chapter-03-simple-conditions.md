@@ -19,11 +19,11 @@ It is important to note that in **JavaScript** there are further comparison oper
 
 Additional information on the differences between the two types of comparison operators can be found on the following link: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
 
-### Examples of Number Comparisons
+### Problems of Number Comparisons
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
-### Examples of comparing "text" (string) type variables
+### Problems of comparing "text" (string) type variables
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-02.png)
 
@@ -68,7 +68,7 @@ if (Boolean condition) {
 }
 ```
 
-### Example: Excellent Grade
+### Problem: Excellent Grade
 
 We take the grade as an input argument to our function and upon evaluation, we check if the input value is an excellent grade (**`≥ 5.50`**).
 
@@ -97,7 +97,7 @@ if (Boolean condition) {
 
 ```
 
-### Example: Excellent Grade or Not
+### Problem: Excellent Grade or Not
 
 Similarly to the example above, we input a grade and check if it is excellent, but this time we should **output a result in both cases**:
 
@@ -190,7 +190,7 @@ else {
 }
 ```
 
-### Example: Numbers one through 9 in English
+### Problem: Numbers one through 9 in English
 
 Print the digits one through nine in English on the console (the numbers are passed as arguments of the function upon call). We can take the digit and through a **series of conditions** print the corresponding English word on the console:
 

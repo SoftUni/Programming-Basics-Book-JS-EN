@@ -2,7 +2,7 @@
 
 In the current chapter, we will be looking at **nested loops** and how to use `for` loops to **draw** various **figures on the console**, that contain symbols and signs, ordered in rows and columns on the console. We will use **single** and **nested loops** (loops that stay in other loops), **calculations** and **checks**, in order to print on the console simple and not so simple figures by specified sizes.
 
-### Example: Rectangle Made of 10 x 10 Stars
+### Problem: Rectangle Made of 10 x 10 Stars
 
 Print on the console a rectangle made out of **10 x 10** stars.
 
@@ -69,7 +69,7 @@ function drawSquare(n) {
 
 Let's look at the example above. After initializing **the first \(outer\) loop**, its **body**, which contains **the second \(nested\) loop** starts executing. By itself, it prints on one row `n` number of stars. After **the inner** loop **finishes** executing at the first iteration of the outer one, **the first loop will continue**, i.e. it will print an empty row on the console. **After that**, the variable of **the first** loop will be **renewed** and the whole **second** loop will be executed again. The inner loop will execute as many times as the body of the outer loop executes, in this case, `n` times.
 
-### Example: Square Made of Stars
+### Problem: Square Made of Stars
 
 Print on the console a square made of **N x N** stars (use a space between the stars, staying on the same line):
 
@@ -88,7 +88,7 @@ The problem is similar to the last one. The difference here is that we need to f
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#2](https://judge.softuni.org/Contests/Practice/Index/935#2).
 
 
-### Example: Triangle Made of Dollars
+### Problem: Triangle Made of Dollars
 
 Write a program that takes an integer **n** and prints **a triangle made of dollars** of size **n**.
 
@@ -107,7 +107,7 @@ The problem is **similar** to those for drawing **a rectangle** and **square**. 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#3](https://judge.softuni.org/Contests/Practice/Index/935#3).
 
 
-### Example: Square Frame
+### Problem: Square Frame
 
 Write a program that takes a positive integer **n** and draws on the console **a square frame** with a size of **n \* n**.
 
@@ -307,7 +307,7 @@ If you have written everything as it is here, the problem should be solved.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#8](https://judge.softuni.org/Contests/Practice/Index/935#8).
 
 
-### Example: Diamond
+### Problem: Diamond
 
 Write a program that takes an integer **n** (1 ≤ **n** ≤ 100) and prints a diamond with size **n**, as in the following examples:
 

@@ -18,7 +18,7 @@ if (condition1) {
 
 Using more than three levels of nested conditional statements is not considered a good practice and has to be avoided, mostly through optimization of the structure/the algorithm of the code and/or by using another type of conditional statement, which we are going to examine below in this chapter.
 
-### Example: Personal titles
+### Problem: Personal titles
 
 Depending on **age** (decimal number) and **gender** (**m** / **f**) print a personal title:
 * “**Mr.**” – man (gender “**m**”) 16 or more years old.
@@ -51,7 +51,7 @@ After reading the input data from the console, the following program logic shoul
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#0](https://judge.softuni.org/Contests/Practice/Index/931#0).
 
 
-### Example: Small Shop
+### Problem: Small Shop
 
 A Bulgarian entrepreneur opens **small shops** in **a few** cities with different **prices** for the following **products**:
 
@@ -114,7 +114,7 @@ let result = a && b && c && d;
 
 The program will run in the **following** way: **It starts** the check from **`a`**, **reads** it, and accepts that it has a **`true`** value, after that, it  **checks `b`**. After it has **accepted**, that **`a`** and **`b`** return value **`true`**, **it checks the next** argument. It gets to **`c`** and sees that the variable has a **`false`** value. After the program accepts that argument **`c`** has a **`false`** value, it calculates the expression **to `c`**, **regardless** of what the value of **`d`** is. That is why the evaluation of **`d`**is being **skipped** and the whole expression is calculated as **`false`**.
 
-### Example: Point in a Rectangle
+### Problem: Point in a Rectangle
 
 Checks whether **point {x, y}** is placed **inside the rectangle {x1, y1} – {x2, y2}**. The input data is readfrom the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x**, and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**).
 
@@ -169,7 +169,7 @@ let result = a || b || c || d;
 
 The program **checks `a`**, accepts that it has a value **`false`**, and continues. Reaching **`b`**, it understands that it has **`true`** value and the whole **expression** is calculated as **`true`**, **without** having to check **`c`** or **`d`**, because their values **wouldn't change** the result of the expression.
 
-### Example: Fruit or Vegetable
+### Problem: Fruit or Vegetable
 
 Let's check whether a given product is a **fruit** or a **vegetable**. The "**fruits**" are **banana**, **apple**, **kiwi**, **cherry**, **lemon**, and **grapes**. The "**vegetables**" are **tomato**, **cucumber**, **pepper**, and **carrot**. Everything else is "**unknown**".
 
@@ -200,7 +200,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#
 
 The operator **`!`** accepts as an **argument** a boolean variable and **returns** its value.
 
-### Example: Invalid Number
+### Problem: Invalid Number
 
 A given **number is valid** if it is in the range [**100 … 200**] or it is **0**. Validate an **invalid** number.
 
@@ -230,7 +230,7 @@ Like the other operators in programming, the operators **`&&`** and **`||`** hav
 
 Sometimes the conditions may be very complex, so they can require a long boolean expression or a sequence of conditions. Let's take a look at a few examples.
 
-### Example: Point on a Rectangle Border
+### Problem: Point on a Rectangle Border
 
 Write a program that checks whether a **point {x, y}** is placed **onto any of the sides of a rectangle {x1, y1} - {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x**, and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**). Print "**Border**" (if the point lies on any of the sides) or "**Inside / Outside**" (in the opposite case).
 
@@ -263,7 +263,7 @@ What remains is to finish writing the code to print “**Inside / Outside**”, 
 After you finish writing the solution, you can test it here: [https://judge.softuni.org/Contests/Practice/Index/931#5](https://judge.softuni.org/Contests/Practice/Index/931#5).
 
 
-### Example: Fruit Shop
+### Problem: Fruit Shop
 
 A fruit shop during **weekdays** sells at the following **prices**:
 
@@ -298,7 +298,7 @@ Write a program that reads from the console **fruit** (banana / apple / …), **
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#6](https://judge.softuni.org/Contests/Practice/Index/931#6).
 
 
-### Example: Trade Fees
+### Problem: Trade Fees
 
 A company is giving the following **commissions** to its traders according to the **city**, in which they are working and the  **volume of sales s**:
 
@@ -354,7 +354,7 @@ switch (selector) {
 }
 ```
 
-### Example: Day of the Week
+### Problem: Day of the Week
 
 Let's write a program that prints the **day of the week** (in English) depending on the **given number** (1 … 7) or "**Error**" if an invalid day is given.
 
@@ -399,7 +399,7 @@ switch (selector) {
 }
 ```
 
-### Example: Animal Type
+### Problem: Animal Type
 
 Write a program that prints the type of the animal depending on its name: 
 

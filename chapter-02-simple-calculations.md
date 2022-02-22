@@ -54,7 +54,7 @@ function sum([arg1, arg2]) {
 
 Let's note that the arguments **`arg1`** and **`arg2`** can be a different data type than the one we want. That's why it's necessary to convert them into a suitable one. If it's not done for the program **each number** will be just a **string** with which **we can't do operations** arithmetic operations.
 
-### Example: Calculating a Square Area with Length of a Side **a**
+### Problem: Calculating a Square Area with Length of a Side **a**
 
 For example, let's look at the following function which reads an integer from the console, multiplies it by itself (squares it), and prints the result from the multiplication. That's how we can calculate square area by side length:
 
@@ -127,7 +127,7 @@ function sum([arg1, arg2]) {
 }
 ```
 
-### Example: Converting Inches into Centimeters
+### Problem: Converting Inches into Centimeters
 
 Let's write a function that reads a floating-point number in inches and converts it to centimeters::
 
@@ -159,7 +159,7 @@ function print([arg1]) {
 }
 ```
 
-### Example: Greeting by Name
+### Problem: Greeting by Name
 
 Let's write a program that asks the user for their name and salutes them with the text "**Hello, (name)**".
 
@@ -314,7 +314,7 @@ let expr = (3 + 5) * (4 – 2);
 
 The standard rule for priorities of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In the case of an **expression in brackets, it is calculated first**  but we already know all of that from the school math.
 
-### Example: Calculating Trapezoid Area
+### Problem: Calculating Trapezoid Area
 
 Let's  write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the **trapezoid area** by the standard math formula:
 
@@ -372,7 +372,7 @@ Math.round(5.539); // 6
 (123.512).toFixed(0);	 // 124
 ```
 
-### Example: Circle Area and Perimeter 
+### Problem: Circle Area and Perimeter 
 
 Let's write a function that receives an input of **the radius r** of a circle and **calculates the area and the perimeter** of the circle.
 
@@ -404,7 +404,7 @@ The result is:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#5](https://judge.softuni.org/Contests/Practice/Index/927#5).
 
 
-### Example: 2D Rectangle Area
+### Problem: 2D Rectangle Area
 
 The rectangle is given with the **coordinates of two of its opposite angles**. Calculate its **area and perimeter** :
 

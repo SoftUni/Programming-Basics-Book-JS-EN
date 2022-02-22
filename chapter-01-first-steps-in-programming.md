@@ -59,7 +59,7 @@ The program is written in text format and the text is called **source code**. It
 ### Computer programs – Examples
 Let's start with a very basic example of a short **JavaScript program** which we'll run directly in your web browser (it supports JS without the need to install additional software).
 
-#### Example: a Program, Which Notifies the User
+#### Problem: a Program, Which Notifies the User
 Our first program will consist of a single **JavaScript command**, which notifies the user they've won 1 000 000 dollars, as is often the case when you're browsing through a website with a lot of spam and adverts:
 ```JavaScript
 alert("Congratulations!!! You have just won $1 000 000!");
@@ -73,7 +73,7 @@ The result is something like this: a **modal popup message** in your browser:
 
 ![](/assets/js-alert-modal-popop.png)
 
-#### Example: a Program, Which Spams the User with Notifications
+#### Problem: a Program, Which Spams the User with Notifications
 We can increase the previous program's complexity by creating numerous command which repeat in sequence and notify the user they've won the lottery:
 ```JavaScript
 for (i = 0; i < 10; i += 1) {
@@ -84,7 +84,7 @@ In the example above we make the computer display notifications one after anothe
 ![](/assets/js-alert-10-times-loop.png)
 We will learn how iterations (loops) in programming work in the chapter "[Loops](chapter-05-loops.md)", but for now, let's assume that they just repeat a command many times.
 
-#### Example: Program, Which Converts Bulgarian Levs into Euro
+#### Problem: Program, Which Converts Bulgarian Levs into Euro
 Let's have a look at another simple program that asks the user for an amount of money in levs (whole number), makes sure that what's been entered is a number, converts it into euro (by dividing it by the euro exchange rate) and prints the result. This is a program of 3 consecutive commands. 
 ```JavaScript
 let myMoney = prompt("How much money do you want to convert:");
@@ -149,7 +149,7 @@ code. Here's an example:
 
 ![](/assets/js-console-f12.png)
 
-## Example: Creating a Console Application 'Hello JavaScript'
+## Problem: Creating a Console Application 'Hello JavaScript'
 Let's go back to our console program. We already have Visual Studio Code and we can start it. Then create a new **JavaScript file**: [**File**] &rarr; [**New File**]:
 
 ![](assets/chapter-1-images/00.Visual-studio-05.png)
