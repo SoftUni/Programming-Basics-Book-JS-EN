@@ -8,7 +8,7 @@
 
 The book is also used as an unofficial **[textbook for school-level programming courses in the high schools](https://softuni.foundation/projects/applied-software-developer-profession/)**, studying professions like "**Programmer**", "**Application Programmer**" and "**System Programmer**", as well as an additional teaching tool in the initial programming courses at the **secondary schools, mathematical and professional high schools.**, and specialty "informatics and IT".
 
-## Who is this book intended for?
+## Who is This Book Intended for?
 
 This book is suitable for **complete beginners in programming**, who want to try what programming is and learn the main constructions for writing programming code that are used in software development, regardless of programming languages and technologies used. The book provides a **solid basis** of practical skills that are used for further study in programming and software development.
 
@@ -18,7 +18,7 @@ The free course for beginners in SoftUni is suitable for **school students** (of
 
 **A new group starts each month**. The "Programming Basics" course at SoftUni is organized regularly using a few different programming languages as a basis. So, just check it out! The course is **free**, and you can quit any time you like. **Signing up** for free - live or online training is available via the **SoftUni application form**: https://softuni.org.
 
-## Why did we choose the JavaScript language?
+## Why did we Choose The JavaScript Language?
 
 For this book we chose **JavaScript**, because it is a **modern** language for high-level programming and at the same time it is easy to learn and suitable for **beginners**. As a use **JavaScript** is **widespread**, with a well-developed ecosystem, numerous libraries and technological frameworks, and therefore gives many **prospects** for development. **JavaScript** combines the paradigms of procedural, functional and object-oriented programming in a modern way with easy-to-use syntax. In the book, we'll use the **JavaScript language** and the **Visual Studio Code** development environment, which is available for free from Microsoft.
 
@@ -39,7 +39,7 @@ This book is available in several versions in different programming languages:
 
 If you prefer a different language, choose from the list above.
 
-## Programming is learned by a lot of writing, not reading!
+## Programming is Learned by a Lot of Writing, Not Reading!
 
 If anyone thinks they're going to read a book and learn to program without writing a code and solve tasks hard, they're definitely delusional. Programming is learned with **many,  many practice**, with writing code every day and solving hundreds, even thousands of tasks, seriously and with perseverance, for years.
 
@@ -58,7 +58,7 @@ material. The purpose of solving all tasks from all the topics covered is to giv
 
 The Software University provides **quality education**, **occupation**, **work** and **the opportunity to acquire a bachelor's degree** for programmers, software engineers and IT professionals. SoftUni builds an extremely successful lasting **relationship between education and industry**, collaborating with hundreds of software companies, **providing work and internships** to its students, providing quality specialists for the software industry and directly meeting the needs of employers through the learning process.
 
-### Free programming courses at SoftUni
+### Free Programming Courses at SoftUni
 
 SoftUni organizes **free programming courses for complete beginners** in Bulgaria - attendance and online. The goal is **anyone with an interest** in programming and technologies to try programming and **to make sure whether it is interesting** to him and whether he wants to be a software developer. You can sign up for the free programming basics course from the SoftUni application page: https://softuni.bg/apply.
 
@@ -66,7 +66,7 @@ The free programming basics courses at SoftUni aim to introduce you to **the mai
 
 This **programming textbook** accompanies free programming courses for beginners at SoftUni and serves as an additional learning aid to support the learning process.
 
-### Judge the task verification system
+### Judge The Task Verification System
 
 **The SoftUni Judge system** (https://judge.softuni.org) is an automated system on the Internet **which checks solutions to programming tasks through a series of tests**. **Real-time** task transmission and verification: you send a solution and in seconds you get an answer if it's true. Each **successful** test gives the points provided for it. With a correct solution, you get all the points for the task. With a partially correct solution, you get some of the points for the task. With a completely wrong decision, you get 0 points.
 
@@ -124,7 +124,7 @@ This book develops **a beginner's level initial level of algorithmic thinking**,
 
 As you may guess, **the programing language does not matter** for the development of algorithmic thinking. To think logically is universal, even if it's not related only to programming. Precisely for the well-developed logical thinking, it is considered that **developers are quite smart** and that a simple-minded person could not be a developer.
 
-### Skill #3 – fundamental knowledge of the profession (25%) 
+### Skill #3 – Fundamental Knowledge of The Profession (25%) 
 
 **Fundamental knowledge and skills** for programming, software development, software engineering and computer science form about 25% of the developer's minimum start-up skills. Here are the most important of this knowledge and skills: 
 * **basic mathematical concepts** related to programming: coordinate systems, vectors and matrices, discrete and indiscreet mathematical functions, end machines and state machines, concepts of combination and statistics, algorithm complexity, mathematical modeling and others. 
@@ -150,7 +150,7 @@ Fundamental knowledge and skills for programming, software development, software
 
 Only **initial knowledge in the areas listed above** is usually sufficient to start working as a programmer, and the deepening takes place in the workplace according to the technologies and development tools used in the respective company and team.
 
-### Skill #4 - programming languages and software technologies (25%) 
+### Skill #4 - Programming Languages and Software Technologies (25%) 
 
 **Programming languages and software development technologies** form about 25% of the developer's minimum skills. They are the most voluminous to learn, but they change most quickly over time. If we look at **job advertisements** from the software industry, there are often all sorts of words mentioned (such as those listed below), but in fact, the ads tacitly **imply the first three skills**: to code, to think algorithmically and to master the foundation of computer science and software engineering.
 
@@ -169,7 +169,7 @@ Here are some commonly used software development stacks sought by software compa
 
 If the words listed above seem scary and absolutely incomprehensible to you, then you are quite at the beginning of your career and have **more years to learn** until you reach the profession of **software engineer**. Don't worry, every programmer goes through one or more technological stacks and has to study a **set of interconnected technologies**, but at the heart of it all is the **ability to write programming logic (coding)** that develops in this book, and the **ability to think algorithmically** (to solve programming tasks). You can not do without them!
 
-### Programming language doesn't matter!
+### Programming Language doesn't Matter!
 
 As already made clear, **the difference between programming languages**, and more precisely between the skills of programmers in different languages and technologies, is in about **10-20% of skills**.
 * All programmers have about **80-90% of the same skills**, which do not depend on language! These are the skills to program and develop software, and they are very similar in different programming languages and development technologies.
@@ -181,7 +181,7 @@ Only finally, when you pinch specific technologies in a software project, will y
 
 This book uses the **JavaScript** language, but it is not essential and can be replaced by Java, C#, Python, PHP, C++, Swift, Go, Kotlin or any other language. To master **the profession of "software developer"** it is necessary to learn **to code** (20%), learn to **think algorithmically** and **solve problems** (30%), have **fundamental knowledge of programming and computer science** (25%) and know a **specific programming language and the technologies around it** (25%). Be patient, for a year or two, all this can be mastered at a good starting level, as long as you are serious and diligent.
 
-## The Book which helps teachers 
+## The Book That Helps Teachers 
 
 If you are a **teacher of programming**, informatics or information technology or want **to teach programming**, this book gives you more
 than a well-structured learning material with many examples and tasks. **Free of charge** with the book you receive **quality educational content** for teaching in school, in **Bulgarian language**, in accordance with the school requirements:
@@ -193,7 +193,7 @@ than a well-structured learning material with many examples and tasks. **Free of
  
 All these **free teaching resources** can be found on the SoftUni Foundation website, along with learning content for a whole series of programming courses and software technologies. Download them free from here: https://softuni.foundation/projects/applied-software-developer-profession/.
 
-## The history behind this book
+## The History Behind This Book
 
 The main engine and project manager for the creation of the current **free programming book for beginners** with open source is **[Svetlin Nakov, PhD](https://nakov.com)**. He is a major ideologist and creator of the learning content from the **[course "Basics of Programming" at SoftUni](https://softuni.bg/courses/programming-basics)**, which was used as a foundation of this book.
 
@@ -215,14 +215,14 @@ The book is based on its initial C# variant ([Programming Basics with C#](https:
 
 Cover design: Marina Schiderova.
 
-## Official website of the book 
+## Official Website of The Book 
 
 The current book on **The basics of JavaScript programming for beginners** is available for free use on the Internet from: 
 <p align="center"><strong><a href="https://js-book.softuni.bg">https://js-book.softuni.bg</a></strong></p>
 
 This is **the official website of the book** and there will be uploaded its latest version. The book has been similarly translated to other programming languages listed on its website. 
 
-## Forum for your questions 
+## Forum for Your Questions 
 
 Ask your **questions to this book** on Programming Basics in the **SoftUni’s forum**:
 
@@ -235,12 +235,12 @@ Due to a large number of students in this textbook, in the forum you can find a 
 
 If you still have a specific question, such as why a program doesn't run, that you've been stuck with for a few hours, **ask it in the forum** and you'll get an answer. You will be surprised how well-intentioned and responsive the users of the SoftUni’s Forum are.
 
-## Official Facebook page of the book
+## Official Facebook Page of The Book
 The current book also has an **official Facebook page**, from which you can keep track of news around the books from the series "Basics of Programming", new editions, events and initiatives:
 
 <p align="center"><strong><a href="https://facebook.com/IntroProgrammingBooks/">fb.com/IntroProgrammingBooks</a></strong></p>
 
-## License and distribution 
+## License and Distribution 
 
 The book is distributed **for free** in electronic format under an open CC-BY-NC-SA license **[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
 
@@ -250,13 +250,13 @@ The book is published and distributed **on paper** by SoftUni and a paper copy c
  
 International Standard Book Number (ISBN): **978-619-00-1401-0**.
 
-## Bug reports
+## Bug Reports
 If you find **bugs**, inaccuracies or defects in the book, you can report them in the official tracker of the project:
 
 <p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-JS-EN/issues">https://github.com/SoftUni/Programming-Basics-Book-JS-EN/issues</a></strong></p>
 
 We do not promise that we will correct everything you send us, but we are willing to constantly improve the quality of this book, so that the reported unmistakable errors and all reasonable suggestions will be addressed. 
 
-## Enjoy your reading!
+## Enjoy Your Reading!
 
 And be sure **to write code** in large quantities, **try the examples** from each topic and, above all, **solve the tasks from the exercises**. With just reading, you won't learn to program, so make sure you put time into solving exercises! 
