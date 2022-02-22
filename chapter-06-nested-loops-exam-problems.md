@@ -95,7 +95,7 @@ The structure of the **fortress base** is the same as the one in the **roof**. I
 
 ![](assets/chapter-6-2-images/01.Draw-fort-07.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/936#0](https://judge.softuni.org/Contests/Practice/Index/936#0).
 
@@ -146,7 +146,7 @@ In order to draw the **the butterfly body**, we can use again **the variable** *
 What is left now is to print on the console the **lower wing**, which is **analogical to the upper wing**: we only need to swap the places of the slashes.
 
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/936#1](https://judge.softuni.org/Contests/Practice/Index/936#1).
 
@@ -208,7 +208,7 @@ To ensure proper operation of our program, on each **loop** iteration, we have t
 
 ![](assets/chapter-6-2-images/03.Stop-08.png)
 	
-### Testing in the Judge system
+### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/936#2](https://judge.softuni.org/Contests/Practice/Index/936#2).
 
@@ -272,7 +272,7 @@ The height of the lower part of the arrow is **`n - 1`**, therefore **the loop**
    
 ![](assets/chapter-6-2-images/04.Arrow-09.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/936#3](https://judge.softuni.org/Contests/Practice/Index/936#3).
 
@@ -328,6 +328,6 @@ For **the last row** of the figure, we can use again, the already declared varia
 
 ![](assets/chapter-6-2-images/05.Axe-06.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/936#4](https://judge.softuni.org/Contests/Practice/Index/936#4).

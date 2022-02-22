@@ -111,7 +111,7 @@ function calculateSquareArea(a) {
 }
 ```
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#0](https://judge.softuni.org/Contests/Practice/Index/927#0). Try all four solutions to the problem.
 
@@ -145,7 +145,7 @@ Let's call the function and make sure that when passing a value in inches, we ge
 convertInchesToCentimeters([5]); // Centimeters = 12.7
 ```
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#1](https://judge.softuni.org/Contests/Practice/Index/927#1).
 
 ## Reading a Text Input
@@ -208,7 +208,7 @@ The result is:
 1 + 1 = 2
 ```
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#3](https://judge.softuni.org/Contests/Practice/Index/927#3).
 
@@ -333,7 +333,7 @@ Because we want our function to work with both integers and floating numbers, we
 printTrapezoidArea([3, 4, 5]); // Trapezoid area = 17.5
 ```
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: 
 
@@ -399,7 +399,7 @@ The result is:
 
 ![](assets/chapter-2-1-images/00.Calculate-circle-area-and-perimeter.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#5](https://judge.softuni.org/Contests/Practice/Index/927#5).
 
@@ -437,7 +437,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
                                           // 160
 ```
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#6](https://judge.softuni.org/Contests/Practice/Index/927#6).
 
@@ -486,7 +486,7 @@ For **testing**, it's necessary to **call the function** in the same file with a
 
 ![](assets/chapter-2-1-images/01.Calculate-square-area-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#0](https://judge.softuni.org/Contests/Practice/Index/927#0).
 
@@ -516,7 +516,7 @@ Let's test it with floating numbers, for example, **4.5**:
 
 ![](assets/chapter-2-1-images/02.Inches-to-centimeters-03.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#1](https://judge.softuni.org/Contests/Practice/Index/927#1).
 
@@ -539,7 +539,7 @@ Again we create a **new file** in the folder with the other solutions and we sav
 
 ![](assets/chapter-2-1-images/03.Greeting-by-name-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/927#2](https://judge.softuni.org/Contests/Practice/Index/927#2).
 
@@ -556,7 +556,7 @@ Similarly, we create a new file and name it **printInfo.js**. which prints the m
 
 The solution should be tested locally by calling the function with sample values and starting the program with [**Ctrl+F5**].
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#3](https://judge.softuni.org/Contests/Practice/Index/927#3).
 
@@ -577,7 +577,7 @@ We should add a new file in Visual Studio Code again with the name **calculateTr
 
 **Test** your solution locally by calling the function and starting the program with [**Ctrl+F5**].
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#4](https://judge.softuni.org/Contests/Practice/Index/927#4).
 
@@ -599,7 +599,7 @@ For the calculations you may use the following formulas:
 -	**`Area = Math.PI * r * r`**.
 -	**`Perimeter = 2 * Math.PI * r`**.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#5](https://judge.softuni.org/Contests/Practice/Index/927#5).
 
@@ -618,7 +618,7 @@ A **Rectangle** is defined by the **coordinates** of both of its opposite corner
 | 30<br>40<br>70<br>-10                | 2000<br>180         |
 | 600.25<br>500.75<br>100.50<br>-200.5 | 350449.6875<br>2402 |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#6](https://judge.softuni.org/Contests/Practice/Index/927#6).
 
@@ -636,7 +636,7 @@ Write a function that receives arguments which are **a side and a height of a tr
 | 7.75 <br>8.45       | Triangle area = 32.74 |
 | 1.23456 <br>4.56789 | Triangle area = 2.82  |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#7](https://judge.softuni.org/Contests/Practice/Index/927#7).
 
@@ -654,7 +654,7 @@ Write a function that reads **degrees on the Celsius scale** (°C) and converts 
 | -5.5  | 22.1   |
 | 32.3  | 90.14  |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#8](https://judge.softuni.org/Contests/Practice/Index/927#8).
 
@@ -671,7 +671,7 @@ Write a function that reads **an angle in [radians](https://en.wikipedia.org/wik
 | 0.7854 | 45     |
 | 0.5236 | 30     |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#9](https://judge.softuni.org/Contests/Practice/Index/927#9).
 
@@ -688,7 +688,7 @@ Write a function for **conversion of US dollars** (USD) **into Bulgarian levs** 
 | 100  | 179.55 BGN |
 | 12.5 | 22.44 BGN  |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#10](https://judge.softuni.org/Contests/Practice/Index/927#10).
 
@@ -712,7 +712,7 @@ Write a function for the **conversion of money from one currency into another**.
 | 12.35<br>EUR<br>GBP  | 9.53 GBP   |
 | 150.35<br>USD<br>EUR | 138.02 EUR |
  
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#11](https://judge.softuni.org/Contests/Practice/Index/927#11).
 
@@ -735,7 +735,7 @@ Write a function that reads **a birth date** in format **`dd-MM-yyyy`** and calc
 * Look for information about the data type **``Date``** in JavaScript and in particular look at the methods **``setDate(...)``**, **``getDate()``**, **``getMonth()``** and **``getYear()``**. With their help, you can solve the problem without the need to calculate days, months, and leap years.
 * **Don't print** anything additional on the console except for the wanted date!
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#12](https://judge.softuni.org/Contests/Practice/Index/927#12).
 

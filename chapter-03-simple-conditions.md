@@ -78,7 +78,7 @@ Test the example code locally. Try entering different grades, for example, **4.7
 
 ![](assets/chapter-3-1-images/01.ЕxcellentResult-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 You can test the solution example here:
 [https://judge.softuni.org/Contests/Practice/Index/929#0](https://judge.softuni.org/Contests/Practice/Index/929#0).
@@ -140,7 +140,7 @@ The problem can be solved with a single **`if-else`** structure and the operator
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#2](https://judge.softuni.org/Contests/Practice/Index/929#2).
 
@@ -153,7 +153,7 @@ Our first task is to **read** the two numbers. After which through the use of a 
 
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#3](https://judge.softuni.org/Contests/Practice/Index/929#3).
 
@@ -214,7 +214,7 @@ function number1to9([arg1]) {
 
 The program logic of the above example **sequentially compares** the input number with the digits from 1 to 9 **with each consecutive comparison being performed only in case the previous result is not true**. Eventually, if none of the **`if`** conditionals are satisfied, the last **`else` clause** is executed.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#4](https://judge.softuni.org/Contests/Practice/Index/929#4).
 
@@ -255,7 +255,7 @@ This is an example output when the function is called with 175:
 
 Please note that for this problem the Judge system is set up to ignore any non-number outputs, so we may print explanations along with the number output.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#5](https://judge.softuni.org/Contests/Practice/Index/929#5).
 
@@ -283,7 +283,7 @@ Firstly we sum the three numbers, to obtain the seconds total. As we know that *
 
 ![](assets/chapter-3-1-images/07.Sum-seconds-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#6](https://judge.softuni.org/Contests/Practice/Index/929#6).
 
@@ -322,7 +322,7 @@ We take the input data and to the units of measure, we can add the method **`toL
 
 ![](assets/chapter-3-1-images/08.Metric-converter-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#7](https://judge.softuni.org/Contests/Practice/Index/929#7).
 
@@ -391,7 +391,7 @@ For values **greater than 5.50** - there is an **Excellent!** output.
  
 For values **less than 5.50** - there is no output.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#0](https://judge.softuni.org/Contests/Practice/Index/929#0).
 
@@ -425,7 +425,7 @@ After that, we call the function and pass some sample data, so we can test its f
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-03.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#1](https://judge.softuni.org/Contests/Practice/Index/929#1).
 
@@ -453,7 +453,7 @@ Now we have to **start** the program with [**Ctrl+F5**] and test it:
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#2](https://judge.softuni.org/Contests/Practice/Index/929#2).
 
@@ -480,7 +480,7 @@ When we are done with the implementation of the solution, we call the function a
 
 ![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#3](https://judge.softuni.org/Contests/Practice/Index/929#3).
 
@@ -502,7 +502,7 @@ Write a function that takes an **integer in the range** [**0 … 9**] and prints
 
 We can use a sequence of **`if-else`** statements to cover every one of the possible **11 cases**.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#4](https://judge.softuni.org/Contests/Practice/Index/929#4).
 
@@ -523,7 +523,7 @@ Write a function that **accepts a password** (one line of random text) and check
 
 Use an **`if-else`** statement.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#8](https://judge.softuni.org/Contests/Practice/Index/929#8).
 
@@ -540,7 +540,7 @@ Write a function that **accepts an integer** as a parameter and checks if it is 
 | 120 | Between 100 and 200 |
 | 210 | Greater than 200 |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#9](https://judge.softuni.org/Contests/Practice/Index/929#9).
 
@@ -564,7 +564,7 @@ Write a function that **accepts two words** as parameters and checks if they are
 
 Before the comparison, both words should be in lower case, so that case (uppercase / lowercase) does not influence the result: **`word = word.toLowerCase()`**.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#10](https://judge.softuni.org/Contests/Practice/Index/929#10).
 
@@ -583,7 +583,7 @@ Write a function, that **takes speed** (decimal number) as a parameter and print
 | 160 | ultra fast |
 | 3500 | extremely fast |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#11](https://judge.softuni.org/Contests/Practice/Index/929#11).
 
@@ -609,7 +609,7 @@ The result should be rounded up to the **third decimal point**.
 | circle<br>6 | 113.097 |
 | triangle<br>4.5<br>20 | 45 |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#12](https://judge.softuni.org/Contests/Practice/Index/929#12).
 
@@ -632,7 +632,7 @@ Write a function that takes **two parameters - hours and minutes** based on a 24
 
 Add 15 minutes and check using a set of conditions. If minutes are over 59 **increase the hours** by 1 and **decrease the minutes** by 60. You may handle the case when hours are over 23 similarly. Take care when printing the minutes to add a **leading zero** where appropriate.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#13](https://judge.softuni.org/Contests/Practice/Index/929#13).
 
@@ -648,7 +648,7 @@ Write a function that takes **3 numbers** as arguments and prints whether they a
 | 5<br>4<br>5 | no |
 | 1<br>2<br>3 | no |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#14](https://judge.softuni.org/Contests/Practice/Index/929#14).
 
@@ -669,7 +669,7 @@ Write a function that converts numbers in the range of [**0 … 100**] in text.
 
 Firstly you should check for **single-digit numbers** and if this is the case, print the corresponding word. Then you can check if the number is a **double-digit number**. These can be printed in two parts: left part (**tens** = number / 10) and right part (**units** = number % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#15](https://judge.softuni.org/Contests/Practice/Index/929#15).
 

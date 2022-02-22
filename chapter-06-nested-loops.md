@@ -16,7 +16,7 @@ Print on the console a rectangle made out of **10 x 10** stars.
 
 How does the example work? We initialize **a loop with a variable `i = 1`**, which increases with each iteration of the loop, while it is **less or equal to 10**. This way the code in the body of the loop is executed **10 times**. In the body of the loop, we print a new line on the console **`"*".repeat(10)`**, which creates a string of 10 stars.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here:: [https://judge.softuni.org/Contests/Practice/Index/935#0](https://judge.softuni.org/Contests/Practice/Index/935#0).
 
@@ -37,7 +37,7 @@ Write a program that gets a positive integer **n** and prints on the console **a
 
 On some web browsers, the repeating results on the console merge in one. It's advised to use **NodeJS** for our current examples. If you still get to this case you can use the symbol **`\n`** at the end of the printing method **`console.log("*".repeat(10) + "\n");`**.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#1](https://judge.softuni.org/Contests/Practice/Index/935#1).
 
@@ -83,7 +83,7 @@ The problem is similar to the last one. The difference here is that we need to f
 
 ![](/assets/chapter-6-1-images/03.Square-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#2](https://judge.softuni.org/Contests/Practice/Index/935#2).
 
@@ -102,7 +102,7 @@ The problem is **similar** to those for drawing **a rectangle** and **square**. 
 
 ![](/assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#3](https://judge.softuni.org/Contests/Practice/Index/935#3).
 
@@ -131,7 +131,7 @@ Here is an example implementation of the above idea with nested loops:
 
 ![](/assets/chapter-6-1-images/05.Square-frame-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#4](https://judge.softuni.org/Contests/Practice/Index/935#4).
 
@@ -161,7 +161,7 @@ To solve this problem, we need to mentally **divide** **the rhombus** into **two
 
 ![](/assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#5](https://judge.softuni.org/Contests/Practice/Index/935#5).
 
@@ -184,7 +184,7 @@ From the examples, we see that **the Christmas tree** can be **divided** into **
 
 ![](/assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#6](https://judge.softuni.org/Contests/Practice/Index/935#6).
 
@@ -214,7 +214,7 @@ When drawing **the middle** part, we need to **check** if the row is **`(n-1) / 
 
 ![](/assets/chapter-6-1-images/08.Sunglasses-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#7](https://judge.softuni.org/Contests/Practice/Index/935#7).
 
@@ -302,7 +302,7 @@ After we have finished with the **roof**, it is time for **the base**. It is eas
 
 If you have written everything as it is here, the problem should be solved.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#8](https://judge.softuni.org/Contests/Practice/Index/935#8).
 
@@ -381,7 +381,7 @@ Printing the lower part is very similar to that of the upper part. The differenc
 
 If we have written all correctly, then the problem is solved.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#9](https://judge.softuni.org/Contests/Practice/Index/935#9).
 

@@ -117,7 +117,7 @@ In the end, we will **invoke** **`printReceipt`** from the global scope of our p
 
 ![](assets/chapter-10-images/04.Print-receipt-03.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 The program with a total of four functions that call one another is ready and we can **run and debug it**. After that, we will send it for test in the Judge system: [https://judge.softuni.org/Contests/Practice/Index/943#0](https://judge.softuni.org/Contests/Practice/Index/943#0).
 
@@ -177,7 +177,7 @@ Our next step is to call the function we have created:
 
 ![](assets/chapter-10-images/06.Print-sign-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#1](https://judge.softuni.org/Contests/Practice/Index/943#1).
 
@@ -226,7 +226,7 @@ In the end, we will print the **bottom part** from the triangle but this time wi
 
 ![](assets/chapter-10-images/08.Print-triangle-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#2](https://judge.softuni.org/Contests/Practice/Index/943#2).
 
@@ -254,7 +254,7 @@ In the end, we invoke the declared functions to draw the whole square:
 
 ![](assets/chapter-10-images/09.Draw-filled-square-03.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#3](https://judge.softuni.org/Contests/Practice/Index/943#3).
 
@@ -325,7 +325,7 @@ Our next step is to **call the new** function and **record the returned value in
 
 ![](assets/chapter-10-images/13.Calculate-triangle-area-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#4](https://judge.softuni.org/Contests/Practice/Index/943#4).
 
@@ -348,7 +348,7 @@ Our first step is again to create a function that will get 2 parameters (base an
 
 After we have done our calculations, all we are left to do is calling the function.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#5](https://judge.softuni.org/Contests/Practice/Index/943#5).
 
@@ -524,7 +524,7 @@ Write a function that takes a name as a parameter and prints on the console "*He
 
 Define a function **`printName(name)`** and implement it. Write a function **`solve(...)`** which receives as input name of a person and calls **`printName`** function.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#7](https://judge.softuni.org/Contests/Practice/Index/943#7).
 
@@ -548,7 +548,7 @@ function solve([num1, num2, num3]) {
 }
 ```
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#8](https://judge.softuni.org/Contests/Practice/Index/943#8).
 
@@ -569,7 +569,7 @@ Write function and add the input string to the result in the for loop:
 
 ![](assets/chapter-10-images/21.Repeated-string-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#9](https://judge.softuni.org/Contests/Practice/Index/943#9).
 
@@ -588,7 +588,7 @@ Write function **`findNthDigit(number, index)`** which gets number and index the
 
 To perform the algorithm we will use a **`while`** loop. While the number isn't 0 we will check if the index matches our input value. If it matches we will return the number of the index (**`number % 10`**). If it doesn't match anything we will remove the last digit of the number (**`number = number / 10`**). We must follow which digit we check in the conditional statement (starting from left to right from 1). When we find the digit we will return the index.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#10](https://judge.softuni.org/Contests/Practice/Index/943#10).
 
@@ -623,7 +623,7 @@ function integerToBase(number, toBase) {
 }
 ```
 
-#### Testing in the Judge System 
+#### Testing in The Judge System 
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#11](https://judge.softuni.org/Contests/Practice/Index/943#11).
 
@@ -655,7 +655,7 @@ Define and implement the four shown functions. After that call **`processMessage
 
 In **`processMessage()`** read the type of message from the console and according to the read, type read the rest of the data (one, two, or three more lines). After that invoke the function for printing the given type of message.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#12](https://judge.softuni.org/Contests/Practice/Index/943#12).
 
@@ -689,7 +689,7 @@ The second special case is when the number formed by the last two digits of the 
 
 The third special case is when the number formed by the last two digits of the input number is **larger than 10 and smaller than 20** \(e.g. 111, 814, 919, etc.\). In this case, we print "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen" etc.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#13](https://judge.softuni.org/Contests/Practice/Index/943#13).
 
@@ -732,6 +732,6 @@ Our variable **`result`** in which we will save the value of the result we will 
 
 To find the first and the last digit of the ASCII code, we will use the same algorithm that we used to solve "Integer to Base".
  
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#14](https://judge.softuni.org/Contests/Practice/Index/943#14).

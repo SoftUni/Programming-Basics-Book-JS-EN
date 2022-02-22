@@ -152,7 +152,7 @@ All we have to do at this point is to print the final results:
 
 ![](assets/chapter-5-2-images/01.Histogram-06.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#0](https://judge.softuni.org/Contests/Practice/Index/934#0).
 
@@ -248,7 +248,7 @@ At this point what is left is to print the results considering the required form
 
 To avoid declaring additional variables we can use a template literal - **`${expression}`**. It's a text literal with a specific sequence of characters allowing embedding of expressions. Using it the calculation can be performed and the result to be directly included in the text string. 
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#1](https://judge.softuni.org/Contests/Practice/Index/934#1).
 
@@ -324,7 +324,7 @@ Finally, we have to print out the result by **checking whether the inheritance**
 
 **Hint**: Consider using the **`Math.abs(…)`** method, when printing the output in case the inheritance is insufficient.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#2](https://judge.softuni.org/Contests/Practice/Index/934#2).
 
@@ -414,7 +414,7 @@ If the count of patients **is not greater**, we increase only the value of the v
 
 Finally, the only thing left is to print the number of treated and untreated patients.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#3](https://judge.softuni.org/Contests/Practice/Index/934#3).
 
@@ -502,7 +502,7 @@ To read and allocate each number to its corresponding group we have to iterate  
 
 Finally, you need to print the obtained results, by following the specified format.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#4](https://judge.softuni.org/Contests/Practice/Index/934#4).
 
@@ -597,6 +597,6 @@ We still need a**`for` loop** from **`0`** to **`countOfLoads - 1`**, to iterate
 
 Before printing the output, we have to **calculate the percentage of tons, transported by each vehicle** and the **average price per ton**. For the average price per ton, we will declare one more variable **`totalPrice`**, which will **sum the total price of all transported cargo** (by microbus, truck and train). We can calculate the average price by, dividing **`totalPrice`** by **`sumOfTons`**. Finally, you have to **calculate by yourself** the percentages of tons, transported by each vehicle, and print the results, keeping the format specified in the description.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#5](https://judge.softuni.org/Contests/Practice/Index/934#5).

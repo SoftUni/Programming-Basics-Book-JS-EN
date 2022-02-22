@@ -46,7 +46,7 @@ After reading the input data from the console, the following program logic shoul
 
 ![](/assets/chapter-4-1-images/01.Personal-titles-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#0](https://judge.softuni.org/Contests/Practice/Index/931#0).
 
@@ -77,7 +77,7 @@ We **convert** all of the letters into the **lower register** by using the metho
 
 ![](/assets/chapter-4-1-images/02.Small-shop-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#1](https://judge.softuni.org/Contests/Practice/Index/931#1).
 
@@ -135,7 +135,7 @@ A point is internal for a given polygon if the following four conditions are app
  
 ![](/assets/chapter-4-1-images/03.Point-in-rectangle-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#2](https://judge.softuni.org/Contests/Practice/Index/931#2).
 
@@ -185,7 +185,7 @@ We have to use a few conditional statements with logical "**OR**" (**`||`**):
 
 ![](assets/chapter-4-1-images/04.Fruit-or-vegetable-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#3](https://judge.softuni.org/Contests/Practice/Index/931#3).
 
@@ -216,7 +216,7 @@ A given **number is valid** if it is in the range [**100 … 200**] or it is **0
 
 ![](assets/chapter-4-1-images/05.Invalid-number-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#4](https://judge.softuni.org/Contests/Practice/Index/931#4).
 
@@ -258,7 +258,7 @@ The second way with the additional boolean variables is longer, but is much more
 
 What remains is to finish writing the code to print “**Inside / Outside**”, if the point is not onto any of the sides of the rectangle.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 After you finish writing the solution, you can test it here: [https://judge.softuni.org/Contests/Practice/Index/931#5](https://judge.softuni.org/Contests/Practice/Index/931#5).
 
@@ -293,7 +293,7 @@ Write a program that reads from the console **fruit** (banana / apple / …), **
 
 ![](assets/chapter-4-1-images/07.Fruit-shop-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#6](https://judge.softuni.org/Contests/Practice/Index/931#6).
 
@@ -320,7 +320,7 @@ When reading the input, we could convert the city into small letters (with the m
 
 ![](assets/chapter-4-1-images/08.Trade-comissions-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#7](https://judge.softuni.org/Contests/Practice/Index/931#7).
 
@@ -372,7 +372,7 @@ Let's write a program that prints the **day of the week** (in English) depending
 <td>It is a good practice to put at <b>first</b> place those <b><code>case</code> statements</b>, that process <b>the most common situations</b>, and leave the <b><code>case</code> construction</b>, processing <b>the more rare situations</b>, in <b>the end, before the <code>default</code> constructions</b>. Another good practice is to  <b>arrange the <code>case</code> labels</b> in <b>ascending order</b>, regardless of whether they are integral or symbolic.</td>
 </tr></table>
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#8](https://judge.softuni.org/Contests/Practice/Index/931#8).
 
@@ -419,7 +419,7 @@ We can solve the task with **`switch-case`** conditions with multiple labels in 
 
 ![](assets/chapter-4-1-images/10.Animal-type-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Thes your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#9](https://judge.softuni.org/Contests/Practice/Index/931#9).
 
@@ -494,7 +494,7 @@ Sample code (parts of the code are blurred with the purpose to stimulate your th
 
 ![](assets/chapter-4-1-images/11.Cinema-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#10](https://judge.softuni.org/Contests/Practice/Index/931#10).
 
@@ -528,7 +528,7 @@ A sample code (parts of the code are blurred on purpose to stimulate independent
 
 ![](assets/chapter-4-1-images/12.Volleyball-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#11](https://judge.softuni.org/Contests/Practice/Index/931#11).
 
@@ -579,7 +579,7 @@ Sample code (parts of the code are blurred to stimulate logical thinking and sol
 
 ![](assets/chapter-4-1-images/13.Point-in-the-figure-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#12](https://judge.softuni.org/Contests/Practice/Index/931#12).
 

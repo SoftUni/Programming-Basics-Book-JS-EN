@@ -97,7 +97,7 @@ The solution to the problem uses arrays to store the values. Arrays are not need
 
 ![](/assets/chapter-9-1-images/01.Crossing-sequences-07.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/941#0](https://judge.softuni.org/Contests/Practice/Index/941#0).
 
@@ -189,7 +189,7 @@ Finally, if we have not found an eligible date, we will have a **`false`** value
 
 ![](/assets/chapter-9-1-images/02.Magic-dates-08.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/941#1](https://judge.softuni.org/Contests/Practice/Index/941#1).
 
@@ -324,6 +324,6 @@ The condition is met **unless we do not have a single word in the entered range*
 
 ![](/assets/chapter-9-1-images/03.Five-special-letters-10.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/941#2](https://judge.softuni.org/Contests/Practice/Index/941#2).

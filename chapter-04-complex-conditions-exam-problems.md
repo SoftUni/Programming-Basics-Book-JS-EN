@@ -149,7 +149,7 @@ Actually, for the task, printing the result **on the console** can be done at a 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Always consider the code that contains logical calculations as a separate part, different from the part that processes the input and output data. It has to be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/932#0](https://judge.softuni.org/Contests/Practice/Index/932#0).
 
@@ -250,7 +250,7 @@ What remains is to display the calculated result on the console:
 
 ![](assets/chapter-4-2-images/02.Trip-06.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/932#1](https://judge.softuni.org/Contests/Practice/Index/932#1).
 
@@ -342,7 +342,7 @@ Finally, what remains is to print the calculated result on the console:
 
 ![](assets/chapter-4-2-images/03.Operations-08.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/932#2](https://judge.softuni.org/Contests/Practice/Index/932#2).
 
@@ -435,7 +435,7 @@ For the output, to spare one **`else` condition** in the construction, we will a
 
 Finally, we need to display the calculated result on the console.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/932#3](https://judge.softuni.org/Contests/Practice/Index/932#3).
 
@@ -528,6 +528,6 @@ To calculate the output parameters, we will use the **`.toFixed(Number)`** **met
 
 Finally, what remains is to print the calculated results on the console.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/932#4](https://judge.softuni.org/Contests/Practice/Index/932#4).

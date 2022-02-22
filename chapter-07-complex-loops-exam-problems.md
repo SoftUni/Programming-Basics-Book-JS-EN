@@ -61,7 +61,7 @@ One of the ways to find a solution for this problem is to create **five** **`for
 
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-02.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/938#0](https://judge.softuni.org/Contests/Practice/Index/938#0).
 
@@ -118,7 +118,7 @@ Then we will start writing **`while`** loops.
 
 As we can see, we can solve a problem using different types of loops. Of course, each task has its most appropriate choice. To practice each type of loop – try to solve each of the following problems with all the learned loops.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/938#1](https://judge.softuni.org/Contests/Practice/Index/938#1).
 
@@ -171,7 +171,7 @@ Another **tricky** part of this problem is that apart from the above check we ne
  
 If the **condition** that checks whether the number is equal with the "stop" number returns a **`false`** result, our program should **continue to print**. This covers the **fourth and last** part of our program.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/938#2](https://judge.softuni.org/Contests/Practice/Index/938#2).
 
@@ -208,7 +208,7 @@ Print on the console **all special numbers**, separated by **space**.
 
 Solve the problem by yourself using what you learned from the previous two problems. Keep in mind the difference between operators for **integer division ( __/__ )** and **division with remainder ( __%__ )** in JavaScript.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/938#3](https://judge.softuni.org/Contests/Practice/Index/938#3).
 
@@ -245,6 +245,6 @@ Print on the console **all integer numbers**, that is the result of the above-me
 ### Hints and Guidelines
 Solve the problem **by yourself**, using what you learned from the previous ones. Remember that you will need to define **different** variables for each digit of the input number.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/938#4](https://judge.softuni.org/Contests/Practice/Index/938#4).

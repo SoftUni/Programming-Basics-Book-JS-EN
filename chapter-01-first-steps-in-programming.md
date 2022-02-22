@@ -276,7 +276,7 @@ Start the program with **[F5]** and check whether the result matches the one fro
 
 ![](assets/chapter-1-images/02.Expression-02.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/926#1](https://judge.softuni.org/Contests/Practice/Index/926#1).
 
@@ -304,7 +304,7 @@ Let's now **start the program** and check whether the result is what we're expec
 …
 20
 ```
-### Testing in the Judge System
+### Testing in The Judge System
 Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/926#2](https://judge.softuni.org/Contests/Practice/Index/926#2).
 Did you receive 100 points? If not, think of what you may be missing. Then try and think of a **cleverer** way to write this program, so as to avoid repeating the same command so many times. Look up information for "**[for loop JavaScript](https://www.google.bg/search?q=for+loop+JavaScript)**" on the Internet.
@@ -332,7 +332,7 @@ console.log("**");
 …
 ```
 
-### Testing in the Judge System
+### Testing in The Judge System
 Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/926#3](https://judge.softuni.org/Contests/Practice/Index/926#3).
 Try and **improve your solution** to avoid repeating the same command so many times. Can this be achieved with a for-loop? Did you manage to invent a better solution (with a for-loop, for example) to the previous problem? The current problem can be solved with a similar, but a little more complex approach (a loop within another loop). It's completely fine if you can't figure it out, you'll remember this problem when we learn about loops in a few chapters.
@@ -355,7 +355,7 @@ Create a new **JavaScript file**. For now, programs of similar type will be test
 Did you notice the change? We placed additional square brackets within the brackets of the function, inside which we described what data we're expecting to receive – in this case the numbers `a` and `b`, set as an array.
 What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of `a` and `b` to the familiar `console.log()` command. In programming, we multiply using the `*` operator.
 
-### Testing in the Judge System
+### Testing in The Judge System
 Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/926#4](https://judge.softuni.org/Contests/Practice/Index/926#4).
 
@@ -376,7 +376,7 @@ Finish the program so that it prints a square made up of stars. You may need to 
 
 **Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, in order to provoke you to **look for information on the Internet**. This is one of the most important skills you have to develop while you're learning to program. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. If you're having difficulties, you can also ask for help in the SoftUni forum: https://softuni.bg/forum.
 
-### Testing in the Judge System
+### Testing in The Judge System
 Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/926#5](https://judge.softuni.org/Contests/Practice/Index/926#5).
 
