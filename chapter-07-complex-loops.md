@@ -2,22 +2,22 @@
 
 Since we have learned what **`for`** loops are and their function in code, now is the time to take a look at **other loop types**, as well as some **more complex loop constructs**. These will expand our knowledge and help us solve more challenging problems. In particular, we will discuss how to use the following programming constructs:
 
-  * loops **with step aka stride**
+  * loops **with step**
   * **`while`** loops
   * **`do-while`** loops
   * **infinite** loops
 
 In the current chapter, we will also take a look at the **`break`** operator and **how** to empty it to **interrupt** a loop.
 
-## Loops with stride
+## Loops with a step
 
-In the **"Loops (Repetitions)"** chapter we learned how the **`for`** loop works and we already know when and to what purpose to use it. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step** or as it is also known **stride**.  
+In the **"Loops (Repetitions)"** chapter we learned how the **`for`** loop works and we already know when and to what purpose to use it. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step** or as it is also known **step**.  
 
 ### Loop with a Step – Explanation
 
-The **stride** is the **part** of the **`for`** loop, that specifies the **amount** used to **increment** or **decrement** the **main** variable. The **step** is declared in the skeleton of the **`for`** loop.
+The **step** is the **part** of the **`for`** loop, that specifies the **amount** used to **increment** or **decrement** the **main** variable. The **step** is declared in the skeleton of the **`for`** loop.
 
-Most often we have a **size of `1`** and in this case, instead of writing **`i += 1`** or **`i -= 1`**, we can use the shorthand operators **`i++`** or **`i--`**. In case we need the stride to be **different than 1** when increasing we use the shorthand **`i +=` + `required stride`**, and when we decrease **`i -=` + `required stride`**. With a step of 3 the loop would appear as below: 
+Most often we have a **size of `1`** and in this case, instead of writing **`i += 1`** or **`i -= 1`**, we can use the shorthand operators **`i++`** or **`i--`**. In case we need the step to be **different than 1** when increasing we use the shorthand **`i +=` + `required step`**, and when we decrease **`i -=` + `required step`**. With a step of 3 the loop would appear as below: 
 
 ![](assets/chapter-7-1-images/00.Step-explanation-01.png)
 
@@ -25,12 +25,12 @@ Here is a series of sample problems, the solution of which will help us better u
 
 ### Problem: Numbers from 1 to N with a step of 3
 
-Write a program that prints the numbers **from 1 to n** with a **stride of 3**. For example, **if n = 100**, then the output would be: **1, 4, 7, 10, …, 94, 97, 100**.
+Write a program that prints the numbers **from 1 to n** with a **step of 3**. For example, **if n = 100**, then the output would be: **1, 4, 7, 10, …, 94, 97, 100**.
 
 We can solve the problem using the following sequence of actions (algorithm):
 
   * We create a function that will take the number **`n`**.
-  * We run a **`for` loop from 1** to **`n`** with a stride of **3**.
+  * We run a **`for` loop from 1** to **`n`** with a step of **3**.
   * in the **body of the loop**, we print the value of the current step.
   
 ![](assets/chapter-7-1-images/01.Numbers-1-to-n-01.png)
@@ -48,7 +48,7 @@ We can solve the problem in the following manner:
   * We create a function that will take the number **`n`**.
   * We run a **`for` loop**, by assigning **`let i = n`**.
   * We reverse the condition of the loop: **`i >= 1`**.
-  * We define the stride size: **-1**.
+  * We define the step size: **-1**.
   * in the **body of the loop**, we print the value of the current step.
 
 ![](assets/chapter-7-1-images/02.Numbers-n-to-1-01.png)
@@ -59,7 +59,7 @@ You can test your solution at the following link: [https://judge.softuni.org/Con
 
 ### Problem: Numbers from 1 to 2^n with a for loop
 
-In the following example, we will use the standard size 1 stride.
+In the following example, we will use the standard size 1 step.
 
 Write a program that prints the numbers **from 1 to 2^n** (two to the power of n). For example, **if n = 10**, then the output would be **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
 
@@ -307,7 +307,7 @@ The steps of the **"prime checking algorithm"** are given below in bigger detail
 
 * We declare the variable **`n`**, to which we assign the integer passed to our function.
 * We create a **`prime`** boolean with and an initial value of **`true`**. We assume that a number is prime until proven otherwise.
-* We create a **`for`** loop, with the initial value set to 2, for a condition the **current value `<= √n`**. The stride is set to 1.
+* We create a **`for`** loop, with the initial value set to 2, for a condition the **current value `<= √n`**. The step is set to 1.
 * In the **body of the loop**, we check if **`n`**, divided by the **current value** has a remainder. If there is **no reminder** from the division, then we change **`prime`** to **`false`** and exit the loop through the **`break`** operator.
 * Depending on the value of **`prime`** we print whether the input number is prime (**`true`**) or composite (**`false`**).
 
@@ -477,7 +477,7 @@ We can solve the problem by using **two nested loops** and some simple calculati
 * We take the size of the table from the integer value of the variable **`n`**, which is passed to our function.
 * We declare the variable **`result`**, which will hold the current row and to which we will add the value of the current cell.
 * We create a **`for`** loop, that will be responsible for the rows of the table. We name the loop variable **`row`** and assign it an initial value of **0**. For condition, we set **`row < n`**. The size of the step is **1**.
-* In **the body of the loop** we create a nested **`for`** loop, that will be responsible for the columns in the table. We name the loop variable **`col`** and assign it an initial value of **0**. For condition, we set **`col < n`**. The size of the stride is set to **1**.
+* In **the body of the loop** we create a nested **`for`** loop, that will be responsible for the columns in the table. We name the loop variable **`col`** and assign it an initial value of **0**. For condition, we set **`col < n`**. The size of the step is set to **1**.
 * In **the body of the nested loop**:
    * We create a variable **`num`**, to which we assign the result of **the current row + the current column + 1** (+1 is needed since we count from 0).
    * We check whether **`num > n`**. If **`num`** is **greater** than **`n`**, we assign **`num`** a new value equal to **two times **`n`** - the current value of **`num`**. We do this in order not to exceed **`n`** in any of the cells of the table.
@@ -492,7 +492,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#
 
 ## What have we learned in this chapter?
 
-We can use **`for`** loops with a **stride**:
+We can use **`for`** loops with a **step**:
 
 ```JavaScript
 for (let i = 1; i <= n; i+=3) {
