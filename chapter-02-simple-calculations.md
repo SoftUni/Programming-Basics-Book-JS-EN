@@ -27,7 +27,7 @@ Here are some examples of data types and values for them:
 **JavaScript** language has three keywords for declaring a variable - **`var`**, **`const`**, and **`let`**. The main difference between **`let`** and **`var`** is in the scope of the variable. We use **`const`** when we are sure that what we assign to the variable will not change. A little further in the book, we will find out more details about the range of variables but for now, we will use the word ** `let` ** to declare a new variable.
 
 
-## Print a Result on the Screen
+## Print a Result on The Screen
 
 For printing text, number, or another result on the screen, it's necessary to call the built-in method **`console.log()`**. With it we can print both the value of a variable and directly text or number:
 
@@ -72,7 +72,7 @@ If we call our function with parameter 3 - **`calculateSquareArea([3])`** the re
 
 If we try to write a wrong number, for example, "hello", we will get an error message during runtime (exception). This is normal. Later on, we will find out how we can catch these kinds of errors and make the user enter a number again.
 
-#### How Does the Example Work?
+#### How Does The Example Work?
 
 On the first line with **`function calculateSquareArea([arg1]) {`** we define our function by giving it a name and setting arguments that it needs. In our case, we have one argument which is the side of the square.
 
@@ -227,7 +227,7 @@ let b = 7;
 let sum = a + b; // the result is 12
 ```
 
-### Subtracting Numbers (operator **`-`**)
+### Subtracting Numbers (Operator **`-`**)
 
 Subtracting numbers is done using the **`-`** operator:
 
@@ -245,7 +245,7 @@ Let we check the result of the execution of this program (with numbers 10 and 3)
 substractNumbers([10, 3]); // 7
 ```
 
-### Multiplying Numbers (operator **`*`**)
+### Multiplying Numbers (Operator **`*`**)
 
 For multiplication of numbers we use the **`*`** operator:
 
@@ -255,7 +255,7 @@ let b = 7;
 let product = a * b; // 35
 ```
 
-### Dividing Numbers (operator **`/`**)
+### Dividing Numbers (Operator **`/`**)
 
 Dividing numbers is done using the **`/`** operator. 
 
@@ -498,7 +498,7 @@ You must get 100 points (completely correct solution):
 ![](assets/chapter-2-1-images/01.Calculate-square-area-04.png)
 
 
-### Problem:	From Inches to Centimeters
+### Problem: From Inches to Centimeters
 
 Write a function that **accepts a number** (not necessarily an integer) and converts the number from **inches to centimeters**. For this purpose, **it multiplies the inches by 2.54** (because 1 inch = 2.54 centimeters).
 
@@ -544,7 +544,7 @@ Again we create a **new file** in the folder with the other solutions and we sav
 Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/927#2](https://judge.softuni.org/Contests/Practice/Index/927#2).
 
 
-### Problem:	Concatenating Text and Numbers
+### Problem: Concatenating Text and Numbers
 
 Write a function that receives as an argument the name, surname, age and city and print a message of the following type: **`You are <firstName> <lastName>, a <age>-years old person from <town>`**.
 
@@ -561,7 +561,7 @@ The solution should be tested locally by calling the function with sample values
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#3](https://judge.softuni.org/Contests/Practice/Index/927#3).
 
 
-### Problem:	Trapezoid Area
+### Problem: Trapezoid Area
 
 Write a function that receives three arguments **b1, b2, and h and calculate the trapezoid area** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
 
@@ -582,7 +582,7 @@ We should add a new file in Visual Studio Code again with the name **calculateTr
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#4](https://judge.softuni.org/Contests/Practice/Index/927#4).
 
 
-### Problem:	Circle Perimeter and Area
+### Problem: Circle Perimeter and Area
 
 Write a function, that receives an argument **number r** and calculates and prints **the area and perimeter of a circle** with **radius r**.
 
@@ -623,7 +623,7 @@ A **Rectangle** is defined by the **coordinates** of both of its opposite corner
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#6](https://judge.softuni.org/Contests/Practice/Index/927#6).
 
 
-### Problem:   Triangle Area
+### Problem: Triangle Area
 
 Write a function that receives arguments which are **a side and a height of a triangle** and calculates its area. Use **the formula** for triangle area: **area = a * h / 2**. Round the result to  **2 digits after the decimal point using `area.toFixed(2)`**.
 
@@ -693,7 +693,7 @@ Write a function for **conversion of US dollars** (USD) **into Bulgarian levs** 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#10](https://judge.softuni.org/Contests/Practice/Index/927#10).
 
 
-### Problem:	\*  Currency Converter
+### Problem: \*  Currency Converter
 
 Write a function for the **conversion of money from one currency into another**.  It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
 
@@ -717,7 +717,7 @@ Write a function for the **conversion of money from one currency into another**.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#11](https://judge.softuni.org/Contests/Practice/Index/927#11).
 
 
-### Problem:	** Date Calculations – 1000 Days on the Earth
+### Problem: ** Date Calculations – 1000 Days on The Earth
 
 Write a function that reads **a birth date** in format **`dd-MM-yyyy`** and calculates the date on which **1000 days** are turned since this birth date and prints it in the same format.
 
@@ -879,7 +879,7 @@ body {
 ![](assets/chapter-2-1-images/13.Bgn-to-eur-03.png)
 
 
-### Web Application: \*\*\* Catch the Mouse!
+### Web Application: \*\*\* Catch The Mouse!
 
 Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that **the image runs from the mouse** and it is hard to catch“. When the image gets “caught”, a congratulations message is shown.
 
