@@ -43,7 +43,7 @@ The structure consists of:
 
 Now, after we refreshed our knowledge on how to use and nested conditional statements to implement more complex conditions and program logic, let's solve some exam problems.
 
-## Problem: On Time for the Exam
+## Problem: On Time for The Exam
 
 A student has to attend **an exam at a particular time** (for example at 9:30 am). They arrive in the exam room at a particular **time of arrival** (for example 9:40 am). It is considered that the student has arrived **on time** if they have arrived **at the time when the exam starts or up to half an hour earlier**. If the student has arrived **more than 30 minutes earlier**, the student has come **too early**. If they have arrived **after the time when the exam starts**, they are **late**.
 
@@ -138,7 +138,7 @@ We also need to do one more check – whether the time of student's arrival is *
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-07.png)
 
-#### Printing the Result
+#### Printing The Result
 
 Finally, what remains is to print the result on the console. According to the requirements, if the student arrived right on time (**not even a minute difference**), we do not need to print a second result. This is why we apply the following **condition**:
 
@@ -244,7 +244,7 @@ can be shortened like this:
 
 ![](assets/chapter-4-2-images/02.Trip-05.png)
 
-#### Printing the Result
+#### Printing The Result
 
 What remains is to display the calculated result on the console:
 
@@ -296,7 +296,7 @@ Print the output as a **single line** on the console:
 
 The problem is not complex, but there are a lot of code lines to write.
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 Upon reading the requirements, we understand that we expect **three** parameters of input data. The first **two** parameters are **integers** (within the specified range), and the third one – **an arithmetical symbol**. 
 
@@ -336,7 +336,7 @@ For short and clear conditions, such as the above example for even and odd numbe
 
 ![](assets/chapter-4-2-images/03.Operations-07.png)
 
-#### Printing the Output
+#### Printing The Output
 
 Finally, what remains is to print the calculated result on the console:
 
@@ -397,7 +397,7 @@ The input data contains **exactly 3 lines** (arguments):
 
 We will read the input data and perform the calculations described in the task requirements, to check if the money will be sufficient.
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 Let's read carefully the requirements and examine what we expect to take as **input data**, what is expected to **return as a result**, as well as what are the **main steps** for solving the problem.
 
@@ -431,7 +431,7 @@ For the output, to spare one **`else` condition** in the construction, we will a
 
 ![](assets/chapter-4-2-images/04.Match-tickets-05.png)
 
-#### Printing the Result
+#### Printing The Result
 
 Finally, we need to display the calculated result on the console.
 
@@ -490,7 +490,7 @@ In this problem, our currency will be **lv**, which is BGN (Bulgarian lev).
 
 We will read the input data and do the calculations according to the provided price list and the discount rules, and finally, print the result.
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 According to the task requirements, we expect two parameters, that contain the input data - the first parameter is **the month in which the stay is planned**, and the second - **the number of stays**.
 
@@ -524,7 +524,7 @@ After calculating the relevant prices and the total amount for the stay, now let
 
 To calculate the output parameters, we will use the **`.toFixed(Number)`** **method**. This method **rounds the decimal** number up to a **specified number of characters** after the decimal point. In our case, we will round the decimal number up to **2 digits** after the decimal point.
 
-#### Printing the Result
+#### Printing The Result
 
 Finally, what remains is to print the calculated results on the console.
 

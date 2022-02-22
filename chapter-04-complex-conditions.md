@@ -18,7 +18,7 @@ if (condition1) {
 
 Using more than three levels of nested conditional statements is not considered a good practice and has to be avoided, mostly through optimization of the structure/the algorithm of the code and/or by using another type of conditional statement, which we are going to examine below in this chapter.
 
-### Problem: Personal titles
+### Problem: Personal Titles
 
 Depending on **age** (decimal number) and **gender** (**m** / **f**) print a personal title:
 * “**Mr.**” – man (gender “**m**”) 16 or more years old.
@@ -96,7 +96,7 @@ Logical "**AND**" (operator **`&&`**) means a few conditions have to be **fulfil
 |-----|-----|-----|
 |true<br>true<br>false<br>false|true<br>false<br>true<br>false|true<br>false<br>false<br>false|
 
-### How does the && Operator Work?
+### How does The && Operator Work?
 
 The operator **`&&`** accepts **a couple of Boolean** (conditional) statements, which have a **`true`** or **`false`** value, and returns **one** boolean statement as a **result**. Using it **instead** of a couple of nested **`if`** blocks, makes the code **more readable**, **ordered**, and **easy** to maintain. But how does it **work**, when we put a **few** conditions one after another? As we saw above, the logical **"AND"** returns **`true`**, **only** when it accepts as **arguments statements** with the value **`true`**. Respectively, when we have a **sequence** of arguments, the logical "**AND**" checks either until one of the arguments is **over**, or until it **meets** an argument with value **`false`**. 
 
@@ -151,7 +151,7 @@ At school, the teacher says: "Ivan or Peter should clean the board". To fulfill 
 |true<br>true<br>false<br>false|true<br>false<br>true<br>false|true<br>true<br>true<br>false|
 
 
-### How does the || Operator Work?
+### How does The || Operator Work?
 
 We have already learned what the logical **"OR"** **represents**. But how is it being achieved? Just like the logical **"AND"**, the program **checks** from left to right **the arguments**, that are given. To obtain **`true`** from the expression, just one argument must have a **`true`** value, respectively the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
 
@@ -226,7 +226,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#
 Like the other operators in programming, the operators **`&&`** and **`||`** have a priority, and in this case, the operator **`&&`** have higher precedence than the operator  **`||`**. The operator **`()`** serves to **change the priority of the operator** and is calculated first, just like in math. The use of parentheses also gives the code better readability and is considered a good practice.
 
 
-## More complex logical conditions
+## More Complex Logical Conditions
 
 Sometimes the conditions may be very complex, so they can require a long boolean expression or a sequence of conditions. Let's take a look at a few examples.
 
@@ -354,7 +354,7 @@ switch (selector) {
 }
 ```
 
-### Problem: Day of the Week
+### Problem: Day of The Week
 
 Let's write a program that prints the **day of the week** (in English) depending on the **given number** (1 … 7) or "**Error**" if an invalid day is given.
 
@@ -447,7 +447,7 @@ if ((x === left || x === right) && y >= top && y <= bottom)
     console.log(…); 
 ```
 
-#### Switch-case statements
+#### Switch-Case Statements
 
 ```JavaScript
 switch (selector) {
@@ -533,7 +533,7 @@ A sample code (parts of the code are blurred on purpose to stimulate independent
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#11](https://judge.softuni.org/Contests/Practice/Index/931#11).
 
 
-### Problem: * Point in the Figure
+### Problem: * Point in The Figure
 
 The figure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is on position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
 
@@ -588,7 +588,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#
 
 In this chapter, we learned how we can make **statements with non-trivial conditions**. Now let's apply this knowledge to create something interesting: a desktop application, that visualizes a point in a rectangle. This is a wonderful visualization of one of the tasks from the exercises.
 
-### Lab: * Point in a rectangle – (GUI) application
+### Lab: * Point in a Rectangle – (GUI) Application
 
 The task we have is to develop a graphical (**GUI**) application for **visualizing a point in a rectangle**. The application must look like identically the following:
 
@@ -866,15 +866,15 @@ At last, we start the application in our own GUI window:
 electron .
 ```
 
-**Case 1: The point is in the rectangle**:
+**Case 1: The Point is in The Rectangle**:
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-01.png)
 
-**Case 2: The point lies on one of the sides of the rectangle**:
+**Case 2: The Point Lies on One of The Sides of The Rectangle**:
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-02.png)
 
-**Case 3: The point is outside the rectangle**:
+**Case 3: The Point is Outside The Rectangle**:
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-03.png)
 
