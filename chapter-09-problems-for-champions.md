@@ -2,7 +2,7 @@
 
 In this chapter, we will offer the reader a few **more difficult tasks** that aim to develop **algorithmic skills** and acquire **programming techniques** to solve tasks with higher complexity.
 
-## More Complex Problems on the Studied Material
+## More Complex Problems on The Studied Material
 
 We will solve together several programming problems that cover the material studied in the book, but are more difficult than the usual problems of the entrance exams at SoftUni. If you want to become a **champion on the basics of programming**, we recommend this training to solve such complex tasks to make it easy for you to take exams.
 
@@ -85,7 +85,7 @@ What we have to take care of is **for every two numbers, our multiplier** (let's
 
 ![](/assets/chapter-9-1-images/01.Crossing-sequences-05.png)
 
-#### Finding Common Number for the Sequences
+#### Finding Common Number for The Sequences
 
 Once we have generated the numbers in both sequences, we can proceed to unite them and build the final solution. How will it look? For **each of the numbers** in the first sequence (starting from the smaller one) we will check if it exists in the other one. The first number that meets this criterion will be **the answer** to the problem.
 
@@ -147,7 +147,7 @@ We start with the input data. In this case, we have **3 integers**:
 
 Having the start and the end year, it is nice to know how we will go through every date, not to worry about how many days there are in the month and whether it is a leap year, and so on.
 
-#### Loop through Dates
+#### Loop Through Dates
 
 For looping through the dates, we will take advantage of the functionality that gives us the **`Date`** object in **JavaScript**. We will define a **start date variable** that we can do using the constructor that accepts a year, month, and day. We know the year is the starting year we read from the console and the month and the day must be January and 1st respectively. In JavaScript, the "constructor" of **`Date`** accepts as the first argument the year, as second argument the month (0 is January, 11 is December) and as the third argument the day of the month:
 
@@ -308,7 +308,7 @@ Once we have the value of that letter, we should **multiply it by its position**
 
 All intermediate results obtained must be added to the **total amount for each letter of the 5-letter combination**.
 
-#### Preparing the Output
+#### Preparing The Output
 
 Whether a word needs to be printed is determined by its weight. We need a condition to determine if **the current weight is in the range** [**start … end**] passed to the input at the start of the program. If this is the case, we print the **full** word (**`fullWord`**).
 

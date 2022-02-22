@@ -3,7 +3,7 @@
 In this chapter we will review three additional problems that belong to the category "**For Champions**", i.e. they are more complex than the rest of the problems in this book.
 
 
-## More Complex Problems on the Studied Material
+## More Complex Problems on The Studied Material
 
 Before we move on to particular tasks, we must clarify that these can be solved more easily with **additional knowledge in programming with JavaScript** \(functions, arrays, collections, recursion, etc.\), but each solution that will be provided now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge collected up to the present moment.
 
@@ -85,7 +85,7 @@ This is where we need to take into consideration the fact that inside **our arra
 
 Here is the place to say that by calling  **`i++`** after the end of the loop is used to **pass from the first command** for processing because at the end of the loop **`command[i]`** points exactly to **"mall.Enter"**, which mustn't be processed as action inside the mall.  
 
-#### Algorithm for Solving the Problem
+#### Algorithm for Solving The Problem
 
 The algorithm for solving the problem is a direct one – we continue **reading commands** from the console **until the command "mall.Exit" is passed**. In the meantime, we **process** each symbol (**`char`**) of each one of the commands according to the rules specified in the task requirements, and in parallel, we **modify the amount** that Lina has and **store the number of purchases**.
 
@@ -118,7 +118,7 @@ An exemplary condition for the first part of the requirements looks like this:
 
 We believe the reader should not have difficulties implementing all the other conditions because they are very similar to the first one.
 
-#### Formatting the Output
+#### Formatting The Output
 
 At the end of our task we must **print** a particular **output**, depending on the following condition:
 
@@ -185,7 +185,7 @@ The result must be rounded up to the **second digit after the decimal point**.
 
 As usual, we will first read and process the input, after that, we will solve the problem, and finally, we will print the result, formatted as required. In this example, our input will be 1 argument which doesn't need to be processed any further. We can directly go to solving our problem.
 
-#### Algorithm for Solving the Problem
+#### Algorithm for Solving The Problem
 
 For the tasks of our problem we need to use some variables:
 * One variable will store our **current result**.
@@ -225,7 +225,7 @@ After finishing the result calculation for our sub-expression, we **modify the r
 
 ![](assets/chapter-9-2-images/x-expression.08.png)
 
-#### Formatting the Output
+#### Formatting The Output
 
 The only output that the program must print on the console is the **result of solving the expression with an accuracy of up to two symbols after the decimal point**. How can we format the output this way? We will leave the answer to this question to the reader.
 
