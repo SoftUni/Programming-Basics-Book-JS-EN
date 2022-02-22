@@ -449,7 +449,7 @@ Finally, we print the length of **the longest** sequence found.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#7](https://judge.softuni.org/Contests/Practice/Index/939#7).
 
 
-## Problems for Drawing Figures on the Console
+## Problems for Drawing Figures on The Console
 
 **The fifth** problem of the "Programming Basics" Practical Exam requires **using one or several nested loops for drawing** a figure on the console. Logical reasoning, simple calculations, and conditional statements may be required. The problem tests the ability of students to think logically and invent simple algorithms for solving problems, i.e. to think algorithmically. Here are some examples of exam tasks:
 
@@ -508,7 +508,7 @@ What remains is **to assemble the whole program**  by first reading the input, p
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#8](https://judge.softuni.org/Contests/Practice/Index/939#8).
 
 
-### Problem: Rectangle with Stars in the Center
+### Problem: Rectangle with Stars in The Center
 
 Write a function that takes as a parameter an integer **n** and draws **a rectangle** with size **n with 2 stars in the center** as in the examples below.
 
