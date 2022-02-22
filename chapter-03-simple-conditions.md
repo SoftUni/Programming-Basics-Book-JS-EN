@@ -1,8 +1,8 @@
-# Chapter 3.1. Simple conditions
+# Chapter 3.1. Simple Conditions
 
 In the present chapter, we will take a look at the **conditional constructs in the JavaScript programming language**. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (**`if`** and **`if-else`**) by implementing appropriate examples and also we will take a look at the range in which a variable lives (its **scope**). Finally, we will go over different **debugging** techniques, to follow the programming steps through which our program goes during its run.
 
-## Conditional operators
+## Conditional Operators
 
 In programming, we can compare values through the use of the following **operators**:
 
@@ -29,7 +29,7 @@ Additional information on the differences between the two types of comparison op
 
 It is important to note that the case of the letters **upper case** or **lower case** is important for the comparison. If the compared values are not **completely identical**, the output will always be **`false`**.
 
-### Comparison operators
+### Comparison Operators
 
 In **JavaScript** we can use the following operators to compare data:
 
@@ -58,7 +58,7 @@ In **JavaScript** we can use the following operators to compare data:
 </table>
 
 
-## Simple **`if`** comparisons
+## Simple **`if`** Comparisons
 
 In programming, we often **check particular conditions** and perform various actions depending on the result of the comparison. This is done through the **`if`** comparison, which has the following structure:
 
@@ -84,7 +84,7 @@ You can test the solution example here:
 [https://judge.softuni.org/Contests/Practice/Index/929#0](https://judge.softuni.org/Contests/Practice/Index/929#0).
 
 
-## If-else conditional constructs
+## If-Else Conditional Constructs
 
 The **`if`** conditional can also have an **`else`** option to provide a specific action to be performed in case the Boolean expression (which is specified at the beginning **`if (Boolean expression)`**) returns a negative/falsy result (**`false`**). Written in this way the **conditional statement** is called **`if-else`** and its behavior is as follows: if the result of the condition is **positive / truthy** (**`true`**) - a set of instructions is executed. By contrast, when the result is **negative / falsy** (**`false`**) - a different set is executed. The format of this structure in **JavaScript** is as follows:
 
@@ -108,7 +108,7 @@ Similarly to the example above, we input a grade and check if it is excellent, b
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/929#1](https://judge.softuni.org/Contests/Practice/Index/929#1).
 
 
-## About the Curly Braces { } after an if / else
+## About The Curly Braces { } After an If / Else
 
 When we have **only one command** in the body of the **`if` statement**, we can **skip the curly braces**, indicating the body of the conditional operator. When we need to execute a **block of code** (group of commands), curly braces are **mandatory**. In case the braces are omitted, **only the first line of code** will be executed after the **`if` statement**.
 
@@ -145,7 +145,7 @@ The problem can be solved with a single **`if-else`** structure and the operator
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#2](https://judge.softuni.org/Contests/Practice/Index/929#2).
 
 
-### Problem: Finding the Greater Number
+### Problem: Finding The Greater Number
 
 Write a program that reads two integers and outputs the greater one.
 
@@ -157,7 +157,7 @@ Our first task is to **read** the two numbers. After which through the use of a 
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#3](https://judge.softuni.org/Contests/Practice/Index/929#3).
 
-## The Lifetime of a variable
+## The Lifetime of a Variable
 
 Every variable has a scope in which it exists, called **variable scope**. This scope specifies where the variable can be used and accessed. In **JavaScript**, there are **two ways** to initialize variables. This is done through the keyword **`var`** or **`let`**. It is important to note the difference between them, as to avoid unexpected and unwanted results during the design and execution of our functions.
 
@@ -172,7 +172,7 @@ Using the keyword **`var`** was the only way **in the past** to declare a variab
 
 It is important to note that there is a **third way** to initialize variables - through the use of the keyword **`const`**. These variables have the same scope as if defined through **`let`**, however have one key difference - they are **constant variables**. This means that after the initial assignment, their value is **impossible to be changed or the variable re-defined**.
 
-## Conditional chaining
+## Conditional Chaining
 
 Sometimes we have to do a series of checks, before deciding what actions our program will execute. In such cases we can apply the structure **`if-else if…-else` in series**. For this purpose we employ the following structure: 
 
@@ -190,7 +190,7 @@ else {
 }
 ```
 
-### Problem: Numbers one through 9 in English
+### Problem: Numbers One Through 9 in English
 
 Print the digits one through nine in English on the console (the numbers are passed as arguments of the function upon call). We can take the digit and through a **series of conditions** print the corresponding English word on the console:
 
@@ -219,7 +219,7 @@ The program logic of the above example **sequentially compares** the input numbe
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#4](https://judge.softuni.org/Contests/Practice/Index/929#4).
 
 
-## Exercise: Simple conditions
+## Exercise: Simple Conditions
 
 To practice the implementation of the conditional constructs **`if`** and **`if-else`**, we will take a look at a few practical problems.
 
@@ -243,7 +243,7 @@ We are given an **integer** – several points. Additional **bonus points** are 
 | 2703 | 270.3<br>2973.3 |
 | 15875 | 1589.5<br>17464.5 |
 
-#### Hints and pointers
+#### Hints and Pointers
 
 We can calculate the base and additional bonus score with a series of **`if-else-if-else`** statements. for the **main bonus points we have 3 cases** (the input is less than or equal to 100, it is between 100 and 1000, and finally it is greater than 1000), for the **additional bonus sore - further 2 cases** (whether the number is even or odd and whether the remainder of division by 5 is 5).
 
@@ -273,7 +273,7 @@ Three athletes finish with some **number of seconds** (between **1** and **50**)
 | 50<br>50<br>49 | 2:29 |
 | 14<br>12<br>10 | 0:36 |
 
-#### Hints and pointers
+#### Hints and Pointers
 
 Firstly we sum the three numbers, to obtain the seconds total. As we know that **1 minute = 60 seconds**, we should calculate the minutes and seconds in the range 0 to 59:
 - If the result is between 0 and 59, we print 0 minutes + calculated seconds.
@@ -327,11 +327,11 @@ We take the input data and to the units of measure, we can add the method **`toL
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#7](https://judge.softuni.org/Contests/Practice/Index/929#7).
 
 
-## Debugging - simple operations with a debugger
+## Debugging - Simple Operations With a Debugger
 
 To date, we have written quite a lot of code and oftentimes there were mistakes, were there? Now we can show you a tool to make finding mistakes easier.
 
-### What is "debugging"?
+### What is "Debugging"?
 
 **Debugging** is the process of „**attaching**“ to a program's execution, which allows us to follow closely the execution of our program. We can follow **line by line** the events in our program, what is its evaluation route, what are the intermediate values of the declared variables at each step of the execution, among other useful information and thus allowing us to locate errors - the so-called **bugs**.
 
@@ -373,7 +373,7 @@ The first exercise for this topic is to write a **JavaScript function**, which *
 | 5.5 | Excellent! |
 | 5.49 | (no output) |
 
-#### Hints and pointers
+#### Hints and Pointers
 
 We create a **new anonymous file** by clicking [**File**] -> [**New File**]. Then we save it ([**File**] -> [**Save**]), as a **JavaScript file**, with the file extension **.js**  
  
@@ -413,7 +413,7 @@ The next exercise for this topic is to write a **JavaScript function**, which **
 | 5.5 | Excellent! |
 | 5.49 | Not excellent. |
 
-#### Hints and pointers
+#### Hints and Pointers
 
 Firstly we create a **new JavaScript file**. After that, we **write the code** of the program. You may use the following example code as a hint:
 
@@ -445,7 +445,7 @@ Write a function that checks whether an **integer** input is either **even** or 
 | 25 | odd |
 | 1024 | even |
 
-#### Hints and pointers
+#### Hints and Pointers
 
 Again firstly we must create a **new JavaScript file**. Then the check if a number is either even or odd can be made with the operator **`%`**, which will return the **remainder from an integer divided by 2** as follows: **`let isEven = (num % 2 == 0)`**.
 
@@ -458,7 +458,7 @@ Now we have to **start** the program with [**Ctrl+F5**] and test it:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#2](https://judge.softuni.org/Contests/Practice/Index/929#2).
 
 
-### Problem: Find the greater number
+### Problem: Find The Greater Number
 
 Write a function that takes **two integers** and prints the bigger one on the console.
 
@@ -498,7 +498,7 @@ Write a function that takes an **integer in the range** [**0 … 9**] and prints
 | 9 | nine |
 | 10 | number too big |
 
-#### Hints and pointers
+#### Hints and Pointers
 
 We can use a sequence of **`if-else`** statements to cover every one of the possible **11 cases**.
 
@@ -519,7 +519,7 @@ Write a function that **accepts a password** (one line of random text) and check
 | s3cr3t!P@ssw0rd | Welcome |
 | s3cr3t!p@ss | Wrong password! |
 
-#### Hints and pointers
+#### Hints and Pointers
 
 Use an **`if-else`** statement.
 
@@ -545,7 +545,7 @@ Write a function that **accepts an integer** as a parameter and checks if it is 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#9](https://judge.softuni.org/Contests/Practice/Index/929#9).
 
 
-### Problem: Identical words
+### Problem: Identical Words
 
 
 Write a function that **accepts two words** as parameters and checks if they are the same. A comparison should be case-insensitive and the output should be either “**yes**” or “**no**”. 
@@ -560,7 +560,7 @@ Write a function that **accepts two words** as parameters and checks if they are
 | beer<br>vodka | no |
 | HeLlO<br>hELLo | yes |
 
-#### Hints and pointers
+#### Hints and Pointers
 
 Before the comparison, both words should be in lower case, so that case (uppercase / lowercase) does not influence the result: **`word = word.toLowerCase()`**.
 
@@ -628,7 +628,7 @@ Write a function that takes **two parameters - hours and minutes** based on a 24
 | 11<br>08 | 11:23 |
 | 12<br>49 | 13:04 |
 
-#### Hints and pointers
+#### Hints and Pointers
 
 Add 15 minutes and check using a set of conditions. If minutes are over 59 **increase the hours** by 1 and **decrease the minutes** by 60. You may handle the case when hours are over 23 similarly. Take care when printing the minutes to add a **leading zero** where appropriate.
 
@@ -637,9 +637,10 @@ Add 15 minutes and check using a set of conditions. If minutes are over 59 **inc
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#13](https://judge.softuni.org/Contests/Practice/Index/929#13).
 
 
-### Problem: Tree equal numbers
+### Problem: Tree Equal Numbers
 
 Write a function that takes **3 numbers** as arguments and prints whether they are the same (**yes** / **no**).
+
 #### Sample Input and Output
 
 | Input | Output |
@@ -653,7 +654,7 @@ Write a function that takes **3 numbers** as arguments and prints whether they a
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#14](https://judge.softuni.org/Contests/Practice/Index/929#14).
 
 
-### Problem: \*Convert a number to words
+### Problem: \*Convert a Number to Words
 
 Write a function that converts numbers in the range of [**0 … 100**] in text. 
 
@@ -678,7 +679,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#
 
 Now since we have completed a few exercises on **conditional statements (checks)**, let's do something a bit more interesting: an application with a Graphical User Interface (GUI) for currency conversion. We will employ the knowledge from this chapter to select from the different available currencies and make calculations as per the appropriate exchange rates for the given currency.
 
-### Problem: \*\*Currency converter
+### Problem: \*\*Currency Converter
 
 Now let's see how to create a graphical (**GUI**) application for **currency conversion**. The application will look similar to the picture below:  
 

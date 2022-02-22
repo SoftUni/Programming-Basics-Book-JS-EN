@@ -54,7 +54,7 @@ Print on the console **the lowest price** for the given number of kilometers.
 
 We will read the input data and depending on the distance, we will choose the cheapest transport. To do that, we will write a few conditional statements.
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 In the task, we are given **information about the input and output data**. Therefore, the first part of the task is to declare and initialize two **variables** where we will store the **values of the input data**:
 
@@ -64,7 +64,7 @@ Before starting with the conditional statements, we need to **declare** one more
 
 ![](assets/chapter-3-2-images/01.Transport-price-02.png)
 
-#### Checking the conditions and calculating
+#### Checking The Conditions and Calculating
 
 After having **declared and initialized** the input data and the variable that stores the value of the price, we have to decide which **conditions** of the task have to be **checked first**. 
 
@@ -86,7 +86,7 @@ If the condition of the variable **is not true** (returns **`false`**), the next
 
 If this condition **does not return `true`** as a result, we have to store **a value**, equal to **the result** of **the multiplication** of **the distance** by the train **rate** to the price variable in the **`else`** body. This is done because the train is **the cheapest** transport for the given distance. 
 
-#### Printing the Output Data
+#### Printing The Output Data
 
 After we have checked the distance conditions and we have **calculated the price of the cheapest transport**, we have to **print it**. The task **does not** specify how to format the result, therefore, we just print **the variable**:
 
@@ -130,7 +130,7 @@ Print on the console **one of the two possible states**:
 
 To solve the task, we read the input data, write a few conditional statements, do some calculations and print the result.
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 Our first step is to read the input data:
 
@@ -140,7 +140,7 @@ Our next step is to **declare and initialize** a variable in which we are going 
 
 ![](assets/chapter-3-2-images/02.Pipes-in-pool-02.png)
 
-#### Checking the Conditions and Processing Output Data
+#### Checking The Conditions and Processing Output Data
 
 After we have **the value of the quantity** of water that has flown through the **pipes**, the next step is to **compare** that quantity with the volume of the pool itself.
 
@@ -193,7 +193,7 @@ The input is read from the console and consists of an integer – **the number o
 
 To solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
 
-#### Reading the Input Data and calculating
+#### Reading The Input Data and Calculating
 
 From the task, we see that **the input data** will be **an integer** in the range of [**0 … 365**].
 
@@ -215,7 +215,7 @@ Here we have to note that if the total **time for the playing** of Tom is **less
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-04.png)
 
-#### Checking the Conditions
+#### Checking The Conditions
 
 The time for games is already calculated, which leads us to the **next** step – **comparing** the **time for play** of Tom with the **norm** on which the good sleep of the cat depends. To do so, we will use an **`if-else`** conditional statement. In the **`if` clause** we will check whether **the time for play is more than 30 000** (the norm).
 
@@ -266,7 +266,7 @@ The following has to be printed on the console:
 
 To solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
 
-#### Processing the Input Data and performing the calculations
+#### Processing The Input Data and Performing The Calculations
 
 First, we have to **read the input data**: 
 
@@ -278,7 +278,7 @@ After having done these calculations, we are ready to **calculate the quantity o
 
 ![](assets/chapter-3-2-images/04.Harvest-02.png)
 
-#### Checking the Conditions and Processing Output Data
+#### Checking The Conditions and Processing Output Data
 
 After having done the necessary calculations, the next step is to **check** whether the liters of wine that have been produced, **is enough**. For that, we will use **a simple conditional statement** of the **`if-else`** type and we will check whether the liters of wine from the harvest are **more than** or **equal to** the **needed liters**. 
 
@@ -331,7 +331,7 @@ Print **one line** on **the console**:
 
 To solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
 
-#### Reading the Input Data
+#### Reading The Input Data
 
 **First**, we have to read the input data to solve the problem.
 
@@ -343,7 +343,7 @@ The next step is to calculate **the number of total working hours** by multiplyi
 
 ![](assets/chapter-3-2-images/05.Firm-02.png)
 
-#### Checking the Conditions
+#### Checking The Conditions
 
 After having done the calculations that are needed to find the value of **the working hours**, now we have to check whether these hours are **enough**,  **or some hours are left**.
 
