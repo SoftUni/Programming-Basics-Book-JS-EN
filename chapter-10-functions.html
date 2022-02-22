@@ -445,25 +445,25 @@
                                 <h1 id="chapter-10-functions"><a name="chapter-10-functions" class="plugin-anchor" href="#chapter-10-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 10. Functions</h1>
 <p><strong>JavaScript</strong> is a well-known <strong>functional language</strong> for programming. As the name hints, <strong>functions</strong> are an extremely important part of the language. </p>
 <p>In this chapter, we will introduce you to <strong>functions</strong> and you will learn their <strong>definition</strong>, as well as what their <strong>base concepts</strong> are while working with them. You will learn why it&apos;s a <strong>good practice</strong> to use them, how to <strong>define</strong> and <strong>declare</strong> them. We will also introduce you to the <strong>parameters</strong> and <strong>return value of a function</strong>, as well as how to use that return value. In the end, we will peek at <strong>best practices</strong> when using functions.</p>
-<h2 id="what-is-function"><a name="what-is-function" class="plugin-anchor" href="#what-is-function"><i class="fa fa-link" aria-hidden="true"></i></a>What is &quot;function&quot;?</h2>
+<h2 id="what-is-a-function"><a name="what-is-a-function" class="plugin-anchor" href="#what-is-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>What is a &quot;Function&quot;?</h2>
 <p>Until this moment, we have found out that while <strong>writing</strong> a programming code for an exercise, <strong>separating</strong> the exercise into different <strong>parts</strong>, favors us a lot. Every part is responsible for a <strong>corresponding action</strong> and by doing so it&apos;s <strong>easier</strong> to solve the problem, and the <strong>readability</strong> and the debugging of the code are better.</p>
 <p>A block of code designed to perform a particular task and which we have separated logically is called <strong>function</strong>. <strong>Functions &#x2013; slices of code, that are named</strong> by us in a specific way. They can be called numerous times when we need them, and they will be run that many times as we want to.</p>
 <p>One <strong>function</strong> can be <strong>called</strong> that many times, as we think is needed for solving a problem. That <strong>saves</strong> us from repeating the same code and <strong>reduces</strong> the opportunities of making a mistake while editing the repeated code. </p>
-<h3 id="simple-functions"><a name="simple-functions" class="plugin-anchor" href="#simple-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Simple functions</h3>
+<h3 id="simple-functions"><a name="simple-functions" class="plugin-anchor" href="#simple-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Simple Functions</h3>
 <p>Simple functions are responsible for running a specific <strong>action</strong>, that will <strong>help</strong> us solve a problem. Those actions can be printing a string on the console, doing a conditional statement, doing a loop, etc.</p>
 <p>Let&apos;s see an <strong>example of a simple function</strong>:</p>
 <p><img src="assets/chapter-10-images/01.Simple-method-01.png" alt=""></p>
 <p>This <strong>function</strong> has the task to print a header, that is a series of the symbol <strong><code>-</code></strong>. Because of this, the name of the function is <strong><code>printHeader</code></strong>. The round brackets <strong><code>(</code></strong> and <strong><code>)</code></strong> are always after the name, no matter how we have named the functions. Later we will take a look at how we have to name a function we are working with. For now, we will only say that the <strong>name of the function must define the action</strong> that is doing.</p>
 <p>The <strong>body</strong> of the function consists of <strong>programming code</strong>, which is located between the curly brackets <strong><code>{</code></strong> and <strong><code>}</code></strong>. Between them, we place code, that will solve our problem, described by the name of the function.</p>
-<h3 id="why-should-we-use-functions"><a name="why-should-we-use-functions" class="plugin-anchor" href="#why-should-we-use-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Why should we use functions?</h3>
+<h3 id="why-should-we-use-functions"><a name="why-should-we-use-functions" class="plugin-anchor" href="#why-should-we-use-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Why Should We Use Functions?</h3>
 <p>Up to this moment, we have found out that, functions help us with <strong>separating long exercises into smaller parts</strong>, which leads to a <strong>simple solution</strong> of the corresponding problem. This makes our program, not just well structured, <strong>easy readable</strong> but also more understandable.</p>
 <p>Using functions we <strong>escape repeating</strong> of programming code. <strong>Repeating</strong> code is a <strong>bad practice</strong> because it makes <strong>harder maintenance</strong> for the programmer to do which leads to errors. If one part of code exists in our program more than once and we have to fix it, we will have to change every occurrence of repeating code. The probability of us forgetting one of the repeated places is high, which will lead to incorrect behavior of our program. This is exactly why it&apos;s a <strong>good practice</strong> to define a fragment that will be used <strong>more than once</strong> as a <strong>separate function</strong>.</p>
 <p>Functions offer us a <strong>good method</strong> to use <strong>code several times</strong>. With solving more and more exercises, we will come to the conclusion that using already defined functions saves us a lot of time and effort.</p>
-<h2 id="declaring-functions"><a name="declaring-functions" class="plugin-anchor" href="#declaring-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Declaring functions</h2>
+<h2 id="declaring-functions"><a name="declaring-functions" class="plugin-anchor" href="#declaring-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Declaring Functions</h2>
 <p>In JavaScript language we can <strong>define</strong> functions everywhere, using the same way we define variables. Declaring represents the <strong>registration of a function</strong> inside a program and to be recognized inside it.</p>
 <p>JavaScript isn&apos;t <strong>strongly typed</strong> language. That&apos;s why when we <strong>declare a function</strong> it doesn&apos;t have a type(string, number, array, etc.), which other programming language methods have.</p>
 <p>There are two ways, to declare a function in JavaScript - <strong>function declaration</strong> and <strong>Function expression</strong>.</p>
-<h3 id="function-declaration"><a name="function-declaration" class="plugin-anchor" href="#function-declaration"><i class="fa fa-link" aria-hidden="true"></i></a>Function declaration</h3>
+<h3 id="function-declaration"><a name="function-declaration" class="plugin-anchor" href="#function-declaration"><i class="fa fa-link" aria-hidden="true"></i></a>Function Declaration</h3>
 <p>With the next example, we will take a look at the required elements inside a function, using <strong>function declaration</strong>.</p>
 <p><img src="assets/chapter-10-images/02.Declaring-methods-02.png" alt=""></p>
 <ul>
@@ -473,7 +473,7 @@
 <li><strong>Body of the function</strong>. It is declared between  <strong><code>{</code></strong> and <strong><code>}</code></strong> brackets which we type after the closing bracket <strong><code>)</code></strong>. In our <strong>body of the function</strong>, we define all operations, that we want our function to do, <strong>using code</strong>. We also describe the <strong>algorithm</strong> by which the function will solve the given problem. We achieve the <strong>logic</strong> of the function. In the current example, we calculate the area of the square using <strong><code>n * n</code></strong>.</li>
 </ul>
 <p>When declaring functions it is important to follow the <strong>sequence</strong> of the fundamental elements - first <strong>Keyword function</strong> then <strong>Name of function</strong>, <strong>List of parameters</strong> surrounded by round brackets <strong><code>()</code></strong>, <strong>Body of the function</strong> surrounded by curly brackets <strong><code>{}</code></strong>.</p>
-<h3 id="function-expression"><a name="function-expression" class="plugin-anchor" href="#function-expression"><i class="fa fa-link" aria-hidden="true"></i></a>Function expression</h3>
+<h3 id="function-expression"><a name="function-expression" class="plugin-anchor" href="#function-expression"><i class="fa fa-link" aria-hidden="true"></i></a>Function Expression</h3>
 <p>With the next example, we will take a look at the required elements in the declaration of an <strong>expression function</strong>. It is similar to <strong>function declaration</strong> which we have already viewed and it can be said that it&apos;s a <strong>set</strong> of <strong>declaring a variable</strong> and <strong>declaring a declaration function</strong>.</p>
 <p><img src="assets/chapter-10-images/02.Declaring-methods-03.png" alt=""></p>
 <ul>
@@ -482,10 +482,10 @@
 <li><strong>Declaration of a function</strong>. Using the same structure that we have learned in <strong>function declaration</strong> -  first <strong>Keyword function</strong> then <strong>Name of function</strong>, <strong>List of parameters</strong> surrounded by round brackets <strong><code>()</code></strong>, <strong>Body of the function</strong> surrounded by curly brackets <strong><code>{}</code></strong>. The difference, in this case, is that <strong>Name of a function</strong> is not necessary, but it is recommended to get used to writing the name. In the example, the program will work without problems even if we don&apos;t type <strong><code>getSquareFunc</code></strong>. If we don&apos;t type the name, the function will become <strong>anonymous</strong>.</li>
 </ul>
 <p>When we declare a variable in the body of a function (using the keyword <strong><code>let</code></strong> or <strong><code>const</code></strong>). We call it a <strong>local</strong> variable for the function. The scope in which it exists and can be used is from the row it is defined to the end of the closing bracket <strong><code>}</code></strong> of the function. That scope is called <strong>variable scope</strong>.</p>
-<h3 id="function-declaration-or-function-expression"><a name="function-declaration-or-function-expression" class="plugin-anchor" href="#function-declaration-or-function-expression"><i class="fa fa-link" aria-hidden="true"></i></a>Function declaration or Function expression</h3>
+<h3 id="function-declaration-or-function-expression"><a name="function-declaration-or-function-expression" class="plugin-anchor" href="#function-declaration-or-function-expression"><i class="fa fa-link" aria-hidden="true"></i></a>Function Declaration or Function Expression</h3>
 <p>The difference between <strong>Function declaration</strong> and <strong>Function expression</strong> is very simple. All functions declared by <strong>function declaration</strong> are loaded in the memory of a program before it is started. However, when we are using <strong>function expression</strong> the program will know and run the function only when it has come to it.</p>
 <p>In theory, this means that we can <strong>call a function</strong> that is declared with <strong>function declaration</strong> even before it was declared in the previous rows. If we try to use <strong>function expression</strong> the program will <strong>throw an error</strong> that the function is not declared yet.</p>
-<h2 id="invoking-a-function"><a name="invoking-a-function" class="plugin-anchor" href="#invoking-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>Invoking a function</h2>
+<h2 id="invoking-a-function"><a name="invoking-a-function" class="plugin-anchor" href="#invoking-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>Invoking a Function</h2>
 <p>Invoking a function is a <strong>start of the execution of a code</strong> that is located inside the body of a function. We call it by typing the <strong>name</strong> of the function followed by <strong><code>()</code></strong> and <strong><code>;</code></strong> to end the row. Here is an example:</p>
 <p><img src="assets/chapter-10-images/03.Invoking-methods-01.png" alt=""></p>
 <p>This function can be called from <strong>different points</strong> in our program. One of the ways to be called is to be called from the <strong>global scope</strong>.</p>
@@ -493,7 +493,7 @@
 <p>A Function can be invoked from the <strong>body of another function</strong> which is <strong>not</strong> the global scope of our program.</p>
 <p><img src="assets/chapter-10-images/03.Invoking-methods-03.png" alt=""></p>
 <p>A Function can be called from <strong>its own body</strong>. This is called <strong>recursion</strong> and you can find more about it on <a href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F" target="_blank">Wikipedia</a> or google it.</p>
-<h3 id="example-empty-cash-receipt"><a name="example-empty-cash-receipt" class="plugin-anchor" href="#example-empty-cash-receipt"><i class="fa fa-link" aria-hidden="true"></i></a>Example: empty cash receipt</h3>
+<h3 id="problem-empty-cash-receipt"><a name="problem-empty-cash-receipt" class="plugin-anchor" href="#problem-empty-cash-receipt"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: empty cash receipt</h3>
 <p>Write a function, that prints empty cash receipt. The function must call another three functions: one to print the title, one for the main part, and the last for the bottom part.</p>
 <table>
 <thead>
@@ -540,11 +540,11 @@ In a like manner, we will create another two functions <strong>to print the midd
 <p><img src="assets/chapter-10-images/04.Print-receipt-02.png" alt=""></p>
 <p>In the end, we will <strong>invoke</strong> <strong><code>printReceipt</code></strong> from the global scope of our program:</p>
 <p><img src="assets/chapter-10-images/04.Print-receipt-03.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>The program with a total of four functions that call one another is ready and we can <strong>run and debug it</strong>. After that, we will send it for test in the Judge system: <a href="https://judge.softuni.org/Contests/Practice/Index/943#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#0</a>.</p>
-<h2 id="functions-with-parameters"><a name="functions-with-parameters" class="plugin-anchor" href="#functions-with-parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Functions with parameters</h2>
+<h2 id="functions-with-parameters"><a name="functions-with-parameters" class="plugin-anchor" href="#functions-with-parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Functions with Parameters</h2>
 <p>When we are dealing with a given task the function we are using needs <strong>additional information</strong> which the result depends on. Exactly this information are the <strong>parameters of the functions</strong> and the behavior of a program depends on.</p>
-<h3 id="using-parameters-inside-a-function"><a name="using-parameters-inside-a-function" class="plugin-anchor" href="#using-parameters-inside-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>Using parameters inside a function</h3>
+<h3 id="using-parameters-inside-a-function"><a name="using-parameters-inside-a-function" class="plugin-anchor" href="#using-parameters-inside-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>Using Parameters Inside a Function</h3>
 <p>If the function requires <strong>input data</strong>, it is passed inside <strong><code>()</code></strong> brackets. The order of <strong>function parameters</strong> must match the order of the <strong>function arguments</strong> when declaring and invoking the function. Parameters can be <strong>zero, one, or more</strong>. When declaring the parameters we divide them with a comma <strong><code>,</code></strong>.</p>
 <p><strong>Declaring</strong> function <strong><code>printNumbers(...)</code></strong> and the <strong>list</strong> of <strong>parameters</strong> which the programs need to work correctly will look like this:</p>
 <p><img src="assets/chapter-10-images/05.Method-parameters-01.png" alt=""></p>
@@ -558,7 +558,7 @@ In a like manner, we will create another two functions <strong>to print the midd
 <p>Let&apos;s look at another example:</p>
 <p><img src="assets/chapter-10-images/05.Method-parameters-04.png" alt=""></p>
 <p>In this example, we call the function <strong><code>printNumbers(...)</code></strong> but this time we give only 1 parameter instead of the <strong>declared</strong> 2 parameters. All parameters that are not <strong>set as values</strong> will automatically get <strong><code>undefined</code></strong> values. In our case the variable.</p>
-<h3 id="example-symbol-of-integer"><a name="example-symbol-of-integer" class="plugin-anchor" href="#example-symbol-of-integer"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Symbol of integer</h3>
+<h3 id="problem-symbol-of-integer"><a name="problem-symbol-of-integer" class="plugin-anchor" href="#problem-symbol-of-integer"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Symbol of Integer</h3>
 <p>Create a function that checks if a number is a positive or negative number.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -589,16 +589,16 @@ In a like manner, we will create another two functions <strong>to print the midd
 <p>Our next step is <strong>implementing</strong> logic by which our program will check if the number is positive or negative. From the example, we can see that there are 3 cases:  if the number is bigger and smaller than zero or if it&apos;s zero. We will make three conditional statements in the body of our function.</p>
 <p>Our next step is to call the function we have created:</p>
 <p><img src="assets/chapter-10-images/06.Print-sign-02.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/943#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#1</a>.</p>
-<h3 id="optional-parameters"><a name="optional-parameters" class="plugin-anchor" href="#optional-parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Optional parameters</h3>
+<h3 id="optional-parameters"><a name="optional-parameters" class="plugin-anchor" href="#optional-parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Optional Parameters</h3>
 <p><strong>JavaScript</strong> programming language supports <strong>optional</strong> parameters. They allow <strong>skipping</strong> of parameters when calling a function. We declare them by <strong>providing default values</strong> in the description of the parameter.</p>
 <p>Our next example shows the use of optional parameters:</p>
 <p><img src="assets/chapter-10-images/07.Optional-parameters-01.png" alt=""></p>
 <p><strong><code>printNumbers(...)</code></strong> can be invoked in different ways:</p>
 <p><img src="assets/chapter-10-images/07.Optional-parameters-02.png" alt=""></p>
 <p>When we are not <strong>setting value</strong> for the parameter, he will <strong>get the value</strong> that we have given him when declaring the function.</p>
-<h3 id="example-print-of-triangle"><a name="example-print-of-triangle" class="plugin-anchor" href="#example-print-of-triangle"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Print of triangle</h3>
+<h3 id="problem-print-of-triangle"><a name="problem-print-of-triangle" class="plugin-anchor" href="#problem-print-of-triangle"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Print of Triangle</h3>
 <p>Create a function that will create a triangle as shown in the example.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -629,9 +629,9 @@ In a like manner, we will create another two functions <strong>to print the midd
 <p><img src="assets/chapter-10-images/08.Print-triangle-03.png" alt=""></p>
 <p>In the end, we will print the <strong>bottom part</strong> from the triangle but this time with a reverse loop.</p>
 <p><img src="assets/chapter-10-images/08.Print-triangle-04.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/943#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#2</a>.</p>
-<h3 id="example-draw-a-filled-square"><a name="example-draw-a-filled-square" class="plugin-anchor" href="#example-draw-a-filled-square"><i class="fa fa-link" aria-hidden="true"></i></a>Example: draw a filled square.</h3>
+<h3 id="problem-draw-a-filled-square"><a name="problem-draw-a-filled-square" class="plugin-anchor" href="#problem-draw-a-filled-square"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Draw a Filled Square.</h3>
 <p>Draw a square with side <strong><code>n</code></strong>, as shown in the example.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -659,18 +659,18 @@ In a like manner, we will create another two functions <strong>to print the midd
 <p><img src="assets/chapter-10-images/09.Draw-filled-square-02.png" alt=""></p>
 <p>In the end, we invoke the declared functions to draw the whole square:</p>
 <p><img src="assets/chapter-10-images/09.Draw-filled-square-03.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/943#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#3</a>.</p>
-<h2 id="return-result-from-a-function"><a name="return-result-from-a-function" class="plugin-anchor" href="#return-result-from-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>Return result from a function</h2>
+<h2 id="return-result-from-a-function"><a name="return-result-from-a-function" class="plugin-anchor" href="#return-result-from-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>Return Result From a Function</h2>
 <p>Up to this point, we have viewed functions that do a specific task. For example printing a text, number or a figure on the console. There is another type of function that can <strong>return</strong> a <strong>result</strong> from their task. We can return a result of the multiplication of two numbers. We will look at this type of function in this part.</p>
-<h3 id="operator-return"><a name="operator-return" class="plugin-anchor" href="#operator-return"><i class="fa fa-link" aria-hidden="true"></i></a>Operator return</h3>
+<h3 id="operator-return"><a name="operator-return" class="plugin-anchor" href="#operator-return"><i class="fa fa-link" aria-hidden="true"></i></a>Operator Return</h3>
 <p>To get a result from a function we use the operator <strong><code>return</code></strong>. He must be <strong>used inside the body</strong> of a function. The <strong><code>return</code></strong> will tell the program to <strong>stop the execution</strong> of the function and <strong>return</strong> a corresponding value. This value is defined after the <strong><code>return</code></strong> word. </p>
 <p>In the example underneath we have a <strong>function</strong> that gets the first and last name as <strong>parameters</strong>. Then it combines them and returns the full name.</p>
 <p><img src="assets/chapter-10-images/11.Return-operator-01.png" alt=""></p>
 <p><strong>There are cases</strong> in which <strong><code>return</code></strong> can be called from different places inside the function, but if only the <strong>conditions</strong> are met. </p>
 <p>In the example below, we have a function that compares 2 numbers and <strong>returns</strong> the result which can be  <strong><code>-1</code></strong>, <strong><code>0</code></strong>, or <strong><code>1</code></strong> if the first argument is smaller, equal, or bigger than the second argument. The function uses the operator <strong><code>return</code></strong> on 3 different places. It returns different values depending on the logic of the code. </p>
 <p><img src="assets/chapter-10-images/11.Return-operator-02.png" alt=""></p>
-<h4 id="code-after-a-return-is-unreachable"><a name="code-after-a-return-is-unreachable" class="plugin-anchor" href="#code-after-a-return-is-unreachable"><i class="fa fa-link" aria-hidden="true"></i></a>Code after a return is unreachable</h4>
+<h4 id="code-after-a-return-is-unreachable"><a name="code-after-a-return-is-unreachable" class="plugin-anchor" href="#code-after-a-return-is-unreachable"><i class="fa fa-link" aria-hidden="true"></i></a>Code After a return is Unreachable</h4>
 <p>When the <strong>return</strong> operator is located inside a conditional statement such as <strong><code>if</code></strong>, after the statement in the same block, we must <strong>not</strong> have rows with code because Visual Studio Code will display a warning telling us that it had found an <strong>unreachable</strong> code.</p>
 <p><img src="assets/chapter-10-images/11.Return-operator-03.png" alt=""></p>
 <p>The operator <strong><code>return</code></strong> can be also used without a <strong>specific value</strong>. In this case, the function will be <strong>terminated</strong> and the return value will be <strong><code>undefined</code></strong>.</p>
@@ -679,7 +679,7 @@ In a like manner, we will create another two functions <strong>to print the midd
 with the phrase <b><i>type</i> <code>return; return;</code> <i>and let&apos;s go home</i></b>&#x201D;, to explain that the logic of the program is wrongly typed.</td></tr>
 </table>
 
-<h3 id="using-the-return-value-of-a-function"><a name="using-the-return-value-of-a-function" class="plugin-anchor" href="#using-the-return-value-of-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>Using the return value of a function</h3>
+<h3 id="using-the-return-value-of-a-function"><a name="using-the-return-value-of-a-function" class="plugin-anchor" href="#using-the-return-value-of-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>Using The return Value of a Function</h3>
 <p>After a function is executed and has returned a value, we can use the value in several ways.</p>
 <p>The first is to <strong>assign the result to a variable</strong>:</p>
 <p><img src="assets/chapter-10-images/12.Return-value-01.png" alt=""></p>
@@ -687,7 +687,7 @@ with the phrase <b><i>type</i> <code>return; return;</code> <i>and let&apos;s go
 <p><img src="assets/chapter-10-images/12.Return-value-02.png" alt=""></p>
 <p>The third is to <strong>pass</strong> the result from one function to <strong>another function</strong>:</p>
 <p><img src="assets/chapter-10-images/12.Return-value-03.png" alt=""></p>
-<h3 id="example-find-the-area-of-a-triangle"><a name="example-find-the-area-of-a-triangle" class="plugin-anchor" href="#example-find-the-area-of-a-triangle"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Find the area of a triangle</h3>
+<h3 id="problem-find-the-area-of-a-triangle"><a name="problem-find-the-area-of-a-triangle" class="plugin-anchor" href="#problem-find-the-area-of-a-triangle"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Find The Area of a Triangle</h3>
 <p>Write a function that finds the area of a triangle by given side and altitude and then returns the area.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -709,9 +709,9 @@ with the phrase <b><i>type</i> <code>return; return;</code> <i>and let&apos;s go
 <p><img src="assets/chapter-10-images/13.Calculate-triangle-area-01.png" alt=""></p>
 <p>Our next step is to <strong>call the new</strong> function and <strong>record the returned value inside another variable</strong>.</p>
 <p><img src="assets/chapter-10-images/13.Calculate-triangle-area-02.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/943#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#4</a>.</p>
-<h3 id="example-power-of-a-number"><a name="example-power-of-a-number" class="plugin-anchor" href="#example-power-of-a-number"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Power of a number</h3>
+<h3 id="problem-power-of-a-number"><a name="problem-power-of-a-number" class="plugin-anchor" href="#problem-power-of-a-number"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Power of a Number</h3>
 <p>Write a function that calculates and returns the result the power of a number. </p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -736,9 +736,9 @@ with the phrase <b><i>type</i> <code>return; return;</code> <i>and let&apos;s go
 <p>Our first step is again to create a function that will get 2 parameters (base and exponent(power)). Then the function will return the result.  </p>
 <p><img src="assets/chapter-10-images/14.Number-power-01.png" alt=""></p>
 <p>After we have done our calculations, all we are left to do is calling the function.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/943#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#5</a>.</p>
-<h3 id="functions-returning-multiple-values"><a name="functions-returning-multiple-values" class="plugin-anchor" href="#functions-returning-multiple-values"><i class="fa fa-link" aria-hidden="true"></i></a>Functions, returning multiple values</h3>
+<h3 id="functions-returning-multiple-values"><a name="functions-returning-multiple-values" class="plugin-anchor" href="#functions-returning-multiple-values"><i class="fa fa-link" aria-hidden="true"></i></a>Functions, Returning Multiple Values</h3>
 <p>In practice, there are some cases in which we need a function that returns more than one element as a result. In the <strong>JavaScript</strong> language, there are 2 ways of doing that. They are with <strong>destruction</strong> and by <strong>returning an object</strong>.</p>
 <h4 id="destruction"><a name="destruction" class="plugin-anchor" href="#destruction"><i class="fa fa-link" aria-hidden="true"></i></a>Destruction</h4>
 <p>When we want a function to return <strong>more than one value</strong>, we use the keyword <strong><code>return</code></strong> and after that, we list all the values we want to return between <strong><code>[</code></strong>, <strong><code>]</code></strong> brackets:</p>
@@ -753,27 +753,27 @@ with the phrase <b><i>type</i> <code>return; return;</code> <i>and let&apos;s go
 <p><img src="assets/chapter-10-images/15.Return-multiple-values-04.png" alt=""></p>
 <p>Here the variable  <strong><code>personNames</code></strong> will get all the returns values. By calling <strong><code>.name</code></strong> and <strong><code>.fullName</code></strong> we get the returned values:   </p>
 <p><img src="assets/chapter-10-images/15.Return-multiple-values-05.png" alt=""></p>
-<h2 id="variant-of-function"><a name="variant-of-function" class="plugin-anchor" href="#variant-of-function"><i class="fa fa-link" aria-hidden="true"></i></a>Variant of function</h2>
+<h2 id="variants-of-a-function"><a name="variants-of-a-function" class="plugin-anchor" href="#variants-of-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>Variants of a function</h2>
 <p>In many programming languages, one function can be declared as <strong>different variants</strong> with the same name but different parameters. This is known as <strong>method overloading</strong>. For good or bad <strong>JavaScript</strong>, language doesn&apos;t support this.</p>
 <p>When we declare <strong>two or more functions with the same names</strong>, our program will use the <strong>last declared</strong>. Declaring the second function with the same name removes the old function and overrides the new one in that place. </p>
 <h2 id="nested-functions"><a name="nested-functions" class="plugin-anchor" href="#nested-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Nested Functions</h2>
 <p>Let&apos;s take a look at this example:</p>
 <p><img src="assets/chapter-10-images/19.Local-functions-01.png" alt=""></p>
-<h3 id="what-is-a-local-function"><a name="what-is-a-local-function" class="plugin-anchor" href="#what-is-a-local-function"><i class="fa fa-link" aria-hidden="true"></i></a>What is a local function?</h3>
+<h3 id="what-is-a-local-function"><a name="what-is-a-local-function" class="plugin-anchor" href="#what-is-a-local-function"><i class="fa fa-link" aria-hidden="true"></i></a>What is a Local Function?</h3>
 <p>We see that in the previous example, <strong><code>solve()</code></strong> function has <strong>another</strong> declared function <strong><code>sum()</code></strong>. This <strong>nested</strong> function is called a <strong>local</strong> function. Local functions can be declared in every other function.</p>
-<h3 id="why-should-we-use-local-functions"><a name="why-should-we-use-local-functions" class="plugin-anchor" href="#why-should-we-use-local-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Why should we use local functions?</h3>
+<h3 id="why-should-we-use-local-functions"><a name="why-should-we-use-local-functions" class="plugin-anchor" href="#why-should-we-use-local-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Why Should We Use Local Functions?</h3>
 <p>With time and practice we will find out that when we type code, we often need functions, which
 we might need only once or another function is becoming too long. We have already said that when one function has too many rows of code it is very hard to read, support, and understand. In those cases, we can declare another function which we will use even only once. This helps the code to be cleaner and reduces the chance of making a mistake in the programming code.</p>
-<h3 id="declaring-local-functions"><a name="declaring-local-functions" class="plugin-anchor" href="#declaring-local-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Declaring local functions</h3>
+<h3 id="declaring-local-functions"><a name="declaring-local-functions" class="plugin-anchor" href="#declaring-local-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Declaring Local Functions</h3>
 <p>Let&apos;s look again at the previous example</p>
 <p><img src="assets/chapter-10-images/19.Local-functions-01.png" alt=""></p>
 <p>In this example <strong><code>sum()</code></strong> is local function because it&apos;s nested inside <strong><code>solve()</code></strong> function. This means that <strong><code>sum()</code></strong> can be  called <strong>only</strong> inside <strong><code>solve()</code></strong> function because it&apos;s <strong>only declared inside it</strong>.</p>
 <p>Local functions have access to variables, which are declared in the same or upper level from them. Our next example shows how this happens.</p>
 <p><img src="assets/chapter-10-images/19.Local-functions-02.png" alt=""></p>
 <p>This feature of nested functions makes them convenient helpers when solving a task. They save time and code by not having to pass values to parameters and variables.</p>
-<h2 id="naming-functions-best-practices-for-working-with-functions"><a name="naming-functions-best-practices-for-working-with-functions" class="plugin-anchor" href="#naming-functions-best-practices-for-working-with-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Naming functions. Best practices for working with functions.</h2>
+<h2 id="naming-functions-best-practices-for-working-with-functions"><a name="naming-functions-best-practices-for-working-with-functions" class="plugin-anchor" href="#naming-functions-best-practices-for-working-with-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Naming Functions. Best Practices For Working With Functions.</h2>
 <p>In this part, we will take a look at some of the <strong>best practices</strong> for writing functions that are connected to an arrangement of a code and its structure. </p>
-<h3 id="naming-functions"><a name="naming-functions" class="plugin-anchor" href="#naming-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Naming functions</h3>
+<h3 id="naming-functions"><a name="naming-functions" class="plugin-anchor" href="#naming-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Naming Functions</h3>
 <p>When we name a function it&apos;s recommended to use <strong>logical names</strong>. This is good because every function must <strong>correspond</strong> to a specific part of our problem. We must take into consideration the <strong>task</strong> which the function will do. This is why it&apos;s a good practice <strong>for the name to describes the purpose of the function</strong>.</p>
 <p>It is required for the name of the function to start with a <strong>small letter</strong> and to be a verb or a combination of a verb and a noun. Formatting the names must be done following <strong>Lower Camel Case</strong> convention - <strong>every word except the first to start with an upper letter</strong>. Round brackets 
 <strong><code>(</code></strong> and <strong><code>)</code></strong> are always after the name of the function.</p>
@@ -795,7 +795,7 @@ we might need only once or another function is becoming too long. We have alread
 <li><strong><code>LoadReport</code></strong></li>
 </ul>
 <p>If we can&apos;t come up with a good name it&apos;s probably because our function does more than one job or it doesn&apos;t have a clear task. We must think of a way to divide the function into different functions.</p>
-<h3 id="naming-parameters-of-functions"><a name="naming-parameters-of-functions" class="plugin-anchor" href="#naming-parameters-of-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Naming parameters of functions</h3>
+<h3 id="naming-parameters-of-functions"><a name="naming-parameters-of-functions" class="plugin-anchor" href="#naming-parameters-of-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Naming Parameters of Functions</h3>
 <p>When naming <strong>parameters</strong> of functions, the same rules of naming functions apply to them.
 The only difference is that the name of the parameters should be nouns or a set of a noun and an adjective. It&apos;s a <strong>good practice</strong> that the name of the parameter should <strong>indicate</strong> what type of unit is used when working with it.</p>
 <p>Here are some examples of <strong>correctly</strong> named parameters of functions:</p>
@@ -816,11 +816,11 @@ The only difference is that the name of the parameters should be nouns or a set 
 <li><strong><code>LastName</code></strong></li>
 <li><strong><code>last_name</code></strong></li>
 </ul>
-<h3 id="good-practices-for-working-with-functions"><a name="good-practices-for-working-with-functions" class="plugin-anchor" href="#good-practices-for-working-with-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Good practices for working with functions</h3>
+<h3 id="good-practices-for-working-with-functions"><a name="good-practices-for-working-with-functions" class="plugin-anchor" href="#good-practices-for-working-with-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Good Practices for Working With Functions</h3>
 <p>We must keep in mind that a function must do <strong>only one</strong> specific <strong>task</strong>. If this can&apos;t be achieved, then we must come up with a way to <strong>divide</strong> the functionality into different parts.
 As we have already said the name must be clear and descriptive. Another <strong>good practice</strong> is to <strong>avoid</strong> functions that are longer than our screen. If this happens it&apos;s recommended to <strong>split</strong> the function into smaller ones as shown in the example below.</p>
 <p><img src="assets/chapter-10-images/20.Good-practice-01.png" alt=""></p>
-<h3 id="structure-and-formatting-of-the-code"><a name="structure-and-formatting-of-the-code" class="plugin-anchor" href="#structure-and-formatting-of-the-code"><i class="fa fa-link" aria-hidden="true"></i></a>Structure and formatting of the code</h3>
+<h3 id="structure-and-formatting-of-the-code"><a name="structure-and-formatting-of-the-code" class="plugin-anchor" href="#structure-and-formatting-of-the-code"><i class="fa fa-link" aria-hidden="true"></i></a>Structure and Formatting of The Code</h3>
 <p>When writing functions we must keep in mind to follow a correct <strong>indication</strong> (move more inward blocks of the code).</p>
 <p>Here are some examples of <strong>correctly</strong> formatted JavaScript code:</p>
 <p><img src="assets/chapter-10-images/20.Good-practice-02.png" alt=""></p>
@@ -831,7 +831,7 @@ As we have already said the name must be clear and descriptive. Another <strong>
 <p>Another good practice is to <strong>leave an empty row</strong> between functions, after loops, and conditional statements. You should always try to <strong>avoid</strong> writing <strong>long rows and complicated expressions</strong>.
 Over time you will find out that improves the readability and saves time.</p>
 <p>We recommend you to always <strong>use curly brackets for the body of conditional statements and loops</strong>. The brackets don&apos;t just improve the readability but also reduce the possibility of making a mistake.</p>
-<h2 id="what-have-we-learned-from-this-chapter"><a name="what-have-we-learned-from-this-chapter" class="plugin-anchor" href="#what-have-we-learned-from-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What have we learned from this chapter?</h2>
+<h2 id="what-have-we-learned-from-this-chapter"><a name="what-have-we-learned-from-this-chapter" class="plugin-anchor" href="#what-have-we-learned-from-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What Have We Learned from This Chapter?</h2>
 <p>In this chapter we have learned base concepts about working with functions:</p>
 <ul>
 <li>Learned that <strong>the goal</strong> of a function is to <strong>split</strong> programs with many rows to code with smaller and shorter parts.</li>
@@ -840,7 +840,7 @@ Over time you will find out that improves the readability and saves time.</p>
 <li>Learned what is <strong>signature</strong> and <strong>return value</strong> of the function as well as what is the role of the <strong><code>return</code></strong> operator.</li>
 <li>Studied <strong>good practices</strong> for working with functions, how to name them and their parameters and how to format our code and others.</li>
 </ul>
-<h2 id="exercises"><a name="exercises" class="plugin-anchor" href="#exercises"><i class="fa fa-link" aria-hidden="true"></i></a>Exercises</h2>
+<h2 id="problems"><a name="problems" class="plugin-anchor" href="#problems"><i class="fa fa-link" aria-hidden="true"></i></a>Problems</h2>
 <p>To improve what we have learned we will solve a few exercises. In them, it is required to write functions with specific functionality and then call it with values as shown in the example.</p>
 <h3 id="problem-hello-name"><a name="problem-hello-name" class="plugin-anchor" href="#problem-hello-name"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: &quot;Hello, Name!&quot;</h3>
 <p>Write a function that takes a name as a parameter and prints on the console &quot;<em>Hello, {name}!</em>&quot;.</p>
@@ -861,7 +861,7 @@ Over time you will find out that improves the readability and saves time.</p>
 </table>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>Define a function <strong><code>printName(name)</code></strong> and implement it. Write a function <strong><code>solve(...)</code></strong> which receives as input name of a person and calls <strong><code>printName</code></strong> function.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/943#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#7</a>.</p>
 <h3 id="problem-min-method"><a name="problem-min-method" class="plugin-anchor" href="#problem-min-method"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Min Method</h3>
 <p>Define a function <strong><code>GetMin(int a, int b)</code></strong> and implement it, after which invoke it from the function <strong><code>solve(...)</code></strong> as shown below. To find the minimum of three numbers, first, find the minimum of the first two and then the minimum of the result and the third number:</p>
@@ -890,7 +890,7 @@ Over time you will find out that improves the readability and saves time.</p>
     <span class="hljs-keyword">let</span> min = getMin(getMin(num1, num2), num3);
 }
 </code></pre>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/943#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#8</a>.</p>
 <h3 id="problem-string-repeater"><a name="problem-string-repeater" class="plugin-anchor" href="#problem-string-repeater"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: String Repeater</h3>
 <p>Write a function <strong><code>repeatString(str, count)</code></strong> which gets as parameters string variable <strong><code>str</code></strong> and number <strong><code>n</code></strong> then returns the string repeated <strong><code>n</code></strong> times. After that print the result on the console.</p>
@@ -916,7 +916,7 @@ Over time you will find out that improves the readability and saves time.</p>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>Write function and add the input string to the result in the for loop:</p>
 <p><img src="assets/chapter-10-images/21.Repeated-string-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/943#9" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#9</a>.</p>
 <h3 id="problem-nth-digit"><a name="problem-nth-digit" class="plugin-anchor" href="#problem-nth-digit"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Nth Digit</h3>
 <p>Write function <strong><code>findNthDigit(number, index)</code></strong> which gets number and index then print the Nth digit of the number (starting to count from left to right from 1). After that print the result to the console.</p>
@@ -945,7 +945,7 @@ Over time you will find out that improves the readability and saves time.</p>
 </table>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>To perform the algorithm we will use a <strong><code>while</code></strong> loop. While the number isn&apos;t 0 we will check if the index matches our input value. If it matches we will return the number of the index (<strong><code>number % 10</code></strong>). If it doesn&apos;t match anything we will remove the last digit of the number (<strong><code>number = number / 10</code></strong>). We must follow which digit we check in the conditional statement (starting from left to right from 1). When we find the digit we will return the index.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/943#10" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#10</a>.</p>
 <h3 id="problem-integer-to-base"><a name="problem-integer-to-base" class="plugin-anchor" href="#problem-integer-to-base"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Integer to Base</h3>
 <p>Write a function <strong><code>integerToBase(number, toBase)</code></strong>, which takes as parameters an integer and a base of a numeral system and returns the integer converted to the given numeral system. After this, the result should be printed on the console. The input number will always be in the decimal numeral system, and the base parameter will be between 2 and 10.</p>
@@ -989,7 +989,7 @@ Over time you will find out that improves the readability and saves time.</p>
     <span class="hljs-keyword">return</span> result;
 }
 </code></pre>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/943#11" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#11</a>.</p>
 <h1 id="problem-notifications"><a name="problem-notifications" class="plugin-anchor" href="#problem-notifications"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Notifications</h1>
 <p>Write a function <strong><code>solve(...)</code></strong>, which takes an integer <strong><code>n</code></strong> and <strong><code>n</code> input messages</strong> and prints <strong><code>n</code> output messages</strong>, based on the input. For each message read a few lines. Each message starts with <strong><code>messageType</code></strong>: &#x201C;<strong><code>success</code></strong>&#x201D;, &#x201C;<strong><code>warning</code></strong>&#x201D; or &#x201C;<strong><code>error</code></strong>&#x201D;:</p>
@@ -1020,9 +1020,9 @@ Over time you will find out that improves the readability and saves time.</p>
 <p>Define and implement the four shown functions. After that call <strong><code>processMessage(...)</code></strong> from the main <strong><code>solve(...)</code></strong> function.</p>
 <p><img src="assets/chapter-10-images/23.Notifications-02.png" alt=""></p>
 <p>In <strong><code>processMessage()</code></strong> read the type of message from the console and according to the read, type read the rest of the data (one, two, or three more lines). After that invoke the function for printing the given type of message.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/943#12" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#12</a>.</p>
-<h3 id="problem-numbers-to-words"><a name="problem-numbers-to-words" class="plugin-anchor" href="#problem-numbers-to-words"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers to Words</h3>
+<h3 id="problem--numbers-to-words"><a name="problem--numbers-to-words" class="plugin-anchor" href="#problem--numbers-to-words"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: * Numbers to Words</h3>
 <p>Write a function <strong><code>letterize(number)</code></strong>, which reads an integer and prints it in words in English according to the conditions below:</p>
 <ul>
 <li>Print in words the hundreds, the tens, and the ones (and the eventual minus) according to the rules of the English language.</li>
@@ -1073,9 +1073,9 @@ Over time you will find out that improves the readability and saves time.</p>
 <p>The first special case is when the number is exactly <strong>rounded to 100</strong> (e.g. 100, 200, 300 etc...). In this case we print &quot;one-hundred&quot;, &quot;two-hundred&quot;, &quot;three-hundred&quot; etc.</p>
 <p>The second special case is when the number formed by the last two digits of the input number is <strong>less than 10</strong> (e.g. 101, 305, 609, etc...). In this case, we print &quot;one-hundred and one&quot;, &quot;three-hundred and five&quot;, &quot;six-hundred and nine&quot; etc.</p>
 <p>The third special case is when the number formed by the last two digits of the input number is <strong>larger than 10 and smaller than 20</strong> (e.g. 111, 814, 919, etc.). In this case, we print &quot;one-hundred and eleven&quot;, &quot;eight-hundred and fourteen&quot;, &quot;nine-hundred and nineteen&quot; etc.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/943#13" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#13</a>.</p>
-<h3 id="problem-string-encryption"><a name="problem-string-encryption" class="plugin-anchor" href="#problem-string-encryption"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: String Encryption</h3>
+<h3 id="problem--string-encryption"><a name="problem--string-encryption" class="plugin-anchor" href="#problem--string-encryption"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: * String Encryption</h3>
 <p>Write a function <strong><code>encrypt(char letter)</code></strong>, which encrypts a given letter in the following way:</p>
 <ul>
 <li>It takes the first and the last digit from the ASCII code of the letter and concatenates them into a string, which will represent the result. </li>
@@ -1136,7 +1136,7 @@ Over time you will find out that improves the readability and saves time.</p>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>Our variable <strong><code>result</code></strong> in which we will save the value of the result we will give the initial value <strong><code>&quot;&quot;</code></strong>. We must recur a loop <strong><code>n</code></strong> times so that in each iteration we will add the encrypted symbol to the result string. </p>
 <p>To find the first and the last digit of the ASCII code, we will use the same algorithm that we used to solve &quot;Integer to Base&quot;.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/943#14" target="_blank">https://judge.softuni.org/Contests/Practice/Index/943#14</a>.</p>
 
                                 
@@ -1181,7 +1181,7 @@ Over time you will find out that improves the readability and saves time.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"10. Functions","level":"1.20","depth":1,"next":{"title":"11. Tricks and Hacks","level":"1.21","depth":1,"path":"chapter-11-tricks-and-hacks.md","ref":"chapter-11-tricks-and-hacks.md","articles":[]},"previous":{"title":"9.2. Problems for Champions – Part II","level":"1.19","depth":1,"path":"chapter-09-problems-for-champions-part-2.md","ref":"chapter-09-problems-for-champions-part-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-10-functions.md","mtime":"2022-02-17T14:11:15.823Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T14:11:57.592Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"10. Functions","level":"1.20","depth":1,"next":{"title":"11. Tricks and Hacks","level":"1.21","depth":1,"path":"chapter-11-tricks-and-hacks.md","ref":"chapter-11-tricks-and-hacks.md","articles":[]},"previous":{"title":"9.2. Problems for Champions – Part II","level":"1.19","depth":1,"path":"chapter-09-problems-for-champions-part-2.md","ref":"chapter-09-problems-for-champions-part-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-10-functions.md","mtime":"2022-02-22T15:59:36.188Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-22T16:00:37.860Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

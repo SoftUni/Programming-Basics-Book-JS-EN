@@ -465,7 +465,7 @@ Here are some examples of data types and values for them:</p>
 <li><strong>Date</strong> - date: Tue Jul 04 2017, &#x2026;&#x2026;</li>
 </ul>
 <p><strong>JavaScript</strong> language has three keywords for declaring a variable - <strong><code>var</code></strong>, <strong><code>const</code></strong>, and <strong><code>let</code></strong>. The main difference between <strong><code>let</code></strong> and <strong><code>var</code></strong> is in the scope of the variable. We use <strong><code>const</code></strong> when we are sure that what we assign to the variable will not change. A little further in the book, we will find out more details about the range of variables but for now, we will use the word <strong> <code>let</code> </strong> to declare a new variable.</p>
-<h2 id="print-a-result-on-the-screen"><a name="print-a-result-on-the-screen" class="plugin-anchor" href="#print-a-result-on-the-screen"><i class="fa fa-link" aria-hidden="true"></i></a>Print a Result on the Screen</h2>
+<h2 id="print-a-result-on-the-screen"><a name="print-a-result-on-the-screen" class="plugin-anchor" href="#print-a-result-on-the-screen"><i class="fa fa-link" aria-hidden="true"></i></a>Print a Result on The Screen</h2>
 <p>For printing text, number, or another result on the screen, it&apos;s necessary to call the built-in method <strong><code>console.log()</code></strong>. With it we can print both the value of a variable and directly text or number:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-built_in">console</span>.log(<span class="hljs-number">42</span>); <span class="hljs-comment">// prints number</span>
 
@@ -483,7 +483,7 @@ Here are some examples of data types and values for them:</p>
 }
 </code></pre>
 <p>Let&apos;s note that the arguments <strong><code>arg1</code></strong> and <strong><code>arg2</code></strong> can be a different data type than the one we want. That&apos;s why it&apos;s necessary to convert them into a suitable one. If it&apos;s not done for the program <strong>each number</strong> will be just a <strong>string</strong> with which <strong>we can&apos;t do operations</strong> arithmetic operations.</p>
-<h3 id="example-calculating-a-square-area-with-length-of-a-side-a"><a name="example-calculating-a-square-area-with-length-of-a-side-a" class="plugin-anchor" href="#example-calculating-a-square-area-with-length-of-a-side-a"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Calculating a Square Area with Length of a Side <strong>a</strong></h3>
+<h3 id="problem-calculating-a-square-area-with-length-of-a-side-a"><a name="problem-calculating-a-square-area-with-length-of-a-side-a" class="plugin-anchor" href="#problem-calculating-a-square-area-with-length-of-a-side-a"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Calculating a Square Area with Length of a Side <strong>a</strong></h3>
 <p>For example, let&apos;s look at the following function which reads an integer from the console, multiplies it by itself (squares it), and prints the result from the multiplication. That&apos;s how we can calculate square area by side length:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateSquareArea</span>(<span class="hljs-params">[arg1]</span>) </span>{
     <span class="hljs-keyword">let</span> a = <span class="hljs-built_in">parseInt</span>(arg1);
@@ -494,7 +494,7 @@ Here are some examples of data types and values for them:</p>
 <p>If we call our function with parameter 3 - <strong><code>calculateSquareArea([3])</code></strong> the result will be - <strong><code>Square area = 9</code></strong>.  Here&apos;s how our code looks like in action in the web browser&apos;s JavaScript console:</p>
 <p><img src="assets/calculate-square-area-js.png" alt=""></p>
 <p>If we try to write a wrong number, for example, &quot;hello&quot;, we will get an error message during runtime (exception). This is normal. Later on, we will find out how we can catch these kinds of errors and make the user enter a number again.</p>
-<h4 id="how-does-the-example-work"><a name="how-does-the-example-work" class="plugin-anchor" href="#how-does-the-example-work"><i class="fa fa-link" aria-hidden="true"></i></a>How Does the Example Work?</h4>
+<h4 id="how-does-the-example-work"><a name="how-does-the-example-work" class="plugin-anchor" href="#how-does-the-example-work"><i class="fa fa-link" aria-hidden="true"></i></a>How Does The Example Work?</h4>
 <p>On the first line with <strong><code>function calculateSquareArea([arg1]) {</code></strong> we define our function by giving it a name and setting arguments that it needs. In our case, we have one argument which is the side of the square.</p>
 <p>On the next line with <strong><code>let a = parseInt(arg1);</code></strong> we get the argument of the function <strong><code>arg1</code></strong> and convert it to an integer with the method <strong><code>parseInt(arg1);</code></strong>. The result is saved in variable <strong><code>a</code></strong>.</p>
 <p><strong>Note</strong>: If <strong><code>arg1</code></strong> contains a <strong>floating-point number</strong>, that will be <strong>rounded to an integer</strong>. Converting a floating number to an integer is performed by  <strong>removing</strong>  all digits after the decimal point. Example: <strong><code>parseInt(2.3)</code></strong> = 2, <strong><code>parseInt(3.8)</code></strong> = 3</p>
@@ -517,7 +517,7 @@ Here are some examples of data types and values for them:</p>
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Square area = &apos;</span> + a * a);
 }
 </code></pre>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#0</a>. Try all four solutions to the problem.</p>
 <h2 id="reading-floating-point-numbers"><a name="reading-floating-point-numbers" class="plugin-anchor" href="#reading-floating-point-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Reading Floating-Point Numbers</h2>
 <p>To read user input as <strong>floating-point number</strong> it&apos;s necessary again to <strong>define an argument</strong> to our function. The syntax is similar to reading an integer, but here we have to use the function <strong><code>parseFloat(...)</code></strong>:</p>
@@ -527,7 +527,7 @@ Here are some examples of data types and values for them:</p>
     ...
 }
 </code></pre>
-<h3 id="example-converting-inches-into-centimeters"><a name="example-converting-inches-into-centimeters" class="plugin-anchor" href="#example-converting-inches-into-centimeters"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Converting Inches into Centimeters</h3>
+<h3 id="problem-converting-inches-into-centimeters"><a name="problem-converting-inches-into-centimeters" class="plugin-anchor" href="#problem-converting-inches-into-centimeters"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Converting Inches into Centimeters</h3>
 <p>Let&apos;s write a function that reads a floating-point number in inches and converts it to centimeters::</p>
 <pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">convertInchesToCentimeters</span>(<span class="hljs-params">[arg1]</span>) </span>{
     <span class="hljs-keyword">let</span> inches = <span class="hljs-built_in">parseFloat</span>(arg1);
@@ -538,7 +538,7 @@ Here are some examples of data types and values for them:</p>
 <p>Let&apos;s call the function and make sure that when passing a value in inches, we get the correct result in centimeters:</p>
 <pre><code class="lang-JavaScript">convertInchesToCentimeters([<span class="hljs-number">5</span>]); <span class="hljs-comment">// Centimeters = 12.7</span>
 </code></pre>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#1</a>.</p>
 <h2 id="reading-a-text-input"><a name="reading-a-text-input" class="plugin-anchor" href="#reading-a-text-input"><i class="fa fa-link" aria-hidden="true"></i></a>Reading a Text Input</h2>
 <p>Same with other data types, to read a <strong>string</strong> it&apos;s necessary to <strong>define an argument</strong> to our function and after that to assign it to a variable:</p>
@@ -547,7 +547,7 @@ Here are some examples of data types and values for them:</p>
     ...
 }
 </code></pre>
-<h3 id="example-greeting-by-name"><a name="example-greeting-by-name" class="plugin-anchor" href="#example-greeting-by-name"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Greeting by Name</h3>
+<h3 id="problem-greeting-by-name"><a name="problem-greeting-by-name" class="plugin-anchor" href="#problem-greeting-by-name"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Greeting by Name</h3>
 <p>Let&apos;s write a program that asks the user for their name and salutes them with the text &quot;<strong>Hello, (name)</strong>&quot;.</p>
 <pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params">[arg1]</span>) </span>{
     <span class="hljs-keyword">let</span> name = arg1;
@@ -575,7 +575,7 @@ Here are some examples of data types and values for them:</p>
 </code></pre>
 <p>The result is:</p>
 <pre><code>1 + 1 = 2
-</code></pre><h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
+</code></pre><h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#3</a>.</p>
 <h2 id="arithmetic-operations"><a name="arithmetic-operations" class="plugin-anchor" href="#arithmetic-operations"><i class="fa fa-link" aria-hidden="true"></i></a>Arithmetic Operations</h2>
 <p>Let&apos;s examine the basic arithmetic operations in programming.</p>
@@ -585,7 +585,7 @@ Here are some examples of data types and values for them:</p>
 <span class="hljs-keyword">let</span> b = <span class="hljs-number">7</span>;
 <span class="hljs-keyword">let</span> sum = a + b; <span class="hljs-comment">// the result is 12</span>
 </code></pre>
-<h3 id="subtracting-numbers-operator--"><a name="subtracting-numbers-operator--" class="plugin-anchor" href="#subtracting-numbers-operator--"><i class="fa fa-link" aria-hidden="true"></i></a>Subtracting Numbers (operator <strong><code>-</code></strong>)</h3>
+<h3 id="subtracting-numbers-operator--"><a name="subtracting-numbers-operator--" class="plugin-anchor" href="#subtracting-numbers-operator--"><i class="fa fa-link" aria-hidden="true"></i></a>Subtracting Numbers (Operator <strong><code>-</code></strong>)</h3>
 <p>Subtracting numbers is done using the <strong><code>-</code></strong> operator:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">substractNumbers</span>(<span class="hljs-params">[arg1, arg2]</span>) </span>{
     <span class="hljs-keyword">let</span> a = <span class="hljs-built_in">parseInt</span>(a);
@@ -597,13 +597,13 @@ Here are some examples of data types and values for them:</p>
 <p>Let we check the result of the execution of this program (with numbers 10 and 3):</p>
 <pre><code class="lang-JavaScript">substractNumbers([<span class="hljs-number">10</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// 7</span>
 </code></pre>
-<h3 id="multiplying-numbers-operator-"><a name="multiplying-numbers-operator-" class="plugin-anchor" href="#multiplying-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Multiplying Numbers (operator <strong><code>*</code></strong>)</h3>
+<h3 id="multiplying-numbers-operator-"><a name="multiplying-numbers-operator-" class="plugin-anchor" href="#multiplying-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Multiplying Numbers (Operator <strong><code>*</code></strong>)</h3>
 <p>For multiplication of numbers we use the <strong><code>*</code></strong> operator:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> a = <span class="hljs-number">5</span>;
 <span class="hljs-keyword">let</span> b = <span class="hljs-number">7</span>;
 <span class="hljs-keyword">let</span> product = a * b; <span class="hljs-comment">// 35</span>
 </code></pre>
-<h3 id="dividing-numbers-operator-"><a name="dividing-numbers-operator-" class="plugin-anchor" href="#dividing-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Dividing Numbers (operator <strong><code>/</code></strong>)</h3>
+<h3 id="dividing-numbers-operator-"><a name="dividing-numbers-operator-" class="plugin-anchor" href="#dividing-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Dividing Numbers (Operator <strong><code>/</code></strong>)</h3>
 <p>Dividing numbers is done using the <strong><code>/</code></strong> operator. </p>
 <p><strong>Note:</strong> Float numbers <strong>divided by 0</strong> do not cause an exception and the result is <strong>+/- infinity</strong> or the special value <strong>Infinity</strong>.</p>
 <p>Here are a few examples with the division operator:</p>
@@ -641,7 +641,7 @@ Here are some examples of data types and values for them:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> expr = (<span class="hljs-number">3</span> + <span class="hljs-number">5</span>) * (<span class="hljs-number">4</span> &#x2013; <span class="hljs-number">2</span>);
 </code></pre>
 <p>The standard rule for priorities of arithmetic operations is applied: <strong>multiplying and dividing are always done before adding and subtracting</strong>. In the case of an <strong>expression in brackets, it is calculated first</strong>  but we already know all of that from the school math.</p>
-<h3 id="example-calculating-trapezoid-area"><a name="example-calculating-trapezoid-area" class="plugin-anchor" href="#example-calculating-trapezoid-area"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Calculating Trapezoid Area</h3>
+<h3 id="problem-calculating-trapezoid-area"><a name="problem-calculating-trapezoid-area" class="plugin-anchor" href="#problem-calculating-trapezoid-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Calculating Trapezoid Area</h3>
 <p>Let&apos;s  write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the <strong>trapezoid area</strong> by the standard math formula:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printTrapezoidArea</span>(<span class="hljs-params">[arg1, arg2, arg3]</span>) </span>{
     <span class="hljs-keyword">let</span> b1 = <span class="hljs-built_in">parseFloat</span>(arg1);
@@ -654,7 +654,7 @@ Here are some examples of data types and values for them:</p>
 <p>Because we want our function to work with both integers and floating numbers, we use <strong><code>parseFloat()</code></strong>. If we start the function and enter values for sides: <strong><code>3</code></strong>, <strong><code>4</code></strong>, and <strong><code>5</code></strong>, we will obtain the following result::</p>
 <pre><code class="lang-JavaScript">printTrapezoidArea([<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]); <span class="hljs-comment">// Trapezoid area = 17.5</span>
 </code></pre>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: </p>
 <p><a href="https://judge.softuni.org/Contests/Practice/Index/927#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#4</a>.</p>
 <h2 id="rounding-numbers"><a name="rounding-numbers" class="plugin-anchor" href="#rounding-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Rounding Numbers</h2>
@@ -684,7 +684,7 @@ Here are some examples of data types and values for them:</p>
 </code></pre>
 </li>
 </ul>
-<h3 id="example-circle-area-and-perimeter"><a name="example-circle-area-and-perimeter" class="plugin-anchor" href="#example-circle-area-and-perimeter"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Circle Area and Perimeter</h3>
+<h3 id="problem-circle-area-and-perimeter"><a name="problem-circle-area-and-perimeter" class="plugin-anchor" href="#problem-circle-area-and-perimeter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Circle Area and Perimeter</h3>
 <p>Let&apos;s write a function that receives an input of <strong>the radius r</strong> of a circle and <strong>calculates the area and the perimeter</strong> of the circle.</p>
 <p>Formulas:</p>
 <ul>
@@ -704,9 +704,9 @@ Here are some examples of data types and values for them:</p>
 </code></pre>
 <p>The result is:</p>
 <p><img src="assets/chapter-2-1-images/00.Calculate-circle-area-and-perimeter.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#5</a>.</p>
-<h3 id="example-2d-rectangle-area"><a name="example-2d-rectangle-area" class="plugin-anchor" href="#example-2d-rectangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Example: 2D Rectangle Area</h3>
+<h3 id="problem-2d-rectangle-area"><a name="problem-2d-rectangle-area" class="plugin-anchor" href="#problem-2d-rectangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: 2D Rectangle Area</h3>
 <p>The rectangle is given with the <strong>coordinates of two of its opposite angles</strong>. Calculate its <strong>area and perimeter</strong> :</p>
 <p><img alt="rectangleArea" src="assets/chapter-2-1-images/00.Rectangle-area-01.png" width="250" height="200"></p>
 <p>In this problem, we have to consider that if we subtract the smaller <strong><code>x</code></strong>  from the bigger <strong><code>x</code></strong> , we will obtain the length of the rectangle. Identically, if we subtract the smaller <strong><code>y</code></strong> from the bigger <strong><code>y</code></strong>, , we will obtain the height of the rectangle. What is left is to multiply both sides. Here is an example of an implementation of the described logic:</p>
@@ -729,9 +729,9 @@ Here are some examples of data types and values for them:</p>
 <pre><code class="lang-JavaScript">calculateRectangleArea([<span class="hljs-number">60</span>, <span class="hljs-number">20</span>, <span class="hljs-number">10</span>, <span class="hljs-number">50</span>]); <span class="hljs-comment">// 1500</span>
                                           <span class="hljs-comment">// 160</span>
 </code></pre>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#6" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#6</a>.</p>
-<h2 id="what-have-we-learned-from-this-chapter"><a name="what-have-we-learned-from-this-chapter" class="plugin-anchor" href="#what-have-we-learned-from-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What have we learned from this chapter?</h2>
+<h2 id="what-have-we-learned-from-this-chapter"><a name="what-have-we-learned-from-this-chapter" class="plugin-anchor" href="#what-have-we-learned-from-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What Have We Learned from This Chapter?</h2>
 <p>Let&apos;s summarize what we learned from this chapter of the book:</p>
 <ul>
 <li><strong>Reading an user input</strong>: <strong><code>function sum([number1, number2])</code></strong>.</li>
@@ -758,12 +758,12 @@ Here are some examples of data types and values for them:</p>
 <p>The code defines a function <strong><code>calculateSquareArea()</code></strong>, which receives one argument <strong><code>arg1</code></strong>. Since the argument is expected to be an integer, convert arguments with the method <strong><code>parseInt()</code></strong> and then calculate the area: <strong><code>area = a * a</code></strong>. At the end print the value of the variable <strong><code>area</code></strong>. 
 For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</strong> in the same file with a random parameter and then to start the program by pressing [<strong>Ctrl + F5</strong>]:</p>
 <p><img src="assets/chapter-2-1-images/01.Calculate-square-area-02.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#0</a>.</p>
 <p>You must get 100 points (completely correct solution):</p>
 <p><img src="assets/chapter-2-1-images/01.Calculate-square-area-03.png" alt=""></p>
 <p><img src="assets/chapter-2-1-images/01.Calculate-square-area-04.png" alt=""></p>
-<h3 id="problem----from-inches-to-centimeters"><a name="problem----from-inches-to-centimeters" class="plugin-anchor" href="#problem----from-inches-to-centimeters"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    From Inches to Centimeters</h3>
+<h3 id="problem-from-inches-to-centimeters"><a name="problem-from-inches-to-centimeters" class="plugin-anchor" href="#problem-from-inches-to-centimeters"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: From Inches to Centimeters</h3>
 <p>Write a function that <strong>accepts a number</strong> (not necessarily an integer) and converts the number from <strong>inches to centimeters</strong>. For this purpose, <strong>it multiplies the inches by 2.54</strong> (because 1 inch = 2.54 centimeters).</p>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>First, we create a <strong>new file</strong> in the folder with the other solutions -  in Visual Studio Code we choose [<strong>File</strong>] -&gt; [<strong>New file</strong>]. We save the file with the name <strong>convertInchesToCentimeters.js</strong> and press the button [<strong>Save</strong>]. After that we have to write <strong>the program code</strong>:</p>
@@ -772,7 +772,7 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 <p><img src="assets/chapter-2-1-images/02.Inches-to-centimeters-02.png" alt=""></p>
 <p>Let&apos;s test it with floating numbers, for example, <strong>4.5</strong>:</p>
 <p><img src="assets/chapter-2-1-images/02.Inches-to-centimeters-03.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#1</a>.</p>
 <p>The solution should be taken as completely correct:</p>
 <p><img src="assets/chapter-2-1-images/02.Inches-to-centimeters-04.png" alt=""></p>
@@ -783,17 +783,17 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 <p><img src="assets/chapter-2-1-images/03.Greeting-by-name-01.png" alt=""></p>
 <p><strong>We call the function</strong> with an example parameter and <strong>start the program</strong> with [<strong>Ctrl+F5</strong>], to test if it works properly:</p>
 <p><img src="assets/chapter-2-1-images/03.Greeting-by-name-02.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here:  <a href="https://judge.softuni.org/Contests/Practice/Index/927#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#2</a>.</p>
-<h3 id="problem----concatenating-text-and-numbers"><a name="problem----concatenating-text-and-numbers" class="plugin-anchor" href="#problem----concatenating-text-and-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    Concatenating Text and Numbers</h3>
+<h3 id="problem-concatenating-text-and-numbers"><a name="problem-concatenating-text-and-numbers" class="plugin-anchor" href="#problem-concatenating-text-and-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Concatenating Text and Numbers</h3>
 <p>Write a function that receives as an argument the name, surname, age and city and print a message of the following type: <strong><code>You are &lt;firstName&gt; &lt;lastName&gt;, a &lt;age&gt;-years old person from &lt;town&gt;</code></strong>.</p>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>Similarly, we create a new file and name it <strong>printInfo.js</strong>. which prints the message described in the condition of the task, is purposefully blurred for you to think of a way to finish it yourself:</p>
 <p><img src="assets/chapter-2-1-images/04.Concatenate-data-01.png" alt=""></p>
 <p>The solution should be tested locally by calling the function with sample values and starting the program with [<strong>Ctrl+F5</strong>].</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#3</a>.</p>
-<h3 id="problem----trapezoid-area"><a name="problem----trapezoid-area" class="plugin-anchor" href="#problem----trapezoid-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    Trapezoid Area</h3>
+<h3 id="problem-trapezoid-area"><a name="problem-trapezoid-area" class="plugin-anchor" href="#problem-trapezoid-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Trapezoid Area</h3>
 <p>Write a function that receives three arguments <strong>b1, b2, and h and calculate the trapezoid area</strong> with bases <strong>b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2</strong>.</p>
 <p>The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area <strong>(8 + 13) * 7 / 2 = 73.5</strong>.</p>
 <p><img src="assets/chapter-2-1-images/05.Trapezoid-area-01.png" alt=""></p>
@@ -801,9 +801,9 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 <p>We should add a new file in Visual Studio Code again with the name <strong>calculateTrapezoidArea.js</strong> and write a code that reads the inputs from the function&apos;s arguments, calculates the trapezoid area, and prints it. The code in the picture is purposely blurred, for you to give it a thought and finish it yourself:</p>
 <p><img src="assets/chapter-2-1-images/05.Trapezoid-area-02.png" alt=""></p>
 <p><strong>Test</strong> your solution locally by calling the function and starting the program with [<strong>Ctrl+F5</strong>].</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#4</a>.</p>
-<h3 id="problem----circle-perimeter-and-area"><a name="problem----circle-perimeter-and-area" class="plugin-anchor" href="#problem----circle-perimeter-and-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    Circle Perimeter and Area</h3>
+<h3 id="problem-circle-perimeter-and-area"><a name="problem-circle-perimeter-and-area" class="plugin-anchor" href="#problem-circle-perimeter-and-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Circle Perimeter and Area</h3>
 <p>Write a function, that receives an argument <strong>number r</strong> and calculates and prints <strong>the area and perimeter of a circle</strong> with <strong>radius r</strong>.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -830,7 +830,7 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 <li><strong><code>Area = Math.PI * r * r</code></strong>.</li>
 <li><strong><code>Perimeter = 2 * Math.PI * r</code></strong>.</li>
 </ul>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#5</a>.</p>
 <h3 id="problem-rectangle-area"><a name="problem-rectangle-area" class="plugin-anchor" href="#problem-rectangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Rectangle Area</h3>
 <p>A <strong>Rectangle</strong> is defined by the <strong>coordinates</strong> of both of its opposite corners (x1, y1) &#x2013; (x2, y2). Calculate its <strong>area and perimeter</strong>. <strong>The input</strong> is taken as a function argument. The numbers <strong>x1, y1, x2, and y2</strong> are given one per line. <strong>The output</strong> is printed on the console and it has to contain two lines, each with one number &#x2013; the area and the perimeter.</p>
@@ -858,9 +858,9 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 </tr>
 </tbody>
 </table>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#6" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#6</a>.</p>
-<h3 id="problem---triangle-area"><a name="problem---triangle-area" class="plugin-anchor" href="#problem---triangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:   Triangle Area</h3>
+<h3 id="problem-triangle-area"><a name="problem-triangle-area" class="plugin-anchor" href="#problem-triangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Triangle Area</h3>
 <p>Write a function that receives arguments which are <strong>a side and a height of a triangle</strong> and calculates its area. Use <strong>the formula</strong> for triangle area: <strong>area = a * h / 2</strong>. Round the result to  <strong>2 digits after the decimal point using <code>area.toFixed(2)</code></strong>.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -889,7 +889,7 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 </tr>
 </tbody>
 </table>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#7</a>.</p>
 <h3 id="problem-converter-&#x2013;-from-&#xB0;c-degrees-to-&#xB0;f-degrees"><a name="problem-converter-&#x2013;-from-&#xB0;c-degrees-to-&#xB0;f-degrees" class="plugin-anchor" href="#problem-converter-&#x2013;-from-&#xB0;c-degrees-to-&#xB0;f-degrees"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Converter &#x2013; from &#xB0;C Degrees to &#xB0;F Degrees</h3>
 <p>Write a function that reads <strong>degrees on the Celsius scale</strong> (&#xB0;C) and converts them to <strong>degrees on the Fahrenheit scale</strong> (&#xB0;F).  Look on the Internet for a proper  <a href="https://bfy.tw/3rGh" title="Search on Google" target="_blank">formula</a> to do the calculations. Round the result to <strong>2 digits after the decimal point</strong>. Here are a few examples:</p>
@@ -920,7 +920,7 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 </tr>
 </tbody>
 </table>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#8</a>.</p>
 <h3 id="problem-converter---radians-to-degrees"><a name="problem-converter---radians-to-degrees" class="plugin-anchor" href="#problem-converter---radians-to-degrees"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Converter - Radians to Degrees</h3>
 <p>Write a function that reads <strong>an angle in <a href="https://en.wikipedia.org/wiki/Radian" target="_blank">radians</a></strong> (<strong><code>rad</code></strong>) and converts it in <strong><a href="https://en.wikipedia.org/wiki/Degree_(angle" target="_blank">degrees</a>)</strong> (<code>deg</code>).  Look for a proper formula on the Internet. The number <strong>&#x3C0;</strong> in <strong>JavaScript</strong> programs is available through  <strong><code>Math.PI</code></strong>. Round the result to the nearest integer using the <strong><code>Math.round(&#x2026;)</code></strong> method.</p>
@@ -951,7 +951,7 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 </tr>
 </tbody>
 </table>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#9" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#9</a>.</p>
 <h3 id="problem-converter---usd-to-bgn"><a name="problem-converter---usd-to-bgn" class="plugin-anchor" href="#problem-converter---usd-to-bgn"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Converter - USD to BGN</h3>
 <p>Write a function for <strong>conversion of US dollars</strong> (USD) <strong>into Bulgarian levs</strong> (BGN). <strong>Round</strong> the result to <strong>2 digits</strong> after the decimal point. Use a fixed rate between a dollar and lev: <strong>1 USD = 1.79549 BGN</strong>.</p>
@@ -978,9 +978,9 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 </tr>
 </tbody>
 </table>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#10" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#10</a>.</p>
-<h3 id="problem------currency-converter"><a name="problem------currency-converter" class="plugin-anchor" href="#problem------currency-converter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    *  Currency Converter</h3>
+<h3 id="problem---currency-converter"><a name="problem---currency-converter" class="plugin-anchor" href="#problem---currency-converter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: *  Currency Converter</h3>
 <p>Write a function for the <strong>conversion of money from one currency into another</strong>.  It has to support the following currencies: <strong>BGN, USD, EUR, GBP</strong>. Use the following fixed currency rates:</p>
 <table>
 <thead>
@@ -1028,9 +1028,9 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 </tr>
 </tbody>
 </table>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#11" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#11</a>.</p>
-<h3 id="problem-----date-calculations-&#x2013;-1000-days-on-the-earth"><a name="problem-----date-calculations-&#x2013;-1000-days-on-the-earth" class="plugin-anchor" href="#problem-----date-calculations-&#x2013;-1000-days-on-the-earth"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    ** Date Calculations &#x2013; 1000 Days on the Earth</h3>
+<h3 id="problem--date-calculations-&#x2013;-1000-days-on-the-earth"><a name="problem--date-calculations-&#x2013;-1000-days-on-the-earth" class="plugin-anchor" href="#problem--date-calculations-&#x2013;-1000-days-on-the-earth"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: ** Date Calculations &#x2013; 1000 Days on The Earth</h3>
 <p>Write a function that reads <strong>a birth date</strong> in format <strong><code>dd-MM-yyyy</code></strong> and calculates the date on which <strong>1000 days</strong> are turned since this birth date and prints it in the same format.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -1068,7 +1068,7 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 <li>Look for information about the data type <strong><code>Date</code></strong> in JavaScript and in particular look at the methods <strong><code>setDate(...)</code></strong>, <strong><code>getDate()</code></strong>, <strong><code>getMonth()</code></strong> and <strong><code>getYear()</code></strong>. With their help, you can solve the problem without the need to calculate days, months, and leap years.</li>
 <li><strong>Don&apos;t print</strong> anything additional on the console except for the wanted date!</li>
 </ul>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#12" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#12</a>.</p>
 <h2 id="graphic-applications-with-numerical-expressions"><a name="graphic-applications-with-numerical-expressions" class="plugin-anchor" href="#graphic-applications-with-numerical-expressions"><i class="fa fa-link" aria-hidden="true"></i></a>Graphic Applications with Numerical Expressions</h2>
 <p>To exercise working with variables and calculations with operators and numerical expressions, we will make something interesting: we will develop a <strong>web application</strong>  with a graphical user interface. In it, we will use calculations with floating-point numbers.</p>
@@ -1186,7 +1186,7 @@ For <strong>testing</strong>, it&apos;s necessary to <strong>call the function</
 <li>Start the file <strong>index.html</strong>:</li>
 </ol>
 <p><img src="assets/chapter-2-1-images/13.Bgn-to-eur-03.png" alt=""></p>
-<h3 id="web-application--catch-the-mouse"><a name="web-application--catch-the-mouse" class="plugin-anchor" href="#web-application--catch-the-mouse"><i class="fa fa-link" aria-hidden="true"></i></a>Web Application: *** Catch the Mouse!</h3>
+<h3 id="web-application--catch-the-mouse"><a name="web-application--catch-the-mouse" class="plugin-anchor" href="#web-application--catch-the-mouse"><i class="fa fa-link" aria-hidden="true"></i></a>Web Application: *** Catch The Mouse!</h3>
 <p>Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that <strong>the image runs from the mouse</strong> and it is hard to catch&#x201C;. When the image gets &#x201C;caught&#x201D;, a congratulations message is shown.</p>
 <p><strong>Hint</strong>: Write an Event Handler <strong><code>mouseover</code></strong> and move the image to a random position. Use the random numbers generator <strong><code>Math.random()</code></strong>.
 The position of the image is set from the property <strong><code>style.position</code></strong>. To &quot;catch the mouse&quot; <strong><code>onclick</code></strong> to &quot;catch the mouse&quot;. </p>
@@ -1233,7 +1233,7 @@ The position of the image is set from the property <strong><code>style.position<
 <ol>
 <li>Done the application.</li>
 </ol>
-<p>If you have any difficulties, ask in <strong>the Softuni Forum</strong>: <a href="https://softuni.bg/forum" target="_blank">https://softuni.bg/forum</a>.</p>
+<p>If you have any difficulties, ask in <strong>the Softuni Reddit</strong>: <a href="https://www.reddit.com/r/softuni/" target="_blank">https://www.reddit.com/r/softuni/</a>.</p>
 
                                 
                                 </section>
@@ -1277,7 +1277,7 @@ The position of the image is set from the property <strong><code>style.position<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"next":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"previous":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"path":"chapter-01-first-steps-in-programming.md","ref":"chapter-01-first-steps-in-programming.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-02-simple-calculations.md","mtime":"2022-02-17T14:11:15.815Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T14:11:57.592Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"next":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"previous":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"path":"chapter-01-first-steps-in-programming.md","ref":"chapter-01-first-steps-in-programming.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-02-simple-calculations.md","mtime":"2022-02-22T15:59:36.180Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-22T16:00:37.860Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

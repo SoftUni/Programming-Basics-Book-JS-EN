@@ -442,53 +442,53 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="chapter-71-complex-loops"><a name="chapter-71-complex-loops" class="plugin-anchor" href="#chapter-71-complex-loops"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 7.1. Complex loops</h1>
+                                <h1 id="chapter-71-complex-loops"><a name="chapter-71-complex-loops" class="plugin-anchor" href="#chapter-71-complex-loops"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 7.1. Complex Loops</h1>
 <p>Since we have learned what <strong><code>for</code></strong> loops are and their function in code, now is the time to take a look at <strong>other loop types</strong>, as well as some <strong>more complex loop constructs</strong>. These will expand our knowledge and help us solve more challenging problems. In particular, we will discuss how to use the following programming constructs:</p>
 <ul>
-<li>loops <strong>with step aka stride</strong></li>
+<li>loops <strong>with step</strong></li>
 <li><strong><code>while</code></strong> loops</li>
 <li><strong><code>do-while</code></strong> loops</li>
 <li><strong>infinite</strong> loops</li>
 </ul>
 <p>In the current chapter, we will also take a look at the <strong><code>break</code></strong> operator and <strong>how</strong> to empty it to <strong>interrupt</strong> a loop.</p>
-<h2 id="loops-with-stride"><a name="loops-with-stride" class="plugin-anchor" href="#loops-with-stride"><i class="fa fa-link" aria-hidden="true"></i></a>Loops with stride</h2>
-<p>In the <strong>&quot;Loops (Repetitions)&quot;</strong> chapter we learned how the <strong><code>for</code></strong> loop works and we already know when and to what purpose to use it. In the present chapter we will <strong>take a look</strong> at a particular and a very important <strong>part of this structure</strong> - its <strong>step</strong> or as it is also known <strong>stride</strong>.  </p>
+<h2 id="loops-with-a-step"><a name="loops-with-a-step" class="plugin-anchor" href="#loops-with-a-step"><i class="fa fa-link" aria-hidden="true"></i></a>Loops with a Step</h2>
+<p>In the <strong>&quot;Loops (Repetitions)&quot;</strong> chapter we learned how the <strong><code>for</code></strong> loop works and we already know when and to what purpose to use it. In the present chapter we will <strong>take a look</strong> at a particular and a very important <strong>part of this structure</strong> - its <strong>step</strong> or as it is also known <strong>step</strong>.  </p>
 <h3 id="loop-with-a-step-&#x2013;-explanation"><a name="loop-with-a-step-&#x2013;-explanation" class="plugin-anchor" href="#loop-with-a-step-&#x2013;-explanation"><i class="fa fa-link" aria-hidden="true"></i></a>Loop with a Step &#x2013; Explanation</h3>
-<p>The <strong>stride</strong> is the <strong>part</strong> of the <strong><code>for</code></strong> loop, that specifies the <strong>amount</strong> used to <strong>increment</strong> or <strong>decrement</strong> the <strong>main</strong> variable. The <strong>step</strong> is declared in the skeleton of the <strong><code>for</code></strong> loop.</p>
-<p>Most often we have a <strong>size of <code>1</code></strong> and in this case, instead of writing <strong><code>i += 1</code></strong> or <strong><code>i -= 1</code></strong>, we can use the shorthand operators <strong><code>i++</code></strong> or <strong><code>i--</code></strong>. In case we need the stride to be <strong>different than 1</strong> when increasing we use the shorthand <strong><code>i +=</code> + <code>required stride</code></strong>, and when we decrease <strong><code>i -=</code> + <code>required stride</code></strong>. With a step of 3 the loop would appear as below: </p>
+<p>The <strong>step</strong> is the <strong>part</strong> of the <strong><code>for</code></strong> loop, that specifies the <strong>amount</strong> used to <strong>increment</strong> or <strong>decrement</strong> the <strong>main</strong> variable. The <strong>step</strong> is declared in the skeleton of the <strong><code>for</code></strong> loop.</p>
+<p>Most often we have a <strong>size of <code>1</code></strong> and in this case, instead of writing <strong><code>i += 1</code></strong> or <strong><code>i -= 1</code></strong>, we can use the shorthand operators <strong><code>i++</code></strong> or <strong><code>i--</code></strong>. In case we need the step to be <strong>different than 1</strong> when increasing we use the shorthand <strong><code>i +=</code> + <code>required step</code></strong>, and when we decrease <strong><code>i -=</code> + <code>required step</code></strong>. With a step of 3 the loop would appear as below: </p>
 <p><img src="assets/chapter-7-1-images/00.Step-explanation-01.png" alt=""></p>
 <p>Here is a series of sample problems, the solution of which will help us better understand the use of a <strong>step</strong> in a <strong><code>for</code></strong> loop.</p>
-<h3 id="example-numbers-from-1-to-n-with-a-step-of-3"><a name="example-numbers-from-1-to-n-with-a-step-of-3" class="plugin-anchor" href="#example-numbers-from-1-to-n-with-a-step-of-3"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Numbers from 1 to N with a step of 3</h3>
-<p>Write a program that prints the numbers <strong>from 1 to n</strong> with a <strong>stride of 3</strong>. For example, <strong>if n = 100</strong>, then the output would be: <strong>1, 4, 7, 10, &#x2026;, 94, 97, 100</strong>.</p>
+<h3 id="problem-numbers-from-1-to-n-with-a-step-of-3"><a name="problem-numbers-from-1-to-n-with-a-step-of-3" class="plugin-anchor" href="#problem-numbers-from-1-to-n-with-a-step-of-3"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers from 1 to N with a step of 3</h3>
+<p>Write a program that prints the numbers <strong>from 1 to n</strong> with a <strong>step of 3</strong>. For example, <strong>if n = 100</strong>, then the output would be: <strong>1, 4, 7, 10, &#x2026;, 94, 97, 100</strong>.</p>
 <p>We can solve the problem using the following sequence of actions (algorithm):</p>
 <ul>
 <li>We create a function that will take the number <strong><code>n</code></strong>.</li>
-<li>We run a <strong><code>for</code> loop from 1</strong> to <strong><code>n</code></strong> with a stride of <strong>3</strong>.</li>
+<li>We run a <strong><code>for</code> loop from 1</strong> to <strong><code>n</code></strong> with a step of <strong>3</strong>.</li>
 <li>in the <strong>body of the loop</strong>, we print the value of the current step.</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/01.Numbers-1-to-n-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>You can test your solution at the following link: <a href="https://judge.softuni.org/Contests/Practice/Index/937#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#0</a>.</p>
-<h3 id="example-numbers-from-n-to-1-in-reverse"><a name="example-numbers-from-n-to-1-in-reverse" class="plugin-anchor" href="#example-numbers-from-n-to-1-in-reverse"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Numbers from N to 1 in reverse</h3>
+<h3 id="problem-numbers-from-n-to-1-in-reverse"><a name="problem-numbers-from-n-to-1-in-reverse" class="plugin-anchor" href="#problem-numbers-from-n-to-1-in-reverse"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers from N to 1 in Reverse</h3>
 <p>Write a program that prints the numbers <strong>from n to 1 in reverse</strong> (step -1). For example, <strong>if n = 100</strong>, then the output will be: <strong>100, 99, 98, &#x2026;, 3, 2, 1</strong>.</p>
 <p>We can solve the problem in the following manner:</p>
 <ul>
 <li>We create a function that will take the number <strong><code>n</code></strong>.</li>
 <li>We run a <strong><code>for</code> loop</strong>, by assigning <strong><code>let i = n</code></strong>.</li>
 <li>We reverse the condition of the loop: <strong><code>i &gt;= 1</code></strong>.</li>
-<li>We define the stride size: <strong>-1</strong>.</li>
+<li>We define the step size: <strong>-1</strong>.</li>
 <li>in the <strong>body of the loop</strong>, we print the value of the current step.</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/02.Numbers-n-to-1-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>You can test your solution at the following link: <a href="https://judge.softuni.org/Contests/Practice/Index/937#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#1</a>.</p>
-<h3 id="example-numbers-from-1-to-2n-with-a-for-loop"><a name="example-numbers-from-1-to-2n-with-a-for-loop" class="plugin-anchor" href="#example-numbers-from-1-to-2n-with-a-for-loop"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Numbers from 1 to 2^n with a for loop</h3>
-<p>In the following example, we will use the standard size 1 stride.</p>
+<h3 id="problem-numbers-from-1-to-2n-with-a-for-loop"><a name="problem-numbers-from-1-to-2n-with-a-for-loop" class="plugin-anchor" href="#problem-numbers-from-1-to-2n-with-a-for-loop"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers from 1 to 2^n with a For Loop</h3>
+<p>In the following example, we will use the standard size 1 step.</p>
 <p>Write a program that prints the numbers <strong>from 1 to 2^n</strong> (two to the power of n). For example, <strong>if n = 10</strong>, then the output would be <strong>1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024</strong>.</p>
 <p><img src="assets/chapter-7-1-images/03.Numbers-1-to-2^n-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>You can test your solution at the following link: <a href="https://judge.softuni.org/Contests/Practice/Index/937#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#2</a>.</p>
-<h3 id="example-even-powers-of-2"><a name="example-even-powers-of-2" class="plugin-anchor" href="#example-even-powers-of-2"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Even Powers of 2</h3>
+<h3 id="problem-even-powers-of-2"><a name="problem-even-powers-of-2" class="plugin-anchor" href="#problem-even-powers-of-2"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Even Powers of 2</h3>
 <p>Print the <strong>even</strong> powers of <strong>2</strong> until <strong>2^n</strong>: <strong>2^0, 2^2, 2^4, 2^8, &#x2026;, 2^n</strong>. For example, if <strong>n = 10</strong>, then the output would be <strong>1, 4, 16, 64, 256, 1024</strong>.</p>
 <p>Here is how we can solve the problem:</p>
 <ul>
@@ -498,7 +498,7 @@
 <li>In the <strong>body of the loop</strong>: we print the value of the current number and <strong>increase the current number <code>num</code> 4 times</strong> (as per the problem description).</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/04.Even^2-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>You can test your solution at the following link: <a href="https://judge.softuni.org/Contests/Practice/Index/937#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#3</a>.</p>
 <h2 id="while-loop"><a name="while-loop" class="plugin-anchor" href="#while-loop"><i class="fa fa-link" aria-hidden="true"></i></a>While loop</h2>
 <p>The next type of loops that we will familiarize, which are called <strong><code>while</code> loops</strong>. The special thing about them is that they repeat a command block <strong>while a condition is met</strong>. Their structure is a bit different than that of the <strong><code>for</code></strong> loops, however, they boast a simpler syntax.</p>
@@ -506,7 +506,7 @@
 <p>In programming, the <strong><code>while</code> loop</strong> is used when we want to <strong>repeat</strong> the execution of a specific logic block until <strong>a specific condition is met</strong>. Any expression that returns either <strong><code>true</code></strong> or <strong><code>false</code></strong> (a Boolean) can be used as a &quot;<strong>condition</strong>&quot;. When the <strong>condition</strong> becomes <strong>invalid</strong>, the <strong><code>while</code></strong> loop <strong>is interrupted</strong> and the program <strong>proceeds</strong> to execute the code after the loop. The <strong><code>while</code> loop</strong> structure looks like this:</p>
 <p><img src="assets/chapter-7-1-images/00.While-loop-01.png" alt=""></p>
 <p>Here is a series of sample problems, the solutions of which will help us better understand the use of the <strong><code>while</code></strong>  loop.</p>
-<h3 id="example-sequence-of-numbers-2k1"><a name="example-sequence-of-numbers-2k1" class="plugin-anchor" href="#example-sequence-of-numbers-2k1"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Sequence of Numbers 2k+1</h3>
+<h3 id="problem-sequence-of-numbers-2k1"><a name="problem-sequence-of-numbers-2k1" class="plugin-anchor" href="#problem-sequence-of-numbers-2k1"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Sequence of Numbers 2k+1</h3>
 <p>Write a program that prints <strong>all numbers &#x2264; n</strong> in the series: <strong>1, 3, 7, 15, 31, &#x2026;</strong>, assuming that each number is generated according to the following formula nextNumber = <strong>previousNumber * 2 + 1</strong>.</p>
 <p>Here is how we can solve the problem:</p>
 <ul>
@@ -517,9 +517,9 @@
 </ul>
 <p>Here is a sample implementation of this idea:</p>
 <p><img src="assets/chapter-7-1-images/05.Numbers-2k+1-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>You can test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/937#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#4</a>.</p>
-<h3 id="example-number-in-range-1--100"><a name="example-number-in-range-1--100" class="plugin-anchor" href="#example-number-in-range-1--100"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Number in Range [1 &#x2026; 100]</h3>
+<h3 id="problem-number-in-range-1--100"><a name="problem-number-in-range-1--100" class="plugin-anchor" href="#problem-number-in-range-1--100"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Number in Range [1 &#x2026; 100]</h3>
 <p>Enter an integer in the range [<strong>1 &#x2026; 100</strong>]. If the entered number is <strong>invalid</strong>, enter <strong>another</strong>. In this case, an invalid number would be any number that is <strong>outside</strong> the given range.</p>
 <p>To solve the problem, we can use the following algorithm:</p>
 <ul>
@@ -531,7 +531,7 @@
 </ul>
 <p>Here is a sample implementation of the algorithm using a <strong><code>while</code> loop</strong>:</p>
 <p><img src="assets/chapter-7-1-images/06.Numbers-in-range-1..100-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>You can test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/937#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#5</a>.</p>
 <h2 id="greatest-common-divisor-gcd"><a name="greatest-common-divisor-gcd" class="plugin-anchor" href="#greatest-common-divisor-gcd"><i class="fa fa-link" aria-hidden="true"></i></a>Greatest Common Divisor (GCD)</h2>
 <p>Before proceeding to the next problem, we should become familiar with the definition of the greatest common divisor (GCD).</p>
@@ -591,7 +591,7 @@
   a = oldB;
 print a;
 </code></pre>
-<h3 id="example-greatest-common-divisor-gcd"><a name="example-greatest-common-divisor-gcd" class="plugin-anchor" href="#example-greatest-common-divisor-gcd"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Greatest Common Divisor (GCD)</h3>
+<h3 id="problem-greatest-common-divisor-gcd"><a name="problem-greatest-common-divisor-gcd" class="plugin-anchor" href="#problem-greatest-common-divisor-gcd"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Greatest Common Divisor (GCD)</h3>
 <p>Enter the <strong>integers</strong> <strong>a</strong> and <strong>b</strong> and find <strong>GCD(a, b)</strong>.</p>
 <p>We will solve the problem by implementing <strong>Euclid&apos;s algorithm</strong>:</p>
 <ul>
@@ -606,13 +606,13 @@ print a;
 <li>Once the loop is complete and we have found the GCD, we print it on the screen.</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/07.GCD-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>You can test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/937#6" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#6</a>.</p>
 <h2 id="do-while-loop"><a name="do-while-loop" class="plugin-anchor" href="#do-while-loop"><i class="fa fa-link" aria-hidden="true"></i></a>Do-while loop</h2>
 <p>The next type of loop we will study is the <strong><code>do-while</code></strong> loop. By structure it resembles the <strong><code>while</code></strong>, but with a significant difference. The <strong><code>do-while</code></strong> will execute its body <strong>at least once</strong>. Why is this? In the <strong><code>do-while</code></strong> loop structure, the <strong>condition</strong> is always checked <strong>after</strong> the body, which ensures that the <strong>first loop iteration</strong> will <strong>execute</strong> the code and the check for <strong>the end of the loop</strong> will be applied to each <strong>subsequent</strong> iteration of the <strong><code>do-while</code></strong>. </p>
 <p><img src="assets/chapter-7-1-images/00.Do-while-01.png" alt=""></p>
 <p>Now we should proceed with the usual set of practical problems, that will help us better understand the <strong><code>do-while</code></strong> loop.</p>
-<h3 id="example-calculating-factorial"><a name="example-calculating-factorial" class="plugin-anchor" href="#example-calculating-factorial"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Calculating Factorial</h3>
+<h3 id="problem-calculating-factorial"><a name="problem-calculating-factorial" class="plugin-anchor" href="#problem-calculating-factorial"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Calculating Factorial</h3>
 <p>For natural <strong>n</strong> number, calculate <strong>n! = 1 * 2 * 3 * &#x2026; * n</strong>. For example, if <strong>n = 5</strong>, then the result would be: <strong>5!</strong> = 1 * 2 * 3 * 4 * 5 = <strong>120</strong>.</p>
 <p>Here is how we can calculate factorial in more detail:</p>
 <ul>
@@ -627,9 +627,9 @@ print a;
 <li>Outside the body of the loop, we print the final factorial value.</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/08.Factorial-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/937#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#7</a>.</p>
-<h3 id="example-summing-the-digits-of-a-number"><a name="example-summing-the-digits-of-a-number" class="plugin-anchor" href="#example-summing-the-digits-of-a-number"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Summing the Digits of a Number</h3>
+<h3 id="problem-summing-the-digits-of-a-number"><a name="problem-summing-the-digits-of-a-number" class="plugin-anchor" href="#problem-summing-the-digits-of-a-number"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Summing the Digits of a Number</h3>
 <p>Sum up the digits of the integer <strong>positive</strong> number <strong>n</strong>. For example if <strong>n = 5634</strong>, then the output would be: 5 + 6 + 3 + 4 = <strong>18</strong>.</p>
 <p>We can use the following idea to solve the problem:</p>
 <ul>
@@ -649,9 +649,9 @@ print a;
 <code>Math.floor(n / 10)</code>: <b>deletes</b> the last digit of <code>n</code>.</td>
 </tr></table>
 
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/937#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#8</a>.</p>
-<h2 id="infinite-loops-and-the-operator-break"><a name="infinite-loops-and-the-operator-break" class="plugin-anchor" href="#infinite-loops-and-the-operator-break"><i class="fa fa-link" aria-hidden="true"></i></a>Infinite loops and the operator break</h2>
+<h2 id="infinite-loops-and-the-break-operator"><a name="infinite-loops-and-the-break-operator" class="plugin-anchor" href="#infinite-loops-and-the-break-operator"><i class="fa fa-link" aria-hidden="true"></i></a>Infinite Loops and The break Operator</h2>
 <p>So far, we were introduced to various types of loops, learning what structures they have and how they are applied. Now, we need to understand what an <strong>infinite loop</strong> is, when it occurs, and how we can break it using the <strong><code>break</code></strong> operator.</p>
 <h3 id="infinite-loop-&#x2013;-explanation"><a name="infinite-loop-&#x2013;-explanation" class="plugin-anchor" href="#infinite-loop-&#x2013;-explanation"><i class="fa fa-link" aria-hidden="true"></i></a>Infinite Loop &#x2013; Explanation</h3>
 <p>An infinite loop <strong>runs infinitely</strong> the execution of its body. With <strong><code>while</code></strong> and <strong><code>do-while</code></strong> loops the end check is a conditional expression that <strong>always</strong> returns <strong><code>true</code></strong>. Infinite <strong><code>for</code></strong> occurs when there is <strong>no condition to end the loop</strong>. </p>
@@ -665,7 +665,7 @@ print a;
 <td>The operator <b><code>break</code></b> stops a loop&apos;s execution at the point it is called and the execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingly and the rest of the code in the body of the loop will not be executed.</td>
 </tr></table>
 
-<h3 id="example-prime-number-checking"><a name="example-prime-number-checking" class="plugin-anchor" href="#example-prime-number-checking"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Prime Number Checking</h3>
+<h3 id="problem-prime-number-checking"><a name="problem-prime-number-checking" class="plugin-anchor" href="#problem-prime-number-checking"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Prime Number Checking</h3>
 <p>The next problem we are going to solve is to <strong>check whether a given number is prime</strong>, but before that, we should remember what are prime numbers.</p>
 <p><strong>Definition</strong>: An integer is considered <strong>prime</strong> if it is divisible only by itself and by 1. By definition, the prime numbers are positive and greater than 1. The smallest prime number is <strong>2</strong>.</p>
 <p>We can assume that an integer <strong>n</strong> is a prime number if <strong>n &gt; 1</strong> and <strong>n</strong> is not divisible by a number between <strong>2</strong> and <strong>n-1</strong>.</p>
@@ -686,22 +686,22 @@ print a;
 <td>We can optimize the algorithm by instead of checking until <code>n-1</code>, checking divisors only until <code>&#x221A;n</code>. Think of the reasons why this is so.</td>
 </tr></table>
 
-<h3 id="example-check-for-a-prime-number-break-operator"><a name="example-check-for-a-prime-number-break-operator" class="plugin-anchor" href="#example-check-for-a-prime-number-break-operator"><i class="fa fa-link" aria-hidden="true"></i></a>Example: check for a prime number. Break operator</h3>
+<h3 id="problem-check-for-a-prime-number-break-operator"><a name="problem-check-for-a-prime-number-break-operator" class="plugin-anchor" href="#problem-check-for-a-prime-number-break-operator"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Check for a Prime Number. Break Operator</h3>
 <p>You are tasked to write a function that takes a single input <strong>n</strong> integer and checks if it is prime. This can be implemented by checking if <strong>n</strong> is divisible by any numbers in the range between 2 and &#x221A;n.</p>
 <p>The steps of the <strong>&quot;prime checking algorithm&quot;</strong> are given below in bigger detail:</p>
 <ul>
 <li>We declare the variable <strong><code>n</code></strong>, to which we assign the integer passed to our function.</li>
 <li>We create a <strong><code>prime</code></strong> boolean with and an initial value of <strong><code>true</code></strong>. We assume that a number is prime until proven otherwise.</li>
-<li>We create a <strong><code>for</code></strong> loop, with the initial value set to 2, for a condition the <strong>current value <code>&lt;= &#x221A;n</code></strong>. The stride is set to 1.</li>
+<li>We create a <strong><code>for</code></strong> loop, with the initial value set to 2, for a condition the <strong>current value <code>&lt;= &#x221A;n</code></strong>. The step is set to 1.</li>
 <li>In the <strong>body of the loop</strong>, we check if <strong><code>n</code></strong>, divided by the <strong>current value</strong> has a remainder. If there is <strong>no reminder</strong> from the division, then we change <strong><code>prime</code></strong> to <strong><code>false</code></strong> and exit the loop through the <strong><code>break</code></strong> operator.</li>
 <li>Depending on the value of <strong><code>prime</code></strong> we print whether the input number is prime (<strong><code>true</code></strong>) or composite (<strong><code>false</code></strong>).</li>
 </ul>
 <p>Here is a sample implementation of the prime checking algorithm, described above:</p>
 <p><img src="assets/chapter-7-1-images/10.Check-if-prime-01.png" alt=""></p>
 <p>What remains is to add a <strong>condition that checks if the input number is greater than 1</strong>, because, by definition numbers such as 0, 1, -1 and -2 are not prime.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/937#9" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#9</a>.</p>
-<h3 id="example-the-break-operator-in-an-infinite-loop"><a name="example-the-break-operator-in-an-infinite-loop" class="plugin-anchor" href="#example-the-break-operator-in-an-infinite-loop"><i class="fa fa-link" aria-hidden="true"></i></a>Example: the break operator in an infinite loop</h3>
+<h3 id="problem-the-break-operator-in-an-infinite-loop"><a name="problem-the-break-operator-in-an-infinite-loop" class="plugin-anchor" href="#problem-the-break-operator-in-an-infinite-loop"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: The break Operator in an Infinite Loop</h3>
 <p>Write a function, which checks whether a given number <strong>n</strong> is even and if so - print it on the console. An even number can be divided by 2 without a remainder. If the number is invalid, we will print that the current number is not even and the user will need to input a new number.</p>
 <p>Here is an idea for the solution:</p>
 <ul>
@@ -718,9 +718,9 @@ print a;
 </ul>
 <p>Here is an example implementation of the idea:</p>
 <p><img src="assets/chapter-7-1-images/00.Break-in-infinite-loop-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/937#10" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#10</a>.</p>
-<h2 id="nested-loops-and-the-break-operator"><a name="nested-loops-and-the-break-operator" class="plugin-anchor" href="#nested-loops-and-the-break-operator"><i class="fa fa-link" aria-hidden="true"></i></a>Nested Loops and the Break operator</h2>
+<h2 id="nested-loops-and-the-break-operator"><a name="nested-loops-and-the-break-operator" class="plugin-anchor" href="#nested-loops-and-the-break-operator"><i class="fa fa-link" aria-hidden="true"></i></a>Nested Loops and The break Operator</h2>
 <p>Now since we know what the <strong>nested loops</strong> are and how the <strong><code>break</code></strong> operator works, it is time to figure out how they work together. To get a better idea, we should write a <strong>function</strong> step by step, that should make all possible combinations of <strong>number pairs</strong>. The first number in the pair is increasing from 1 to 3, while the second one is decreasing from 3 to 1. Our solution must continue running until <strong><code>i + j</code></strong> <strong>is not</strong> equal to 2 (i.e. <strong><code>i = 1</code></strong> and <strong><code>j = 1</code></strong>).</p>
 <p>The desired result is:</p>
 <p><img src="assets/chapter-7-1-images/00.Nested-and-break-desired-result-01.png" alt=""></p>
@@ -736,7 +736,7 @@ print a;
 <p>What is the <strong>correct solution</strong>? One way to solve the problem is by declaring a <strong><code>bool</code> variable</strong>, to keep track if the loop iteration has to continue. If we have to exit (leave all nested loops), we set the variable to <strong><code>true</code></strong> and exit the inner loop with <strong><code>break</code></strong> and in the next check, we exit the outer loop. Here is an example implementation of this idea:</p>
 <p><img src="assets/chapter-7-1-images/00.Nested-and-break-desired-result-02.png" alt=""></p>
 <p>In this manner, when <strong><code>i + j = 2</code></strong>, the program will set the variable <strong><code>hasToEnd = true</code></strong> and will exit the inner loop. Upon the next iteration of the outer loop, via the <strong><code>if</code></strong> check, the function will not reach the inner loop and will interrupt its execution. </p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/937#11" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#11</a>.</p>
 <h2 id="exercises-with-loops"><a name="exercises-with-loops" class="plugin-anchor" href="#exercises-with-loops"><i class="fa fa-link" aria-hidden="true"></i></a>Exercises with loops</h2>
 <p>In this chapter, we got familiar with a few new types of loops that can perform repetitions with more complex programming logic. Let&apos;s solve a few practical problems using these new constructs.</p>
@@ -800,7 +800,7 @@ Fn = Fn<span class="hljs-number">-1</span> + Fn<span class="hljs-number">-2</spa
 </ul>
 <p>Example implementation:</p>
 <p><img src="assets/chapter-7-1-images/12.Fibonacci-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/937#12" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#12</a>.</p>
 <h3 id="problem-numbers-pyramid"><a name="problem-numbers-pyramid" class="plugin-anchor" href="#problem-numbers-pyramid"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers Pyramid</h3>
 <p>Print the <strong>numbers 1 &#x2026; n in a pyramid</strong> as per the below example. On the first row, we print one number, at the second we print two, at the third, we print three, and so on, until the numbers are over. On the last line, we print as many numbers as we get until we get to <strong>n</strong>.</p>
@@ -846,7 +846,7 @@ Fn = Fn<span class="hljs-number">-1</span> + Fn<span class="hljs-number">-2</spa
 </ul>
 <p>Here is an example implementation:</p>
 <p><img src="assets/chapter-7-1-images/13.Pyramid-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/937#13" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#13</a>.</p>
 <h3 id="problem-numbers-table"><a name="problem-numbers-table" class="plugin-anchor" href="#problem-numbers-table"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers Table</h3>
 <p>Print the numbers 1 &#x2026; n in a table as per the examples below:</p>
@@ -875,7 +875,7 @@ Fn = Fn<span class="hljs-number">-1</span> + Fn<span class="hljs-number">-2</spa
 <li>We take the size of the table from the integer value of the variable <strong><code>n</code></strong>, which is passed to our function.</li>
 <li>We declare the variable <strong><code>result</code></strong>, which will hold the current row and to which we will add the value of the current cell.</li>
 <li>We create a <strong><code>for</code></strong> loop, that will be responsible for the rows of the table. We name the loop variable <strong><code>row</code></strong> and assign it an initial value of <strong>0</strong>. For condition, we set <strong><code>row &lt; n</code></strong>. The size of the step is <strong>1</strong>.</li>
-<li>In <strong>the body of the loop</strong> we create a nested <strong><code>for</code></strong> loop, that will be responsible for the columns in the table. We name the loop variable <strong><code>col</code></strong> and assign it an initial value of <strong>0</strong>. For condition, we set <strong><code>col &lt; n</code></strong>. The size of the stride is set to <strong>1</strong>.</li>
+<li>In <strong>the body of the loop</strong> we create a nested <strong><code>for</code></strong> loop, that will be responsible for the columns in the table. We name the loop variable <strong><code>col</code></strong> and assign it an initial value of <strong>0</strong>. For condition, we set <strong><code>col &lt; n</code></strong>. The size of the step is set to <strong>1</strong>.</li>
 <li>In <strong>the body of the nested loop</strong>:<ul>
 <li>We create a variable <strong><code>num</code></strong>, to which we assign the result of <strong>the current row + the current column + 1</strong> (+1 is needed since we count from 0).</li>
 <li>We check whether <strong><code>num &gt; n</code></strong>. If <strong><code>num</code></strong> is <strong>greater</strong> than <strong><code>n</code></strong>, we assign <strong><code>num</code></strong> a new value equal to <strong>two times </strong><code>n</code><strong> - the current value of </strong><code>num</code><strong>. We do this in order not to exceed </strong><code>n</code>** in any of the cells of the table.<ul>
@@ -887,10 +887,10 @@ Fn = Fn<span class="hljs-number">-1</span> + Fn<span class="hljs-number">-2</spa
 <li>We print the value of the <strong>result</strong>, after which we set it to a new empty value. This way we can proceed to the next line.</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/14.Table-with-numbers-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/937#14" target="_blank">https://judge.softuni.org/Contests/Practice/Index/937#14</a>.</p>
-<h2 id="what-have-we-learned-in-this-chapter"><a name="what-have-we-learned-in-this-chapter" class="plugin-anchor" href="#what-have-we-learned-in-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What have we learned in this chapter?</h2>
-<p>We can use <strong><code>for</code></strong> loops with a <strong>stride</strong>:</p>
+<h2 id="what-have-we-learned-from-this-chapter"><a name="what-have-we-learned-from-this-chapter" class="plugin-anchor" href="#what-have-we-learned-from-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What Have We Learned from This Chapter?</h2>
+<p>We can use <strong><code>for</code></strong> loops with a <strong>step</strong>:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt;= n; i+=<span class="hljs-number">3</span>) {
    <span class="hljs-built_in">console</span>.log(i);
 }
@@ -955,7 +955,7 @@ Fn = Fn<span class="hljs-number">-1</span> + Fn<span class="hljs-number">-2</spa
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"next":{"title":"7.2. More Complex Loops – Exam Problems","level":"1.15","depth":1,"path":"chapter-07-complex-loops-exam-problems.md","ref":"chapter-07-complex-loops-exam-problems.md","articles":[]},"previous":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"path":"chapter-06-nested-loops-exam-problems.md","ref":"chapter-06-nested-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-07-complex-loops.md","mtime":"2022-02-17T14:11:15.819Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T14:11:57.592Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"next":{"title":"7.2. More Complex Loops – Exam Problems","level":"1.15","depth":1,"path":"chapter-07-complex-loops-exam-problems.md","ref":"chapter-07-complex-loops-exam-problems.md","articles":[]},"previous":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"path":"chapter-06-nested-loops-exam-problems.md","ref":"chapter-06-nested-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-07-complex-loops.md","mtime":"2022-02-22T15:59:36.188Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-22T16:00:37.860Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

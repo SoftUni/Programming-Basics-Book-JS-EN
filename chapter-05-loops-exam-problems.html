@@ -442,7 +442,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="chapter-52-loops-&#x2013;-exam-problems"><a name="chapter-52-loops-&#x2013;-exam-problems" class="plugin-anchor" href="#chapter-52-loops-&#x2013;-exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 5.2. Loops &#x2013; Exam problems</h1>
+                                <h1 id="chapter-52-loops-&#x2013;-exam-problems"><a name="chapter-52-loops-&#x2013;-exam-problems" class="plugin-anchor" href="#chapter-52-loops-&#x2013;-exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 5.2. Loops &#x2013; Exam Problems</h1>
 <p>In the previous chapter, we learned how to run a block of commands <strong>more than once</strong>. That&apos;s why we introduced a <strong><code>for</code> loop</strong> and reviewed some of its main use cases. The purpose of this chapter is to improve our knowledge, by solving some more complex exam problems with loops, used for entrance exams. For some of them, we will show examples of comprehensive solutions, and for others, we will provide only guidance.
 Before we start, let&apos;s take another look at the <strong><code>for</code> loop</strong> construction:</p>
 <p><img src="assets/chapter-5-2-images/00.For-construction-01.png" alt=""></p>
@@ -453,7 +453,7 @@ Before we start, let&apos;s take another look at the <strong><code>for</code> lo
 <li><strong>Increment expression</strong> (<strong><code>i++</code></strong>) &#x2013; expression executed after each iteration.</li>
 <li><strong>Body</strong> of the loop - contains any block of source code</li>
 </ul>
-<h2 id="exam-problems"><a name="exam-problems" class="plugin-anchor" href="#exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Exam problems</h2>
+<h2 id="exam-problems"><a name="exam-problems" class="plugin-anchor" href="#exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Exam Problems</h2>
 <p>Let&apos;s solve some SoftUni exam problems with loops</p>
 <h2 id="problem-histogram"><a name="problem-histogram" class="plugin-anchor" href="#problem-histogram"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Histogram</h2>
 <p><strong>N integers</strong> are given within the range of [<strong>1 &#x2026; 1000</strong>]. A percentage of them <strong>p1</strong> are with values below 200, another percentage <strong>p2</strong> are with values from 200 to 399, percentage <strong>p3</strong> are with values from 400 to 599, a percentage <strong>p4</strong> are with values from 600 to 799 and the remaining percentage <strong>p5</strong> representing values above 800. Write a program that calculates and prints the percentages <strong>p1</strong>, <strong>p2</strong>, <strong>p3</strong>, <strong>p4</strong> and <strong>p5</strong>.</p>
@@ -500,11 +500,11 @@ Before we start, let&apos;s take another look at the <strong><code>for</code> lo
 </tr>
 </tbody>
 </table>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The first line (argument) of the input is an integer <strong>n</strong> (1 &#x2264; <strong>n</strong> &#x2264; 1000), representing the count of lines with numbers that will be passed. On the following <strong>n lines (arguments)</strong> will be given <strong>one integer</strong> within the range of [<strong>1 &#x2026; 1000</strong>] &#x2013; based on these numbers the histogram should be calculated.</p>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console <strong>histogram that consists of 5 lines</strong>, each of them containing a number between 0% and 100%, formatted with precision two digits after the decimal point (for example 25.00%, 66.67%, 57.14%).</p>
-<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h3>
+<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
 <thead>
 <tr>
@@ -565,7 +565,7 @@ Before we start, let&apos;s take another look at the <strong><code>for</code> lo
 <li><strong>Processing the input data</strong> &#x2013; in this case, that means allocating the numbers into groups and calculating the percentage breakdown by groups.</li>
 <li><strong>Print the output</strong> &#x2013; print the histogram in the specified format.</li>
 </ul>
-<h4 id="reading-the-input-data"><a name="reading-the-input-data" class="plugin-anchor" href="#reading-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Reading the input data</h4>
+<h4 id="reading-the-input-data"><a name="reading-the-input-data" class="plugin-anchor" href="#reading-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Reading The Input Data</h4>
 <p>Before we proceed to the actual reading of the input data, we have to <strong>declare the variables</strong>, in which the input data will be stored:</p>
 <p><img src="assets/chapter-5-2-images/01.Histogram-01.png" alt=""></p>
 <p>In the variable <strong><code>n</code></strong>, we will store the count of numbers that we will need to read. Additionally, we have to declare the variables <strong><code>p1</code></strong>, <strong><code>p2</code></strong> etc., in which we will store the count of numbers for each corresponding group.
@@ -605,21 +605,21 @@ For this loop we have:</p>
 <li><strong><code>i = 2</code></strong> &#x2013; we read the number 999, which falls into the last group (<strong><code>p5</code></strong>), because it&apos;s bigger than 800, and we increase the corresponding group counter by 1.</li>
 </ul>
 <p>After reading the numbers, we have in group <strong><code>p1</code></strong> two numbers and in group <strong><code>p5</code></strong> one number. For the rest of the groups, we have <strong>no numbers</strong>. The percentage of each group is calculated by applying the above-mentioned formula.</p>
-<h4 id="printing-the-output"><a name="printing-the-output" class="plugin-anchor" href="#printing-the-output"><i class="fa fa-link" aria-hidden="true"></i></a>Printing the output</h4>
+<h4 id="printing-the-output"><a name="printing-the-output" class="plugin-anchor" href="#printing-the-output"><i class="fa fa-link" aria-hidden="true"></i></a>Printing The Output</h4>
 <p>All we have to do at this point is to print the final results:</p>
 <p><img src="assets/chapter-5-2-images/01.Histogram-06.png" alt=""></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>You can test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/934#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/934#0</a>.</p>
-<h2 id="problem-the-smart-lily"><a name="problem-the-smart-lily" class="plugin-anchor" href="#problem-the-smart-lily"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: the smart Lily</h2>
+<h2 id="problem-smart-lilly"><a name="problem-smart-lilly" class="plugin-anchor" href="#problem-smart-lilly"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Smart Lilly</h2>
 <p>Lily is <strong>N years old</strong> already. For each <strong>birthday</strong> she receives a present. For each <strong>odd</strong> birthday (1, 3, 5, &#x2026;, n) she receives <strong>toys</strong>, and for the <strong>even</strong> birthdays (2, 4, 6, &#x2026;, n) she receives <strong>money</strong>. For her <strong>second birthday</strong>, she received <strong>10.00 USD</strong>, and the <strong>amount is increased by 10.00 USD for every subsequent even birthday</strong> (2 -&gt; 10, 4 -&gt; 20, 6 -&gt; 30 etc.). Over the years Lily has secretly saved her money. In the years when Lily received money, her brother each time took 1 USD. Lily <strong>sold the toys</strong>, she got over the years, <strong>each one for P USD</strong> and then added the sum to her savings. With her savings, she wanted to <strong>buy herself a washing machine for X USD</strong>. Write a program, that calculates the <strong>amount of Lily&apos;s savings</strong> and is this sum enough <strong>for buying a washing machine</strong>.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The program receives <strong>3 numbers</strong> (arguments), entered by the user on separate lines:</p>
 <ul>
 <li>Lily&apos;s <strong>age</strong> &#x2013; <strong>integer</strong> in the range of [<strong>1 &#x2026; 77</strong>].</li>
 <li><strong>Washing machine price</strong> &#x2013; a number in the range of [<strong>1.00 &#x2026; 10 000.00</strong>].</li>
 <li><strong>Single toy price</strong> &#x2013; <strong>integer</strong> in the range of [<strong>0 &#x2026; 40</strong>].</li>
 </ul>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>In a single line print on the console:</p>
 <ul>
 <li>If Lily has enough money to make the purchase:<ul>
@@ -632,7 +632,7 @@ For this loop we have:</p>
 </li>
 <li>The numbers <strong>N</strong> and <strong>M</strong> must be <strong>formatted with precision two digits after the decimal point</strong>.</li>
 </ul>
-<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h3>
+<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
 <thead>
 <tr>
@@ -660,7 +660,7 @@ For this loop we have:</p>
 </tbody>
 </table>    
 
-<h3 id="guidance-and-hints"><a name="guidance-and-hints" class="plugin-anchor" href="#guidance-and-hints"><i class="fa fa-link" aria-hidden="true"></i></a>Guidance and hints</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>Similar to the previous problem, the solution could be divided into three parts &#x2013; <strong>reading</strong> the input data, <strong>processing</strong> the input data and <strong>printing the output</strong>.</p>
 <p><img src="assets/chapter-5-2-images/02.Smart-lilly-01.png" alt=""></p>
 <p>Again, we should start with choosing appropriate variable names. For Lily&apos;s age(<strong><code>age</code></strong>), for the washing machine price (<strong><code>washingMachinePrice</code></strong>) and the single toy price (<strong><code>toyPrice</code></strong>). In the above code we <strong>declare</strong> and <strong>initialized</strong> (assign value to a variable) also variables for the toys count(<strong><code>toysCount</code></strong>), and money from birthdays (<strong><code>moneyFromBirthdays</code></strong>):</p>
@@ -682,17 +682,17 @@ moneyFromBirthdays += bonusMoney;
 <p>At this point what is left is to print the results considering the required formating i.e. the sum should be <strong>formatted with precision to the second digit after a decimal point</strong>:</p>
 <p><img src="assets/chapter-5-2-images/02.Smart-lilly-05.png" alt=""></p>
 <p>To avoid declaring additional variables we can use a template literal - <strong><code>${expression}</code></strong>. It&apos;s a text literal with a specific sequence of characters allowing embedding of expressions. Using it the calculation can be performed and the result to be directly included in the text string. </p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>You can test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/934#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/934#1</a>.</p>
-<h2 id="problem-return-to-the-past"><a name="problem-return-to-the-past" class="plugin-anchor" href="#problem-return-to-the-past"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Return to the past</h2>
+<h2 id="problem-return-to-the-past"><a name="problem-return-to-the-past" class="plugin-anchor" href="#problem-return-to-the-past"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Return to The Past</h2>
 <p>Ivan is <strong>18 years old</strong> and just received an inheritance, consisting of <strong>X amount of money</strong> and a <strong>time machine</strong>. He decides <strong>to return to the year 1800</strong>, but he is not certain <strong>if the money</strong> would be <strong>enough</strong> for him, to live at that time without working. Write a <strong>program, that calculates</strong> if Ivan <strong>would have enough money</strong>, to live without working <strong>until a given year (inclusively)</strong>. Assuming that, for <strong>every even</strong> (1800, 1802 etc.) year he <strong>would spend 12 000 USD</strong>. For <strong>every odd year</strong> (1801,1803 etc.) he would spend <strong>12 000 + 50 * [the age he would have reached in the given year]</strong>.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The program receives <strong>2 numbers (arguments)</strong>, entered by the user on separate lines</p>
 <ul>
 <li><strong>Inherited money</strong> &#x2013; a number in the range of [<strong>1.00 &#x2026; 1 000 000.00</strong>].</li>
 <li><strong>The year, until he would have to live in the past (inclusively)</strong> &#x2013; an integer in the range of [<strong>1801 &#x2026; 1900</strong>].</li>
 </ul>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p><strong>Print</strong> on the console <strong>1 line</strong>. <strong>The sum</strong> must be <strong>formatted</strong> with precision up to <strong>two digits after the decimal point</strong>:</p>
 <ul>
 <li>If <strong>the money is enough</strong>:<ul>
@@ -704,7 +704,7 @@ moneyFromBirthdays += bonusMoney;
 </ul>
 </li>
 </ul>
-<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h3>
+<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
 <thead>
 <tr>
@@ -749,20 +749,20 @@ moneyFromBirthdays += bonusMoney;
 <p><img src="assets/chapter-5-2-images/03.Back-to-the-past-02.png" alt=""></p>
 <p>Finally, we have to print out the result by <strong>checking whether the inheritance</strong> (<strong><code>heritage</code></strong>) was enough to live without working or not. If the inheritance (<strong><code>heritage</code></strong>) is a <strong>positive number</strong>, we print out: &quot;<strong><code>Yes! He will live a carefree life and will have {N} dollars left.</code></strong>&quot;, and if it&apos;s a <strong>negative number</strong>: &quot;<strong><code>He will need {M} dollars to survive.</code></strong>&quot;. Don&apos;t forget to format the result with precision to the second digit after the decimal point.</p>
 <p><strong>Hint</strong>: Consider using the <strong><code>Math.abs(&#x2026;)</code></strong> method, when printing the output in case the inheritance is insufficient.</p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>You can test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/934#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/934#2</a>.</p>
 <h2 id="problem-hospital"><a name="problem-hospital" class="plugin-anchor" href="#problem-hospital"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Hospital</h2>
 <p>For a certain period, everyday patients arrive at the hospital for examination. <strong>Initially</strong>, the hospital had <strong>7 doctors</strong>. Each doctor could treat <strong>only one patient per day</strong>, but sometimes there is a shortage of doctors, so <strong>the remaining patients are sent to other hospitals</strong>. <strong>Every third day</strong> the hospital makes evaluations and <strong>if the count of untreated patients is greater than the count of treated ones, another doctor is appointed</strong>. Each new doctor is appointed at the beginning of the day before the patients&apos; admission.</p>
 <p>Write a program, that calculates <strong>for a given period, the count of treated and untreated patients</strong>.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>On the first line (argument) there is an integer in the range of [<strong>1 &#x2026; 1000</strong>] - <strong>The period</strong>, for which you need to make calculations. On the next <strong>lines (arguments)</strong> there are <strong>integers</strong> in the range of [<strong>1 &#x2026; 10 000</strong>] &#x2013; the <strong>number of arriving patients</strong>, for the <strong>current day</strong>.  </p>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p><strong>Print</strong> on the console <strong>2 lines</strong>:</p>
 <ul>
 <li>On the <strong>first line</strong>: &quot;<strong>Treated patients: {count of treated patients}.</strong>&quot;</li>
 <li>On the <strong>second line</strong>: &quot;<strong>Untreated patients: {count of untreated patients}.</strong>&quot;</li>
 </ul>
-<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h3>
+<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
 <thead>
 <tr>
@@ -823,7 +823,7 @@ moneyFromBirthdays += bonusMoney;
 <p>If the count of patients <strong>is not greater</strong>, we increase only the value of the variable <strong><code>treatedPatients</code></strong> by the count of patients for the day (<strong><code>currentPatients</code></strong>).</p>
 <p><img src="assets/chapter-5-2-images/04.Hospital-02.png" alt=""></p>
 <p>Finally, the only thing left is to print the number of treated and untreated patients.</p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>You can test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/934#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/934#3</a>.</p>
 <h2 id="problem-division-without-remainder"><a name="problem-division-without-remainder" class="plugin-anchor" href="#problem-division-without-remainder"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: division without remainder</h2>
 <p><strong>N integers</strong> are given in the range of [<strong>1 &#x2026; 1000</strong>]. <strong>Some percentage p1 of them are divisible without remainder by 2</strong>, <strong>percentage p2</strong> are <strong>divisible without remainder by 3</strong>, <strong>percentage p3</strong> is <strong>divisible without remainder by 4</strong>. Write a program that calculates and prints the percentages p1, p2, and p3.
@@ -859,16 +859,16 @@ moneyFromBirthdays += bonusMoney;
 </tbody>
 </table>   
 
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>On the first line (argument) of the input, we have integer <strong>n</strong> (1 &#x2264; <strong>n</strong> &#x2264; 1000) &#x2013; count of numbers. On each next <strong>n line</strong>, we have <strong>one integer</strong> in the range of [<strong>1 &#x2026; 1000</strong>] &#x2013; numbers that have to be checked for division without remainder.</p>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console <strong>3 lines</strong>, each containing a percentage between 0% and 100%, formatted with precision two digits after the decimal point, for example 25.00%, 66.67%, 57.14%.</p>
 <ul>
 <li>On the <strong>first line</strong> &#x2013; the percentage of the numbers, which is <strong>divisible by 2</strong>.</li>
 <li>On the <strong>second line</strong> &#x2013; the percentage of the numbers, which is <strong>divisible by 3</strong>.</li>
 <li>On the <strong>third line</strong> &#x2013; the percentage of the numbers, which is <strong>divisible by 4</strong>.</li>
 </ul>
-<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h3>
+<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
 <thead>
 <tr>
@@ -898,7 +898,7 @@ moneyFromBirthdays += bonusMoney;
 <p>To read and allocate each number to its corresponding group we have to iterate  <strong><code>for</code> loop</strong> from <strong><code>0</code></strong> to <strong><code>n</code></strong> (count of numbers). Each iteration of the loop should read and allocate <strong>one single number</strong>. The difference here is that <strong>one number could be a part of several groups simultaneously</strong>, therefore we have to perform <strong>three different <code>if</code> checks for each number</strong> - respectively, whether the number is divisible by 2,3, and 4 and then to increase the value of the variable that keeps the count of numbers in the corresponding group.</p>
 <p><strong>Note</strong>: <strong><code>if-else</code></strong> construction wouldn&apos;t work in this case, because once the condition is true, the code wouldn&apos;t perform any further checkings.</p>
 <p>Finally, you need to print the obtained results, by following the specified format.</p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>You can test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/934#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/934#4</a>.</p>
 <h2 id="problem-logistics"><a name="problem-logistics" class="plugin-anchor" href="#problem-logistics"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Logistics</h2>
 <p>In this problem, you are responsible for the logistics of various types of cargo <strong>Depending on the weight</strong> of each cargo you need a <strong>different vehicle</strong> and this will cost <strong>different prices per ton</strong>:</p>
@@ -908,13 +908,13 @@ moneyFromBirthdays += bonusMoney;
 <li><strong>Over 11 tons &#x2013; train</strong> (120 per ton).</li>
 </ul>
 <p>Your task is to calculate <strong>the average price per ton of cargo</strong>, as well as <strong>the percentage of the cargo</strong> transported <strong>by each vehicle</strong>.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The program receives a <strong>sequence of numbers</strong> (arguments):</p>
 <ul>
 <li>On the first line (argument): <strong>the count of cargos</strong> that have to be transported &#x2013; <strong>integer</strong> in the range of [<strong>1 &#x2026; 1000</strong>].</li>
 <li>On the next lines, we pass the <strong>weight of the cargo</strong> &#x2013; <strong>integer</strong> in the range of [<strong>1 &#x2026; 1000</strong>].</li>
 </ul>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console <strong>4 lines</strong>, as follow:</p>
 <ul>
 <li><strong>Line #1</strong> &#x2013; <strong>average price per ton for a transported cargo</strong> (formatted with precision two digits after the decimal point).</li>
@@ -922,7 +922,7 @@ moneyFromBirthdays += bonusMoney;
 <li><strong>Line #3</strong> &#x2013; a <strong>percentage</strong> of the cargo, transported by <strong>truck</strong> (between 0.00% and 100.00%).</li>
 <li><strong>Line #4</strong> &#x2013; a <strong>percentage</strong> of the cargo, transported by <strong>train</strong> (between 0.00% and 100.00%).</li>
 </ul>
-<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h3>
+<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
 <thead>
 <tr>
@@ -982,7 +982,7 @@ Percentage of the cargo transported by <b>train</b> is: 16/25*100 = <b>64.00%</b
 <li>If the value of <strong><code>tons</code></strong> is <strong>more than 11</strong>, increase the value of <strong><code>trainTons</code></strong> by the value of <strong><code>tons</code></strong>.</li>
 </ul>
 <p>Before printing the output, we have to <strong>calculate the percentage of tons, transported by each vehicle</strong> and the <strong>average price per ton</strong>. For the average price per ton, we will declare one more variable <strong><code>totalPrice</code></strong>, which will <strong>sum the total price of all transported cargo</strong> (by microbus, truck and train). We can calculate the average price by, dividing <strong><code>totalPrice</code></strong> by <strong><code>sumOfTons</code></strong>. Finally, you have to <strong>calculate by yourself</strong> the percentages of tons, transported by each vehicle, and print the results, keeping the format specified in the description.</p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>You can test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/934#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/934#5</a>.</p>
 
                                 
@@ -1027,7 +1027,7 @@ Percentage of the cargo transported by <b>train</b> is: 16/25*100 = <b>64.00%</b
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.2. Loops - Exam Problems","level":"1.11","depth":1,"next":{"title":"6.1. Nested Loops","level":"1.12","depth":1,"path":"chapter-06-nested-loops.md","ref":"chapter-06-nested-loops.md","articles":[]},"previous":{"title":"5.1. Loops","level":"1.10","depth":1,"path":"chapter-05-loops.md","ref":"chapter-05-loops.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-05-loops-exam-problems.md","mtime":"2022-02-17T14:11:15.815Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T14:11:57.592Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5.2. Loops - Exam Problems","level":"1.11","depth":1,"next":{"title":"6.1. Nested Loops","level":"1.12","depth":1,"path":"chapter-06-nested-loops.md","ref":"chapter-06-nested-loops.md","articles":[]},"previous":{"title":"5.1. Loops","level":"1.10","depth":1,"path":"chapter-05-loops.md","ref":"chapter-05-loops.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-05-loops-exam-problems.md","mtime":"2022-02-22T15:59:36.184Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-22T16:00:37.860Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

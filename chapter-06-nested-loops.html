@@ -444,7 +444,7 @@
                                 
                                 <h1 id="chapter-61-nested-loops"><a name="chapter-61-nested-loops" class="plugin-anchor" href="#chapter-61-nested-loops"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 6.1. Nested Loops</h1>
 <p>In the current chapter, we will be looking at <strong>nested loops</strong> and how to use <code>for</code> loops to <strong>draw</strong> various <strong>figures on the console</strong>, that contain symbols and signs, ordered in rows and columns on the console. We will use <strong>single</strong> and <strong>nested loops</strong> (loops that stay in other loops), <strong>calculations</strong> and <strong>checks</strong>, in order to print on the console simple and not so simple figures by specified sizes.</p>
-<h3 id="example-rectangle-made-of-10-x-10-stars"><a name="example-rectangle-made-of-10-x-10-stars" class="plugin-anchor" href="#example-rectangle-made-of-10-x-10-stars"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Rectangle Made of 10 x 10 Stars</h3>
+<h3 id="problem-rectangle-made-of-10-x-10-stars"><a name="problem-rectangle-made-of-10-x-10-stars" class="plugin-anchor" href="#problem-rectangle-made-of-10-x-10-stars"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Rectangle Made of 10 x 10 Stars</h3>
 <p>Print on the console a rectangle made out of <strong>10 x 10</strong> stars.</p>
 <table>
 <thead>
@@ -463,7 +463,7 @@
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p><img src="assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png" alt=""></p>
 <p>How does the example work? We initialize <strong>a loop with a variable <code>i = 1</code></strong>, which increases with each iteration of the loop, while it is <strong>less or equal to 10</strong>. This way the code in the body of the loop is executed <strong>10 times</strong>. In the body of the loop, we print a new line on the console <strong><code>&quot;*&quot;.repeat(10)</code></strong>, which creates a string of 10 stars.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here:: <a href="https://judge.softuni.org/Contests/Practice/Index/935#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/935#0</a>.</p>
 <h3 id="example-rectangle-made-of-n-x-n-stars"><a name="example-rectangle-made-of-n-x-n-stars" class="plugin-anchor" href="#example-rectangle-made-of-n-x-n-stars"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Rectangle Made of N x N Stars</h3>
 <p>Write a program that gets a positive integer <strong>n</strong> and prints on the console <strong>a rectangle made out of N x N stars</strong>.</p>
@@ -493,7 +493,7 @@
 <p><img src="assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.png" alt=""></p>
 <h4 id="note"><a name="note" class="plugin-anchor" href="#note"><i class="fa fa-link" aria-hidden="true"></i></a>Note</h4>
 <p>On some web browsers, the repeating results on the console merge in one. It&apos;s advised to use <strong>NodeJS</strong> for our current examples. If you still get to this case you can use the symbol <strong><code>\n</code></strong> at the end of the printing method <strong><code>console.log(&quot;*&quot;.repeat(10) + &quot;\n&quot;);</code></strong>.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/935#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/935#1</a>.</p>
 <h2 id="nested-loops"><a name="nested-loops" class="plugin-anchor" href="#nested-loops"><i class="fa fa-link" aria-hidden="true"></i></a>Nested loops</h2>
 <p>A <strong>nested loop</strong> is a construction where <strong>the body of one loop</strong> (the outer one) <strong>stays inside another loop</strong> (the inner one). In each iteration of the outer loop, <strong>the whole</strong> inner loop is executed. This happens in the following way:</p>
@@ -517,7 +517,7 @@
 }
 </code></pre>
 <p>Let&apos;s look at the example above. After initializing <strong>the first (outer) loop</strong>, its <strong>body</strong>, which contains <strong>the second (nested) loop</strong> starts executing. By itself, it prints on one row <code>n</code> number of stars. After <strong>the inner</strong> loop <strong>finishes</strong> executing at the first iteration of the outer one, <strong>the first loop will continue</strong>, i.e. it will print an empty row on the console. <strong>After that</strong>, the variable of <strong>the first</strong> loop will be <strong>renewed</strong> and the whole <strong>second</strong> loop will be executed again. The inner loop will execute as many times as the body of the outer loop executes, in this case, <code>n</code> times.</p>
-<h3 id="example-square-made-of-stars"><a name="example-square-made-of-stars" class="plugin-anchor" href="#example-square-made-of-stars"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Square Made of Stars</h3>
+<h3 id="problem-square-made-of-stars"><a name="problem-square-made-of-stars" class="plugin-anchor" href="#problem-square-made-of-stars"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Square Made of Stars</h3>
 <p>Print on the console a square made of <strong>N x N</strong> stars (use a space between the stars, staying on the same line):</p>
 <table>
 <thead>
@@ -544,9 +544,9 @@
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>The problem is similar to the last one. The difference here is that we need to figure out how to add a whitespace after the stars so that there aren&apos;t any excess white spaces at the beginning and the end.</p>
 <p><img src="assets/chapter-6-1-images/03.Square-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/935#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/935#2</a>.</p>
-<h3 id="example-triangle-made-of-dollars"><a name="example-triangle-made-of-dollars" class="plugin-anchor" href="#example-triangle-made-of-dollars"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Triangle Made of Dollars</h3>
+<h3 id="problem-triangle-made-of-dollars"><a name="problem-triangle-made-of-dollars" class="plugin-anchor" href="#problem-triangle-made-of-dollars"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Triangle Made of Dollars</h3>
 <p>Write a program that takes an integer <strong>n</strong> and prints <strong>a triangle made of dollars</strong> of size <strong>n</strong>.</p>
 <table>
 <thead>
@@ -573,9 +573,9 @@
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>The problem is <strong>similar</strong> to those for drawing <strong>a rectangle</strong> and <strong>square</strong>. Once again, we will use <strong>nested loops</strong>, but there is <strong>a  catch</strong> here. The difference is that <strong>the number of columns</strong> that we need to print depends on <strong>the row</strong>, on which we are and not on the input number <strong><code>n</code></strong>. From the example input and output data, we see that <strong>the count of dollars depends</strong> on which <strong>row</strong> we are on at the moment of the printing, i.e. 1 dollar means the first row, 3 dollars mean the third row, and so on. Let&apos;s see the following example in detail. We see that <strong>the variable</strong> of <strong>the nested</strong> loop is connected with the variable of <strong>the outer</strong> one. This way our program prints the desired triangle.</p>
 <p><img src="assets/chapter-6-1-images/04.Triangle-of-dollars-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/935#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/935#3</a>.</p>
-<h3 id="example-square-frame"><a name="example-square-frame" class="plugin-anchor" href="#example-square-frame"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Square Frame</h3>
+<h3 id="problem-square-frame"><a name="problem-square-frame" class="plugin-anchor" href="#problem-square-frame"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Square Frame</h3>
 <p>Write a program that takes a positive integer <strong>n</strong> and draws on the console <strong>a square frame</strong> with a size of <strong>n * n</strong>.</p>
 <table>
 <thead>
@@ -623,7 +623,7 @@
 </ul>
 <p>Here is an example implementation of the above idea with nested loops:</p>
 <p><img src="assets/chapter-6-1-images/05.Square-frame-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/935#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/935#4</a>.</p>
 <h3 id="problem-rhombus-made-of-stars"><a name="problem-rhombus-made-of-stars" class="plugin-anchor" href="#problem-rhombus-made-of-stars"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Rhombus Made of Stars</h3>
 <p>Write a program that takes a positive integer <strong>n</strong> and prints <strong>a rhombus made of stars</strong> with size <strong>n</strong>.</p>
@@ -672,7 +672,7 @@
 </ul>
 <p><strong>The second</strong> (lower) part will be printed <strong>similarly</strong>, which again we leave to the reader to do.</p>
 <p><img src="assets/chapter-6-1-images/06.Rhombus-of-stars-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/935#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/935#5</a>.</p>
 <h3 id="problem-christmas-tree"><a name="problem-christmas-tree" class="plugin-anchor" href="#problem-christmas-tree"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Christmas Tree</h3>
 <p>Write a program that takes a number <strong>n</strong> (1 &#x2264; n &#x2264; 100) and prints a Christmas tree with a height of <strong>n+1</strong>.</p>
@@ -715,7 +715,7 @@
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>From the examples, we see that <strong>the Christmas tree</strong> can be <strong>divided</strong> into <strong>three</strong> logical parts. <strong>The first</strong> part is <strong>the stars and the white spaces before and after them</strong>, <strong>the middle</strong> part is <strong><code>|</code></strong>, and <strong>the last</strong> part is again <strong>stars</strong>, but this time there are <strong>white spaces</strong> only <strong>before</strong> them. The printing can be done with only <strong>one loop</strong> and the <strong><code>.repeat(n)</code></strong> method, which we will use once for the stars and once for the white spaces:</p>
 <p><img src="assets/chapter-6-1-images/07.Christmas-tree-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/935#6" target="_blank">https://judge.softuni.org/Contests/Practice/Index/935#6</a>.</p>
 <h2 id="exercises-drawing-more-complex-figures"><a name="exercises-drawing-more-complex-figures" class="plugin-anchor" href="#exercises-drawing-more-complex-figures"><i class="fa fa-link" aria-hidden="true"></i></a>Exercises: Drawing more complex figures</h2>
 <p>Let&apos;s look at how to <strong>draw figures</strong> using <strong>nested loops</strong> with more complex logic, for which we need to think more before coding.</p>
@@ -758,7 +758,7 @@
 <p><img src="assets/chapter-6-1-images/08.Sunglasses-01.png" alt=""></p>
 <p>When drawing <strong>the middle</strong> part, we need to <strong>check</strong> if the row is <strong><code>(n-1) / 2 - 1</code></strong>, because in the examples we can see that in <strong>this row</strong> we need to print <strong>pipes</strong> instead of white spaces. The problem with <strong><code>(n - 1) / 2 - 1</code></strong> is that it can be a number with the decimal remainder. Because of this, we must use a mathematical method for removing a decimal remainder - <strong><code>Math.floor(...)</code></strong>. <strong><code>Math.floor(...)</code></strong> returns the bigger number, which is smaller or equal to the last number:</p>
 <p><img src="assets/chapter-6-1-images/08.Sunglasses-02.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/935#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/935#7</a>.</p>
 <h3 id="problem-house"><a name="problem-house" class="plugin-anchor" href="#problem-house"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: House</h3>
 <p>Write a program that takes a number <strong>n</strong> (2 &#x2264; <strong>n</strong> &#x2264; 100) and prints <strong>a house</strong> with size <strong>n x n</strong>, just as in the examples:</p>
@@ -864,9 +864,9 @@
 </ul>
 <p><img src="assets/chapter-6-1-images/09.House-08.png" alt=""></p>
 <p>If you have written everything as it is here, the problem should be solved.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/935#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/935#8</a>.</p>
-<h3 id="example-diamond"><a name="example-diamond" class="plugin-anchor" href="#example-diamond"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Diamond</h3>
+<h3 id="problem-diamond"><a name="problem-diamond" class="plugin-anchor" href="#problem-diamond"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Diamond</h3>
 <p>Write a program that takes an integer <strong>n</strong> (1 &#x2264; <strong>n</strong> &#x2264; 100) and prints a diamond with size <strong>n</strong>, as in the following examples:</p>
 <table>
 <thead>
@@ -991,7 +991,7 @@
 </tr></table>
 
 <p>If we have written all correctly, then the problem is solved.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/935#9" target="_blank">https://judge.softuni.org/Contests/Practice/Index/935#9</a>.</p>
 <h2 id="what-did-you-learn-from-this-chapter"><a name="what-did-you-learn-from-this-chapter" class="plugin-anchor" href="#what-did-you-learn-from-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What did you learn from this chapter?</h2>
 <p>We learned how to use the <strong><code>repeat(...)</code></strong> method which constructs and returns a new object from type <strong><code>String</code></strong>:</p>
@@ -1010,7 +1010,7 @@
 </code></pre>
 <h2 id="lab-drawing-ratings-in-web"><a name="lab-drawing-ratings-in-web" class="plugin-anchor" href="#lab-drawing-ratings-in-web"><i class="fa fa-link" aria-hidden="true"></i></a>Lab: Drawing Ratings in Web</h2>
 <p>Now that we got used to <strong>nested loops</strong> and the way to use them to draw figures on the console, we can get into something even more interesting: we can see how loops can be used to <strong>draw in a Web environment</strong>. We will make a web application that visualizes a number rating (a number from 0 to 100) with stars. This kind of visualization is common in e-commerce sites, reviews of products, event rating, rating of apps, and others.</p>
-<p>Don&apos;t worry if you don&apos;t understand all of the code, how exactly it is written and how the project works. It is normal, now we are learning to write code and we are a long way from the web development technologies. If you are struggling to write your project by following the steps, <strong>watch the video</strong> from the beginning of the chapter or ask for help in the SoftUni official <strong>discussion forum</strong>: <a href="https://softuni.bg/forum" target="_blank">https://softuni.bg/forum</a>.</p>
+<p>Don&apos;t worry if you don&apos;t understand all of the code, how exactly it is written and how the project works. It is normal, now we are learning to write code and we are a long way from the web development technologies. If you are struggling to write your project by following the steps, <strong>watch the video</strong> from the beginning of the chapter or ask for help in the SoftUni official <strong>discussion Reddit</strong>: <a href="https://www.reddit.com/r/softuni/" target="_blank">https://www.reddit.com/r/softuni/</a>.</p>
 <h3 id="problem-ratings-&#x2013;-visualization-in-a-web-environment"><a name="problem-ratings-&#x2013;-visualization-in-a-web-environment" class="plugin-anchor" href="#problem-ratings-&#x2013;-visualization-in-a-web-environment"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Ratings &#x2013; Visualization in a Web Environment</h3>
 <p>Your task is to create a  <strong>JavaScript</strong> web application for visualizing a rating (a number from 0 to 100). From 1 to 10 stars should be drawn with halves. The starts should be generated with a <code>for</code> loop.</p>
 <p>We create an empty folder in our file system with the name &quot;<strong>ratings</strong>&quot;. In there we create 2 files and one folder:</p>
@@ -1122,7 +1122,7 @@
 <li>Hooks our function <strong><code>drawHandler()</code></strong> to the <strong><code>click</code></strong> event of the <strong>Draw</strong> button.</li>
 <li>Initial call of <strong><code>drawHandler()</code></strong> is to fill the stars from our current HTML.</li>
 </ul>
-<p>If you have a problem with the project above <strong>watch the video</strong> at the beginning of this chapter. Inside the video, the application is made live step by step with a lot of explanations. You can also ask in the <strong>Softuni Forum</strong>: <a href="https://softuni.bg/forum" target="_blank">https://softuni.bg/forum</a>.</p>
+<p>If you have a problem with the project above <strong>watch the video</strong> at the beginning of this chapter. Inside the video, the application is made live step by step with a lot of explanations. You can also ask in the <strong>Softuni Reddit</strong>: <a href="https://www.reddit.com/r/softuni/" target="_blank">https://www.reddit.com/r/softuni/</a>.</p>
 
                                 
                                 </section>
@@ -1166,7 +1166,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"6.1. Nested Loops","level":"1.12","depth":1,"next":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"path":"chapter-06-nested-loops-exam-problems.md","ref":"chapter-06-nested-loops-exam-problems.md","articles":[]},"previous":{"title":"5.2. Loops - Exam Problems","level":"1.11","depth":1,"path":"chapter-05-loops-exam-problems.md","ref":"chapter-05-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-06-nested-loops.md","mtime":"2022-02-17T14:11:15.819Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T14:11:57.592Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6.1. Nested Loops","level":"1.12","depth":1,"next":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"path":"chapter-06-nested-loops-exam-problems.md","ref":"chapter-06-nested-loops-exam-problems.md","articles":[]},"previous":{"title":"5.2. Loops - Exam Problems","level":"1.11","depth":1,"path":"chapter-05-loops-exam-problems.md","ref":"chapter-05-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-06-nested-loops.md","mtime":"2022-02-22T15:59:36.184Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-22T16:00:37.860Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
