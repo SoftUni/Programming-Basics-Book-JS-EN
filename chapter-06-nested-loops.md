@@ -412,7 +412,7 @@ for (let i = 1; i <= n; i++) {
 
 Now that we got used to **nested loops** and the way to use them to draw figures on the console, we can get into something even more interesting: we can see how loops can be used to **draw in a Web environment**. We will make a web application that visualizes a number rating \(a number from 0 to 100\) with stars. This kind of visualization is common in e-commerce sites, reviews of products, event rating, rating of apps, and others.
 
-Don't worry if you don't understand all of the code, how exactly it is written and how the project works. It is normal, now we are learning to write code and we are a long way from the web development technologies. If you are struggling to write your project by following the steps, **watch the video** from the beginning of the chapter or ask for help in the SoftUni official **discussion forum**: [https://softuni.bg/forum](https://softuni.bg/forum).
+Don't worry if you don't understand all of the code, how exactly it is written and how the project works. It is normal, now we are learning to write code and we are a long way from the web development technologies. If you are struggling to write your project by following the steps, **watch the video** from the beginning of the chapter or ask for help in the SoftUni official **discussion Reddit**: [https://www.reddit.com/r/softuni/](https://www.reddit.com/r/softuni/).
 
 ### Problem: Ratings – Visualization in a Web Environment
 
@@ -540,4 +540,4 @@ When the browser is ready, it will run our starting function **`appInit()`**. Th
 - Hooks our function **`drawHandler()`** to the **`click`** event of the **Draw** button.
 - Initial call of **`drawHandler()`** is to fill the stars from our current HTML.
 
-If you have a problem with the project above **watch the video** at the beginning of this chapter. Inside the video, the application is made live step by step with a lot of explanations. You can also ask in the **Softuni Forum**: https://softuni.bg/forum.
+If you have a problem with the project above **watch the video** at the beginning of this chapter. Inside the video, the application is made live step by step with a lot of explanations. You can also ask in the **Softuni Reddit**: https://www.reddit.com/r/softuni/.

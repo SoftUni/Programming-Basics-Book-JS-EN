@@ -34,7 +34,7 @@ Write a program, that reads from the console an **integer n** and draws a **fort
 
 The program input consists one element (argument) - **integer n** within the range [**3 … 1000**].
 
-### Output data
+### Output Data
 
 Print on the console **n** text lines, depicting the **fortress**, just as in the examples below.
 
@@ -107,7 +107,7 @@ Write a program, that takes **an integer n** from the console and draws **butter
 
 The input consists of one element (argument) - **integer n** in the range [**3 … 1000**].
 
-### Output data
+### Output Data
 
 Print on the console **2 * (n - 2) + 1**  text rows, representing the **butterfly**, exactly as shown in the examples.
 
@@ -158,7 +158,7 @@ Write a program, that takes an **integer n** from the console and draws **a STOP
 
 The input consists of one element (argument) - **integer n** in the range [**3 … 1000**].
 
-### Output data
+### Output Data
 
 Print on the console text lines, representing **the STOP warning sign**, just as in the examples.
 
@@ -219,7 +219,7 @@ Write a program that receives from the console **an odd integer n** and draws **
 
 The input is **an odd integer n** (argument) within the range [**3 … 79**].
 
-### Output data
+### Output Data
 Print on the console a vertical arrow, in which "**`#`**" (hash sign) marks the outline of the arrow, and "**`.`**" - the rest.
 
 ### Sample Input and Output
@@ -286,7 +286,7 @@ The width of the axe is **5 * n** columns.
 
 The input consists one element (argument) - **integer n** within range [**2..42**].
 
-### Output data
+### Output Data
 
 Print on the console **axe**, as in the examples.
 

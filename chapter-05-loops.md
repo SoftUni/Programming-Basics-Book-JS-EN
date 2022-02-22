@@ -603,4 +603,4 @@ Add a [**Triangle**] button that draws three triangles with 22 beams each, as sh
 
 Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step by 10 and rotate 120 degrees. Repeat 3 times in another loop for the three triangles.
 
-If you have difficulties with the exercises above, ask for help in **SoftUni's discussion forum**: https://softuni.bg/forum.
+If you have difficulties with the exercises above, ask for help in **SoftUni's discussion Reddit**: https://www.reddit.com/r/softuni/.

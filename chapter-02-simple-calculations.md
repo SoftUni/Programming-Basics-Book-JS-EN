@@ -937,4 +937,4 @@ Test the application by opening the project folder in **explorer** and launching
 
 5. Done the application.
 
-If you have any difficulties, ask in **the Softuni Forum**: https://softuni.bg/forum.
+If you have any difficulties, ask in **the Softuni Reddit**: https://www.reddit.com/r/softuni/.

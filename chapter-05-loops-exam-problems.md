@@ -35,7 +35,7 @@ Let's solve some SoftUni exam problems with loops
 
 The first line (argument) of the input is an integer **n** (1 ≤ **n** ≤ 1000), representing the count of lines with numbers that will be passed. On the following **n lines (arguments)** will be given **one integer** within the range of [**1 … 1000**] – based on these numbers the histogram should be calculated.
 
-### Output data
+### Output Data
 
 Print on the console **histogram that consists of 5 lines**, each of them containing a number between 0% and 100%, formatted with precision two digits after the decimal point (for example 25.00%, 66.67%, 57.14%).
 
@@ -169,7 +169,7 @@ The program receives **3 numbers** (arguments), entered by the user on separate 
    - **Washing machine price** – a number in the range of [**1.00 … 10 000.00**].
    - **Single toy price** – **integer** in the range of [**0 … 40**].
 
-### Output data
+### Output Data
 
 In a single line print on the console:
 
@@ -263,7 +263,7 @@ The program receives **2 numbers (arguments)**, entered by the user on separate 
   * **Inherited money** – a number in the range of [**1.00 … 1 000 000.00**].
   * **The year, until he would have to live in the past (inclusively)** – an integer in the range of [**1801 … 1900**].
 
-### Output data
+### Output Data
 
 **Print** on the console **1 line**. **The sum** must be **formatted** with precision up to **two digits after the decimal point**:
   * If **the money is enough**:
@@ -339,7 +339,7 @@ Write a program, that calculates **for a given period, the count of treated and 
 
 On the first line (argument) there is an integer in the range of [**1 … 1000**] - **The period**, for which you need to make calculations. On the next **lines (arguments)** there are **integers** in the range of [**1 … 10 000**] – the **number of arriving patients**, for the **current day**.  
 
-### Output data
+### Output Data
 
 **Print** on the console **2 lines**:
 
@@ -458,7 +458,7 @@ You can test your solution here: [https://judge.softuni.org/Contests/Practice/In
 
 On the first line (argument) of the input, we have integer **n** (1 ≤ **n** ≤ 1000) – count of numbers. On each next **n line**, we have **one integer** in the range of [**1 … 1000**] – numbers that have to be checked for division without remainder.
 
-### Output data
+### Output Data
 
 Print on the console **3 lines**, each containing a percentage between 0% and 100%, formatted with precision two digits after the decimal point, for example 25.00%, 66.67%, 57.14%.
  * On the **first line** – the percentage of the numbers, which is **divisible by 2**.
@@ -523,7 +523,7 @@ The program receives a **sequence of numbers** (arguments):
  * On the first line (argument): **the count of cargos** that have to be transported – **integer** in the range of [**1 … 1000**].
  * On the next lines, we pass the **weight of the cargo** – **integer** in the range of [**1 … 1000**].
 
-### Output data
+### Output Data
 
 Print on the console **4 lines**, as follow:
  * **Line #1** – **average price per ton for a transported cargo** (formatted with precision two digits after the decimal point).

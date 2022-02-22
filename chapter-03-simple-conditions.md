@@ -822,4 +822,4 @@ function convert(){
 
 The above code takes the **amount** to be converted from the field **`cash-input`** and the **chosen currency** for the result of the field **`currency-options`**. After that with the use of a **conditional statement**, depending on the chosen currency, the amount is divided by the **exchange rate** (which is hard-coded by you in the source code). Finally, we generate a **text message with the result** (rounded to the second digit after the decimal point) and we output the message in the green box **`result`**. Have a go!
 
-If you have problems with the examples above, **watch the video** at the beginning of this chapter or ask for help in the SoftUni official **discussion forum**: https://softuni.bg/forum.
+If you have problems with the examples above, **watch the video** at the beginning of this chapter or ask for help in the SoftUni official **Reddit**: https://www.reddit.com/r/softuni/.
