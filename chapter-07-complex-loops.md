@@ -1,4 +1,4 @@
-# Chapter 7.1. Complex loops
+# Chapter 7.1. Complex Loops
 
 Since we have learned what **`for`** loops are and their function in code, now is the time to take a look at **other loop types**, as well as some **more complex loop constructs**. These will expand our knowledge and help us solve more challenging problems. In particular, we will discuss how to use the following programming constructs:
 
@@ -9,7 +9,7 @@ Since we have learned what **`for`** loops are and their function in code, now i
 
 In the current chapter, we will also take a look at the **`break`** operator and **how** to empty it to **interrupt** a loop.
 
-## Loops with a step
+## Loops with a Step
 
 In the **"Loops (Repetitions)"** chapter we learned how the **`for`** loop works and we already know when and to what purpose to use it. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step** or as it is also known **step**.  
 
@@ -39,7 +39,7 @@ We can solve the problem using the following sequence of actions (algorithm):
 
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/937#0](https://judge.softuni.org/Contests/Practice/Index/937#0).
 
-### Problem: Numbers from N to 1 in reverse
+### Problem: Numbers from N to 1 in Reverse
 
 Write a program that prints the numbers **from n to 1 in reverse** (step -1). For example, **if n = 100**, then the output will be: **100, 99, 98, …, 3, 2, 1**.
 
@@ -57,7 +57,7 @@ We can solve the problem in the following manner:
 
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/937#1](https://judge.softuni.org/Contests/Practice/Index/937#1).
 
-### Problem: Numbers from 1 to 2^n with a for loop
+### Problem: Numbers from 1 to 2^n with a For Loop
 
 In the following example, we will use the standard size 1 step.
 
@@ -249,7 +249,7 @@ We can use the following idea to solve the problem:
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#8](https://judge.softuni.org/Contests/Practice/Index/937#8).
 
-## Infinite loops and the operator break
+## Infinite Loops and The break Operator 
 
 So far, we were introduced to various types of loops, learning what structures they have and how they are applied. Now, we need to understand what an **infinite loop** is, when it occurs, and how we can break it using the **`break`** operator.
 
@@ -299,7 +299,7 @@ Here are some examples of composite numbers:
 <td>We can optimize the algorithm by instead of checking until <code><strong>n-1</strong></code>, checking divisors only until <code><strong>√n</strong></code>. Think of the reasons why this is so.</td>
 </tr></table>
 
-### Problem: check for a prime number. Break operator
+### Problem: Check for a Prime Number. Break Operator
 
 You are tasked to write a function that takes a single input **n** integer and checks if it is prime. This can be implemented by checking if **n** is divisible by any numbers in the range between 2 and √n.
 
@@ -321,7 +321,7 @@ What remains is to add a **condition that checks if the input number is greater 
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#9](https://judge.softuni.org/Contests/Practice/Index/937#9).
 
-### Problem: the break operator in an infinite loop
+### Problem: The break Operator in an Infinite Loop
 
 Write a function, which checks whether a given number **n** is even and if so - print it on the console. An even number can be divided by 2 without a remainder. If the number is invalid, we will print that the current number is not even and the user will need to input a new number.
 
@@ -344,7 +344,7 @@ Here is an example implementation of the idea:
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#10](https://judge.softuni.org/Contests/Practice/Index/937#10).
 
-## Nested Loops and the Break operator
+## Nested Loops and The break Operator
 
 Now since we know what the **nested loops** are and how the **`break`** operator works, it is time to figure out how they work together. To get a better idea, we should write a **function** step by step, that should make all possible combinations of **number pairs**. The first number in the pair is increasing from 1 to 3, while the second one is decreasing from 3 to 1. Our solution must continue running until **`i + j`** **is not** equal to 2 (i.e. **`i = 1`** and **`j = 1`**).
 
@@ -490,7 +490,7 @@ We can solve the problem by using **two nested loops** and some simple calculati
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#14](https://judge.softuni.org/Contests/Practice/Index/937#14).
 
-## What have we learned in this chapter?
+## What Have We Learned from This Chapter?
 
 We can use **`for`** loops with a **step**:
 

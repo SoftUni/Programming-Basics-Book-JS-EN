@@ -37,12 +37,12 @@ The course **"Programing Basics"** finishes with a **practical exam**. There are
    </tr>
 </table>
 
-#### Input
+#### Input Data
 We submit **6 integers** as parameters of the function: **x1, y1, x2, y2, x3, y3.**
 -	All input numbers are in the range [**-1000 … 1000**].
 -	It's guaranteed that **y2 = y3**.
 
-#### Output
+### Output Data
 Print on the console **the triangle area**.
 
 #### Sample Input and Output
@@ -82,7 +82,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#
 
 Construction workers have to transfer a total of **x bricks**. **The workers** are **w** and work simultaneously. They transport the bricks in trolleys, each with a **capacity of m** bricks. Write a program that reads the integers **x**, **w**, and **m**, and calculates **what is the minimum number of courses** the workers need to do to transport the bricks.
 
-#### Input
+#### Input Data
 
 As parameters of the function we give **3 integers**:
 - **The number of bricks x**
@@ -91,7 +91,7 @@ As parameters of the function we give **3 integers**:
 
 All input numbers are integers in the range [**1 … 1000**].
 
-#### Output
+### Output Data
 
 Print on the console **the minimum number of courses** needed to transport the bricks.
 
@@ -139,7 +139,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#
 
 **A horizontal segment** is placed on a horizontal line, set with the **x** coordinates of both ends: **first** and **second**. **A point** is located **on** the same horizontal line and is set with its **x coordinate**. Write a program that checks whether the point is **inside or outside of the segment** and calculates **the distance to the nearest end** of the segment.
 
-#### Input
+#### Input Data
 
 As parameters of the function we give **3 integers**:
 - The first number – **the one end of the segment**.
@@ -148,7 +148,7 @@ As parameters of the function we give **3 integers**:
 
 All inputs are integers in the range [**-1000 … 1000**].
 
-#### Output
+### Output Data
 
 Print the result on the console:
 - On the first line, print "**in**" or "**out**" – whether the point is inside or outside the segment.
@@ -201,13 +201,13 @@ Write a program that checks if a point (with coordinates **x** and **y**) is **i
  
 ![](/assets/chapter-8-1-images/04.Point-in-figure-01.png)
 
-#### Input
+#### Input Data
 
 As parameters of the function, we give **two integers**: **x** and **y**.
 
 All inputs are integers in the range **[-1000 … 1000]**.
 
-#### Output
+### Output Data
 
 Print on the console "**in**" or "**out**" – whether the point is **inside** or **outside** the figure (the outline is inside).
 
@@ -255,13 +255,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#
 
 There are two numbers **d** (day) and **m** (month) that form **a date**. Write a program that prints the date that will be **after 5 days**. For example, 5 days after **28.03** is the date **2.04**. We assume that the months: April, June, September, and November have 30 days, February has 28 days, and the rest have 31 days. Months to be printed with **leading zero** when they contain a single digit (e.g. 01, 08).
 
-#### Input
+#### Input Data
 
 As parameters of the function we give **two integers**:
 -	An integer **d** in the range [**1 … 31**] – day. The number of the day does not exceed the number of days in that month (e.g. 28 for February).
 -	An integer **m** in the range [**1 … 12**] – month. Month 1 is January, month 2 is February, …, month 12 is December. The month may contain a leading zero (e.g. April may be written as 4 or 04).
 
-#### Output
+### Output Data
 
 Print a single line containing the date after 5 days in the format **day.month** on the console. The month must be a 2-digit number with a leading zero, if necessary. The day must be written without leading zero.
 
@@ -310,11 +310,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#
 
 There are **3 integers** given. Write a program that checks if **the sum of two of the numbers is equal to the third one**. For example, if the numbers are **3**, **5**, and **2**, the sum of two of the numbers is equal to the third one: **2 + 3 = 5**.
 
-#### Input
+#### Input Data
 
 As parameters of the function, we give **three integers**. The numbers are in the range [**1 … 1000**].
 
-#### Output
+### Output Data
 
 -	Print a text line on the console containing the solution of the problem in the format "**a + b = c**", where **a**, **b** and **c** are among the three input numbers and  **a ≤ b**.
 -	If the problem has no solution, print “**No**” on the console.
@@ -368,11 +368,11 @@ There are given **n** integers **a1, a2, …, an**. Calculate the sums:
 -	**sum2 = a2 + a5 + a8** + … (the numbers are summed, starting from the second one with step of 3).
 -	**sum3 = a3 + a6 + a9** + … (the numbers are summed, starting from the third one with step of 3).
 
-#### Input
+#### Input Data
 
 As an input of our function, we give the array with size **n+1 (0 ≤ n ≤ 1000)**. The array will contain **the number** of the numbers **n** and **n integers** in the range [**-1000 … 1000**]: **a1, a2, …, an**.
 
-#### Output
+### Output Data
 
 On the console, we should print 3 lines containing the 3 sums in a format such as in the example.
 
@@ -408,11 +408,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#
 
 A series of **n** numbers is given: **a1**, **a2**, **…**, **an**. Calculate **the length of the longest increasing sequence** of consecutive elements in the series of numbers.
 
-#### Input
+#### Input Data
 
 We give an array with size **n+1** (**0 ≤ n ≤ 1000**) as a parameter of the function. The array will contain **the count** of the numbers **n** and **n integers** in the range [**-1000 … 1000**]: **a1**, **a2**, **…**, **an**.
 
-#### Output
+### Output Data
 
 Print on the console one number – **the length** of the longest increasing sequence.
 
@@ -457,11 +457,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#
 
 Write a function that takes as a parameter **n** and draws **a perfect diamond** with size **n** as in the examples below.
 
-#### Input
+#### Input Data
 
 One parameter - an integer **n** in the range [**1 … 1000**].
 
-#### Output
+### Output Data
 
 The diamond should be printed on the console as in the examples below.
 
@@ -512,11 +512,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#
 
 Write a function that takes as a parameter an integer **n** and draws **a rectangle** with size **n with 2 stars in the center** as in the examples below.
 
-#### Input
+#### Input Data
 
 The parameter is an integer **n** in the range [**2 … 1000**].
 
-#### Output
+### Output Data
 
 The rectangle should be printed on the console as in the examples below.
 
@@ -564,11 +564,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#
 
 For given pair of numbers **a** and **b** generate all four number **n1, n2, n3, n4,** for which **a ≤ n1 < n2 < n3 < n4 ≤ b**.
 
-#### Input
+#### Input Data
 
 As parameters of the function, we get two integers **a** and **b** in the range [**0 … 1000**].
 
-#### Output
+### Output Data
 
 The output contains all **numbers in batches of four**, in ascending order, one per line.
 
@@ -619,14 +619,14 @@ Rectangles are defined using the top left and bottom right corners. The followin
 -	**-n ≤ left < right ≤ n**
 -	**-n ≤ top < bottom ≤ n**
 
-#### Input
+#### Input Data
 
 We get two integers as parameters of the function:
 
 - An integer **n** in the range [**1 … 100**] – sets the minimum and maximum coordinates of a peak.
 - An integer **m** in the range [**0 … 50 000**] – sets the minimum area of the generated rectangles
 
-#### Output
+### Output Data
 
 - The described rectangles should be printed on the console in a format such as in the examples below.
 - If there are no rectangles for the specified **n** and **m**, then print "**No**".

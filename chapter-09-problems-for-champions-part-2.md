@@ -154,7 +154,7 @@ is solved in the following way:
 
 Bonny is very pretty, but not as wise, so she will need our help to master the power of Expressions.
 
-## Input Data
+### Input Data
 
 The input data consists of a single text line, passed from the console. It contains a **mathematical expression for calculation**. The line **always ends with the "=" symbol**. The **"="** symbol means **the end of the mathematical expression**.
 

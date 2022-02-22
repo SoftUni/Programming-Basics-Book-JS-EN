@@ -19,7 +19,7 @@ Let's examine a **real exam topic**, the problems it contains and their solution
 
 Write a program that calculates **what is the distance passed by a car (in kilometers)**, if we know **the initial speed** \(km/h\), **the initial time frame** in minutes, then the **speed is increased by 10%**, **the second time frame**, then the **speed is decreased by 5%**, and the **time until the end** of the trip. To calculate the distance, you need to **convert the minutes into hours** \(for example 70 minutes = 1.1666 hours\).
 
-### Input
+### Input Data
 
  **4 arguments** are given as parameters of the function:
 * **The start speed in km/h** – an integer within the range [**1 … 300**].
@@ -27,7 +27,7 @@ Write a program that calculates **what is the distance passed by a car (in kilom
 * **The second time in minutes** – an integer within the range [**1 … 1000**].
 * **The third time in minutes** – an integer within the range [**1 … 1000**].
 
-### Output
+### Output Data
 
 Print a number on the console: **the kilometers passed**, formatted up to the **second digit after the decimal point**.
 
@@ -99,7 +99,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/940#
 
 Haralambi has some **savings** that he wants to use to **change the tiles** on the bathroom floor. The **floor is rectangular**, and the **tiles are triangular**. Write a program that **calculates if his savings will be sufficient**. **The width and length of the floor are submitted**, as well as **one of the sides of the triangle with its height towards it**. We must **calculate how many tiles are needed,** to cover the floor. The **number** of tiles **must be rounded up to the higher integer** and **5 more tiles must be added** as spare tiles. Also, **we have submitted** – **the price per tile** and **the amount paid for the work** of a workman.
 
-### Input
+### Input Data
 
 We submit 7 numbers as parameters of the function:
 
@@ -113,7 +113,7 @@ We submit 7 numbers as parameters of the function:
 
 **All** numbers are real numbers within the range [**0.00 … 5000.00**].
 
-### Output
+### Output Data
 
 In this problem, our currency will be **lv**, which is BGN (Bulgarian lev).
 The following must be printed on the console as a **single line**:
@@ -176,7 +176,7 @@ On holidays, the prices of all flowers are **increased by 15%.** The following *
 
 The price for arranging a bouquet is always **2 lv** (BGN). Write a program that calculates the **price of a bouquet**.
 
-### Input
+### Input Data
 
 The function receives **5 arguments**:
 * **The number** of the puchared **chrysanthemums** – whole number inside the interval of [**0 … 200**].
@@ -185,7 +185,7 @@ The function receives **5 arguments**:
 * **The season** – [**Spring, Summer, Autumn, Winter**].
 * **If the day is a holiday** – [**Y - yes / N - no**].
 
-### Output
+### Output Data
 
 Print on the console 1 number – **the price of flowers**, formatted up to the second digit after the decimal point.
 
@@ -233,13 +233,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/940#
 Write a program that **calculates statistics for grades** in an exam. In the beginning, the program receives the **number of students** who attended the exam and for **each student – their grade**. In the end, the program must **print the percentage of students** that have grades between 2.00 and 2.99, between 3.00 and 3.99, between 4.00 and 4.99, 5.00 or more, as well as the **average grade** of the exam.
 
 
-### Input
+### Input Data
 
 The function receives **a sequence of numbers** (arguments):
  * On the first line (argument) – **the number of students who attended the exam** – an integer within the range [**1 … 1000**].
  * For **each student** on a separate line (argument) – **the grade on the exam** – a real number within the range [**2.00 … 6.00**].
 
-### Output
+### Output Data
 
 Print on the console **5 lines** that hold the following information:
  * "Top students: {percentage of students with a grade of 5.00 or more}%".
@@ -289,11 +289,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/940#
 
 Write a program that reads from the console an **integer `n`** and draws a **Christmas hat** with a width of **4 \* `n` + 1 columns** and a height of **2 \* `n` + 5 rows**, as in the examples below.
 
-### Input
+### Input Data
 
 The parameter of the function is passed **one argument - an integer n** within the range [**3 … 100**]. 
 
-### Output
+### Output Data
 
 Print on the console a **Christmas hat**, exactly like in the examples.
 
@@ -344,14 +344,14 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/940#
 
 Write a program that prints on the console **all combinations of 3 letters** within a specified range, by skipping the combinations **containing a certain letter**. Finally, print the number of printed combinations.
 
-### Input
+### Input Data
 
 The input of the program contains **exactly 3 lines** (arguments):
  * A small letter from the English alphabet – between **'a'** and **'z'**.
  * A small letter from the English alphabet – between the **first letter** and **'z'**.
  * A small letter from the English alphabet – from **'a'** to **'z'** – as the combinations containing this letter are skipped.
 
-### Output
+### Output Data
 
 Print on one line **all combinations** corresponding to the requirements, followed by **their number**, separated by a space.
 

@@ -26,7 +26,7 @@ We also learned the **method `str.repeat(count)`**, which lets you for defined b
 
 Now let's solve some exam problems to consolidate what we have learned and to develop our algorithmic thinking.
 
-## Problem: Drawing a fortress
+## Problem: Drawing a Fortress
 
 Write a program, that reads from the console an **integer n** and draws a **fortress** with a width of **2 * n columns** and height of **n rows**, as in the below-given examples. The left and the right inner columns have a width of **n / 2**.
 
@@ -150,7 +150,7 @@ What is left now is to print on the console the **lower wing**, which is **analo
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/936#1](https://judge.softuni.org/Contests/Practice/Index/936#1).
 
-## Problem: "Stop" sign
+## Problem: "Stop" Sign
 
 Write a program, that takes an **integer n** from the console and draws **a STOP warning sign** with size as shown in the examples below.
 

@@ -1,4 +1,4 @@
-# Chapter 5.2. Loops – Exam problems
+# Chapter 5.2. Loops – Exam Problems
 
 In the previous chapter, we learned how to run a block of commands **more than once**. That's why we introduced a **`for` loop** and reviewed some of its main use cases. The purpose of this chapter is to improve our knowledge, by solving some more complex exam problems with loops, used for entrance exams. For some of them, we will show examples of comprehensive solutions, and for others, we will provide only guidance.
 Before we start, let's take another look at the **`for` loop** construction:
@@ -102,7 +102,7 @@ The program that solves this problem could be divided into three parts:
   * **Processing the input data** – in this case, that means allocating the numbers into groups and calculating the percentage breakdown by groups.
   * **Print the output** – print the histogram in the specified format.
   
-#### Reading the input data
+#### Reading The Input Data
   
 Before we proceed to the actual reading of the input data, we have to **declare the variables**, in which the input data will be stored:
   
@@ -146,7 +146,7 @@ For this loop we have:
    
 After reading the numbers, we have in group **`p1`** two numbers and in group **`p5`** one number. For the rest of the groups, we have **no numbers**. The percentage of each group is calculated by applying the above-mentioned formula.
 
-#### Printing the output
+#### Printing The Output
   
 All we have to do at this point is to print the final results:
 
@@ -157,7 +157,7 @@ All we have to do at this point is to print the final results:
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#0](https://judge.softuni.org/Contests/Practice/Index/934#0).
 
 
-## Problem: the smart Lily
+## Problem: Smart Lilly
 
 Lily is **N years old** already. For each **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n) she receives **toys**, and for the **even** birthdays (2, 4, 6, …, n) she receives **money**. For her **second birthday**, she received **10.00 USD**, and the **amount is increased by 10.00 USD for every subsequent even birthday** (2 -> 10, 4 -> 20, 6 -> 30 etc.). Over the years Lily has secretly saved her money. In the years when Lily received money, her brother each time took 1 USD. Lily **sold the toys**, she got over the years, **each one for P USD** and then added the sum to her savings. With her savings, she wanted to **buy herself a washing machine for X USD**. Write a program, that calculates the **amount of Lily's savings** and is this sum enough **for buying a washing machine**.
 
@@ -208,7 +208,7 @@ In a single line print on the console:
 </tbody>
 </table>    
 
-### Guidance and hints
+### Hints and Guidelines
 
 Similar to the previous problem, the solution could be divided into three parts – **reading** the input data, **processing** the input data and **printing the output**.
 
@@ -252,7 +252,7 @@ To avoid declaring additional variables we can use a template literal - **`${exp
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#1](https://judge.softuni.org/Contests/Practice/Index/934#1).
 
-## Problem: Return to the past
+## Problem: Return to The Past
 
 Ivan is **18 years old** and just received an inheritance, consisting of **X amount of money** and a **time machine**. He decides **to return to the year 1800**, but he is not certain **if the money** would be **enough** for him, to live at that time without working. Write a **program, that calculates** if Ivan **would have enough money**, to live without working **until a given year (inclusively)**. Assuming that, for **every even** (1800, 1802 etc.) year he **would spend 12 000 USD**. For **every odd year** (1801,1803 etc.) he would spend **12 000 + 50 * [the age he would have reached in the given year]**.
 
