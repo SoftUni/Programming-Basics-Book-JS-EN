@@ -12,7 +12,7 @@ The **`for` loops** consist of:
  * **Body** of the loop - contains any block of source code
 
  
-## Exam problems
+## Exam Problems
 
 Let's solve some SoftUni exam problems with loops
 
@@ -31,7 +31,7 @@ Let's solve some SoftUni exam problems with loops
 | 600 … 799   | 680, 600, 799                                   | 3              | p4 = 3 / 20 * 100 = 15.00%      |
 | ≥ 800       | 920, 800                                        | 2              | p5 = 2 / 20 * 100 = 10.00%      |
 
-### Input data
+### Input Data
 
 The first line (argument) of the input is an integer **n** (1 ≤ **n** ≤ 1000), representing the count of lines with numbers that will be passed. On the following **n lines (arguments)** will be given **one integer** within the range of [**1 … 1000**] – based on these numbers the histogram should be calculated.
 
@@ -161,7 +161,7 @@ You can test your solution here: [https://judge.softuni.org/Contests/Practice/In
 
 Lily is **N years old** already. For each **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n) she receives **toys**, and for the **even** birthdays (2, 4, 6, …, n) she receives **money**. For her **second birthday**, she received **10.00 USD**, and the **amount is increased by 10.00 USD for every subsequent even birthday** (2 -> 10, 4 -> 20, 6 -> 30 etc.). Over the years Lily has secretly saved her money. In the years when Lily received money, her brother each time took 1 USD. Lily **sold the toys**, she got over the years, **each one for P USD** and then added the sum to her savings. With her savings, she wanted to **buy herself a washing machine for X USD**. Write a program, that calculates the **amount of Lily's savings** and is this sum enough **for buying a washing machine**.
 
-### Input data
+### Input Data
 
 The program receives **3 numbers** (arguments), entered by the user on separate lines:
 
@@ -256,7 +256,7 @@ You can test your solution here: [https://judge.softuni.org/Contests/Practice/In
 
 Ivan is **18 years old** and just received an inheritance, consisting of **X amount of money** and a **time machine**. He decides **to return to the year 1800**, but he is not certain **if the money** would be **enough** for him, to live at that time without working. Write a **program, that calculates** if Ivan **would have enough money**, to live without working **until a given year (inclusively)**. Assuming that, for **every even** (1800, 1802 etc.) year he **would spend 12 000 USD**. For **every odd year** (1801,1803 etc.) he would spend **12 000 + 50 * [the age he would have reached in the given year]**.
 
-### Input data
+### Input Data
 
 The program receives **2 numbers (arguments)**, entered by the user on separate lines
 
@@ -335,7 +335,7 @@ For a certain period, everyday patients arrive at the hospital for examination. 
 
 Write a program, that calculates **for a given period, the count of treated and untreated patients**.
 
-### Input data
+### Input Data
 
 On the first line (argument) there is an integer in the range of [**1 … 1000**] - **The period**, for which you need to make calculations. On the next **lines (arguments)** there are **integers** in the range of [**1 … 10 000**] – the **number of arriving patients**, for the **current day**.  
 
@@ -454,7 +454,7 @@ You can test your solution here: [https://judge.softuni.org/Contests/Practice/In
 </tbody>
 </table>   
 
-### Input data
+### Input Data
 
 On the first line (argument) of the input, we have integer **n** (1 ≤ **n** ≤ 1000) – count of numbers. On each next **n line**, we have **one integer** in the range of [**1 … 1000**] – numbers that have to be checked for division without remainder.
 
@@ -517,7 +517,7 @@ In this problem, you are responsible for the logistics of various types of cargo
 
 Your task is to calculate **the average price per ton of cargo**, as well as **the percentage of the cargo** transported **by each vehicle**.
 
-### Input data
+### Input Data
 
 The program receives a **sequence of numbers** (arguments):
  * On the first line (argument): **the count of cargos** that have to be transported – **integer** in the range of [**1 … 1000**].

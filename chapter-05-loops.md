@@ -237,7 +237,7 @@ We read the text input **`arg1`**, then create a sum that equals zero and run a 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#8](https://judge.softuni.org/Contests/Practice/Index/933#8).
 
 
-## What did we learn in this chapter?
+## What Have We Learned from This Chapter??
 
 We can repeat a block of code using a **`for` loop**:
 

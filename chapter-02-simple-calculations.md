@@ -442,7 +442,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#6](https://judge.softuni.org/Contests/Practice/Index/927#6).
 
 
-## What have we learned from this chapter?
+## What Have We Learned from This Chapter?
 
 Let's summarize what we learned from this chapter of the book:
 - **Reading an user input**: **`function sum([number1, number2])`**.

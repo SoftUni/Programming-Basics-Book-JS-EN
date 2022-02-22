@@ -252,7 +252,7 @@ This program will return an **error after it's started executing** and even prio
 
 ![](assets/chapter-1-images/01.Hello-js-07.png)
 
-## What Did We Learn in This Chapter?
+## What Have We Learned from This Chapter??
 First of all, we learned **what programming is – issuing commands written in a programming language** which the machine can understand and carry out. We also found out what a **computer program** is – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **JavaScript programming language** and learned how to create **simple console and web programs using Visual Studio Code**. Then we examined JavaScript's program code structure. We looked at printing on the console with the function `console.log()` and starting the program with **[F5]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
 
 Top work! Let's now tackle the **exercises**. You do remember that learning how to program involves a lot of code writing and problem-solving, right? Let's do just that and put what we've learned into practice.

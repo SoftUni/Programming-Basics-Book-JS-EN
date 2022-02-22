@@ -424,7 +424,7 @@ We can solve the task with **`switch-case`** conditions with multiple labels in 
 Thes your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#9](https://judge.softuni.org/Contests/Practice/Index/931#9).
 
 
-## What have we learned from this chapter?
+## What Have We Learned from This Chapter?
 
 Let's look back on what new constructions and programming techniques we have learned in this chapter:
 
