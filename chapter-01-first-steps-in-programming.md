@@ -56,7 +56,7 @@ The other popular **JavaScript interpreter** is **NodeJS**. You can imagine it's
 As we already mentioned, a program is a **series of commands**, in other words, it describes a series of calculations, checks, iterations and numerous other operations, which aim at producing a result.
 The program is written in text format and the text is called **source code**. It's saved in a file with extension **.js** (**main.js**, for instance), and then it can be executed on your **browser** or on the **console** with the help of **NodeJS**. In a moment we'll have a look at both options.
 
-### Computer programs – Examples
+### Computer programs – Problems
 Let's start with a very basic example of a short **JavaScript program** which we'll run directly in your web browser (it supports JS without the need to install additional software).
 
 #### Problem: a Program, Which Notifies the User
@@ -84,8 +84,8 @@ In the example above we make the computer display notifications one after anothe
 ![](/assets/js-alert-10-times-loop.png)
 We will learn how iterations (loops) in programming work in the chapter "[Loops](chapter-05-loops.md)", but for now, let's assume that they just repeat a command many times.
 
-#### Problem: Program, Which Converts Bulgarian Levs into Euro
-Let's have a look at another simple program that asks the user for an amount of money in levs (whole number), makes sure that what's been entered is a number, converts it into euro (by dividing it by the euro exchange rate) and prints the result. This is a program of 3 consecutive commands. 
+#### Problem: Program, Which Converts BGN (Bulgarian Levs) into Euro
+Let's have a look at another simple program that asks the user for an amount of money in levs (Bulgaria's currency)(whole number), makes sure that what's been entered is a number, converts it into euro (by dividing it by the euro exchange rate) and prints the result. This is a program of 3 consecutive commands. 
 ```JavaScript
 let myMoney = prompt("How much money do you want to convert:");
 
@@ -99,7 +99,7 @@ If we run this program in the browser's JavaScript console, we'll receive someth
 
 We looked at **three examples of computer programs**: single command, series of commands in a loop and a sequence of four commands. Let's now move on to the more exciting bit: writing our own programs in **JavaScript** and executing them outside the browser.
 
-## How do we Write a Console Program?
+## How do We Write a Console Program?
 Let's go through the **steps for creating and executing a computer program** which uses a text console (window for entering and receiving text) to read and write its data. Such programs are known as **console-based**. Before we do that though, we need to **install and set up our development environment**, where we'll write and execute the **JavaScript** programs from this book and the exercises that go along with it.
 
 ## Development Environment (IDE)
@@ -390,7 +390,7 @@ Graphical (GUI) applications have a **visual user interface**, directly on your 
 ## Exercises: Web Applications
 We will now build a basic **web application** and after that a simple graphical application, in order to have a look at what we will be able to create once we progress with programming and software development. We are not going to examine the techniques and constructions used in much detail. Rather, we are just going to have a peek at the arrangement and functionality of what we've created. After we progress with our knowledge, we will be able to develop bigger and more complex software applications and systems. We hope that the examples given below will **boost your interest**, rather than make you give up.
 
-## Problem: Web application Numbers Summator'
+## Problem: Web Application Numbers Summator'
 Write a **Web application** which **calculates the sum of two numbers**. 
 
 After the numbers are entered in the first text fields, and the button **[Calculate]** is clicked, calculate their sum and display the result in the third text field. For our application, we'll use **HTML technology** which in combination with the **JavaScript programming language**, allows for the creation of **web applications and sites**, in the **Visual Studio Code** programming environment.
