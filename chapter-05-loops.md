@@ -237,7 +237,7 @@ We read the text input **`arg1`**, then create a sum that equals zero and run a 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#8](https://judge.softuni.org/Contests/Practice/Index/933#8).
 
 
-## What Have We Learned from This Chapter??
+## What Have We Learned from This Chapter?
 
 We can repeat a block of code using a **`for` loop**:
 
@@ -324,11 +324,11 @@ Read the numbers from the input **in pairs**. For each pair calculate its **sum*
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#11](https://judge.softuni.org/Contests/Practice/Index/933#11).
 
-## Lab: Graphics and Web applications
+## Lab: Graphics and Web Applications
 
 In this chapter, we learned about **loops** as a programming construction that allows us to repeat a particular action or a group of actions multiple times. Now let's play with them. To do that, we will draw several figures, which consist of a large number of repetitive graphic elements, and this time we will not do it on the console, but in a graphical environment, using "**turtle graphics**". It will be interesting. And it's not complicated at all. Try it!
 
-### Problem: Drawing with a turtle – a graphical application (GUI)
+### Problem: Drawing with a Turtle – a Graphical Application (GUI)
 
 The purpose of the next exercise is to play with a **drawing library**, also known as **turtle graphics**. We will build a graphical application in which we will **draw different shapes**, moving our **“turtle”** on the screen through commands like “move 100 positions forward”, “turn 30 degrees to the right”, “move 50 positions more forward”. The application will look something like this:
 
@@ -357,7 +357,7 @@ All the necessary resources will be loaded automatically when the file is starte
 
 If for some reason you don't have permanent access to the Internet, you can use the second option:
 
-+ **Loading resources locally**
++ **Loading Resources Locally**
 
 You have to download all the necessary files and change a few lines in the HTML file. Start by creating a folder called **Turtle-Demo** and create the main **HTML file** and a subfolder for the necessary resources in it:
 
@@ -545,7 +545,7 @@ If you want, you can change the animation speed and the contour color by adding 
 $('#turtle').css('turtleSpeed', '6').pen('red', '5');
 ```
 
-### Problem: * Draw a Hexagon with the Turtle
+### Problem: * Draw a Hexagon with The Turtle
 
 Add a [**Hexagon**] button that draws a regular hexagon:
 
@@ -557,7 +557,7 @@ Repeat 6 times the following in a loop:
 * 60 degrees rotation.
 * Move forward 90 steps.
 
-### Problem: * Draw a Star with the Turtle
+### Problem: * Draw a Star with The Turtle
 
 Add a [**Star**] button that draws a star with 5 beams (**pentagram**), as shown in the figure below:
 
@@ -571,7 +571,7 @@ Repeat 5 times the following in a loop:
 * Move forward 180 steps.
 * 144 degrees rotation.
 
-### Problem: * Draw a Spiral with the Turtle
+### Problem: * Draw a Spiral with The Turtle
 
 Add a [**Spiral**] button that draws a spiral with 30 beams, as shown in the figure below:
 
@@ -581,7 +581,7 @@ Add a [**Spiral**] button that draws a spiral with 30 beams, as shown in the fig
 
 Draw in a loop by moving forward and rotating. In each step, increase gradually the length of the forward step with 5 and rotate 60 degrees.
 
-### Problem: * Draw a Sun with the Turtle
+### Problem: * Draw a Sun with The Turtle
 
 Add a [**Sun**] button that draws a sun with 36 beams, as shown in the figure below:
 
@@ -593,7 +593,7 @@ Repeat the following 36 times in a loop:
 * Move forward 200 steps.
 * 170 degrees rotation.
 
-### Problem: * Draw a Spiral Triangles with the Turtle
+### Problem: * Draw a Spiral Triangles with The Turtle
 
 Add a [**Triangle**] button that draws three triangles with 22 beams each, as shown in the figure below:
 
