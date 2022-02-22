@@ -340,7 +340,7 @@ Try and **improve your solution** to avoid repeating the same command so many ti
 ### Problem: Rectangle Area
 Write a **JavaScript program** which **receives two numbers a and b, then calculates and prints** the area of a rectangle with sides **a** and **b**.
 
-### Sample input and output
+### Sample Input and Output
 | a | b | area |
 | :---: | :---: | :---: |
 | 2 | 7 |  14  |
@@ -362,7 +362,7 @@ Test your solution here:
 ### \* Problem: Square of Stars
 Write a **JavaScript** console program which **receives a whole positive number N** and **prints** a square of N stars on the console, like in the examples below.
 
-### Sample input and output
+### Sample Input and Output
 | Input  |    Output   	| Input  |    Output   	| Input  |    Output   	| 
 |-----|-----------|-----|-----------|-----|----------|
 |  3  	|<code>\*\*\*</code><br><code>\*&nbsp;\*</code><br><code>\*\*\*</code>|  4  |<code>\*\*\*\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*\*\*\*</code>| 5  	|<code>\*\*\*\*\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*\*\*\*\*</code>|

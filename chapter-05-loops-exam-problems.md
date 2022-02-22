@@ -39,7 +39,7 @@ The first line (argument) of the input is an integer **n** (1 ≤ **n** ≤ 1000
 
 Print on the console **histogram that consists of 5 lines**, each of them containing a number between 0% and 100%, formatted with precision two digits after the decimal point (for example 25.00%, 66.67%, 57.14%).
 
-### Sample input and output
+### Sample Input and Output
 
 <table>
 <thead>
@@ -179,7 +179,7 @@ In a single line print on the console:
     * "**No! {M}**" – where **M** is the insufficiency amount
   * The numbers **N** and **M** must be **formatted with precision two digits after the decimal point**.
 
-### Sample input and output
+### Sample Input and Output
 
 <table>
 <thead>
@@ -271,7 +271,7 @@ The program receives **2 numbers (arguments)**, entered by the user on separate 
   *	If **the money is not enough**:
     * „**He will need {M} dollars to survive.**“ – where **M** is the **insufficient** amount of money.
 
-### Sample input and output
+### Sample Input and Output
 
 <table>
 <thead>
@@ -346,7 +346,7 @@ On the first line (argument) there is an integer in the range of [**1 … 1000**
 * On the **first line**: "**Treated patients: {count of treated patients}.**"
 * On the **second line**: "**Untreated patients: {count of untreated patients}.**"
 
-### Sample input and output
+### Sample Input and Output
 
 <table>
 <thead>
@@ -465,7 +465,7 @@ Print on the console **3 lines**, each containing a percentage between 0% and 10
  * On the **second line** – the percentage of the numbers, which is **divisible by 3**.
  * On the **third line** – the percentage of the numbers, which is **divisible by 4**.
 
-### Sample input and output
+### Sample Input and Output
 
 <table>
 <thead>
@@ -531,7 +531,7 @@ Print on the console **4 lines**, as follow:
  * **Line #3** – a **percentage** of the cargo, transported by **truck** (between 0.00% and 100.00%).
  * **Line #4** – a **percentage** of the cargo, transported by **train** (between 0.00% and 100.00%).
  
-### Sample input and output
+### Sample Input and Output
 
 <table>
 <thead>

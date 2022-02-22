@@ -38,7 +38,7 @@ The program input consists one element (argument) - **integer n** within the ran
 
 Print on the console **n** text lines, depicting the **fortress**, just as in the examples below.
 
-### Sample input and output
+### Sample Input and Output
 
 |Input|Output|Input|Output|
 |----|----|----|----|
@@ -111,7 +111,7 @@ The input consists of one element (argument) - **integer n** in the range [**3 â
 
 Print on the console **2 * (n - 2) + 1**  text rows, representing the **butterfly**, exactly as shown in the examples.
 
-### Sample input and output
+### Sample Input and Output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -162,7 +162,7 @@ The input consists of one element (argument) - **integer n** in the range [**3 â
 
 Print on the console text lines, representing **the STOP warning sign**, just as in the examples.
 
-### Sample input and output
+### Sample Input and Output
 
 |Input|Output|Input|Output|
 |----|----|----|----|
@@ -222,7 +222,7 @@ The input is **an odd integer n** (argument) within the range [**3 â€¦ 79**].
 ### Output data
 Print on the console a vertical arrow, in which "**`#`**" (hash sign) marks the outline of the arrow, and "**`.`**" - the rest.
 
-### Sample input and output
+### Sample Input and Output
 
 |Input|Output|Input|Output|
 |----|----|----|----|
@@ -290,7 +290,7 @@ The input consists one element (argument) - **integer n** within range [**2..42*
 
 Print on the console **axe**, as in the examples.
 
-### Sample input and output
+### Sample Input and Output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
