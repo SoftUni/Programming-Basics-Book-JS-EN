@@ -4,7 +4,7 @@
 
 In this chapter, we will introduce you to **functions** and you will learn their **definition**, as well as what their **base concepts** are while working with them. You will learn why it's a **good practice** to use them, how to **define** and **declare** them. We will also introduce you to the **parameters** and **return value of a function**, as well as how to use that return value. In the end, we will peek at **best practices** when using functions.
 
-## What is "function"?
+## What is a "Function"?
 
 Until this moment, we have found out that while **writing** a programming code for an exercise, **separating** the exercise into different **parts**, favors us a lot. Every part is responsible for a **corresponding action** and by doing so it's **easier** to solve the problem, and the **readability** and the debugging of the code are better.
 
@@ -12,7 +12,7 @@ A block of code designed to perform a particular task and which we have separate
 
 One **function** can be **called** that many times, as we think is needed for solving a problem. That **saves** us from repeating the same code and **reduces** the opportunities of making a mistake while editing the repeated code. 
 
-### Simple functions
+### Simple Functions
 
 Simple functions are responsible for running a specific **action**, that will **help** us solve a problem. Those actions can be printing a string on the console, doing a conditional statement, doing a loop, etc.
 
@@ -24,7 +24,7 @@ This **function** has the task to print a header, that is a series of the symbol
 
 The **body** of the function consists of **programming code**, which is located between the curly brackets **`{`** and **`}`**. Between them, we place code, that will solve our problem, described by the name of the function.
 
-### Why should we use functions?
+### Why Should We Use Functions?
 
 Up to this moment, we have found out that, functions help us with **separating long exercises into smaller parts**, which leads to a **simple solution** of the corresponding problem. This makes our program, not just well structured, **easy readable** but also more understandable.
 
@@ -32,7 +32,7 @@ Using functions we **escape repeating** of programming code. **Repeating** code 
 
 Functions offer us a **good method** to use **code several times**. With solving more and more exercises, we will come to the conclusion that using already defined functions saves us a lot of time and effort.
 
-## Declaring functions
+## Declaring Functions
 
 In JavaScript language we can **define** functions everywhere, using the same way we define variables. Declaring represents the **registration of a function** inside a program and to be recognized inside it.
 
@@ -40,7 +40,7 @@ JavaScript isn't **strongly typed** language. That's why when we **declare a fun
 
 There are two ways, to declare a function in JavaScript - **function declaration** and **Function expression**.
 
-### Function declaration
+### Function Declaration
 
 With the next example, we will take a look at the required elements inside a function, using **function declaration**.
 
@@ -53,7 +53,7 @@ With the next example, we will take a look at the required elements inside a fun
 
 When declaring functions it is important to follow the **sequence** of the fundamental elements - first **Keyword function** then **Name of function**, **List of parameters** surrounded by round brackets **`()`**, **Body of the function** surrounded by curly brackets **`{}`**.
 
-### Function expression
+### Function Expression
 
 With the next example, we will take a look at the required elements in the declaration of an **expression function**. It is similar to **function declaration** which we have already viewed and it can be said that it's a **set** of **declaring a variable** and **declaring a declaration function**.
 
@@ -65,13 +65,13 @@ With the next example, we will take a look at the required elements in the decla
 
 When we declare a variable in the body of a function (using the keyword **`let`** or **`const`**). We call it a **local** variable for the function. The scope in which it exists and can be used is from the row it is defined to the end of the closing bracket **`}`** of the function. That scope is called **variable scope**.
 
-### Function declaration or Function expression
+### Function Declaration or Function Expression
 
 The difference between **Function declaration** and **Function expression** is very simple. All functions declared by **function declaration** are loaded in the memory of a program before it is started. However, when we are using **function expression** the program will know and run the function only when it has come to it.
 
 In theory, this means that we can **call a function** that is declared with **function declaration** even before it was declared in the previous rows. If we try to use **function expression** the program will **throw an error** that the function is not declared yet.
 
-## Invoking a function
+## Invoking a Function
 Invoking a function is a **start of the execution of a code** that is located inside the body of a function. We call it by typing the **name** of the function followed by **`()`** and **`;`** to end the row. Here is an example:
 
 ![](assets/chapter-10-images/03.Invoking-methods-01.png)
@@ -121,11 +121,11 @@ In the end, we will **invoke** **`printReceipt`** from the global scope of our p
 
 The program with a total of four functions that call one another is ready and we can **run and debug it**. After that, we will send it for test in the Judge system: [https://judge.softuni.org/Contests/Practice/Index/943#0](https://judge.softuni.org/Contests/Practice/Index/943#0).
 
-## Functions with parameters
+## Functions with Parameters
 
 When we are dealing with a given task the function we are using needs **additional information** which the result depends on. Exactly this information are the **parameters of the functions** and the behavior of a program depends on.
 
-### Using parameters inside a function
+### Using Parameters Inside a Function
 
 If the function requires **input data**, it is passed inside **`()`** brackets. The order of **function parameters** must match the order of the **function arguments** when declaring and invoking the function. Parameters can be **zero, one, or more**. When declaring the parameters we divide them with a comma **`,`**.
 
@@ -153,7 +153,7 @@ Let's look at another example:
 
 In this example, we call the function **`printNumbers(...)`** but this time we give only 1 parameter instead of the **declared** 2 parameters. All parameters that are not **set as values** will automatically get **`undefined`** values. In our case the variable.
 
-### Problem: Symbol of integer
+### Problem: Symbol of Integer
 
 Create a function that checks if a number is a positive or negative number.
 
@@ -182,7 +182,7 @@ Our next step is to call the function we have created:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#1](https://judge.softuni.org/Contests/Practice/Index/943#1).
 
 
-### Optional parameters
+### Optional Parameters
 
 **JavaScript** programming language supports **optional** parameters. They allow **skipping** of parameters when calling a function. We declare them by **providing default values** in the description of the parameter.
 
@@ -196,7 +196,7 @@ Our next example shows the use of optional parameters:
 
 When we are not **setting value** for the parameter, he will **get the value** that we have given him when declaring the function.
 
-### Problem: Print of triangle
+### Problem: Print of Triangle
 
 Create a function that will create a triangle as shown in the example.
 
@@ -230,7 +230,7 @@ In the end, we will print the **bottom part** from the triangle but this time wi
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#2](https://judge.softuni.org/Contests/Practice/Index/943#2).
 
-### Problem: draw a filled square.
+### Problem: Draw a Filled Square.
 
 Draw a square with side **`n`**, as shown in the example.
 
@@ -259,11 +259,11 @@ In the end, we invoke the declared functions to draw the whole square:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#3](https://judge.softuni.org/Contests/Practice/Index/943#3).
 
 
-## Return result from a function
+## Return Result From a Function
 
 Up to this point, we have viewed functions that do a specific task. For example printing a text, number or a figure on the console. There is another type of function that can **return** a **result** from their task. We can return a result of the multiplication of two numbers. We will look at this type of function in this part.
 
-### Operator return
+### Operator Return
 To get a result from a function we use the operator **`return`**. He must be **used inside the body** of a function. The **`return`** will tell the program to **stop the execution** of the function and **return** a corresponding value. This value is defined after the **`return`** word. 
 
 In the example underneath we have a **function** that gets the first and last name as **parameters**. Then it combines them and returns the full name.
@@ -276,7 +276,7 @@ In the example below, we have a function that compares 2 numbers and **returns**
 
 ![](assets/chapter-10-images/11.Return-operator-02.png)
 
-#### Code after a return is unreachable
+#### Code After a return is Unreachable
 
 When the **return** operator is located inside a conditional statement such as **`if`**, after the statement in the same block, we must **not** have rows with code because Visual Studio Code will display a warning telling us that it had found an **unreachable** code.
 
@@ -289,7 +289,7 @@ The operator **`return`** can be also used without a **specific value**. In this
 with the phrase <b><i>type</i> <code>return; return;</code> <i>and let's go home</i></b>”, to explain that the logic of the program is wrongly typed.</td></tr>
 </table>
 
-### Using the return value of a function
+### Using The return Value of a Function
 
 After a function is executed and has returned a value, we can use the value in several ways.
 
@@ -305,7 +305,7 @@ The third is to **pass** the result from one function to **another function**:
 
 ![](assets/chapter-10-images/12.Return-value-03.png)
 
-### Problem: Find the area of a triangle
+### Problem: Find The Area of a Triangle
 
 Write a function that finds the area of a triangle by given side and altitude and then returns the area.
 
@@ -330,7 +330,7 @@ Our next step is to **call the new** function and **record the returned value in
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#4](https://judge.softuni.org/Contests/Practice/Index/943#4).
 
 
-### Problem: Power of a number
+### Problem: Power of a Number
 
 Write a function that calculates and returns the result the power of a number. 
 
@@ -353,7 +353,7 @@ After we have done our calculations, all we are left to do is calling the functi
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#5](https://judge.softuni.org/Contests/Practice/Index/943#5).
 
 
-### Functions, returning multiple values 
+### Functions, Returning Multiple Values 
 
 In practice, there are some cases in which we need a function that returns more than one element as a result. In the **JavaScript** language, there are 2 ways of doing that. They are with **destruction** and by **returning an object**.
 
@@ -383,7 +383,7 @@ Here the variable  **`personNames`** will get all the returns values. By calling
 
 ![](assets/chapter-10-images/15.Return-multiple-values-05.png)
 
-## Variant of function
+## Variants of a function
 
 In many programming languages, one function can be declared as **different variants** with the same name but different parameters. This is known as **method overloading**. For good or bad **JavaScript**, language doesn't support this.
 
@@ -395,16 +395,16 @@ Let's take a look at this example:
 
 ![](assets/chapter-10-images/19.Local-functions-01.png)
 
-### What is a local function?
+### What is a Local Function?
 
 We see that in the previous example, **`solve()`** function has **another** declared function **`sum()`**. This **nested** function is called a **local** function. Local functions can be declared in every other function.
 
-### Why should we use local functions?
+### Why Should We Use Local Functions?
 
 With time and practice we will find out that when we type code, we often need functions, which
 we might need only once or another function is becoming too long. We have already said that when one function has too many rows of code it is very hard to read, support, and understand. In those cases, we can declare another function which we will use even only once. This helps the code to be cleaner and reduces the chance of making a mistake in the programming code.
 
-### Declaring local functions
+### Declaring Local Functions
 
 Let's look again at the previous example
 
@@ -418,11 +418,11 @@ Local functions have access to variables, which are declared in the same or uppe
 
 This feature of nested functions makes them convenient helpers when solving a task. They save time and code by not having to pass values to parameters and variables.
 
-## Naming functions. Best practices for working with functions.
+## Naming Functions. Best Practices For Working With Functions.
 
 In this part, we will take a look at some of the **best practices** for writing functions that are connected to an arrangement of a code and its structure. 
 
-### Naming functions
+### Naming Functions
 
 When we name a function it's recommended to use **logical names**. This is good because every function must **correspond** to a specific part of our problem. We must take into consideration the **task** which the function will do. This is why it's a good practice **for the name to describes the purpose of the function**.
 
@@ -447,7 +447,7 @@ Some examples of **badly** named functions:
 
 If we can't come up with a good name it's probably because our function does more than one job or it doesn't have a clear task. We must think of a way to divide the function into different functions.
 
-### Naming parameters of functions
+### Naming Parameters of Functions
 
 When naming **parameters** of functions, the same rules of naming functions apply to them.
 The only difference is that the name of the parameters should be nouns or a set of a noun and an adjective. It's a **good practice** that the name of the parameter should **indicate** what type of unit is used when working with it.
@@ -468,14 +468,14 @@ Some examples of **incorrectly** named parameters:
 *   **`LastName`**
 *   **`last_name`**
 
-### Good practices for working with functions
+### Good Practices for Working With Functions
 
 We must keep in mind that a function must do **only one** specific **task**. If this can't be achieved, then we must come up with a way to **divide** the functionality into different parts.
 As we have already said the name must be clear and descriptive. Another **good practice** is to **avoid** functions that are longer than our screen. If this happens it's recommended to **split** the function into smaller ones as shown in the example below.
 
 ![](assets/chapter-10-images/20.Good-practice-01.png)
 
-### Structure and formatting of the code
+### Structure and Formatting of The Code
 
 When writing functions we must keep in mind to follow a correct **indication** (move more inward blocks of the code).
 
@@ -506,7 +506,7 @@ In this chapter we have learned base concepts about working with functions:
 * Studied **good practices** for working with functions, how to name them and their parameters and how to format our code and others.
 
 
-## Exercises
+## Problems
 
 To improve what we have learned we will solve a few exercises. In them, it is required to write functions with specific functionality and then call it with values as shown in the example.
 
@@ -660,7 +660,7 @@ In **`processMessage()`** read the type of message from the console and accordin
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#12](https://judge.softuni.org/Contests/Practice/Index/943#12).
 
 
-### Problem: Numbers to Words
+### Problem: \* Numbers to Words
 
 Write a function **`letterize(number)`**, which reads an integer and prints it in words in English according to the conditions below:
 * Print in words the hundreds, the tens, and the ones (and the eventual minus) according to the rules of the English language.
@@ -694,7 +694,7 @@ The third special case is when the number formed by the last two digits of the i
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#13](https://judge.softuni.org/Contests/Practice/Index/943#13).
 
 
-### Problem: String Encryption
+### Problem: \* String Encryption
 
 Write a function **`encrypt(char letter)`**, which encrypts a given letter in the following way:
 * It takes the first and the last digit from the ASCII code of the letter and concatenates them into a string, which will represent the result. 
