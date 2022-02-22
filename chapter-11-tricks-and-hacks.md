@@ -128,7 +128,7 @@ If you feel confident enough about your shortcut skills, open **Visual Studio Co
 
 Do not hesitate, apply what you have learned now and use the keyboard shortcuts that you think will help you in writing your programs!
 
-## Code Snippets (code snippets)
+## Code Snippets (Code Snippets)
 
 In **Visual Studio Code** there are the so-called **code snippets** (code snippets), which write a block of code by using a code template. This useful option is not enabled by default. You have to activate it yourself from [**File -> Preferences -> Settings**] (or just **[Ctrl + Comma]**), which opens window called **User Settings**. These are your personal settings, that you can easily change. Just add the following line between the opening and closing curly braces on the right side of the screen:
 
@@ -205,7 +205,7 @@ From the **Debug** window, which opens with [**View -> Debug**] or with the keyb
 
 ![](assets/chapter-11-images/02.Debugger-04.png) 
 
-## A guide to tricks
+## A Guide for Tricks
 
 In this section, we will briefly show **tricks and techniques** of the programming with the **JavaScript** language, some of which are already mentioned in this book, which will be very useful, if you take a programming exam for beginners.
 
@@ -249,7 +249,7 @@ console.log(Math.floor(numberToTrunc));
 // This will print on the console 2
 ```
 
-### Use === instead of ==, and !== insted of !=
+### Use === Instead of ==, and !== Insted of !=
 
 The operators **`==`** and **`!=`** make **automatic conversion** of the compared value or variable, while the operators **`===`** and **`!==`** does not make such a conversion and if both values are not of the same type - the result is **`false`**. They (**`==`** and **`!=`**) make a comparison of **value and type**, which is more accurate and even faster. Let's look at the following example to clarify what is meant by data **type**:
 
@@ -347,6 +347,6 @@ if ("") {}          //false
 
 It is not necessary to know these values by heart at this stage, but only to remember that there are so-called **Truthy** and **Falsy** values. Over time, we will get used to how to use them properly and how they help us shorten our code. 
 
-## What We Learned in This Chapter?
+## What Have We Learned from This Chapter?
 
 In the current chapter we learned how to **correctly** **format** and **name** the elements of our code, some **shortcuts** for work in Visual Studio Code, some **code snippets** and how to **debug code**.
