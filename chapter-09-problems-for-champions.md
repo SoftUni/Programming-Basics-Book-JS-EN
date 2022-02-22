@@ -177,7 +177,7 @@ What remains is to do the calculation that will give us the magical weight of a 
 
 ![](/assets/chapter-9-1-images/02.Magic-dates-06.png)
 
-#### Printing the Output
+#### Printing The Output
 
 Once we have the weight calculated for a given date, we need **to check and see if it matches the magical weight we want**, to know if it should be printed or not. Checking can be done using a standard **`if`** block, taking care to print the date in the correct format. Fortunately, we already have each one of the digits that we need to print **`d1`** until **`d8`**. Here we have to be careful with the data types. Since the concatenation of strings and the summation are done by the same operator, we have to convert numbers to strings or start the concatenation with an empty string: 
 

@@ -49,7 +49,7 @@ We can split the solution of the problem into 3 parts:
 * **Processing the input data** – using nested loops to iterate through every possible symbol for each of the five password symbols.
 * **Printing the output** – printing every "dumb" password that meets the requirements.
 
-#### Reading the Input Data
+#### Reading The Input Data
 
 For **reading** of **input** data we will declare two constants **`const`**: **`n`** and **`l`** and also we will declare a variable `solution` in which we will store a **string** with the result.
 

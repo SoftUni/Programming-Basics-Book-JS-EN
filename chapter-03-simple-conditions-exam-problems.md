@@ -86,7 +86,7 @@ If the condition of the variable **is not true** (returns **`false`**), the next
 
 If this condition **does not return `true`** as a result, we have to store **a value**, equal to **the result** of **the multiplication** of **the distance** by the train **rate** to the price variable in the **`else`** body. This is done because the train is **the cheapest** transport for the given distance. 
 
-#### Printing The Output Data
+#### Printing The Output
 
 After we have checked the distance conditions and we have **calculated the price of the cheapest transport**, we have to **print it**. The task **does not** specify how to format the result, therefore, we just print **the variable**:
 
