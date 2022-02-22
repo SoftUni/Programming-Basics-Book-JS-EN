@@ -307,7 +307,7 @@ Let's now **start the program** and check whether the result is what we're expec
 ### Testing in The Judge System
 Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/926#2](https://judge.softuni.org/Contests/Practice/Index/926#2).
-Did you receive 100 points? If not, think of what you may be missing. Then try and think of a **cleverer** way to write this program, so as to avoid repeating the same command so many times. Look up information for "**[for loop JavaScript](https://www.google.bg/search?q=for+loop+JavaScript)**" on the Internet.
+Did you receive 100 points? If not, think of what you may be missing. Then try and think of a **cleverer** way to write this program, so as to avoid repeating the same command so many times. Look up information for "**[for loop JavaScript](https://www.google.com/search?q=for+loop+JavaScript)**" on the Internet.
 
 ### Problem: Triangle of 55 stars
 Write a **JavaScript** console program that **prints a triangle of 55 stars** on 10 lines:
