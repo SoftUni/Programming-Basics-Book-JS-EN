@@ -28,7 +28,7 @@ The free book "**Programming Basics with JavaScript**" introduces the readers to
 * [11. Tricks and Hacks](chapter-11-tricks-and-hacks.md)
 * [Conclusion](chapter-12-conclusion.md)
 
-## Download the Book
+## Download The Book
 
 Download the book "**Programming Basics with JavaScript**" in **PDF** format:
 * <a href="#">TODO</a>
