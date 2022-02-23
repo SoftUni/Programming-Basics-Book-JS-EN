@@ -84,7 +84,7 @@ A Function can be invoked from the **body of another function** which is **not**
 
 ![](assets/chapter-10-images/03.Invoking-methods-03.png)
 
-A Function can be called from **its own body**. This is called **recursion** and you can find more about it on [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) or google it.
+A Function can be called from **its own body**. This is called **recursion** and you can find more about it on [Wikipedia](https://en.wikipedia.org/wiki/Recursion_(computer_science)) or google it.
 
 ### Problem: empty cash receipt
 

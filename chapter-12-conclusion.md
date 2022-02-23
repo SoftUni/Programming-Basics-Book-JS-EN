@@ -91,7 +91,6 @@ Here are some recommended **resources** that will be useful for your development
 * https://www.facebook.com/SoftwareUniversity/ - official **Facebook page of SoftUni**. By it, you will learn about new courses, seminars, and events related to programming and software development.
 * https://introprogramming.info - official website of the **books "Programming Basics"** with **C#** and **Java** by Dr. Svetlin Nakov and his team. The books examine in-depth programming basics, basic data structures and algorithms, object-oriented programming, and other basic skills, and are an excellent continuation for reading after the current book. However, **besides reading, you need to do intense code writing**, do not forget that!
 * https://stackoverflow.com - ***Stack Overflow** is one of the **widest** discussion forums for programmers worldwide, where you will find assistance for any possible question in the world of programming. If you are fluent in English, look up at StackOverflow and ask your questions there.
-* https://fb.com/groups/bg.developers - "**Programing Bulgaria @ Facebook**" group is one of the biggest Bulgarian communities for programmers related to software development on Facebook. 
 * https://www.meetup.com/find/tech/ - search **tech meetups** around your town and enter the community that you like. More of the tech meetups are free and the newcomers are welcome.
 
 
