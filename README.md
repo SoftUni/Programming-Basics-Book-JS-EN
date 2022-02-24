@@ -12,7 +12,7 @@ The free book "**Programming Basics with JavaScript**" introduces the readers to
 * [3.2. Simple Conditions – Exam Problems](chapter-03-simple-conditions-exam-problems.md)
 * [4.1. More Complex Conditions](chapter-04-complex-conditions.md)
 * [4.2. More Complex Conditions – Exam Problems](chapter-04-complex-conditions-exam-problems.md)
-* [5.1. Repetitions (Loops)](chapter-05-loops.md)
+* [5.1. Loops](chapter-05-loops.md)
 * [5.2. Loops – Exam Problems](chapter-05-loops-exam-problems.md)
 * [6.1. Nested Loops](chapter-06-nested-loops.md)
 * [6.2. Nested Loops – Exam Problems](chapter-06-nested-loops-exam-problems.md)
