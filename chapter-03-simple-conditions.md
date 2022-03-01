@@ -68,13 +68,13 @@ if (Boolean condition) {
 }
 ```
 
-### Problem: Excellent Grade
+### Problem: Excellent Result
 
 We take the grade as an input argument to our function and upon evaluation, we check if the input value is an excellent grade (**`≥ 5.50`**).
 
 ![](assets/chapter-3-1-images/01.ЕxcellentResult-01.png)
 
-Test the example code locally. Try entering different grades, for example, **4.75**, **5.49**, **5.50** and **6.00**. For grades **less than 5.50** the program will not give any output, however for grades of **5.50 or greater**, the output will be "**Excellent!**". The function is called by simply writing its name and filling the input value in the parenthesis:
+Test the example code locally. Try entering different grades, for example, **4.75**, **5.49**, **5.50**, and **6.00**. For grades **less than 5.50** the program will not give any output, however for grades of **5.50 or greater**, the output will be "**Excellent!**". The function is called by simply writing its name and filling the input value in the parenthesis:
 
 ![](assets/chapter-3-1-images/01.ЕxcellentResult-02.png)
 
@@ -97,7 +97,7 @@ if (Boolean condition) {
 
 ```
 
-### Problem: Excellent Grade or Not
+### Problem: Excellent or Not
 
 Similarly to the example above, we input a grade and check if it is excellent, but this time we should **output a result in both cases**:
 
@@ -113,7 +113,7 @@ You can test your solution at the following link: [https://judge.softuni.org/Con
 When we have **only one command** in the body of the **`if` statement**, we can **skip the curly braces**, indicating the body of the conditional operator. When we need to execute a **block of code** (group of commands), curly braces are **mandatory**. In case the braces are omitted, **only the first line of code** will be executed after the **`if` statement**.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>It is a good practice to <strong> always include curly braces</strong> since this makes the code more readable, neater and cleaner.</td>
+<td>It is a good practice to <strong> always include curly braces</strong> since this makes the code more readable, neater, and cleaner.</td>
 </tr></table>
 
 Here is an example, where omitting the curly braces leads to confusion:
@@ -145,7 +145,7 @@ The problem can be solved with a single **`if-else`** structure and the operator
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#2](https://judge.softuni.org/Contests/Practice/Index/929#2).
 
 
-### Problem: Finding The Greater Number
+### Problem: Greater Number
 
 Write a program that reads two integers and outputs the greater one.
 
@@ -190,7 +190,7 @@ else {
 }
 ```
 
-### Problem: Numbers One Through 9 in English
+### Problem: Number 0...9 to Text
 
 Print the digits one through nine in English on the console (the numbers are passed as arguments of the function upon call). We can take the digit and through a **series of conditions** print the corresponding English word on the console:
 
@@ -260,7 +260,7 @@ Please note that for this problem the Judge system is set up to ignore any non-n
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#5](https://judge.softuni.org/Contests/Practice/Index/929#5).
 
 
-### Problem: Summing Up Seconds
+### Problem: Sum Seconds
 
 Three athletes finish with some **number of seconds** (between **1** and **50**). Write a function that takes the times of the contestants and calculates their **combined time** in **minutes:seconds** format. Seconds are to be printed with a **leading zero** (2 -> "02", 7 -> "07", 35 -> "35").
 
@@ -341,173 +341,7 @@ To date, we have written quite a lot of code and oftentimes there were mistakes,
 
 We add a point, at which our function will stop its execution - a **breakpoint** after which we start the program in **debug mode** through pressing [**F5**]. The program will follow its course until it reaches our interrupt (**breakpoint**). After which we the execution can proceed to the **next line of code** by pressing [**F10**]. 
 
-## Exercises: Simple Conditions
-
-Now let's practice the lessons learned in this chapter with a few practical exercises.
-
-### Empty Visual Studio Code file
-
-We start Visual Studio Code and create a new file [**File**] -> [**New File**]:
-
-![](assets/chapter-3-1-images/00.Visual-studio-01.png)
-
-After that, we will see a new file, which is anonymous for the moment to our system. To be recognized correctly, we need to save our code as a **JavaScript** file: [**File**] -> [**Save**]:
-
-![](assets/chapter-3-1-images/00.VisualStuido-02.png)
-
-After this a pop-up window will open, where we need to specify a name for our file and give it the **obligatory .js file extension**:
-
-![](assets/chapter-3-1-images/00.VisualStuido-03.png)
-
-
-### Problem: Excellent Grade
-
-The first exercise for this topic is to write a **JavaScript function**, which **takes a grade** (decimal number) and prints "**Excellent!**", if the grade is **5.50** or higher.
-
-#### Sample Input and Output
-
-| Input | Output |
-| --- | ---- |
-| 6 | Excellent! |
-| 5 | (no output) |
-| 5.5 | Excellent! |
-| 5.49 | (no output) |
-
-#### Hints and Pointers
-
-We create a **new anonymous file** by clicking [**File**] -> [**New File**]. Then we save it ([**File**] -> [**Save**]), as a **JavaScript file**, with the file extension **.js**  
- 
-Now that we have prepared a JavaScript file, we have to solve the problem. To this effect we write the following code:
-
- ![](assets/chapter-3-1-images/01.ЕxcellentResult-01.png)
-
-**Start** the program with [**Ctrl+F5**], so we can **test** it with different input values:
-
- ![](assets/chapter-3-1-images/01.ЕxcellentResult-03.png)
- 
-For values **greater than 5.50** - there is an **Excellent!** output.
-
- ![](assets/chapter-3-1-images/01.ЕxcellentResult-04.png)
- 
-For values **less than 5.50** - there is no output.
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#0](https://judge.softuni.org/Contests/Practice/Index/929#0).
-
- ![](assets/chapter-3-1-images/01.ЕxcellentResult-05.png) 
-
- ![](assets/chapter-3-1-images/01.ЕxcellentResult-06.png)
-
-
-### Problem: Excellent Grade or Not
-
-The next exercise for this topic is to write a **JavaScript function**, which **takes a grade** (decimal number) and prints "**Excellent!**", if the grade is **5.50** or higher, or “**Not excellent.**” if it is not.
-
-#### Sample Input and Output
-
-| Input | Output |
-| --- | ---- |
-| 6 | Excellent! |
-| 5 | Not excellent. |
-| 5.5 | Excellent! |
-| 5.49 | Not excellent. |
-
-#### Hints and Pointers
-
-Firstly we create a **new JavaScript file**. After that, we **write the code** of the program. You may use the following example code as a hint:
-
- ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
-
-After that, we call the function and pass some sample data, so we can test its functionality:
-
-![](assets/chapter-3-1-images/02.Excellent-or-not-02.png)
-
- ![](assets/chapter-3-1-images/02.Excellent-or-not-03.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#1](https://judge.softuni.org/Contests/Practice/Index/929#1).
-
- ![](assets/chapter-3-1-images/02.Excellent-or-not-04.png)
-
-
-### Problem: Even or Odd
-
-Write a function that checks whether an **integer** input is either **even** or **odd** and prints the result on the console.
-
-#### Sample Input and Output
-
-| Input | Output |
-| --- | ---- |
-| 2 | even |
-| 3 | odd |
-| 25 | odd |
-| 1024 | even |
-
-#### Hints and Pointers
-
-Again firstly we must create a **new JavaScript file**. Then the check if a number is either even or odd can be made with the operator **`%`**, which will return the **remainder from an integer divided by 2** as follows: **`let isEven = (num % 2 == 0)`**.
-
-Now we have to **start** the program with [**Ctrl+F5**] and test it:  
-
-![](assets/chapter-3-1-images/03.Even-or-odd-02.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#2](https://judge.softuni.org/Contests/Practice/Index/929#2).
-
-
-### Problem: Find The Greater Number
-
-Write a function that takes **two integers** and prints the bigger one on the console.
-
-#### Sample Input and Output
-
-| Input | Output |
-|-----|------|
-|5<br>3| 5 |
-|3<br>5| 5 |
-|10<br>10| 10 |
-|-5<br>5| 5 |
-
-#### Hints and pointers
-
-As usual, first, we need to create a **new JavaScript file**. For the main logic, we need a single **`if-else`** construct. The code below is deliberately blurred, however, there is enough visible to give you some hint, so you can complete it yourself:  
-![](assets/chapter-3-1-images/04.Greater-number-01.png)
-
-When we are done with the implementation of the solution, we call the function and pass it example parameters, we **run** the program with [**Ctrl+F5**] and test it:
-
-![](assets/chapter-3-1-images/04.Greater-number-02.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#3](https://judge.softuni.org/Contests/Practice/Index/929#3).
-
-
-### Problem: Output a Digit's Word Equivalent
-
-Write a function that takes an **integer in the range** [**0 … 9**] and prints **its word equivalent** in English. If the number is outside the given range, the function should return “**number too big**”.
-
-#### Sample Input and Output
-
-| Input | Output |
-| --- | ---- |
-| 5 | five |
-| 1 | one |
-| 9 | nine |
-| 10 | number too big |
-
-#### Hints and Pointers
-
-We can use a sequence of **`if-else`** statements to cover every one of the possible **11 cases**.
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#4](https://judge.softuni.org/Contests/Practice/Index/929#4).
-
-
-### Problem: Guess the Password
+### Problem: Password Guess
 
 Write a function that **accepts a password** (one line of random text) and checks if the input **matches** the phrase “**s3cr3t!P@ssw0rd**”. If it matches, print “**Welcome**”, otherwise print “**Wrong password!**”. 
 
@@ -528,9 +362,9 @@ Use an **`if-else`** statement.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#8](https://judge.softuni.org/Contests/Practice/Index/929#8).
 
 
-### Problem: Numbers from 100 to 200
+### Problem: Number 100...200
 
-Write a function that **accepts an integer** as a parameter and checks if it is **below 100**, **between 100 and 200** or **over 200**. Print the appropriate messages as per the examples below.
+Write a function that **accepts an integer** as a parameter and checks if it is **below 100**, **between 100 and 200**, or **over 200**. Print the appropriate messages as per the examples below.
 
 #### Sample Input and Output
 
@@ -545,7 +379,7 @@ Write a function that **accepts an integer** as a parameter and checks if it is 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#9](https://judge.softuni.org/Contests/Practice/Index/929#9).
 
 
-### Problem: Identical Words
+### Problem: Equal Words
 
 
 Write a function that **accepts two words** as parameters and checks if they are the same. A comparison should be case-insensitive and the output should be either “**yes**” or “**no**”. 
@@ -569,7 +403,7 @@ Before the comparison, both words should be in lower case, so that case (upperca
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#10](https://judge.softuni.org/Contests/Practice/Index/929#10).
 
 
-### Problem: Speed Assessment
+### Problem: Speed Info
 
 Write a function, that **takes speed** (decimal number) as a parameter and prints **speed information**. For speeds **up to 10** (inclusive), print "**slow**". For speed **over 10** and **up to 50**, print "**average**". For speeds **over 50** and **up to 150**, print "**fast**". For speeds **over 150** and **up to 1000**, print "**ultra fast**". For higher speed, print "**extremely fast**".
 
@@ -596,7 +430,7 @@ The first argument of the function is the type of shape (**`square`**, **`rectan
 * If the shape is a **square**, the next argument will be one number - the length of its side.
 * If the shape is a **rectangle**, the next argument will be two numbers - the lengths of its sides.
 * If the shape is a **circle**, the next argument will be one number - the radius of the circle.
-* If the shape is a **triangle**, the next argument will be two numbers - its base and the corresponding altitude.
+* If the shape is a **triangle**, the next argument will be two numbers - base and the corresponding altitude.
 
 The result should be rounded up to the **third decimal point**. 
 
@@ -637,7 +471,7 @@ Add 15 minutes and check using a set of conditions. If minutes are over 59 **inc
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#13](https://judge.softuni.org/Contests/Practice/Index/929#13).
 
 
-### Problem: Tree Equal Numbers
+### Problem: 3 Equal Numbers
 
 Write a function that takes **3 numbers** as arguments and prints whether they are the same (**yes** / **no**).
 
@@ -654,7 +488,7 @@ Write a function that takes **3 numbers** as arguments and prints whether they a
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#14](https://judge.softuni.org/Contests/Practice/Index/929#14).
 
 
-### Problem: \*Convert a Number to Words
+### Problem: Number 0...100 to Text
 
 Write a function that converts numbers in the range of [**0 … 100**] in text. 
 
@@ -679,13 +513,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/929#
 
 Now since we have completed a few exercises on **conditional statements (checks)**, let's do something a bit more interesting: an application with a Graphical User Interface (GUI) for currency conversion. We will employ the knowledge from this chapter to select from the different available currencies and make calculations as per the appropriate exchange rates for the given currency.
 
-### Problem: \*\*Currency Converter
+### Problem: \*\* Currency Converter
 
 Now let's see how to create a graphical (**GUI**) application for **currency conversion**. The application will look similar to the picture below:  
 
 ![](assets/chapter-3-1-images/14.Converter-01.png)
 
-For visualization, we will use an **internet browser**, that interprets **HTML** pages. We will create a new page and will build the **structure**, **appearance** and **functionality** of our application.
+For visualization, we will use an **internet browser**, that interprets **HTML** pages. We will create a new page and will build the **structure**, **appearance**, and **functionality** of our application.
 
 As usual, we **create a new file**, save it with the name **Currency-Converter**, however this time we add the file extension **.html**.
 
