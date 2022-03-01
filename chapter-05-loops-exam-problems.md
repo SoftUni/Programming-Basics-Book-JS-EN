@@ -19,7 +19,7 @@ Let's solve some SoftUni exam problems with loops
 
 ## Problem: Histogram
 
-**N integers** are given within the range of [**1 … 1000**]. A percentage of them **p1** are with values below 200, another percentage __p2__ are with values from 200 to 399, percentage **p3** are with values from 400 to 599, a percentage **p4** are with values from 600 to 799 and the remaining percentage **p5** representing values above 800. Write a program that calculates and prints the percentages **p1**, **p2**, **p3**, **p4** and **p5**.
+**N integers** are given within the range of [**1 … 1000**]. A percentage of them **p1** are with values below 200, another percentage __p2__ are with values from 200 to 399, percentage **p3** are with values from 400 to 599, a percentage **p4** are with values from 600 to 799 and the remaining percentage **p5** representing values above 800. Write a program that calculates and prints the percentages **p1**, **p2**, **p3**, **p4**, and **p5**.
 
 **Example**: we are given n = **20** numbers: 53, 7, 56, 180, 450, 920, 12, 7, 150, 250, 680, 2, 600, 200, 800, 799, 199, 46, 128, 65 in the following distribution and visualization:
                           
@@ -108,12 +108,12 @@ Before we proceed to the actual reading of the input data, we have to **declare 
   
 ![](assets/chapter-5-2-images/01.Histogram-01.png)
 
-In the variable **`n`**, we will store the count of numbers that we will need to read. Additionally, we have to declare the variables **`p1`**, **`p2`** etc., in which we will store the count of numbers for each corresponding group.
+In the variable **`n`**, we will store the count of numbers that we will need to read. Additionally, we have to declare the variables **`p1`**, **`p2`**, etc., in which we will store the count of numbers for each corresponding group.
 Once the variables have been declared we can proceed with input data processing.
 
-#### Processing the input data
+#### Processing The Input Data
   
-To be able to read and distribute each number to its respective group, a **`for` loop** from **0** to **`n`** (count of numbers) will be used. Each loop iteration will read and distribute **one single** number (**`currentNum`**) to its respective group. To define, if a number belongs to a certain group we have to, **perform a check in the respective range**. Once the check returns true - we increase the count of numbers in this group (**`p1`**, **`p2`** etc.) by 1:
+To be able to read and distribute each number to its respective group, a **`for` loop** from **0** to **`n`** (count of numbers) will be used. Each loop iteration will read and distribute **one single** number (**`currentNum`**) to its respective group. To define, if a number belongs to a certain group we have to, **perform a check in the respective range**. Once the check returns true - we increase the count of numbers in this group (**`p1`**, **`p2`**, etc.) by 1:
 
 ![](assets/chapter-5-2-images/01.Histogram-03.png)
 
@@ -142,7 +142,7 @@ In this case **`n = 3`**.
 For this loop we have:
    -    **`i = 0`** - we read the number 1, which is less than 200 and falls into the first group (**`p1`**), we increase the corresponding group counter by 1.
    -   	**`i = 1`** – we read the number 2, which again falls into the first group (**`p1`**) and we increase the same group counter by 1.
-   -   	**`i = 2`** – we read the number 999, which falls into the last group (**`p5`**), because it's bigger than 800, and we increase the corresponding group counter by 1.
+   -   	**`i = 2`** – we read the number 999, which falls into the last group (**`p5`**) because it's bigger than 800, and we increase the corresponding group counter by 1.
    
 After reading the numbers, we have in group **`p1`** two numbers and in group **`p5`** one number. For the rest of the groups, we have **no numbers**. The percentage of each group is calculated by applying the above-mentioned formula.
 
@@ -159,7 +159,7 @@ You can test your solution here: [https://judge.softuni.org/Contests/Practice/In
 
 ## Problem: Smart Lilly
 
-Lily is **N years old** already. For each **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n) she receives **toys**, and for the **even** birthdays (2, 4, 6, …, n) she receives **money**. For her **second birthday**, she received **10.00 USD**, and the **amount is increased by 10.00 USD for every subsequent even birthday** (2 -> 10, 4 -> 20, 6 -> 30 etc.). Over the years Lily has secretly saved her money. In the years when Lily received money, her brother each time took 1 USD. Lily **sold the toys**, she got over the years, **each one for P USD** and then added the sum to her savings. With her savings, she wanted to **buy herself a washing machine for X USD**. Write a program, that calculates the **amount of Lily's savings** and is this sum enough **for buying a washing machine**.
+Lily is **N years old** already. For each **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n) she receives **toys**, and for the **even** birthdays (2, 4, 6, …, n) she receives **money**. For her **second birthday**, she received **10.00 USD**, and the **amount is increased by 10.00 USD for every subsequent even birthday** (2 -> 10, 4 -> 20, 6 -> 30, etc.). Over the years Lily has secretly saved her money. In the years when Lily received money, her brother each time took 1 USD. Lily **sold the toys**, she got over the years, **each one for P USD**, and then added the sum to her savings. With her savings, she wanted to **buy herself a washing machine for X USD**. Write a program, that calculates the **amount of Lily's savings** and is this sum enough **for buying a washing machine**.
 
 ### Input Data
 
@@ -210,7 +210,7 @@ In a single line print on the console:
 
 ### Hints and Guidelines
 
-Similar to the previous problem, the solution could be divided into three parts – **reading** the input data, **processing** the input data and **printing the output**.
+Similar to the previous problem, the solution could be divided into three parts – **reading** the input data, **processing** the input data, and **printing the output**.
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
@@ -218,7 +218,7 @@ Again, we should start with choosing appropriate variable names. For Lily's age(
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-02.png)
 
-We use a **`for` loop** to iterate through every Lily's birthday. If the leading variable is an **odd number**, we increase the count of **toys**. We can do the parity check using **division with the remainder** (**`%`**) **by 2** – if the remainder is equal to 0, the number is **even** and if the remainder is equal to 1 - **odd**. Inversely, if the leading variable is an **even number**, that would mean, that Lily has **received money** so we have to add this amount of money to her savings. Then we **Increase** the value of the variable **`moneyFromBirthdays`**, i.e. **we increase by 10** the sum, that she will receive for her next birthday. At the same time, we **subtract 1 USD** - the money taken from her brother. To use the decrement operator we have to add two minus signs after the last sign of the variable (**`moneyFromBirthdays--`**):
+We use a **`for` loop** to iterate through every Lily's birthday. If the leading variable is an **odd number**, we increase the count of **toys**. We can do the parity check using **division with the remainder** (**`%`**) **by 2** – if the remainder is equal to 0, the number is **even**, and if the remainder is equal to 1 - **odd**. Inversely, if the leading variable is an **even number**, that would mean, that Lily has **received money** so we have to add this amount of money to her savings. Then we **Increase** the value of the variable **`moneyFromBirthdays`**, i.e. **we increase by 10** the sum, that she will receive for her next birthday. At the same time, we **subtract 1 USD** - the money taken from her brother. To use the decrement operator we have to add two minus signs after the last sign of the variable (**`moneyFromBirthdays--`**):
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-03.png)
 
@@ -252,7 +252,7 @@ To avoid declaring additional variables we can use a template literal - **`${exp
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#1](https://judge.softuni.org/Contests/Practice/Index/934#1).
 
-## Problem: Return to The Past
+## Problem: Back to The Past
 
 Ivan is **18 years old** and just received an inheritance, consisting of **X amount of money** and a **time machine**. He decides **to return to the year 1800**, but he is not certain **if the money** would be **enough** for him, to live at that time without working. Write a **program, that calculates** if Ivan **would have enough money**, to live without working **until a given year (inclusively)**. Assuming that, for **every even** (1800, 1802 etc.) year he **would spend 12 000 USD**. For **every odd year** (1801,1803 etc.) he would spend **12 000 + 50 * [the age he would have reached in the given year]**.
 
@@ -331,7 +331,7 @@ You can test your solution here: [https://judge.softuni.org/Contests/Practice/In
 
 ## Problem: Hospital
 
-For a certain period, everyday patients arrive at the hospital for examination. **Initially**, the hospital had **7 doctors**. Each doctor could treat **only one patient per day**, but sometimes there is a shortage of doctors, so **the remaining patients are sent to other hospitals**. **Every third day** the hospital makes evaluations and **if the count of untreated patients is greater than the count of treated ones, another doctor is appointed**. Each new doctor is appointed at the beginning of the day before the patients' admission.
+For a certain period, every day patients arrive at the hospital for examination. **Initially**, the hospital had **7 doctors**. Each doctor could treat **only one patient per day**, but sometimes there is a shortage of doctors, so **the remaining patients are sent to other hospitals**. **Every third day** the hospital makes evaluations and **if the count of untreated patients is greater than the count of treated ones, another doctor is appointed**. Each new doctor is appointed at the beginning of the day before the patients' admission.
 
 Write a program, that calculates **for a given period, the count of treated and untreated patients**.
 
@@ -391,7 +391,7 @@ On the first line (argument) there is an integer in the range of [**1 … 1000**
 
 ### Hints and Guidelines
 
-We start again by, **declaring and initializing** the required variables. The calculation period we read from the console and save in the **`period`** variable. We will need some additional variables such as the number of treated patients (**`treatedPatients`**), the number of untreated patients (**`untreatedPatients`**) and the number of doctors (**`countOfDoctors`**), which initially is set to 7.
+We start again by, **declaring and initializing** the required variables. The calculation period we read from the console and save in the **`period`** variable. We will need some additional variables such as the number of treated patients (**`treatedPatients`**), the number of untreated patients (**`untreatedPatients`**), and the number of doctors (**`countOfDoctors`**), which initially is set to 7.
 
 ![](assets/chapter-5-2-images/04.Hospital-01.png)
 
@@ -419,7 +419,7 @@ Finally, the only thing left is to print the number of treated and untreated pat
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/934#3](https://judge.softuni.org/Contests/Practice/Index/934#3).
 
 
-## Problem: division without remainder
+## Problem: Division
 
 **N integers** are given in the range of [**1 … 1000**]. **Some percentage p1 of them are divisible without remainder by 2**, **percentage p2** are **divisible without remainder by 3**, **percentage p3** is **divisible without remainder by 4**. Write a program that calculates and prints the percentages p1, p2, and p3.
 **Example:** We are given **n = 10** numbers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65 and the following distribution and visualization:
