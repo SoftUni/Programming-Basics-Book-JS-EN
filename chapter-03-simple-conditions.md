@@ -243,7 +243,7 @@ We are given an **integer** – several points. Additional **bonus points** are 
 | 2703 | 270.3<br>2973.3 |
 | 15875 | 1589.5<br>17464.5 |
 
-#### Hints and Pointers
+#### Hints and Guidelines
 
 We can calculate the base and additional bonus score with a series of **`if-else-if-else`** statements. for the **main bonus points we have 3 cases** (the input is less than or equal to 100, it is between 100 and 1000, and finally it is greater than 1000), for the **additional bonus sore - further 2 cases** (whether the number is even or odd and whether the remainder of division by 5 is 5).
 
@@ -273,7 +273,7 @@ Three athletes finish with some **number of seconds** (between **1** and **50**)
 | 50<br>50<br>49 | 2:29 |
 | 14<br>12<br>10 | 0:36 |
 
-#### Hints and Pointers
+#### Hints and Guidelines
 
 Firstly we sum the three numbers, to obtain the seconds total. As we know that **1 minute = 60 seconds**, we should calculate the minutes and seconds in the range 0 to 59:
 - If the result is between 0 and 59, we print 0 minutes + calculated seconds.
@@ -316,7 +316,7 @@ The input will be three parameters:
 | 150 <br>mi <br>in | 9503999.99393599 |
 | 450 <br>yd <br>km | 0.41147999937455 |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 We take the input data and to the units of measure, we can add the method **`toLowerCase()`**, which will convert all letters to lower case. As we can see from the conversion table above, we have data for **converting only between meters and any other measuring unit**. To make the conversion, firstly we must calculate the input measurement in meters. To this effect, we need to create a set of conditionals to determine the input measuring unit and then the output.
 
@@ -353,7 +353,7 @@ Write a function that **accepts a password** (one line of random text) and check
 | s3cr3t!P@ssw0rd | Welcome |
 | s3cr3t!p@ss | Wrong password! |
 
-#### Hints and Pointers
+#### Hints and Guidelines
 
 Use an **`if-else`** statement.
 
@@ -394,7 +394,7 @@ Write a function that **accepts two words** as parameters and checks if they are
 | beer<br>vodka | no |
 | HeLlO<br>hELLo | yes |
 
-#### Hints and Pointers
+#### Hints and Guidelines
 
 Before the comparison, both words should be in lower case, so that case (uppercase / lowercase) does not influence the result: **`word = word.toLowerCase()`**.
 
@@ -462,7 +462,7 @@ Write a function that takes **two parameters - hours and minutes** based on a 24
 | 11<br>08 | 11:23 |
 | 12<br>49 | 13:04 |
 
-#### Hints and Pointers
+#### Hints and Guidelines
 
 Add 15 minutes and check using a set of conditions. If minutes are over 59 **increase the hours** by 1 and **decrease the minutes** by 60. You may handle the case when hours are over 23 similarly. Take care when printing the minutes to add a **leading zero** where appropriate.
 
@@ -500,7 +500,7 @@ Write a function that converts numbers in the range of [**0 … 100**] in text.
 | 42 | forty two |
 | 6  | six |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 Firstly you should check for **single-digit numbers** and if this is the case, print the corresponding word. Then you can check if the number is a **double-digit number**. These can be printed in two parts: left part (**tens** = number / 10) and right part (**units** = number % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.
 
