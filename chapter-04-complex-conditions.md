@@ -2,7 +2,7 @@
 
 In this **current** chapter, we are going to examine **nested conditional statements** in the **JavaScript** language, by which our program can execute **conditions**, that contain other **nested conditional statements**. We call them **"nested"** because **we put the `if` condition** into **another `if` condition**. We are going to examine the **more complex logical conditions** through proper examples.
 
-## Nested conditions
+## Nested Conditions
 
 Pretty often the program logic requires the use of **`if`** or **`if-else`** statements, which are contained one inside another. They are called **nested** **`if`** or **`if-else`** statements. As implied by the title **"nested"**,these are **`if`** or **`if-else`** statements, that are placed inside other **`if`** or  **`else`** statements.
 
@@ -38,7 +38,7 @@ Depending on **age** (decimal number) and **gender** (**m** / **f**) print a per
 
 #### Solution
 
-We should notice that the **output** of the program **depends on few things**. First, we have to check what **gender** entered and then to check the **age**. Respectively, we are going to use **a few** **`if-else`** blocks. These blocks will be **nested**, i.e. from the **result** of the first, we are going to **define** which of the **others** to execute.
+We should notice that the **output** of the program **depends on a few things**. First, we have to check what **gender** entered and then to check the **age**. Respectively, we are going to use **a few** **`if-else`** blocks. These blocks will be **nested**, i.e. from the **result** of the first, we are going to **define** which of the **others** to execute.
 
 ![](/assets/chapter-4-1-images/01.Personal-titles-01.jpg)
 
@@ -96,7 +96,7 @@ Logical "**AND**" (operator **`&&`**) means a few conditions have to be **fulfil
 |-----|-----|-----|
 |true<br>true<br>false<br>false|true<br>false<br>true<br>false|true<br>false<br>false<br>false|
 
-### How does The && Operator Work?
+### How Does The && Operator Work?
 
 The operator **`&&`** accepts **a couple of Boolean** (conditional) statements, which have a **`true`** or **`false`** value, and returns **one** boolean statement as a **result**. Using it **instead** of a couple of nested **`if`** blocks, makes the code **more readable**, **ordered**, and **easy** to maintain. But how does it **work**, when we put a **few** conditions one after another? As we saw above, the logical **"AND"** returns **`true`**, **only** when it accepts as **arguments statements** with the value **`true`**. Respectively, when we have a **sequence** of arguments, the logical "**AND**" checks either until one of the arguments is **over**, or until it **meets** an argument with value **`false`**. 
 
@@ -114,7 +114,7 @@ let result = a && b && c && d;
 
 The program will run in the **following** way: **It starts** the check from **`a`**, **reads** it, and accepts that it has a **`true`** value, after that, it  **checks `b`**. After it has **accepted**, that **`a`** and **`b`** return value **`true`**, **it checks the next** argument. It gets to **`c`** and sees that the variable has a **`false`** value. After the program accepts that argument **`c`** has a **`false`** value, it calculates the expression **to `c`**, **regardless** of what the value of **`d`** is. That is why the evaluation of **`d`**is being **skipped** and the whole expression is calculated as **`false`**.
 
-### Problem: Point in a Rectangle
+### Problem: Point in Rectangle
 
 Checks whether **point {x, y}** is placed **inside the rectangle {x1, y1} – {x2, y2}**. The input data is readfrom the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x**, and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**).
 
@@ -151,7 +151,7 @@ At school, the teacher says: "Ivan or Peter should clean the board". To fulfill 
 |true<br>true<br>false<br>false|true<br>false<br>true<br>false|true<br>true<br>true<br>false|
 
 
-### How does The || Operator Work?
+### How Does The || Operator Work?
 
 We have already learned what the logical **"OR"** **represents**. But how is it being achieved? Just like the logical **"AND"**, the program **checks** from left to right **the arguments**, that are given. To obtain **`true`** from the expression, just one argument must have a **`true`** value, respectively the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
 
@@ -228,9 +228,9 @@ Like the other operators in programming, the operators **`&&`** and **`||`** hav
 
 ## More Complex Logical Conditions
 
-Sometimes the conditions may be very complex, so they can require a long boolean expression or a sequence of conditions. Let's take a look at a few examples.
+Sometimes the conditions may be very complex, so they can require a long boolean expression or a sequence of conditions. Let's take a look at a few problems.
 
-### Problem: Point on a Rectangle Border
+### Problem: Point on Rectangle Border
 
 Write a program that checks whether a **point {x, y}** is placed **onto any of the sides of a rectangle {x1, y1} - {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x**, and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**). Print "**Border**" (if the point lies on any of the sides) or "**Inside / Outside**" (in the opposite case).
 
@@ -298,7 +298,7 @@ Write a program that reads from the console **fruit** (banana / apple / …), **
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#6](https://judge.softuni.org/Contests/Practice/Index/931#6).
 
 
-### Problem: Trade Fees
+### Problem: Trade Commissions
 
 A company is giving the following **commissions** to its traders according to the **city**, in which they are working and the  **volume of sales s**:
 
@@ -354,7 +354,7 @@ switch (selector) {
 }
 ```
 
-### Problem: Day of The Week
+### Problem: Day of Week
 
 Let's write a program that prints the **day of the week** (in English) depending on the **given number** (1 … 7) or "**Error**" if an invalid day is given.
 
@@ -533,9 +533,9 @@ A sample code (parts of the code are blurred on purpose to stimulate independent
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/931#11](https://judge.softuni.org/Contests/Practice/Index/931#11).
 
 
-### Problem: * Point in The Figure
+### Problem: \* Point in Figure
 
-The figure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is on position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
+The figure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is in position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
 
 <p><img src="assets/chapter-4-1-images/13.Point-in-the-figure-01.png" /></p>
 
