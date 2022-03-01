@@ -2,7 +2,7 @@
 
 In this chapter, we will introduce the **repeat blocks of commands**, also known as "**loops**". We will write a set of loops, using the **`for`** operator in its simplest form. Finally, we will solve a few practical problems that require repetition of commands, using loops.
 
-## Repeating code blocks (for loops)
+## Repeating Code Blocks (For Loops)
 
 In programming, we often need **to execute a block of commands multiple times**. To do that we use **loops**. Let's look at one example of a **`for` loop**, which will loop through the numbers from 1 to 10 and print each one:
 
@@ -20,7 +20,7 @@ Upon declaring the loop you can specify a **start value** and an **end value**. 
 
 A **`for` loop** often circles **`1`** to **`n`** times (for example 1 to 10). The goal is to **loop** through the numbers 1, 2, 3, …, n sequentially and after each pass through the loop to **perform a certain action**. In the example above the variable **`i`** holds values from 1 to 10 and the current value is printed in the loop's body. The loop repeats 10 times and each of these repetitions is called an "**iteration**".
 
-### Problem: The numbers from 1 to 100
+### Problem: Numbers from 1 to 100
 
 Write a program that **prints the numbers from 1 to 100**. The program does not accept input and prints the numbers from 1 to 100 sequentially, each on a separate line.
 
@@ -41,7 +41,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#
 You should get **100 points** (completely correct solution).
 
 
-## Code Snippet for a for loop in Visual Studio Code
+## Code Snippet for a For loop in Visual Studio Code
 
 While programming, we often need to use loops, dozens of times a day. That's why in most development environments (IDE) there are **code snippets** for writing loops. An example of such a snippet is the **snippet for a `for` loop in Visual Studio Code**. Write **`for`** in the JavaScript code editor in Visual Studio Code and **hit** [**Tab**]:
 
@@ -53,7 +53,7 @@ While programming, we often need to use loops, dozens of times a day. That's why
 
 **Try it yourself**, so you can master the skill of using the code snippet for the **`for` loops** in Visual Studio Code.
 
-### Problem: Numbers up to 1000 ending in 7
+### Problem: Numbers Ending in 7
 
 Write a program that finds all numbers ending in 7 in the range [**1 … 1000**]. 
 
@@ -67,7 +67,7 @@ We can solve this problem by combining a **`for` loop** that loops through the n
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#1](https://judge.softuni.org/Contests/Practice/Index/933#1).
 
-### Problem: All Latin Letters
+### Problem: Latin Letters
 
 Write a program that prints the letters from the alphabet: **a, b, c, …, z**.
 
@@ -188,7 +188,7 @@ First, we read the number **n**, after that we enter the first **n** numbers (**
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#6](https://judge.softuni.org/Contests/Practice/Index/933#6).
 
 
-### Problem: Even / Odd Sum
+### Problem: Odd Even Sum
 
 Write a program that reads **n integer numbers** and checks whether **the sum of the numbers on even positions** equals **the sum of the numbers on odd positions**. In case the sums are equal, print **"Yes" + the sum**, otherwise print **"No" + the difference**. The difference is calculated by absolute value. The format of the output must be identical to the one in the examples below.
 
@@ -211,7 +211,7 @@ The program reads the numbers one by one and calculates the two **sums** (the su
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#7](https://judge.softuni.org/Contests/Practice/Index/933#7).
 
 
-### Problem: Sum of Vowels
+### Problem: Vowels Sum
 
 Write a program that reads a **text** (string), calculates and prints **the sum of the vowels' value** according to the table below:
 
@@ -247,11 +247,11 @@ We can perform various mathematical operations:
 
 ![](assets/chapter-5-1-images/00.For-loop-03.png)
 
-## Exercises: Loops (Repetitions)
+## Problems: Loops (Repetitions)
 
 Now that we got acquainted with the loops, it's time **to consolidate our knowledge in practice**, and as you know, this is done with a lot of code writing. Let's solve several problems for exercise:
 
-### Problem: An Element Equal to the Sum of the Rest
+### Problem: Half Sum Element
 
 Write a program that reads **n integer numbers** and checks whether there is a number that equals the sum of all the rest among them. If there is such an element, print **"Yes" + the element's value**, otherwise - **"No" + the difference between the largest element and the sum of the rest** (by absolute value). 
 
@@ -267,16 +267,16 @@ Write a program that reads **n integer numbers** and checks whether there is a n
 
 #### Hints and Guidelines
 
-Calculate **the sum** of all elements, find **the biggest** among them and check the condition.
+Calculate **the sum** of all elements, find **the biggest** among them, and check the condition.
 
 #### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/933#9](https://judge.softuni.org/Contests/Practice/Index/933#9).
 
 
-### Problem: Even / Odd Positions
+### Problem: Odd / Even Position
 
-Write a program that reads **n numbers** and calculates **the sum**, **the min** and **the max** value of the numbers on **even** and **odd** positions (counting from 1). If no min / max element exists, print **"No"**. 
+Write a program that reads **n numbers** and calculates **the sum**, **the min** and **the max** value of the numbers on **even**, and **odd** positions (counting from 1). If no min / max element exists, print **"No"**. 
 
 #### Sample Input and Output
 
@@ -289,9 +289,9 @@ Write a program that reads **n numbers** and calculates **the sum**, **the min**
 
 #### Hints and Guidelines
 
-The problem combines some of the previous problems: finding **the min**, **the max** value and **the sum**, as well as processing the elements on **even and odd positions**. Check them out.
+The problem combines some of the previous problems: finding **the min**, **the max** value, and **the sum**, as well as processing the elements on **even and odd positions**. Check them out.
 
-In this problem, it's better to work with **fractions** (not integers). The sum, the minimum and the maximum value are also fractions. We must use **a neutral start value** upon finding the minimum / maximum, for example **1000000000.0** and **-1000000000.0**. If the final result is the neutral value, print **“No”**.
+In this problem, it's better to work with **fractions** (not integers). The sum, the minimum, and the maximum value are also fractions. We must use **a neutral start value** upon finding the minimum / maximum, for example **1000000000.0** and **-1000000000.0**. If the final result is the neutral value, print **“No”**.
 
 #### Testing in The Judge System
 
@@ -410,7 +410,7 @@ The library **"jQuery"** allows us to manipulate **HTML** elements, using valid 
 ```js
 $('#ID') or $('.Class')  
 ```
-We can use the **HTML** element's name, **ID** or its **class**. The selectors are always strings of text, so they are enclosed in single or double-quotes. If the selector is the **ID** (a separate name for each element), in the beginning, we put a **sharp sign** (**#**). But if we have decided to select **by class** (one name for multiple elements), then we write a **dot**.
+We can use the **HTML** element's name, **ID**, or its **class**. The selectors are always strings of text, so they are enclosed in single or double-quotes. If the selector is the **ID** (a separate name for each element), in the beginning, we put a **sharp sign** (**#**). But if we have decided to select **by class** (one name for multiple elements), then we write a **dot**.
 
 Adhering to the **jQuery-turtle** documentation, we have to initialize our object and set the basic characteristics of the "turtle". With the following code we will determine **the size** of the graph (**`turtleScale`**) and **the speed** of movement (**`turtleSpeed`**):
 
@@ -603,4 +603,4 @@ Add a [**Triangle**] button that draws three triangles with 22 beams each, as sh
 
 Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step by 10 and rotate 120 degrees. Repeat 3 times in another loop for the three triangles.
 
-If you have difficulties with the exercises above, ask for help in **SoftUni's discussion Reddit**: https://www.reddit.com/r/softuni/.
+If you have difficulties with the problems above, ask for help in **SoftUni's discussion Reddit**: https://www.reddit.com/r/softuni/.
