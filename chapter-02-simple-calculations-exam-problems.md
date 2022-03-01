@@ -53,7 +53,7 @@ let result = 3 + 5; // the result is 8
 let result = 3 - 5; // the result is -2
 ```
 
-### Operator *
+### Operator \*
 
 ```JavaScript
 let result = 3 * 5; // the result is 15
@@ -229,7 +229,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/928#
 
 On the ground in front of an apartment building **tiles need to be placed**. The ground has a **square shape with a side of N meters**. The tiles are **"W" meters wide** and **"L" meters long**. There is one bench on the ground with a **width of "M" meters and a length of "O" meters**. There is no need to place tiles under it. Each tile is replaced for **0.2 minutes**.
 
-Write a program that **reads from the console the size** of **the ground, the tiles and the bench**, and calculates **how many tiles are needed** to cover the ground and what is the total **time for placing all of the tiles**.
+Write a program that **reads from the console the size** of **the ground, the tiles, and the bench**, and calculates **how many tiles are needed** to cover the ground and what is the total **time for placing all of the tiles**.
 
 **Example: ground with size 20 m** has an **area of 400 $$m^2$$**. **A bench** that is **1 m** wide and **2 m** long, has an area of **2 $$m^2$$**. One **tile** is **5 m wide** and **4 m long** and has an **area of 20 $$m^2$$**. **The space** that needs to be covered is **400 - 2 = 398 $$m^2$$**. **398 / 20 = 19.90 tiles** are necessary. The **time** needed is **19.90 * 0.2 = 3.98 minutes.**
 
@@ -358,7 +358,7 @@ Let's first think of the way we can solve the task, before having started to wri
 
 #### Idea for Solution
 
-We see that the **number of bitcoins** and **the number of Chinese yuans** will be given in the input. The **output** should be in euro. The exchange rates that we have to work with are specified in the task. We notice that we can only exchange the sum in BGN to EUR, therefore, we **first have to calculate the whole sum** that Pesho has in BGN, and then **calculate the output**.
+We see that the **number of bitcoins** and **the number of Chinese yuans** will be given in the input. The **output** should be in euros. The exchange rates that we have to work with are specified in the task. We notice that we can only exchange the sum in BGN to EUR, therefore, we **first have to calculate the whole sum** that Pesho has in BGN, and then **calculate the output**.
 
 As we have information for the exchange rate of Bitcoins to BGN, we can directly exchange them. On the other hand, to get the value of **Chinese yuans in BGN**, first, we have to **exchange them in USD**, and then the **USD to BGN**. Finally, we will **sum the two values** and calculate how much euro that is.
 
@@ -417,7 +417,7 @@ Ivan is a programmer in an American company, and he **works** at home **approxim
 
 Print one number on the console – **the average daily earnings in BGN**. The result will be **rounded up to the second digit after the decimal point**.
 
-### Problem input and output
+### Sample Input and Output
 
 | Input        | Output          |
 |---------------|------------------|
@@ -462,7 +462,7 @@ We do the calculations:
 
 ![](assets/chapter-2-2-images/05.Daily-earnings-02.png)
 
-We could write an expression that calculates the annual income without brackets as well. As multiplication is an operation that has a higher priority over addition, it will be performed first. Despite that, **writing brackets is recommended when using more operators**, as this way the code is **easily readable** and chances of making a mistake are smaller.
+We could write an expression that calculates the annual income without brackets as well. As multiplication is an operation that has a higher priority over addition, it will be performed first. Despite that, **writing brackets is recommended when using more operators**, as this way the code is **easily readable**, and chances of making a mistake are smaller.
 
 Finally, we have to print the result on the console. We notice that the number has to be rounded up to the second digit after the decimal point. To do that, we can use **`.toFixed(…)`**  just like the previous task:
 
