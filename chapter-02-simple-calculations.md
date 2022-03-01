@@ -314,6 +314,30 @@ let expr = (3 + 5) * (4 – 2);
 
 The standard rule for priorities of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In the case of an **expression in brackets, it is calculated first**  but we already know all of that from the school math.
 
+### Problem: Concatenate Data
+
+Write a function, that receives a first name, last name, age and city and prints a message of the following kind: 
+```Javascript
+You are <firstName> <lastName>, a <age>-years old person from <town>.
+```
+
+### Hints and Guidelines 
+
+We write a function that receives the input in the **following order**:
+
+![](/assets/chapter-2-1-images/04.Concatenate-data-01.png)
+
+The **code** that prints the message described in the problem requirements should be finished.
+
+In the picture above the code is blurred on purpose, in order for you to think of a way to finish it yourself.
+
+Next, the solution should be tested locally using **[Ctrl+F5]**.
+
+### Testing in The Judge System
+
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#3](https://judge.softuni.org/Contests/Practice/Index/927#3).
+
+
 ### Problem: Trapeziod Area
 
 Let's  write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the **trapezoid area** by the standard math formula:
@@ -746,7 +770,7 @@ The file **index.html** must look like this:
     <script src="app.js" type="text/JavaScript"></script>
 </head>
 <body>
-    <img id="image" style="position:absolute;top:30%;left:30%; width:10%; height:auto; " src="images/mouse.jpg" />
+    <img id="image" src="images/mouse.jpg" />
 </body>
 </html>
 
