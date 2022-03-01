@@ -17,7 +17,7 @@ After processing, the data is stored again in variables (i.e. somewhere in the m
 
 ## Data Types and Variables
 
-In programming each variable stores a certain **value** of a particular **type**. For example, data types can be a **number**, **string** (text), **boolean** type, **data**, **list**, etc.
+In programming each variable stores a certain **value** of a particular **type**. For example, data types can be a **number**, **string** (text), a **boolean** type, **data**, **list**, etc.
 Here are some examples of data types and values for them:
 - **number** - type of number: 1, 42, -5, 3.14, NaN, …
 - **string** - type of text (string): 'Hello', "Hi", 'Beer', …
@@ -54,7 +54,7 @@ function sum([arg1, arg2]) {
 
 Let's note that the arguments **`arg1`** and **`arg2`** can be a different data type than the one we want. That's why it's necessary to convert them into a suitable one. If it's not done for the program **each number** will be just a **string** with which **we can't do operations** arithmetic operations.
 
-### Problem: Calculating a Square Area with Length of a Side **a**
+### Problem: Square Area
 
 For example, let's look at the following function which reads an integer from the console, multiplies it by itself (squares it), and prints the result from the multiplication. That's how we can calculate square area by side length:
 
@@ -127,7 +127,7 @@ function sum([arg1, arg2]) {
 }
 ```
 
-### Problem: Converting Inches into Centimeters
+### Problem: Inches to Centimeters
 
 Let's write a function that reads a floating-point number in inches and converts it to centimeters::
 
@@ -150,7 +150,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#
 
 ## Reading a Text Input
 
-Same with other data types, to read a **string** it's necessary to **define an argument** to our function and after that to assign it to a variable:
+Same with other data types, to read a **string** it's necessary to **define an argument** to our function and after that assign it to a variable:
 
 ```JavaScript
 function print([arg1]) {
@@ -314,7 +314,7 @@ let expr = (3 + 5) * (4 – 2);
 
 The standard rule for priorities of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In the case of an **expression in brackets, it is calculated first**  but we already know all of that from the school math.
 
-### Problem: Calculating Trapezoid Area
+### Problem: Trapeziod Area
 
 Let's  write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the **trapezoid area** by the standard math formula:
 
@@ -372,7 +372,7 @@ Math.round(5.539); // 6
 (123.512).toFixed(0);	 // 124
 ```
 
-### Problem: Circle Area and Perimeter 
+### Problem: Circle Area and Perimeter
 
 Let's write a function that receives an input of **the radius r** of a circle and **calculates the area and the perimeter** of the circle.
 
@@ -441,16 +441,6 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#6](https://judge.softuni.org/Contests/Practice/Index/927#6).
 
-
-## What Have We Learned from This Chapter?
-
-Let's summarize what we learned from this chapter of the book:
-- **Reading an user input**: **`function sum([number1, number2])`**.
-- **Converting to number**: **`let num = parseInt(arg1)`**, **`let num = parseFloat(arg1)`**.
-- **Aritmetic operations** and using the relevant **aritmetic operators** [+, -, \*, /, ()]: **`let sum = 5 + 3`**.
-- **Print text by using concatenation**: **```console.log(`3 + 5 = ${3 + 5}`)```**.
-- The different types of **rounding** numbers: **`Math.ceil()`**, **`Math.trunc()`**, **`Math.floor()`** and **`.toFixed()`**
-
 ## Exercises: Simple Calculations
 
 Let's strengthen the knowledge gained throughout this chapter with a few more exercises.
@@ -471,158 +461,6 @@ Enter a **significant name** and expansion **.js** to our file, then press the b
 
 ![](assets/chapter-2-1-images/00.Visual-studio-03.png)
 
-### Problem: Calculating Square Area
-
-The first exercise from this topic is the following: write a function that **receives an integer `a` and calculates the area** of a square with side **`a`**. The problem is trivially easy: **inputs a number** as an argument of the function, **multiply it by itself**, and **prints a result** on the console.
-
-#### Hints and Guidelines
-
-We have a correctly named empty file. What remains is to write the **code for solving the problem**. For this purpose, we write the following code:
-
-![](assets/chapter-2-1-images/01.Calculate-square-area-01.png)
-
-The code defines a function **`calculateSquareArea()`**, which receives one argument **`arg1`**. Since the argument is expected to be an integer, convert arguments with the method **`parseInt()`** and then calculate the area: **`area = a * a`**. At the end print the value of the variable **`area`**. 
-For **testing**, it's necessary to **call the function** in the same file with a random parameter and then to start the program by pressing [**Ctrl + F5**]:
-
-![](assets/chapter-2-1-images/01.Calculate-square-area-02.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#0](https://judge.softuni.org/Contests/Practice/Index/927#0).
-
-
-You must get 100 points (completely correct solution):
-
-![](assets/chapter-2-1-images/01.Calculate-square-area-03.png)
-
-![](assets/chapter-2-1-images/01.Calculate-square-area-04.png)
-
-
-### Problem: From Inches to Centimeters
-
-Write a function that **accepts a number** (not necessarily an integer) and converts the number from **inches to centimeters**. For this purpose, **it multiplies the inches by 2.54** (because 1 inch = 2.54 centimeters).
-
-#### Hints and Guidelines
-
-First, we create a **new file** in the folder with the other solutions -  in Visual Studio Code we choose [**File**] -> [**New file**]. We save the file with the name **convertInchesToCentimeters.js** and press the button [**Save**]. After that we have to write **the program code**:
-
-![](assets/chapter-2-1-images/02.Inches-to-centimeters-01.png)
-
-**We call the function** with parameter **2** and start the problem with [**Ctrl + F5**]:
-
-![](assets/chapter-2-1-images/02.Inches-to-centimeters-02.png)
-
-Let's test it with floating numbers, for example, **4.5**:
-
-![](assets/chapter-2-1-images/02.Inches-to-centimeters-03.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#1](https://judge.softuni.org/Contests/Practice/Index/927#1).
-
-The solution should be taken as completely correct:
-
-![](assets/chapter-2-1-images/02.Inches-to-centimeters-04.png)
-
-
-### Problem: Greeting by Name
-
-Write a function, which **takes as an argument a human name** and prints **`Hello, <name>!`**, where **`<name>`** is the name entered earlier.
-
-#### Hints and Guidelines
-
-Again we create a **new file** in the folder with the other solutions and we save the file with the name **sayHello.js**. After that, we have to write the program code. If you find it difficult, you can use the sample code below:
-
-![](assets/chapter-2-1-images/03.Greeting-by-name-01.png)
-
-**We call the function** with an example parameter and **start the program** with [**Ctrl+F5**], to test if it works properly:
-
-![](assets/chapter-2-1-images/03.Greeting-by-name-02.png)
-
-#### Testing in The Judge System
-
-Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/927#2](https://judge.softuni.org/Contests/Practice/Index/927#2).
-
-
-### Problem: Concatenating Text and Numbers
-
-Write a function that receives as an argument the name, surname, age and city and print a message of the following type: **`You are <firstName> <lastName>, a <age>-years old person from <town>`**.
-
-#### Hints and Guidelines
-
-Similarly, we create a new file and name it **printInfo.js**. which prints the message described in the condition of the task, is purposefully blurred for you to think of a way to finish it yourself:
-
-![](assets/chapter-2-1-images/04.Concatenate-data-01.png)
-
-The solution should be tested locally by calling the function with sample values and starting the program with [**Ctrl+F5**].
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#3](https://judge.softuni.org/Contests/Practice/Index/927#3).
-
-
-### Problem: Trapezoid Area
-
-Write a function that receives three arguments **b1, b2, and h and calculate the trapezoid area** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
-
-The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
-
-![](assets/chapter-2-1-images/05.Trapezoid-area-01.png)
-
-#### Hints and Guidelines
-
-We should add a new file in Visual Studio Code again with the name **calculateTrapezoidArea.js** and write a code that reads the inputs from the function's arguments, calculates the trapezoid area, and prints it. The code in the picture is purposely blurred, for you to give it a thought and finish it yourself:
-
-![](assets/chapter-2-1-images/05.Trapezoid-area-02.png)
-
-**Test** your solution locally by calling the function and starting the program with [**Ctrl+F5**].
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#4](https://judge.softuni.org/Contests/Practice/Index/927#4).
-
-
-### Problem: Circle Perimeter and Area
-
-Write a function, that receives an argument **number r** and calculates and prints **the area and perimeter of a circle** with **radius r**.
-
-#### Sample Input and Output
-
-| Input | Output                                                    |
-| ----- | --------------------------------------------------------- |
-|  3    | Area = 28.2743338823081 <br> Perimeter = 18.8495559215388 |
-|  4.5  | Area = 63.6172512351933 <br> Perimeter = 28.2743338823081 |
-
-#### Hints and Guidelines
-
-For the calculations you may use the following formulas:
--	**`Area = Math.PI * r * r`**.
--	**`Perimeter = 2 * Math.PI * r`**.
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#5](https://judge.softuni.org/Contests/Practice/Index/927#5).
-
-
-### Problem: Rectangle Area
-
-A **Rectangle** is defined by the **coordinates** of both of its opposite corners (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is taken as a function argument. The numbers **x1, y1, x2, and y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
-
-![](assets/chapter-2-1-images/00.Rectangle-area-01.png)
-
-#### Sample Input and Output
-
-| Input                                | Output              |
-| ------------------------------------ | ------------------- |
-| 60<br>20<br>10<br>50                 | 1500<br>160         |
-| 30<br>40<br>70<br>-10                | 2000<br>180         |
-| 600.25<br>500.75<br>100.50<br>-200.5 | 350449.6875<br>2402 |
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#6](https://judge.softuni.org/Contests/Practice/Index/927#6).
-
-
 ### Problem: Triangle Area
 
 Write a function that receives arguments which are **a side and a height of a triangle** and calculates its area. Use **the formula** for triangle area: **area = a * h / 2**. Round the result to  **2 digits after the decimal point using `area.toFixed(2)`**.
@@ -641,7 +479,7 @@ Write a function that receives arguments which are **a side and a height of a tr
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#7](https://judge.softuni.org/Contests/Practice/Index/927#7).
 
 
-### Problem: Converter – from °C Degrees to °F Degrees
+### Problem: Celsius to Fahrenheit
 
 Write a function that reads **degrees on the Celsius scale** (°C) and converts them to **degrees on the Fahrenheit scale** (°F).  Look on the Internet for a proper  [formula](https://bfy.tw/3rGh "Search on Google") to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few examples:
 
@@ -659,7 +497,7 @@ Write a function that reads **degrees on the Celsius scale** (°C) and converts 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#8](https://judge.softuni.org/Contests/Practice/Index/927#8).
 
 
-### Problem: Converter - Radians to Degrees
+### Problem: USD to BGN
 
 Write a function that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it in **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (`deg`).  Look for a proper formula on the Internet. The number **π** in **JavaScript** programs is available through  **``Math.PI``**. Round the result to the nearest integer using the **``Math.round(…)``** method.
 
@@ -717,7 +555,7 @@ Write a function for the **conversion of money from one currency into another**.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/927#11](https://judge.softuni.org/Contests/Practice/Index/927#11).
 
 
-### Problem: ** Date Calculations – 1000 Days on The Earth
+### Problem: \*\* 1000 Days After Birth
 
 Write a function that reads **a birth date** in format **`dd-MM-yyyy`** and calculates the date on which **1000 days** are turned since this birth date and prints it in the same format.
 
@@ -938,3 +776,12 @@ Test the application by opening the project folder in **explorer** and launching
 5. Done the application.
 
 If you have any difficulties, ask in **the Softuni Reddit**: https://www.reddit.com/r/softuni/.
+
+## What Have We Learned from This Chapter?
+
+Let's summarize what we learned from this chapter of the book:
+- **Reading an user input**: **`function sum([number1, number2])`**.
+- **Converting to number**: **`let num = parseInt(arg1)`**, **`let num = parseFloat(arg1)`**.
+- **Aritmetic operations** and using the relevant **aritmetic operators** [+, -, \*, /, ()]: **`let sum = 5 + 3`**.
+- **Print text by using concatenation**: **```console.log(`3 + 5 = ${3 + 5}`)```**.
+- The different types of **rounding** numbers: **`Math.ceil()`**, **`Math.trunc()`**, **`Math.floor()`** and **`.toFixed()`**
