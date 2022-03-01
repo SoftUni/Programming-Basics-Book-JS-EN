@@ -21,7 +21,7 @@ if (bool expression) {
 
 After having revised how to write simple conditions, let's solve a few exam problems to practice the **`if-else`** construction:
 
-## Problem: Transportation Price
+## Problem: Transport Price
 
 A student has to travel **n kilometers**. He can choose between **three types of transportation**: 
 * **Taxi**. Starting fee: **0.70** BGN. Day rate: **0.79** BGN/km. Night rate: **0.90** BGN/km.
@@ -97,13 +97,13 @@ After we have checked the distance conditions and we have **calculated the price
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/930#0](https://judge.softuni.org/Contests/Practice/Index/930#0).
 
 
-## Problem: Pipes in Pool
+## Problem: Pipes In Pool
 
 A pool with **volume V** fills up via **two pipes**. **Each pipe has a certain flow rate** (the liters of water, flowing through a pipe for an hour). A worker starts the pipes simultaneously and goes out for **N hours**. Write a program that finds the state of the pool **the moment the worker comes back**. 
 
 ### Input Data
 
-**Four numbers are passes to the function** (arguments):
+**Four numbers are passed to the function** (arguments):
 * The first line (argument) contains a number **V – the volume of the pool in liters** – an integer in the range of [**1 … 10000**].
 * The second line (argument) contains a number **P1 – the flow rate of the first pipe per hour** – an integer in the range of [**1 … 5000**].
 * The third line (argument) contains a number **P2 – the flow rate of the second pipe per hour** – an integer in the range of [**1 … 5000**].
@@ -112,7 +112,7 @@ A pool with **volume V** fills up via **two pipes**. **Each pipe has a certain f
 ### Output Data
 
 Print on the console **one of the two possible states**:
-* To what extent the pool has filled up and how many percent each pipe has contributed with. All percent values must be formatted to an integer (without rounding).
+* To what extent the pool has filled up and how many percent each pipe has contributed. All percent values must be formatted to an integer (without rounding).
 
   * "The pool is **[x]**% full. Pipe 1: **[y]**%. Pipe 2: **[z]**%."
 * If the pool has overflown – with how many liters it has overflown for the given time – a floating-point number. 
@@ -280,7 +280,7 @@ After having done these calculations, we are ready to **calculate the quantity o
 
 #### Checking The Conditions and Processing Output Data
 
-After having done the necessary calculations, the next step is to **check** whether the liters of wine that have been produced, **is enough**. For that, we will use **a simple conditional statement** of the **`if-else`** type and we will check whether the liters of wine from the harvest are **more than** or **equal to** the **needed liters**. 
+After having done the necessary calculations, the next step is to **check** whether the liters of wine that have been produced, **are enough**. For that, we will use **a simple conditional statement** of the **`if-else`** type and we will check whether the liters of wine from the harvest are **more than** or **equal to** the **needed liters**. 
 
 If the condition returns **`true`**, from the task requirement we see that **on the first line** we have to print **the wine that has been produced from the harvest**. That value has to be **rounded down to the nearest integer**, which we will do by using both the method **`Math.floor(…)`** and a **placeholder** when printing it.
 
@@ -356,4 +356,3 @@ If **the time is not enough**, we print the additional hours that are needed for
 ### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/930#4](https://judge.softuni.org/Contests/Practice/Index/930#4).
-
