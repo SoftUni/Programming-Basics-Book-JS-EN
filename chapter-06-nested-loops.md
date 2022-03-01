@@ -87,6 +87,23 @@ The problem is similar to the last one. The difference here is that we need to f
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#2](https://judge.softuni.org/Contests/Practice/Index/935#2).
 
+### Problem: Square of Stars
+
+Write a program that draws on the console a square of **N x N** asterisks: 
+
+|Input|Output|Input|Output|Input|Output|
+|---|---|---|---|---|---|
+|2|<code>\* \*</code><br><code>\* \*</code>|3|<code>\* \* \*</code><br><code>\* \* \*</code><br><code>\* \* \*</code>|4|<code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code>|
+
+#### Hints and Guidelines
+
+The problem is similar to the previous one. Here, it is necessary to consider how to print a space after the asterisks so that there are no unnecessary spaces at the beginning of the end. 
+
+![](assets/chapter-6-1-images/03.Square-01.png)
+
+#### Testing in The Judge System
+
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#2](https://judge.softuni.org/Contests/Practice/Index/935#2).
 
 ### Problem: Triangle of Dollars
 
