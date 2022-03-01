@@ -93,7 +93,7 @@ If the student arrives with more than one minute difference compared to the exam
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>It is recommended <strong>to read the assignment a few times,</strong> take notes and sketch the examples while thinking before you start with the code.</td></tr></table>
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 According to the assignment, we expect **four** lines containing different **integers** to be passed. Examining the provided parameters, we can use the **`Number`** type, as it is suitable for the expected values. We simultaneously **read** the input data and **parse** the string value to the selected data type for the **integer**.
 
@@ -105,7 +105,7 @@ Examining the expected output, we can create variables that contain the differen
 
 #### Calculations
 
-After reading the input data, we can now start writing the logic for calculating the result. Let's first calculate the **start time** of the exam **in minutes** for an easier and more accurate comparison:
+After reading the input data, we can now start writing the logic for calculating the result. Let's first calculate the **start time** of the exam **in minutes** for easier and more accurate comparison:
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-03.png)
 
@@ -204,7 +204,7 @@ Typically, as for the other tasks, we can separate the solution into the followi
 * Doing calculations
 * Printing the result
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 While reading carefully the requirements, we understand that we expect **two** parameters of input data. Our first parameter is a **real number**, for which we need to pick an appropriate variable type. For a higher level of calculation accuracy, we can pick **`Number`** as a variable for the budget and – **`String`** for the season.
 
@@ -254,9 +254,9 @@ What remains is to display the calculated result on the console:
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/932#1](https://judge.softuni.org/Contests/Practice/Index/932#1).
 
-## Problem: Operations with Numbers
+## Problem: Operations
 
-Write a program that reads **two integers (n1 and n2)** and an **operator** that performs a particular mathematical operation with them. Possible operations are: **summing up** (**`+`**), **subtraction** (**`-`**), **multiplying** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon summing up, subtracting and multiplying, the console must print the result and display whether it is an **even** or an **odd** number. Upon regular division – **just the result**, and upon modular division – **the remainder**. You need to take into consideration the fact that **the divisor can be equal to zero** (**`= 0`**) and dividing by zero is not possible. In this case, a **special notification** must be printed.
+Write a program that reads **two integers (n1 and n2)** and an **operator** that performs a particular mathematical operation with them. Possible operations are: **summing up** (**`+`**), **subtraction** (**`-`**), **multiplying** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon summing up, subtracting, and multiplying, the console must print the result and display whether it is an **even** or an **odd** number. Upon regular division – **just the result**, and upon modular division – **the remainder**. You need to take into consideration the fact that **the divisor can be equal to zero** (**`= 0`**) and dividing by zero is not possible. In this case, a **special notification** must be printed.
 
 ### Input Data
 
@@ -322,7 +322,7 @@ From the requirements we can see that for **summing up** (**`+`**), **subtractio
 
 ![](assets/chapter-4-2-images/03.Operations-04.png)
 
-We finish the solution by applying conditions for summing up, subtraction and multiplying:
+We finish the solution by applying conditions for summing up, subtraction, and multiplying:
 
 ![](assets/chapter-4-2-images/03.Operations-05.png)
 
@@ -347,7 +347,7 @@ Finally, what remains is to print the calculated result on the console:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/932#2](https://judge.softuni.org/Contests/Practice/Index/932#2).
 
 
-## Problem: Game Tickets
+## Problem: Match Tickets
 
 **A group of football fans** decided to buy **tickets for Euro Cup 2016**. The tickets are sold in **two** price categories:
 
