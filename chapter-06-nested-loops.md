@@ -1,8 +1,8 @@
 # Chapter 6.1. Nested Loops
 
-In the current chapter, we will be looking at **nested loops** and how to use `for` loops to **draw** various **figures on the console**, that contain symbols and signs, ordered in rows and columns on the console. We will use **single** and **nested loops** (loops that stay in other loops), **calculations** and **checks**, in order to print on the console simple and not so simple figures by specified sizes.
+In the current chapter, we will be looking at **nested loops** and how to use `for` loops to **draw** various **figures on the console**, that contain symbols and signs, ordered in rows and columns on the console. We will use **single**, and **nested loops** (loops that stay in other loops), **calculations** and **checks**, to print on the console simple and not so simple figures by specified sizes.
 
-### Problem: Rectangle Made of 10 x 10 Stars
+### Problem: Rectangle of 10 x 10 Stars
 
 Print on the console a rectangle made out of **10 x 10** stars.
 
@@ -42,7 +42,7 @@ On some web browsers, the repeating results on the console merge in one. It's ad
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#1](https://judge.softuni.org/Contests/Practice/Index/935#1).
 
 
-## Nested loops
+## Nested Loops
 
 A **nested loop** is a construction where **the body of one loop** (the outer one) **stays inside another loop** (the inner one). In each iteration of the outer loop, **the whole** inner loop is executed. This happens in the following way:
 
@@ -69,7 +69,7 @@ function drawSquare(n) {
 
 Let's look at the example above. After initializing **the first \(outer\) loop**, its **body**, which contains **the second \(nested\) loop** starts executing. By itself, it prints on one row `n` number of stars. After **the inner** loop **finishes** executing at the first iteration of the outer one, **the first loop will continue**, i.e. it will print an empty row on the console. **After that**, the variable of **the first** loop will be **renewed** and the whole **second** loop will be executed again. The inner loop will execute as many times as the body of the outer loop executes, in this case, `n` times.
 
-### Problem: Square Made of Stars
+### Problem: Rectangle of N x N Stars
 
 Print on the console a square made of **N x N** stars (use a space between the stars, staying on the same line):
 
@@ -88,7 +88,7 @@ The problem is similar to the last one. The difference here is that we need to f
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#2](https://judge.softuni.org/Contests/Practice/Index/935#2).
 
 
-### Problem: Triangle Made of Dollars
+### Problem: Triangle of Dollars
 
 Write a program that takes an integer **n** and prints **a triangle made of dollars** of size **n**.
 
@@ -136,7 +136,7 @@ Here is an example implementation of the above idea with nested loops:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#4](https://judge.softuni.org/Contests/Practice/Index/935#4).
 
 
-### Problem: Rhombus Made of Stars
+### Problem: Rhombus of Stars
 
 Write a program that takes a positive integer **n** and prints **a rhombus made of stars** with size **n**.
 
@@ -386,7 +386,7 @@ If we have written all correctly, then the problem is solved.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/935#9](https://judge.softuni.org/Contests/Practice/Index/935#9).
 
 
-## What did you learn from this chapter?
+## What Have We Learned from This Chapter?
 
 We learned how to use the **`repeat(...)`** method which constructs and returns a new object from type **`String`**:
 
@@ -414,7 +414,7 @@ Now that we got used to **nested loops** and the way to use them to draw figures
 
 Don't worry if you don't understand all of the code, how exactly it is written and how the project works. It is normal, now we are learning to write code and we are a long way from the web development technologies. If you are struggling to write your project by following the steps, **watch the video** from the beginning of the chapter or ask for help in the SoftUni official **discussion Reddit**: [https://www.reddit.com/r/softuni/](https://www.reddit.com/r/softuni/).
 
-### Problem: Ratings – Visualization in a Web Environment
+### Problem: \* Ratings – Visualization in a Web Environment
 
 Your task is to create a  **JavaScript** web application for visualizing a rating (a number from 0 to 100). From 1 to 10 stars should be drawn with halves. The starts should be generated with a `for` loop.
 
