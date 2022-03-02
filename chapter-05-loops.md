@@ -135,7 +135,7 @@ Write a program that reads **n integer numbers** (**n** > 0) and finds **the big
 
 #### Hints and Guidelines
 
-First, we read one number **`n`** (the number of integers that will be entered). We assign an initial neutral value to the current maximum **`max`**, for example **-10000000000000** (or **`Number.NEGATIVE_INFINITY`**). Using a **`for` loop** that iterates **n times** (**`n = args[0]`**), we read one integer number **`num`** on each iteration. If the current number **`num`** is higher than the current maximum **`max`**, we assign the value of the **`num`** to the variable **`max`**. Finally, we have the highest number's value stored in **`max`**. We print the number on the console.
+First, we read one number **`n`** (the number of integers that will be entered). We assign an initial neutral value to the current maximum **`max`**, for example **-1000000** (or **`Number.NEGATIVE_INFINITY`**). Using a **`for` loop** that iterates **n times** (**`n = args[0]`**), we read one integer number **`num`** on each iteration. If the current number **`num`** is higher than the current maximum **`max`**, we assign the value of the **`num`** to the variable **`max`**. Finally, we have the highest number's value stored in **`max`**. We print the number on the console.
 
 ![](assets/chapter-5-1-images/05.Max-number-01.png)
 
@@ -291,7 +291,7 @@ Write a program that reads **n numbers** and calculates **the sum**, **the min**
 
 The problem combines some of the previous problems: finding **the min**, **the max** value, and **the sum**, as well as processing the elements on **even and odd positions**. Check them out.
 
-In this problem, it's better to work with **fractions** (not integers). The sum, the minimum, and the maximum value are also fractions. We must use **a neutral start value** upon finding the minimum / maximum, for example **1000000000.0** and **-1000000000.0**. If the final result is the neutral value, print **“No”**.
+In this problem, it's better to work with **fractions** (not integers). The sum, the minimum, and the maximum value are also fractions. We must use **a neutral start value** upon finding the minimum / maximum, for example **1000000.0** and **-1000000.0**. If the final result is the neutral value, print **“No”**.
 
 #### Testing in The Judge System
 
@@ -595,7 +595,7 @@ Repeat the following 36 times in a loop:
 
 ### Problem: * Draw a Spiral Triangles with The Turtle
 
-Add a [**Triangle**] button that draws three triangles with 22 beams each, as shown in the figure below:
+Add a [**Spiral Triangle**] button that draws three triangles with 22 beams each, as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-17.png)
 
