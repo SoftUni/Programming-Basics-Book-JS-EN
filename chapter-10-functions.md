@@ -383,7 +383,7 @@ Here the variable  **`personNames`** will get all the returns values. By calling
 
 ![](assets/chapter-10-images/15.Return-multiple-values-05.png)
 
-## Variants of a function
+## Variants of a Function
 
 In many programming languages, one function can be declared as **different variants** with the same name but different parameters. This is known as **method overloading**. For good or bad **JavaScript**, language doesn't support this.
 
@@ -527,6 +527,28 @@ Define a function **`printName(name)`** and implement it. Write a function **`so
 #### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#7](https://judge.softuni.org/Contests/Practice/Index/943#7).
+
+### Problem: String Repeater
+
+Create a function **`repeatString(str, count)`**, which takes parameters of type **`string`** and an integer **`n`** and returns the string, repeated **`n`** times. After this print the result on the console.
+
+## Sample Input and Output
+
+| Input | Output | Input | Output |
+| - | - | - | - |
+|str<br>2|strstr|roki<br>6|rokirokirokirokirokiroki|
+
+## Hints and Guidelines
+
+In the function below, inside the loop, append the input string to the result, that you will finally return:
+
+![](/assets/chapter-10-images/21.Repeated-string-01.png)
+
+Keep in mind that **in JavaScript concatenating strings in loops leads to bad performance** and is not recommended.
+
+## Testing in the Judge System
+
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#9](https://judge.softuni.org/Contests/Practice/Index/943#9).
 
 ### Problem: Min Method
 
