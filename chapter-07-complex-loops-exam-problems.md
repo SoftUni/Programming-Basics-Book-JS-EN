@@ -11,10 +11,10 @@ We already learned how to execute **a block of commands more than once** using a
 
 ## Exam Problems
 
-Let's start work on solving the following practical exam problems.
+Let's start work on solving the following practice exam problems.
 
 
-## Problem: Dumb Passwords Generator
+## Problem: Stupid Password Generator
 
 Write a program that enters two integers **n** and **l** and generates in alphabetical order all possible **"dumb" passwords** that consist of the following **5 characters**:
 -	Character 1: digit from **1** to **n**.
@@ -45,7 +45,7 @@ Print on the console **all "dumb" passwords in alphabetical order**, separated b
 
 We can split the solution of the problem into 3 parts:
 
-* **Reading the input** – in the current problem, this includes reading two numbers **`n`** and **`l`** and converting them to numbers.
+* **Reading the input** – in the current problem, this includes reading two numbers **`n`** and **`l`**, and converting them to numbers.
 * **Processing the input data** – using nested loops to iterate through every possible symbol for each of the five password symbols.
 * **Printing the output** – printing every "dumb" password that meets the requirements.
 
@@ -220,7 +220,7 @@ Write a program that reads from the console 1 integer within the range [**100 �
 - If the number is divisible by **3** without remainder, **subtract** from it **its second digit**
 - If none of the above-mentioned conditions is valid, **add** to it **its third digit**.
 
-Print on the console **N lines**, and each line has **M numbers**, that are the result of the above actions.
+Print on the console **N lines** and each line has **M numbers**, that are the result of the above actions.
 - N = sum of the first and second digits of the number.
 - M = sum of the first and third digits of the number.
 
