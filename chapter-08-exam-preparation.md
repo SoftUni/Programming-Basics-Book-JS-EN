@@ -1,6 +1,6 @@
 # Chapter 8.1. Practical Exam Preparation - Part I
 
-In **the present chapter**, we will examine a few **problems** with a level of **difficultly** that can be expected in **the problems** of the practical **exam** in “Programming Basics”. We will **review** and **practice** all the knowledge that was gained from this book and through the "Programming Basics" course.
+In **the present chapter**, we will examine a few **problems** with a level of **difficulty** that can be expected in **the problems** of the practical **exam** in “Programming Basics”. We will **review** and **practice** all the knowledge that was gained from this book and through the "Programming Basics" course.
 
 ## The "Programming Basics" Practical Exam
 
@@ -24,7 +24,7 @@ The course **"Programing Basics"** finishes with a **practical exam**. There are
 
 **The first**  problem of the "Programming Basics" Practical Exam covers **simple calculations without checks and loops**. Here are a few examples:
 
-### Problem: 2D Triangle Area
+### Problem: Triangle Area
 
 <table>
    <tr>
@@ -78,7 +78,7 @@ The only thing left is to print the area on the console.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#0](https://judge.softuni.org/Contests/Practice/Index/939#0).
 
 
-### Problem: Moving Bricks
+### Problem: Bricks
 
 Construction workers have to transfer a total of **x bricks**. **The workers** are **w** and work simultaneously. They transport the bricks in trolleys, each with a **capacity of m** bricks. Write a program that reads the integers **x**, **w**, and **m**, and calculates **what is the minimum number of courses** the workers need to do to transport the bricks.
 
@@ -195,7 +195,7 @@ Finally, we print **the distance** which we fine before.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#2](https://judge.softuni.org/Contests/Practice/Index/939#3).
 
 
-### Problem: Point on a Figure
+### Problem: Point in Figure
 
 Write a program that checks if a point (with coordinates **x** and **y**) is **inside** or **outside** of the given figure:
  
@@ -251,7 +251,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#
 
 **The third** problem of the "Programming Basics" Practical Exam includes **several nested checks combined with simple calculations**. Here are a few examples:
 
-### Problem: Date after 5 days
+### Problem: Date After 5 Days
 
 There are two numbers **d** (day) and **m** (month) that form **a date**. Write a program that prints the date that will be **after 5 days**. For example, 5 days after **28.03** is the date **2.04**. We assume that the months: April, June, September, and November have 30 days, February has 28 days, and the rest have 31 days. Months to be printed with **leading zero** when they contain a single digit (e.g. 01, 08).
 
@@ -306,7 +306,7 @@ The only thing that remains is to print the result on the console. It is importa
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#4](https://judge.softuni.org/Contests/Practice/Index/939#4).
 
 
-### Problem: Sums of Three Numbers
+### Problem: Sums 3 Numbers
 
 There are **3 integers** given. Write a program that checks if **the sum of two of the numbers is equal to the third one**. For example, if the numbers are **3**, **5**, and **2**, the sum of two of the numbers is equal to the third one: **2 + 3 = 5**.
 
@@ -361,7 +361,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#
 
 **The fourth** problem of the "Programming Basics" Practical Exam includes a **simple loop with simple logic** in it. Here are a few examples:
 
-### Problem: Sums with Step of 3
+### Problem: Sums Step 3
 
 There are given **n** integers **a1, a2, …, an**. Calculate the sums:
 -	**sum1 = a1 + a4 + a7** + … (the numbers are summed, starting from the first one with step of 3).
@@ -404,7 +404,7 @@ Finally, we will print the result on the console in the required **format**.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#6](https://judge.softuni.org/Contests/Practice/Index/939#6).
 
 
-### Problem: Sequence of Increasing Elements
+### Problem: Increasing Elements
 
 A series of **n** numbers is given: **a1**, **a2**, **…**, **an**. Calculate **the length of the longest increasing sequence** of consecutive elements in the series of numbers.
 
@@ -453,7 +453,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#
 
 **The fifth** problem of the "Programming Basics" Practical Exam requires **using one or several nested loops for drawing** a figure on the console. Logical reasoning, simple calculations, and conditional statements may be required. The problem tests the ability of students to think logically and invent simple algorithms for solving problems, i.e. to think algorithmically. Here are some examples of exam tasks:
 
-### Problem: A Perfect Diamond
+### Problem: Perfect Diamond
 
 Write a function that takes as a parameter **n** and draws **a perfect diamond** with size **n** as in the examples below.
 
@@ -483,7 +483,7 @@ We will read the number **`n`** from the parameters of the function.
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-01.png)
 
-We start to draw **the upper half** of the diamond. We see that **each line** starts with some **empty spaces and <code>*</code>**.  If we take a closer look, we will notice that **the empty spaces** are always equal to **`n - index of row - 1`** (the first row is n-1, the second – n-2, etc.). We will start by drawing the number of **empty spaces** and **the first star**. Notice that we start to count from **0, no from 1**. After that, we'll only add a few times **`-*`** to **finish the line**.
+We start to draw **the upper half** of the diamond. We see that **each line** starts with some **empty spaces and <code>*</code>**.  If we take a closer look, we will notice that **the empty spaces** are always equal to the **`n - index of row - 1`** (the first row is n-1, the second – n-2, etc.). We will start by drawing the number of **empty spaces** and **the first star**. Notice that we start to count from **0, no from 1**. After that, we'll only add a few times **`-*`** to **finish the line**.
 
 Here is the fragment from the code for **the upper part of the diamond**:
 
@@ -508,7 +508,7 @@ What remains is **to assemble the whole program**  by first reading the input, p
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/939#8](https://judge.softuni.org/Contests/Practice/Index/939#8).
 
 
-### Problem: Rectangle with Stars in The Center
+### Problem: Rectangle with Stars
 
 Write a function that takes as a parameter an integer **n** and draws **a rectangle** with size **n with 2 stars in the center** as in the examples below.
 
@@ -588,7 +588,7 @@ We read the input data from the function. We also create the additional variable
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-01.png)
 
-We will most easily solve the problem if we logically divide it **into parts**. If we are required to draw all the rows from a number between **`a`** and **`b`**, we will do it using **one loop** that takes all the numbers from **`a`** to **`b`**. Let's think about how to do this with **series of two numbers**. The answer is easy – we will use **nested loops**.
+We will most easily solve the problem if we logically divide it **into parts**. If we are required to draw all the rows from a number between **`a`** and **`b`**, we will do it using **one loop** that takes all the numbers from **`a`** to **`b`**. Let's think about how to do this with a **series of two numbers**. The answer is easy – we will use **nested loops**.
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-02.png)
 
