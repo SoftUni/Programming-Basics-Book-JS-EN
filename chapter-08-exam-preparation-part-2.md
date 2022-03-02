@@ -12,7 +12,7 @@ Traditionally, the admission exam at SoftUni consists of **6 practical programmi
  - A problem with nested loops (drawing a figure on the console).
  - A problem with nested loops and more complex logic.
  
-Let's examine a **real exam topic**, the problems it contains and their solutions.
+Let's examine a **real exam topic**, the problems it contains, and their solutions.
 
 
 ## Problem: Distance
@@ -159,9 +159,9 @@ We can find the final result by **calculating the total amount** that is needed 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/940#1](https://judge.softuni.org/Contests/Practice/Index/940#1).
 
 
-## Problem: Flowers Shop
+## Problem: Flowers
 
-A flowers shop offers 3 types of flowers: **chrysanthemums**, **roses** and **tulips**. The prices depend on the season. In this problem, our currency will be **lv**, which is BGN (Bulgarian lev).
+A flowers shop offers 3 types of flowers: **chrysanthemums**, **roses**, and **tulips**. The prices depend on the season. In this problem, our currency will be **lv**, which is BGN (Bulgarian lev).
 
 |Season|Chrysanthemums|Roses|Tulips|
 |:---:|:---:|:---:|:---:|
@@ -179,9 +179,9 @@ The price for arranging a bouquet is always **2 lv** (BGN). Write a program that
 ### Input Data
 
 The function receives **5 arguments**:
-* **The number** of the puchared **chrysanthemums** – whole number inside the interval of [**0 … 200**].
-* **The number** of the puchared **roses** – whole number inside the interval of [**0 … 200**].
-* **The number** of the puchared **tullips** – whole number inside the interval of [**0 … 200**].
+* **The number** of the purchased **chrysanthemums** – an integer number inside the interval of [**0 … 200**].
+* **The number** of the purchased **roses** – an integer number inside the interval of [**0 … 200**].
+* **The number** of the purchased **tulips** – an integer number inside the interval of [**0 … 200**].
 * **The season** – [**Spring, Summer, Autumn, Winter**].
 * **If the day is a holiday** – [**Y - yes / N - no**].
 
@@ -267,7 +267,7 @@ By the requirements, we see that **first**, we will receive **the number** of st
 
 ![](assets/chapter-8-2-images/04.Grades-01.png)
 
-Before executing the code of the **`for`** loop, we will create variables where we will store **the number of students** for each group: poor results (up to 2.99), results from 3 to 3.99, from 4 to 4.99 and grades above 5. We will also need one more variable, where we will store **the sum of all grades**, via which we will calculate the average grade of all students:
+Before executing the code of the **`for`** loop, we will create variables where we will store **the number of students** for each group: poor results (up to 2.99), results from 3 to 3.99, from 4 to 4.99, and grades above 5. We will also need one more variable, where we will store **the sum of all grades**, via which we will calculate the average grade of all students:
 
 ![](assets/chapter-8-2-images/04.Grades-02.png)
 
