@@ -11,7 +11,7 @@ In the current chapter, we will also take a look at the **`break`** operator and
 
 ## Loops with a Step
 
-In the **"Loops (Repetitions)"** chapter we learned how the **`for`** loop works and we already know when and to what purpose to use it. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step** or as it is also known **step**.  
+In the **"Loops (Repetitions)"** chapter we learned how the **`for`** loop works and we already know when and to what purpose to use it. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step**.
 
 ### Loop with a Step – Explanation
 
@@ -23,7 +23,7 @@ Most often we have a **size of `1`** and in this case, instead of writing **`i +
 
 Here is a series of sample problems, the solution of which will help us better understand the use of a **step** in a **`for`** loop.
 
-### Problem: Numbers from 1 to N with a step of 3
+### Problem: Numbers 1...N with Step 3
 
 Write a program that prints the numbers **from 1 to n** with a **step of 3**. For example, **if n = 100**, then the output would be: **1, 4, 7, 10, …, 94, 97, 100**.
 
@@ -39,7 +39,7 @@ We can solve the problem using the following sequence of actions (algorithm):
 
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/937#0](https://judge.softuni.org/Contests/Practice/Index/937#0).
 
-### Problem: Numbers from N to 1 in Reverse
+### Problem: Numbers N...1
 
 Write a program that prints the numbers **from n to 1 in reverse** (step -1). For example, **if n = 100**, then the output will be: **100, 99, 98, …, 3, 2, 1**.
 
@@ -57,7 +57,7 @@ We can solve the problem in the following manner:
 
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/937#1](https://judge.softuni.org/Contests/Practice/Index/937#1).
 
-### Problem: Numbers from 1 to 2^n with a For Loop
+### Problem: Powers of Two
 
 In the following example, we will use the standard size 1 step.
 
@@ -86,9 +86,9 @@ Here is how we can solve the problem:
 
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/937#3](https://judge.softuni.org/Contests/Practice/Index/937#3).
 
-## While loop
+## While Loop
 
-The next type of loops that we will familiarize, which are called **`while` loops**. The special thing about them is that they repeat a command block **while a condition is met**. Their structure is a bit different than that of the **`for`** loops, however, they boast a simpler syntax.
+The next type of loops that we will familiarize are called **`while` loops**. The special thing about them is that they repeat a command block **while a condition is met**. Their structure is a bit different than that of the **`for`** loops, however, they boast a simpler syntax.
 
 
 ### While Loop – Explanation
@@ -100,7 +100,7 @@ In programming, the **`while` loop** is used when we want to **repeat** the exec
 Here is a series of sample problems, the solutions of which will help us better understand the use of the **`while`**  loop.
 
 
-### Problem: Sequence of Numbers 2k+1
+### Problem: Sequence 2k+1
 
 Write a program that prints **all numbers ≤ n** in the series: **1, 3, 7, 15, 31, …**, assuming that each number is generated according to the following formula nextNumber = **previousNumber \* 2 + 1**.
 
@@ -119,7 +119,7 @@ Here is a sample implementation of this idea:
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#4](https://judge.softuni.org/Contests/Practice/Index/937#1).
 
-### Problem: Number in Range [1 … 100]
+### Problem: Number in Range [1...100]
 
 Enter an integer in the range [**1 … 100**]. If the entered number is **invalid**, enter **another**. In this case, an invalid number would be any number that is **outside** the given range.
 
@@ -195,7 +195,7 @@ We will solve the problem by implementing **Euclid's algorithm**:
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#6](https://judge.softuni.org/Contests/Practice/Index/937#6).
 
-## Do-while loop
+## Do-While Loop
 
 The next type of loop we will study is the **`do-while`** loop. By structure it resembles the **`while`**, but with a significant difference. The **`do-while`** will execute its body **at least once**. Why is this? In the **`do-while`** loop structure, the **condition** is always checked **after** the body, which ensures that the **first loop iteration** will **execute** the code and the check for **the end of the loop** will be applied to each **subsequent** iteration of the **`do-while`**. 
 
@@ -204,7 +204,7 @@ The next type of loop we will study is the **`do-while`** loop. By structure it 
 Now we should proceed with the usual set of practical problems, that will help us better understand the **`do-while`** loop.
 
 
-### Problem: Calculating Factorial
+### Problem: Factorial
 
 For natural **n** number, calculate **n! = 1 \* 2 \* 3 \* … \* n**. For example, if **n = 5**, then the result would be: **5!** = 1 \* 2 \* 3 \* 4 \* 5 = **120**.
 
@@ -224,7 +224,7 @@ Here is how we can calculate factorial in more detail:
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#7](https://judge.softuni.org/Contests/Practice/Index/937#7).
 
-### Problem: Summing the Digits of a Number
+### Problem: Sum Digits
 
 Sum up the digits of the integer **positive** number **n**. For example if **n = 5634**, then the output would be: 5 + 6 + 3 + 4 = **18**.
 
@@ -274,7 +274,7 @@ We already know that the infinite loop executes a certain code infinitely, but w
 <td>The operator <b><code>break</code></b> stops a loop's execution at the point it is called and the execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingly and the rest of the code in the body of the loop will not be executed.</td>
 </tr></table>
 
-### Problem: Prime Number Checking
+### Problem: Check Prime
 
 The next problem we are going to solve is to **check whether a given number is prime**, but before that, we should remember what are prime numbers.
 
@@ -299,14 +299,14 @@ Here are some examples of composite numbers:
 <td>We can optimize the algorithm by instead of checking until <code><strong>n-1</strong></code>, checking divisors only until <code><strong>√n</strong></code>. Think of the reasons why this is so.</td>
 </tr></table>
 
-### Problem: Check for a Prime Number. Break Operator
+### Problem: Enter Even Number
 
 You are tasked to write a function that takes a single input **n** integer and checks if it is prime. This can be implemented by checking if **n** is divisible by any numbers in the range between 2 and √n.
 
 The steps of the **"prime checking algorithm"** are given below in bigger detail:
 
 * We declare the variable **`n`**, to which we assign the integer passed to our function.
-* We create a **`prime`** boolean with and an initial value of **`true`**. We assume that a number is prime until proven otherwise.
+* We create a **`prime`** boolean with, and an initial value of **`true`**. We assume that a number is prime until proven otherwise.
 * We create a **`for`** loop, with the initial value set to 2, for a condition the **current value `<= √n`**. The step is set to 1.
 * In the **body of the loop**, we check if **`n`**, divided by the **current value** has a remainder. If there is **no reminder** from the division, then we change **`prime`** to **`false`** and exit the loop through the **`break`** operator.
 * Depending on the value of **`prime`** we print whether the input number is prime (**`true`**) or composite (**`false`**).
@@ -315,13 +315,13 @@ Here is a sample implementation of the prime checking algorithm, described above
 
 ![](assets/chapter-7-1-images/10.Check-if-prime-01.png)
 
-What remains is to add a **condition that checks if the input number is greater than 1**, because, by definition numbers such as 0, 1, -1 and -2 are not prime.
+What remains is to add a **condition that checks if the input number is greater than 1**, because, by definition numbers such as 0, 1, -1, and -2 are not prime.
 
 #### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#9](https://judge.softuni.org/Contests/Practice/Index/937#9).
 
-### Problem: The break Operator in an Infinite Loop
+### Problem: Break Sum
 
 Write a function, which checks whether a given number **n** is even and if so - print it on the console. An even number can be divided by 2 without a remainder. If the number is invalid, we will print that the current number is not even and the user will need to input a new number.
 
@@ -380,7 +380,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#
 
 In this chapter, we got familiar with a few new types of loops that can perform repetitions with more complex programming logic. Let's solve a few practical problems using these new constructs.
 
-### Problem: Fibonacci Numbers
+### Problem: Fibonacci
 
 Fibonacci's numbers in mathematics form a sequence that looks like this: **1, 1, 2, 3, 5, 8, 13, 21, 34, …**.
 
@@ -425,7 +425,7 @@ Example implementation:
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#12](https://judge.softuni.org/Contests/Practice/Index/937#12).
 
-### Problem: Numbers Pyramid
+### Problem: Number Pyramid
 
 Print the **numbers 1 … n in a pyramid** as per the below example. On the first row, we print one number, at the second we print two, at the third, we print three, and so on, until the numbers are over. On the last line, we print as many numbers as we get until we get to **n**.
 
@@ -437,7 +437,7 @@ Print the **numbers 1 … n in a pyramid** as per the below example. On the firs
 
 #### Hints and Guidelines
 
-We can solve the problem with **two nested loops** (by rows and columns) with printing in them and leaving when the last number is reached. Here is the idea, written in more detail:
+We can solve the problem with **two nested loops** (by rows and columns) by printing in them and leaving when the last number is reached. Here is the idea, written in more detail:
 
 * We declare a variable **`n`**, to which we assign the integer value passed to our function.
 * We declare a variable **`num`** with an initial value of **1**. It will hold the count of printed numbers. At each iteration, we will **increment** it by **1** and will add it to the current row.
@@ -460,7 +460,7 @@ Here is an example implementation:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#13](https://judge.softuni.org/Contests/Practice/Index/937#13).
 
 
-### Problem: Numbers Table
+### Problem: Number Table
 
 Print the numbers 1 … n in a table as per the examples below:
 
