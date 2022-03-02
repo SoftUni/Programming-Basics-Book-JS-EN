@@ -8,7 +8,7 @@ In this chapter we will review three additional problems that belong to the cate
 Before we move on to particular tasks, we must clarify that these can be solved more easily with **additional knowledge in programming with JavaScript** \(functions, arrays, collections, recursion, etc.\), but each solution that will be provided now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge collected up to the present moment.
 
 
-## Problem: Passion Shopping Days
+## Problem: Passion Days
 
 Lina has a real shopping passion. When she has some money, she immediately goes to the closest shopping center (mall) and tries to spend as much as she can on clothes, bags, and shoes. But her favorite thing is winter sales. Our task is to analyze her strange behavior and  **calculate the purchases** that Lina does when she enters the mall, as well as the **money she has left** when the shopping is over. All prices and money are in BGN (Bulgarian levs, **lv**).
 
@@ -66,7 +66,7 @@ We will separate the solution of the problem into three main parts:
 
 Let's examine each of the parts in detail.
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 The input of our task consists of a few components:
 - In the **first argument, we have all the money** that Lina has for shopping.
@@ -91,7 +91,7 @@ The algorithm for solving the problem is a direct one – we continue **reading 
 
 Let's examine the first two problems for our algorithm. The first problem concerns the way we read the commands until we reach the **"mall.Exit"** command. The solution that we previously saw uses a **`while-loop`**. The second problem for the task is to **access each symbol** of the command passed. Keeping in mind that the input data with the commands is a **`string`** type, the easiest way to access each symbol inside the strings is via a **`foreach` loop**. 
 
-This is how the code may look like:
+This is how the code will look like:
 
 ![](assets/chapter-9-2-images/passion-days.02.png)
 
@@ -132,7 +132,7 @@ How can we do that? We will leave the answer to this question to the reader.
 ### Testing in The Judge System
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/942#0](https://judge.softuni.org/Contests/Practice/Index/942#0).
 
-## Problem: Numerical Expression
+## Problem: X Expression
 
 Bonny is an exceptionally powerful witch. As her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is very hard to master because the spell relies on the ability to **quickly solve mathematical expressions**.
 
@@ -144,7 +144,7 @@ The expression is solved without considering the mathematical rules for calculat
 
 ### Problem
 
-The expression
+The expression:
 
 ![](assets/chapter-9-2-images/x-expression.01.png)
 
@@ -294,7 +294,7 @@ Because our input comes directly as an argument of our function we can do the fo
 - We will generate all possible **four-digit combinations** (candidates for verification).
 - For each generated combination we will calculate **how many bulls** and **how many cows** it has according to the secret number. Upon matching the needed bulls and cows, we will **print the combination**.
 
-#### Algorithm for Solving the Problem
+#### Algorithm for Solving The Problem
 
 Before starting to write the algorithm for solving our problem, we must **declare a flag** that indicates whether a solution is found:
 
