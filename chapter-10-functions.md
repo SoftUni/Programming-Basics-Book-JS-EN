@@ -20,7 +20,7 @@ Let's see an **example of a simple function**:
 
 ![](assets/chapter-10-images/01.Simple-method-01.png)
 
-This **function** has the task to print a header, that is a series of the symbol **`-`**. Because of this, the name of the function is **`printHeader`**. The round brackets **`( `** and **`)`** are always after the name, no matter how we have named the functions. Later we will take a look at how we have to name a function we are working with. For now, we will only say that the **name of the function must define the action** that is doing.
+This **function** has the task to print a header, which is a series of the symbol **`-`**. Because of this, the name of the function is **`printHeader`**. The round brackets **`( `** and **`)`** are always after the name, no matter how we have named the functions. Later we will take a look at how we have to name a function we are working with. For now, we will only say that the **name of the function must define the action** that is doing.
 
 The **body** of the function consists of **programming code**, which is located between the curly brackets **`{`** and **`}`**. Between them, we place code, that will solve our problem, described by the name of the function.
 
@@ -30,13 +30,13 @@ Up to this moment, we have found out that, functions help us with **separating l
 
 Using functions we **escape repeating** of programming code. **Repeating** code is a **bad practice** because it makes **harder maintenance** for the programmer to do which leads to errors. If one part of code exists in our program more than once and we have to fix it, we will have to change every occurrence of repeating code. The probability of us forgetting one of the repeated places is high, which will lead to incorrect behavior of our program. This is exactly why it's a **good practice** to define a fragment that will be used **more than once** as a **separate function**.
 
-Functions offer us a **good method** to use **code several times**. With solving more and more exercises, we will come to the conclusion that using already defined functions saves us a lot of time and effort.
+Functions offer us a **good method** to use **code several times**. With solving more and more exercises, we will conclude that using already defined functions saves us a lot of time and effort.
 
 ## Declaring Functions
 
 In JavaScript language we can **define** functions everywhere, using the same way we define variables. Declaring represents the **registration of a function** inside a program and to be recognized inside it.
 
-JavaScript isn't **strongly typed** language. That's why when we **declare a function** it doesn't have a type(string, number, array, etc.), which other programming language methods have.
+JavaScript isn't a **strongly typed** language. That's why when we **declare a function** it doesn't have a type(string, number, array, etc.), which other programming language methods have.
 
 There are two ways, to declare a function in JavaScript - **function declaration** and **Function expression**.
 
@@ -72,7 +72,7 @@ The difference between **Function declaration** and **Function expression** is v
 In theory, this means that we can **call a function** that is declared with **function declaration** even before it was declared in the previous rows. If we try to use **function expression** the program will **throw an error** that the function is not declared yet.
 
 ## Invoking a Function
-Invoking a function is a **start of the execution of a code** that is located inside the body of a function. We call it by typing the **name** of the function followed by **`()`** and **`;`** to end the row. Here is an example:
+Invoking a function is the **start of the execution of a code** that is located inside the body of a function. We call it by typing the **name** of the function followed by **`()`** and **`;`** to end the row. Here is an example:
 
 ![](assets/chapter-10-images/03.Invoking-methods-01.png)
 
@@ -86,9 +86,9 @@ A Function can be invoked from the **body of another function** which is **not**
 
 A Function can be called from **its own body**. This is called **recursion** and you can find more about it on [Wikipedia](https://en.wikipedia.org/wiki/Recursion_(computer_science)) or google it.
 
-### Problem: empty cash receipt
+### Problem: Blank Receipt
 
-Write a function, that prints empty cash receipt. The function must call another three functions: one to print the title, one for the main part, and the last for the bottom part.
+Write a function, that prints an empty cash receipt. The function must call another three functions: one to print the title, one for the main part, and the last for the bottom part.
 
 |Part of cash receipt|Text|
 |---|---|
@@ -153,7 +153,7 @@ Let's look at another example:
 
 In this example, we call the function **`printNumbers(...)`** but this time we give only 1 parameter instead of the **declared** 2 parameters. All parameters that are not **set as values** will automatically get **`undefined`** values. In our case the variable.
 
-### Problem: Symbol of Integer
+### Problem: Sign of Integer Number
 
 Create a function that checks if a number is a positive or negative number.
 
@@ -196,7 +196,7 @@ Our next example shows the use of optional parameters:
 
 When we are not **setting value** for the parameter, he will **get the value** that we have given him when declaring the function.
 
-### Problem: Print of Triangle
+### Problem: Printing Triangle
 
 Create a function that will create a triangle as shown in the example.
 
@@ -230,7 +230,7 @@ In the end, we will print the **bottom part** from the triangle but this time wi
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#2](https://judge.softuni.org/Contests/Practice/Index/943#2).
 
-### Problem: Draw a Filled Square.
+### Problem: Draw a Filled Square
 
 Draw a square with side **`n`**, as shown in the example.
 
@@ -261,7 +261,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#
 
 ## Return Result From a Function
 
-Up to this point, we have viewed functions that do a specific task. For example printing a text, number or a figure on the console. There is another type of function that can **return** a **result** from their task. We can return a result of the multiplication of two numbers. We will look at this type of function in this part.
+Up to this point, we have viewed functions that do a specific task. For example printing a text, number, or a figure on the console. There is another type of function that can **return** a **result** from their task. We can return a result of the multiplication of two numbers. We will look at this type of function in this part.
 
 ### Operator Return
 To get a result from a function we use the operator **`return`**. He must be **used inside the body** of a function. The **`return`** will tell the program to **stop the execution** of the function and **return** a corresponding value. This value is defined after the **`return`** word. 
@@ -270,7 +270,7 @@ In the example underneath we have a **function** that gets the first and last na
 
 ![](assets/chapter-10-images/11.Return-operator-01.png)
 
-**There are cases** in which **`return`** can be called from different places inside the function, but if only the **conditions** are met. 
+**There are cases** in which **`return`** can be called from different places inside the function, but only if the **conditions** are met. 
 
 In the example below, we have a function that compares 2 numbers and **returns** the result which can be  **`-1`**, **`0`**, or **`1`** if the first argument is smaller, equal, or bigger than the second argument. The function uses the operator **`return`** on 3 different places. It returns different values depending on the logic of the code. 
 
@@ -305,7 +305,7 @@ The third is to **pass** the result from one function to **another function**:
 
 ![](assets/chapter-10-images/12.Return-value-03.png)
 
-### Problem: Find The Area of a Triangle
+### Problem: Calculate Triangle Area
 
 Write a function that finds the area of a triangle by given side and altitude and then returns the area.
 
@@ -330,7 +330,7 @@ Our next step is to **call the new** function and **record the returned value in
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#4](https://judge.softuni.org/Contests/Practice/Index/943#4).
 
 
-### Problem: Power of a Number
+### Problem: Math Power
 
 Write a function that calculates and returns the result the power of a number. 
 
@@ -346,7 +346,7 @@ Our first step is again to create a function that will get 2 parameters (base an
 
 ![](assets/chapter-10-images/14.Number-power-01.png)
 
-After we have done our calculations, all we are left to do is calling the function.
+After we have done our calculations, all we are left to do is invoke the function.
 
 #### Testing in The Judge System
 
@@ -402,7 +402,7 @@ We see that in the previous example, **`solve()`** function has **another** decl
 ### Why Should We Use Local Functions?
 
 With time and practice we will find out that when we type code, we often need functions, which
-we might need only once or another function is becoming too long. We have already said that when one function has too many rows of code it is very hard to read, support, and understand. In those cases, we can declare another function which we will use even only once. This helps the code to be cleaner and reduces the chance of making a mistake in the programming code.
+we might need only once or another function is becoming too long. We have already said that when one function has too many rows of code it is very hard to read, support, and understand. In those cases, we can declare another function that we will use even only once. This helps the code to be cleaner and reduces the chance of making a mistake in the programming code.
 
 ### Declaring Local Functions
 
@@ -424,7 +424,7 @@ In this part, we will take a look at some of the **best practices** for writing 
 
 ### Naming Functions
 
-When we name a function it's recommended to use **logical names**. This is good because every function must **correspond** to a specific part of our problem. We must take into consideration the **task** which the function will do. This is why it's a good practice **for the name to describes the purpose of the function**.
+When we name a function it's recommended to use **logical names**. This is good because every function must **correspond** to a specific part of our problem. We must take into consideration the **task** which the function will do. This is why it's a good practice **for the name to describe the purpose of the function**.
 
 It is required for the name of the function to start with a **small letter** and to be a verb or a combination of a verb and a noun. Formatting the names must be done following **Lower Camel Case** convention - **every word except the first to start with an upper letter**. Round brackets 
 **`( `** and **`)`** are always after the name of the function.
@@ -510,7 +510,7 @@ In this chapter we have learned base concepts about working with functions:
 
 To improve what we have learned we will solve a few exercises. In them, it is required to write functions with specific functionality and then call it with values as shown in the example.
 
-### Problem: "Hello, Name!"
+### Problem: Hello, Name!
 
 Write a function that takes a name as a parameter and prints on the console "*Hello, \{name\}!*".
 
@@ -683,11 +683,11 @@ Write a function **`letterize(number)`**, which reads an integer and prints it i
 
 We can first print **the hundreds** as a text – \(the number / 100\) % 10, after that **the tens** – \(the number / 10\) % 10 and at the end **the ones** – \(the number % 10\).
 
-The first special case is when the number is exactly **rounded to 100** \(e.g. 100, 200, 300 etc...\). In this case we print "one-hundred", "two-hundred", "three-hundred" etc.
+The first special case is when the number is exactly **rounded to 100** \(e.g. 100, 200, 300, etc\). In this case we print "one-hundred", "two-hundred", "three-hundred" etc.
 
 The second special case is when the number formed by the last two digits of the input number is **less than 10** \(e.g. 101, 305, 609, etc...\). In this case, we print "one-hundred and one", "three-hundred and five", "six-hundred and nine" etc.
 
-The third special case is when the number formed by the last two digits of the input number is **larger than 10 and smaller than 20** \(e.g. 111, 814, 919, etc.\). In this case, we print "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen" etc.
+The third special case is when the number formed by the last two digits of the input number is **larger than 10 and smaller than 20** \(e.g. 111, 814, 919, etc\). In this case, we print "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen" etc.
 
 #### Testing in The Judge System
 
