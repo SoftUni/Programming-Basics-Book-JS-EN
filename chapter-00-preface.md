@@ -1,6 +1,6 @@
 # Preface
 
-"**Programming Basics**" is the official that introduces readers to writing **programming code** at a beginner's level (basic coding skills), working with the **development environment** (IDE), using **variables** and data, **operators** and **expressions**, working with the **console** (reading input data and printing output), usage of **conditional statements** (**`if`**, **`if-else`**, **`switch-case`**), **loops** (**`for`**, **`while`**, **`do-while`**) and working with **functions** (declaring and calling functions, passing parameters, and returning values). The book uses **JavaScript** programming language and **Visual Studio Code** development environment. The covered training material provides basic preparation for a deeper study of programming and prepares readers for the entrance exam in SoftUni.
+"**Programming Basics with JavaScript**" is the official book that introduces readers to writing **programming code** at a beginner's level (basic coding skills), working with the **development environment** (IDE), using **variables** and data, **operators** and **expressions**, working with the **console** (reading input data and printing output), usage of **conditional statements** (**`if`**, **`if-else`**, **`switch-case`**), **loops** (**`for`**, **`while`**, **`do-while`**) and working with **functions** (declaring and calling functions, passing parameters, and returning values). The book uses **JavaScript** programming language and **Visual Studio Code** development environment. The covered training material provides basic preparation for a deeper study of programming and prepares readers for the entrance exam in SoftUni.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>This book only gives you <b>the first steps to programming</b>. It covers very basic skills that you must develop for years, to reach a high enough level and start working as a programmer.</td>
@@ -229,12 +229,6 @@ other programming issues. The SoftUni community for entering programming is so l
 Due to a large number of students in this textbook, in the forum, you can find a **solution to virtually any task from it**, shared by your colleague. Thousands of students before you have already solved the same tasks, so if you're in trouble, look around the forum.
 
 If you still have a specific question, such as why a program doesn't run, that you've been stuck with for a few hours, **ask it in the forum** and you'll get an answer. You will be surprised how well-intentioned and responsive the users of the SoftUni’s Forum are.
-
-## Official Reddit Channel
-
-The book has an **official Reddit channel** where you can ask questions about the exercises in each chapter.
-
-<p align="center"><strong><a href="https://www.reddit.com/r/softuni/">https://www.reddit.com/r/softuni/</a></strong></p>
 
 ## License and Distribution 
 
