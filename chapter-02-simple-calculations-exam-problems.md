@@ -80,7 +80,7 @@ let str = firstName + " " + lastName + " is " + age + " years old";
 
 ## Exam Problems
 
-Now, after having revised how to make simple calculations and how to read and print numbers from the console, let's go to the tasks. We will solve a few **problems from an entrance exam** in SoftUni.
+Now, after having revised how to make simple calculations and how to read and print numbers from the console, let's go to the tasks. We will solve a few **problems from a practical exam** in SoftUni.
 
 
 ## Problem: Training Lab

@@ -1,6 +1,6 @@
 # Chapter 5.2. Loops – Exam Problems
 
-In the previous chapter, we learned how to run a block of commands **more than once**. That's why we introduced a **`for` loop** and reviewed some of its main use cases. The purpose of this chapter is to improve our knowledge, by solving some more complex exam problems with loops, used for entrance exams. For some of them, we will show examples of comprehensive solutions, and for others, we will provide only guidance.
+In the previous chapter, we learned how to run a block of commands **more than once**. That's why we introduced a **`for` loop** and reviewed some of its main use cases. The purpose of this chapter is to improve our knowledge, by solving some more complex exam problems with loops, used for a practical exams. For some of them, we will show examples of comprehensive solutions, and for others, we will provide only guidance.
 Before we start, let's take another look at the **`for` loop** construction:
 
 ![](assets/chapter-5-2-images/00.For-construction-01.png)
