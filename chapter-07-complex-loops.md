@@ -249,7 +249,7 @@ We can use the following idea to solve the problem:
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#8](https://judge.softuni.org/Contests/Practice/Index/937#8).
 
-## Infinite Loops and The break Operator 
+## Infinite Loops and The `break` Operator 
 
 So far, we were introduced to various types of loops, learning what structures they have and how they are applied. Now, we need to understand what an **infinite loop** is, when it occurs, and how we can break it using the **`break`** operator.
 
@@ -266,7 +266,7 @@ And here is an **infinite `for`** loop:
 ![](assets/chapter-7-1-images/00.Infinite-for-loop-01.png)
 
 
-### The Break Operator
+### The `break` Operator
 
 We already know that the infinite loop executes a certain code infinitely, but what if we want at some point under a given condition to interrupt and exit the loop? The **break** operator comes in handy in this situation.
 
@@ -344,7 +344,7 @@ Here is an example implementation of the idea:
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/937#10](https://judge.softuni.org/Contests/Practice/Index/937#10).
 
-## Nested Loops and The break Operator
+## Nested Loops and The `break` Operator
 
 Now since we know what the **nested loops** are and how the **`break`** operator works, it is time to figure out how they work together. To get a better idea, we should write a **function** step by step, that should make all possible combinations of **number pairs**. The first number in the pair is increasing from 1 to 3, while the second one is decreasing from 3 to 1. Our solution must continue running until **`i + j`** **is not** equal to 2 (i.e. **`i = 1`** and **`j = 1`**).
 

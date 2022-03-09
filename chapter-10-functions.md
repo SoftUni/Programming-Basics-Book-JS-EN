@@ -263,7 +263,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/943#
 
 Up to this point, we have viewed functions that do a specific task. For example printing a text, number, or a figure on the console. There is another type of function that can **return** a **result** from their task. We can return a result of the multiplication of two numbers. We will look at this type of function in this part.
 
-### Operator Return
+### The Operator `return`
 To get a result from a function we use the operator **`return`**. He must be **used inside the body** of a function. The **`return`** will tell the program to **stop the execution** of the function and **return** a corresponding value. This value is defined after the **`return`** word. 
 
 In the example underneath we have a **function** that gets the first and last name as **parameters**. Then it combines them and returns the full name.
@@ -276,7 +276,7 @@ In the example below, we have a function that compares 2 numbers and **returns**
 
 ![](assets/chapter-10-images/11.Return-operator-02.png)
 
-#### Code After a return is Unreachable
+#### Code After a `return` is Unreachable
 
 When the **return** operator is located inside a conditional statement such as **`if`**, after the statement in the same block, we must **not** have rows with code because Visual Studio Code will display a warning telling us that it had found an **unreachable** code.
 
@@ -289,7 +289,7 @@ The operator **`return`** can be also used without a **specific value**. In this
 with the phrase <b><i>type</i> <code>return; return;</code> <i>and let's go home</i></b>”, to explain that the logic of the program is wrongly typed.</td></tr>
 </table>
 
-### Using The return Value of a Function
+### Using The `return` Value of a Function
 
 After a function is executed and has returned a value, we can use the value in several ways.
 

@@ -21,7 +21,7 @@ How does the example work? We initialize **a loop with a variable `i = 1`**, whi
 Test your solution here:: [https://judge.softuni.org/Contests/Practice/Index/935#0](https://judge.softuni.org/Contests/Practice/Index/935#0).
 
 
-###Example: Rectangle Made of N x N Stars
+### Example: Rectangle Made of N x N Stars
 
 Write a program that gets a positive integer **n** and prints on the console **a rectangle made out of N x N stars**.
 
