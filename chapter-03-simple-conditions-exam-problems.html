@@ -459,7 +459,7 @@
 </ul>
 <h2 id="exam-problems"><a name="exam-problems" class="plugin-anchor" href="#exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Exam Problems</h2>
 <p>After having revised how to write simple conditions, let&apos;s solve a few exam problems to practice the <strong><code>if-else</code></strong> construction:</p>
-<h2 id="problem-transportation-price"><a name="problem-transportation-price" class="plugin-anchor" href="#problem-transportation-price"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Transportation Price</h2>
+<h2 id="problem-transport-price"><a name="problem-transport-price" class="plugin-anchor" href="#problem-transport-price"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Transport Price</h2>
 <p>A student has to travel <strong>n kilometers</strong>. He can choose between <strong>three types of transportation</strong>: </p>
 <ul>
 <li><strong>Taxi</strong>. Starting fee: <strong>0.70</strong> BGN. Day rate: <strong>0.79</strong> BGN/km. Night rate: <strong>0.90</strong> BGN/km.</li>
@@ -535,10 +535,10 @@
 <p><img src="assets/chapter-3-2-images/01.Transport-price-06.png" alt=""></p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/930#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/930#0</a>.</p>
-<h2 id="problem-pipes-in-pool"><a name="problem-pipes-in-pool" class="plugin-anchor" href="#problem-pipes-in-pool"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Pipes in Pool</h2>
+<h2 id="problem-pipes-in-pool"><a name="problem-pipes-in-pool" class="plugin-anchor" href="#problem-pipes-in-pool"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Pipes In Pool</h2>
 <p>A pool with <strong>volume V</strong> fills up via <strong>two pipes</strong>. <strong>Each pipe has a certain flow rate</strong> (the liters of water, flowing through a pipe for an hour). A worker starts the pipes simultaneously and goes out for <strong>N hours</strong>. Write a program that finds the state of the pool <strong>the moment the worker comes back</strong>. </p>
 <h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
-<p><strong>Four numbers are passes to the function</strong> (arguments):</p>
+<p><strong>Four numbers are passed to the function</strong> (arguments):</p>
 <ul>
 <li>The first line (argument) contains a number <strong>V &#x2013; the volume of the pool in liters</strong> &#x2013; an integer in the range of [<strong>1 &#x2026; 10000</strong>].</li>
 <li>The second line (argument) contains a number <strong>P1 &#x2013; the flow rate of the first pipe per hour</strong> &#x2013; an integer in the range of [<strong>1 &#x2026; 5000</strong>].</li>
@@ -548,7 +548,7 @@
 <h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console <strong>one of the two possible states</strong>:</p>
 <ul>
-<li><p>To what extent the pool has filled up and how many percent each pipe has contributed with. All percent values must be formatted to an integer (without rounding).</p>
+<li><p>To what extent the pool has filled up and how many percent each pipe has contributed. All percent values must be formatted to an integer (without rounding).</p>
 <ul>
 <li>&quot;The pool is <strong>[x]</strong>% full. Pipe 1: <strong>[y]</strong>%. Pipe 2: <strong>[z]</strong>%.&quot;</li>
 </ul>
@@ -572,7 +572,7 @@
 <tbody>
 <tr>
 <td>1000<br>100<br>120<br>3</td>
-<td>The pool is 66% full. Pipe 1: 45%. Pipe2: 54%.</td>
+<td>The pool is 66% full. Pipe 1: 45%. Pipe 2: 54%.</td>
 <td>100<br>100<br>100<br>2.5</td>
 <td>For 2.5 hours the pool overflows with 400 liters.</td>
 </tr>
@@ -632,7 +632,7 @@
 <td>20</td>
 <td>Tom sleeps well<br>95 hours and 25 minutes less for play</td>
 <td>113</td>
-<td>Tom will run away<br>3 hours and 47 minutes for play</td>
+<td>Tom will run away<br>3 hours and 47 minutes more for play</td>
 </tr>
 </tbody>
 </table>
@@ -708,7 +708,7 @@
 <p>After having done these calculations, we are ready to <strong>calculate the quantity of wine in liters</strong> that will be produced from the harvest as well. For that, we declare one more variable that stores that <strong>quantity</strong>. To calculate, we have to <strong>divide the number of grapes in kg by 2.5</strong>:</p>
 <p><img src="assets/chapter-3-2-images/04.Harvest-02.png" alt=""></p>
 <h4 id="checking-the-conditions-and-processing-output-data"><a name="checking-the-conditions-and-processing-output-data" class="plugin-anchor" href="#checking-the-conditions-and-processing-output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Checking The Conditions and Processing Output Data</h4>
-<p>After having done the necessary calculations, the next step is to <strong>check</strong> whether the liters of wine that have been produced, <strong>is enough</strong>. For that, we will use <strong>a simple conditional statement</strong> of the <strong><code>if-else</code></strong> type and we will check whether the liters of wine from the harvest are <strong>more than</strong> or <strong>equal to</strong> the <strong>needed liters</strong>. </p>
+<p>After having done the necessary calculations, the next step is to <strong>check</strong> whether the liters of wine that have been produced, <strong>are enough</strong>. For that, we will use <strong>a simple conditional statement</strong> of the <strong><code>if-else</code></strong> type and we will check whether the liters of wine from the harvest are <strong>more than</strong> or <strong>equal to</strong> the <strong>needed liters</strong>. </p>
 <p>If the condition returns <strong><code>true</code></strong>, from the task requirement we see that <strong>on the first line</strong> we have to print <strong>the wine that has been produced from the harvest</strong>. That value has to be <strong>rounded down to the nearest integer</strong>, which we will do by using both the method <strong><code>Math.floor(&#x2026;)</code></strong> and a <strong>placeholder</strong> when printing it.</p>
 <p>On the second line, we have to print the results by <strong>rounding them up to the higher integer</strong>, which we will do by using the method <strong><code>Math.ceil(&#x2026;)</code></strong>. The values that we have to print are <strong>the quantity of wine left</strong> and <strong>the quantity that each worker gets</strong>. The wine left is equal to <strong>the difference</strong> between the produced liters of wine and the needed liters of wine. 
 We calculate the value of that quantity in a new variable, which we declare and initialize in the <strong><code>if</code> condition body</strong>, before printing the first line. We calculate the quantity of wine that <strong>each worker gets</strong> by dividing the wine left by the number of workers.</p>
@@ -817,7 +817,7 @@ We calculate the value of that quantity in a new variable, which we declare and 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"next":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"previous":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"path":"chapter-03-simple-conditions.md","ref":"chapter-03-simple-conditions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-03-simple-conditions-exam-problems.md","mtime":"2022-02-24T11:42:51.100Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T11:43:42.356Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"next":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"previous":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"path":"chapter-03-simple-conditions.md","ref":"chapter-03-simple-conditions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-03-simple-conditions-exam-problems.md","mtime":"2022-03-14T14:29:01.167Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-14T14:29:43.973Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

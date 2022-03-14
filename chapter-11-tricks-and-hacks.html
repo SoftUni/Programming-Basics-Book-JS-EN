@@ -443,7 +443,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="chapter-11-tricks-and-hacks"><a name="chapter-11-tricks-and-hacks" class="plugin-anchor" href="#chapter-11-tricks-and-hacks"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 11. Tricks and Hacks</h1>
-<p>In the current chapter, we are going to see some tricks, hacks and techniques, which will make our work with <strong>JavaScript</strong> easier in the <strong>Visual Studio Code</strong> IDE. In particular, we will see:</p>
+<p>In the current chapter, we are going to see some tricks, hacks, and techniques, which will make our work with <strong>JavaScript</strong> easier in the <strong>Visual Studio Code</strong> IDE. In particular, we will see:</p>
 <ul>
 <li>How to properly <strong>format our code</strong>.</li>
 <li>Conventions for <strong>naming elements in the code</strong>.</li>
@@ -461,14 +461,14 @@
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Inside the if statement&quot;</span>);
 }
 </code></pre>
-<p>You can see that the command <strong><code>console.log(&#x2026;)</code></strong> in the example is <strong>offset by 4 white spaces(one tab)</strong>, which is also recommended by the documentation. If given construction with curly brackets is offset by one tab, then <strong>the curly brackets <code>{}</code></strong> must be in <strong>the beginning of the construction</strong>, as in the example below:</p>
+<p>You can see that the command <strong><code>console.log(&#x2026;)</code></strong> in the example is <strong>offset by 4 white spaces(one tab)</strong>, which is also recommended by the documentation. If given construction with curly brackets is offset by one tab, then <strong>the curly brackets <code>{}</code></strong> must be at <strong>the beginning of the construction</strong>, as in the example below:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span> (someCondition) {
    <span class="hljs-keyword">if</span> (anotherCondition) {
        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Inside the if statement&quot;</span>);
    }
 }
 </code></pre>
-<p>This is an example for <strong>badly formatted code</strong> according to the accepted conventions for writing code in <strong>JavaScript</strong>:</p>
+<p>This is an example of a <strong>badly formatted code</strong> according to the accepted conventions for writing code in <strong>JavaScript</strong>:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span>(someCondition)
 {
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Inside the if statement&quot;</span>);}
@@ -499,16 +499,16 @@
 }
 </code></pre>
 <p>If we press [<strong>Shift + Alt + F</strong>], which is our combination to format <strong>the entire document</strong>, we will get code formatted according to <strong>generally accepted JavaScript conventions</strong>. 
-However, automatic formatting does not affect the naming of our variables, which we have to take care of ourselves. It is accepted for variables to <strong>begin</strong> always <strong>with a lowercase letter</strong>and <strong>contain lowercase letters</strong>, with <strong>each subsequent word</strong> in them <strong>beginning with a capital letter</strong> (this naming is also known as the <strong><code>camelCase</code></strong> convention).</p>
+However, automatic formatting does not affect the naming of our variables, which we have to take care of ourselves. It is accepted for variables to <strong>begin</strong> always <strong>with a lowercase letter</strong> and <strong>contain lowercase letters</strong>, with <strong>each subsequent word</strong> in them <strong>beginning with a capital letter</strong> (this naming is also known as the <strong><code>camelCase</code></strong> convention).</p>
 <ul>
-<li>We must be aware of uppercase and lowercase letters because <strong>JavaScript makes a difference</strong> between them. or example <strong><code>age</code></strong> and <strong><code>Age</code></strong> are different variables.</li>
-<li>Variable names <strong>cannot</strong> match a JavaScript keyword, for example, <strong><code>let</code></strong> is an invalid variable name. The official or etc. keyword phrases are just words that are <strong>part of the syntax of JavaScript</strong> and for this reason, they are reserved and cannot be used as names of our variables. Through these words, we have the opportunity to build our programs. As an example of such words can be given the already used: <strong><code>for</code></strong>, <strong><code>while</code></strong>, <strong><code>do</code></strong>, <strong><code>if</code></strong>, <strong><code>else</code></strong>, <strong><code>let</code></strong>, etc. You can see a full list of these reserved phrases here: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords</a></li>
+<li>We must be aware of uppercase and lowercase letters because <strong>JavaScript makes a difference</strong> between them. For example <strong><code>age</code></strong> and <strong><code>Age</code></strong> are different variables.</li>
+<li>Variable names <strong>cannot</strong> match a JavaScript keyword, for example, <strong><code>let</code></strong> is an invalid variable name. The official or, etc. keyword phrases are just words that are <strong>part of the syntax of JavaScript</strong> and for this reason, they are reserved and cannot be used as names of our variables. Through these words, we have the opportunity to build our programs. As an example of such words can be given the already used: <strong><code>for</code></strong>, <strong><code>while</code></strong>, <strong><code>do</code></strong>, <strong><code>if</code></strong>, <strong><code>else</code></strong>, <strong><code>let</code></strong>, etc. You can see a full list of these reserved phrases here: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords</a></li>
 </ul>
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
 <td>Although using the symbol <code>_</code> in the manes of variables is allowed, in JavaScript it is not recommended and is considered a bad style of naming.</td>
 </tr></table>
 
-<p>Here are some examples for <strong>well named</strong>variables:</p>
+<p>Here are some examples for <strong>well-named</strong> variables:</p>
 <ul>
 <li><strong><code>firstName</code></strong></li>
 <li><strong><code>age</code></strong></li>
@@ -523,10 +523,10 @@ However, automatic formatting does not affect the naming of our variables, which
 <li><strong><code>Start_Index</code></strong> (starts with an uppercase letter and contains &apos;_&apos;)</li>
 <li><strong><code>lastNegativeNumber_Index</code></strong> (contains &apos;_&apos;)</li>
 </ul>
-<p>At a first look all these rules can seem meaningless and unnecessary, but with time passed and experience gaining you will see the need for conventions for writing quality code, in order to be able to work more easily and faster in a team. You will understand that the work with a code, which is written without complying with any rules for code quality, is annoying.</p>
+<p>At a first look all these rules can seem meaningless and unnecessary, but with time passed and experience gaining you will see the need for conventions for writing quality code, to be able to work more easily and faster in a team. You will understand that the work with a code, which is written without complying with any rules for code quality, is annoying.</p>
 <h2 id="shortcuts-in-visual-studio-code"><a name="shortcuts-in-visual-studio-code" class="plugin-anchor" href="#shortcuts-in-visual-studio-code"><i class="fa fa-link" aria-hidden="true"></i></a>Shortcuts in Visual Studio Code</h2>
 <p>In the previous section, we mentioned some of the combinations, that are used for formatting code. One of them [<strong>Shift + Alt + F</strong>] is used for <strong>formatting the whole code in a file</strong>, and others did the same thing but on a different operating system. These combinations are called <strong>shortcuts</strong> and now we will give more thorough information about them.</p>
-<p>Shortcuts are <strong>combinations</strong>, that give us the ability to perform some actions <strong>easier and faster</strong>, and each software development environment has its own shortcuts, although most are repetitive. We will now look at some of the <strong>shortcuts</strong> in <strong>Visual Studio Code</strong>. The listed keyboard shortcuts work for sure and have been tested on Windows. The idea is to show you that this exists, it is easy to use and when needed, you can always find what you need for every operating system.</p>
+<p>Shortcuts are <strong>combinations</strong>, that give us the ability to perform some actions <strong>easier and faster</strong>, and each software development environment has its shortcuts, although most are repetitive. We will now look at some of the <strong>shortcuts</strong> in <strong>Visual Studio Code</strong>. The listed keyboard shortcuts work for sure and have been tested on Windows. The idea is to show you that this exists, it is easy to use and when needed, you can always find what you need for every operating system.</p>
 <table>
 <thead>
 <tr>
@@ -537,7 +537,7 @@ However, automatic formatting does not affect the naming of our variables, which
 <tbody>
 <tr>
 <td>[<strong>CTRL + F</strong>]</td>
-<td>The conbination <strong>opens the search window</strong>, by which we can <strong>search in our code</strong>.</td>
+<td>The combination <strong>opens the search window</strong>, by which we can <strong>search in our code</strong>.</td>
 </tr>
 <tr>
 <td>[<strong>CTRL + /</strong>]</td>
@@ -553,7 +553,7 @@ However, automatic formatting does not affect the naming of our variables, which
 </tr>
 <tr>
 <td>[<strong>Shift + Alt + F</strong>]</td>
-<td><strong>Formats the code</strong> according the default conventions.</td>
+<td><strong>Formats the code</strong> according to the default conventions.</td>
 </tr>
 <tr>
 <td>[<strong>CTRL + Backspace</strong>]</td>
@@ -578,50 +578,50 @@ However, automatic formatting does not affect the naming of our variables, which
 <p><img src="assets/chapter-11-images/00.Keyboard-Shortcuts-01.png" alt=""></p>
 <p>Do not hesitate, apply what you have learned now and use the keyboard shortcuts that you think will help you in writing your programs!</p>
 <h2 id="code-snippets-code-snippets"><a name="code-snippets-code-snippets" class="plugin-anchor" href="#code-snippets-code-snippets"><i class="fa fa-link" aria-hidden="true"></i></a>Code Snippets (Code Snippets)</h2>
-<p>In <strong>Visual Studio Code</strong> there are the so-called <strong>code snippets</strong> (code snippets), which write a block of code by using a code template. This useful option is not enabled by default. You have to activate it yourself from [<strong>File -&gt; Preferences -&gt; Settings</strong>] (or just <strong>[Ctrl + Comma]</strong>), which opens window called <strong>User Settings</strong>. These are your personal settings, that you can easily change. Just add the following line between the opening and closing curly braces on the right side of the screen:</p>
+<p>In <strong>Visual Studio Code</strong> there are the so-called <strong>code snippets</strong> (code snippets), which write a block of code by using a code template. This useful option is not enabled by default. You have to activate it yourself from [<strong>File -&gt; Preferences -&gt; Settings</strong>] (or just <strong>[Ctrl + Comma]</strong>), which opens window called <strong>User Settings</strong>. These are your settings, that you can easily change. Just add the following line between the opening and closing curly braces on the right side of the screen:</p>
 <pre><code>&quot;editor.tabCompletion&quot;: true
-</code></pre><p>After doing this, when you type &quot;<strong><code>for</code></strong>&quot; and press <strong>[Tab]</strong> + <strong>[Tab]</strong>, the code of <strong>complete <code>for</code> loop</strong> in automatically generated in the body of our program. This is called &quot;unfolding a code snippet&quot;. The snippet &quot;<strong><code>if</code></strong>&quot; + <strong>[Tab]</strong> + <strong>[Tab]</strong> works similarly. On the figure below you can see the &quot;<strong><code>for</code></strong>&quot; snippet in action:</p>
+</code></pre><p>After doing this, when you type &quot;<strong><code>for</code></strong>&quot; and press <strong>[Tab]</strong> + <strong>[Tab]</strong>, the code of <strong>complete <code>for</code> loop</strong> is automatically generated in the body of our program. This is called &quot;unfolding a code snippet&quot;. The snippet &quot;<strong><code>if</code></strong>&quot; + <strong>[Tab]</strong> + <strong>[Tab]</strong> works similarly. On the figure below you can see the &quot;<strong><code>for</code></strong>&quot; snippet in action:</p>
 <p><img src="assets/chapter-11-images/01.Code-snippet-01.png" alt=""></p>
-<h3 id="creating-your-own-code-snippet"><a name="creating-your-own-code-snippet" class="plugin-anchor" href="#creating-your-own-code-snippet"><i class="fa fa-link" aria-hidden="true"></i></a>Creating Your Own Code Snippet</h3>
-<p>In this section, we are going to show you how to <strong>make your own code snippet</strong>. We will see <strong>how to make a code snippet</strong> for <strong><code>json</code></strong> object. For a start, we will go to [<strong>File -&gt; Preferences -&gt; User Snippets</strong>], then a window will open from which you can choose for which programming language you will create a snippet, as shown in the picture:</p>
+<h3 id="creating-your-code-snippet"><a name="creating-your-code-snippet" class="plugin-anchor" href="#creating-your-code-snippet"><i class="fa fa-link" aria-hidden="true"></i></a>Creating Your Code Snippet</h3>
+<p>In this section, we are going to show you how to <strong>make your code snippet</strong>. We will see <strong>how to make a code snippet</strong> for <strong><code>json</code></strong> object. For a start, we will go to [<strong>File -&gt; Preferences -&gt; User Snippets</strong>], then a window will open from which you can choose for which programming language you will create a snippet, as shown in the picture:</p>
 <p><img src="assets/chapter-11-images/01.Code-snippet-02.png" alt=""> </p>
 <p><strong>We choose JavaScript</strong> from the drop-down menu and a window with a name will open <strong>JavaScript.json</strong>. This extension <strong>json</strong> is a special format for saving data, which is imposed in the ways of data transfer and storage. In addition, the <strong>json</strong> format can be used in our programs, as we will discuss later. The file looks like this:</p>
 <p><img src="assets/chapter-11-images/01.Code-snippet-03.png" alt=""> </p>
-<p>The example we see by default is generating code to write to the console using the <strong>log</strong> key prefix. This code is just an example, and this template is actually embedded, but if it wasn&apos;t, it would look like the example.</p>
-<p>In this example, you see a lot of unknown things, but do not worry, we will get familiar with them later. We now focus on the part <strong><code>&quot;Print to console&quot;:</code></strong> and the code between <strong>opening and closing curly braces <code>{}</code></strong>. What we see inside the parentheses is the content of a template. . Each template must contain <strong><code>prefix</code></strong>, which is the short text that after pressing [<strong>Tab</strong>] + [<strong>Tab</strong>] will generate the template code in your program.</p>
-<p>The second thing your template should have is <strong><code>body</code></strong>, this is the most complex part of the template. This is actually the <strong> code that will be generated </strong> and in it, we can use <strong>variables</strong>, which are created with <strong><code>$1</code></strong> and in place of the unit can be placed other text. The example uses a variable: <strong><code>&quot;console.log(&apos;$1&apos;);&quot;</code></strong>.</p>
-<p>We can use <strong>Tabstops</strong>, which simply <strong>place the cursor in certain places in the code</strong> and between them can be navigated with tabs. They are created automatically by creating a variable. We can also use <strong>Placeholders</strong>, they are a type of <strong>Tabstops</strong>, but they can also <strong>contain some value</strong>, for example: <strong><code>${1:myVal}</code></strong>.</p>
+<p>The example we see by default is generating code to write to the console using the <strong>log</strong> key prefix. This code is just an example, and this template is embedded, but if it wasn&apos;t, it would look like the example.</p>
+<p>In this example, you see a lot of unknown things, but do not worry, we will get familiar with them later. We now focus on the part <strong><code>&quot;Print to console&quot;:</code></strong> and the code between <strong>opening and closing curly braces <code>{}</code></strong>. What we see inside the parentheses is the content of a template. . Each template must contain a <strong><code>prefix</code></strong>, which is the short text that after pressing [<strong>Tab</strong>] + [<strong>Tab</strong>] will generate the template code in your program.</p>
+<p>The second thing your template should have is a <strong><code>body</code></strong>, this is the most complex part of the template. This is the <strong> code that will be generated </strong> and in it, we can use <strong>variables</strong>, which are created with <strong><code>$1</code></strong>, and in place of the unit can be placed other text. The example uses a variable: <strong><code>&quot;console.log(&apos;$1&apos;);&quot;</code></strong>.</p>
+<p>We can use <strong>Tabstops</strong>, which simply <strong>place the cursor in certain places in the code</strong>, and between them can be navigated with tabs. They are created automatically by creating a variable. We can also use <strong>Placeholders</strong>, they are a type of <strong>Tabstops</strong>, but they can also <strong>contain some value</strong>, for example: <strong><code>${1:myVal}</code></strong>.</p>
 <p>There are also more complex configurations, but for begging these will do an excellent job.</p>
-<p>The last part of the template is <strong><code>description</code></strong>, which serves to add an additional explanation of what it does. Now let&apos;s try to make our own template. We delete the given example and enter the following code:</p>
+<p>The last part of the template is a <strong><code>description</code></strong>, which serves to add an explanation of what it does. Now let&apos;s try to make our template. We delete the given example and enter the following code:</p>
 <p><img src="assets/chapter-11-images/01.Code-snippet-04.png" alt=""> </p>
 <p>Now when we type <strong><code>json</code></strong> + [<strong>Tab</strong>] + [<strong>Tab</strong>] in an open JavaScript file in Visual Studio Code, <strong>our new snippet</strong> appears:</p>
 <p><img src="assets/chapter-11-images/01.Code-snippet-05.png" alt=""> </p>
-<p>For those of you who are more interested in the topic, many of the big <strong>frameworks</strong> like <strong>Angular, React, etc.</strong> have their own templates that can be installed from the <strong>Extensions</strong> window. As the name suggests, <strong>framework</strong> is a conceptual structure that helps us by giving us some things in advance, and also prevents us from making big mistakes by imposing certain restrictions. The main idea is to provide a complete solution in a given area, which has the ability to upgrade all components in this area. Some of the things you can get ready-made are these templates.</p>
+<p>For those of you who are more interested in the topic, many of the big <strong>frameworks</strong> like <strong>Angular, React, etc.</strong> have their own templates that can be installed from the <strong>Extensions</strong> window. As the name suggests, a <strong>framework</strong> is a conceptual structure that helps us by giving us some things in advance, and also prevents us from making big mistakes by imposing certain restrictions. The main idea is to provide a complete solution in a given area, which can upgrade all components in this area. Some of the things you can get ready-made are these templates.</p>
 <p><img src="assets/chapter-11-images/01.Code-snippet-06.png" alt=""> </p>
 <h2 id="code-debugging-techniques"><a name="code-debugging-techniques" class="plugin-anchor" href="#code-debugging-techniques"><i class="fa fa-link" aria-hidden="true"></i></a>Code Debugging Techniques</h2>
-<p>Debugging plays an important role in the process of creating software, which is to allow us to <strong>follow the implementation of our program step by step</strong>. With this technique, we can <strong>follow the values of the local variables</strong> because they are changing during the execution of the program and to <strong>remove</strong> possible <strong>errors</strong> (bugs). The process of debugging includes:</p>
+<p>Debugging plays an important role in the process of creating software, which is to allow us to <strong>follow the implementation of our program step by step</strong>. With this technique, we can <strong>follow the values of the local variables</strong> because they are changing during the execution of the program and <strong>remove</strong> possible <strong>errors</strong> (bugs). The process of debugging includes:</p>
 <ul>
 <li><strong>Finding</strong> the problems (bugs).</li>
 <li><strong>Locating</strong> the code, which causes the problems.</li>
 <li><strong>Correcting</strong> the code, which causes the problems so that the program works correctly.</li>
 <li><strong>Testing</strong>, to make sure that the program works correctly after the corrections we have made.</li>
 </ul>
-<p><strong>Visual Studio Code</strong> gives us <strong>a built-in debugger</strong>, thanks to which we can place <strong>breakpoints</strong>, at places we have chosen. When it reaches a <strong>breakpoint</strong>, the program <strong>stops running</strong> and allows <strong>step-by-step running</strong> of the remaining lines. Debugging allows us to <strong>get in the details of the program</strong> and see where exactly the errors occur and what is the reason for this.</p>
-<p>In order to demonstrate how to use the debugger, we will use the following program:</p>
+<p><strong>Visual Studio Code</strong> gives us <strong>a built-in debugger</strong>, thanks to which we can place <strong>breakpoints</strong>, at places we have chosen. When it reaches a <strong>breakpoint</strong>, the program <strong>stops running</strong> and allows <strong>step-by-step running</strong> of the remaining lines. Debugging allows us to <strong>get the details of the program</strong> and see where exactly the errors occur and what is the reason for this.</p>
+<p>To demonstrate how to use the debugger, we will use the following program:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
     <span class="hljs-built_in">console</span>.log(i);
 }
 </code></pre>
 <p>We will place a <strong>breakpoint</strong> on the method <strong><code>console.log(&#x2026;)</code></strong>. For this, we will need to move our cursor to the line, which prints on the console, and press [<strong>F9</strong>]. A <strong>breakpoint</strong> (the red point, just before the number on line 3), where the program will <strong>stop</strong> its execution:</p>
 <p><img src="assets/chapter-11-images/02.Debugger-01.png" alt=""> </p>
-<p>In order to start <strong>the program in debug mode</strong>, we choose [<strong>Debug</strong>] -&gt; [<strong>Start Debugging</strong>] or press [<strong>F5</strong>]:</p>
+<p>To start <strong>the program in debug mode</strong>, we choose [<strong>Debug</strong>] -&gt; [<strong>Start Debugging</strong>] or press [<strong>F5</strong>]:</p>
 <p><img src="assets/chapter-11-images/02.Debugger-02.png" alt=""> </p>
-<p>After starting the program, we can see that it <strong>stops executing</strong> at line 4, where we placed our breakpoint. The code in the current line <strong>is colored in yellow</strong> and we can <strong>run it step by step</strong>.In order to go to <strong>the next line</strong> e use the key [<strong>F10</strong>]. <strong>We can see that the code on the current line hasn&apos;t been executed yet</strong>. <strong>It will execute when we go ahead to the next line</strong>:</p>
+<p>After starting the program, we can see that it <strong>stops executing</strong> at line 4, where we placed our breakpoint. The code in the current line <strong>is colored in yellow</strong> and we can <strong>run it step by step</strong>. To go to <strong>the next line</strong> e use the key [<strong>F10</strong>]. <strong>We can see that the code on the current line hasn&apos;t been executed yet</strong>. <strong>It will execute when we go ahead to the next line</strong>:</p>
 <p><img src="assets/chapter-11-images/02.Debugger-03.png" alt=""> </p>
 <p>From the <strong>Debug</strong> window, which opens with [<strong>View -&gt; Debug</strong>] or with the keyboard shortcut [<strong>Ctrl + Shift + D</strong>], we can observe <strong>the changes in the local variables</strong>. </p>
 <p><img src="assets/chapter-11-images/02.Debugger-04.png" alt=""> </p>
 <h2 id="a-guide-for-tricks"><a name="a-guide-for-tricks" class="plugin-anchor" href="#a-guide-for-tricks"><i class="fa fa-link" aria-hidden="true"></i></a>A Guide for Tricks</h2>
-<p>In this section, we will briefly show <strong>tricks and techniques</strong> of the programming with the <strong>JavaScript</strong> language, some of which are already mentioned in this book, which will be very useful, if you take a programming exam for beginners.</p>
+<p>In this section, we will briefly show <strong>tricks and techniques</strong> of programming with the <strong>JavaScript</strong> language, some of which are already mentioned in this book, which will be very useful, if you take a programming exam for beginners.</p>
 <h3 id="rounding-numbers"><a name="rounding-numbers" class="plugin-anchor" href="#rounding-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Rounding Numbers</h3>
 <p>In case we need to round numbers we can use one of the following methods:</p>
 <ul>
@@ -678,7 +678,7 @@ However, automatic formatting does not affect the naming of our variables, which
 <ul>
 <li>Keyword <strong><code>if</code></strong></li>
 <li><strong>A Boolean expression</strong> (condition)</li>
-<li><strong>Body</strong> of the conditonal construction</li>
+<li><strong>Body</strong> of the conditional construction</li>
 <li>Optional: <strong><code>else</code> clause</strong></li>
 </ul>
 <pre><code class="lang-JavaScript"><span class="hljs-keyword">if</span> (condition) {
@@ -702,8 +702,8 @@ However, automatic formatting does not affect the naming of our variables, which
 }
 </code></pre>
 <p>To be easier to write it, we can use the code snippet for the <strong><code>for</code> loop</strong>: <strong><code>for</code></strong> + [<strong>Tab</strong>] + [<strong>Tab</strong>].</p>
-<h3 id="using-the-so-called-positive-truthy-and-negative-falsy-value"><a name="using-the-so-called-positive-truthy-and-negative-falsy-value" class="plugin-anchor" href="#using-the-so-called-positive-truthy-and-negative-falsy-value"><i class="fa fa-link" aria-hidden="true"></i></a>Using the so-called positive (Truthy) and negative (Falsy) value</h3>
-<p>All <strong>Truthy</strong> values used in the conditional statement <strong><code>if</code></strong> will give a positive result and accordingly or program will continue ist execution in the body of the conditional statement (for the purposes of the example here the body of the conditional statement is not formatted correctly).</p>
+<h3 id="using-the-so-called-positive-truthy-and-negative-falsy-value"><a name="using-the-so-called-positive-truthy-and-negative-falsy-value" class="plugin-anchor" href="#using-the-so-called-positive-truthy-and-negative-falsy-value"><i class="fa fa-link" aria-hidden="true"></i></a>Using The So-Called Positive (Truthy) and Negative (Falsy) Value</h3>
+<p>All <strong>Truthy</strong> values used in the <strong><code>if</code></strong> conditional statement will give a positive result and accordingly or program will continue ist execution in the body of the conditional statement (for the example here the body of the conditional statement is not formatted correctly).</p>
 <p>For some of them it seems logical to give a positive result, but for others not so much.</p>
 <pre><code class="lang-JavaScript"><span class="hljs-comment">//Truthy</span>
 <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {}       <span class="hljs-comment">//true</span>
@@ -730,7 +730,7 @@ However, automatic formatting does not affect the naming of our variables, which
 </code></pre>
 <p>It is not necessary to know these values by heart at this stage, but only to remember that there are so-called <strong>Truthy</strong> and <strong>Falsy</strong> values. Over time, we will get used to how to use them properly and how they help us shorten our code. </p>
 <h2 id="what-have-we-learned-from-this-chapter"><a name="what-have-we-learned-from-this-chapter" class="plugin-anchor" href="#what-have-we-learned-from-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What Have We Learned from This Chapter?</h2>
-<p>In the current chapter we learned how to <strong>correctly</strong> <strong>format</strong> and <strong>name</strong> the elements of our code, some <strong>shortcuts</strong> for work in Visual Studio Code, some <strong>code snippets</strong> and how to <strong>debug code</strong>.</p>
+<p>In the current chapter, we learned how to <strong>correctly</strong> <strong>format</strong> and <strong>name</strong> the elements of our code, some <strong>shortcuts</strong> for work in Visual Studio Code, some <strong>code snippets</strong>, and how to <strong>debug code</strong>.</p>
 
                                 
                                 </section>
@@ -774,7 +774,7 @@ However, automatic formatting does not affect the naming of our variables, which
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"11. Tricks and Hacks","level":"1.21","depth":1,"next":{"title":"Conclusion","level":"1.22","depth":1,"path":"chapter-12-conclusion.md","ref":"chapter-12-conclusion.md","articles":[]},"previous":{"title":"10. Functions","level":"1.20","depth":1,"path":"chapter-10-functions.md","ref":"chapter-10-functions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-11-tricks-and-hacks.md","mtime":"2022-02-24T11:42:51.112Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T11:43:42.356Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"11. Tricks and Hacks","level":"1.21","depth":1,"next":{"title":"Conclusion","level":"1.22","depth":1,"path":"chapter-12-conclusion.md","ref":"chapter-12-conclusion.md","articles":[]},"previous":{"title":"10. Functions","level":"1.20","depth":1,"path":"chapter-10-functions.md","ref":"chapter-10-functions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-11-tricks-and-hacks.md","mtime":"2022-03-14T14:29:01.175Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-14T14:29:43.973Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
