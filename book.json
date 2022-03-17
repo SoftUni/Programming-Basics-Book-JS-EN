@@ -20,7 +20,8 @@
             "files": [
                 "./assets/js/repl.it-code-runner.js",
                 "./assets/js/video.js",
-                "./assets/js/top-menu.js"
+                "./assets/js/top-menu.js",
+                "./assets/js/modal-popup.js"
             ]
         }
     },
