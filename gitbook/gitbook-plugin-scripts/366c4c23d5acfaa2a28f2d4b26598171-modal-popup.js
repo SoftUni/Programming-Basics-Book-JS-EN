@@ -3,22 +3,22 @@ gitbook.events.bind("page.change", function() {
     let modalContent = $(`
     <span id="modal" class="modal-background">
         <p class="modal-content">
-            <a class="modal-title">Become a Certified Developer!</a>
+            <span class="modal-title">Become a Certified Developer!</span>
             <span class="button-wrapper">
                 <a target="_blank" href="https://softuni.org/learn/">Start Now with a FREE 7-days Trial</a>
             </span>
-            <span class="upper-text"><a><b>Begin</b> your <b>IT career</b> with a <b>self-paced education</b> in <b>Java</b> or <b>JavaScript</b>. Become a <b>programmer</b> with <b>comprehensive</b>,
+            <span class="upper-text"><span><b>Begin</b> your <b>IT career</b> with a <b>self-paced education</b> in <b>Java</b> or <b>JavaScript</b>. Become a <b>programmer</b> with <b>comprehensive</b>,
                 <b>up-to-date</b> online classes led by an expert. Study in your own
-                <b>time</b> and at your <b>own pace</b>. Go back any time and <b>rewatch</b> the lessons, if needed.</a>
+                <b>time</b> and at your <b>own pace</b>. Go back any time and <b>rewatch</b> the lessons, if needed.</span>
             </span>
             <span class="middle-text">
-                <a class="middle-text-title">You can <b>succeed</b> even if you are:</a>
-                <a>&#x2705; <b>Novice</b> - no prior programming knowledge is needed.</a>
-                <a>&#x2705; <b>Working</b> - keep your other commitments and still succeed.</a>
-                <a>&#x2705; <b>Busy</b> - spend 2-3 hours per day and become a skilled programmer.</a>
-                <a>&#x2705; <b>Insecure</b> - get career advise and land your dream job.</a>
+                <span class="middle-text-title">You can <b>succeed</b> even if you are:</span>
+                <span>&#x2705; <b>Novice</b> - no prior programming knowledge is needed.</span>
+                <span>&#x2705; <b>Working</b> - keep your other commitments and still succeed.</span>
+                <span>&#x2705; <b>Busy</b> - spend 2-3 hours per day and become a skilled programmer.</span>
+                <span>&#x2705; <b>Insecure</b> - get career advise and land your dream job.</span>
             </span>
-            <span class="lower-text"><a>Learn <b>Programming</b> from Zero to Hero! <b>Stop waiting</b> and <b>start</b> your journey <b>today</b>!</a><br><br></span>
+            <span class="lower-text"><span>Learn <b>Programming</b> from Zero to Hero! <b>Stop waiting</b> and <b>start</b> your journey <b>today</b>!</span><br><br></span>
             <span id="close-btn" class="close">&times;</span>
         </p>
     </span>

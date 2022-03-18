@@ -156,7 +156,7 @@ span.run-code-loading {
     margin: auto;
     position: relative;
     padding: 1em;
-    width: 35em;
+    width: 39em;
     color: #333333;
     font-family: "trebuchet ms", helvetica, sans-serif;
 }
@@ -202,7 +202,7 @@ span.run-code-loading {
     display: block;
 }
 
-.middle-text a {
+.middle-text span {
     display: block;
     padding-left: 1.7em;
 }
@@ -239,7 +239,7 @@ span.run-code-loading {
 
 @media screen and (max-width: 700px) {
     .modal-content {
-        width: 16em;
+        width: 18em;
     }
     .button-wrapper a {
         border-radius: 1em;
