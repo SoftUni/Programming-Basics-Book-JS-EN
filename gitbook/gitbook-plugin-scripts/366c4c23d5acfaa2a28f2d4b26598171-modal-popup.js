@@ -10,6 +10,7 @@ gitbook.events.bind("page.change", function() {
                                 </span>
                             `);
         doc.prepend(modalContent);
+        modalContent.style.display = "block";
 
         window.onclick = function(event) {
             let modalContent = document.getElementById("modal");
