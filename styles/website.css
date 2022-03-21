@@ -245,6 +245,7 @@ span.run-code-loading {
         padding-bottom: 0em;
     }
     .button-wrapper a {
+        padding: 0.3em 0.7em 0.3em 0.7em;
         border-radius: 1em;
     }
     .upper-text {
