@@ -3,9 +3,9 @@ gitbook.events.bind("page.change", function() {
     let modalContent = $(`
     <span id="modal" class="modal-background">
         <p class="modal-content">
-            <span class="modal-title">Become a Certified Developer!</span>
+            <span class="modal-title">Learn Programming and Start a Tech Job!</span>
             <span class="button-wrapper">
-                <a target="_blank" href="https://softuni.org/learn/">Start a 7-day FREE Trial</a>
+                <a target="_blank" href="https://softuni.org/learn/">Enroll Now</a>
             </span>
             <span class="upper-text"><span><b>Begin</b> your <b>IT career</b> with a <b>self-paced education</b> in <b>Java</b> or <b>JavaScript</b>. Become a <b>programmer</b> with <b>comprehensive</b>,
                 <b>up-to-date</b> online classes led by an expert. Study in your own
