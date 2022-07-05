@@ -24,7 +24,7 @@ Here are some examples of data types and values for them:
 - **boolean** - boolean type: true, false
 - **Date** - date: Tue Jul 04 2017, ……
 
-**JavaScript** language has three keywords for declaring a variable - **`var`**, **`const`**, and **`let`**. The main difference between **`let`** and **`var`** is in the scope of the variable. We use **`const`** when we are sure that what we assign to the variable will not change. A little further in the book, we will find out more details about the range of variables but for now, we will use the word ** `let` ** to declare a new variable.
+**JavaScript** language has three keywords for declaring a variable - **`var`**, **`const`**, and **`let`**. The main difference between **`let`** and **`var`** is in the scope of the variable. We use **`const`** when we are sure that what we assign to the variable will not change. A little further in the book, we will find out more details about the range of variables but for now, we will use the word **`let`** to declare a new variable.
 
 
 ## Print a Result on The Screen
