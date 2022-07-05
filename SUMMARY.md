@@ -23,7 +23,7 @@
 
 <hr />
 
-* [👨🏼‍💻 Learn Programming @ SoftUni Global](https://softuni.org)
+* [🎓 SoftUni Global](https://softuni.org)
+* [👨🏼‍💻 Learn Programming @ SoftUni Global](https://softuni.org/learn)
 * [▶️ SoftUni Global @ YouTube](https://www.youtube.com/c/CodeWithNakov)
 * [📚 Nakov's Books](https://introprogramming.info)
-* [💬 Ask for Help on Reddit](https://www.reddit.com/r/softuni/)
