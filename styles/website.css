@@ -92,14 +92,11 @@ span.run-code-loading {
 }
 
 
-/* Navigation Modal */
-
-.logo {
-    padding-top: 0.5em;
-    width: 120px;
-}
+/* Top navigation menu */
 
 .topnav {
+    padding: 10px 5px 5px 15px;
+	border-radius: 2px;
     background-color: #f1f1f1;
     overflow: hidden;
     display: flex;
@@ -110,43 +107,39 @@ span.run-code-loading {
     text-align: center;
     display: inline-block;
     color: #333333;
-    padding-left: 1.5em;
+    padding-right: 2.5em;
 }
 
-@media screen and (max-width: 300px) {
-    .topnav {
-        display: none;
-    }
+.topnav .logo {
+    padding-top: 0.4em;
+    width: 120px;
 }
 
 @media screen and (max-width: 750px) {
     .logo {
         content: url("/assets/softuni-global-vertical-logo.svg");
-        padding-top: 0.5em;
-        padding-left: 1.5em;
-        width: 80px;
+        padding: 5px 0;
+        width: 50px;
+        min-width: 40px;
     }
     .topnav {
         white-space: normal;
         display: flex;
         flex-direction: row;
     }
-     .topnav a {
-        padding-left: 0em;
-        padding-right: 1.5em;
-        padding-bottom: 0.3em;
-        font-size: 75%
+    .topnav a {
+        font-size: 90%;
     }
 }
 
 
-/* Modal Popup */
+/* Modal popup */
 
 .modal-background {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 7em;
+    padding-top: 6em;
     left: 0;
     top: 0;
     width: 100%;
@@ -169,9 +162,11 @@ span.run-code-loading {
 }
 
 .modal-title {
-    font-size: 2.1em;
+    font-size: 2.3em;
     font-weight: bold;
+    line-height: 1.3em;
     text-align: center;
+    padding-bottom: 10px;
     display: block;
 }
 
@@ -230,7 +225,7 @@ span.run-code-loading {
 
 .close {
     position: absolute;
-    bottom: 0;
+    top: 0;
     right: 0.5em;
     color: #aaaaaa;
     font-size: 3em;
@@ -252,7 +247,7 @@ span.run-code-loading {
         padding-bottom: 0em;
     }
     .button-wrapper a {
-        padding: 0.3em 0.7em 0.3em 0.7em;
+        padding: 0.3em 1.0em 0.3em 1.0em;
         border-radius: 1em;
     }
     .upper-text {
