@@ -113,9 +113,10 @@ span.run-code-loading {
 .topnav .logo {
     padding-top: 0.4em;
     width: 120px;
+    min-width: 90px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     .topnav .logo {
         content: url("/assets/softuni-global-vertical-logo.svg");
         padding: 5px 0;
@@ -132,9 +133,10 @@ span.run-code-loading {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
     .topnav a {
-        padding-right: 2em;
+        padding-right: 1.2em;
+        font-size: 80%;
     }
 }
 
@@ -168,7 +170,7 @@ span.run-code-loading {
 }
 
 .modal-title {
-    font-size: 2.3em;
+    font-size: 2.1em;
     font-weight: bold;
     line-height: 1.3em;
     text-align: center;
