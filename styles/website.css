@@ -132,6 +132,12 @@ span.run-code-loading {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .topnav a {
+        padding-right: 2em;
+    }
+}
+
 
 /* Modal popup */
 
