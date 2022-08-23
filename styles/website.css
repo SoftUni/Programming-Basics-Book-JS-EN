@@ -281,4 +281,7 @@ span.run-code-loading {
     .modal-content {
         display: none;
     }
+    .modal-background {
+        padding-top: 4em;
+    }
 }
