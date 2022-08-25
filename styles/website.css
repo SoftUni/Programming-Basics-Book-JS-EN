@@ -146,7 +146,7 @@ span.run-code-loading {
 .modal-background {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     padding-top: 6em;
     left: 0;
     top: 0;
