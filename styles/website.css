@@ -96,7 +96,7 @@ span.run-code-loading {
 
 .topnav {
     padding: 10px 5px 5px 15px;
-	border-radius: 2px;
+    border-radius: 2px;
     background-color: #f1f1f1;
     overflow: hidden;
     display: flex;
@@ -125,11 +125,11 @@ span.run-code-loading {
     }
     .topnav {
         white-space: normal;
-        display: flex;
         flex-direction: row;
     }
     .topnav a {
         font-size: 90%;
+        padding-right: 7%;
     }
 }
 
