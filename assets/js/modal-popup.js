@@ -36,7 +36,7 @@ gitbook.events.bind("page.change", function() {
     
     function showPopup() {
         modalPopupElement.style.display = "block";        
-        // Switch off CSS transform for the book body (it breaks the modap popup)
+        // Switch off 'CSS transform' for the book body (it breaks the modal popup)
         oldBookBodyCSSTransform = bookBodyElement.style.transform;
         bookBodyElement.style.transform = "none";
         bookBodyElement.style.webkitTransform = "none";
@@ -45,7 +45,7 @@ gitbook.events.bind("page.change", function() {
     
     function hidePopup() {
         modalPopupElement.style.display = "none";        
-        // Restore the CSS transform for the book body (to its previous state)
+        // Restore 'CSS transform' for the book body (to its previous state before the popup)
         bookBodyElement.style.transform = oldBookBodyCSSTransform;
         bookBodyElement.style.webkitTransform = oldBookBodyCSSTransform;
         bookBodyElement.style.MozTransform = oldBookBodyCSSTransform;
