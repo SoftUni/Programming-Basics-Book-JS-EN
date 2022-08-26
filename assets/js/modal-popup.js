@@ -32,23 +32,42 @@ gitbook.events.bind("page.change", function() {
     
     let modalPopupElement = document.getElementById("modal");
     let bookBodyElement = document.querySelector("div.book-body");
+    let oldBookBodyLeft = "0";
     let oldBookBodyCSSTransform = "none";
+    let bookSummaryElement = document.querySelector("div.book-summary");
+    let oldBookSummaryLeft = "0";
     
     function showPopup() {
-        modalPopupElement.style.display = "block";        
+        modalPopupElement.style.display = "block";
+        
         // Switch off 'CSS transform' for the book body (it breaks the modal popup)
         oldBookBodyCSSTransform = bookBodyElement.style.transform;
         bookBodyElement.style.transform = "none";
         bookBodyElement.style.webkitTransform = "none";
         bookBodyElement.style.MozTransform = "none";
+        
+        // Hide the 'book summary' tab
+        oldBookSummaryLeft = bookSummaryElement.style.left;
+        bookSummaryElement.style.left = "-100%";
+
+        // Arrange the book body on the left
+        oldBookBodyLeft = bookBodyElement.style.left;
+        bookBodyElement.style.left = "0";
     }
     
     function hidePopup() {
-        modalPopupElement.style.display = "none";        
+        modalPopupElement.style.display = "none";
+        
         // Restore 'CSS transform' for the book body (to its previous state before the popup)
         bookBodyElement.style.transform = oldBookBodyCSSTransform;
         bookBodyElement.style.webkitTransform = oldBookBodyCSSTransform;
         bookBodyElement.style.MozTransform = oldBookBodyCSSTransform;
+        
+        // Restore the 'book summary' tab (to its previous state before the popup)
+        bookSummaryElement.style.left = oldBookSummaryLeft;
+        
+        // Restore the book body position (to its previous state before the popup)
+        bookBodyElement.style.left = oldBookBodyLeft;
     }
 
     // Wait some time and display the modal popup
