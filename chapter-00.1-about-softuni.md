@@ -25,6 +25,10 @@ This is how the **SoftUni Interactive Classroom** looks like:
 
 ![](/assets/chapter-0-images/SoftUni-Interactive-Classroom-Live-Coding-Exercise.png)
 
+## Video: SoftUni and SoftUni Judge
+
+Watch a video lesson about SoftUni and SoftUni Judge here: [https://youtu.be/TDlDXnFCzoo](https://youtu.be/TDlDXnFCzoo).
+
 ## Judge The Exercise Verification System
 
 **The SoftUni Judge system** (https://judge.softuni.org) is an automated system on the Internet **that checks solutions to programming problems through a series of tests**. **Real-time** problem transmission and verification: you send a solution and in seconds you get an answer if it's true. Each **successful** test gives the points provided for it. With a correct solution, you get all the points for the problem. With a partially correct solution, you get some of the points for the problem. With a completely wrong decision, you get 0 points.
