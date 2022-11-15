@@ -10,7 +10,7 @@ Remember the **[four main groups of skills](chapter-00.2-how-to-become-a-program
 
 ## This Book is Only The First Step!
 
-**The present** book on programming basics is just the **first step** in building the skills of a programmer. If you were able to solve **all problems**, this means you have **obtained valuable knowledge** in the programming principles with **Python** language on a **basic level**. You are about to start **in-depth** studying of programming, develop **your algorithmic thinking**, and then add **technological knowledge** regarding the Python language, Django ecosystem, front-end technologies (HTML, CSS, Angular, React, AJAX, HTML5), and many other concepts, technologies and instruments for software development.
+**The present** book on programming basics is just the **first step** in building the skills of a programmer. If you were able to solve **all problems**, this means you have **obtained valuable knowledge** in the programming principles with **JavaScript** language on a **basic level**. You are about to start **in-depth** studying of programming, develop **your algorithmic thinking**, and then add **technological knowledge** regarding JavaScript language, Node.js ecosystem (Node.js, npm, Express.js, etc.), front-end technologies (HTML, CSS, Angular, React, AJAX, HTML5) and many other concepts, technologies and instruments for software development.
 
 If you were **not able** to solve all problems or a large part of them, go back and solve them! Remember that **becoming a programmer** requires **a lot of work and effort**. This profession is not for lazy people. There is no way to learn it unless **you seriously practice** programming for years!
 
