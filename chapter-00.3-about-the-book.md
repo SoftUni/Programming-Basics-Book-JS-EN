@@ -39,7 +39,7 @@ If you have a specific question, such as why a program doesn't run, that you've 
 
 The book is distributed **for free** in electronic format under an open CC-BY-NC-SA license **[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
 
-**The source code** of the book can be found on GitHub: https://github.com/SoftUni/Programming-Basics-Book-JS-EN.
+**The source code** of the book can be found on GitHub: <strong>https://github.com/SoftUni/Programming-Basics-Book-JS-EN</strong>.
  
 International Standard Book Number (ISBN): **978-619-00-1401-0**.
 
