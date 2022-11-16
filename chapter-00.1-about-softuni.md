@@ -29,9 +29,9 @@ This is how the **SoftUni Interactive Classroom** looks like:
 
 Watch a video lesson about SoftUni and SoftUni Judge here: [https://youtu.be/TDlDXnFCzoo](https://youtu.be/TDlDXnFCzoo).
 
-## Judge The Exercise Verification System
+## The Automated Judge System
 
-**The SoftUni Judge system** (https://judge.softuni.org) is an automated system on the Internet **that checks solutions to programming problems through a series of tests**. **Real-time** problem submission and verification: you send a solution and in seconds, get an evaluation. You earn points for each task depending on your answer. For a completely right one, you get the maximum points for the problem. With a partially correct solution, you receive a fraction of the points. And with a completely wrong answer, you get 0 points.
+**The SoftUni Judge system** (https://judge.softuni.org) is an automated system on the Internet **that checks solutions to programming problems through a series of tests**. **Real-time** problem submission and verification: you send a solution and in seconds, get an evaluation. You earn points for each task depending on your answer. For a completely right one, you get the maximum points for the problem. With a partially correct solution, you receive a fraction of the points. And with a completely wrong answer, you get 0 points. This how the **SoftUni Judge** looks like:![](/assets/chapter-1-images/02.Expression-03.png)
 
 **All problem in this book are available for testing in the SoftUni Judge system** and we strongly recommend that you test them once you have decided to know if you are missing something and whether your solution is working properly, as required by the problem.
 
