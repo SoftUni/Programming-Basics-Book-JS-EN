@@ -21,9 +21,9 @@ Using the **SoftUni Interactive Platform**, you **write, execute and test code d
 
 This is how the **SoftUni Interactive Classroom** looks like:
  
-![](/assets/chapter-0-images/SoftUni-Interactive-Classroom-Video.png)
+![](/assets/chapter-0-images/Interactive-Classroom-Video.PNG)
 
-![](/assets/chapter-0-images/SoftUni-Interactive-Classroom-Live-Coding-Exercise.png)
+![](/assets/chapter-0-images/Interactive-Classroom-Live-Coding-Exercise.PNG)
 
 ## Video: SoftUni and SoftUni Judge
 
@@ -31,7 +31,7 @@ Watch a video lesson about SoftUni and SoftUni Judge here: [https://youtu.be/TDl
 
 ## The Automated Judge System
 
-**The SoftUni Judge system** (https://judge.softuni.org) is an automated system on the Internet **that checks solutions to programming problems through a series of tests**. **Real-time** problem submission and verification: you send a solution and in seconds, get an evaluation. You earn points for each task depending on your answer. For a completely right one, you get the maximum points for the problem. With a partially correct solution, you receive a fraction of the points. And with a completely wrong answer, you get 0 points. This how the **SoftUni Judge** looks like:![](/assets/chapter-1-images/02.Expression-03.png)
+**The SoftUni Judge system** (https://judge.softuni.org) is an automated system on the Internet **that checks solutions to programming problems through a series of tests**. **Real-time** problem submission and verification: you send a solution and in seconds, get an evaluation. You earn points for each task depending on your answer. For a completely right one, you get the maximum points for the problem. With a partially correct solution, you receive a fraction of the points. And with a completely wrong answer, you get 0 points. This how the **SoftUni Judge** looks like:![](/assets/chapter-0-images/Judge-System-Exercise.PNG)
 
 **All problem in this book are available for testing in the SoftUni Judge system** and we strongly recommend that you test them once you have decided to know if you are missing something and whether your solution is working properly, as required by the problem.
 
