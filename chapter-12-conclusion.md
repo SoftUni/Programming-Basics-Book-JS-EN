@@ -19,13 +19,13 @@ As we already explained, the first and basic skill of a programmer is **to learn
 ## What to Do After Reading This Book?
 
 This book **gives you solid foundations**, thanks to which it will be easy for you to continue developing as a programmer. If you wonder how to continue your development, you have the following possibilities:
- - to study for a **[software developer](https://learn.softuni.org/catalog?utm_source=FreeProgrammingBooks&utm_medium=text&utm_campaign=JavaScriptBook) at SoftUni** and make programming your profession.
+ - to study for a **[software developer](https://learn.softuni.org/catalog?utm_source=JavaScript&utm_medium=text&utm_campaign=free+programming+books) at SoftUni** and make programming your profession.
  - to continue developing as a programmer **on your own**, for example through self-training or via free online lessons.
  - to **stay at a coder level**, without going more seriously into programming.
 
 ### Study Software Engineering at SoftUni
 
-The first option, which we recommend, is to enroll in a **[Software Developer program](https://learn.softuni.org/catalog?utm_source=FreeProgrammingBooks&utm_medium=text&utm_campaign=JavaScriptBook)** to master programming on a professional level. The SoftUni curriculum is carefully developed by **Dr. Svetlin Nakov and his team**, to provide you consequently and with gradually increasing complexity all the skills that a software engineer must have, **to start a career as a software developer** in an IT company. 
+The first option, which we recommend, is to enroll in a **[Software Developer program](https://learn.softuni.org/catalog?utm_source=JavaScript&utm_medium=text&utm_campaign=free+programming+books)** to master programming on a professional level. The SoftUni curriculum is carefully developed by **Dr. Svetlin Nakov and his team**, to provide you consequently and with gradually increasing complexity all the skills that a software engineer must have, **to start a career as a software developer** in an IT company. 
 
 SoftUni’s self-paced programs are designed as a **sequence of modules** giving you fundamental knowledge in software development and practical skills to prepare you to work as a programmer with the latest software technologies. The classes are divided into **learning theory (30%)** and doing exercises and **projects (70%)**.
 
@@ -42,7 +42,7 @@ If the tasks from the book and the preparation examples are hard for you, then y
 
 ### How Many Hours Per Day Does The Training Take?
 
-The training for software engineers at SoftUni is a **very serious occupation** and you need to spend **at least 4-5 hours every day**, preferably your entire attention and time. Combining **training with other obligations** is not always easy. Of course, it is always best if you can dedicate all your time and attention to mastering programming but SoftUni’s **self-paced [Software Developer](https://learn.softuni.org/catalog?utm_source=FreeProgrammingBooks&utm_medium=text&utm_campaign=JavaScriptBook)** programs make it possible to learn at your own pace. They are great for high school pupils, university students, and people with full or part-time jobs. And remember, you cannot become a successful software developer by only practicing 2-4 hours a week. As a minimum, you need to spend at least 20-30 hours a week learning to code.
+The training for software engineers at SoftUni is a **very serious occupation** and you need to spend **at least 4-5 hours every day**, preferably your entire attention and time. Combining **training with other obligations** is not always easy. Of course, it is always best if you can dedicate all your time and attention to mastering programming but SoftUni’s **self-paced [Software Developer](https://learn.softuni.org/catalog?utm_source=JavaScript&utm_medium=text&utm_campaign=free+programming+books)** programs make it possible to learn at your own pace. They are great for high school pupils, university students, and people with full or part-time jobs. And remember, you cannot become a successful software developer by only practicing 2-4 hours a week. As a minimum, you need to spend at least 20-30 hours a week learning to code.
 
 ### SoftUni for People Who Work and Study
 
@@ -69,7 +69,7 @@ Regardless of the path you have chosen, if you are seriously involved in program
 If you aim to study programming seriously, **surround yourselves with people who are involved in programming** seriously. Join **communities of software developers**, attend software conferences, go to events for programmers, find friends with whom you can talk about programming and discuss problems and bugs, find an environment that can help you. In most large towns there are free events for programmers, a few times a week. In smaller localities, you have the Internet and access to the entire online community.
 
 Here are some recommended **resources**, that will be useful for your development as a programmer:
-* [https://learn.softuni.org](https://learn.softuni.org?utm_source=FreeProgrammingBooks&utm_medium=text&utm_campaign=JavaScriptBook) –  the official page for SoftUni’s **self-paced Software Developer programs and open courses**.
+* [https://learn.softuni.org](https://learn.softuni.org/catalog?utm_source=JavaScript&utm_medium=text&utm_campaign=free+programming+books) –  the official page for SoftUni’s **self-paced Software Developer programs and open courses**.
 * https://www.facebook.com/softuni.org – official **Facebook page of SoftUni**. By it, you will learn about new courses, seminars, and events related to programming and software development.
 * https://introprogramming.info - official website of the **books "Programming Basics"** with **C#**, **Java**, **JavaScript**, and **Python** by Dr. Svetlin Nakov and his team. The books examine in-depth programming basics, basic data structures and algorithms, object-oriented programming, and other basic skills, and are an excellent continuation for reading after the current book. However, **besides reading, you need to do intense code writing**, do not forget that!
 * https://stackoverflow.com - **Stack Overflow** is one of the **widest** discussion forums for programmers worldwide, where you will find assistance for any possible question in the world of programming. If you are fluent in English, look up at StackOverflow and ask your questions there.
