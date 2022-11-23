@@ -1,6 +1,6 @@
 # About Software University(SoftUni)
 
-[The Software University (SoftUni)]([https://softuni.org](https://softuni.org/learn?utm_source=FreeProgrammingBooks&utm_medium=text&utm_campaign=JavaScriptBook)) is **the largest training center for software engineers in South-Eastern Europe**. Tens of thousands of students pass through the university every year. SoftUni was founded in 2014 as a continuation of the hard work of [**Dr. Svetlin Nakov**](https://nakov.com) in training **skillful software engineering professionals** by a practical, contemporary, and high-quality education that combines fundamental knowledge with modern software technologies and a lot of practice.
+[The Software University (SoftUni)](https://softuni.org/learn/?utm_source=JavaScript&utm_medium=text&utm_campaign=free+programming+books) is **the largest training center for software engineers in South-Eastern Europe**. Tens of thousands of students pass through the university every year. SoftUni was founded in 2014 as a continuation of the hard work of [**Dr. Svetlin Nakov**](https://nakov.com) in training **skillful software engineering professionals** by a practical, contemporary, and high-quality education that combines fundamental knowledge with modern software technologies and a lot of practice.
 
 The Software University provides **quality education**, **occupation**, **work**, and **the opportunity to acquire a diploma** for programmers, software engineers, and IT professionals. SoftUni builds an extremely successful lasting **relationship between education and industry**, collaborating with hundreds of software companies, **providing work and internships** to its students, providing quality specialists for the software industry, and directly meeting the needs of employers through the learning process.
 
@@ -17,7 +17,7 @@ This **programming textbook** accompanies free programming courses for beginners
 
 SoftUni’s self-paced programs teach software developers worldwide in the innovative **Interactive Classroom** that combines **video lessons, coding sessions, examples, and exercises** in a single platform on the Web.
 
-Using the **SoftUni Interactive Platform**, you **write, execute and test code directly into the browser** and your exercise solutions are automatically evaluated by the integrated **Judge system**. If you have difficulties with an assignment, you can **get assistance** in multiple ways: with automated hints and guidelines or through SoftUni’s **help center**. Try it now with a [**7-day free trial**](https://learn.softuni.org/catalog?utm_source=FreeProgrammingBooks&utm_medium=text&utm_campaign=JavaScriptBook).
+Using the **SoftUni Interactive Platform**, you **write, execute and test code directly into the browser** and your exercise solutions are automatically evaluated by the integrated **Judge system**. If you have difficulties with an assignment, you can **get assistance** in multiple ways: with automated hints and guidelines or through SoftUni’s **help center**. Try it now with a [**7-day free trial**](https://learn.softuni.org/catalog?utm_source=JavaScript&utm_medium=text&utm_campaign=free+programming+books).
 
 This is how the **SoftUni Interactive Classroom** looks like:
  
