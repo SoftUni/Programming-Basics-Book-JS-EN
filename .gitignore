@@ -21,12 +21,6 @@ _book
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-/resources/Prepress-Scripts/Prepress-Book-in-MS-Word/obj
-/resources/Prepress-Scripts/Prepress-Book-in-MS-Word/.vs
-/resources/Prepress-Scripts/Prepress-Book-in-MS-Word/bin
-
-# PyCharm
-.idea/*
 
 # GitHub Pages deployment folder
 _gh-pages
