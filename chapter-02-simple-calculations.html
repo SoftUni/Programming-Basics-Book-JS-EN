@@ -550,30 +550,30 @@ Here are some examples of data types and values for them:</p>
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Square area = &apos;</span> + area);
 }
 </code></pre>
-<p>If we call our function with parameter 3 - <strong><code>calculateSquareArea([3])</code></strong> the result will be - <strong><code>Square area = 9</code></strong>.  Here&apos;s how our code looks like in action in the web browser&apos;s JavaScript console:</p>
+<p>If we call our function with parameter 3 - <strong><code>calculateSquareArea([3])</code></strong> the result will be - <strong><code>Square area = 9</code></strong>. Here&apos;s how our code looks like in action in the web browser&apos;s JavaScript console:</p>
 <p><img src="assets/calculate-square-area-js.png" alt=""></p>
 <p>If we try to write a wrong number, for example, &quot;hello&quot;, we will get an error message during runtime (exception). This is normal. Later on, we will find out how we can catch these kinds of errors and make the user enter a number again.</p>
 <h4 id="how-does-the-example-work"><a name="how-does-the-example-work" class="plugin-anchor" href="#how-does-the-example-work"><i class="fa fa-link" aria-hidden="true"></i></a>How Does The Example Work?</h4>
 <p>On the first line with <strong><code>function calculateSquareArea([arg1]) {</code></strong> we define our function by giving it a name and setting arguments that it needs. In our case, we have one argument which is the side of the square.</p>
 <p>On the next line with <strong><code>let a = parseInt(arg1);</code></strong> we get the argument of the function <strong><code>arg1</code></strong> and convert it to an integer with the method <strong><code>parseInt(arg1);</code></strong>. The result is saved in variable <strong><code>a</code></strong>.</p>
-<p><strong>Note</strong>: If <strong><code>arg1</code></strong> contains a <strong>floating-point number</strong>, that will be <strong>rounded to an integer</strong>. Converting a floating number to an integer is performed by  <strong>removing</strong>  all digits after the decimal point. Example: <strong><code>parseInt(2.3)</code></strong> = 2, <strong><code>parseInt(3.8)</code></strong> = 3</p>
+<p><strong>Note</strong>: If <strong><code>arg1</code></strong> contains a <strong>floating-point number</strong>, that will be <strong>rounded to an integer</strong>. Converting a floating number to an integer is performed by <strong>removing</strong> all digits after the decimal point. Example: <strong><code>parseInt(2.3)</code></strong> = 2, <strong><code>parseInt(3.8)</code></strong> = 3</p>
 <p>The next command <strong><code>let area = a * a;</code></strong> is saved in a new variable named <strong><code>area</code></strong> - the result of the multiplication <strong><code>a</code></strong> by <strong><code>a</code></strong>.</p>
 <p>The next command <strong><code>console.log(&apos;Square area = &apos; + area);</code></strong> prints the specified text by placing the calculated face of the square, which we have saved in the variable <strong><code>area</code></strong> next to it.</p>
 <p>The above program can be simplified a bit, like this:</p>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateSquareArea</span>(<span class="hljs-params">[a]</span>) </span>{
-    <span class="hljs-keyword">let</span> area = a * a;
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Square area = &apos;</span> + area);
+  <span class="hljs-keyword">let</span> area = a * a;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Square area = &quot;</span> + area);
 }
 </code></pre>
 <p>The above code will work correctly because when multiplied, the variable <code>a</code> will be converted to a number. When the input is only a single number, the parentheses <code>[]</code> can also be skipped, like this:</p>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateSquareArea</span>(<span class="hljs-params">a</span>) </span>{
-    <span class="hljs-keyword">let</span> area = a * a;
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Square area = &apos;</span> + area);
+  <span class="hljs-keyword">let</span> area = a * a;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Square area = &quot;</span> + area);
 }
 </code></pre>
 <p>The code can be compact even more, like this:</p>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateSquareArea</span>(<span class="hljs-params">a</span>) </span>{
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Square area = &apos;</span> + a * a);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Square area = &quot;</span> + a * a);
 }
 </code></pre>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
@@ -663,7 +663,7 @@ Here are some examples of data types and values for them:</p>
 <span class="hljs-keyword">let</span> product = a * b; <span class="hljs-comment">// 35</span>
 </code></pre>
 <h3 id="dividing-numbers-operator-"><a name="dividing-numbers-operator-" class="plugin-anchor" href="#dividing-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Dividing Numbers (Operator <strong><code>/</code></strong>)</h3>
-<p>Dividing numbers is done using the <strong><code>/</code></strong> operator. </p>
+<p>Dividing numbers is done using the <strong><code>/</code></strong> operator.</p>
 <p><strong>Note:</strong> Float numbers <strong>divided by 0</strong> do not cause an exception and the result is <strong>+/- infinity</strong> or the special value <strong>Infinity</strong>.</p>
 <p>Here are a few examples with the division operator:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-built_in">console</span>.log(<span class="hljs-number">10</span> / <span class="hljs-number">2.5</span>); <span class="hljs-comment">// Result: 4</span>
@@ -680,7 +680,7 @@ Here are some examples of data types and values for them:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> firstName = <span class="hljs-string">&quot;Maria&quot;</span>;
 <span class="hljs-keyword">let</span> lastName = <span class="hljs-string">&quot;Ivanova&quot;</span>;
 <span class="hljs-keyword">let</span> age = <span class="hljs-number">19</span>;
-<span class="hljs-keyword">let</span> str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <span class="hljs-string">&quot; @ &quot;</span> + age; 
+<span class="hljs-keyword">let</span> str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <span class="hljs-string">&quot; @ &quot;</span> + age;
 <span class="hljs-built_in">console</span>.log(str);  <span class="hljs-comment">// Maria Ivanova @ 19</span>
 </code></pre>
 <p>Here is another example:</p>
@@ -699,9 +699,9 @@ Here are some examples of data types and values for them:</p>
 <p>In programming, we can calculate <strong>numerical expressions</strong>, for example:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> expr = (<span class="hljs-number">3</span> + <span class="hljs-number">5</span>) * (<span class="hljs-number">4</span> &#x2013; <span class="hljs-number">2</span>);
 </code></pre>
-<p>The standard rule for priorities of arithmetic operations is applied: <strong>multiplying and dividing are always done before adding and subtracting</strong>. In the case of an <strong>expression in brackets, it is calculated first</strong>  but we already know all of that from the school math.</p>
+<p>The standard rule for priorities of arithmetic operations is applied: <strong>multiplying and dividing are always done before adding and subtracting</strong>. In the case of an <strong>expression in brackets, it is calculated first</strong> but we already know all of that from the school math.</p>
 <h3 id="problem-concatenate-data"><a name="problem-concatenate-data" class="plugin-anchor" href="#problem-concatenate-data"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Concatenate Data</h3>
-<p>Write a function, that receives a first name, last name, age and city and prints a message of the following kind: </p>
+<p>Write a function, that receives a first name, last name, age and city and prints a message of the following kind:</p>
 <pre><code class="lang-Javascript">You are &lt;firstName&gt; &lt;lastName&gt;, a &lt;age&gt;-years old person from &lt;town&gt;.
 </code></pre>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
@@ -713,7 +713,7 @@ Here are some examples of data types and values for them:</p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#3</a>.</p>
 <h3 id="problem-trapeziod-area"><a name="problem-trapeziod-area" class="plugin-anchor" href="#problem-trapeziod-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Trapeziod Area</h3>
-<p>Let&apos;s  write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the <strong>trapezoid area</strong> by the standard math formula:</p>
+<p>Let&apos;s write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the <strong>trapezoid area</strong> by the standard math formula:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printTrapezoidArea</span>(<span class="hljs-params">[arg1, arg2, arg3]</span>) </span>{
     <span class="hljs-keyword">let</span> b1 = <span class="hljs-built_in">parseFloat</span>(arg1);
     <span class="hljs-keyword">let</span> b2 = <span class="hljs-built_in">parseFloat</span>(arg2);
@@ -726,35 +726,39 @@ Here are some examples of data types and values for them:</p>
 <pre><code class="lang-JavaScript">printTrapezoidArea([<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]); <span class="hljs-comment">// Trapezoid area = 17.5</span>
 </code></pre>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
-<p>Test your solution here: </p>
+<p>Test your solution here:</p>
 <p><a href="https://judge.softuni.org/Contests/Practice/Index/927#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#4</a>.</p>
 <h2 id="rounding-numbers"><a name="rounding-numbers" class="plugin-anchor" href="#rounding-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Rounding Numbers</h2>
 <p>Sometimes when we work with floating numbers, it&apos;s necessary to bring them to integers. This bringing is named <strong>rounding</strong>. The programming language <strong>JavaScript</strong> provides us with several methods for rounding numbers:</p>
 <ul>
-<li><strong><code>Math.ceil(&#x2026;)</code></strong> - <strong>rounding up</strong> to next (greater) integer:<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> up = <span class="hljs-built_in">Math</span>.ceil(<span class="hljs-number">45.15</span>); <span class="hljs-comment">// up = 46</span>
+<li><strong><code>Math.ceil(&#x2026;)</code></strong> - <strong>rounding up</strong> to next (greater) integer:</li>
+</ul>
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> up = <span class="hljs-built_in">Math</span>.ceil(<span class="hljs-number">45.15</span>); <span class="hljs-comment">// up = 46</span>
 </code></pre>
-</li>
-<li><p><strong><code>Math.floor(&#x2026;)</code></strong> - <strong>rounding down</strong> to previous (less) integer:</p>
+<ul>
+<li><strong><code>Math.floor(&#x2026;)</code></strong> - <strong>rounding down</strong> to previous (less) integer:</li>
+</ul>
 <pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> down = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-number">45.67</span>);    <span class="hljs-comment">// down = 45</span>
 </code></pre>
-</li>
-<li><p><strong><code>Math.trunc(&#x2026;)</code></strong> - <strong>cutting</strong> the decimal places:</p>
+<ul>
+<li><strong><code>Math.trunc(&#x2026;)</code></strong> - <strong>cutting</strong> the decimal places:</li>
+</ul>
 <pre><code class="lang-JavaScript"><span class="hljs-keyword">let</span> trunc = <span class="hljs-built_in">Math</span>.trunc(<span class="hljs-number">45.67</span>); <span class="hljs-comment">// trunc = 45</span>
 </code></pre>
-</li>
-<li><p><strong><code>Math.round(&#x2026;)</code></strong> - rounding is done as a <strong>basic rule for rounding numbers</strong> - if the decimal part is less than 5, rounding is to the previous number and if it&apos;s greater than 5 - to the next:</p>
+<ul>
+<li><strong><code>Math.round(&#x2026;)</code></strong> - rounding is done as a <strong>basic rule for rounding numbers</strong> - if the decimal part is less than 5, rounding is to the previous number and if it&apos;s greater than 5 - to the next:</li>
+</ul>
 <pre><code class="lang-JavaScript"><span class="hljs-built_in">Math</span>.round(<span class="hljs-number">5.439</span>); <span class="hljs-comment">// 5</span>
 <span class="hljs-built_in">Math</span>.round(<span class="hljs-number">5.539</span>); <span class="hljs-comment">// 6</span>
 </code></pre>
-</li>
-<li><p><strong><code>.toFixed([number of characters after the decimal point])</code></strong> - rounding to <strong>the closest</strong> number:</p>
+<ul>
+<li><strong><code>.toFixed([number of characters after the decimal point])</code></strong> - rounding to <strong>the closest</strong> number:</li>
+</ul>
 <pre><code class="lang-JavaScript">(<span class="hljs-number">123.456</span>).toFixed(<span class="hljs-number">2</span>);     <span class="hljs-comment">// 123.46</span>
 (<span class="hljs-number">123</span>).toFixed(<span class="hljs-number">2</span>);         <span class="hljs-comment">// 123.00</span>
 (<span class="hljs-number">123.456</span>).toFixed(<span class="hljs-number">0</span>);     <span class="hljs-comment">// 123</span>
 (<span class="hljs-number">123.512</span>).toFixed(<span class="hljs-number">0</span>);     <span class="hljs-comment">// 124</span>
 </code></pre>
-</li>
-</ul>
 <h3 id="problem-circle-area-and-perimeter"><a name="problem-circle-area-and-perimeter" class="plugin-anchor" href="#problem-circle-area-and-perimeter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Circle Area and Perimeter</h3>
 <p>Let&apos;s write a function that receives an input of <strong>the radius r</strong> of a circle and <strong>calculates the area and the perimeter</strong> of the circle.</p>
 <p>Formulas:</p>
@@ -765,7 +769,7 @@ Here are some examples of data types and values for them:</p>
 </ul>
 <pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateCircleAreaAndPerimeter</span>(<span class="hljs-params">[arg1]</span>) </span>{
     <span class="hljs-keyword">let</span> r = <span class="hljs-built_in">parseInt</span>(arg1);
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Area = &quot;</span> + <span class="hljs-built_in">Math</span>.PI * r * r); 
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Area = &quot;</span> + <span class="hljs-built_in">Math</span>.PI * r * r);
     <span class="hljs-comment">// Math.PI - Built-in JavaScript constant for the value of the number &#x3C0;</span>
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Perimeter = &quot;</span> + <span class="hljs-number">2</span> * <span class="hljs-built_in">Math</span>.PI * r);
 }
@@ -780,7 +784,7 @@ Here are some examples of data types and values for them:</p>
 <h3 id="problem-2d-rectangle-area"><a name="problem-2d-rectangle-area" class="plugin-anchor" href="#problem-2d-rectangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: 2D Rectangle Area</h3>
 <p>The rectangle is given with the <strong>coordinates of two of its opposite angles</strong>. Calculate its <strong>area and perimeter</strong> :</p>
 <p><img alt="rectangleArea" src="assets/chapter-2-1-images/00.Rectangle-area-01.png" width="250" height="200"></p>
-<p>In this problem, we have to consider that if we subtract the smaller <strong><code>x</code></strong>  from the bigger <strong><code>x</code></strong> , we will obtain the length of the rectangle. Identically, if we subtract the smaller <strong><code>y</code></strong> from the bigger <strong><code>y</code></strong>, , we will obtain the height of the rectangle. What is left is to multiply both sides. Here is an example of an implementation of the described logic:</p>
+<p>In this problem, we have to consider that if we subtract the smaller <strong><code>x</code></strong> from the bigger <strong><code>x</code></strong> , we will obtain the length of the rectangle. Identically, if we subtract the smaller <strong><code>y</code></strong> from the bigger <strong><code>y</code></strong>, , we will obtain the height of the rectangle. What is left is to multiply both sides. Here is an example of an implementation of the described logic:</p>
 <pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateRectangleArea</span>(<span class="hljs-params">[arg1, arg2, arg3, arg4]</span>) </span>{
     <span class="hljs-keyword">let</span> x1 = <span class="hljs-built_in">parseFloat</span>(arg1);
     <span class="hljs-keyword">let</span> y1 = <span class="hljs-built_in">parseFloat</span>(arg2);
@@ -813,7 +817,7 @@ Here are some examples of data types and values for them:</p>
 <p>Enter a <strong>significant name</strong> and expansion <strong>.js</strong> to our file, then press the button [<strong>Save</strong>]:</p>
 <p><img src="assets/chapter-2-1-images/00.Visual-studio-03.png" alt=""></p>
 <h3 id="problem-triangle-area"><a name="problem-triangle-area" class="plugin-anchor" href="#problem-triangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Triangle Area</h3>
-<p>Write a function that receives arguments which are <strong>a side and a height of a triangle</strong> and calculates its area. Use <strong>the formula</strong> for triangle area: <strong>area = a * h / 2</strong>. Round the result to  <strong>2 digits after the decimal point using <code>area.toFixed(2)</code></strong>.</p>
+<p>Write a function that receives arguments which are <strong>a side and a height of a triangle</strong> and calculates its area. Use <strong>the formula</strong> for triangle area: <strong>area = a * h / 2</strong>. Round the result to <strong>2 digits after the decimal point using <code>area.toFixed(2)</code></strong>.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -844,7 +848,7 @@ Here are some examples of data types and values for them:</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#7</a>.</p>
 <h3 id="problem-celsius-to-fahrenheit"><a name="problem-celsius-to-fahrenheit" class="plugin-anchor" href="#problem-celsius-to-fahrenheit"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Celsius to Fahrenheit</h3>
-<p>Write a function that reads <strong>degrees on the Celsius scale</strong> (&#xB0;C) and converts them to <strong>degrees on the Fahrenheit scale</strong> (&#xB0;F).  Look on the Internet for a proper  <a href="https://bfy.tw/3rGh" title="Search on Google" target="_blank">formula</a> to do the calculations. Round the result to <strong>2 digits after the decimal point</strong>. Here are a few examples:</p>
+<p>Write a function that reads <strong>degrees on the Celsius scale</strong> (&#xB0;C) and converts them to <strong>degrees on the Fahrenheit scale</strong> (&#xB0;F). Look on the Internet for a proper <a href="https://bfy.tw/3rGh" title="Search on Google" target="_blank">formula</a> to do the calculations. Round the result to <strong>2 digits after the decimal point</strong>. Here are a few examples:</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -874,8 +878,8 @@ Here are some examples of data types and values for them:</p>
 </table>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#8</a>.</p>
-<h3 id="problem-usd-to-bgn"><a name="problem-usd-to-bgn" class="plugin-anchor" href="#problem-usd-to-bgn"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: USD to BGN</h3>
-<p>Write a function that reads <strong>an angle in <a href="https://en.wikipedia.org/wiki/Radian" target="_blank">radians</a></strong> (<strong><code>rad</code></strong>) and converts it in <strong><a href="https://en.wikipedia.org/wiki/Degree_(angle" target="_blank">degrees</a>)</strong> (<code>deg</code>).  Look for a proper formula on the Internet. The number <strong>&#x3C0;</strong> in <strong>JavaScript</strong> programs is available through  <strong><code>Math.PI</code></strong>. Round the result to the nearest integer using the <strong><code>Math.round(&#x2026;)</code></strong> method.</p>
+<h3 id="problem-radians-to-degrees"><a name="problem-radians-to-degrees" class="plugin-anchor" href="#problem-radians-to-degrees"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Radians to Degrees</h3>
+<p>Write a function that reads <strong>an angle in <a href="https://en.wikipedia.org/wiki/Radian" target="_blank">radians</a></strong> (<strong><code>rad</code></strong>) and converts it in <strong><a href="https://en.wikipedia.org/wiki/Degree_(angle" target="_blank">degrees</a>&gt;)</strong> (<code>deg</code>). Look for a proper formula on the Internet. The number <strong>&#x3C0;</strong> in <strong>JavaScript</strong> programs is available through <strong><code>Math.PI</code></strong>. Round the result to the nearest integer using the <strong><code>Math.round(&#x2026;)</code></strong> method.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -932,8 +936,8 @@ Here are some examples of data types and values for them:</p>
 </table>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#10" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#10</a>.</p>
-<h3 id="problem---currency-converter"><a name="problem---currency-converter" class="plugin-anchor" href="#problem---currency-converter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: *  Currency Converter</h3>
-<p>Write a function for the <strong>conversion of money from one currency into another</strong>.  It has to support the following currencies: <strong>BGN, USD, EUR, GBP</strong>. Use the following fixed currency rates:</p>
+<h3 id="problem--currency-converter"><a name="problem--currency-converter" class="plugin-anchor" href="#problem--currency-converter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: * Currency Converter</h3>
+<p>Write a function for the <strong>conversion of money from one currency into another</strong>. It has to support the following currencies: <strong>BGN, USD, EUR, GBP</strong>. Use the following fixed currency rates:</p>
 <table>
 <thead>
 <tr>
@@ -952,7 +956,7 @@ Here are some examples of data types and values for them:</p>
 </tr>
 </tbody>
 </table>
-<p><strong>The input</strong> is a <strong>sum for conversion</strong>, <strong>input currency</strong>, and <strong>output currency</strong>. <strong>The output</strong> is one number &#x2013; the converted value of the above currency rates rounded <strong>2 digits</strong> after the decimal point. </p>
+<p><strong>The input</strong> is a <strong>sum for conversion</strong>, <strong>input currency</strong>, and <strong>output currency</strong>. <strong>The output</strong> is one number &#x2013; the converted value of the above currency rates rounded <strong>2 digits</strong> after the decimal point.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -1023,7 +1027,7 @@ Here are some examples of data types and values for them:</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/927#12" target="_blank">https://judge.softuni.org/Contests/Practice/Index/927#12</a>.</p>
 <h2 id="graphic-applications-with-numerical-expressions"><a name="graphic-applications-with-numerical-expressions" class="plugin-anchor" href="#graphic-applications-with-numerical-expressions"><i class="fa fa-link" aria-hidden="true"></i></a>Graphic Applications with Numerical Expressions</h2>
-<p>To exercise working with variables and calculations with operators and numerical expressions, we will make something interesting: we will develop a <strong>web application</strong>  with a graphical user interface. In it, we will use calculations with floating-point numbers.</p>
+<p>To exercise working with variables and calculations with operators and numerical expressions, we will make something interesting: we will develop a <strong>web application</strong> with a graphical user interface. In it, we will use calculations with floating-point numbers.</p>
 <h3 id="web-application--converter---bgn-to-eur"><a name="web-application--converter---bgn-to-eur" class="plugin-anchor" href="#web-application--converter---bgn-to-eur"><i class="fa fa-link" aria-hidden="true"></i></a>Web Application: *** Converter - BGN to EUR!</h3>
 <p>Create a web application that calculates the value in <strong>Euro</strong> (EUR) of the monetary amount given in <strong>Bulgarian levs</strong> (BGN). By changing the amount in BGN, the amount in EUR has to be recalculated automatically. Use the fixed-rate BGN / Euro: <strong>1.95583</strong>.</p>
 <p><img src="assets/chapter-2-1-images/13.Bgn-to-eur-01.png" alt=""></p>
@@ -1035,46 +1039,51 @@ Here are some examples of data types and values for them:</p>
 <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>BGN to EUR Converter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-form&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;title&quot;</span>&gt;</span>BGN to EUR Converter<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;items&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;bgn&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;currency&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item-currency&quot;</span>&gt;</span>BGN: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;currency-value&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;number&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;bgn&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;0&quot;</span> /&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;euro&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;currency&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item-currency&quot;</span>&gt;</span>EUR: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;currency-value&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;euro&quot;</span> <span class="hljs-attr">readonly</span> /&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;primary-btn&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Convert!&quot;</span> /&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;title&quot;</span>&gt;</span>BGN to EUR Converter<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;items&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;bgn&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;currency&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item-currency&quot;</span>&gt;</span>BGN: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;currency-value&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;number&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;bgn&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;0&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;euro&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;currency&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item-currency&quot;</span>&gt;</span>EUR: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;currency-value&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;euro&quot;</span> <span class="hljs-attr">readonly</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;primary-btn&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Convert!&quot;</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<p>Note that each HTML page must have a <strong>specific structure</strong>. For example, always the main code we write is in the tag <strong><code>&lt;body&gt;</code></strong>,  and always the title of the page is in the tag <strong><code>&lt;title&gt;</code></strong>.</p>
+<p>Note that each HTML page must have a <strong>specific structure</strong>. For example, always the main code we write is in the tag <strong><code>&lt;body&gt;</code></strong>, and always the title of the page is in the tag <strong><code>&lt;title&gt;</code></strong>.</p>
 <ol>
 <li>We have the structure of the page, it remains to add a <strong>JavaScript</strong> file with the logic itself. We create a new file and name it <strong>converter.js</strong></li>
 </ol>
 <pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">eurConverter</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">let</span> bgn = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;bgn&quot;</span>).value;
     <span class="hljs-keyword">let</span> eur = (bgn / <span class="hljs-number">1.95583</span>).toFixed(<span class="hljs-number">2</span>);
-    <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;euro&quot;</span>).value = eur;    
+    <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;euro&quot;</span>).value = eur;
 }
 </code></pre>
 <ol>
 <li>Once we have the logic of the application, we need to find a way to tell where to use it. To do this we need to make 2 changes to the existing <strong>index.html</strong> file:</li>
 </ol>
 <p>First, we add the following line just below the <strong><code>title</code></strong> tag, through which the connection between the files is made <strong>index.html</strong> and <strong>converter.js</strong>:</p>
-<pre><code class="lang-html"> <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;converter.js&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/JavaScript&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;converter.js&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/JavaScript&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
 <p>And second, we find and replace the <strong><code>input</code></strong> field with the type <strong><code>button</code></strong> with the following code. In this way we set <strong>when clicking</strong> on the button [<strong>Convert!</strong>] to call the function <strong><code>eurConverter()</code></strong>:</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;primary-btn&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;eurConverter()&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Convert!&quot;</span> /&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;primary-btn&quot;</span>
+  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+  <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;eurConverter()&quot;</span>
+  <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Convert!&quot;</span>
+/&gt;</span>
 </code></pre>
 <p>If we start the file <strong>index.html</strong> from the folder, we should have a working application that converts from BGN to EUR:</p>
 <p><img src="assets/chapter-2-1-images/13.Bgn-to-eur-02.png" alt=""></p>
@@ -1086,52 +1095,52 @@ Here are some examples of data types and values for them:</p>
 </code></pre>
 <p>In the file <strong>index.css</strong> we write the following code (we define styles for the individual elements of the HTML format):</p>
 <pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
-    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;Lato&apos;</span>, sans-serif;
-    <span class="hljs-attribute">color</span>: <span class="hljs-number">#FFFFFF</span>;
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Lato&quot;</span>, sans-serif;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
 }
 
 <span class="hljs-selector-class">.content-form</span> {
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">50%</span>;
-    <span class="hljs-attribute">margin</span>: <span class="hljs-number">5%</span> auto;
-    <span class="hljs-attribute">background</span>: <span class="hljs-number">#234465</span>;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span> <span class="hljs-number">10px</span> <span class="hljs-number">10px</span>;
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">15px</span>;
-    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">5px</span> <span class="hljs-number">5px</span> <span class="hljs-number">10px</span> <span class="hljs-number">#808080</span>, <span class="hljs-number">5px</span> <span class="hljs-number">5px</span> <span class="hljs-number">10px</span> <span class="hljs-number">#6793c1</span> inset;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">5%</span> auto;
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#234465</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span> <span class="hljs-number">10px</span> <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">15px</span>;
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">5px</span> <span class="hljs-number">5px</span> <span class="hljs-number">10px</span> <span class="hljs-number">#808080</span>, <span class="hljs-number">5px</span> <span class="hljs-number">5px</span> <span class="hljs-number">10px</span> <span class="hljs-number">#6793c1</span> inset;
 }
 
 <span class="hljs-selector-class">.currency-value</span> {
-    <span class="hljs-attribute">border</span>: none;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span>;
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+  <span class="hljs-attribute">border</span>: none;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
 }
 
 <span class="hljs-selector-class">.title</span> {
-    <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">text-align</span>: center;
 }
 
 <span class="hljs-selector-class">.item-currency</span> {
-    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
 <span class="hljs-selector-class">.currency</span> {
-    <span class="hljs-attribute">margin</span>: auto;
-    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">15px</span>;
+  <span class="hljs-attribute">margin</span>: auto;
+  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">15px</span>;
 }
 
 <span class="hljs-selector-class">.items</span> {
-    <span class="hljs-attribute">display</span>: flex;
-    <span class="hljs-attribute">flex-direction</span>: column;
-    <span class="hljs-attribute">justify-content</span>: flex-start;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: column;
+  <span class="hljs-attribute">justify-content</span>: flex-start;
 }
 
 <span class="hljs-selector-class">.primary-btn</span> {
-    <span class="hljs-attribute">margin</span>: auto;
-    <span class="hljs-attribute">border</span>: none;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">30px</span>;
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ffa000</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-number">#FFFFFF</span>;
-    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+  <span class="hljs-attribute">margin</span>: auto;
+  <span class="hljs-attribute">border</span>: none;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">30px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ffa000</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 </code></pre>
 <ol>
@@ -1141,7 +1150,7 @@ Here are some examples of data types and values for them:</p>
 <h3 id="web-application--catch-the-mouse"><a name="web-application--catch-the-mouse" class="plugin-anchor" href="#web-application--catch-the-mouse"><i class="fa fa-link" aria-hidden="true"></i></a>Web Application: *** Catch The Mouse!</h3>
 <p>Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that <strong>the image runs from the mouse</strong> and it is hard to catch&#x201C;. When the image gets &#x201C;caught&#x201D;, a congratulations message is shown.</p>
 <p><strong>Hint</strong>: Write an Event Handler <strong><code>mouseover</code></strong> and move the image to a random position. Use the random numbers generator <strong><code>Math.random()</code></strong>.
-The position of the image is set from the property <strong><code>style.position</code></strong>. To &quot;catch the mouse&quot; <strong><code>onclick</code></strong> to &quot;catch the mouse&quot;. </p>
+The position of the image is set from the property <strong><code>style.position</code></strong>. To &quot;catch the mouse&quot; <strong><code>onclick</code></strong> to &quot;catch the mouse&quot;.</p>
 <p><img src="assets/chapter-2-1-images/14.Catch-the-mouse-00.png" alt=""></p>
 <ol>
 <li>We create a new folder <strong>catch-the-mouse</strong> in which we will save the files for the application.</li>
@@ -1155,14 +1164,14 @@ The position of the image is set from the property <strong><code>style.position<
 <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Catch the mouse!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;app.js&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/JavaScript&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/mouse.jpg&quot;</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 <p>The file <strong>app.js</strong> must look like this:</p>
@@ -1238,7 +1247,7 @@ The position of the image is set from the property <strong><code>style.position<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"next":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"previous":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"path":"chapter-01-first-steps-in-programming.md","ref":"chapter-01-first-steps-in-programming.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js","./assets/js/top-menu.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-02-simple-calculations.md","mtime":"2023-09-29T21:52:13.292Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-09-29T21:53:13.642Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"next":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"previous":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"path":"chapter-01-first-steps-in-programming.md","ref":"chapter-01-first-steps-in-programming.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js","./assets/js/top-menu.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-34"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1401-0","variables":{},"title":"Programming Basics with JavaScript","language":"en","gitbook":"*","description":"Free book \"Programming Basics with JavaScript\" for absolute beginners. Covers the JavaScript language, the Visual Studio Code development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-02-simple-calculations.md","mtime":"2023-11-01T08:56:06.794Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-11-01T08:56:47.079Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
