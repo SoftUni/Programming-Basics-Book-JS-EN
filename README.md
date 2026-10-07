@@ -29,7 +29,7 @@ The free book "**Programming Basics with JavaScript**" introduces the readers to
 ## Download The Book
 
 Download the book "**Programming Basics with JavaScript**" in **PDF** format:
-* <a href="#">TODO</a>
+* <a href="https://github.com/SoftUni/Programming-Basics-Book-JS-EN/blob/master/resources/Programming-Basics-JavaScript-v2021.pdf">Programming-Basics-JavaScript-v2021.pdf</a>
 
 ## Book Editions
 
